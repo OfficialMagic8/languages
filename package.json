@@ -1,0 +1,29 @@
+{
+  "name": "magic8-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "author": "Fyrlex#2740",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "better-sqlite3": "^5.4.3",
+    "enmap": "^5.2.0",
+    "sqlite3": "^4.1.0",
+    "better-sqlite-pool": "^0.2.2",
+    "storage-device-info": "^1.4.2",
+    "hastebin-gen": "^2.0.5",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {},
+  "keywords": []
+}
