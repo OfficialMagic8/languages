@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const fs = require("fs");
+const botconfig = require("../botconfig.json");
 // const disk = require('diskusage');
 // const os = require('os');
 // let path = os.platform() === 'win32' ? 'c:' : '/';
@@ -98,11 +98,11 @@ module.exports.run = async (bot, message, args) => {
     let fbots = message.guild.members.filter(member => member.user.bot).size;
     let fusers = message.guild.members.filter(member => !member.user.bot).size;
 
-    let fyrlex = bot.users.get("292821168833036288")
+    let log = bot.channels.get(botconfig.commandlogs)
 
     let timechange = new Date(new Date().getTime() - (4*3600000)).toLocaleString()
 
-    fyrlex.send("`" + `${timechange} [COMMAND]: 'info', Author: ${message.author.username}, Server: ${message.guild.name} (${fusers}/${fbots})` + "`")
+    log.send("`" + `${timechange} [COMMAND]: 'info', Author: ${message.author.username}, Server: ${message.guild.name} (${fusers}/${fbots})` + "`")
 }
 
 module.exports.help = {

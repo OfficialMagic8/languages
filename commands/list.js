@@ -11,8 +11,7 @@ module.exports.run = async (bot, message, args) => {
         msg.delete(10000)
     })
     let replies = botconfig.replies
-
-
+    
     let sicon = bot.user.displayAvatarURL;
     let lEmbed = new Discord.RichEmbed()
 
@@ -29,11 +28,11 @@ module.exports.run = async (bot, message, args) => {
     let bots = message.guild.members.filter(member => member.user.bot).size;
     let users = message.guild.members.filter(member => !member.user.bot).size;
 
-    let fyrlex = bot.users.get("292821168833036288")
+    let log = bot.channels.get(botconfig.commandlogs)
 
     let timechange = new Date(new Date().getTime() - (4*3600000)).toLocaleString()
 
-    fyrlex.send("`" + `${timechange} [COMMAND]: 'list', Author: ${message.author.username}, Server: ${message.guild.name} (${users}/${bots})` + "`")
+    log.send("`" + `${timechange} [COMMAND]: 'list', Author: ${message.author.username}, Server: ${message.guild.name} (${users}/${bots})` + "`")
 }
 
 module.exports.help = {

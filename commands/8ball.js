@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const fs = require("fs");
 const botconfig = require("../botconfig.json");
 
 module.exports.run = async (bot, message, args) => {
@@ -7,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     message.delete();
   
     // if (message.author.id !== "292821168833036288") return message.reply("This command is having a new feature added to it! Please be patient, this may go on and off until the work is done and operating correctly!");
-
+    
     if (!EnmapGuildCommandsDb.has(`${message.guild.id}`)) {
         const guildCommands = EnmapGuildCommandsDb.ensure(message.guild.id, {
             gcount: 0,
@@ -118,11 +117,11 @@ module.exports.run = async (bot, message, args) => {
     let bots = message.guild.members.filter(member => member.user.bot).size;
     let users = message.guild.members.filter(member => !member.user.bot).size;
 
-    let fyrlex = bot.users.get("292821168833036288")
+    let log = bot.channels.get(botconfig.commandlogs)
 
     let timechange = new Date(new Date().getTime() - (4*3600000)).toLocaleString()
 
-    fyrlex.send("`" + `${timechange} [COMMAND]: '8ball', Message: "${message.content}" Author: ${message.author.tag}, Server: ${message.guild.name} (${users}/${bots})` + "`")
+    log.send("`" + `${timechange} [COMMAND]: '8ball', Message: "${message.content}" Author: ${message.author.tag}, Server: ${message.guild.name} (${users}/${bots})` + "`")
 }
 
 module.exports.help = {

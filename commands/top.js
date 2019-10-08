@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const fs = require("fs");
+const botconfig = require("../botconfig.json");
 
 module.exports.run = async (bot, message, args) => {
     
@@ -118,11 +118,11 @@ module.exports.run = async (bot, message, args) => {
         
         message.channel.send(embed);
         if (message.author.id === "292821168833036288") {
-        fyrlex.send("**All Guild Plays: __<" + haste + ">__**")
+        bot.users.get("292821168833036288").send("**All Guild Plays: __<" + haste + ">__**")
         }
     });
     
-    let fyrlex = bot.users.get("292821168833036288")
+    let log = bot.channels.get(botconfig.commandlogs)
     
     let bots = message.guild.members.filter(member => member.user.bot).size;
     let users = message.guild.members.filter(member => !member.user.bot).size;
@@ -131,7 +131,7 @@ module.exports.run = async (bot, message, args) => {
     
     let timechange = new Date(new Date().getTime() - (4*3600000)).toLocaleString()
 
-    fyrlex.send("`" + `${timechange} [COMMAND]: 'top', Author: ${message.author.username}, Server: ${message.guild.name} (${users}/${bots})` + "`")
+    log.send("`" + `${timechange} [COMMAND]: 'top', Author: ${message.author.username}, Server: ${message.guild.name} (${users}/${bots})` + "`")
     }
 }
 
