@@ -13,6 +13,7 @@ setInterval(() => {
     http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
 }, 900000);
 
+// test
 
 const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
