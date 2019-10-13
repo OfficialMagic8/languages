@@ -1,6 +1,7 @@
 <div align="center">
 <img src="https://cdn.discordapp.com/avatars/484148705507934208/65e76d98bf2644416f8c05a18201bfa8.png?size=128"><br>
-  <h1>Magic8</h1>
+  <h1>Magic8</h1><br><br>
+  <iframe src="https://discordapp.com/widget?id=610816275580583936&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 </div>
 
 
