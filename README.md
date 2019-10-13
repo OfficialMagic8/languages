@@ -20,9 +20,9 @@ m*list // List the responses (open for ideas, just DM the owner)
 
 m*setchannel // Want a specific channel for Magic8 to work in? Type this in any channel to set it, type `setchannel 0` to reenable Magic8 for all channels!
 
-m*setreplies - Set the type of replies for your server! Options: all, clean and just explicit!
+m*setreplies // *New!* Set the type of replies for your server! Options: all, clean and just explicit!
 
-m*top // *New!* Top 10 8ball Guilds Plays
+m*top // Top 10 8ball Guilds Plays
 
 
 
