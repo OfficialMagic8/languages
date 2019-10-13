@@ -13,12 +13,14 @@ module.exports.run = async (bot, message, args) => {
 
     let prefix = botconfig.prefix
     let array = ["`" + prefix + "8ball` - The Magic 8 Ball",
-               "`" + prefix + "help` - Displays this help menu",
-               "`" + prefix + "info` - *New!* Bot/Server Information!",
-               "`" + prefix + "leave` - Kicks the bot from the server",
-               "`" + prefix + "list` - List responses, feel free to request one to be added",
-               "`" + prefix + "setchannel` - (Optional) Run this in a specific channel for Magic8 to operate in, type `m\*setchannel 0` to enable Magic8 for all channels",
-               "`" + prefix + "top` - *New!* Top 10 8ball Guilds Plays"]
+        "`" + prefix + "help` - Displays this help menu",
+        "`" + prefix + "info` - *New!* Bot/Server Information!",
+        "`" + prefix + "leave` - Kicks the bot from the server",
+        "`" + prefix + "list` - List responses, feel free to request one to be added",
+        "`" + prefix + "setchannel` - (Optional) Run this in a specific channel for Magic8 to operate in, type `m\*setchannel 0` to enable Magic8 for all channels",
+        "`" + prefix + "setreplies` - Set the type of replies for your server! Options: all, clean and just explicit.",
+        "`" + prefix + "top` - *New!* Top 10 8ball Guilds Plays"
+    ]
 
     let description = array.createText();
     let sicon = bot.user.displayAvatarURL;
@@ -27,7 +29,7 @@ module.exports.run = async (bot, message, args) => {
         .setThumbnail(sicon)
         .setColor("#9a00ff")
         .setDescription(description + "\n\nNeed more help? Click [here](https://discord.gg/MCRbYdc) for the Support Server!")
-          .setFooter("If you have any comments, questions or concerns, feel free to DM Fyrlex#2740 any time for assistance.")
+        .setFooter("If you have any comments, questions or concerns, feel free to DM Fyrlex#2740 any time for assistance.")
         .setTimestamp()
 
     message.channel.send(hEmbed);
@@ -37,12 +39,12 @@ module.exports.run = async (bot, message, args) => {
 
     let log = bot.channels.get(botconfig.commandlogs)
 
-    let timechange = new Date(new Date().getTime() - (4*3600000)).toLocaleString()
+    let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
 
     log.send("`" + `${timechange} [COMMAND]: 'help', Author: ${message.author.username}, Server: ${message.guild.name} (${users}/${bots})` + "`")
 }
 
-Array.prototype.createText = function() {
+Array.prototype.createText = function () {
     return this.join("\n")
 }
 

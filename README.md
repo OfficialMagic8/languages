@@ -1,8 +1,6 @@
 Magic8
 ============
 
-Welcome to Magic8's Github page! 
-
 Magic8 is an interactive Discord Bot circled around the IRL game, Magic 8 ball! With Magic8 you can ask it a question and get a funny response! There are a lot more options and command that make Magic8 very unique such as \*top which displays the top 10 servers that use the 8ball command! Magic8 is very good for fun/social/community servers as it will bring a laugh to everyone! 
 
 
@@ -22,6 +20,8 @@ m*list // List the responses (open for ideas, just DM the owner)
 
 m*setchannel // Want a specific channel for Magic8 to work in? Type this in any channel to set it, type `setchannel 0` to reenable Magic8 for all channels!
 
+m*setreplies - Set the type of replies for your server! Options: all, clean and just explicit!
+
 m*top // *New!* Top 10 8ball Guilds Plays
 
 
@@ -38,4 +38,4 @@ m*top // *New!* Top 10 8ball Guilds Plays
 Developer: Fyrlex#2740
 
 Developer's note: Contact me any time for suggestions, comments or questions!
-[Support Discord](https://dicsord.gg/MYKfu5Q "Performance Bots")
+[Support Discord](https://dicsord.gg/MYKfu5Q "Magic8 Support Server")

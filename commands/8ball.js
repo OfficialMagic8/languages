@@ -4,9 +4,9 @@ const botconfig = require("../botconfig.json");
 module.exports.run = async (bot, message, args) => {
 
     message.delete();
-  
-    // if (message.author.id !== "292821168833036288") return message.reply("This command is having a new feature added to it! Please be patient, this may go on and off until the work is done and operating correctly!");
-    
+
+    if (message.author.id !== "292821168833036288") return message.reply("This command is having a new feature added to it! Please be patient, this may go on and off until the work is done and operating correctly!");
+
     if (!EnmapGuildCommandsDb.has(`${message.guild.id}`)) {
         const guildCommands = EnmapGuildCommandsDb.ensure(message.guild.id, {
             gcount: 0,
@@ -36,13 +36,24 @@ module.exports.run = async (bot, message, args) => {
     if (!message.content.endsWith("?")) return message.channel.send(noquestionmark).then(msg => {
         msg.delete(10000)
     })
-  
-    let replies = botconfig.replies
+
+    let replynumber = EnmapRepliesDb.get(`${message.guild.id}`, "replynumber")
+    let replies;
+    if (replynumber === 1) {
+        replies = botconfig.all
+    }
+    if (replynumber === 2) {
+        replies = botconfig.clean
+    }
+    if (replynumber === 3) {
+        replies = botconfig.explicit
+    }
+
     let botname = bot.user.username;
 
     let result = Math.floor((Math.random() * replies.length));
     let question = args.slice(0).join(" ");
-  
+
     let answer = replies[result];
 
 
@@ -55,51 +66,9 @@ module.exports.run = async (bot, message, args) => {
         .addField("Question", question)
         .addField("Answer", answer)
         .setTimestamp()
-        .setFooter("Join Support: discord.gg/MCRbYdc - Magic8 by Fyrlex#2740")
-    // .setFooter("Press 📌 to pin! - Magic8 by Fyrlex#2740")
+        .setFooter("Join support @ discord.gg/MCRbYdc - Magic8")
 
     message.channel.send(ballEmbed)
-//           .then(async message => {
-//              message.react('📌');
-//             });
-
-            // bot.on('messageReactionAdd', async (reaction, user) => {
-
-              // if (message.react !=='📌') return;
-//               if (reaction.count >= 3) return;
-//               if (reaction.count === 2) {
-
-//               reaction.message.pin();
-
-//               let pinnedEmbed = new Discord.RichEmbed()
-
-//               .setColor("#9a00ff")
-//               .setDescription("**8ball message successfully pinned!**")
-
-//               message.channel.send(pinnedEmbed).then(msg => (msg.delete(10000)))
-
-//               let fyrlex = bot.users.get("292821168833036288")
-
-//               let embed = new Discord.RichEmbed()
-
-//               .setColor("#9a00ff")
-//               .setDescription("**Someone pinned an 8ball!**")
-//               .setTimestamp()
-
-//               fyrlex.send(embed)
-
-//                 setTimeout(function() {
-//                   reaction.remove("484148705507934208")
-//                 });
-//                 setTimeout(function() {
-//                   reaction.remove(message.author.id)
-//                 });
-
-//               if (reaction.count === 1) return;
-//               }
-//           });
-
-    // logging
 
     let n = EnmapGuildCommandsDb.get(`${message.guild.id}`, "gcount")
     let fix1 = parseInt(n)
@@ -119,7 +88,7 @@ module.exports.run = async (bot, message, args) => {
 
     let log = bot.channels.get(botconfig.commandlogs)
 
-    let timechange = new Date(new Date().getTime() - (4*3600000)).toLocaleString()
+    let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
 
     log.send("`" + `${timechange} [COMMAND]: '8ball', Message: "${message.content}" Author: ${message.author.tag}, Server: ${message.guild.name} (${users}/${bots})` + "`")
 }

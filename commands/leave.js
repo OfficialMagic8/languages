@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const botconfig = require("../botconfig.json");
 
 module.exports.run = async (bot, message, args) => {
 
@@ -27,16 +28,16 @@ module.exports.run = async (bot, message, args) => {
     let bots = message.guild.members.filter(member => member.user.bot).size;
     let users = message.guild.members.filter(member => !member.user.bot).size;
 
-    let fyrlex = bot.users.get("292821168833036288")
+    let log = bot.channels.get(botconfig.commandlogs)
 
     let d = Date(Date.now());
     let date = d.toString().split(' ');
 
-    let timechange = new Date(new Date().getTime() - (4*3600000)).toLocaleString()
+    let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
 
-    fyrlex.send("`" + `${timechange} [COMMAND]: 'leave', Author: ${message.author.username}, Server: ${message.guild.name} (${users}/${bots})` + "`")
+    log.send("`" + `${timechange} [COMMAND]: 'leave', Author: ${message.author.username}, Server: ${message.guild.name} (${users}/${bots})` + "`")
 
-    setTimeout(function() {
+    setTimeout(function () {
         message.guild.leave(), 2000
     });
 }

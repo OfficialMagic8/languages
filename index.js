@@ -13,7 +13,6 @@ setInterval(() => {
     http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
 }, 900000);
 
-// test
 
 const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
@@ -26,7 +25,7 @@ let fyrlex = bot.users.get("292821168833036288")
 
 let shit = []
 
-if(shit.length >= 10){
+if (shit.length >= 10) {
     shit.push(shit.join("\n"))
     shit = []
 }
@@ -40,21 +39,27 @@ global.EnmapChannelIDDb = new Enmap({
 global.EnmapGuildNameCommandsDb = new Enmap({
     name: "gncount"
 });
+global.EnmapPrefixDb = new Enmap({
+    name: "gprefix"
+});
+global.EnmapRepliesDb = new Enmap({
+    name: "replynumber"
+});
 
 //----------------------------------------------------------
 
 bot.commands = new Discord.Collection();
 
 fs.readdir("./commands/", (err, files) => {
-    
-    if (err) console.log(err);
-    
+
+    if (err) console.log(err)
+
     let jsfile = files.filter(f => f.split(".").pop() === "js")
     if (jsfile.length <= 0) {
         console.log("There are no commands to load...");
         return;
     }
-    
+
     jsfile.forEach((f, i) => {
         let props = require(`./commands/${f}`);
         console.log(`${f} loaded!`);
@@ -67,49 +72,54 @@ fs.readdir("./commands/", (err, files) => {
 bot.commands = new Discord.Collection();
 
 bot.on("ready", async () => {
-    
+
     bot.user.setStatus("online")
-    
+
     // Maintenance Line
     // bot.user.setActivity(`UPDATES UNDERWAY, POSSIBLE ERRORS`)
-    
+
+    let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
+    let log = bot.channels.get(botconfig.otherlogs)
+
+    log.send("`" + `${timechange} [READY]: From restart or edit` + "`")
+
     bot.user.setActivity(`${bot.guilds.size} servers`);
-    
+
     let statuses = ["m*help", `${bot.guilds.size} servers`]
-    
-    setInterval(function() {
-        
+
+    setInterval(function () {
+
         let status = statuses[Math.floor(Math.random() * statuses.length)];
-        
+
         bot.user.setActivity(status)
     }, 10000)
-    
+
     console.log("Ready with " + bot.guilds.size + " servers. " + bot.users.size + " users. " + bot.channels.size + " channels.")
 });
 
 bot.on('channelDelete', async channel => {
-    
+
     let thesetchannelid = EnmapChannelIDDb.get(`${channel.guild.id}`, "channelid")
-    
+
     if (channel.id === thesetchannelid) {
-        
+
         EnmapChannelIDDb.delete(channel.guild.id)
-        
+
         const guildChannelID = EnmapChannelIDDb.set(channel.guild.id, {
             channelid: 0,
             id: channel.guild.id
         });
         await EnmapChannelIDDb.inc(channel.guild.id, "channelid");
-        
+
         let thenewchannelid = EnmapChannelIDDb.get(`${channel.guild.id}`, "channelid")
     }
 });
 
 bot.on("message", message => {
-    
+
     if (message.author.bot) return;
     if (message.channel.type === "dm") return;
-    
+
     if (!EnmapGuildNameCommandsDb.has(`${message.guild.id}`)) {
         const guildNameCommands = EnmapGuildNameCommandsDb.set(message.guild.id, {
             gncount: 0,
@@ -131,40 +141,47 @@ bot.on("message", message => {
         });
         EnmapChannelIDDb.inc(message.guild.id, "channelid");
     }
-    
+    if (!EnmapRepliesDb.has(`${message.guild.id}`)) {
+        const guildReplies = EnmapRepliesDb.set(message.guild.id, {
+            replynumber: 1,
+            id: message.guild.id
+        });
+        EnmapRepliesDb.inc(message.guild.id, "replynumber");
+    }
+
     let thechannelid = EnmapChannelIDDb.get(`${message.guild.id}`, "channelid")
-    
+
     if (thechannelid !== 1) {
-        
+
         if (message.content.startsWith("m*")) {
-            
+
             if (!message.content.startsWith("m*setchannel")) {
-                
+
                 if (message.channel.id !== thechannelid) {
-                    
+
                     let embed = new Discord.RichEmbed()
                         .setColor("#ff0000")
                         .setDescription("**ERROR:** There is a set channel, please go to <#" + thechannelid + "> to use **Magic8**.")
                         .setTimestamp()
                         .setFooter("Want to delete the channel? Type 'm\*setchannel 0' - Magic8")
-                    
+
                     message.channel.send(embed).then(msg => msg.delete(30000))
-                    
+
                     message.delete();
                     return;
                 }
             }
         }
     }
-    
-   
+
+
     let prefix = botconfig.prefix;
-    
+
     if (!message.content.startsWith(prefix)) return;
     let messageArray = message.content.split(" ");
     let cmd = messageArray[0].toLowerCase()
     let args = messageArray.slice(1);
-    
+
     let commandfile = bot.commands.get(cmd.slice(prefix.length));
     if (commandfile) commandfile.run(bot, message, args);
 });
@@ -172,35 +189,41 @@ bot.on("message", message => {
 //----------------------------------------------------------
 
 bot.on('guildUpdate', async (oldGuild, newGuild) => {
-    
+
     EnmapGuildNameCommandsDb.delete(oldGuild.id)
-    
+
     let guildidcount = EnmapGuildCommandsDb.get(`${oldGuild.id}`, "gcount")
-    
+
     const guildNameCommands = EnmapGuildNameCommandsDb.ensure(newGuild.id, {
         gncount: guildidcount,
         id: bot.guilds.get(newGuild.id).name
     });
     await EnmapGuildNameCommandsDb.inc(newGuild.id, "gncount");
-    
-    let cdate = oldGuild.createdAt.toString().split(' ');
-  
+
+    if (!EnmapRepliesDb.has(`${message.guild.id}`)) {
+        const guildReplies = EnmapRepliesDb.set(message.guild.id, {
+            replynumber: 1,
+            id: message.guild.id
+        });
+        EnmapRepliesDb.inc(message.guild.id, "replynumber");
+    }
+
     let bots = newGuild.members.filter(member => member.user.bot).size;
     let users = newGuild.members.filter(member => !member.user.bot).size;
-    
-    let timechange = new Date(new Date().getTime() - (4*3600000)).toLocaleString()
-    
-    let changeMessage = (`${timechange} [GUILD.UPDATE]: Guild: '${oldGuild.name}', New Name: '${newGuild.name}', ID: '${newGuild.id} | (users/bots)'`)
-    let fyrlex = bot.users.get("292821168833036288")
-    
-    fyrlex.send(changeMessage)
+
+    let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
+
+    let changeMessage = ("`" + `${timechange} [GUILD.UPDATE]: Guild: '${oldGuild.name}', New Name: '${newGuild.name}', ID: '${newGuild.id}' | (${users}/${bots})` + "`")
+    let log = bot.channels.get(botconfig.guildlogs)
+
+    log.send(changeMessage)
 });
 
 bot.on('guildCreate', guild => {
-        
+
     bot.user.setActivity(`with your mind | *help | ${bot.guilds.size} servers`)
     console.log(`Now in ${bot.guilds.size} servers!`)
-  
+
     let cdate = guild.createdAt.toString().split(' ');
 
     const guildCommands = EnmapGuildCommandsDb.set(guild.id, {
@@ -208,53 +231,57 @@ bot.on('guildCreate', guild => {
         id: guild.id
     });
     EnmapGuildCommandsDb.inc(guild.id, "gcount");
-    
+
     const guildNameCommands = EnmapGuildNameCommandsDb.set(guild.id, {
         gncount: 0,
         id: bot.guilds.get(guild.id).name
     });
     EnmapGuildNameCommandsDb.inc(guild.id, "gncount");
-    
+
     const thechannelID = EnmapChannelIDDb.set(guild.id, {
         channelid: 0,
         id: guild.id
     });
     EnmapChannelIDDb.inc(guild.id, "channelid");
-    
+
+    const guildReplies = EnmapRepliesDb.set(guild.id, {
+        replynumber: 1,
+        id: guild.id
+    });
+    EnmapRepliesDb.inc(guild.id, "replynumber");
+
     let bots = guild.members.filter(member => member.user.bot).size;
     let users = guild.members.filter(member => !member.user.bot).size;
     let channels = guild.channels.size;
-    
-    let timechange = new Date(new Date().getTime() - (4*3600000)).toLocaleString()
-    
-    let changeMessage = (`${timechange} [GUILD.JOIN]: Guild: '${guild.name}', ID: '${guild.id}, Created: ${cdate[1]}, ${cdate[2]}  ${cdate[3]} | (users/bots/channels)'`)
-    let fyrlex = bot.users.get("292821168833036288")
-    
-    fyrlex.send(changeMessage)
+
+    let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
+
+    let changeMessage = ("`" + `${timechange} [GUILD.JOIN]: Guild: '${guild.name}', ID: '${guild.id}', Created: ${cdate[1]}, ${cdate[2]} ${cdate[3]} | (${users}/${bots}/${channels})` + "`")
+    let log = bot.channels.get(botconfig.guildlogs)
+
+    log.send(changeMessage)
 });
 
 bot.on('guildDelete', guild => {
-    
+
     bot.user.setActivity(`with your mind | *help | ${bot.guilds.size} servers`)
-    
+
     EnmapGuildNameCommandsDb.delete(guild.id)
     EnmapGuildCommandsDb.delete(guild.id)
-  
-    // let uses = Enmap
-    
+
     let cdate = guild.createdAt.toString().split(' ');
-    
+
     let bots = guild.members.filter(member => member.user.bot).size;
     let users = guild.members.filter(member => !member.user.bot).size;
     let channels = guild.channels.size;
-    
-    let timechange = new Date(new Date().getTime() - (4*3600000)).toLocaleString()
-    
-    let changeMessage = (`${timechange} [GUILD.LEFT]: Guild: '${guild.name}', ID: '${guild.id}, Created: ${cdate[1]}, ${cdate[2]}  ${cdate[3]} | (users/bots/channels)'`)
-    let fyrlex = bot.users.get("292821168833036288")
-    
-    fyrlex.send(changeMessage)
-  
+
+    let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
+
+    let changeMessage = ("`" + `${timechange} [GUILD.LEFT]: Guild: '${guild.name}', ID: '${guild.id}', Created: ${cdate[1]}, ${cdate[2]} ${cdate[3]} | (${users}/${bots}/${channels})` + "`")
+    let log = bot.channels.get(botconfig.guildlogs)
+
+    log.send(changeMessage)
+
     EnmapGuildNameCommandsDb.delete(guild.id)
     EnmapGuildCommandsDb.delete(guild.id)
 });
