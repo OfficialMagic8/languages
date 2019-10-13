@@ -1,4 +1,8 @@
-Magic8
+<div align="center">
+<img src="https://cdn.discordapp.com/avatars/484148705507934208/65e76d98bf2644416f8c05a18201bfa8.png?size=128"><br>
+  <h1>Magic8</h1>
+</div>
+
 ============
 
 Magic8 is an interactive Discord Bot circled around the IRL game, Magic 8 ball! With Magic8 you can ask it a question and get a funny response! There are a lot more options and command that make Magic8 very unique such as \*top which displays the top 10 servers that use the 8ball command! Magic8 is very good for fun/social/community servers as it will bring a laugh to everyone! 
