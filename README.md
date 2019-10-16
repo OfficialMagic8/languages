@@ -24,17 +24,19 @@ m*8ball // Play 8ball, replies with an embed response
 
 m*help // Displays the help menu
 
-m*info // *New!* Bot/Server Information!
+m*info // Bot/Server Information
 
 m*leave // Kicks the bot from your Discord server, replies with the invite link incase you want to invite Magic8 back
 
-m*list // List the responses (open for ideas, just DM the owner)
+m*list // List the responses for 8ball, feel free to request one to be added
 
-m*setchannel // Want a specific channel for Magic8 to work in? Type this in any channel to set it, type `setchannel 0` to reenable Magic8 for all channels!
+m*odds <dare> // *New!* Odds game, type the command for help
 
-m*setreplies // *New!* Set the type of replies for your server! Options: all, clean and just explicit!
+m*setchannel <8ball/odds> [0] - Run in channel for the game to work in, type 0 to reenable for all channels
 
-m*top // Top 10 8ball Guilds Plays
+m*setreplies <all/explicit/clean> // *New!* Set the type of replies for your server! Options: all, clean and just explicit!
+
+m*top <8ball/odds // Top 10 Plays for the 8ball game or Odds game
 
 
 
