@@ -46,4 +46,5 @@ m*top <8ball/odds // Top 10 Plays for the 8ball game or Odds game
 Developer: Fyrlex#2740
 
 Developer's note: Contact me any time for suggestions, comments or questions!
+
 [Support Discord](https://dicsord.gg/MYKfu5Q "Magic8 Support Server")
