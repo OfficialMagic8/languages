@@ -2,13 +2,7 @@
 <img src="https://cdn.discordapp.com/avatars/484148705507934208/65e76d98bf2644416f8c05a18201bfa8.png?size=128"><br>
   <h1>Magic8</h1><br><br>
 <a href="https://top.gg/bot/484148705507934208" >
-  <img src="https://top.gg/api/widget/status/484148705507934208.svg?noavatar=true" alt="Magic8" />
-</a>
-  <a href="https://top.gg/bot/484148705507934208" >
-  <img src="https://top.gg/api/widget/lib/484148705507934208.svg?noavatar=true" alt="Magic8" />
-</a>
- <a href="https://top.gg/bot/484148705507934208" >
-  <img src="https://top.gg/api/widget/owner/484148705507934208.svg?noavatar=true" alt="Magic8" />
+  <img src="https://top.gg/api/widget/484148705507934208.svg" alt="Magic8" />
 </a>
 </div>
 
