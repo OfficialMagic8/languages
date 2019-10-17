@@ -6,6 +6,10 @@ module.exports.run = async (bot, message, args) => {
 
     message.delete();
 
+    let maintenance = botconfig.maintenance;
+
+    // if (message.author.id !== "292821168833036288") return message.reply(maintenance);
+
     let needperm = "I need the permission `Manage Messages/Embed Links` to send my messages and delete your message!"
 
     if (!message.guild.me.hasPermission("EMBED_LINKS")) return message.reply(needperm).then(msg => {
@@ -29,10 +33,10 @@ module.exports.run = async (bot, message, args) => {
 
             .setColor("#9a00ff")
             .setThumbnail(sicon)
-            .setTitle("Responses for Magic8")
+            .setTitle("Responses for 8ball")
             .setDescription("The responses are categoriezed by `all`, `clean` and `explicit`. Suggestions for organizing/adding responses are greatly appreciated.\n\nLink: __" + ahaste + "__")
             .setTimestamp()
-            .setFooter("Join support @ discord.gg/MCRbYdc - Magic8")
+            .setFooter("Join support @ discord.gg/MCRbYdc - Magic8", bot.user.displayAvatarURL)
 
         message.author.send(listembed)
     });

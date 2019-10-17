@@ -5,8 +5,12 @@ module.exports.run = async (bot, message, args) => {
 
     message.delete();
 
-    if (message.author.id !== "292821168833036288") return message.reply("This command is having a new feature added to it! Please be patient, this may go on and off until the work is done and operating correctly!");
+    let maintenance = botconfig.maintenance;
 
+    // if (message.author.id !== "292821168833036288") return message.reply(maintenance);
+
+    let ev = botconfig.eversion; 
+  
     if (!EnmapGuildCommandsDb.has(`${message.guild.id}`)) {
         const guildCommands = EnmapGuildCommandsDb.ensure(message.guild.id, {
             gcount: 0,
@@ -29,9 +33,9 @@ module.exports.run = async (bot, message, args) => {
     })
 
     let noquestionmark = new Discord.RichEmbed()
-
+        .setColor("#ff0000")    
         .setDescription("**ERROR:** Please ask a full question with `?` at the end!")
-        .setColor("#ff0000")
+        .setTimestamp()
 
     if (!message.content.endsWith("?")) return message.channel.send(noquestionmark).then(msg => {
         msg.delete(10000)
@@ -53,20 +57,17 @@ module.exports.run = async (bot, message, args) => {
 
     let result = Math.floor((Math.random() * replies.length));
     let question = args.slice(0).join(" ");
-
     let answer = replies[result];
-
 
     let ballEmbed = new Discord.RichEmbed()
 
-        .setThumbnail("https://cdn.shopify.com/s/files/1/0972/7116/products/magic_8_ball_sours_tin.png?v=1503344861")
         .setColor("#9a00ff")
-        .setAuthor(`${botname} - 8Ball`, bot.user.displayAvatarURL)
+        .setAuthor(`${botname} - 8Ball ${ev}`, bot.user.displayAvatarURL)
         .setDescription(`Asked by ${message.author.tag}`)
         .addField("Question", question)
         .addField("Answer", answer)
         .setTimestamp()
-        .setFooter("Join support @ discord.gg/MCRbYdc - Magic8")
+        .setFooter("Join support @ discord.gg/MCRbYdc - Magic8", bot.user.displayAvatarURL)
 
     message.channel.send(ballEmbed)
 
@@ -75,7 +76,6 @@ module.exports.run = async (bot, message, args) => {
     let finalproduct = fix1 + 1;
 
     EnmapGuildCommandsDb.set(`${message.guild.id}`, finalproduct, "gcount")
-
 
     let n2 = EnmapGuildNameCommandsDb.get(`${message.guild.id}`, "gncount")
     let fix2 = parseInt(n2)

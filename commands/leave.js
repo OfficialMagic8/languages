@@ -5,6 +5,10 @@ module.exports.run = async (bot, message, args) => {
 
     message.delete();
 
+    let maintenance = botconfig.maintenance;
+
+    // if (message.author.id !== "292821168833036288") return message.reply(maintenance);
+
     let noperm = new Discord.RichEmbed()
 
         .setDescription("**ERROR:** You must have `ADMINISTRATOR` to do this.")
@@ -29,9 +33,6 @@ module.exports.run = async (bot, message, args) => {
     let users = message.guild.members.filter(member => !member.user.bot).size;
 
     let log = bot.channels.get(botconfig.commandlogs)
-
-    let d = Date(Date.now());
-    let date = d.toString().split(' ');
 
     let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
 

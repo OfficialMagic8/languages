@@ -8,6 +8,10 @@ module.exports.run = async (bot, message, args) => {
 
     message.delete();
 
+    let maintenance = botconfig.maintenance;
+
+    // if (message.author.id !== "292821168833036288") return message.reply(maintenance);
+
     if (!EnmapGuildCommandsDb.has(`${message.guild.id}`)) {
         const guildCommands = EnmapGuildCommandsDb.ensure(message.guild.id, {
             gcount: 0,
@@ -23,16 +27,44 @@ module.exports.run = async (bot, message, args) => {
         EnmapGuildNameCommandsDb.inc(message.guild.id, "gncount");
     }
 
-    if (!EnmapChannelIDDb.has(`${message.guild.id}`)) {
-        const channelID = EnmapChannelIDDb.ensure(message.guild.id, {
-            channelid: 0,
+    if (!EnmapEChannelIDDb.has(`${message.guild.id}`)) {
+        const ochannelID = EnmapEChannelIDDb.ensure(message.guild.id, {
+            echannelid: 0,
             id: message.guild.id
         });
-        EnmapChannelIDDb.inc(message.guild.id, "channelid");
+        EnmapEChannelIDDb.inc(message.guild.id, "echannelid");
+    }
+  
+    if (!EnmapOChannelIDDb.has(`${message.guild.id}`)) {
+        const ochannelID = EnmapOChannelIDDb.ensure(message.guild.id, {
+            ochannelid: 0,
+            id: message.guild.id
+        });
+        EnmapOChannelIDDb.inc(message.guild.id, "ochannelid");
+    }
+  
+    if (!EnmapGOCDb.has(`${message.guild.id}`)) {
+        const goc = EnmapGOCDb.ensure(message.guild.id, {
+            goc: 0,
+            id: message.guild.id
+        });
+        EnmapGOCDb.inc(message.guild.id, "goc");
+    }
+  
+    if (!EnmapGONCDb.has(`${message.guild.id}`)) {
+        const gonc = EnmapGONCDb.ensure(message.guild.id, {
+            gonc: 0,
+            id: message.guild.id
+        });
+        EnmapGONCDb.inc(message.guild.id, "gonc");
     }
 
-    let totalguildCommands = EnmapGuildCommandsDb.get(`${message.guild.id}`, "gcount")
-    let thesetchannelid = EnmapChannelIDDb.get(`${message.guild.id}`, "channelid")
+    let total8ballCommands = EnmapGuildCommandsDb.get(`${message.guild.id}`, "gcount")
+    let totalOddsCommands = EnmapGOCDb.get(`${message.guild.id}`, "goc")
+    
+    let theEchannelid = EnmapEChannelIDDb.get(`${message.guild.id}`, "echannelid")
+    let theOchannelid = EnmapOChannelIDDb.get(`${message.guild.id}`, "ochannelid")
+    
     let replynumber = EnmapRepliesDb.get(`${message.guild.id}`, "replynumber")
 
     let replytype = replynumber
@@ -46,23 +78,35 @@ module.exports.run = async (bot, message, args) => {
         replytype = "explicit"
     }
 
-
-
-    let channelname;
-    let abrackethashtag = "<#"
-    let abracket = ">"
-    let nochannel = EnmapChannelIDDb.get(`${message.guild.id}`, "channelid")
-    if (nochannel === 1) {
-        channelname = "none"
-        abrackethashtag = "`"
-        abracket = "`"
-
+    let echannelname;
+    let eabrackethashtag = "<#"
+    let eabracket = ">"
+    let enochannel = EnmapEChannelIDDb.get(`${message.guild.id}`, "echannelid")
+    if (enochannel === 1) {
+        echannelname = "none"
+        eabrackethashtag = ""
+        eabracket = ""
     } else {
-        channelname = thesetchannelid
+        echannelname = theEchannelid
+    }
+  
+    let ochannelname;
+    let oabrackethashtag = "<#"
+    let oabracket = ">"
+    let onochannel = EnmapOChannelIDDb.get(`${message.guild.id}`, "ochannelid")
+    if (onochannel === 1) {
+        ochannelname = "none"
+        oabrackethashtag = ""
+        oabracket = ""
+    } else {
+        ochannelname = theOchannelid
     }
 
     let no8ball = EnmapGuildCommandsDb.get(`${message.guild.id}`, "gcount"); {
-        totalguildCommands = no8ball - 1
+        total8ballCommands = no8ball - 1
+    }
+    let noOdds = EnmapGOCDb.get(`${message.guild.id}`, "goc"); {
+        totalOddsCommands = noOdds - 1
     }
 
 
@@ -71,7 +115,6 @@ module.exports.run = async (bot, message, args) => {
 
     let sbots = message.guild.members.filter(member => member.user.bot).size;
     let susers = message.guild.members.filter(member => !member.user.bot).size;
-    let schannels = message.guild.channels.size;
     let users = bot.users.size;
     let channels = bot.channels.size;
     let online = message.guild.members.filter(member => member.presence.status !== 'offline').size
@@ -80,13 +123,13 @@ module.exports.run = async (bot, message, args) => {
     let botinfoembed = new Discord.RichEmbed()
 
         .setColor("#9a00ff")
-        .setAuthor(`${botname} - Statistics`, bot.user.displayAvatarURL)
-        .setDescription("\n8ball has been played **" + totalguildCommands + "** times in **" + message.guild.name + "**!\n\n**__Bot Stats__**\n**Total Guilds:** " + bot.guilds.size + "\n**Total Users:** " + users + "\n**Total Channels:** " + channels + "\n\n**__Server Stats__**\n**Bots/Users/Online:** " + sbots + "/" + susers + "/" + online + "\n**Text/Voice Channels:** " + tchannels + "/" + vchannels + `\n\n**Set Channel:** ${abrackethashtag}` + channelname + `${abracket}\n`)
+        .setAuthor(`${botname} - Information`, bot.user.displayAvatarURL)
+        .setDescription("In **" + message.guild.name + "**, 8ball has been played **" + total8ballCommands + "** times and Odds has been played **" + totalOddsCommands + "** times!\n\n**__Bot Stats__**\n**Total Guilds:** " + bot.guilds.size + "\n**Total Users:** " + users + "\n**Total Channels:** " + channels + "\n\n**__Server Stats__**\n**Bots/Users/Online:** " + sbots + "/" + susers + "/" + online + "\n**Text/Voice Channels:** " + tchannels + "/" + vchannels + "\n\n__**Channels**__\n" + `**8ball:** ${eabrackethashtag}` + echannelname + `${eabracket}\n**Odds:** ${oabrackethashtag}` + ochannelname + `${oabracket}`)
         .addField("Reply Type", replytype)
         .addField("Ping", `${Date.now() - message.createdTimestamp}ms`)
-        .addField("Source Code", "__https://github.com/Fyrlex/Magic8__")
-        .addField("Support Server", "__https://discord.gg/MCRbYdc__")
-        .setFooter("Developed by Fyrlex#2740 on Tuesday, 8/28/2018 by Fyrlex#2740")
+        .addField("Source Code", "__https://github.com/Fyrlex/Magic8__", true)
+        .addField("Support Server", "__https://discord.gg/MCRbYdc__", true)
+        .setFooter("Developed by Fyrlex#2740 on Tuesday, 8/28/2018 by Fyrlex#2740", bot.user.displayAvatarURL)
         .setTimestamp()
 
     message.channel.send(botinfoembed);

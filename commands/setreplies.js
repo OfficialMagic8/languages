@@ -5,6 +5,10 @@ module.exports.run = async (bot, message, args) => {
 
     message.delete();
 
+    let maintenance = botconfig.maintenance;
+
+    // if (message.author.id !== "292821168833036288") return message.reply(maintenance);
+
     let needperm = "I need the permission `Manage Messages/Embed Links` to send my messages and delete your message!"
 
     if (!message.guild.me.hasPermission("EMBED_LINKS")) return message.reply(needperm).then(msg => {
@@ -29,7 +33,7 @@ module.exports.run = async (bot, message, args) => {
     let users = message.guild.members.filter(member => !member.user.bot).size;
     let log = bot.channels.get(botconfig.commandlogs)
     let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
-    let logmsg = "`" + `${timechange} [COMMAND]: 'setreplies', Author: ${message.author.username}, Server: ${message.guild.name} (${users}/${bots})` + "`"
+    let logmsg = "`" + `${timechange} [COMMAND]: 'setreplies ${args[0]}', Author: ${message.author.username}, Server: ${message.guild.name} (${users}/${bots})` + "`"
 
     let newreplies = args[0];
 
@@ -38,7 +42,7 @@ module.exports.run = async (bot, message, args) => {
         .setAuthor("Replies Set")
         .setColor("#00ff00")
         .setDescription("You will now receive: `" + newreplies + "` responses!")
-        .setFooter("Magic8")
+        .setFooter("Join support @ discord.gg/MCRbYdc - Magic8", bot.user.displayAvatarURL)
         .setTimestamp()
 
     if (!newreplies) return message.channel.send(incorrectembed)
