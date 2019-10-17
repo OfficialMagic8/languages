@@ -14,7 +14,7 @@ Magic8 is an interactive Discord Bot circled around the well knowwn game, Magic 
 ## Commands
 Prefix: m*
 
-m*8ball // Play 8ball, replies with an embed response
+m*8ball <yes or no question> // Play 8ball
 
 m*help // Displays the help menu
 
@@ -24,7 +24,7 @@ m*leave // Kicks the bot from your Discord server, replies with the invite link 
 
 m*list // List the responses for 8ball, feel free to request one to be added
 
-m*odds <dare> // *New!* Odds game, type the command for help
+m*odds <dare> // *New!* Play Odds, type the command for help
 
 m*setchannel <8ball/odds> [0] - Run in channel for the game to work in, type 0 to reenable for all channels
 
