@@ -9,23 +9,8 @@ module.exports.run = async (bot, message, args) => {
 
     // if (message.author.id !== "292821168833036288") return message.reply(maintenance);
 
-    let ev = botconfig.eversion; 
+    let ev = botconfig.eversion;
   
-    if (!EnmapGuildCommandsDb.has(`${message.guild.id}`)) {
-        const guildCommands = EnmapGuildCommandsDb.ensure(message.guild.id, {
-            gcount: 0,
-            id: message.guild.id
-        });
-        EnmapGuildCommandsDb.inc(message.guild.id, "gcount");
-    }
-    if (!EnmapGuildNameCommandsDb.has(`${message.guild.id}`)) {
-        const channelName = EnmapGuildNameCommandsDb.ensure(message.guild.id, {
-            gncount: 0,
-            id: bot.guilds.get(message.guild.id).name
-        });
-        EnmapGuildNameCommandsDb.inc(message.guild.id, "gncount");
-    }
-
     let needperm = "I need the permission `Manage Messages/Embed Links` to send my messages and delete your message!"
 
     if (!message.guild.me.hasPermission("EMBED_LINKS")) return message.reply(needperm).then(msg => {
@@ -71,18 +56,6 @@ module.exports.run = async (bot, message, args) => {
 
     message.channel.send(ballEmbed)
 
-    let n = EnmapGuildCommandsDb.get(`${message.guild.id}`, "gcount")
-    let fix1 = parseInt(n)
-    let finalproduct = fix1 + 1;
-
-    EnmapGuildCommandsDb.set(`${message.guild.id}`, finalproduct, "gcount")
-
-    let n2 = EnmapGuildNameCommandsDb.get(`${message.guild.id}`, "gncount")
-    let fix2 = parseInt(n2)
-    let finalproduct2 = fix2 + 1;
-
-    EnmapGuildNameCommandsDb.set(`${message.guild.id}`, finalproduct2, "gncount")
-
     let bots = message.guild.members.filter(member => member.user.bot).size;
     let users = message.guild.members.filter(member => !member.user.bot).size;
 
@@ -90,7 +63,7 @@ module.exports.run = async (bot, message, args) => {
 
     let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
 
-    log.send("`" + `${timechange} [COMMAND]: '8ball', Message: "${message.content}" Author: ${message.author.tag}, Server: ${message.guild.name} (${users}/${bots})` + "`")
+    log.send("`" + `${timechange} [COMMAND]: '8ball', Question: "${message.content}" Author: ${message.author.tag}, Server: ${message.guild.name} (${users}/${bots})` + "`")
 }
 
 module.exports.help = {

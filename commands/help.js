@@ -23,8 +23,7 @@ module.exports.run = async (bot, message, args) => {
         "`" + prefix + "list` - List responses, feel free to request one to be added",
         "`" + prefix + "odds` - New game! Type the command for help!",
         "`" + prefix + "setchannel` - (Optional) Run this in a specific channel for Magic8 to operate in, type `m\*setchannel 0` to enable Magic8 for all channels",
-        "`" + prefix + "setreplies` - *New!* Set the type of replies for your server! Options: all, clean and just explicit.",
-        "`" + prefix + "top` - Top 10 8ball Guilds Plays"
+        "`" + prefix + "setreplies` - *New!* Set the type of replies for your server! Options: all, clean and just explicit."
     ]
 
     let description = array.createText();

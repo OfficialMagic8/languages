@@ -13,7 +13,6 @@ setInterval(() => {
     http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
 }, 900000);
 
-
 const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
 
@@ -21,27 +20,17 @@ const Enmap = require('enmap')
 const fs = require("fs");
 const bot = new Discord.Client();
 
-let fyrlex = bot.users.get("292821168833036288")
+global.EnmapEChannelIDDb = new Enmap({
+    name: "echannelid"
+});
+global.EnmapOChannelIDDb = new Enmap({
+    name: "ochannelid"
+});
 
-let shit = []
+// global.EnmapPrefixDb = new Enmap({
+//     name: "gprefix"
+// });
 
-if (shit.length >= 10) {
-    shit.push(shit.join("\n"))
-    shit = []
-}
-
-global.EnmapGuildCommandsDb = new Enmap({
-    name: "gcount"
-});
-global.EnmapChannelIDDb = new Enmap({
-    name: "channelid"
-});
-global.EnmapGuildNameCommandsDb = new Enmap({
-    name: "gncount"
-});
-global.EnmapPrefixDb = new Enmap({
-    name: "gprefix"
-});
 global.EnmapRepliesDb = new Enmap({
     name: "replynumber"
 });
@@ -85,7 +74,7 @@ bot.on("ready", async () => {
 
     bot.user.setActivity(`${bot.guilds.size} servers`);
 
-    let statuses = ["m*help", `${bot.guilds.size} servers`]
+    let statuses = ["with the new Odds game!", `${bot.guilds.size} servers`]
 
     setInterval(function () {
 
@@ -99,19 +88,30 @@ bot.on("ready", async () => {
 
 bot.on('channelDelete', async channel => {
 
-    let thesetchannelid = EnmapChannelIDDb.get(`${channel.guild.id}`, "channelid")
+    let theEchannelid = EnmapEChannelIDDb.get(`${channel.guild.id}`, "echannelid")
 
-    if (channel.id === thesetchannelid) {
+    if (channel.id === theEchannelid) {
 
-        EnmapChannelIDDb.delete(channel.guild.id)
+        EnmapEChannelIDDb.delete(channel.guild.id)
 
-        const guildChannelID = EnmapChannelIDDb.set(channel.guild.id, {
-            channelid: 0,
+        const eChannel = EnmapEChannelIDDb.set(channel.guild.id, {
+            echannelid: 0,
             id: channel.guild.id
         });
-        await EnmapChannelIDDb.inc(channel.guild.id, "channelid");
+        await EnmapEChannelIDDb.inc(channel.guild.id, "echannelid");
+    }
 
-        let thenewchannelid = EnmapChannelIDDb.get(`${channel.guild.id}`, "channelid")
+    let theOchannelid = EnmapEChannelIDDb.get(`${channel.guild.id}`, "ochannelid")
+
+    if (channel.id === theOchannelid) {
+
+        EnmapOChannelIDDb.delete(channel.guild.id)
+
+        const oChannel = EnmapOChannelIDDb.set(channel.guild.id, {
+            ochannelid: 0,
+            id: channel.guild.id
+        });
+        await EnmapOChannelIDDb.inc(channel.guild.id, "ochannelid");
     }
 });
 
@@ -120,27 +120,22 @@ bot.on("message", message => {
     if (message.author.bot) return;
     if (message.channel.type === "dm") return;
 
-    if (!EnmapGuildNameCommandsDb.has(`${message.guild.id}`)) {
-        const guildNameCommands = EnmapGuildNameCommandsDb.set(message.guild.id, {
-            gncount: 0,
-            id: bot.guilds.get(message.guild.id).name
-        });
-        EnmapGuildNameCommandsDb.inc(message.guild.id, "gncount");
-    }
-    if (!EnmapGuildCommandsDb.has(`${message.guild.id}`)) {
-        const guildNameCommands = EnmapGuildCommandsDb.set(message.guild.id, {
-            gcount: 0,
+    if (!EnmapEChannelIDDb.has(`${message.guild.id}`)) {
+        const eChannel = EnmapEChannelIDDb.set(message.guild.id, {
+            echannelid: 0,
             id: message.guild.id
         });
-        EnmapGuildCommandsDb.inc(message.guild.id, "gcount");
+        EnmapEChannelIDDb.inc(message.guild.id, "echannelid");
     }
-    if (!EnmapChannelIDDb.has(`${message.guild.id}`)) {
-        const guildNameCommands = EnmapChannelIDDb.set(message.guild.id, {
-            channelid: 0,
+
+    if (!EnmapOChannelIDDb.has(`${message.guild.id}`)) {
+        const oChannel = EnmapOChannelIDDb.set(message.guild.id, {
+            ochannelid: 0,
             id: message.guild.id
         });
-        EnmapChannelIDDb.inc(message.guild.id, "channelid");
+        EnmapOChannelIDDb.inc(message.guild.id, "ochannelid");
     }
+
     if (!EnmapRepliesDb.has(`${message.guild.id}`)) {
         const guildReplies = EnmapRepliesDb.set(message.guild.id, {
             replynumber: 1,
@@ -149,31 +144,51 @@ bot.on("message", message => {
         EnmapRepliesDb.inc(message.guild.id, "replynumber");
     }
 
-    let thechannelid = EnmapChannelIDDb.get(`${message.guild.id}`, "channelid")
 
-    if (thechannelid !== 1) {
 
-        if (message.content.startsWith("m*")) {
+    let theEchannelid = EnmapEChannelIDDb.get(`${message.guild.id}`, "echannelid")
 
-            if (!message.content.startsWith("m*setchannel")) {
+    if (theEchannelid !== 1) {
 
-                if (message.channel.id !== thechannelid) {
+        if (message.content.startsWith("m*8ball")) {
 
-                    let embed = new Discord.RichEmbed()
-                        .setColor("#ff0000")
-                        .setDescription("**ERROR:** There is a set channel, please go to <#" + thechannelid + "> to use **Magic8**.")
-                        .setTimestamp()
-                        .setFooter("Want to delete the channel? Type 'm\*setchannel 0' - Magic8")
+            if (message.channel.id !== theEchannelid) {
 
-                    message.channel.send(embed).then(msg => msg.delete(30000))
+                let embed = new Discord.RichEmbed()
+                    .setColor("#ff0000")
+                    .setDescription("**ERROR:** There is a set channel for `8ball`, please go to <#" + theEchannelid + "> to use the command!")
+                    .setTimestamp()
+                    .setFooter("Join support @ discord.gg/MCRbYdc - Magic8")
 
-                    message.delete();
-                    return;
-                }
+                message.channel.send(embed).then(msg => msg.delete(30000))
+
+                message.delete();
+                return;
             }
         }
     }
 
+    let theOchannelid = EnmapOChannelIDDb.get(`${message.guild.id}`, "ochannelid")
+
+    if (theOchannelid !== 1) {
+
+        if (message.content.startsWith("m*odds")) {
+
+            if (message.channel.id !== theOchannelid) {
+
+                let embed = new Discord.RichEmbed()
+                    .setColor("#ff0000")
+                    .setDescription("**ERROR:** There is a set channel, please go to <#" + theOchannelid + "> to use **Magic8**.")
+                    .setTimestamp()
+                    .setFooter("Join support @ discord.gg/MCRbYdc - Magic8")
+
+                message.channel.send(embed).then(msg => msg.delete(30000))
+
+                message.delete();
+                return;
+            }
+        }
+    }
 
     let prefix = botconfig.prefix;
 
@@ -189,24 +204,6 @@ bot.on("message", message => {
 //----------------------------------------------------------
 
 bot.on('guildUpdate', async (oldGuild, newGuild) => {
-
-    EnmapGuildNameCommandsDb.delete(oldGuild.id)
-
-    let guildidcount = EnmapGuildCommandsDb.get(`${oldGuild.id}`, "gcount")
-
-    const guildNameCommands = EnmapGuildNameCommandsDb.ensure(newGuild.id, {
-        gncount: guildidcount,
-        id: bot.guilds.get(newGuild.id).name
-    });
-    await EnmapGuildNameCommandsDb.inc(newGuild.id, "gncount");
-
-    if (!EnmapRepliesDb.has(`${message.guild.id}`)) {
-        const guildReplies = EnmapRepliesDb.set(message.guild.id, {
-            replynumber: 1,
-            id: message.guild.id
-        });
-        EnmapRepliesDb.inc(message.guild.id, "replynumber");
-    }
 
     let bots = newGuild.members.filter(member => member.user.bot).size;
     let users = newGuild.members.filter(member => !member.user.bot).size;
@@ -226,23 +223,13 @@ bot.on('guildCreate', guild => {
 
     let cdate = guild.createdAt.toString().split(' ');
 
-    const guildCommands = EnmapGuildCommandsDb.set(guild.id, {
-        gcount: 0,
+    EnmapEChannelIDDb.inc(guild.id, "echannelid");
+
+    const ochannel = EnmapOChannelIDDb.set(guild.id, {
+        ochannelid: 0,
         id: guild.id
     });
-    EnmapGuildCommandsDb.inc(guild.id, "gcount");
-
-    const guildNameCommands = EnmapGuildNameCommandsDb.set(guild.id, {
-        gncount: 0,
-        id: bot.guilds.get(guild.id).name
-    });
-    EnmapGuildNameCommandsDb.inc(guild.id, "gncount");
-
-    const thechannelID = EnmapChannelIDDb.set(guild.id, {
-        channelid: 0,
-        id: guild.id
-    });
-    EnmapChannelIDDb.inc(guild.id, "channelid");
+    EnmapOChannelIDDb.inc(guild.id, "ochannelid");
 
     const guildReplies = EnmapRepliesDb.set(guild.id, {
         replynumber: 1,
@@ -266,8 +253,8 @@ bot.on('guildDelete', guild => {
 
     bot.user.setActivity(`with your mind | *help | ${bot.guilds.size} servers`)
 
-    EnmapGuildNameCommandsDb.delete(guild.id)
-    EnmapGuildCommandsDb.delete(guild.id)
+    EnmapOChannelIDDb.delete(guild.id)
+    EnmapECchannlIDDb.delete(guild.id)
 
     let cdate = guild.createdAt.toString().split(' ');
 
@@ -281,9 +268,6 @@ bot.on('guildDelete', guild => {
     let log = bot.channels.get(botconfig.guildlogs)
 
     log.send(changeMessage)
-
-    EnmapGuildNameCommandsDb.delete(guild.id)
-    EnmapGuildCommandsDb.delete(guild.id)
 });
 
 bot.login(process.env.TOKEN);
