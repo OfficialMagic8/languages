@@ -4,6 +4,16 @@
   "commandlogs": "629736098028847104",
   "guildlogs": "629736566734061588",
   "otherlogs": "629742550881665044",
+  "noquestionmark": [
+    "ask with a '?' and you will be answered",
+    "try a '?' next time",
+    "i don't see a question mark here",
+    "not a question >:(",
+    "when will you remember that you're supposed to ask me a question?",
+    "do you know what a question mark is?",
+    "ask me an interrogative sentence you fool!",
+    "foolish statement! i need a question!"
+  ],
   "all": [
     "absolutely not",
     "ask your father",
