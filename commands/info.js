@@ -12,21 +12,6 @@ module.exports.run = async (bot, message, args) => {
 
     // if (message.author.id !== "292821168833036288") return message.reply(maintenance);
 
-    if (!EnmapGuildCommandsDb.has(`${message.guild.id}`)) {
-        const guildCommands = EnmapGuildCommandsDb.ensure(message.guild.id, {
-            gcount: 0,
-            id: message.guild.id
-        });
-        EnmapGuildCommandsDb.inc(message.guild.id, "gcount");
-    }
-    if (!EnmapGuildNameCommandsDb.has(`${message.guild.id}`)) {
-        const guildNameCommands = EnmapGuildNameCommandsDb.ensure(message.guild.id, {
-            gncount: 0,
-            id: bot.guilds.get(message.guild.id).name
-        });
-        EnmapGuildNameCommandsDb.inc(message.guild.id, "gncount");
-    }
-
     if (!EnmapEChannelIDDb.has(`${message.guild.id}`)) {
         const ochannelID = EnmapEChannelIDDb.ensure(message.guild.id, {
             echannelid: 0,
@@ -42,25 +27,6 @@ module.exports.run = async (bot, message, args) => {
         });
         EnmapOChannelIDDb.inc(message.guild.id, "ochannelid");
     }
-  
-    if (!EnmapGOCDb.has(`${message.guild.id}`)) {
-        const goc = EnmapGOCDb.ensure(message.guild.id, {
-            goc: 0,
-            id: message.guild.id
-        });
-        EnmapGOCDb.inc(message.guild.id, "goc");
-    }
-  
-    if (!EnmapGONCDb.has(`${message.guild.id}`)) {
-        const gonc = EnmapGONCDb.ensure(message.guild.id, {
-            gonc: 0,
-            id: message.guild.id
-        });
-        EnmapGONCDb.inc(message.guild.id, "gonc");
-    }
-
-    let total8ballCommands = EnmapGuildCommandsDb.get(`${message.guild.id}`, "gcount")
-    let totalOddsCommands = EnmapGOCDb.get(`${message.guild.id}`, "goc")
     
     let theEchannelid = EnmapEChannelIDDb.get(`${message.guild.id}`, "echannelid")
     let theOchannelid = EnmapOChannelIDDb.get(`${message.guild.id}`, "ochannelid")
@@ -102,14 +68,6 @@ module.exports.run = async (bot, message, args) => {
         ochannelname = theOchannelid
     }
 
-    let no8ball = EnmapGuildCommandsDb.get(`${message.guild.id}`, "gcount"); {
-        total8ballCommands = no8ball - 1
-    }
-    let noOdds = EnmapGOCDb.get(`${message.guild.id}`, "goc"); {
-        totalOddsCommands = noOdds - 1
-    }
-
-
     let vchannels = message.guild.channels.filter(chnl => chnl.type === "voice").size;
     let tchannels = message.guild.channels.filter(chnl => chnl.type === "text").size
 
@@ -124,7 +82,7 @@ module.exports.run = async (bot, message, args) => {
 
         .setColor("#9a00ff")
         .setAuthor(`${botname} - Information`, bot.user.displayAvatarURL)
-        .setDescription("In **" + message.guild.name + "**, 8ball has been played **" + total8ballCommands + "** times and Odds has been played **" + totalOddsCommands + "** times!\n\n**__Bot Stats__**\n**Total Guilds:** " + bot.guilds.size + "\n**Total Users:** " + users + "\n**Total Channels:** " + channels + "\n\n**__Server Stats__**\n**Bots/Users/Online:** " + sbots + "/" + susers + "/" + online + "\n**Text/Voice Channels:** " + tchannels + "/" + vchannels + "\n\n__**Channels**__\n" + `**8ball:** ${eabrackethashtag}` + echannelname + `${eabracket}\n**Odds:** ${oabrackethashtag}` + ochannelname + `${oabracket}`)
+        .setDescription(`\n\n**__Bot Stats__**\n**Total Guilds:** ${bot.guilds.size}\n**Total Users:** ${users}\n**Total Channels:** ${channels}\n\n**__Server Stats__**\n**Bots/Users/Online:** ${sbots}/${susers}/${online}\n**Text/Voice Channels:** ${tchannels}/${vchannels}\n\n__**Channels**__\n**8ball:** ${eabrackethashtag}${echannelname}${eabracket}\n**Odds:** ${oabrackethashtag}${ochannelname}${oabracket}`)
         .addField("Reply Type", replytype)
         .addField("Ping", `${Date.now() - message.createdTimestamp}ms`)
         .addField("Source Code", "__https://github.com/Fyrlex/Magic8__", true)
