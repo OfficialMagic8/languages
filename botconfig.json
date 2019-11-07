@@ -1,6 +1,10 @@
 {
   "ownerid": "292821168833036288",
+  "maintenance": "This command is receiving an update!",
+  "eversion": "v2.0",
+  "oversion": "v1.0",
   "prefix": "m*",
+  "testing": "633725136163438592",
   "commandlogs": "629736098028847104",
   "guildlogs": "629736566734061588",
   "otherlogs": "629742550881665044",
@@ -16,6 +20,7 @@
   ],
   "all": [
     "absolutely not",
+    "aight, i think imma head out now",
     "ask your father",
     "bruh you can't ask that",
     "bitch, really?",
@@ -59,6 +64,7 @@
   ],
   "clean": [
     "absolutely not",
+    "aight, i think imma head out now",
     "ask your father",
     "bruh you can't ask that",
     "come again?",
@@ -111,5 +117,21 @@
     "what was that, asswipe?",
     "when the lean runs out",
     "you can't fucking say that"
+  ],
+  "win": [
+    "HAHA! you loser!",
+    "yea that's right, i won.",
+    "LET'S GO! YOU COULDN'T GUESS MY NUMBER.",
+    "dubssss, try again!",
+    "another win for me!",
+    "I WIN.",
+    "you gonna give up yet? you keep losing."
+  ],
+  "lose": [
+    "aww man :(",
+    "aww shucks :(",
+    "you know what, f*ck you",
+    "damn you! i don't want to do that",
+    "you'll be doing that next time!"
   ]
 }
