@@ -16,14 +16,16 @@ module.exports.run = async (bot, message, args) => {
     })
 
     let prefix = botconfig.prefix
-    let array = ["`" + prefix + "8ball` - The Magic 8 Ball",
+    let array = [
+        "`" + prefix + "8ball` - The Magic 8 Ball",
+        "`" + prefix + "changelog` - Updates for magic8",
         "`" + prefix + "help` - Displays this help menu",
         "`" + prefix + "info` - Bot/Server Information!",
         "`" + prefix + "leave` - Kicks the bot from the server",
-        "`" + prefix + "list` - List responses, feel free to request one to be added",
-        "`" + prefix + "odds` - New game! Type the command for help!",
-        "`" + prefix + "setchannel` - (Optional) Run this in a specific channel for Magic8 to operate in, type `m\*setchannel 0` to enable Magic8 for all channels",
-        "`" + prefix + "setreplies` - *New!* Set the type of replies for your server! Options: all, clean and just explicit."
+        "`" + prefix + "list` - List responses for 8ball, feel free to request one to be added",
+        "`" + prefix + "odds` - *New1* Odds game, type the command for help",
+        "`" + prefix + "setchannel <8ball/odds> [0]` - Run in channel for the game to work in, type 0 to reenable for all channels",
+        "`" + prefix + "setreplies <all/clean/explicit` - *New!* Set the type of replies for your server!"
     ]
 
     let description = array.createText();
