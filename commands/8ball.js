@@ -74,7 +74,7 @@ module.exports.run = async (bot, message, args) => {
 
     let log = bot.channels.get(botconfig.commandlogs)
 
-    let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
+    let timechange = new Date(new Date().getTime() - (5 * 3600000)).toLocaleString()
 
     log.send("`" + `${timechange} [COMMAND]: '8ball', Question: "${message.content}" Author: ${message.author.tag}, Server: ${message.guild.name} (${users}/${bots})` + "`")
 }

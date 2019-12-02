@@ -32,7 +32,7 @@ module.exports.run = async (bot, message, args) => {
     let bots = message.guild.members.filter(member => member.user.bot).size;
     let users = message.guild.members.filter(member => !member.user.bot).size;
     let log = bot.channels.get(botconfig.commandlogs)
-    let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
+    let timechange = new Date(new Date().getTime() - (5 * 3600000)).toLocaleString()
     let logmsg = "`" + `${timechange} [COMMAND]: 'setreplies ${args[0]}', Author: ${message.author.username}, Server: ${message.guild.name} (${users}/${bots})` + "`"
 
     let newreplies = args[0];
