@@ -203,19 +203,6 @@ bot.on("message", message => {
 
 //----------------------------------------------------------
 
-bot.on('guildUpdate', async (oldGuild, newGuild) => {
-
-    let bots = newGuild.members.filter(member => member.user.bot).size;
-    let users = newGuild.members.filter(member => !member.user.bot).size;
-
-    let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
-
-    let changeMessage = ("`" + `${timechange} [GUILD.UPDATE]: Guild: '${oldGuild.name}', New Name: '${newGuild.name}', ID: '${newGuild.id}' | (${users}/${bots})` + "`")
-    let log = bot.channels.get(botconfig.guildlogs)
-
-    log.send(changeMessage)
-});
-
 bot.on('guildCreate', guild => {
 
     bot.user.setActivity(`with your mind | *help | ${bot.guilds.size} servers`)
