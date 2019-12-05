@@ -23,7 +23,6 @@ module.exports.run = async (bot, message, args) => {
         "`" + prefix + "info` - Bot/Server Information!",
         "`" + prefix + "leave` - Kicks the bot from the server",
         "`" + prefix + "list` - List responses for 8ball, feel free to request one to be added",
-        "`" + prefix + "odds` - *New1* Odds game, type the command for help",
         "`" + prefix + "setchannel <8ball/odds> [0]` - Run in channel for the game to work in, type 0 to reenable for all channels",
         "`" + prefix + "setreplies <all/clean/explicit` - *New!* Set the type of replies for your server!"
     ]
