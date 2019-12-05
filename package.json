@@ -13,16 +13,14 @@
   "author": "Fyrlex#2740",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.5.1",
-    "express": "^4.16.4",
-    "request": "^2.88.0",
-    "better-sqlite3": "^5.4.3",
-    "enmap": "^5.2.0",
-    "sqlite3": "^4.1.0",
     "better-sqlite-pool": "^0.2.2",
-    "storage-device-info": "^1.4.2",
+    "better-sqlite3": "^5.4.3",
+    "discord.js": "^11.5.1",
+    "enmap": "^5.2.3",
+    "express": "^4.17.1",
     "hastebin-gen": "^2.0.5",
-    "node-fetch": "^2.6.0"
+    "request": "^2.88.0",
+    "sqlite3": "^4.1.1"
   },
   "devDependencies": {},
   "keywords": []
