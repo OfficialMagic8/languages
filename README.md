@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://cdn.discordapp.com/avatars/484148705507934208/65e76d98bf2644416f8c05a18201bfa8.png?size=128"><br>
+<img src="https://i.imgur.com/5zAi5QU.png"><br>
   <h1>Magic8</h1><br>
 <a href="https://top.gg/bot/484148705507934208" >
   <img src="https://top.gg/api/widget/484148705507934208.svg" alt="Magic8" />
@@ -23,8 +23,6 @@ m*info // Bot/Server Information
 m*leave // Kicks the bot from your Discord server, replies with the invite link incase you want to invite Magic8 back
 
 m*list // List the responses for 8ball, feel free to request one to be added
-
-m*odds <dare> // *New!* Play Odds, type the command for help
 
 m*setchannel <8ball/odds> [0] - Run in channel for the game to work in, type 0 to reenable for all channels
 
