@@ -24,8 +24,6 @@ m*leave // Kicks the bot from your Discord server, replies with the invite link 
 
 m*list // List the responses for 8ball, feel free to request one to be added
 
-m*odds <dare> // *New!* Play Odds, type the command for help
-
 m*setchannel <8ball/odds> [0] - Run in channel for the game to work in, type 0 to reenable for all channels
 
 m*setreplies <all/explicit/clean> // *New!* Set the type of replies for your server! Options: all, clean and just explicit!
