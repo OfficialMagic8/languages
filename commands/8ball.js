@@ -1,9 +1,22 @@
 const Discord = require("discord.js");
 const botconfig = require("../botconfig.json");
-
+const fs = require("fs")
 module.exports.run = async (bot, message, args) => {
 
     message.delete();
+
+    let log = bot.channels.get(botconfig.commandlogs)
+    let bots = message.guild.members.filter(member => member.user.bot).size;
+    let users = message.guild.members.filter(member => !member.user.bot).size;
+    let timechange = new Date(new Date().getTime() - (5 * 3600000)).toLocaleString()
+
+    let uses = JSON.parse(fs.readFileSync("./uses/8ball.json", "utf-8"));
+
+    if (!uses["8ball Use"]) {
+        uses["8ball Use"] = {
+            uses: 0
+        };
+    }
 
     let maintenance = botconfig.maintenance;
 
@@ -16,6 +29,30 @@ module.exports.run = async (bot, message, args) => {
     if (!message.guild.me.hasPermission("EMBED_LINKS")) return message.reply(needperm).then(msg => {
         msg.delete(10000)
     })
+
+    if (!args[0]) {
+
+        let nothing = new Discord.RichEmbed()
+
+            .setColor("#ff0000")
+            .setDescription("**ERROR:** Please ask something!")
+
+        message.channel.send(nothing).then(m => m.delete(10000))
+
+        return;
+    }
+
+    if (args[0].length < 3) {
+
+        let nothing = new Discord.RichEmbed()
+
+            .setColor("#ff0000")
+            .setDescription("**ERROR:** Please ask something!")
+
+        message.channel.send(nothing).then(m => m.delete(10000))
+
+        return;
+    }
 
     if (message.content.endsWith("?")) {
 
@@ -48,9 +85,11 @@ module.exports.run = async (bot, message, args) => {
             .setFooter("Join support @ discord.gg/MCRbYdc - Magic8", bot.user.displayAvatarURL)
 
         message.channel.send(ballEmbed)
+        log.send("`" + `${timechange} [COMMAND]: '8ball', Question: "${message.content}", Answer: "${answer}" Author: ${message.author.tag}, Server: ${message.guild.name} (${users}/${bots})` + "`")
 
     } else {
 
+        let botname = bot.user.username;
         let replies = botconfig.noquestionmark;
         let result = Math.floor((Math.random() * replies.length))
         let question = args.slice(0).join(" ");
@@ -67,16 +106,18 @@ module.exports.run = async (bot, message, args) => {
             .setFooter("Join support @ discord.gg/MCRbYdc - Magic8", bot.user.displayAvatarURL)
 
         message.channel.send(ballEmbed)
+
+        log.send("`" + `${timechange} [COMMAND]: '8ball', Question: "${message.content}", Answer: "${answer}" Author: ${message.author.tag}, Server: ${message.guild.name} (${users}/${bots})` + "`")
     }
-    
-    let bots = message.guild.members.filter(member => member.user.bot).size;
-    let users = message.guild.members.filter(member => !member.user.bot).size;
 
-    let log = bot.channels.get(botconfig.commandlogs)
+    let totaluses = uses["8ball Use"].uses;
+    bot.channels.get("652555918285996032").setName(`Total 8ball Plays : ${totaluses}`);
 
-    let timechange = new Date(new Date().getTime() - (5 * 3600000)).toLocaleString()
+    uses["8ball Use"].uses++;
 
-    log.send("`" + `${timechange} [COMMAND]: '8ball', Question: "${message.content}" Author: ${message.author.tag}, Server: ${message.guild.name} (${users}/${bots})` + "`")
+    fs.writeFile("./uses/8ball.json", JSON.stringify(uses, null, 2), (err) => {
+        if (err) console.error(err);
+    });
 }
 
 module.exports.help = {
