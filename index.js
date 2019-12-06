@@ -20,6 +20,11 @@ const Enmap = require('enmap')
 const fs = require("fs");
 const bot = new Discord.Client();
 
+const botStats = {
+    totalGuildsID: '652539034404519936',
+    totalUsersID: '652538780376367104',
+};
+
 global.EnmapEChannelIDDb = new Enmap({
     name: "echannelid"
 });
@@ -67,10 +72,11 @@ bot.on("ready", async () => {
     // Maintenance Line
     // bot.user.setActivity(`UPDATES UNDERWAY, POSSIBLE ERRORS`)
 
-    let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
+    let timechange = new Date(new Date().getTime() - (5 * 3600000)).toLocaleString()
     let log = bot.channels.get(botconfig.otherlogs)
+    let logmsg = "`" + `${timechange} [READY]: From restart or edit` + "`"
 
-    log.send("`" + `${timechange} [READY]: From restart or edit` + "`")
+    log.send(logmsg)
 
     bot.user.setActivity(`${bot.guilds.size} servers`);
 
@@ -86,7 +92,7 @@ bot.on("ready", async () => {
     console.log("Ready with " + bot.guilds.size + " servers. " + bot.users.size + " users. " + bot.channels.size + " channels.")
 });
 
-bot.on('channelDelete', async channel => {
+bot.on("channelDelete", async channel => {
 
     let theEchannelid = EnmapEChannelIDDb.get(`${channel.guild.id}`, "echannelid")
 
@@ -203,13 +209,55 @@ bot.on("message", message => {
 
 //----------------------------------------------------------
 
-bot.on('guildCreate', guild => {
+bot.on("guildMemberAdd", async member => {
+
+
+    bot.channels.get(botStats.totalGuildsID).setName(`Total Guilds : ${bot.guilds.size}`);
+    bot.channels.get(botStats.totalUsersID).setName(`Total Users : ${bot.users.size}`);
+
+    if (member.guild.id !== "610816275580583936") return;
+    let welcomelogs = bot.channels.get("627864514444001280")
+
+    let welcomeEmbed = new Discord.RichEmbed()
+
+        .setColor("#00ff00")
+        .setDescription(member + " joined")
+        .setTimestamp()
+
+    welcomelogs.send(welcomeEmbed)
+});
+
+bot.on("guildMemberRemove", async member => {
+
+
+    bot.channels.get(botStats.totalGuildsID).setName(`Total Guilds : ${bot.guilds.size}`);
+    bot.channels.get(botStats.totalUsersID).setName(`Total Users : ${bot.users.size}`);
+
+    if (member.guild.id !== "610816275580583936") return;
+    let welcomelogs = bot.channels.get("627864514444001280")
+
+    let leaveEmbed = new Discord.RichEmbed()
+
+        .setColor("#ff0000")
+        .setDescription(member + " left")
+        .setTimestamp()
+
+    welcomelogs.send(leaveEmbed)
+});
+
+
+bot.on("guildCreate", guild => {
 
     bot.user.setActivity(`with your mind | *help | ${bot.guilds.size} servers`)
     console.log(`Now in ${bot.guilds.size} servers!`)
 
     let cdate = guild.createdAt.toString().split(' ');
 
+
+    const echannel = EnmapEChannelIDDb.set(guild.id, {
+        echannelid: 0,
+        id: guild.id
+    });
     EnmapEChannelIDDb.inc(guild.id, "echannelid");
 
     const ochannel = EnmapOChannelIDDb.set(guild.id, {
@@ -228,7 +276,7 @@ bot.on('guildCreate', guild => {
     let users = guild.members.filter(member => !member.user.bot).size;
     let channels = guild.channels.size;
 
-    let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
+    let timechange = new Date(new Date().getTime() - (5 * 3600000)).toLocaleString()
 
     let changeMessage = ("`" + `${timechange} [GUILD.JOIN]: Guild: '${guild.name}', ID: '${guild.id}', Created: ${cdate[1]}, ${cdate[2]} ${cdate[3]} | (${users}/${bots}/${channels})` + "`")
     let log = bot.channels.get(botconfig.guildlogs)
@@ -241,7 +289,7 @@ bot.on('guildDelete', guild => {
     bot.user.setActivity(`with your mind | *help | ${bot.guilds.size} servers`)
 
     EnmapOChannelIDDb.delete(guild.id)
-    EnmapECchannlIDDb.delete(guild.id)
+    EnmapEChannelIDDb.delete(guild.id)
 
     let cdate = guild.createdAt.toString().split(' ');
 
@@ -249,7 +297,7 @@ bot.on('guildDelete', guild => {
     let users = guild.members.filter(member => !member.user.bot).size;
     let channels = guild.channels.size;
 
-    let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
+    let timechange = new Date(new Date().getTime() - (5 * 3600000)).toLocaleString()
 
     let changeMessage = ("`" + `${timechange} [GUILD.LEFT]: Guild: '${guild.name}', ID: '${guild.id}', Created: ${cdate[1]}, ${cdate[2]} ${cdate[3]} | (${users}/${bots}/${channels})` + "`")
     let log = bot.channels.get(botconfig.guildlogs)
