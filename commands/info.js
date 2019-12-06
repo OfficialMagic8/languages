@@ -1,5 +1,7 @@
 const Discord = require("discord.js");
 const botconfig = require("../botconfig.json");
+const fs = require("fs")
+const uses = JSON.parse(fs.readFileSync("./uses/8ball.json", "utf-8"));
 // const disk = require('diskusage');
 // const os = require('os');
 // let path = os.platform() === 'win32' ? 'c:' : '/';
@@ -19,7 +21,7 @@ module.exports.run = async (bot, message, args) => {
         });
         EnmapEChannelIDDb.inc(message.guild.id, "echannelid");
     }
-  
+
     if (!EnmapOChannelIDDb.has(`${message.guild.id}`)) {
         const ochannelID = EnmapOChannelIDDb.ensure(message.guild.id, {
             ochannelid: 0,
@@ -27,10 +29,10 @@ module.exports.run = async (bot, message, args) => {
         });
         EnmapOChannelIDDb.inc(message.guild.id, "ochannelid");
     }
-    
+
     let theEchannelid = EnmapEChannelIDDb.get(`${message.guild.id}`, "echannelid")
     let theOchannelid = EnmapOChannelIDDb.get(`${message.guild.id}`, "ochannelid")
-    
+
     let replynumber = EnmapRepliesDb.get(`${message.guild.id}`, "replynumber")
 
     let replytype = replynumber
@@ -55,7 +57,7 @@ module.exports.run = async (bot, message, args) => {
     } else {
         echannelname = theEchannelid
     }
-  
+
     let ochannelname;
     let oabrackethashtag = "<#"
     let oabracket = ">"
@@ -67,7 +69,7 @@ module.exports.run = async (bot, message, args) => {
     } else {
         ochannelname = theOchannelid
     }
-
+    
     let vchannels = message.guild.channels.filter(chnl => chnl.type === "voice").size;
     let tchannels = message.guild.channels.filter(chnl => chnl.type === "text").size
 
@@ -76,14 +78,15 @@ module.exports.run = async (bot, message, args) => {
     let users = bot.users.size;
     let channels = bot.channels.size;
     let online = message.guild.members.filter(member => member.presence.status !== 'offline').size
+    
+    let totaluses = uses["8ball Use"].uses
 
     let botname = bot.user.username;
     let botinfoembed = new Discord.RichEmbed()
 
         .setColor("#9a00ff")
         .setAuthor(`${botname} - Information`, bot.user.displayAvatarURL)
-        .setDescription(`\n\n**__Bot Stats__**\n**Total Guilds:** ${bot.guilds.size}\n**Total Users:** ${users}\n**Total Channels:** ${channels}\n\n**__Server Stats__**\n**Bots/Users/Online:** ${sbots}/${susers}/${online}\n**Text/Voice Channels:** ${tchannels}/${vchannels}\n\n__**Channels**__\n**8ball:** ${eabrackethashtag}${echannelname}${eabracket}\n**Odds:** ${oabrackethashtag}${ochannelname}${oabracket}`)
-        .addField("Reply Type", replytype)
+        .setDescription(`\n\n**__Bot Stats__**\n**Total Guilds:** ${bot.guilds.size}\n**Total Users:** ${users}\n**Total Channels:** ${channels}\n\n**8ball Plays:** ${totaluses}**\n\n__Server Stats__**\n**Bots/Users/Online:** ${sbots}/${susers}/${online}\n**Text/Voice Channels:** ${tchannels}/${vchannels}\n\n__**Channels**__\n**8ball:** ${eabrackethashtag}${echannelname}${eabracket}\n**Odds:** ${oabrackethashtag}${ochannelname}${oabracket}\n\n**Reply Type:** ${replytype}`)
         .addField("Ping", `${Date.now() - message.createdTimestamp}ms`)
         .addField("Source Code", "__https://github.com/Fyrlex/Magic8__", true)
         .addField("Support Server", "__https://discord.gg/MCRbYdc__", true)
