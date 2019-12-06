@@ -7,7 +7,7 @@
 </div>
 
 
-Magic8 is an interactive Discord Bot circled around the well knowwn game, Magic 8 ball! With Magic8 you can ask it a question and get a funny response! With this bot comes many customizable features such as the responses you get and the channel the bot works in! Suggestions and ideas are accepted and appreciated.
+Magic8 is an interactive Discord Bot circled around the game, Magic 8 ball! With Magic8 you can ask it a question and get a funny response! With this bot comes many customizable features such as the responses you get and the channel the bot works in! Suggestions and ideas are accepted and appreciated.
 
 ## Bot Info
 Node.js v10.15.3
