@@ -1,7 +1,7 @@
 <div align="center">
-<img src="https://i.imgur.com/5zAi5QU.png" ><br>
+<img src="https://i.imgur.com/5zAi5QU.png" width="200" length="200"><br>
   <h1>Magic8</h1><br>
-<a href="https://top.gg/bot/484148705507934208" width="200" length="200">
+<a href="https://top.gg/bot/484148705507934208">
   <img src="https://top.gg/api/widget/484148705507934208.svg" alt="Magic8" />
 </a><br><br>
 </div>
@@ -9,10 +9,13 @@
 
 Magic8 is an interactive Discord Bot circled around the well knowwn game, Magic 8 ball! With Magic8 you can ask it a question and get a funny response! With this bot comes many customizable features such as the responses you get and the channel the bot works in! Suggestions and ideas are accepted and appreciated.
 
+## Bot Info
+Node.js v10.15.3
+
+Prefix: m*
 
 
 ## Commands
-Prefix: m*
 
 m*8ball <yes or no question> // Play 8ball
 
