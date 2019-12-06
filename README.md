@@ -1,7 +1,7 @@
 <div align="center">
-<img src="https://i.imgur.com/5zAi5QU.png"><br>
+<img src="https://i.imgur.com/5zAi5QU.png" ><br>
   <h1>Magic8</h1><br>
-<a href="https://top.gg/bot/484148705507934208" >
+<a href="https://top.gg/bot/484148705507934208" width="200" length="200">
   <img src="https://top.gg/api/widget/484148705507934208.svg" alt="Magic8" />
 </a><br><br>
 </div>
