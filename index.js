@@ -32,10 +32,6 @@ global.EnmapOChannelIDDb = new Enmap({
     name: "ochannelid"
 });
 
-// global.EnmapPrefixDb = new Enmap({
-//     name: "gprefix"
-// });
-
 global.EnmapRepliesDb = new Enmap({
     name: "replynumber"
 });
@@ -78,9 +74,9 @@ bot.on("ready", async () => {
 
     log.send(logmsg)
 
-    bot.user.setActivity(`${bot.guilds.size} servers`);
+    bot.user.setActivity(`m*help | ${bot.guilds.size} servers`);
 
-    let statuses = ["with the new Odds game!", `${bot.guilds.size} servers`]
+    let statuses = ["with your mind!", `m*help | ${bot.guilds.size} servers`]
 
     setInterval(function () {
 
