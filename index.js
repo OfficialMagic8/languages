@@ -244,11 +244,7 @@ bot.on("guildMemberRemove", async member => {
 
 bot.on("guildCreate", guild => {
 
-    bot.user.setActivity(`with your mind | *help | ${bot.guilds.size} servers`)
-    console.log(`Now in ${bot.guilds.size} servers!`)
-
-    let cdate = guild.createdAt.toString().split(' ');
-
+    bot.user.setActivity(`m*help | ${bot.guilds.size} servers`);
 
     const echannel = EnmapEChannelIDDb.set(guild.id, {
         echannelid: 0,
@@ -273,6 +269,8 @@ bot.on("guildCreate", guild => {
     let channels = guild.channels.size;
 
     let timechange = new Date(new Date().getTime() - (5 * 3600000)).toLocaleString()
+
+    let cdate = guild.createdAt.toString().split(' ');
 
     let changeMessage = ("`" + `${timechange} [GUILD.JOIN]: Guild: '${guild.name}', ID: '${guild.id}', Created: ${cdate[1]}, ${cdate[2]} ${cdate[3]} | (${users}/${bots}/${channels})` + "`")
     let log = bot.channels.get(botconfig.guildlogs)
