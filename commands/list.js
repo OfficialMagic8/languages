@@ -16,14 +16,12 @@ module.exports.run = async (bot, message, args) => {
         msg.delete(10000)
     })
 
-    let allreplies = botconfig.all
-    let aformatted = allreplies.join(",\n")
     let cleanreplies = botconfig.clean
     let cformatted = cleanreplies.join(",\n")
     let explicitreplies = botconfig.explicit
     let eformatted = explicitreplies.join(",\n")
 
-    hastebin("## List of Responses\n\n" + aformatted, {
+    hastebin("## List of Responses\n\n(Suggestions are greatly appreciated and almost always accepted!)\n\nClean:\n\n" + cformatted + "\n\nExplicit:\n\n" + eformatted, {
         url: "https://paste.mod.gg",
         extension: "md"
     }).then(ahaste => {
@@ -34,7 +32,7 @@ module.exports.run = async (bot, message, args) => {
             .setColor("#9a00ff")
             .setThumbnail(sicon)
             .setTitle("Responses for 8ball")
-            .setDescription("The responses are categoriezed by `all`, `clean` and `explicit`. Suggestions for organizing/adding responses are greatly appreciated.\n\nLink: __" + ahaste + "__")
+            .setDescription("Listed by `clean` then `explicit` responses. Suggestions for organizing/adding responses are greatly appreciated.\n\nLink: __" + ahaste + "__")
             .setTimestamp()
             .setFooter("Join support @ discord.gg/MCRbYdc - Magic8", bot.user.displayAvatarURL)
 
