@@ -17,8 +17,8 @@ module.exports.run = async (bot, message, args) => {
 
     let prefix = botconfig.prefix
     let array = [
-        "`" + prefix + "8ball` - The Magic 8 Ball",
-        "`" + prefix + "changelog` - Updates for magic8",
+        "`" + prefix + "8ball <question + ?>` - The Magic 8 Ball",
+        "`" + prefix + "changelog` - Updates for Magic8",
         "`" + prefix + "help` - Displays this help menu",
         "`" + prefix + "info` - Bot/Server Information!",
         "`" + prefix + "leave` - Kicks the bot from the server",

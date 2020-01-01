@@ -59,8 +59,6 @@ fs.readdir("./commands/", (err, files) => {
 
 //----------------------------------------------------------
 
-bot.commands = new Discord.Collection();
-
 bot.on("ready", async () => {
 
     bot.user.setStatus("online")
@@ -170,28 +168,6 @@ bot.on("message", message => {
         }
     }
 
-    let theOchannelid = EnmapOChannelIDDb.get(`${message.guild.id}`, "ochannelid")
-
-    if (theOchannelid !== 1) {
-
-        if (message.content.startsWith("m*odds")) {
-
-            if (message.channel.id !== theOchannelid) {
-
-                let embed = new Discord.RichEmbed()
-                    .setColor("#ff0000")
-                    .setDescription("**ERROR:** There is a set channel, please go to <#" + theOchannelid + "> to use **Magic8**.")
-                    .setTimestamp()
-                    .setFooter("Join support @ discord.gg/MCRbYdc - Magic8")
-
-                message.channel.send(embed).then(msg => msg.delete(30000))
-
-                message.delete();
-                return;
-            }
-        }
-    }
-
     let prefix = botconfig.prefix;
 
     if (!message.content.startsWith(prefix)) return;
@@ -214,13 +190,10 @@ bot.on("guildMemberAdd", async member => {
     if (member.guild.id !== "610816275580583936") return;
     let welcomelogs = bot.channels.get("627864514444001280")
 
-    let welcomeEmbed = new Discord.RichEmbed()
+    let linebreak = "~~                                                                     ~~\n"
+    let joinmsg = "<:magic8:662013341060825088> - " + member + " joined `✅`"
 
-        .setColor("#00ff00")
-        .setDescription(member + " joined")
-        .setTimestamp()
-
-    welcomelogs.send(welcomeEmbed)
+    welcomelogs.send(linebreak + joinmsg)
 });
 
 bot.on("guildMemberRemove", async member => {
@@ -232,13 +205,10 @@ bot.on("guildMemberRemove", async member => {
     if (member.guild.id !== "610816275580583936") return;
     let welcomelogs = bot.channels.get("627864514444001280")
 
-    let leaveEmbed = new Discord.RichEmbed()
+    let linebreak = "~~                                                                     ~~\n"
+    let leavemsg = "<:magic8:662013341060825088> - " + member + " left `❌`"
 
-        .setColor("#ff0000")
-        .setDescription(member + " left")
-        .setTimestamp()
-
-    welcomelogs.send(leaveEmbed)
+    welcomelogs.send(linebreak + leavemsg)
 });
 
 
