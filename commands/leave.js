@@ -18,7 +18,6 @@ module.exports.run = async (bot, message, args) => {
         msg.delete(10000)
     })
 
-
     let leaveEmbed = new Discord.RichEmbed()
 
         .setDescription(message.author + ", so sorry to leave :(\nDid I do something wrong? What made you kick me out? It would be appreciated if you contacted my creator `@Fyrlex#2740` for ideas, questions or comments.\n\nIf you ever want me to come back, click [here](https://discordapp.com/oauth2/authorize?client_id=484148705507934208&scope=bot&permissions=93184).")

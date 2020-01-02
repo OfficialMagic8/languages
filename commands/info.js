@@ -2,9 +2,6 @@ const Discord = require("discord.js");
 const botconfig = require("../botconfig.json");
 const fs = require("fs")
 const uses = JSON.parse(fs.readFileSync("./uses/8ball.json", "utf-8"));
-// const disk = require('diskusage');
-// const os = require('os');
-// let path = os.platform() === 'win32' ? 'c:' : '/';
 
 module.exports.run = async (bot, message, args) => {
 
@@ -50,6 +47,7 @@ module.exports.run = async (bot, message, args) => {
     let eabrackethashtag = "<#"
     let eabracket = ">"
     let enochannel = EnmapEChannelIDDb.get(`${message.guild.id}`, "echannelid")
+    
     if (enochannel === 1) {
         echannelname = "none"
         eabrackethashtag = ""
@@ -62,6 +60,7 @@ module.exports.run = async (bot, message, args) => {
     let oabrackethashtag = "<#"
     let oabracket = ">"
     let onochannel = EnmapOChannelIDDb.get(`${message.guild.id}`, "ochannelid")
+
     if (onochannel === 1) {
         ochannelname = "none"
         oabrackethashtag = ""
@@ -69,7 +68,7 @@ module.exports.run = async (bot, message, args) => {
     } else {
         ochannelname = theOchannelid
     }
-    
+
     let vchannels = message.guild.channels.filter(chnl => chnl.type === "voice").size;
     let tchannels = message.guild.channels.filter(chnl => chnl.type === "text").size
 
@@ -78,7 +77,7 @@ module.exports.run = async (bot, message, args) => {
     let users = bot.users.size;
     let channels = bot.channels.size;
     let online = message.guild.members.filter(member => member.presence.status !== 'offline').size
-    
+
     let totaluses = uses["8ball Use"].uses
 
     let botname = bot.user.username;
