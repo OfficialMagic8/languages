@@ -28,7 +28,7 @@ module.exports.run = async (bot, message, args) => {
     }
 
     let theEchannelid = EnmapEChannelIDDb.get(`${message.guild.id}`, "echannelid")
-    let theOchannelid = EnmapOChannelIDDb.get(`${message.guild.id}`, "ochannelid")
+    // let theOchannelid = EnmapOChannelIDDb.get(`${message.guild.id}`, "ochannelid")
 
     let replynumber = EnmapRepliesDb.get(`${message.guild.id}`, "replynumber")
 
@@ -47,26 +47,13 @@ module.exports.run = async (bot, message, args) => {
     let eabrackethashtag = "<#"
     let eabracket = ">"
     let enochannel = EnmapEChannelIDDb.get(`${message.guild.id}`, "echannelid")
-    
+
     if (enochannel === 1) {
         echannelname = "none"
         eabrackethashtag = ""
         eabracket = ""
     } else {
         echannelname = theEchannelid
-    }
-
-    let ochannelname;
-    let oabrackethashtag = "<#"
-    let oabracket = ">"
-    let onochannel = EnmapOChannelIDDb.get(`${message.guild.id}`, "ochannelid")
-
-    if (onochannel === 1) {
-        ochannelname = "none"
-        oabrackethashtag = ""
-        oabracket = ""
-    } else {
-        ochannelname = theOchannelid
     }
 
     let vchannels = message.guild.channels.filter(chnl => chnl.type === "voice").size;
@@ -85,7 +72,7 @@ module.exports.run = async (bot, message, args) => {
 
         .setColor("#9a00ff")
         .setAuthor(`${botname} - Information`, bot.user.displayAvatarURL)
-        .setDescription(`\n\n**__Bot Stats__**\n**Total Guilds:** ${bot.guilds.size}\n**Total Users:** ${users}\n**Total Channels:** ${channels}\n\n**8ball Plays:** ${totaluses}**\n\n__Server Stats__**\n**Bots/Users/Online:** ${sbots}/${susers}/${online}\n**Text/Voice Channels:** ${tchannels}/${vchannels}\n\n__**Channels**__\n**8ball:** ${eabrackethashtag}${echannelname}${eabracket}\n**Odds:** ${oabrackethashtag}${ochannelname}${oabracket}\n\n**Reply Type:** ${replytype}`)
+        .setDescription(`\n\n**__Bot Stats__**\n**Total Guilds:** ${bot.guilds.size}\n**Total Users:** ${users}\n**Total Channels:** ${channels}\n\n**8ball Plays:** ${totaluses}**\n\n__Server Stats__**\n**Bots/Users/Online:** ${sbots}/${susers}/${online}\n**Text/Voice Channels:** ${tchannels}/${vchannels}\n\n__**Channels**__\n**8ball:** ${eabrackethashtag}${echannelname}${eabracket}\n\n**Reply Type:** ${replytype}`)
         .addField("Ping", `${Date.now() - message.createdTimestamp}ms`)
         .addField("Source Code", "__https://github.com/Fyrlex/Magic8__", true)
         .addField("Support Server", "__https://discord.gg/MCRbYdc__", true)
