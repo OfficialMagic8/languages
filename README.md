@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://i.imgur.com/5zAi5QU.png"><br>
+<img src="https://cdn.discordapp.com/avatars/484148705507934208/65e76d98bf2644416f8c05a18201bfa8.png?size=128"><br>
   <h1>Magic8</h1><br>
 <a href="https://top.gg/bot/484148705507934208" >
   <img src="https://top.gg/api/widget/484148705507934208.svg" alt="Magic8" />
@@ -14,21 +14,23 @@ Magic8 is an interactive Discord Bot circled around the well knowwn game, Magic 
 ## Commands
 Prefix: m*
 
-m*8ball <question> // The Magic 8 Ball
+m\*8ball <question + ?> // The Magic 8 Ball
   
-m*changelog // Updates for Magic8
+m\*changelog // Updates for Magic8
 
-m*help // Displays the help menu
+m\*donate // Donation Page
 
-m*info // Bot/Server Information
+m\*help // Displays the help menu
 
-m*leave // Kicks the bot from your Discord server, replies with the invite link incase you want to invite Magic8 back
+m\*info // Bot/Server Information
 
-m*list // List the responses for 8ball, feel free to request one to be added
+m\*leave // Kicks the bot from your Discord server, replies with the invite link incase you want to invite Magic8 back
 
-m*setchannel <8ball/odds> [0] - Run in channel for the game to work in, type 0 to reenable for all channels
+m\*list // List the responses for 8ball, feel free to request one to be added
 
-m*setreplies <all/explicit/clean> // *New!* Set the type of replies for your server! Options: all, clean and just explicit!
+m\*setchannel [0] - Run in channel for 8ball to work in, type 0 to reenable for all channels
+
+m\*setreplies <all/explicit/clean> // *New!* Set the type of replies for your server! Options: all, clean and just explicit!
 
 
 

@@ -47,7 +47,7 @@ module.exports.run = async (bot, message, args) => {
     let eabrackethashtag = "<#"
     let eabracket = ">"
     let enochannel = EnmapEChannelIDDb.get(`${message.guild.id}`, "echannelid")
-    
+
     if (enochannel === 1) {
         echannelname = "none"
         eabrackethashtag = ""
