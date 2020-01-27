@@ -1,8 +1,8 @@
 <div align="center">
-<img src="https://cdn.discordapp.com/avatars/484148705507934208/65e76d98bf2644416f8c05a18201bfa8.png?size=128"><br>
+<img src="https://i.imgur.com/5zAi5QU.png"><br>
   <h1>Magic8</h1><br>
 <a href="https://top.gg/bot/484148705507934208" >
-  <img src="https://i.imgur.com/5zAi5QU.png" alt="Magic8" />
+  <img src="https://top.gg/api/widget/484148705507934208.svg" alt="Magic8" />
 </a><br><br>
 </div>
 
