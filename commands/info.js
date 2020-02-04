@@ -72,7 +72,7 @@ module.exports.run = async (bot, message, args) => {
 
         .setColor("#9a00ff")
         .setAuthor(`${botname} - Information`, bot.user.displayAvatarURL)
-        .setDescription(`\n\n**__Bot Stats__**\n**Total Guilds:** ${bot.guilds.size}\n**Total Users:** ${users}\n**Total Channels:** ${channels}\n\n**8ball Plays:** ${totaluses}**\n\n__Server Stats__**\n**Bots/Users/Online:** ${sbots}/${susers}/${online}\n**Text/Voice Channels:** ${tchannels}/${vchannels}\n\n__**Channels**__\n**8ball:** ${eabrackethashtag}${echannelname}${eabracket}\n\n**Reply Type:** ${replytype}`)
+        .setDescription(`\n\n**__Bot Stats__**\n**Total Guilds:** ${bot.guilds.size}\n**Total Users:** ${users}\n**Total Channels:** ${channels}\n\n**8ball Plays:** ${totaluses}**\n\n__Server Stats__**\n**Bots/Users/Online:** ${sbots}/${susers}/${online}\n**Text/Voice Channels:** ${tchannels}/${vchannels}\n\n**8ball Channel:** ${eabrackethashtag}${echannelname}${eabracket}\n**Reply Type:** ${replytype}`)
         .addField("Ping", `${Date.now() - message.createdTimestamp}ms`)
         .addField("Donate", "__https://www.paypal.me/magic8bot__")
         .addField("Source Code", "__https://github.com/Fyrlex/Magic8__", true)
