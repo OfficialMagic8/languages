@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const botconfig = require("../botconfig.json");
 const fs = require("fs")
-const uses = JSON.parse(fs.readFileSync("./uses/8ball.json", "utf-8"));
+let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
 
 module.exports.run = async (bot, message, args) => {
 
@@ -65,7 +65,7 @@ module.exports.run = async (bot, message, args) => {
     let channels = bot.channels.size;
     let online = message.guild.members.filter(member => member.presence.status !== 'offline').size
 
-    let totaluses = uses["8ball Use"].uses
+    let totaluses = stats["8ball"].value
 
     let botname = bot.user.username;
     let botinfoembed = new Discord.RichEmbed()

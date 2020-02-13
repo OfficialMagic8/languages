@@ -144,8 +144,6 @@ bot.on("message", message => {
         EnmapRepliesDb.inc(message.guild.id, "replynumber");
     }
 
-
-
     let theEchannelid = EnmapEChannelIDDb.get(`${message.guild.id}`, "echannelid")
 
     if (theEchannelid !== 1) {
@@ -216,6 +214,14 @@ bot.on("guildCreate", guild => {
 
     bot.user.setActivity(`m*help | ${bot.guilds.size} servers`);
 
+    let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
+
+    stats["guilds"].value++;
+
+    fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
+        if (err) console.error(err);
+    });
+
     const echannel = EnmapEChannelIDDb.set(guild.id, {
         echannelid: 0,
         id: guild.id
@@ -251,6 +257,14 @@ bot.on("guildCreate", guild => {
 bot.on('guildDelete', guild => {
 
     bot.user.setActivity(`with your mind | *help | ${bot.guilds.size} servers`)
+
+    let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
+
+    stats["guilds"].value--;
+
+    fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
+        if (err) console.error(err);
+    });
 
     EnmapOChannelIDDb.delete(guild.id)
     EnmapEChannelIDDb.delete(guild.id)
