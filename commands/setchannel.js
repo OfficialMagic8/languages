@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
 
     let notazero = new Discord.RichEmbed()
         .setColor("#ff0000")
-        .setDescription("**ERROR:** Either type `0` to delete the set channel or nothing at all to enable the command for all channels!")
+        .setDescription("**ERROR:** Type `0` to delete the set channel. Type nothing to set the 8ball channel in the channel the command is run in.")
         .setTimestamp()
         .setFooter("Magic8")
 
@@ -31,9 +31,15 @@ module.exports.run = async (bot, message, args) => {
         msg.delete(10000)
     })
 
-    if (args[1]) {
+    if (args[0]) {
         if (args[0] !== "0") return message.channel.send(notazero).then(msg => msg.delete(30000));
     }
+  
+    let ifargs0 = " 0"
+    if (!args[0]) {
+      ifargs0 = ""
+    }
+  
     if (args[0] === "0") {
 
         let ifalreadyzero = EnmapEChannelIDDb.get(`${message.guild.id}`, "echannelid")
@@ -84,7 +90,7 @@ module.exports.run = async (bot, message, args) => {
 
     let timechange = new Date(new Date().getTime() - (5 * 3600000)).toLocaleString()
 
-    log.send("`" + `${timechange} [COMMAND]: 'setchannel ${args[0]}', Author: ${message.author.username}, Server: ${message.guild.name} (${users}/${bots})` + "`")
+    log.send("`" + `${timechange} [COMMAND]: 'setchannel${ifargs0}', Author: ${message.author.username}, Server: ${message.guild.name} (${users}/${bots})` + "`")
 }
 
 module.exports.help = {

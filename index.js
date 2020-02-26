@@ -1,13 +1,31 @@
 const http = require('http');
 const express = require('express');
 const app = express();
+
 var child_process = require('child_process');
-var d = Date(Date.now());
-let date = d.toString()
+let date = new Date(new Date().getTime() - (5 * 3600000)).toLocaleString()
+
+var path = require('path');
 app.get("/", (request, response) => {
-    console.log(date + " Ping Received");
-    response.sendStatus(200);
+    response.sendFile(path.join(__dirname + '/index.html'));
+    response.status(200);
 });
+
+app.get("/style.css", (request, response) => {
+    response.sendFile(path.join(__dirname + '/style.css'));
+    response.status(200);
+});
+
+app.get("/script.js", (request, response) => {
+    response.sendFile(path.join(__dirname + '/script.js'));
+    response.status(200);
+});
+
+app.get("/stats.json", (request, response) => {
+    response.sendFile(path.join(__dirname + '/stats.json'));
+    response.status(200);
+});
+
 app.listen(process.env.PORT);
 setInterval(() => {
     http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
@@ -18,6 +36,41 @@ const Discord = require("discord.js");
 
 const Enmap = require('enmap')
 const fs = require("fs");
+
+
+// setInterval(() => {
+// let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
+//   stats["8ball"].daily = 0;
+//   stats["guilds"].daily = 0;
+
+//   fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
+//     if (err) console.log(err);
+//   });
+//   console.log("daily stats reset")
+// }, 86400000);
+
+// setInterval(() => {
+// let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
+//   stats["8ball"].weekly = 0;
+//   stats["guilds"].weekly = 0;
+
+//   fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
+//     if (err) console.log(err);
+//   });
+//   console.log("weekly stats reset")
+// }, 604800000);
+
+// setInterval(() => {
+// let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
+//   stats["8ball"].monthly = 0;
+//   stats["guilds"].monthly = 0;
+
+//   fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
+//     if (err) console.log(err);
+//   });
+//   console.log("monthly stats reset")
+// }, 2678400000);
+
 const bot = new Discord.Client();
 
 const botStats = {
@@ -72,16 +125,16 @@ bot.on("ready", async () => {
 
     log.send(logmsg)
 
-    bot.user.setActivity(`m*help | ${bot.guilds.size} servers`);
+    bot.user.setActivity(`8ball command is reenabled!`);
 
-    let statuses = ["with your mind!", `m*help | ${bot.guilds.size} servers`]
+    //  let statuses = ["with your mind!", `m*help | ${bot.guilds.size} servers`]
 
-    setInterval(function () {
+    //  setInterval(function () {
 
-        let status = statuses[Math.floor(Math.random() * statuses.length)];
+    //     let status = statuses[Math.floor(Math.random() * statuses.length)];
 
-        bot.user.setActivity(status)
-    }, 10000)
+    //       bot.user.setActivity(status)
+    //   }, 10000)
 
     console.log("Ready with " + bot.guilds.size + " servers. " + bot.users.size + " users. " + bot.channels.size + " channels.")
 });
@@ -177,7 +230,7 @@ bot.on("message", message => {
     if (commandfile) commandfile.run(bot, message, args);
 });
 
-//----------------------------------------------------------
+
 
 bot.on("guildMemberAdd", async member => {
 
@@ -216,7 +269,10 @@ bot.on("guildCreate", guild => {
 
     let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
 
-    stats["guilds"].value++;
+    stats["guilds"].total++;
+    stats["guilds"].daily++;
+    stats["guilds"].monthly++;
+    stats["guilds"].weekly++;
 
     fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
         if (err) console.error(err);
@@ -260,7 +316,10 @@ bot.on('guildDelete', guild => {
 
     let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
 
-    stats["guilds"].value--;
+    stats["guilds"].total--
+    stats["guilds"].daily--;
+    stats["guilds"].monthly--;
+    stats["guilds"].weekly--;
 
     fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
         if (err) console.error(err);
