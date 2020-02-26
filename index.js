@@ -173,30 +173,6 @@ bot.on("message", message => {
     if (message.author.bot) return;
     if (message.channel.type === "dm") return;
 
-    if (!EnmapEChannelIDDb.has(`${message.guild.id}`)) {
-        const eChannel = EnmapEChannelIDDb.set(message.guild.id, {
-            echannelid: 0,
-            id: message.guild.id
-        });
-        EnmapEChannelIDDb.inc(message.guild.id, "echannelid");
-    }
-
-    if (!EnmapOChannelIDDb.has(`${message.guild.id}`)) {
-        const oChannel = EnmapOChannelIDDb.set(message.guild.id, {
-            ochannelid: 0,
-            id: message.guild.id
-        });
-        EnmapOChannelIDDb.inc(message.guild.id, "ochannelid");
-    }
-
-    if (!EnmapRepliesDb.has(`${message.guild.id}`)) {
-        const guildReplies = EnmapRepliesDb.set(message.guild.id, {
-            replynumber: 1,
-            id: message.guild.id
-        });
-        EnmapRepliesDb.inc(message.guild.id, "replynumber");
-    }
-
     let theEchannelid = EnmapEChannelIDDb.get(`${message.guild.id}`, "echannelid")
 
     if (theEchannelid !== 1) {
