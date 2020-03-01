@@ -125,16 +125,16 @@ bot.on("ready", async () => {
 
     log.send(logmsg)
 
-    bot.user.setActivity(`8ball command is reenabled!`);
+    bot.user.setActivity(`m*help | ${bot.guilds.size} servers`);
 
-    //  let statuses = ["with your mind!", `m*help | ${bot.guilds.size} servers`]
+    let statuses = ["with your mind!", `m*help | ${bot.guilds.size} servers`]
 
-    //  setInterval(function () {
+    setInterval(function () {
 
-    //     let status = statuses[Math.floor(Math.random() * statuses.length)];
+       let status = statuses[Math.floor(Math.random() * statuses.length)];
 
-    //       bot.user.setActivity(status)
-    //   }, 10000)
+       bot.user.setActivity(status)
+   }, 10000)
 
     console.log("Ready with " + bot.guilds.size + " servers. " + bot.users.size + " users. " + bot.channels.size + " channels.")
 });
