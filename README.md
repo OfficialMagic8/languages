@@ -15,8 +15,6 @@ Magic8 is an interactive Discord Bot circled around the well knowwn game, Magic 
 Prefix: m*
 
 m\*8ball <question + ?> // The Magic 8 Ball
-  
-m\*changelog // Updates for Magic8
 
 m\*donate // Donation Page
 
@@ -49,3 +47,4 @@ Developer: Fyrlex#2740
 Developer's note: Contact me any time for suggestions, comments or questions!
 
 [Support Discord](https://dicsord.gg/MYKfu5Q "Magic8 Support Server")
+[Website](https://magic8-bot.glitch.me/ "Magic8 Stats")
