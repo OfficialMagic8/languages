@@ -47,4 +47,5 @@ Developer: Fyrlex#2740
 Developer's note: Contact me any time for suggestions, comments or questions!
 
 [Support Discord](https://dicsord.gg/MYKfu5Q "Magic8 Support Server")
+
 [Website](https://magic8-bot.glitch.me/ "Magic8 Stats")
