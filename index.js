@@ -60,7 +60,8 @@ const fs = require("fs");
 //   console.log("weekly stats reset")
 // }, 604800000);
 
-let countDownDate = new Date("April 1, 2020 00:00:00").getTime();
+let countDownDate = new Date("April 1, 2020 00:00:00").getTime() + (5 * 3600000);
+// new Date(new Date().getTime() - (5 * 3600000))
 
 let x = setInterval(function () {
 
@@ -73,8 +74,7 @@ let x = setInterval(function () {
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
+    // console.log(days + "d " + hours + "h " + minutes + "m " + seconds + "s ")
 
     if (distance < 0) {
         let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
@@ -224,8 +224,7 @@ bot.on("message", message => {
 
 
 bot.on("guildMemberAdd", async member => {
-
-
+    
     bot.channels.get(botStats.totalGuildsID).setName(`Total Guilds : ${bot.guilds.size}`);
     bot.channels.get(botStats.totalUsersID).setName(`Total Users : ${bot.users.size}`);
 
@@ -240,7 +239,6 @@ bot.on("guildMemberAdd", async member => {
 
 bot.on("guildMemberRemove", async member => {
 
-
     bot.channels.get(botStats.totalGuildsID).setName(`Total Guilds : ${bot.guilds.size}`);
     bot.channels.get(botStats.totalUsersID).setName(`Total Users : ${bot.users.size}`);
 
@@ -252,7 +250,6 @@ bot.on("guildMemberRemove", async member => {
 
     welcomelogs.send(linebreak + leavemsg)
 });
-
 
 bot.on("guildCreate", guild => {
 
