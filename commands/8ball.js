@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
 
   let m = botconfig.maintenance;
 
-  //  if (message.author.id !== botconfig.ownerid) return message.reply(m);
+//  if (message.author.id !== botconfig.ownerid) return message.reply(m);
 
   let ev = botconfig.eversion;
 
@@ -65,7 +65,7 @@ module.exports.run = async (bot, message, args) => {
     .setFooter("Join support @ discord.gg/MCRbYdc - Magic8", bot.user.displayAvatarURL)
 
   message.channel.send(ballEmbed)
-  log.send("`" + `${timechange} [COMMAND]: '8ball', Question: "${message.content}", Answer: "${answer}" Author: ${message.author.tag}, Server: ${message.guild.name} (${users}/${bots})` + "`")
+  log.send("`" + `${timechange} [COMMAND]: '8ball', Question: "${message.content}", Answer: "${answer}" Author: ${message.author.tag}, Server: ${message.guild.name} | ${message.guild.id} (${users}/${bots})` + "`")
 
   let totaluses = stats["8ball"].total;
   bot.channels.get("652555918285996032").setName(`Total 8ball Plays : ${totaluses + 1}`);
