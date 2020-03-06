@@ -60,16 +60,32 @@ const fs = require("fs");
 //   console.log("weekly stats reset")
 // }, 604800000);
 
-// setInterval(() => {
-// let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
-//   stats["8ball"].monthly = 0;
-//   stats["guilds"].monthly = 0;
+let countDownDate = new Date("April 1, 2020 00:00:00").getTime();
 
-//   fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
-//     if (err) console.log(err);
-//   });
-//   console.log("monthly stats reset")
-// }, 2678400000);
+let x = setInterval(function () {
+
+    let now = new Date().getTime();
+
+    let distance = countDownDate - now;
+
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+        let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
+        stats["8ball"].monthly = 0;
+        stats["guilds"].monthly = 0;
+
+        fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
+            if (err) console.log(err);
+        });
+    }
+}, 1000);
 
 const bot = new Discord.Client();
 
@@ -125,16 +141,16 @@ bot.on("ready", async () => {
 
     log.send(logmsg)
 
-    bot.user.setActivity(`8ball command is reenabled!`);
+    bot.user.setActivity(`m*help | ${bot.guilds.size} servers`);
 
-    //  let statuses = ["with your mind!", `m*help | ${bot.guilds.size} servers`]
+    let statuses = ["with your mind!", `m*help | ${bot.guilds.size} servers`]
 
-    //  setInterval(function () {
+    setInterval(function () {
 
-    //     let status = statuses[Math.floor(Math.random() * statuses.length)];
+        let status = statuses[Math.floor(Math.random() * statuses.length)];
 
-    //       bot.user.setActivity(status)
-    //   }, 10000)
+        bot.user.setActivity(status)
+    }, 10000)
 
     console.log("Ready with " + bot.guilds.size + " servers. " + bot.users.size + " users. " + bot.channels.size + " channels.")
 });
@@ -173,30 +189,6 @@ bot.on("message", message => {
     if (message.author.bot) return;
     if (message.channel.type === "dm") return;
 
-    if (!EnmapEChannelIDDb.has(`${message.guild.id}`)) {
-        const eChannel = EnmapEChannelIDDb.set(message.guild.id, {
-            echannelid: 0,
-            id: message.guild.id
-        });
-        EnmapEChannelIDDb.inc(message.guild.id, "echannelid");
-    }
-
-    if (!EnmapOChannelIDDb.has(`${message.guild.id}`)) {
-        const oChannel = EnmapOChannelIDDb.set(message.guild.id, {
-            ochannelid: 0,
-            id: message.guild.id
-        });
-        EnmapOChannelIDDb.inc(message.guild.id, "ochannelid");
-    }
-
-    if (!EnmapRepliesDb.has(`${message.guild.id}`)) {
-        const guildReplies = EnmapRepliesDb.set(message.guild.id, {
-            replynumber: 1,
-            id: message.guild.id
-        });
-        EnmapRepliesDb.inc(message.guild.id, "replynumber");
-    }
-
     let theEchannelid = EnmapEChannelIDDb.get(`${message.guild.id}`, "echannelid")
 
     if (theEchannelid !== 1) {
@@ -229,7 +221,6 @@ bot.on("message", message => {
     let commandfile = bot.commands.get(cmd.slice(prefix.length));
     if (commandfile) commandfile.run(bot, message, args);
 });
-
 
 
 bot.on("guildMemberAdd", async member => {
