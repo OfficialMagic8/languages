@@ -38,16 +38,16 @@ const Enmap = require('enmap')
 const fs = require("fs");
 
 
-// setInterval(() => {
-// let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
-//   stats["8ball"].daily = 0;
-//   stats["guilds"].daily = 0;
+ setInterval(() => {
+ let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
+   stats["8ball"].daily = 0;
+   stats["guilds"].daily = 0;
 
-//   fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
-//     if (err) console.log(err);
-//   });
-//   console.log("daily stats reset")
-// }, 86400000);
+   fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
+     if (err) console.log(err);
+   });
+   console.log("daily stats reset")
+ }, 86400000);
 
 // setInterval(() => {
 // let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
@@ -61,7 +61,6 @@ const fs = require("fs");
 // }, 604800000);
 
 let countDownDate = new Date("April 1, 2020 00:00:00").getTime() + (5 * 3600000);
-// new Date(new Date().getTime() - (5 * 3600000))
 
 let x = setInterval(function () {
 
@@ -103,10 +102,6 @@ fs.readdir("./commands/", (err, files) => {
     if (err) console.log(err)
 
     let jsfile = files.filter(f => f.split(".").pop() === "js")
-    if (jsfile.length <= 0) {
-        console.log("There are no commands to load...");
-        return;
-    }
     console.log("[MOD]: Loading commands...")
     jsfile.forEach((f, i) => {
         let props = require(`./commands/${f}`);
@@ -120,10 +115,6 @@ fs.readdir("./handlers/", (err, files) => {
     if (err) console.log(err)
 
     let jsfile = files.filter(f => f.split(".").pop() === "js")
-    if (jsfile.length <= 0) {
-        console.log("There are no events to load...");
-        return;
-    }
     console.log("[MOD]: Loading events...")
     jsfile.forEach((f, i) => {
         let props = require(`./handlers/${f}`);
@@ -142,16 +133,12 @@ bot.on("ready", async () => {
     let log = bot.channels.get(botconfig.otherlogs)
     let logmsg = "`" + `${timechange} [READY]: From restart or edit` + "`"
 
-    log.send(logmsg)
+    log.send(logmsg);
 
     bot.user.setActivity(`m*help | ${bot.guilds.size} servers`);
-
     let statuses = ["with your mind!", `m*help | ${bot.guilds.size} servers`]
-
     setInterval(function () {
-
         let status = statuses[Math.floor(Math.random() * statuses.length)];
-
         bot.user.setActivity(status)
     }, 10000)
 
