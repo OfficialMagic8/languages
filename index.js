@@ -36,8 +36,7 @@ const Discord = require("discord.js");
 
 const Enmap = require('enmap')
 const fs = require("fs");
-
-
+//---------------------------------
  setInterval(() => {
  let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
    stats["8ball"].daily = 0;
