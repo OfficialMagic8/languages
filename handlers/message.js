@@ -9,11 +9,8 @@ bot.on("message", message => {
     let theEchannelid = EnmapEChannelIDDb.get(`${message.guild.id}`, "echannelid")
 
     if (theEchannelid !== 1) {
-
         if (message.content.startsWith("m*8ball")) {
-
             if (message.channel.id !== theEchannelid) {
-
                 let embed = new Discord.RichEmbed()
                     .setColor("#ff0000")
                     .setDescription("**ERROR:** There is a set channel for `8ball`, please go to <#" + theEchannelid + "> to use the command!")
@@ -21,7 +18,6 @@ bot.on("message", message => {
                     .setFooter("Join support @ discord.gg/MCRbYdc - Magic8")
 
                 message.channel.send(embed).then(msg => msg.delete(30000))
-
                 message.delete();
                 return;
             }
