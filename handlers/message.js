@@ -5,11 +5,10 @@ bot.on("message", message => {
 
     if (message.author.bot) return;
     if (message.channel.type === "dm") return;
-
-    let theEchannelid = EnmapEChannelIDDb.get(`${message.guild.id}`, "echannelid")
-
-    if (theEchannelid !== 1) {
-        if (message.content.startsWith("m*8ball")) {
+    
+    if (message.content.startsWith("m*8ball")) {
+      let theEchannelid = EnmapEChannelIDDb.get(`${message.guild.id}`, "echannelid")
+          if (theEchannelid !== 1) {
             if (message.channel.id !== theEchannelid) {
                 let embed = new Discord.RichEmbed()
                     .setColor("#ff0000")
