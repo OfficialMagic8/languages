@@ -1,20 +1,23 @@
 const Discord = require("discord.js");
 const botconfig = require("../botconfig.json");
 const fs = require("fs")
+
 module.exports.run = async (bot, message, args) => {
 
-  message.delete();
+  if (message.guild.me.hasPermission("MANAGE_MESSAGES")) {
+    message.delete()
+  }
 
   let log = bot.channels.get(botconfig.commandlogs)
   let bots = message.guild.members.filter(member => member.user.bot).size;
   let users = message.guild.members.filter(member => !member.user.bot).size;
-  let timechange = new Date(new Date().getTime() - (5 * 3600000)).toLocaleString()
+  let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
 
   let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
 
   let m = botconfig.maintenance;
 
-//  if (message.author.id !== botconfig.ownerid) return message.reply(m);
+  //  if (message.author.id !== botconfig.ownerid) return message.reply(m);
 
   let ev = botconfig.eversion;
 
@@ -27,7 +30,6 @@ module.exports.run = async (bot, message, args) => {
   if (!args[0]) {
 
     let nothing = new Discord.RichEmbed()
-
       .setColor("#ff0000")
       .setDescription("**ERROR:** Please ask something!")
 
@@ -71,9 +73,6 @@ module.exports.run = async (bot, message, args) => {
   bot.channels.get("652555918285996032").setName(`Total 8ball Plays : ${totaluses + 1}`);
 
   stats["8ball"].total++;
-  stats["8ball"].monthly++;
-  stats["8ball"].weekly++;
-  stats["8ball"].daily++;
 
   fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
     if (err) console.error(err);

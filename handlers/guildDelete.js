@@ -14,9 +14,6 @@ bot.on('guildDelete', guild => {
 
     let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
     stats["guilds"].total--
-    stats["guilds"].daily--;
-    stats["guilds"].monthly--;
-    stats["guilds"].weekly--;
     fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
         if (err) console.error(err);
     });

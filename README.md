@@ -14,7 +14,7 @@ Magic8 is an interactive Discord Bot circled around the well knowwn game, Magic 
 ## Commands
 Prefix: m*
 
-m\*8ball <question + ?> // The Magic 8 Ball *(intended for yes/no/maybe questions, not when/where questions)*
+m\*8ball <question> // The Magic 8 Ball *(intended for yes/no/maybe questions, not when/where questions)*
 
 m\*donate // Donation Page
 

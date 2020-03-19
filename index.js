@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 var child_process = require('child_process');
-let date = new Date(new Date().getTime() - (5 * 3600000)).toLocaleString()
+let date = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
 
 var path = require('path');
 app.get("/", (request, response) => {
@@ -37,17 +37,42 @@ const Discord = require("discord.js");
 const Enmap = require('enmap')
 const fs = require("fs");
 
+//  setInterval(() => {
+//  let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
+//    stats["8ball"].daily = 0;
+//    stats["guilds"].daily = 0;
 
- setInterval(() => {
- let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
-   stats["8ball"].daily = 0;
-   stats["guilds"].daily = 0;
+//    fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
+//      if (err) console.log(err);
+//    });
+//    console.log("daily stats reset")
+//  }, 86400000);
+// let DcountDownDate = new Date("March 18, 2020 00:00:00").getTime() + (4 * 3600000);
 
-   fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
-     if (err) console.log(err);
-   });
-   console.log("daily stats reset")
- }, 86400000);
+// let Dx = setInterval(function () {
+
+//     let now = new Date().getTime();
+
+//     let distance = DcountDownDate - now;
+
+//     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//     let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+//     // console.log(days + "d " + hours + "h " + minutes + "m " + seconds + "s ")
+
+//     if (distance < 0) {
+//         let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
+//         stats["8ball"].daily = 0;
+//         stats["guilds"].daily = 0;
+
+//         fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
+//             if (err) console.log(err);
+//         });
+//     }
+// }, 1000);
+
 
 // setInterval(() => {
 // let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
@@ -60,33 +85,70 @@ const fs = require("fs");
 //   console.log("weekly stats reset")
 // }, 604800000);
 
-let countDownDate = new Date("April 1, 2020 00:00:00").getTime() + (5 * 3600000);
+// let WcountDownDate = new Date("March 22, 2020 00:00:00").getTime() + (4 * 3600000);
 
-let x = setInterval(function () {
+// let Wx = setInterval(function () {
 
-    let now = new Date().getTime();
+//     let now = new Date().getTime();
 
-    let distance = countDownDate - now;
+//     let distance = WcountDownDate - now;
 
-    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//     let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // console.log(days + "d " + hours + "h " + minutes + "m " + seconds + "s ")
+//     // console.log(days + "d " + hours + "h " + minutes + "m " + seconds + "s ")
 
-    if (distance < 0) {
-        let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
-        stats["8ball"].monthly = 0;
-        stats["guilds"].monthly = 0;
+//     if (distance < 0) {
+//         let stats = JSON.parse(fs.readFileSync("./stats.json", "utf-8"));
+//         stats["8ball"].weekly = 0;
+//         stats["guilds"].weekly = 0;
 
-        fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
-            if (err) console.log(err);
-        });
-    }
-}, 1000);
+//         fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
+//             if (err) console.log(err);
+//         });
+//     }
+// }, 1000);
+
+// let McountDownDate = new Date("April 1, 2020 00:00:00").getTime() + (4 * 3600000);
+
+// let Mx = setInterval(function () {
+
+//     let now = new Date().getTime();
+
+//     let distance = McountDownDate - now;
+
+//     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//     let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+//     // console.log(days + "d " + hours + "h " + minutes + "m " + seconds + "s ")
+
+//     if (distance < 0) {
+//         let stats = JSON.parse(fs.readFileSync("./stats.json", "utf8"));
+//         stats["8ball"].monthly = 0;
+//         stats["guilds"].monthly = 0;
+
+//         fs.writeFile("./stats.json", JSON.stringify(stats, null, 2), (err) => {
+//             if (err) console.log(err);
+//         });
+//     }
+// }, 1000);
 
 const bot = new Discord.Client();
+
+const DBL = require("dblapi.js");
+const dbl = new DBL('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ4NDE0ODcwNTUwNzkzNDIwOCIsImJvdCI6dHJ1ZSwiaWF0IjoxNTg0NTM4NTY0fQ.gA7Z9nQuGp3E7cw_IsLSGH7k1ebgWMFHoXWokvayYV8', { webhookPort: 5000, webhookAuth: 'meanBean' });
+
+dbl.webhook.on('ready', hook => {
+    console.log(`Webhook running at http://${hook.hostname}:${hook.port}${hook.path}`);
+});
+dbl.webhook.on('vote', vote => {
+    console.log(`User with ID ${vote.user} just voted!`);
+});
+
 
 global.EnmapEChannelIDDb = new Enmap({
     name: "echannelid"
@@ -129,7 +191,7 @@ bot.on("ready", async () => {
     // Maintenance Line
     // bot.user.setActivity(`UPDATES UNDERWAY, POSSIBLE ERRORS`)
 
-    let timechange = new Date(new Date().getTime() - (5 * 3600000)).toLocaleString()
+    let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
     let log = bot.channels.get(botconfig.otherlogs)
     let logmsg = "`" + `${timechange} [READY]: From restart or edit` + "`"
 
@@ -142,7 +204,7 @@ bot.on("ready", async () => {
         bot.user.setActivity(status)
     }, 10000)
 
-    console.log("Ready with " + bot.guilds.size + " servers. " + bot.users.size + " users. " + bot.channels.size + " channels.")
+    console.log("[MOD]: Status: Ready - " + bot.guilds.size + " servers - " + bot.users.size + " users - " + bot.channels.size + " channels")
 });
 
 module.exports = {
