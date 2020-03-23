@@ -3,65 +3,57 @@ const botconfig = require("../botconfig.json");
 
 module.exports.run = async (bot, message, args) => {
 
-    message.delete();
+  if (message.guild.me.hasPermission("MANAGE_MESSAGES")) {
+    message.delete()
+  }
 
-    let maintenance = botconfig.maintenance;
+  let nopermembed = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .setDescription("**ERROR:** You must have `ADMINISTRATOR` to do this.")
 
-    // if (message.author.id !== "292821168833036288") return message.reply(maintenance);
+  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(nopermembed)
 
-    let needperm = "I need the permission `Manage Messages/Embed Links` to send my messages and delete your message!"
+  let incorrectembed = new Discord.RichEmbed()
+    .setColor("#ff0000")
+    .setDescription("**Please type one of the following: `all`, `clean` or `explicit`!**")
+    .setFooter("Magic8", bot.user.displayAvatarURL)
+    .setTimestamp()
 
-    if (!message.guild.me.hasPermission("EMBED_LINKS")) return message.reply(needperm).then(msg => {
-        msg.delete(10000)
-    })
+  let newreplies = args[0];
 
-    let nopermembed = new Discord.RichEmbed()
+  let setrepliesembed = new Discord.RichEmbed()
+    .setAuthor("Replies Set")
+    .setColor("#00ff00")
+    .setDescription("You will now receive: `" + newreplies + "` responses!")
+    .setFooter("Join support @ discord.gg/MCRbYdc - Magic8", bot.user.displayAvatarURL)
+    .setTimestamp()
 
-        .setColor("#ff0000")
-        .setDescription("**ERROR:** You must have `ADMINISTRATOR` to do this.")
+  if (!newreplies) {
+    message.channel.send(incorrectembed)
+    return;
+  } else if (!["all", "explicit", "clean"].includes(newreplies)) {
+    message.channel.send(incorrectembed)
+    return;
+  } else if (["all", "explicit", "clean"].includes(newreplies)) {
 
-    if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(nopermembed)
+    if (newreplies === "all") {
+      EnmapRepliesDb.set(`${message.guild.id}`, 1, "replynumber")
+    } else if (newreplies === "clean") {
+      EnmapRepliesDb.set(`${message.guild.id}`, 2, "replynumber")
+    } else if (newreplies === "explicit") {
+      EnmapRepliesDb.set(`${message.guild.id}`, 3, "replynumber")
+    }
 
-    let incorrectembed = new Discord.RichEmbed()
-
-        .setColor("#ff0000")
-        .setDescription("**Please type one of the following: `all`, `clean` or `explicit`!**")
-        .setFooter("Magic8")
-        .setTimestamp()
+    message.channel.send(setrepliesembed)
 
     let bots = message.guild.members.filter(member => member.user.bot).size;
     let users = message.guild.members.filter(member => !member.user.bot).size;
     let log = bot.channels.get(botconfig.commandlogs)
-    let timechange = new Date(new Date().getTime() - (5 * 3600000)).toLocaleString()
-    let logmsg = "`" + `${timechange} [COMMAND]: 'setreplies ${args[0]}', Author: ${message.author.username}, Server: ${message.guild.name} (${users}/${bots})` + "`"
-
-    let newreplies = args[0];
-
-    let setrepliesembed = new Discord.RichEmbed()
-
-        .setAuthor("Replies Set")
-        .setColor("#00ff00")
-        .setDescription("You will now receive: `" + newreplies + "` responses!")
-        .setFooter("Join support @ discord.gg/MCRbYdc - Magic8", bot.user.displayAvatarURL)
-        .setTimestamp()
-
-    if (!newreplies) return message.channel.send(incorrectembed)
-    if (!["all", "explicit", "clean"].includes(newreplies)) return message.channel.send(incorrectembed)
-    if (["all", "explicit", "clean"].includes(newreplies)) {
-
-        if (newreplies === "all") EnmapRepliesDb.set(`${message.guild.id}`, 1, "replynumber")
-        if (newreplies === "clean") EnmapRepliesDb.set(`${message.guild.id}`, 2, "replynumber")
-        if (newreplies === "explicit") EnmapRepliesDb.set(`${message.guild.id}`, 3, "replynumber")
-
-
-        message.channel.send(setrepliesembed).then(msg => {
-            msg.delete(30000)
-        })
-
-        log.send(logmsg)
-    }
+    let timechange = new Date(new Date().getTime() - (4 * 3600000)).toLocaleString()
+    log.send("`" + `${timechange} [COMMAND]: 'setreplies ${args[0]}', Author: ${message.author.username}, Server: ${message.guild.name} (${users}/${bots})` + "`")
+  }
 }
 
 module.exports.help = {
-    name: "setreplies"
+  name: "setreplies"
 }
