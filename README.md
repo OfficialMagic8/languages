@@ -1,6 +1,5 @@
 <div align="center">
 <img src="https://i.imgur.com/5zAi5QU.png" width="150" height="150" alt="Magic8" class="center">
-  <h2>Magic8</h2>
 <a href="https://top.gg/bot/484148705507934208" >
   <img src="https://top.gg/api/widget/484148705507934208.svg?usernamecolor=9a00ff&topcolor=1F1F1F" alt="Magic8" />
 </a><br>
