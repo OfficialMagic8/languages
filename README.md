@@ -40,12 +40,12 @@
 > - Embed Links (required)
 
 
-## Upcoming
+### Upcoming
 > - Ask more specific questions like when/where
 > - 99% response accuracy (sometimes you may get a response that doesn't fit your question)
 
 
-## Contact
+### Contact
 Developer: Fyrlex#2740
 
 Developer's note: Contact me any time for suggestions, comments or questions!
