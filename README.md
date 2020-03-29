@@ -12,6 +12,14 @@
   With Magic8 you can ask a question and get one of over <u>100</u> funny responses!
 </div>
 
+### Upcoming
+> - Major settings update
+> - New commands
+> - Fresher code
+> - Ask more specific questions like when/where
+> - 99% response accuracy (sometimes you may get a response that doesn't fit your question)
+
+
 ### Special Features
 > - Set responses appropiate for your server (all/clean/explicit) 
 > - Set a specific channel for users to run m\*8ball in!
@@ -41,16 +49,9 @@
 > - Embed Links (required)
 
 
-### Upcoming
-> - Ask more specific questions like when/where
-> - 99% response accuracy (sometimes you may get a response that doesn't fit your question)
-
-
 ### Contact
 Developer: Fyrlex#2740
 
 Developer's note: Contact me any time for suggestions, comments or questions!
 
 Support Server: [Click Here](https://dicsord.gg/MYKfu5Q)
-
-Website: [Click Here](https://magic8-bot.glitch.me/)
