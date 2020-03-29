@@ -22,14 +22,15 @@
 <p>(do not type <>'s or [ ]'s. <> is required to have something there, [ ] is optional)</p>
 <p>Prefix: m*</p>
 
-> - m\*8ball \<question\> // The Magic 8 Ball *(intended for yes/no/maybe questions, not when/where questions)*
+> - m\*8ball \<question\> // The Magic 8 Ball *(don't ask specific questions e.g. why/who/when/where questions)*
 > - m\*donate // Donation Page
-> - m\*help // Displays the help menu
+> - m\*help // Help Menu
 > - m\*info // Bot/Server Information
-> - m\*leave // Kicks the bot from your Discord server, replies with the invite link incase you want to invite Magic8 back
-> - m\*list // List the responses for 8ball, feel free to request one to be added
+> - m\*leave // Kicks the bot from your Discord server
+> - m\*list // List the responses for 8ball, feel free to request one (or more) to be added
+> - m\*req // *New!* Opens Request Help Menu
 > - m\*setchannel [0] - Run in channel for 8ball to work in, type 0 to reenable for all channels
-> - m\*setreplies <all/explicit/clean> // Set the type of replies for your server! Options: all, clean and just explicit!
+> - m\*setreplies <all/explicit/clean> // Set appropriate reply type for your server
 
 
 ### Permissions
