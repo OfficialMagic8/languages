@@ -12,33 +12,29 @@
   With Magic8 you can ask a question and get one of over <u>100</u> funny responses!
 </div>
 
-### Upcoming
-> - Major settings update
-> - New commands
-> - Fresher code
-> - Ask more specific questions like when/where
-> - 99% response accuracy (sometimes you may get a response that doesn't fit your question)
+  Magic8 is an interactive Discord Bot circled around the well known game, Magic 8 ball!<br>
+  With Magic8 you can ask a question and get one of over <u>100</u> funny responses!
 
 
 ### Special Features
-> - Set responses appropiate for your server (all/clean/explicit) 
-> - Set a specific channel for users to run m\*8ball in!
-> - Easy support/communication with the developer
+> - Custom Prefixes `m*settings prefix`
+> - Custom responses for your server `m*settings setreplies`
+> - Set responses appropiate for your server `m*settings setmode`
+> - Restrict 8ball command to a specific channel
+> - Request responses for the global replies
+> - Developer has open DM's for suggestions + support server
 
 
 ### Commands 
-<p>(do not type <>'s or [ ]'s. <> is required to have something there, [ ] is optional)</p>
-<p>Prefix: m*</p>
+<p>Type a command in your server for more help</p>
+<p>Key: m\*command - alias</p>
 
-> - m\*8ball \<question\> // The Magic 8 Ball *(don't ask specific questions e.g. why/who/when/where questions)*
-> - m\*donate // Donation Page
-> - m\*help // Help Menu
-> - m\*info // Bot/Server Information
-> - m\*leave // Kicks the bot from your Discord server
-> - m\*list // List the responses for 8ball, feel free to request one (or more) to be added
-> - m\*req // *New!* Opens Request Help Menu
-> - m\*setchannel [0] - Run in channel for 8ball to work in, type 0 to reenable for all channels
-> - m\*setreplies <all/explicit/clean> // Set appropriate reply type for your server
+> - m\*8ball - 8b // Magic8 Ball! *(ask yes/no questions)*
+> - m\*donate - d // Donation Page
+> - m\*help - h // Help Menu
+> - m\*info - i // Bot/Server Information
+> - m\*requst - req // *New!* Request Help Menu
+> - m\*settings - s // *New!* Settings Menu
 
 
 ### Permissions
