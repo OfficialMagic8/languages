@@ -24,7 +24,7 @@
 
 ### Commands 
 <p>Type a command in your server for more help</p>
-<p>Key: m\*command - alias</p>
+<p>Key: m*command - alias</p>
 
 > - m\*8ball - 8b // Magic8 Ball! *(ask yes/no questions)*
 > - m\*donate - d // Donation Page
