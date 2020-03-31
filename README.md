@@ -12,6 +12,7 @@
   With Magic8 you can ask a question and get one of over <u>100</u> funny responses!
 </div>
 
+
   Magic8 is an interactive Discord Bot circled around the well known game, Magic 8 ball!<br>
   With Magic8 you can ask a question and get one of over <u>100</u> funny responses!
 
