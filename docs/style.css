@@ -35,6 +35,7 @@ th {
 p {
 	font-family: "Arial";
 	text-align: center;
+  color: white;
 }
 h1 {
 	font-family: "Helvetica";
@@ -66,26 +67,26 @@ a {
     color: #999999;
 }
 ul {
-    list-style-type: none;
-    margin: -8px;
-    padding: 0px;
-    overflow: hidden;
-    background-color: #222222;
+  list-style-type: none;
+  margin: -8px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #222222;
 }
 .gray {
   color: #222222;
   font-size: 18px;
 }
 li {
-    float: left;
+  float: left;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .left {
@@ -102,12 +103,6 @@ li a {
   bottom: 0;
   position: absolute;
   right: 0;
-}
-
-.tostitle {
-  text-align: left;
-  margin: 5px;
-  font-family: "Times New Roman";
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -135,9 +130,7 @@ body {
   min-height: 100%;
   margin-bottom: -50px;
 }
-.p {
-  color: white;
-}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -180,7 +173,6 @@ a:link {
   text-align: center;
   color: #353535;
 }
-
 .url {
   color: #555555;
 }
