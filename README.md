@@ -31,7 +31,7 @@
 > - m\*donate - d // Donation Page
 > - m\*help - h // Help Menu
 > - m\*info - i // Server Information
-> - m\*requst - req // *New!* Request Help Menu
+> - m\*request - req // *New!* Request Help Menu
 > - m\*settings - s // *New!* Settings Menu
 
 
