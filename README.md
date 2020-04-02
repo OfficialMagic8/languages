@@ -27,9 +27,10 @@
 <p>Key: m*command - alias</p>
 
 > - m\*8ball - 8b // Magic8 Ball! *(ask yes/no questions)*
+> - m\*8ball - b // Bot Information
 > - m\*donate - d // Donation Page
 > - m\*help - h // Help Menu
-> - m\*info - i // Bot/Server Information
+> - m\*info - i // Server Information
 > - m\*requst - req // *New!* Request Help Menu
 > - m\*settings - s // *New!* Settings Menu
 
