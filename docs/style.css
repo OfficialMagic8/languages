@@ -2,10 +2,13 @@ table, th, td {
  border-collapse: collapse;
  border-bottom: 1px solid #ddd;
 }
-.staffimg {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
+.cropgif {
+	margin: 0 auto;
+  border: 10px outset #ddd;
+  text-align: right;
+  bottom: 0;
+  position: absolute;
+  right: 0;
 }
 th, td {
   padding: 10px;
