@@ -3,7 +3,7 @@ table, th, td {
  border-bottom: 1px solid #ddd;
 }
 .cropgif {
-	margin: 0 auto;
+	margin: 10px auto;
   border: 10px outset #ddd;
   text-align: right;
   bottom: 0;
