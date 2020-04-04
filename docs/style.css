@@ -4,8 +4,8 @@ table, th, td {
 }
 .cropgif {
 	margin: 10px auto;
-  border: 10px outset #ddd;
-  text-align: right;
+  border: 10px outset #353;
+  text-align: left;
   bottom: 0;
   position: absolute;
   right: 0;
