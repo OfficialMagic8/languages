@@ -14,12 +14,12 @@
 
 
 ### Special Features
-> - Custom prefixes `m*settings prefix`
-> - Custom responses for your server `m*settings setreplies`
-> - Custom embed color for 8ball `m*settings color`
+> - **Custom prefixes!** `m*settings prefix`
+> - Custom 8ball responses for your server
+> - Custom embed color for 8ball
 > - Restrict 8ball command to a specific channel
 > - Request responses for the global replies
-> - Developer has open DM's for suggestions + support server
+> - Developer has open DM's for suggestions + support server!
 
 
 ### Commands 
