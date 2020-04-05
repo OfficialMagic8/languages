@@ -14,7 +14,7 @@
 
 
 ### Special Features
-> - **Custom prefixes!** `m*settings prefix`
+> - **Custom prefixes!** `m*settings setprefix`
 > - Custom 8ball responses for your server
 > - Custom embed color for 8ball
 > - Restrict 8ball command to a specific channel
