@@ -38,9 +38,13 @@
 ### Permissions
 <p>Edit permissions on the invite page</p>
 
-> - Read/Send messages (required)
-> - Manage messages (optional)
-> - Embed Links (required)
+> - **Create Invite** for invite generator - (required)
+> - **Attach Files** for future features - (will be required)
+> - **Add Reactions** for small upcoming features - (required)
+> - **Use External Emojis** for games and menus - (required)
+> - **Read/Send Messages** for you know, sending messages - (required)
+> - **Embed Links** to send help menus and games (required)
+> - **Manage Messages** to delete the commands when you run them (optional)
 
 
 ### Contact
