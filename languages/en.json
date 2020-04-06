@@ -1,0 +1,243 @@
+{
+  "languagename": "English",
+  "ball": {
+    "invalidchannel": "{CROSS} **Incorrect channel!** Go to {8BALLCHANNEL} to use **8ball**!",
+    "asksomething": "{CROSS} **You need to ask a yes/no question!**",
+    "customresponses": ["{CROSS} **Custom responses are enabled but none were added!**",
+                        "Please contact an administrator."],
+    "customresponsesadmin": ["{CROSS}**Custom responses are enabled but none were added!**",
+                             "",
+                             "To add new responses use `${prefix}settings setreplies Reply 1|Reply 2|Reply 3`",
+                             "",
+                             "{WARNING} You need to add at least 2 replies."],
+    "askedquestion": "{TAG} asked question #{NUMBER}",
+    "question": "Question",
+    "answer": "Answer",
+    "replies": {
+      "all": [
+        "Absolutely!",
+        "Absolutely not",
+        "Aight, i think imma head out now",
+        "Ask your father",
+        "Bruh you can't ask that",
+        "Definitley, thats a great idea",
+        "Do it, you won't!",
+        "Does your mom know that?",
+        "Give it time...",
+        "Huh?",
+        "I believe so...",
+        "I don't see why not?",
+        "I don't think so",
+        "I don't understand...",
+        "I was thinking, maybe...?",
+        "I'd rather keep that to myself...",
+        "I'd rather not say...",
+        "I'd rather you ask yourself first",
+        "idk about that",
+        "If only it was that easy...",
+        "If you give me ice cream i'll answer",
+        "If you say so",
+        "In another life",
+        "Nahhh",
+        "No sir",
+        "No u",
+        "Nope",
+        "Not even close",
+        "Not in a million years",
+        "Only on a full moon",
+        "Possibly...",
+        "Sir that is incorrect",
+        "That's what the goverment want's you to think... :wink:",
+        "ur mom thinks so",
+        "Well yes, but actually no",
+        "What are you asking me for?",
+        "Wouldn't really count on it",
+        "Yea",
+        "Yes",
+        "You know it be true",
+        "You only live once...",
+        "You wish!",
+        "Yup",
+        "As soon as your headass learns how to read",
+        "Bitch what?",
+        "Bitch, really?",
+        "Bruh what the fuck- just no",
+        "Bucking YES",
+        "Hell no",
+        "Hell yea!",
+        "I ain't telling you shit",
+        "No shit sherlock",
+        "Oh, fuck no",
+        "Only a dick like you would know",
+        "Shit you're right",
+        "Try again motherfucker",
+        "Uh, are you retarted? lmao",
+        "What the fuck is that supposed to mean",
+        "What was that, asswipe?",
+        "Yea no shit...",
+        "Yea totally- no of course not you fucker",
+        "You can't fucking say that"
+      ],
+      "clean": [
+        "Absolutely!",
+        "Absolutely not",
+        "Aight, i think imma head out now",
+        "Ask your father",
+        "Bruh you can't ask that",
+        "Definitley, thats a great idea",
+        "Do it, you won't!",
+        "Does your mom know that?",
+        "Give it time...",
+        "Huh?",
+        "I believe so...",
+        "I don't see why not?",
+        "I don't think so",
+        "I don't understand...",
+        "I was thinking, maybe...?",
+        "I'd rather keep that to myself...",
+        "I'd rather not say...",
+        "I'd rather you ask yourself first",
+        "idk about that",
+        "If only it was that easy...",
+        "If you give me ice cream i'll answer",
+        "If you say so",
+        "In another life",
+        "Nahhh",
+        "No sir",
+        "No u",
+        "Nope",
+        "Not even close",
+        "Not in a million years",
+        "Only on a full moon",
+        "Possibly...",
+        "Sir that is incorrect",
+        "That's what the goverment want's you to think... :wink:",
+        "ur mom thinks so",
+        "Well yes, but actually no",
+        "What are you asking me for?",
+        "Wouldn't really count on it",
+        "Yea",
+        "Yes",
+        "You know it be true",
+        "You only live once...",
+        "You wish!",
+        "Yup"
+      ],
+      "explicit": [
+        "As soon as your headass learns how to read",
+        "Bitch what?",
+        "Bitch, really?",
+        "Bruh what the fuck- just no",
+        "Fucking YES",
+        "Hell no",
+        "Hell yea!",
+        "I ain't telling you shit",
+        "No shit sherlock",
+        "Oh, fuck no",
+        "Only a dick like you would know",
+        "Shit you're right",
+        "Try again motherfucker",
+        "Uh, are you retarted? lmao",
+        "What the fuck is that supposed to mean",
+        "What was that, asswipe?",
+        "Yea no shit...",
+        "Yea totally- no of course not you fucker",
+        "You can't fucking say that"
+      ]
+    }
+  },
+  "color": {
+    "disabledgame": "{CROSS} **This game is disabled!** Use `{PREFIX}settings 8color toggle`",
+    "invalidchannel": "{CROSS} **Incorrect channel!** Go to {8COLORCHANNEL} to use **8color**!",
+    "youalreadyplaying": "{CROSS} **Looks like you are already playing somewhere else!**",
+    "game": {
+      "playing": {
+        "title": "{TAG} is playing 8Color",
+        "description": [
+          "You are about to start **Level {LEVEL}**!",
+          "Memorize the next pattern:",
+          "{PATTERN}",
+          "",
+          "_In 10 seconds the message will be deleted!_"
+        ]
+      },
+      "enterpattern":{
+        "description": [
+          "You are playing **Level {LEVEL}**",
+          "Enter the pattern you memorized",
+          "",
+          "_You have 15 seconds to answer!_"
+        ]
+      },
+      "win": {
+        "description": [
+          "{CHECK} **Correct! You entered the right pattern!**",
+          "",
+          "_Next level starting in 10 seconds!_"
+        ]
+      },
+      "lose": {
+        "title": "{TAG} was playing 8color",
+        "description": [
+          "{CROSS} **Wrong! You didn't enter the right pattern!**",
+          "",
+          "**The correct pattern was:**",
+          "{PATTERN}",
+          "**You entered:**",
+          "{REPLY}",
+          "",
+          "**You reached level:** {LEVEL}",
+          "",
+          "_Thanks for playing!_"
+        ],
+        "descriptiontimeout": [
+          "{CROSS} **Time out! You didn't enter the right pattern!**",
+          "",
+          "**You reached level:** {LEVEL}",
+          "",
+          "_Thanks for playing!_"
+        ]
+      }
+    },
+    "error": {
+      "cannotstart": "{CROSS} **Couldn't start the game correctly in {CHANNEL} channel in '{GUILD}' guild.**",
+      "cannotcontinue": "{CROSS} **Couldn't continue the game correctly in {CHANNEL} channel in '{GUILD}' guild.**",
+      "cannotfinish": "{CROSS} **Couldn't finish the game correctly in {CHANNEL} channel in '{GUILD}' guild.**"
+    }
+  },
+  "belike": {
+    "provideyourname": "{CROSS} **You need to specify at least your name.**",
+    "description": [
+      "{CHECK} **Here is your image {USER}!**"
+    ]
+  },
+  "binfo": {
+    "title": "{USER} - Bot information",
+    "description": [
+      "__**Stats**__",
+      "📚 **Total Guilds**: {GUILDS}",
+      "👥 **Total Users**: {USERS}",
+      "💬 **Total Channels**: {CHANNELS}",
+      "🎱 **8ball Plays:** {BALLS}",
+      "🎨 **Color Plays:** {COLORS}",
+      "",
+      "⏲️ **Uptime:** {UPTIME}",
+      "",
+      "👑 **Owner:** {OWNER}",
+      "💎 **Head Developer:** {HEADDEVELOPER}",
+      "🗓️ **Created on:** {CREATIONDATE}",
+      "",
+      "**Useful Links:**",
+      "[Donate]({DONATELINK}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
+    ]
+  },
+  "clear": {
+    "enteramount": "{CROSS} **| Enter an amount of messages to delete!**",
+    "invalidamount": "{CROSS} **| Entered amount is not válid!**",
+    "cannotgreater": "{CROSS} **| Please provide a number less than `150`!**",
+    "cannotlower": "{CROSS} **| Please provide a number that is at least `1`!**",
+    "errordeleting": "{CROSS} **| Unexpected error. Couldn't delete messages!**",
+    "deleted": "{CHECK} **| Cleared `{AMOUNT}` messages!**"
+  }
+  
+}
