@@ -5,7 +5,7 @@
 
 
 ### Complete
-> - English 100%
+> - English
 
 ### In Progress
 > - French
