@@ -14,7 +14,7 @@
 
 ### Special Features
 > - **Custom prefixes!** `m*settings setprefix`
-> - **Support for other languages!** [files](https://github.com/Fyrlex/Magic8/tree/master/languages)
+> - **Support for other languages! [click for files](https://github.com/Fyrlex/Magic8/tree/master/languages)**
 > - Custom 8ball responses for your server
 > - Custom embed color for 8ball
 > - Restrict games to a specific channel
