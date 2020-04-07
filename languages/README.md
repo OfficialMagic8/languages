@@ -7,7 +7,7 @@
 ### Complete
 > - English
 
-### In Progress
+### In Progress - Please make edits if you think we made a mistake!
 > - French
 > - German
 > - Italian
