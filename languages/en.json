@@ -5,89 +5,158 @@
     "asksomething": "{CROSS} **You need to ask a yes/no question!**",
     "customresponses": ["{CROSS} **Custom responses are enabled but none were added!**",
                         "Please contact an administrator."],
-    "customresponsesadmin": ["{CROSS}**Custom responses are enabled but none were added!**",
-                             "",
-                             "To add new responses use `${prefix}settings setreplies Reply 1|Reply 2|Reply 3`",
-                             "",
-                             "{WARNING} You need to add at least 2 replies."],
+    "customresponsesadmin": [
+      "{CROSS}**Custom responses are enabled but none were added!**",
+      "",
+      "To add new responses use `{PREFIX}settings 8ball setreplies Reply 1|Reply 2|Reply 3`",
+      "",
+      "{WARNING} You need to add at least 2 replies."
+    ],
     "askedquestion": "{TAG} asked question #{NUMBER}",
     "question": "Question",
     "answer": "Answer",
     "replies": {
       "all": [
-        "Absolutely!",
         "Absolutely not",
-        "Aight, i think imma head out now",
-        "Ask your father",
-        "Bruh you can't ask that",
-        "Definitley, thats a great idea",
-        "Do it, you won't!",
-        "Does your mom know that?",
-        "Give it time...",
-        "Huh?",
-        "I believe so...",
-        "I don't see why not?",
-        "I don't think so",
-        "I don't understand...",
-        "I was thinking, maybe...?",
-        "I'd rather keep that to myself...",
-        "I'd rather not say...",
-        "I'd rather you ask yourself first",
-        "idk about that",
-        "If only it was that easy...",
-        "If you give me ice cream i'll answer",
-        "If you say so",
-        "In another life",
-        "Nahhh",
-        "No sir",
-        "No u",
-        "Nope",
-        "Not even close",
-        "Not in a million years",
-        "Only on a full moon",
-        "Possibly...",
-        "Sir that is incorrect",
-        "That's what the goverment want's you to think... :wink:",
-        "ur mom thinks so",
-        "Well yes, but actually no",
-        "What are you asking me for?",
-        "Wouldn't really count on it",
-        "Yea",
-        "Yes",
-        "You know it be true",
-        "You only live once...",
-        "You wish!",
-        "Yup",
+        "Absolutely!",
+        "According to my religion, no",
+        "Ahhh, you're one of those people",
+        "Almost always!",
+        "And pigs fly- oh wait, I thought we were only talking about things that are possible",
+        "Are you okay? Normal people don't ask that",
+        "Are you always like this?",
+        "As soon as you get your grades up",
         "As soon as your headass learns how to read",
+        "Ask me again I'm not sure",
+        "Ask daddy",
+        "Ask your ex",
+        "Ask your parents for permission first",
+        "Ask your stepmom",
         "Bitch what?",
         "Bitch, really?",
         "Bruh what the fuck- just no",
-        "Bucking YES",
-        "Hell no",
-        "Hell yea!",
-        "I ain't telling you shit",
-        "No shit sherlock",
-        "Oh, fuck no",
-        "Only a dick like you would know",
-        "Shit you're right",
-        "Try again motherfucker",
-        "Uh, are you retarted? lmao",
-        "What the fuck is that supposed to mean",
-        "What was that, asswipe?",
-        "Yea no shit...",
-        "Yea totally- no of course not you fucker",
-        "You can't fucking say that"
-      ],
-      "clean": [
-        "Absolutely!",
-        "Absolutely not",
-        "Aight, i think imma head out now",
-        "Ask your father",
         "Bruh you can't ask that",
+        "Call your grandma you dumb fuck",
+        "Call the police when you realize how dumb you are",
+        "Correct",
         "Definitley, thats a great idea",
         "Do it, you won't!",
         "Does your mom know that?",
+        "Ehhhh?",
+        "Excuse me, what the fuck?",
+        "Fuck you. I'm done with your shit",
+        "Fucking yes",
         "Give it time...",
+        "Haha nope",
+        "Hell no",
+        "Hell yea!",
+        "Hi! Do you speak english?",
+        "Huh?",
+        "I ain't telling you shit",
+        "I believe so...",
+        "I don't see why not?",
+        "I don't think so",
+        "I don't understand...",
+        "I was thinking, maybe...?",
+        "I'd rather keep that to myself...",
+        "I'd rather not say...",
+        "I'd rather you ask yourself first",
+        "Idk about that",
+        "If only it was that easy...",
+        "If you give me ice cream I'll answer",
+        "If you say so",
+        "If you think about it, yes",
+        "If: 1 + 1 = 3, yes",
+        "In another life",
+        "Jesus you're killing me with these questions",
+        "K",
+        "My friend, it isn't that easy",
+        "Nah bruh",
+        "Nahhh",
+        "Nawww",
+        "Never will that be true",
+        "No...",
+        "No?",
+        "No.",
+        "No shit sherlock",
+        "No sir",
+        "No u",
+        "Nope",
+        "Not answering you",
+        "Not even close",
+        "Not in a million years",
+        "Not unless you pay me $100,000",
+        "Not until you get into college",
+        "Of all people, why ask me? (jk keep talking to me)",
+        "Of course you're gonna ask me that",
+        "Oh wouldn't you just love to know the answer",
+        "Oh, fuck no",
+        "Ok.",
+        "Only a dick like you would know",
+        "Only on a full moon",
+        "Only you would ask that",
+        "Possibly...",
+        "Probably not",
+        "Probably!",
+        "Seriously bro? No",
+        "Sir that is incorrect",
+        "*sigh*... I'm gonna be honest, no",
+        "Shit you're right",
+        "Sry I don't speak stupid",
+        "That's 100% correct",
+        "That's impossible!",
+        "That's what the goverment want's you to think... :wink:",
+        "Totally",
+        "Try again motherfucker",
+        "Uh, are you retarted? Lmao",
+        "Ur mom thinks so",
+        "Ur sugardaddy think so",
+        "Well yes, but actually no",
+        "What are you asking me for?",
+        "What the fuck is that supposed to mean?",
+        "What was that, asswipe?",
+        "Why not?",
+        "Wouldn't really count on it",
+        "Yea no shit...",
+        "Yea totally- no of course not you fucker",
+        "Yea",
+        "Yea. Mhm. Sure. Totally.",
+        "Yes",
+        "Yes! Yes! Why won't you take yes for an answer?",
+        "Yes",
+        "You bet!",
+        "You can't fucking say that",
+        "You know it be true",
+        "You only live once...",
+        "You wish!",
+        "Yup"
+      ],
+      "clean": [
+        "Absolutely not",
+        "Absolutely!",
+        "According to my religion, no",
+        "As soon as your headass learns how to read",
+        "Ahhh, you're one of those people",
+        "Almost always!",
+        "And pigs fly- oh wait, I thought we were only talking about things that are possible",
+        "Are you okay? Normal people don't ask that",
+        "Are you always like this?",
+        "As soon as you get your grades up",
+        "Ask me again I'm not sure",
+        "Ask daddy",
+        "Ask your ex",
+        "Ask your parents for permission first",
+        "Ask your stepmom",
+        "Bruh you can't ask that",
+        "Call the police when you realize how dumb you are",
+        "Correct",
+        "Definitley, thats a great idea",
+        "Do it, you won't!",
+        "Does your mom know that?",
+        "Ehhhh?",
+        "Give it time...",
+        "Haha nope",
+        "Hi! Do you speak english?",
         "Huh?",
         "I believe so...",
         "I don't see why not?",
@@ -97,27 +166,59 @@
         "I'd rather keep that to myself...",
         "I'd rather not say...",
         "I'd rather you ask yourself first",
-        "idk about that",
+        "Idk about that",
         "If only it was that easy...",
-        "If you give me ice cream i'll answer",
+        "If you give me ice cream I'll answer",
         "If you say so",
+        "If you think about it, yes",
+        "If: 1 + 1 = 3, yes",
         "In another life",
+        "Jesus you're killing me with these questions",
+        "K",
+        "My friend, it isn't that easy",
+        "Nah bruh",
         "Nahhh",
+        "Nawww",
+        "Never will that be true",
+        "No...",
+        "No?",
+        "No.",
         "No sir",
         "No u",
         "Nope",
+        "Not answering you",
         "Not even close",
         "Not in a million years",
+        "Not unless you pay me $100,000",
+        "Not until you get into college",
+        "Of all people, why ask me? (jk keep talking to me)",
+        "Of course you're gonna ask me that",
+        "Oh wouldn't you just love to know the answer",
+        "Ok.",
         "Only on a full moon",
+        "Only you would ask that",
         "Possibly...",
+        "Probably not",
+        "Probably!",
+        "Seriously bro? No",
         "Sir that is incorrect",
+        "*sigh*... I'm gonna be honest, no",
+        "Sry I don't speak stupid",
+        "That's 100% correct",
+        "That's impossible!",
         "That's what the goverment want's you to think... :wink:",
-        "ur mom thinks so",
+        "Totally",
+        "Ur mom thinks so",
         "Well yes, but actually no",
         "What are you asking me for?",
+        "Why not?",
         "Wouldn't really count on it",
         "Yea",
+        "Yea. Mhm. Sure. Totally.",
         "Yes",
+        "Yes! Yes! Why won't you take yes for an answer?",
+        "Yes",
+        "You bet!",
         "You know it be true",
         "You only live once...",
         "You wish!",
@@ -126,19 +227,21 @@
       "explicit": [
         "As soon as your headass learns how to read",
         "Bitch what?",
-        "Bitch, really?",
-        "Bruh what the fuck- just no",
-        "Fucking YES",
-        "Hell no",
-        "Hell yea!",
+        "Bitch, really",
+        "Call your grandma you dumb fuck",
+        "Call the police when you realize how dumb you are",
+        "Excuse me, what the fuck?",
+        "Fuck you. I'm done with your shit",
+        "Fucking yes",
         "I ain't telling you shit",
         "No shit sherlock",
         "Oh, fuck no",
-        "Only a dick like you would know",
         "Shit you're right",
+        "Sry I don't speak dumbfuck",
         "Try again motherfucker",
-        "Uh, are you retarted? lmao",
-        "What the fuck is that supposed to mean",
+        "Uh, are you retarted? Lmao",
+        "Ur sugardaddy think so",
+        "What the fuck is that supposed to mean?",
         "What was that, asswipe?",
         "Yea no shit...",
         "Yea totally- no of course not you fucker",
@@ -158,7 +261,7 @@
           "Memorize the next pattern:",
           "{PATTERN}",
           "",
-          "_In 10 seconds the message will be deleted!_"
+          "_In {TIME} seconds the message will be deleted!_"
         ]
       },
       "enterpattern":{
@@ -166,7 +269,7 @@
           "You are playing **Level {LEVEL}**",
           "Enter the pattern you memorized",
           "",
-          "_You have 15 seconds to answer!_"
+          "_You have {TIME} seconds to answer!_"
         ]
       },
       "win": {
@@ -222,6 +325,7 @@
       "🎨 **Color Plays:** {COLORS}",
       "",
       "⏲️ **Uptime:** {UPTIME}",
+      "📦 **RAM:** {RAM}",
       "",
       "👑 **Owner:** {OWNER}",
       "💎 **Head Developer:** {HEADDEVELOPER}",
@@ -238,6 +342,168 @@
     "cannotlower": "{CROSS} **| Please provide a number that is at least `1`!**",
     "errordeleting": "{CROSS} **| Unexpected error. Couldn't delete messages!**",
     "deleted": "{CHECK} **| Cleared `{AMOUNT}` messages!**"
+  },
+  "donate": {
+    "title": "Magic8 Donation Page",
+    "description": [
+      "Donating to developers are motives for them to keep their projects going and let them know people care about their work.",
+      "",
+      "",
+      "**Magic8** will for sure be around for a long time, but all the work put in to Magic8 depends on how much the users use it. Donating allows developers to know there are still people who want this project to be under development",
+      "Join our server **[Magic8 Support Server]({INVITATION})** for more details about how to obtain `Supporter 💸` role.",
+      "",
+      "**Donation Link:** [__Click here__]({DONATIONLINK})",
+      "",
+      "- Thank you for your support!`"
+    ]
+  },
+  "info": {
+    "title": "{BOTNAME} - {GUILDNAME}",
+    "description": [
+      "__**Server Information**__ - **Prefix:** {PREFIX}",
+      "**User/Bots/Online**: {USERS}/{BOTS}/{ONLINE}",
+      "**Text/Voice Channels:** {TEXTCHANNELS}/{VOICECHANNELS}", 
+      "**8ball Channel:** {8BALLCHANNEL}",
+      "**🎱 8ball Plays:** {8BALLPLAYS}",
+      "**⚙️ 8ball Color:** {8BALLCOLOR}",
+      "**🎨 Color Plays:** {8COLORPLAYS}",
+      "**🏅 Server Level:** {SERVERLEVEL}",
+      "**📝 Custom Responses:** {CURRENTRESPONSES}/{TOTALRESPONSES}",
+      "**Reply Type:** {REPLYTYPE}",
+      "",
+      "**Owner:** {OWNER}",
+      "**Server Created:** {CREATED}",
+      "**Bot Joined:** {JOINED}",
+      "",
+      "To view bot stats, type: `{PREFIX}binfo`",
+      "",
+      "**Useful Links:**",
+      "[Donate]({DONATELINK}) • [Support Server]({GITHUBLINK}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
+    ],
+    "footer": "{BOTNAME} v{VERSION} • Information"
+  },
+  "help": {
+    
+  },
+  "invite": {
+    "title": "Invite Magic8 to your server!",
+    "description": [
+      "Hey {AUTHOR}! Do you like **Magic8**?`,`Do you want your friends to know about **Magic8** too?",
+      "",
+      "Invite the bot to your **game server** so all your friends can enjoy **Magic8's** unique features together!",
+      "",
+      "[{MAGIC8EMOJI} **Click Here!**]({INVITE})",
+      "",
+      "{CHECK} **Let's have fun!**"
+    ],
+    "footer": "{BOTNAME} v{VERSION} • Invite me!"
+  },
+  "level": {
+    "title": "{BOTNAME} - Server Level",
+    "description": [
+      "**Servers Levels** are made to adjust to members necessity based on **guild size**!",
+      "The **more members** you have, the **more custom responses** you can use!",
+      "",
+      "**__The levels requirements are:__**",
+      "{LIST}",
+      "",
+      "**{GUILDNAME}** level is **{SERVELEVEL}**",
+      "This server can set up to **{MAXRESPONSES}** custom responses."
+    ],
+    "footer": "{BOTNAME} v{VERSION} • Invite more people!"
+  },
+  "avatar": {
+    "error": {
+      "description": [
+        "{CROSS} **Invalid member or id!**"
+      ]
+    },
+    "success": {
+      "description": [
+        "{CHECK} Here is {USER} avatar! [Link]({URL})"
+      ],
+      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
+    }
+  },
+  "howgay": {
+    "error": {
+      "description": [
+        "{CROSS} **Invalid member or id!**"
+      ]
+    },
+    "success": {
+      "description": [
+        "🏳️‍🌈 {TARGET} is `{PERCENT}%` gay 🏳️‍🌈"
+      ],
+      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
+    }
+  },
+  "neko": {
+    "success": {
+      "description": [
+        "{CHECK} **{USER} here is your neko!**"
+      ]
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Someone stole all nekos. Try again later!**"
+      ]
+    }
+  },
+  "say": {
+    "messagerequired": [
+      "{CROSS} **You need to specify a message!**"
+    ],
+    "nopermsinchannel": [
+      "{CROSS} **Looks like I don't have permissions in {CHANNEL}**"
+    ]
+  },
+  "pat": {
+    "invalidtarget":{
+      "description": [
+        "{CROSS} **{USER}, provide a valid member or id!**"
+      ]
+    },
+    "success": {
+      "self": {
+        "description": [
+          "{CHECK} **{USER} patted themselves!**"
+        ]
+      },
+      "other": {
+        "description": [
+          "{CHECK} **{USER} patted {TARGET}!**"
+        ]
+      }
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    }
+  },
+  "slap": {
+    "invalidtarget":{
+      "description": [
+        "{CROSS} **{USER}, provide a valid member or id!**"
+      ]
+    },
+    "success": {
+      "self": {
+        "description": [
+          "{CHECK} **{USER} slapped themselves!**"
+        ]
+      },
+      "other": {
+        "description": [
+          "{CHECK} **{USER} slapped {TARGET}!**"
+        ]
+      }
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    }
   }
-  
 }
