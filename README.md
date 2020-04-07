@@ -56,7 +56,7 @@
 
 
 ### Contact
-Developesr: Fyrlex#2740 & Alonso#0017
+Developers: Fyrlex#2740 & Alonso#0017
 
 Note: Contact us any time for suggestions, comments or questions! We really appreciate it!
 
