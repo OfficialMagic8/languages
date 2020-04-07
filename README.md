@@ -8,7 +8,7 @@
 
 
 <div align="center">
-  Magic8 is an interactive Discord Bot with many fun features to play with! From asking a question and getting one of <u>100<u/> responses to slapping your friend!<br>
+  Magic8 is an interactive Discord Bot with many fun features to play with! From asking a question and getting one of <u>100</u> responses to slapping your friend!<br>
 </div>
 
 
