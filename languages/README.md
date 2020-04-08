@@ -9,6 +9,8 @@
 - Do **NOT** use a translating service
 - Do **NOT** change the meaning of translations. We will review your submission(s).
 
+Please only translate files to your known language if you are already **fluent** in English. This way, you can understand the grammar and make proper changes.
+
 ### Complete
 > - English
 
