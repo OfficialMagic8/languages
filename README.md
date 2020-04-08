@@ -36,7 +36,7 @@
 > - **Reactions**
 > - m!pat m!slap
 > - **Information**
-> - m!binfo m!donate m!help m!info m!invite m!level m!request
+> - m!binfo m!donate m!help m!info m!invite m!level
 > - **Utils**
 > - m!clear
 > - **Miscellaneous**
