@@ -16,5 +16,3 @@
 > - French
 > - Italian
 > - Spanish
-
-#### Placeholders
