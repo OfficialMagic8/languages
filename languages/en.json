@@ -505,5 +505,52 @@
         "{CROSS} **Unexpected error. Try again later!**"
       ]
     }
+  },
+  "chucknorris": {
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    },
+    "success": {
+      "description": [
+        "{CHECK} **{JOKE}**"
+      ]
+    }
+  },
+  "fakeinfo": {
+    "title": "{TAG} generated fake information!",
+    "description": [
+      "**{CHECK} {USER}, your fake information was generated successfully!**",
+      "",
+      "**👤 Fake info generated:**",
+      "```json",
+      "{INFO}```",
+      "{VERIFIED} _This information is randomly generated. It doesn't refer to any company or real person. The purpose of this command is to get information to fill databases or complete surveys._"
+    ]
+  },
+  "spoiler": {
+    "messagerrquired": {
+      "description": [
+        "{CROSS} **Specify a message ._.**"
+      ]
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    }
+  },
+  "yomomma": {
+    "success": {
+      "description": [
+        "{CHECK} **{JOKE}**"
+      ]
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    }
   }
 }
