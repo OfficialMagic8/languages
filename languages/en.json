@@ -1,5 +1,6 @@
 {
   "languagename": "English",
+  "flag": "🇺🇸",
   "ball": {
     "invalidchannel": "{CROSS} **Incorrect channel!** Go to {8BALLCHANNEL} to use **8ball**!",
     "asksomething": "{CROSS} **You need to ask a yes/no question!**",
