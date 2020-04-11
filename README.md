@@ -59,8 +59,8 @@
 
 
 ### Contact
-Developers: Fyrlex#2740 & Alonso#0017
+**Developers:** Fyrlex#2740 & Alonso#0017
 
-Note: Contact us any time for suggestions, comments or questions! We really appreciate it!
+**Note:** Contact us any time for suggestions, comments or questions! We really appreciate it!
 
 **Support Server: [Click Here](https://dicsord.gg/MYKfu5Q)**
