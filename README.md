@@ -26,11 +26,13 @@
 <p>Type a command in your server for more help!</p>
 
 > - **Entertainment**
-> - m!8ball m!belike m!spoiler
+> - m!8ball m!akinator m!belike m!spoiler
 > - **Games**
 > - m!8color
 > - **Anime**
 > - m!neko
+> - **Minecraft**
+> - m!cape m!hypixel m!mcskin m!namehistory
 > - **Random**
 > - m!chucknorris m!fakeinfo m!yomomma
 > - **Reactions**
@@ -38,9 +40,9 @@
 > - **Information**
 > - m!binfo m!donate m!help m!info m!invite m!level
 > - **Utils**
-> - m!clear
+> - m!clear m!ticket
 > - **Miscellaneous**
-> - m!avatar m!howgay
+> - m!avatar m!howgay m!leagueoflegends
 > - **Admin**
 > - m!settings
 
