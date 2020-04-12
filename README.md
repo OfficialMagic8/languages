@@ -34,7 +34,7 @@
 > - **Minecraft**
 > - m!cape m!hypixel m!mcskin m!namehistory
 > - **Random**
-> - m!chucknorris m!fakeinfo m!yomomma
+> - m!bored m!chucknorris m!fakeinfo m!yomomma
 > - **Reactions**
 > - m!pat m!slap
 > - **Information**
