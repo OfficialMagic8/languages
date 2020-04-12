@@ -136,7 +136,6 @@
         "Absolutely not",
         "Absolutely!",
         "According to my religion, no",
-        "As soon as your headass learns how to read",
         "Ahhh, you're one of those people",
         "Almost always!",
         "And pigs fly- oh wait, I thought we were only talking about things that are possible",
@@ -312,11 +311,11 @@
   "belike": {
     "provideyourname": "{CROSS} **You need to specify at least your name.**",
     "description": [
-      "{CHECK} **Here is your image {USER}!**"
+      "{CHECK} **Here is your image {AUTHOR}!**"
     ]
   },
   "binfo": {
-    "title": "{USER} - Bot information",
+    "title": "{BOTNAME} - Bot information",
     "description": [
       "__**Stats**__",
       "📚 **Total Guilds**: {GUILDS}",
@@ -338,7 +337,7 @@
   },
   "clear": {
     "enteramount": "{CROSS} **| Enter an amount of messages to delete!**",
-    "invalidamount": "{CROSS} **| Entered amount is not válid!**",
+    "invalidamount": "{CROSS} **| Entered amount is not valid!**",
     "cannotgreater": "{CROSS} **| Please provide a number less than `150`!**",
     "cannotlower": "{CROSS} **| Please provide a number that is at least `1`!**",
     "errordeleting": "{CROSS} **| Unexpected error. Couldn't delete messages!**",
@@ -355,7 +354,7 @@
       "",
       "**Donation Link:** [__Click here__]({DONATIONLINK})",
       "",
-      "- Thank you for your support!`"
+      "- Thank you for your support!"
     ]
   },
   "info": {
@@ -370,7 +369,8 @@
       "**🎨 Color Plays:** {8COLORPLAYS}",
       "**🏅 Server Level:** {SERVERLEVEL}",
       "**📝 Custom Responses:** {CURRENTRESPONSES}/{TOTALRESPONSES}",
-      "**Reply Type:** {REPLYTYPE}",
+      "**🗃️ Reply Type:** {REPLYTYPE}",
+      "**🌎 Language:** {LANGUAGE}",
       "",
       "**Owner:** {OWNER}",
       "**Server Created:** {CREATED}",
@@ -382,9 +382,6 @@
       "[Donate]({DONATELINK}) • [Support Server]({GITHUBLINK}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
     ],
     "footer": "{BOTNAME} v{VERSION} • Information"
-  },
-  "help": {
-    
   },
   "invite": {
     "title": "Invite Magic8 to your server!",
@@ -416,7 +413,7 @@
   "avatar": {
     "error": {
       "description": [
-        "{CROSS} **Invalid member or id!**"
+        "{CROSS} **Invalid member or ID!**"
       ]
     },
     "success": {
@@ -429,7 +426,7 @@
   "howgay": {
     "error": {
       "description": [
-        "{CROSS} **Invalid member or id!**"
+        "{CROSS} **Invalid member or ID!**"
       ]
     },
     "success": {
@@ -462,7 +459,7 @@
   "pat": {
     "invalidtarget":{
       "description": [
-        "{CROSS} **{USER}, provide a valid member or id!**"
+        "{CROSS} **{USER}, provide a valid member or ID!**"
       ]
     },
     "success": {
@@ -486,7 +483,7 @@
   "slap": {
     "invalidtarget":{
       "description": [
-        "{CROSS} **{USER}, provide a valid member or id!**"
+        "{CROSS} **{USER}, provide a valid member or ID!**"
       ]
     },
     "success": {
@@ -516,6 +513,40 @@
     "success": {
       "description": [
         "{CHECK} **{JOKE}**"
+      ]
+    }
+  },
+  "bored": {
+    "search": {
+      "success": {
+        "title": "{TAG} searched for {CATEGORY} activities!",
+        "description": [
+          "**Activity:** {ACTIVITY}",
+          "**Total People:** {PEOPLE}"
+        ]
+      }
+    },
+    "default": {
+      "success": {
+        "title": "{TAG} is bored! They got...",
+        "description": [
+          "**Activity:** {ACTIVITY}",
+          "**Category:** {CATEGORY}",
+          "**Total People:** {PEOPLE}"
+        ]
+      }
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    },
+    "invalidcategory": {
+      "description": [
+        "{CROSS} **Invalid category!**",
+        "",
+        "**Available Categories:**",
+        "{CATEGORIES}"
       ]
     }
   },
@@ -551,6 +582,440 @@
     "error": {
       "description": [
         "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    }
+  },
+  "hypixel": {
+    "error": {
+      "enterarguments": {
+        "description": [
+          "{CROSS} **Provide a valid username or UUID!**"
+        ]
+      },
+      "invalid": {
+        "description": [
+          "{CROSS} **Provide a valid username or UUID!**"
+        ]
+      },
+      "connection": {
+        "description": [
+          "{CROSS} **Unexpected error. Try again later!**"
+        ]
+      },
+      "neverplayedbefore": {
+        "description": [
+          "{CROSS} **Looks like this player never joined Hypixel!**"
+        ]
+      }
+    },
+    "success": {
+      "title": "Hypixel {TARGET}'s information",
+      "description": [
+        "**Displayname:** {DISPLAYNAME}",
+        "**Rank:** {RANK}",
+        "**Subscription:** {SUBSCRIPTION}",
+        "**__Connection__**",
+        "**First login:** {FIRSTLOGIN}",
+        "**Last login:** {LASTLOGIN}",
+        "**Last logout:** {LASTLOGOUT}",
+        "**__In-game__**",
+        "**Karma:** {KARMA}",
+        "**Netwok EXP:** {NETWORKEXP}",
+        "**Reward streak:** {REWARDSTREAK}",
+        "**Best reward streal:** {BESTREWARDSTREAK}",
+        "**Achievement points:** {ACHIEVEMENTPOINTS}",
+        "**__Personal__**",
+        "**User language:** {USERLANGUAGE}",
+        "**Social media:** {SOCIALMEDIA}"
+      ],
+      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
+    }
+  },
+  "cape": {
+    "error": {
+      "enterusername": {
+        "description": [
+          "{CROSS} **Specify a username!**"
+        ]
+      },
+      "notregistered": {
+        "description": [
+          "{CROSS} **Player '{USER}' doesn't exists!**"
+        ]
+      },
+      "nocape": {
+        "description": [
+          "{CROSS} **Player '{USER}' doesn't have a cape!**"
+        ]
+      }
+    },
+    "success": {
+      "title": "Cape owned by {USER}",
+      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
+    }
+  },
+  "mcskin": {
+    "error": {
+      "enterusername": {
+        "description": [
+          "{CROSS} **Specify a username!**"
+        ]
+      },
+      "notregistered": {
+        "description": [
+          "{CROSS} **Player '{USER}' doesn't exists!**"
+        ]
+      }
+    },
+    "success": {
+      "title": "Skin owned by {USER}",
+      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
+    }
+  },
+  "namehistory": {
+    "error": {
+      "enterusername": {
+        "description": [
+          "{CROSS} **Specify a username!**"
+        ]
+      },
+      "invalidusername": {
+        "description": [
+          "{CROSS} **Player '{USER}' doesn't exists!**"
+        ]
+      }
+    },
+    "success": {
+      "title": "Name history for {USER}",
+      "unique": {
+        "description": [
+          "**Username: ** {USERNAME}",
+          "**UUID:** {UUID}",
+          "",
+          "{VERIFIED} Username has never been changed!"
+        ]
+      },
+      "others": {
+        "name": "**{NAME}** ({DATE})",
+        "original": "**{NAME}** (Original)",
+        "description": [
+          "**Username: ** {USERNAME}",
+          "**UUID:** {UUID}",
+          "",
+          "**Username history:**",
+          "{HISTORY}"
+        ]
+      },
+      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
+    }
+  },
+  "vote": {
+    "title": "{USER}, considering supporting Magic8?",
+    "canvote": [
+      "{CHECK} **You can vote now for Magic8!**",
+      "",
+      "**Support** Magic8 developers by clicking [here]({VOTELINK})!",
+      "{INFO} You can vote once every **12** hours!"
+    ],
+    "cannotvote": [
+      "{CROSS} **You already voted in the past 12 hours!**",
+      "",
+      "By voting for Magic8, you support developers to keep adding new features and system. It lets them know you are interested in our work!",
+      "You can vote by clicking this [link]({VOTELINK}).",
+      "{INFO} You can vote once every **12** hours!"
+    ],
+    "unexpectederror": [
+      "{CROSS} **Unexpected error. You can still check [here]({VOTELINK})**"
+    ]
+  },
+  "akinator": {
+    "help": {
+      "title": "{BOTNAME} • Akinator Help",
+      "user":{
+        "description": [
+          "Need help using akinator? Don't worry, here you have!",
+          "",
+          "**Available settings:**",
+          "`{PREFIX}akinator start` - Start a new game.",
+          "`{PREFIX}akinator stop` - Stop you actual game.",
+          "",
+          "{WARNING} This game is **under development**, expect **bugs** and **errors**.",
+          "**Help us** reporting **bugs**/**errors** in our [GitHub]({GITHUBLINK}) or [Support server]({INVITATION})"
+        ]
+      },
+      "administrator":{
+        "description": [
+          "Need help using akinator? Don't worry, here you have!",
+          "",
+          "**Available settings:**",
+          "`{PREFIX}akinator start` - Start a new game.",
+          "`{PREFIX}akinator stop` - Stop you actual game.",
+          "`{PREFIX}akinator toggle` - Enable/disable game.",
+          "`{PREFIX}akinator setlanguage` - Select default language.",
+          "`{PREFIX}akinator setchannel` - Restric akinator to a channel.",
+          "",
+          "{WARNING} This game is **under development**, expect **bugs** and **errors**.",
+          "**Help us** reporting **bugs**/**errors** in our [GitHub]({GITHUBLINK}) or [Support server]({INVITATION})"
+        ]
+      }
+    },
+    "disabledgame": "{CROSS} **This game is disabled!** Use `{PREFIX}akinator toggle`",
+    "invalidchannel": "{CROSS} **Incorrect channel!** Go to {AKINATORCHANNEL} to use **Akinator**!",
+    "youalreadyplaying": "{CROSS} **Looks like you are already playing somewhere else!**"
+  },
+  "ticket": {
+    "footer": "{BOTNAME} v{VERSION} • Ticket",
+    "help": {
+      "title": "{BOTNAME} • Ticket help",
+      "ticketnew": "\n`{PREFIX}ticket new` - Create a new ticket.",
+      "user":{
+        "description": [
+          "Need help using ticket system? Don't worry, here you have!",
+          "",
+          "**Available settings:**{TICKETNEW}",
+          "`{PREFIX}ticket close` - Close/solve a ticket.",
+          "",
+          "{WARNING} This system is **under development**, expect **bugs** and **errors**.",
+          "**Help us** reporting **bugs**/**errors** in our [GitHub]({GITHUBLINK}) or [Support server]({INVITATION})"
+        ]
+      },
+      "administrator":{
+        "description": [
+          "Need help using ticket system? Don't worry, here you have!",
+          "",
+          "**Available settings:**{TICKETNEW}",
+          "`{PREFIX}ticket close` - Close/solve a ticket.",
+          "`{PREFIX}ticket toggle` - Enable/disable tickets.",
+          "`{PREFIX}ticket setup` - Ticket setup menu.",
+          "`{PREFIX}ticket setmaxtickets` - Set max number of tickets...",
+          "`{PREFIX}ticket setchannel` - Restrict tickets to a channel.",
+          "`{PREFIX}ticket setlogchannel` - Select tickets logs channel.",
+          "`{PREFIX}ticket setcategory` - Select category for tickets.",
+          "`{PREFIX}ticket setmessageid` - Select message ID.",
+          "`{PREFIX}ticket setmessage` - Select message for new tickets.",
+          "`{PREFIX}ticket setmode` - Select ticket mode.",
+          "`{PREFIX}ticket setsupportrole` - Select default language.",
+          "",
+          "{WARNING} This system is **under development**, expect **bugs** and **errors**.",
+          "**Help us** reporting **bugs**/**errors** in our [GitHub]({GITHUBLINK}) or [Support server]({INVITATION})"
+        ]
+      },
+      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
+    },
+    "disabled": "{CROSS} **Ticket system is disabled!** Use `{PREFIX}ticket toggle` to enable it!",
+    "amount": {
+      "error": [
+        "{CROSS} **Enter a valid amount of max tickets.**"
+      ],
+      "errorbounds": [
+        "{CROSS} **Tickets amount can't be lower than 0 or greater than 20.**"
+      ],
+      "success": [
+        "{CHECK} **You selected {AMOUNT} as max ticket amount!**"
+      ]
+    },
+    "new": {
+      "notsetup": [
+        "{CROSS} **Tickets are not setup correctly. Contact an administrator!**"
+      ],
+      "errorcreating": [
+        "{CROSS} **Error creating your ticket. Contact an administrator!**"
+      ],
+      "maxtickets": [
+        "{CROSS} **You cannot have more than {AMOUNT} tickets.\nPlease close them before opening a new one!**"
+      ],
+      "newticketdefault": [
+        "{CHECK} **{USER} this is your new ticket!**"
+      ],
+      "created": {
+        "title": "Ticket created!",
+        "description": [
+          "**Ticket owner:** {CREATOR} ({CREATORID})",
+          "**Creation date:** {CREATIONDATE}",
+          "**Ticket:** {TICKETCHANNEL} ({TICKETCHANNELID})"
+        ]
+      }
+    },
+    "close": {
+      "alreadyclosing": [
+        "{CROSS} **This ticket is already being closed by {USER} ({ID})**",
+        "We are creating the transcription of the ticket. Please be patient!",
+        "",
+        "{INFO} This can take up to 10 seconds!"
+      ],
+      "errorclosing": "",
+      "closed": {
+        "title": "Ticket closed!",
+        "description": [
+          "**Solved by:** {SOLVER} ({SOLVERID})",
+          "**Ticket owner:** {CREATOR} ({CREATORID})",
+          "**Creation date:** {CREATIONDATE} ({CREATIONAGO} ago)"
+        ],
+        "descriptionerror": [
+          "**Solved by:** {SOLVER} ({SOLVERID})",
+          "**Ticket owner:** {CREATOR} ({CREATORID})",
+          "**Creation date:** {CREATIONDATE} ({CREATIONAGO} ago)",
+          "**Transcription:** Couldn't create transcription."
+        ]
+      }
+    },
+    "setlogchannel": {
+      "selected": [
+        "{CHECK} **You selected {CHANNEL} as ticket log channel!**",
+        "",
+        "Type the following command to **remove restriction**. `{PREFIX}ticket setlogchannel clear`"
+      ],
+      "cleared": [
+        "{CROSS} **You removed channel restriction for tickets!**",
+        "",
+        "Type the following command in a prefered channel to **restrict** tickets to that channel. `{PREFIX}ticket setchannel`"
+      ]
+    },
+    "setchannel": {
+      "selected": [
+        "{CHECK} **You restricted tickets to {CHANNEL} channel!**",
+        "",
+        "Type the following command to **remove restriction**. `{PREFIX}ticket setchannel clear`",
+        "",
+        "{INFO} `{PREFIX}ticket` will only be available in that channel for members without `ADMINISTRATOR`."
+      ],
+      "cleared": [
+        "{CROSS} **You removed channel restriction for tickets!**",
+        "",
+        "Type the following command in a prefered channel to **restrict** tickets to that channel. `{PREFIX}ticket setchannel`",
+        "",
+        "{INFO} `{PREFIX}ticket` will only be available in that channel for members without `ADMINISTRATOR`."
+      ]
+    },
+    "setcategory": {
+      "error": [
+        "{CROSS} **Select a valid category ID!**"
+      ],
+      "selected": [
+        "{CHECK} **You selected `{CHANNEL}` as ticket category!**",
+        "",
+        "**Magic8** will now create tickets in that category!",
+        "",
+        "{INFO} Make sure **Magic8** has following permissions: `MANAGE_CHANNELS`,`ADD_REACTIONS`,`VIEW_CHANNEL`,`SEND_MESSAGES`,`MANAGE_MESSAGES`,`EMBED_LINKS`,`READ_MESSAGE_HISTORY` and `USE_EXTERNAL_EMOJIS`."
+      ]
+    },
+    "toggle": {
+      "enabled": [
+        "{CHECK} **Tickets have been enabled!**",
+        "",
+        "{INFO} Make sure you run the command `{PREFIX}ticket setup` to **finish** ticket system **installation** process and check progress!"
+      ],
+      "disabled": [
+        "{CROSS} **Tickets have been disabled!**",
+        "",
+        "{INFO} Use the command again to **enable it**. Make sure you run the command `{PREFIX}ticket setup` to **finish** ticket system **installation** process and check progress!"
+      ]
+    },
+    "setsupportrole": {
+      "invalid": [
+        "{CROSS} **Argument provided is not a valid role ID.**"
+      ],
+      "selected": [
+        "{CHECK} **You selected {SUPPORTROLE} as Support role!**",
+        "",
+        "{VERIFIED} All **members** with this role will be able to **view and send messages** in tickets!"
+      ]
+    },
+    "setmessage": {
+      "error": [
+        "{CROSS} **You need to specify a message!**",
+        "",
+        "**Available placeholders:**",
+        "{SUPPORTROLE} - Support role (If mentionable)",
+        "{USER} - Ticket owner (User)",
+        "{EVERYONE} - Will mention everyone (If has permission)",
+        "{HERE} - Will mention online (If has permission)",
+        "",
+        "{INFO} This message will be sent in the **new channel** when a ticket is created!",
+        "{WARNING} Make sure role or roles are mentionable!"
+      ],
+      "selected": [
+        "{CHECK} **You selected the message for new tickets!**",
+        "",
+        "**Example message:**",
+        "{MESSAGE}",
+        "",
+        "{INFO} This message will be sent in the **new channel** when a ticket is created!",
+        "{WARNING} Make sure role or roles are mentionable!"
+      ]
+    },
+    "setmessageid": {
+      "error": [
+        "{CROSS} **You need to specify a valid message ID!**",
+        "",
+        "{INFO} This command must be used in the channel where the message is!",
+        "{WARNING} Make sure **Magic8** has permission to manage messages in that channel!"
+      ],
+      "nopermission": [
+        "{CROSS} **Woops! I don't have permission to add reactions!**",
+        "",
+        "Link to ticket messsage: [Click here]({MESSAGELINK})",
+        "",
+        "{INFO} This message will be the one the members must react to open tickets!",
+        "{WARNING} Make sure **Magic8** has permission to manage messages in that channel!"
+      ],
+      "selected": [
+        "{CHECK} **You selected the reaction message for new tickets!**",
+        "",
+        "Link to ticket messsage: [Click here]({MESSAGELINK})",
+        "",
+        "{INFO} This message will be the one the members must react to open tickets!",
+        "{WARNING} Make sure **Magic8** has permission to manage messages in that channel!"
+      ]
+    },
+    "setmode": {
+      "error": [
+        "{CROSS} **You need to specify a mode!**",
+        "",
+        "**Available mode:**",
+        "command - Use command `{PREFIX}ticket new` to open.",
+        "reaction - Use reaction to open ticket.",
+        "",
+        "{INFO} When switching mode the other method will stop working!",
+        "{WARNING} Reaction mode requires setup! Use `{PREFIX}ticket setup`"
+      ],
+      "selected": [
+        "{CHECK} **You selected `{MODE}` mode for tickets!**",
+        "",
+        "{INFO} Use `{PREFIX}ticket setmode` for more **information**!"
+      ]
+    },
+    "setup": {
+      "enabled": "{CHECK} **All correct. Ticket system is being enabled!**",
+      "disabled": "{CROSS} **Something is missing. Check progress!**",
+      "description": [
+        "{MAGIC8} Welcome to tickets system **setup**.",
+        "I will help you to **enable** system in your server.",
+        "",
+        "1) Enable tickets with `{PREFIX}tickets toggle`",
+        "2) Select ticket category with `{PREFIX}tickets setcategory [ID]`",
+        "3) Select support role with `{PREFIX}tickets setsupportrole [ID]`",
+        "4) Select ticket mode with `{PREFIX}tickets setmode [mode]`",
+        "5) Select max ticket amount with `{PREFIX}tickets setmaxtickets [amount]`",
+        "**Only if Reaction mode:**",
+        "6) Select ticket reaction message ID with `{PREFIX}tickets setmessageid [ID]`",
+        "",
+        "**Progress:**",
+        "{TICKETSTATUS} Enable tickets.",
+        "{CHECK} Ticket mode selected.",
+        "{TICKETCATEGORYSTATUS} Select a category for tickets.",
+        "{SUPPORTROLESTATUS} Select a role for tickets support.",
+        "{LOGCHANNELSTATUS} Select channel for tickets logs.",
+        "{CHANNELSTATUS} Select channel for tickets usage.",
+        "{MESSAGESTATUS} Select the message for new tickets.",
+        "",
+        "**Only if Reaction mode:**",
+        "{REACTIONMESSAGESTATUS} Select the message ID for tickets.",
+        "",
+        "**Current system status**",
+        "{GENERALSTATUS}",
+        "",
+        "{CROSS} = Missing {CHECK} = Correct {RETURN} = Optional"
       ]
     }
   }
