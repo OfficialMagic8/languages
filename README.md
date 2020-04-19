@@ -26,25 +26,25 @@
 <p>Type a command in your server for more help!</p>
 
 > - **Entertainment**
-> - m!8ball m!belike m!emoji m!spoiler
+> - m\*8ball m\*belike m\*emoji m\*spoiler
 > - **Games**
-> - m!8color
+> - m\*8color m\*tictactoe m\*trivia
 > - **Anime**
-> - m!neko
+> - None yet. Suggest one in our server!
 > - **Minecraft**
-> - m!cape m!hypixel m!mcskin m!namehistory
+> - m\*cape m\*hypixel m\*mcachievement m\*mcskin m\*namehistory
 > - **Random**
-> - m!bored m!chucknorris m!fakeinfo m!yomomma
+> - m\*bored m\*chucknorris m\*fakeinfo m\*yomomma
 > - **Reactions**
-> - m!pat m!slap
+> - m\*baka m\*cuddle m\*feed m\*hug m\*kiss m\*pat m\*poke m\*slap m\*smug m\*tickle
 > - **Information**
-> - m!binfo m!donate m!help m!info m!invite m!level
+> - m\*binfo m\*donate m\*help m\*info m\*invite m\*level
 > - **Utils**
-> - m!clear m!say m!ticket
+> - m\*clear m\*say m\*ticket
 > - **Miscellaneous**
-> - m!avatar m!howgay
+> - m\*avatar m\*howgay
 > - **Admin**
-> - m!settings
+> - m\*settings
 
 ### Permissions
 <p>Edit permissions on the invite page</p>
