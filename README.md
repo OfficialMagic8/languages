@@ -28,7 +28,7 @@
 > - **Entertainment**
 > - m\*8ball m\*belike m\*emoji m\*spoiler
 > - **Games**
-> - m\*8color m\*tictactoe m\*trivia
+> - m\*8color m\*connect4 m\*tictactoe m\*trivia
 > - **Anime**
 > - None yet. Suggest one in our server!
 > - **Minecraft**
@@ -38,7 +38,7 @@
 > - **Reactions**
 > - m\*baka m\*cuddle m\*feed m\*hug m\*kiss m\*pat m\*poke m\*slap m\*smug m\*tickle
 > - **Information**
-> - m\*binfo m\*donate m\*help m\*info m\*invite m\*level
+> - m\*binfo m\*donate m\*games m\*help m\*info m\*invite m\*level
 > - **Utils**
 > - m\*clear m\*say m\*ticket
 > - **Miscellaneous**
