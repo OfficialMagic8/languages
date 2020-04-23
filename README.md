@@ -1,6 +1,6 @@
 <div align="center">
-<a href="https://top.gg/bot/484148705507934208" >
-  <img src="https://top.gg/api/widget/484148705507934208.svg?usernamecolor=9a00ff&topcolor=1F1F1F" alt="Magic8" />
+<a href="https://discordapp.com/oauth2/authorize?client_id=484148705507934208&scope=bot&permissions=1074130032" >
+  <img src="https://i.imgur.com/5L0w5vs.jpg" width="150" height="150" alt="Magic8" />
 </a><br>
 </div>
 
