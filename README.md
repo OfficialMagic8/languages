@@ -24,7 +24,7 @@
 <p>Type a command in your server for more help!</p>
 
 > - **Entertainment**
-> - m\*8ball m\*belike m\*emoji m\*spoiler
+> - m\*8ball m\*battle m\*belike m\*bored m\*bigemoji m\*clapme m\*meme m\*slot m\*spinner m\*spoiler
 > - **Games**
 > - m\*8color m\*connect4 m\*tictactoe m\*trivia
 > - **Anime**
@@ -32,28 +32,32 @@
 > - **Minecraft**
 > - m\*cape m\*hypixel m\*mcachievement m\*mcskin m\*namehistory
 > - **Random**
-> - m\*bored m\*chucknorris m\*fakeinfo m\*yomomma
+> - m\*chucknorris m\*fakeinfo m\*yomomma
 > - **Reactions**
 > - m\*baka m\*cuddle m\*feed m\*hug m\*kiss m\*pat m\*poke m\*slap m\*smug m\*tickle
 > - **Information**
 > - m\*binfo m\*donate m\*games m\*help m\*info m\*invite m\*level
-> - **Utils**
+> - **Utilities**
 > - m\*clear m\*say m\*ticket
 > - **Miscellaneous**
-> - m\*avatar m\*howgay
+> - m\*avatar m\*howgay m\*telephone
 > - **Admin**
-> - m\*settings
+> - m\*fakeping m\*settings
 
 ### Permissions
-<p>Edit permissions on the invite page</p>
+<p>Edit these permissions on the invite page if you are not comfortable with Magic8 having such access</p>
+<p></p>
 
+> - **Add Reactions** for tickets and games
+> - **Attach Files** for misc features
 > - **Create Invite** for invite generator
-> - **Attach Files** for future features
-> - **Add Reactions** for small upcoming features
-> - **Use External Emojis** for games and menus
-> - **Read/Send Messages** for you know, sending messages
 > - **Embed Links** for help menus and games
-> - **Manage Messages** to delete the commands when you run them 
+> - **Manage Channels** for ticket system
+> - **Manage Emojis** for emoji command
+> - **Manage Messages** to delete the commands when you run them
+> - **Manage Server** for fakeping command (changes server icon)
+> - **Read/Send Messages** for... you know
+> - **Use External Emojis** for games and menus
 
 
 ### Contact
