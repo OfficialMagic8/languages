@@ -3,7 +3,7 @@
 **The en.json file is updated every time a new command is added, review the changes to add the same content to your language file.**
 
 **Want to collaborate? Add your own language with all translations and we will add it to the available translations!**
-- Copy the en.json file
+- Copy the en.json file (this file gets updated when new features are added or an error is fixed!)
 - Translate all the English to your known language
 - Do not edit the contents of the placeholders (${EXAMPLE}). Move them accordingly for grammar purposes. Scroll down for placeholder definitions.
 - Do **NOT** use a translating service
