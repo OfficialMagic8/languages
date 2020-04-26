@@ -1813,7 +1813,7 @@
         "{CROSS} **Invalid member or ID!**"
       ]
     },
-    "starting": "{LOADING} Starting hacking {TARGET}!",
+    "starting": "{LOADING} Starting the hack on {TARGET}!",
     "process": {
       "oip": {
         "time": 5000,
@@ -1825,7 +1825,7 @@
       },
       "ip": {
         "time": 3000,
-        "message": "> **Analizing {RANDOMIP}**"
+        "message": "> Analizing {RANDOMIP}"
       },
       "oipv6": {
         "time": 4000,
@@ -1880,8 +1880,8 @@
         "message": "> **Purchased Pro-Membership!**"
       }
     },
-    "finishing": "> {LOADING} Finishing hacking **{TARGET}**!",
-    "finished": "{CHECK} The totally legit hack to **{TARGET}** has been completed!",
-    "interrupted": "{CROSS} Hacking process for **{TARGET}** interrupted! **Evidence removed..**"
+    "finishing": "> {LOADING} Finishing the hack on **{TARGET}**!",
+    "finished": "{CHECK} The totally legit hack on **{TARGET}** has been completed!",
+    "interrupted": "{CROSS} Hacking process for **{TARGET}** interrupted! **Content has been removed...**"
   }
 }
