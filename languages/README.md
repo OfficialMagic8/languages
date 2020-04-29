@@ -14,7 +14,7 @@ Please only translate files to your known language if you are already **fluent**
 ### Complete
 > - English
 
-### In Progress - Please make edits if you think we made a mistake!
+### In Progress
 > - French
 > - Italian
 > - Spanish
