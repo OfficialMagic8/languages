@@ -36,7 +36,7 @@
 > - **Reactions**
 > - m\*baka m\*cuddle m\*feed m\*hug m\*kiss m\*pat m\*poke m\*slap m\*smug m\*tickle
 > - **Information**
-> - m\*binfo m\*donate m\*games m\*help m\*info m\*invite m\*level
+> - m\*botinfo m\*donate m\*games m\*help m\*info m\*invite m\*level
 > - **Utilities**
 > - m\*clear m\*say m\*ticket
 > - **Miscellaneous**
