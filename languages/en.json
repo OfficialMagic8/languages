@@ -318,17 +318,13 @@
       "{CHECK} **Here is your image {AUTHOR}!**"
     ]
   },
-  "binfo": {
+  "botinfo": {
     "title": "{BOTNAME} - Bot information",
     "description": [
       "__**Stats**__",
       "📚 **Total Guilds:** {GUILDS}",
       "👥 **Total Users:** {USERS}",
       "💬 **Total Channels:** {CHANNELS} (\\🔞{NSFWCHANNELS})",
-      "🎱 **8ball Plays:** {BALLS}",
-      "🔍 **Trivia Plays:** {TRIVIAS}",
-      "🎨 **Color Plays:** {COLORS}",
-      "⚔️ **Battles:** {BATTLES}",
       "",
       "⏲️ **Uptime:** {UPTIME}",
       "📦 **RAM:** {RAM}",
@@ -352,10 +348,9 @@
   "donate": {
     "title": "Magic8 Donation Page",
     "description": [
-      "Donating to developers are motives for them to keep their projects going and let them know people care about their work.",
+      "Donations made for the developers of Magic8 provide motivation and access to better resources for hosting the bot. The current host of Magic8 is keeping up, but as the bot grows it will need a new and improved host. This will result in much higher performance and feature abilities which matters a lot to you.",
       "",
-      "",
-      "**Magic8** will for sure be around for a long time, but all the work put in to Magic8 depends on how much the users use it. Donating allows developers to know there are still people who want this project to be under development",
+      "**Magic8** will for sure be around for a long time, but all the work put in to Magic8 depends on how much you guys use it. Donating lets developers know that there are still people who want this project to continue to grow.",
       "Join our server **[Magic8 Support Server]({INVITATION})** for more details about how to obtain `Supporter 💸` role.",
       "",
       "**Donation Link:** [__Click here__]({DONATIONLINK})",
@@ -371,11 +366,6 @@
       "**Text/Voice Channels:** {TEXTCHANNELS}/{VOICECHANNELS}",
       "**NSFW Text channels:** {NSFWTEXTCHANNELS}",
       "**8ball Channel:** {8BALLCHANNEL}",
-      "**🎱 8ball Plays:** {8BALLPLAYS}",
-      "**⚙️ 8ball Color:** {8BALLCOLOR}",
-      "**🎨 Color Plays:** {8COLORPLAYS}",
-      "**🔍 Trivia Plays:** {TRIVIAPLAYS}",
-      "**⚔️ Battles:** {BATTLES}",
       "**🏅 Server Level:** {SERVERLEVEL}",
       "**📝 Custom Responses:** {CURRENTRESPONSES}/{TOTALRESPONSES}",
       "**🗃️ Reply Type:** {REPLYTYPE}",
