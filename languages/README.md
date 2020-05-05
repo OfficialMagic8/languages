@@ -1,6 +1,6 @@
 ## Languages
 
-**The en.json file is updated every time a new command is added, review the changes to add the same content to your language file.**
+**The en.json file is updated every time a feature is added/edited, review the changes to add the same content to your language file.**
 
 **Want to collaborate? Add your own language with all translations and we will add it to the available translations!**
 - Copy the en.json file (this file gets updated when new features are added or an error is fixed!)
