@@ -319,6 +319,12 @@
     ]
   },
   "botinfo": {
+    "extras": [
+      "🎱 **8ball Plays:** {BALLS}",
+      "🔍 **Trivia Plays:** {TRIVIAS}",
+      "🎨 **Color Plays:** {COLORS}",
+      "⚔️ **Battles:** {BATTLES}"
+    ],
     "title": "{BOTNAME} - Bot information",
     "description": [
       "__**Stats**__",
@@ -360,6 +366,13 @@
   },
   "info": {
     "title": "{BOTNAME} - {GUILDNAME}",
+    "extra": [
+      "**🎱 8ball Plays:** {8BALLPLAYS}",
+      "**⚙️ 8ball Color:** {8BALLCOLOR}",
+      "**🎨 Color Plays:** {8COLORPLAYS}",
+      "**🔍 Trivia Plays:** {TRIVIAPLAYS}",
+      "**⚔️ Battles:** {BATTLES}"
+    ],
     "description": [
       "__**Server Information**__ - **Prefix:** {PREFIX}",
       "**User/Bots/Online**: {USERS}/{BOTS}/{ONLINE}",
@@ -380,12 +393,12 @@
       "**Useful Links:**",
       "[Donate]({DONATELINK}) • [GitHub]({GITHUBLINK}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
     ],
-    "footer": "{BOTNAME} v{VERSION} • Information"
+    "footer": "{FOOTER} • Information"
   },
   "invite": {
     "title": "Invite Magic8 to your server!",
     "description": [
-      "Hey {AUTHOR}! Do you like **Magic8**?`,`Do you want your friends to know about **Magic8** too?",
+      "Hey {AUTHOR}! Do you like **Magic8**?, do you want your friends to know about **Magic8** too?",
       "",
       "Invite the bot to your **game server** so all your friends can enjoy **Magic8's** unique features together!",
       "",
@@ -393,7 +406,7 @@
       "",
       "{CHECK} **Let's have fun!**"
     ],
-    "footer": "{BOTNAME} v{VERSION} • Invite me!"
+    "footer": "{FOOTER} • Invite me!"
   },
   "level": {
     "title": "{BOTNAME} - Server Level",
@@ -407,7 +420,7 @@
       "**{GUILDNAME}** level is **{SERVERLEVEL}**",
       "This server can set up to **{MAXRESPONSES}** custom responses."
     ],
-    "footer": "{BOTNAME} v{VERSION} • Invite more people!"
+    "footer": "{FOOTER} • Invite more people!"
   },
   "avatar": {
     "error": {
@@ -419,7 +432,7 @@
       "description": [
         "{CHECK} Here is {USER} avatar! [Link]({URL})"
       ],
-      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
+      "footer": "{FOOTER} • Requested by {AUTHOR}"
     }
   },
   "howgay": {
@@ -432,7 +445,7 @@
       "description": [
         "🏳️‍🌈 {TARGET} is `{PERCENT}%` gay 🏳️‍🌈"
       ],
-      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
+      "footer": "{FOOTER} • Requested by {AUTHOR}"
     }
   },
   "neko": {
@@ -480,7 +493,8 @@
       "description": [
         "{CROSS} **Unexpected error. Try again later!**"
       ]
-    }
+    },
+    "footer": "{FOOTER} • Pat"
   },
   "slap": {
     "invalidtarget":{
@@ -504,7 +518,8 @@
       "description": [
         "{CROSS} **Unexpected error. Try again later!**"
       ]
-    }
+    },
+    "footer": "{FOOTER} • Slap"
   },
   "chucknorris": {
     "error": {
@@ -704,8 +719,8 @@
         ]
       },
       "others": {
-        "name": "**{NAME}** ({DATE})",
-        "original": "**{NAME}** (Original)",
+        "name": "**`{NAME}`** ({DATE})",
+        "original": "**`{NAME}`** (Original)",
         "description": [
           "**Username: ** {USERNAME}",
           "**UUID:** {UUID}",
@@ -1040,13 +1055,13 @@
       "description": [
         "{CHECK} **Here is the emoji! [Link]({EMOJILINK})**"
       ],
-      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
+      "footer": "{FOOTER} • Requested by {AUTHOR}"
     },
     "error": {
       "description": [
         "{CROSS} **That doesn't seem to be a valid emoji!**"
       ],
-      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
+      "footer": "{FOOTER} • Requested by {AUTHOR}"
     }
   },
   "telephone": {
@@ -1152,7 +1167,8 @@
       "description": [
         "{CROSS} **Unexpected error. Try again later!**"
       ]
-    }
+    },
+    "footer": "{FOOTER} • Kiss"
   },
   "hug": {
     "invalidtarget":{
@@ -1176,7 +1192,8 @@
       "description": [
         "{CROSS} **Unexpected error. Try again later!**"
       ]
-    }
+    },
+    "footer": "{FOOTER} • Hug"
   },
   "smug": {
     "invalidtarget":{
@@ -1224,7 +1241,8 @@
       "description": [
         "{CROSS} **Unexpected error. Try again later!**"
       ]
-    }
+    },
+    "footer": "{FOOTER} • Hug"
   },
   "cuddle": {
     "invalidtarget":{
@@ -1409,7 +1427,8 @@
       "description": [
         "{CHECK} **Random {TOPIC} meme**!"
       ]
-    }
+    },
+    "footer": "{FOOTER} • Requested by {AUTHOR}"
   },
   "clapme": {
     "invalidmessage": {
@@ -1616,7 +1635,8 @@
       "\u200b ",
       "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b 🎉 **{USER}, you won!**",
       "\u200b \u200b \u200b\u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **_Thanks for playing!_** 🎰"
-    ]
+    ],
+    "footer": "{FOOTER} • Slot Machine"
   },
   "connectfour": {
     "alreadyplaying": {
@@ -1745,8 +1765,8 @@
       ""
     ],
     "footer": [
-      "{VERIFIED} This list will be **updated** constantly adding brand **new emojis** so you can add it too!",
-      "You want to **suggest** an emoji? **Join us** on our **[Discord]({INVITATION})** and let us know!",
+      "{VERIFIED} This list will be constantly **updating** and adding **new emojis**!",
+      "You want to **suggest** an emoji? **Join**  our **[Discord]({INVITATION})** server and let us know!",
       "{WARNING} This feature is in **beta**. Please report **bugs/errors** in our **[Discord]({INVITATION})**!"
     ],
     "success": {
@@ -1766,7 +1786,7 @@
       "❄ You can generate a new one in {LEFT}."
     ],
     "guildnoicon": [
-      "{CROSS} This server doesn't have a guild icon.."
+      "**{CROSS} This server doesn't have a guild icon!**"
     ],
     "unknownerror": [
       "**{CROSS} Unexpected error! Try again in a few minutes!**"
