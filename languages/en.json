@@ -3,6 +3,7 @@
   "flag": "🇺🇸",
   "mention": [
     "{USER} **my prefix for the server is: {PREFIX}**",
+    "Open the help menu with `{PREFIX}help` to view all commands.",
     "*Need further assistance? Join our [Support Server]({INVITATION})!*"
   ],
   "ball": {
@@ -59,6 +60,7 @@
         "Huh?",
         "I ain't telling you shit",
         "I believe so...",
+        "I don't have the answer you want",
         "I don't see why not?",
         "I don't think so",
         "I don't understand...",
@@ -163,6 +165,7 @@
         "Hi! Do you speak english?",
         "Huh?",
         "I believe so...",
+        "I don't have the answer you want",
         "I don't see why not?",
         "I don't think so",
         "I don't understand...",
@@ -340,7 +343,7 @@
       "🗓️ **Created on:** {CREATIONDATE}",
       "",
       "**Useful Links:**",
-      "[Donate]({DONATELINK}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
+      "[Donate]({DONATELINK}) • [GitHub]({GITHUB}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
     ]
   },
   "clear": {
@@ -600,7 +603,8 @@
       "description": [
         "{CROSS} **Unexpected error. Try again later!**"
       ]
-    }
+    },
+    "footer": "{FOOTER} • Yomomma Jokes"
   },
   "hypixel": {
     "error": {
@@ -1075,6 +1079,7 @@
     "timeout": "\\⏰ Couldn't detect any message in 1 minute. **Connection lost!**"
   },
   "battle": {
+    "footer": "{FOOTER} • Battles",
     "error": {
       "battling": [
         "{CROSS} **{USER}, you are in a battle somewhere else!**"
@@ -1098,12 +1103,13 @@
     "battling": {
       "attacks": [ 
         "{TEAM} 🗡️ {ATTACKER} sliced {TARGET} with a **katana** for {DAMAGE} HP!",
-        "{TEAM} 🗣️ {ATTACKER} roasted {TARGET} with a **yomamma joke** for {DAMAGE} HP!",
+        "{TEAM} 🗣️ {ATTACKER} roasted {TARGET} with a **yomomma joke** for {DAMAGE} HP!",
         "{TEAM} 🧪 {ATTACKER} burned {TARGET} with **acid** for {DAMAGE} HP!",
         "{TEAM} ⚽ {ATTACKER} pummelled {TARGET} with a **soccer ball** for {DAMAGE} HP!",
         "{TEAM} ✂️ {ATTACKER} cut {TARGET} with **scissors** for {DAMAGE} HP!",
         "{TEAM} 🔪 {ATTACKER} stabbed {TARGET} with a **knife** for {DAMAGE} HP!",
-        "{TEAM} 🪕 {ATTACKER} bashed {TARGET} with a **banjo** for {DAMAGE} HP!",
+        "{TEAM} 🪕 {ATTACKER} shook {TARGET} with a **banjo** for {DAMAGE} HP!",
+        "{TEAM} 🛡️ {ATTACKER} bashed {TARGET} with their **shield** for {DAMAGE} HP!",
         "{TEAM} 🥄 {ATTACKER} bruised {TARGET} with a **spoon** for {DAMAGE} HP!",
         "{TEAM} ⚾ {ATTACKER} pelted {TARGET} with a **baseball** for {DAMAGE} HP!",
         "{TEAM} 🍌 {ATTACKER} bananad {TARGET} with a **banana** for {DAMAGE} HP!",
@@ -1113,30 +1119,12 @@
         "{TEAM} 👊 {ATTACKER} punched {TARGET} with their **fist** for {DAMAGE} HP!",
         "{TEAM} 🧨 {ATTACKER} exploded {TARGET} with a **bomb** for {DAMAGE} HP!",
         "{TEAM} 🔫 {ATTACKER} sniped {TARGET} with a **gun** for {DAMAGE} HP!",
-        "{TEAM} 🔧 {ATTACKER} whacked {TARGET} with a **wrench** for {DAMAGE} HP!",
+        "{TEAM} 🔧 {ATTACKER} smacked {TARGET} with a **wrench** for {DAMAGE} HP!",
         "{TEAM} 🏹 {ATTACKER} hit {TARGET} with an **arrow** for {DAMAGE} HP!",
-        "{TEAM} ☁️ {ATTACKER} choked {TARGET} with their **fart** for {DAMAGE} HP!"
-      ],
-      "finalblows": [
-        "**{TEAM} 💀 {ATTACKER} took off {TARGET}'s head with a katana for **{DAMAGE}** HP!**",
-        "**{TEAM} 💀 {ATTACKER} destroyed {TARGET} with a yomamma joke for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} melted {TARGET} with acid for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} pummelled {TARGET} with a soccer ball for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} cut {TARGET} with scissors for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} stabbed {TARGET} with a knife for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} finished {TARGET} with a banjo for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} bruised {TARGET} with a spoon for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} pelted {TARGET} with a baseball for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} bananad {TARGET} with a banana for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} scorched {TARGET} with a torch for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} chopped {TARGET} with an axe for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} poisoned {TARGET} with a drink for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} punched {TARGET} with their fist for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} exploded {TARGET} with a bomb for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} sniped {TARGET} with a gun for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} whacked {TARGET} with a wrench for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} hit {TARGET} with an arrow for **{DAMAGE}** HP!",
-        "**{TEAM} 💀 {ATTACKER} choked {TARGET} with their fart for **{DAMAGE}** HP!**"
+        "{TEAM} ☁️ {ATTACKER} choked {TARGET} with their **fart** for {DAMAGE} HP!",
+        "{TEAM} 🎊 {ATTACKER} stunned {TARGER} with **confetti** for {DAMAGE} HP!",
+        "{TEAM} 🧼 {ATTACKER} gagged {TARGET} with **soap** for {DAMAGE} HP!",
+        "{TEAM} 🧹 {ATTACKER} whacked {TARGET} with a **broomstick** for {DAMAGE} HP!"
       ],
       "wins": [
         "**\\🏆 {WINNERMEMBER} won against {LOSERMEMBER} in {WINNERMOVES} moves!**",
@@ -1531,7 +1519,7 @@
         "\u200b ",
         "{GAME}",
         "\u200b ",
-        "{LOADING} _Loading game.. Please wait._"
+        "{LOADING} _Loading game... Please wait._"
       ],
       "description": [
         "\u200b \u200b \u200b {CIRCLE} is ⭕ **&** {CROSS} is ❌",
@@ -1540,7 +1528,7 @@
         "\u200b ",
         "{GAME}",
         "",
-        "{LOADING} _You have **10 seconds** to move.._"
+        "{LOADING} _You have **10 seconds** to move..._"
       ],
       "botdescription": [
         "\u200b \u200b \u200b {CIRCLE} is ⭕ **&** {CROSS} is ❌",
@@ -1549,7 +1537,7 @@
         "\u200b ",
         "{GAME}",
         "",
-        "{LOADING} _{TURN} is thinking its move.._"
+        "{LOADING} _{TURN} is thinking its move..._"
       ],
       "autodescription": [
         "\u200b \u200b \u200b {CIRCLE} is ⭕ **&** {CROSS} is ❌",
@@ -1560,7 +1548,7 @@
         "\u200b ",
         "{GAME}",
         "",
-        "{LOADING} _You have **10 seconds** to move.._"
+        "{LOADING} _You have **10 seconds** to move..._"
       ],
       "drawdescription": [
         "\u200b \u200b \u200b {CIRCLE} is ⭕ **&** {CROSS} is ❌",
@@ -1610,7 +1598,7 @@
       "\u200b ",
       "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
       "\u200b ",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {LOADING} **Slot machine is rolling..**",
+      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {LOADING} **Slot machine is rolling...**",
       "\u200b \u200b \u200b\u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b React with :joystick: to stop the machine!"
     ],
     "stopping": [
@@ -1618,7 +1606,7 @@
       "\u200b ",
       "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
       "\u200b ",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {LOADING} **Stopping slot machine..**"
+      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {LOADING} **Stopping slot machine...**"
     ],
     "lose": [
       "\u200b \u200b \u200b \u200b \u200b \u200b {USER} is playing slot machine!",
@@ -1745,7 +1733,7 @@
         "{CROSS} **Whoops! You can't have more emojis in this server!**"
       ],
       "othererrordescription": [
-        "{CROSS} **Uhmm.. weird, I couldn't add the emoji..**"
+        "{CROSS} **Uhmm... weird, I couldn't add the emoji!**"
       ],
       "unknowndescription": [
         "{CROSS} **Woops! I don't know why but try again later!**"
@@ -1808,7 +1796,7 @@
       "{CHECK} {USER}, I updated the guild icon!"
     ],
     "notupdated": [
-      "{CROSS} {USER}, I'm not updating the guild icon.."
+      "{CROSS} {USER}, I will not be updating the guild icon."
     ],
     "notupdatedperms": [
       "{CROSS} {USER}, I need `MANAGE_GUILD` permission.."
@@ -1847,11 +1835,11 @@
       },
       "ipv6": {
         "time": 3000,
-        "message": "> **Analizing {RANDOMIPV6}**"
+        "message": "> Analizing {RANDOMIPV6}"
       },
       "mac": {
         "time": 3000,
-        "message": "> MAC address obtained. **Analizing {RANDOMMAC}**"
+        "message": "> MAC address obtained. Analizing {RANDOMMAC}"
       },
       "lhandshake": {
         "time": 3000,
@@ -1859,11 +1847,11 @@
       },
       "handshake": {
         "time": 3000,
-        "message": "> **Handshake captured!** Saved as \"hs/IPonFirewall_{IPONFIREWALL}.cap\""
+        "message": "> Handshake captured! Saved as \"hs/IPonFirewall_{IPONFIREWALL}.cap\""
       },
       "email": {
         "time": 3000,
-        "message": "> **Email successfully spoofed:** {RANDOMEMAIL}"
+        "message": "> Email successfully spoofed: {RANDOMEMAIL}"
       },
       "opass": {
         "time": 3000,
@@ -1871,7 +1859,7 @@
       },
       "pass": {
         "time": 3000,
-        "message": "> **Password successfully spoofed:** {RANDOMPASSWORD}"
+        "message": "> Password successfully spoofed: {RANDOMPASSWORD}"
       },
       "gettingcard": {
         "time": 2000,
@@ -1879,7 +1867,7 @@
       },
       "card": {
         "time": 2000,
-        "message": "> **Credit/debit card successfully spoofed:** {RANDOMCREDITCARD}"
+        "message": "> Credit/debit card successfully spoofed: {RANDOMCREDITCARD}"
       },
       "registering1": {
         "time": 2000,
