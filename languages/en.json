@@ -1,7 +1,7 @@
 {
   "languagename": "English",
   "flag": "🇺🇸",
-    "it": "{CROSS} **{USER}, provide a valid member or ID!**",
+  "it": "{CROSS} **{USER}, provide a valid member or ID!**",
   "mention": [
     "{USER} **my prefix for the server is: {PREFIX}**",
     "Open the help menu with `{PREFIX}help` to view all commands.",
