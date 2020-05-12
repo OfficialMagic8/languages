@@ -24,23 +24,21 @@
 <p>Type a command in your server for more help!</p>
 
 > - **Entertainment**
-> - m\*8ball m\*battle m\*belike m\*bored m\*bigemoji m\*clapme m\*meme m\*slot m\*spinner m\*spoiler
+> - m\*8ball m\*battle m\*belike m\*bigemoji m\*clapme m\*hack m\*meme m\*slot m\*spinner m\*spoiler
 > - **Games**
 > - m\*8color m\*connect4 m\*tictactoe m\*trivia
-> - **Anime**
-> - None yet. Suggest one in our server!
 > - **Minecraft**
 > - m\*cape m\*hypixel m\*mcachievement m\*mcskin m\*namehistory
 > - **Random**
-> - m\*chucknorris m\*fakeinfo m\*yomomma
+> - m\*bored m\*chucknorris m\*fakeinfo m\*yomomma
 > - **Reactions**
-> - m\*baka m\*cuddle m\*feed m\*hug m\*kiss m\*pat m\*poke m\*slap m\*smug m\*tickle
+> - m\*feed m\*hug m\*kiss m\*pat m\*poke m\*slap
 > - **Information**
-> - m\*botinfo m\*donate m\*games m\*help m\*info m\*invite m\*level
+> - m\*botinfo m\*donate m\*games m\*help m\*info m\*invite m\*level m\*vote
 > - **Utilities**
 > - m\*clear m\*say m\*ticket
 > - **Miscellaneous**
-> - m\*avatar m\*howgay m\*telephone
+> - m\*avatar m\*howgay m\*iq m\*telephone
 > - **Admin**
 > - m\*fakeping m\*settings
 
