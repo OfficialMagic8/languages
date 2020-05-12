@@ -1,6 +1,7 @@
 {
   "languagename": "English",
   "flag": "🇺🇸",
+    "it": "{CROSS} **{USER}, provide a valid member or ID!**",
   "mention": [
     "{USER} **my prefix for the server is: {PREFIX}**",
     "Open the help menu with `{PREFIX}help` to view all commands.",
@@ -271,7 +272,7 @@
           "_In {TIME} seconds the message will be deleted!_"
         ]
       },
-      "enterpattern":{
+      "enterpattern": {
         "description": [
           "You are playing **Level {LEVEL}**",
           "Enter the pattern you memorized",
@@ -315,11 +316,208 @@
       "cannotfinish": "{CROSS} **Couldn't finish the game correctly in {CHANNEL} channel in '{GUILD}' guild.**"
     }
   },
+  "akinator": {
+    "help": {
+      "title": "{BOTNAME} • Akinator Help",
+      "user": {
+        "description": [
+          "Need help using akinator? Don't worry, here you have!",
+          "",
+          "**Available settings:**",
+          "`{PREFIX}akinator start` - Start a new game.",
+          "`{PREFIX}akinator stop` - Stop you actual game.",
+          "",
+          "{WARNING} This game is **under development**, expect **bugs** and **errors**.",
+          "**Help us** reporting **bugs**/**errors** in our [GitHub]({GITHUBLINK}) or [Support server]({INVITATION})"
+        ]
+      },
+      "administrator": {
+        "description": [
+          "Need help using akinator? Don't worry, here you have!",
+          "",
+          "**Available settings:**",
+          "`{PREFIX}akinator start` - Start a new game.",
+          "`{PREFIX}akinator stop` - Stop you actual game.",
+          "`{PREFIX}akinator toggle` - Enable/disable game.",
+          "`{PREFIX}akinator setlanguage` - Select default language.",
+          "`{PREFIX}akinator setchannel` - Restric akinator to a channel.",
+          "",
+          "{WARNING} This game is **under development**, expect **bugs** and **errors**.",
+          "**Help us** reporting **bugs**/**errors** in our [GitHub]({GITHUBLINK}) or [Support server]({INVITATION})"
+        ]
+      }
+    },
+    "disabledgame": "{CROSS} **This game is disabled!** Use `{PREFIX}akinator toggle`",
+    "invalidchannel": "{CROSS} **Incorrect channel!** Go to {AKINATORCHANNEL} to use **Akinator**!",
+    "youalreadyplaying": "{CROSS} **Looks like you are already playing somewhere else!**"
+  },
+  "anal": {
+    "success": {
+      "self": {
+        "description": [
+          "{CHECK} **{USER} here is your random anal!**"
+        ]
+      },
+      "other": {
+        "description": [
+          "{CHECK} **{USER} here is a random anal for {TARGET}!**"
+        ]
+      }
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    }
+  },
+  "avatar": {
+    "success": {
+      "description": [
+        "{CHECK} Here is {USER}'s avatar! [Link]({URL})"
+      ],
+      "footer": "{FOOTER} • Requested by {AUTHOR}"
+    }
+  },
+  "baka": {
+    "success": {
+      "self": {
+        "description": [
+          "{CHECK} **{USER} call themselves a baka!**"
+        ]
+      },
+      "other": {
+        "description": [
+          "{CHECK} **{USER} called baka to {TARGET}!**"
+        ]
+      }
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    }
+  },
+  "battle": {
+    "footer": "{FOOTER} • Battles",
+    "error": {
+      "battling": [
+        "{CROSS} **{USER}, you are in a battle somewhere else!**"
+      ],
+      "notyourself": [
+        "{CROSS} **{USER}, you cannot duel yourself.**"
+      ],
+      "targetbattling": [
+        "{CROSS} **{USER}, the other gladiator is in a battle!**"
+      ]
+    },
+    "starting": {
+      "title": "{FIRST} vs. {SECOND}!"
+    },
+    "battling": {
+      "attacks": [ 
+        "{TEAM} 🗡️ {ATTACKER} sliced {TARGET} with a **katana** for {DAMAGE} HP!",
+        "{TEAM} 🗣️ {ATTACKER} roasted {TARGET} with a **yomomma joke** for {DAMAGE} HP!",
+        "{TEAM} 🧪 {ATTACKER} burned {TARGET} with **acid** for {DAMAGE} HP!",
+        "{TEAM} ⚽ {ATTACKER} pummelled {TARGET} with a **soccer ball** for {DAMAGE} HP!",
+        "{TEAM} ✂️ {ATTACKER} cut {TARGET} with **scissors** for {DAMAGE} HP!",
+        "{TEAM} 🔪 {ATTACKER} stabbed {TARGET} with a **knife** for {DAMAGE} HP!",
+        "{TEAM} 🪕 {ATTACKER} shook {TARGET} with a **banjo** for {DAMAGE} HP!",
+        "{TEAM} 🛡️ {ATTACKER} bashed {TARGET} with their **shield** for {DAMAGE} HP!",
+        "{TEAM} 🥄 {ATTACKER} bruised {TARGET} with a **spoon** for {DAMAGE} HP!",
+        "{TEAM} ⚾ {ATTACKER} pelted {TARGET} with a **baseball** for {DAMAGE} HP!",
+        "{TEAM} 🍌 {ATTACKER} bananad {TARGET} with a **banana** for {DAMAGE} HP!",
+        "{TEAM} 🔥 {ATTACKER} scorched {TARGET} with a **torch** for {DAMAGE} HP!",
+        "{TEAM} 🪓 {ATTACKER} chopped {TARGET} with an **axe** for {DAMAGE} HP!",
+        "{TEAM} 🍷 {ATTACKER} poisoned {TARGET} with a **drink** for {DAMAGE} HP!",
+        "{TEAM} 👊 {ATTACKER} punched {TARGET} with their **fist** for {DAMAGE} HP!",
+        "{TEAM} 🧨 {ATTACKER} exploded {TARGET} with a **bomb** for {DAMAGE} HP!",
+        "{TEAM} 🔫 {ATTACKER} sniped {TARGET} with a **gun** for {DAMAGE} HP!",
+        "{TEAM} 🔧 {ATTACKER} smacked {TARGET} with a **wrench** for {DAMAGE} HP!",
+        "{TEAM} 🏹 {ATTACKER} hit {TARGET} with an **arrow** for {DAMAGE} HP!",
+        "{TEAM} ☁️ {ATTACKER} choked {TARGET} with their **fart** for {DAMAGE} HP!",
+        "{TEAM} 🎊 {ATTACKER} stunned {TARGER} with **confetti** for {DAMAGE} HP!",
+        "{TEAM} 🧼 {ATTACKER} gagged {TARGET} with **soap** for {DAMAGE} HP!",
+        "{TEAM} 🧹 {ATTACKER} whacked {TARGET} with a **broomstick** for {DAMAGE} HP!"
+      ],
+      "wins": [
+        "**\\🏆 {WINNERMEMBER} won against {LOSERMEMBER} in {WINNERMOVES} moves!**",
+        "**\\🏆 {WINNERMEMBER} couldn't resist defeating {LOSERMEMBER}**",
+        "**\\🏆 {WINNERMEMBER} destroyed {LOSERMEMBER}!**"
+      ]
+    }
+  },
   "belike": {
     "provideyourname": "{CROSS} **You need to specify at least your name.**",
     "description": [
       "{CHECK} **Here is your image {AUTHOR}!**"
     ]
+  },
+  "bigemoji": {
+    "success": {
+      "description": [
+        "{CHECK} **Here is the emoji! [Link]({EMOJILINK})**"
+      ],
+      "footer": "{FOOTER} • Requested by {AUTHOR}"
+    },
+    "error": {
+      "description": [
+        "{CROSS} **That doesn't seem to be a valid emoji!**"
+      ],
+      "footer": "{FOOTER} • Requested by {AUTHOR}"
+    }
+  },
+  "boobs": {
+    "success": {
+      "self": {
+        "description": [
+          "{CHECK} **{USER} showed their boobs!**"
+        ]
+      },
+      "other": {
+        "description": [
+          "{CHECK} **{USER} showed their boobs to {TARGET}!**"
+        ]
+      }
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    }
+  },
+  "bored": {
+    "default": {
+      "success": {
+        "title": "{TAG} is bored! They got...",
+        "description": [
+          "**Activity:** {ACTIVITY}",
+          "**Category:** {CATEGORY}",
+          "**Total People:** {PEOPLE}"
+        ]
+      }
+    },
+    "search": {
+      "success": {
+        "title": "{TAG} searched for {CATEGORY} activities!",
+        "description": [
+          "**Activity:** {ACTIVITY}",
+          "**Total People:** {PEOPLE}"
+        ]
+      }
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    },
+    "invalidcategory": {
+      "description": [
+        "{CROSS} **Invalid category!**",
+        "",
+        "**Available Categories:**",
+        "{CATEGORIES}"
+      ]
+    }
   },
   "botinfo": {
     "extras": [
@@ -346,6 +544,58 @@
       "[Donate]({DONATELINK}) • [GitHub]({GITHUB}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
     ]
   },
+  "cape": {
+    "error": {
+      "enterusername": {
+        "description": [
+          "{CROSS} **Specify a username!**"
+        ]
+      },
+      "notregistered": {
+        "description": [
+          "{CROSS} **Player '{USER}' doesn't exists!**"
+        ]
+      },
+      "nocape": {
+        "description": [
+          "{CROSS} **Player '{USER}' doesn't have a cape!**"
+        ]
+      }
+    },
+    "success": {
+      "title": "Cape owned by {USER}",
+      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
+    }
+  },
+  "chucknorris": {
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    },
+    "success": {
+      "description": [
+        "{CHECK} **{JOKE}**"
+      ]
+    }
+  },
+  "clapme": {
+    "invalidmessage": {
+      "description": [
+        "{CROSS} **Please enter a valid message!**"
+      ]
+    },
+    "success": {
+      "description": [
+        "{CHECK} {USER}: {MESSAGE}"
+      ]
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    }
+  },
   "clear": {
     "enteramount": "{CROSS} **| Enter an amount of messages to delete!**",
     "invalidamount": "{CROSS} **| Entered amount is not valid!**",
@@ -353,6 +603,109 @@
     "cannotlower": "{CROSS} **| Please provide a number that is at least `1`!**",
     "errordeleting": "{CROSS} **| Unexpected error. Couldn't delete messages!**",
     "deleted": "{CHECK} **| Cleared `{AMOUNT}` messages!**"
+  },
+  "connectfour": {
+    "alreadyplaying": {
+      "description": [
+        "{CROSS} **{USER}, you are playing somewhere else!**"
+      ]
+    },
+    "targetalreadyplaying": {
+      "description": [
+        "{CROSS} **{USER}, target is playing somewhere else!**"
+      ]
+    },
+    "cannotyourself": {
+      "description": [
+        "{CROSS} **You cannot duel yourself ._.**"
+      ]
+    },
+    "unexpectederror": {
+      "description": [
+        "{CROSS} **{USER}, unexpected error. Try again later!**"
+      ]
+    },
+    "game": {
+      "loadingdescription": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "\u200b ",
+        "{LOADING} _Loading game... Please wait._"
+      ],
+      "description": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b **{TURN}, your turn!**",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "",
+        "{LOADING} _You have **15 seconds** to move..._"
+      ],
+      "botdescription": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b **{TURN}, your turn!**",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "",
+        "{LOADING} _{TURN} is thinking its move..._"
+      ],
+      "autodescription": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{LASTTURN} didn't move!**",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **A random move was made.**",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{TURN}, your turn!**",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "",
+        "{LOADING} _You have **15 seconds** to move..._"
+      ],
+      "drawdescription": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "\u200b  \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b ** 📢 :regional_indicator_d: :regional_indicator_r: :regional_indicator_a: :regional_indicator_w: :bangbang::bangbang:**",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b **_Thanks for playing!_ \\🟡** \u200b \u200b \u200b  \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b"
+      ],
+      "winnerdescription": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "\u200b  \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **🎉 {WINNER} wins! 🎉**",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **_Thanks for playing!_ \\🟡** \u200b \u200b \u200b  \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b"
+      ]
+    }
+  },
+  "cuddle": {
+    "success": {
+      "self": {
+        "description": [
+          "{CHECK} **{USER} cuddled themselves!**"
+        ]
+      },
+      "other": {
+        "description": [
+          "{CHECK} **{USER} cuddled {TARGET}!**"
+        ]
+      }
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    }
   },
   "donate": {
     "title": "Magic8 Donation Page",
@@ -367,206 +720,54 @@
       "- Thank you for your support!"
     ]
   },
-  "info": {
-    "title": "{BOTNAME} - {GUILDNAME}",
-    "extra": [
-      "**🎱 8ball Plays:** {8BALLPLAYS}",
-      "**⚙️ 8ball Color:** {8BALLCOLOR}",
-      "**🎨 Color Plays:** {8COLORPLAYS}",
-      "**🔍 Trivia Plays:** {TRIVIAPLAYS}",
-      "**⚔️ Battles:** {BATTLES}"
-    ],
-    "description": [
-      "__**Server Information**__ - **Prefix:** {PREFIX}",
-      "**User/Bots/Online**: {USERS}/{BOTS}/{ONLINE}",
-      "**Text/Voice Channels:** {TEXTCHANNELS}/{VOICECHANNELS}",
-      "**NSFW Text channels:** {NSFWTEXTCHANNELS}",
-      "**8ball Channel:** {8BALLCHANNEL}",
-      "**🏅 Server Level:** {SERVERLEVEL}",
-      "**📝 Custom Responses:** {CURRENTRESPONSES}/{TOTALRESPONSES}",
-      "**🗃️ Reply Type:** {REPLYTYPE}",
-      "**🌎 Language:** {LANGUAGE}",
-      "",
-      "**Owner:** {OWNER}",
-      "**Server Created:** {CREATED}",
-      "**Bot Joined:** {JOINED}",
-      "",
-      "To view bot stats, type: `{PREFIX}binfo`",
-      "",
-      "**Useful Links:**",
-      "[Donate]({DONATELINK}) • [GitHub]({GITHUBLINK}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
-    ],
-    "footer": "{FOOTER} • Information"
-  },
-  "invite": {
-    "title": "Invite Magic8 to your server!",
-    "description": [
-      "Hey {AUTHOR}! Do you like **Magic8**?, do you want your friends to know about **Magic8** too?",
-      "",
-      "Invite the bot to your **game server** so all your friends can enjoy **Magic8's** unique features together!",
-      "",
-      "[{MAGIC8EMOJI} **Click Here!**]({INVITE})",
-      "",
-      "{CHECK} **Let's have fun!**"
-    ],
-    "footer": "{FOOTER} • Invite me!"
-  },
-  "level": {
-    "title": "{BOTNAME} - Server Level",
-    "description": [
-      "**Servers Levels** are made to adjust to members necessity based on **guild size**!",
-      "The **more members** you have, the **more custom responses** you can use!",
-      "",
-      "**__The levels requirements are:__**",
-      "{LIST}",
-      "",
-      "**{GUILDNAME}** level is **{SERVERLEVEL}**",
-      "This server can set up to **{MAXRESPONSES}** custom responses."
-    ],
-    "footer": "{FOOTER} • Invite more people!"
-  },
-  "avatar": {
+  "emojis": {
     "error": {
-      "description": [
-        "{CROSS} **Invalid member or ID!**"
-      ]
-    },
-    "success": {
-      "description": [
-        "{CHECK} Here is {USER} avatar! [Link]({URL})"
+      "permissiondescription": [
+        "{CROSS} **You need `MANAGE_EMOJIS` permission to access this command!**"
       ],
-      "footer": "{FOOTER} • Requested by {AUTHOR}"
-    }
-  },
-  "howgay": {
-    "error": {
-      "description": [
-        "{CROSS} **Invalid member or ID!**"
-      ]
-    },
-    "success": {
-      "description": [
-        "🏳️‍🌈 {TARGET} is `{PERCENT}%` gay 🏳️‍🌈"
+      "insufficientdescription": [
+        "{CROSS} **I need the `MANAGE_EMOJIS` permission!**"
       ],
-      "footer": "{FOOTER} • Requested by {AUTHOR}"
-    }
-  },
-  "neko": {
-    "success": {
-      "description": [
-        "{CHECK} **{USER} here is your neko!**"
+      "requireddescription": [
+        "{CROSS} **{USER}, specify an emoji name!**"
+      ],
+      "invalidemoji": [
+        "{CROSS} **Specified emoji name is not valid!**"
+      ],
+      "limitdescription": [
+        "{CROSS} **Whoops! You can't have more emojis in this server!**"
+      ],
+      "othererrordescription": [
+        "{CROSS} **Uhmm... weird, I couldn't add the emoji!**"
+      ],
+      "unknowndescription": [
+        "{CROSS} **Woops! I don't know why but try again later!**"
       ]
     },
-    "error": {
-      "description": [
-        "{CROSS} **Someone stole all nekos. Try again later!**"
-      ]
-    }
-  },
-  "say": {
-    "messagerequired": [
-      "{CROSS} **You need to specify a message!**"
+    "description": [
+      "**Welcome to our Emoji Bank!** {KAPPALUL}",
+      "Here is our personal list of **emojis** you can add to your server easily!",
+      "This list is made by our **developers** to allow you to get the most used emojis **in your server**.",
+      "",
+      "You'll be able to add all emojis listed below by running one command for the ones you want to add!",
+      "{MAGIC8} {BOT} requires `MANAGE_EMOJIS` permission!",
+      "",
+      "Command to run is `emoji add <emojiname>`",
+      "",
+      "Following emojis are listed by emoji name and emoji.",
+      ""
     ],
-    "nopermsinchannel": [
-      "{CROSS} **Looks like I don't have permissions in {CHANNEL}**"
+    "footer": [
+      "{VERIFIED} This list will be constantly **updating** and adding **new emojis**!",
+      "You want to **suggest** an emoji? **Join**  our **[Discord]({INVITATION})** server and let us know!",
+      "{WARNING} This feature is in **beta**. Please report **bugs/errors** in our **[Discord]({INVITATION})**!"
     ],
-    "noperms": [
-      "{CROSS} **You must have `MANAGE MESSAGES` to use this command!**"
-    ]
-  },
-  "pat": {
-    "invalidtarget":{
-      "description": [
-        "{CROSS} **{USER}, provide a valid member or ID!**"
-      ]
-    },
-    "success": {
-      "self": {
-        "description": [
-          "{CHECK} **{USER} patted themselves!**"
-        ]
-      },
-      "other": {
-        "description": [
-          "{CHECK} **{USER} patted {TARGET}!**"
-        ]
-      }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    },
-    "footer": "{FOOTER} • Pat"
-  },
-  "slap": {
-    "invalidtarget":{
-      "description": [
-        "{CROSS} **{USER}, provide a valid member or ID!**"
-      ]
-    },
-    "success": {
-      "self": {
-        "description": [
-          "{CHECK} **{USER} slapped themselves!**"
-        ]
-      },
-      "other": {
-        "description": [
-          "{CHECK} **{USER} slapped {TARGET}!**"
-        ]
-      }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    },
-    "footer": "{FOOTER} • Slap"
-  },
-  "chucknorris": {
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    },
     "success": {
       "description": [
-        "{CHECK} **{JOKE}**"
-      ]
-    }
-  },
-  "bored": {
-    "search": {
-      "success": {
-        "title": "{TAG} searched for {CATEGORY} activities!",
-        "description": [
-          "**Activity:** {ACTIVITY}",
-          "**Total People:** {PEOPLE}"
-        ]
-      }
-    },
-    "default": {
-      "success": {
-        "title": "{TAG} is bored! They got...",
-        "description": [
-          "**Activity:** {ACTIVITY}",
-          "**Category:** {CATEGORY}",
-          "**Total People:** {PEOPLE}"
-        ]
-      }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    },
-    "invalidcategory": {
-      "description": [
-        "{CROSS} **Invalid category!**",
+        "{CHECK} I've added {EMOJI} (**{EMOJINAME}**) to your server!",
         "",
-        "**Available Categories:**",
-        "{CATEGORIES}"
+        "Hey {USER}, thanks for using our **Emoji Bank**!",
+        "{VERIFIED} You have a good emoji to share? [Join us]({INVITATION})!"
       ]
     }
   },
@@ -581,11 +782,57 @@
       "{VERIFIED} _This information is randomly generated. It doesn't refer to any company or real person. The purpose of this command is to get information to fill databases or complete surveys._"
     ]
   },
-  "spoiler": {
-    "messagerequired": {
-      "description": [
-        "{CROSS} **Specify a message ._.**"
-      ]
+  "fakeping": {
+    "cooldown": [
+      "{CROSS} Woops! This server is still on cooldown!",
+      "{USER} generated a fakeping {TIME} ago.",
+      "",
+      "❄ You can generate a new one in {LEFT}."
+    ],
+    "guildnoicon": [
+      "**{CROSS} This server doesn't have a guild icon!**"
+    ],
+    "unknownerror": [
+      "**{CROSS} Unexpected error! Try again in a few minutes!**"
+    ],
+    "success": [
+      "{CHECK} **Fakeping successfully generated, {USER}!**",
+      "**Direct link:** [Click here]({LINK})",
+      "",
+      "**Do you want to update the guild icon?**",
+      "{LOADING} _You have 30 seconds to decide!_"
+    ],
+    "successmanual": [
+      "{CHECK} **Fakeping successfully generated, {USER}!**",
+      "**Direct link:** [Click here]({LINK})",
+      "",
+      "**Download and upload it as the guild icon!**"
+    ],
+    "updated": [
+      "{CHECK} {USER}, I updated the guild icon!"
+    ],
+    "notupdated": [
+      "{CROSS} {USER}, I will not be updating the guild icon."
+    ],
+    "notupdatedperms": [
+      "{CROSS} {USER}, I need `MANAGE_GUILD` permission.."
+    ],
+    "notupdatederror": [
+      "**{CROSS} Unexpected error! Try again in a few minutes!**"
+    ]
+  },
+  "feed": {
+    "success": {
+      "self": {
+        "description": [
+          "{CHECK} **{USER} fed themselves!**"
+        ]
+      },
+      "other": {
+        "description": [
+          "{CHECK} **{USER} fed {TARGET}!**"
+        ]
+      }
     },
     "error": {
       "description": [
@@ -593,18 +840,106 @@
       ]
     }
   },
-  "yomomma": {
+  "hack": {
+    "alreadyhacking": "**{CROSS} {TARGET} is already being hacked!**",
+    "starting": "{HACK} Starting hack on **{TARGET}** {HACK}",
+    "process": {
+      "oip": {
+        "time": 5000,
+        "message": "> Obtaining {TARGET}'s IP..."
+      },
+      "dip": {
+        "time": 1000,
+        "message": "> Decoding their IP..."
+      },
+      "ip": {
+        "time": 3000,
+        "message": "> Analizing {RANDOMIP}"
+      },
+      "oipv6": {
+        "time": 4000,
+        "message": "> Obtaining IPv6 address..."
+      },
+      "dipv6": {
+        "time": 1000,
+        "message": "> Decoding IPv6 address..."
+      },
+      "ipv6": {
+        "time": 3000,
+        "message": "> Analizing {RANDOMIPV6}"
+      },
+      "mac": {
+        "time": 3000,
+        "message": "> MAC address obtained. Analizing {RANDOMMAC}"
+      },
+      "lhandshake": {
+        "time": 3000,
+        "message": "> Listening for handshake..."
+      },
+      "handshake": {
+        "time": 3000,
+        "message": "> Handshake captured! Saved as \"hs/IPonFirewall_{IPONFIREWALL}.cap\""
+      },
+      "email": {
+        "time": 3000,
+        "message": "> Email successfully spoofed: {RANDOMEMAIL}"
+      },
+      "opass": {
+        "time": 3000,
+        "message": "> Obtaining password..."
+      },
+      "pass": {
+        "time": 3000,
+        "message": "> Password successfully spoofed: {RANDOMPASSWORD}"
+      },
+      "gettingcard": {
+        "time": 2000,
+        "message": "> Obtaining associated credit/debit card..."
+      },
+      "card": {
+        "time": 2000,
+        "message": "> Credit/debit card successfully spoofed: {RANDOMCREDITCARD}"
+      },
+      "registering1": {
+        "time": 2000,
+        "message": "> Using email to register on {RANDOMREGISTER}"
+      },
+      "purchased": {
+        "time": 2000,
+        "message": "> **Purchased Pro-Membership!**"
+      }
+    },
+    "finishing": "> {HACK} Finishing the hack on **{TARGET}** {HACK}",
+    "finished": "{CHECK} The totally legit hack on **{TARGET}** has been completed!",
+    "interrupted": "{CROSS} Hacking process for **{TARGET}** interrupted! **Content has been removed...**"
+  },
+  "howgay": {
     "success": {
       "description": [
-        "{CHECK} **{JOKE}**"
-      ]
+        "🏳️‍🌈 {TARGET} is `{PERCENT}%` gay 🏳️‍🌈"
+      ],
+      "footer": "{FOOTER} • Requested by {AUTHOR}"
+    }
+  },
+  "hug": {
+    "success": {
+      "self": {
+        "description": [
+          "{CHECK} **{USER} hugged themselves!**"
+        ]
+      },
+      "other": {
+        "description": [
+          "{CHECK} **{USER} hugged {TARGET}!**"
+        ]
+      }
     },
     "error": {
       "description": [
         "{CROSS} **Unexpected error. Try again later!**"
       ]
     },
-    "footer": "{FOOTER} • Yomomma Jokes"
+    "footer": "{FOOTER} • Hug"
   },
   "hypixel": {
     "error": {
@@ -658,27 +993,138 @@
       "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
     }
   },
-  "cape": {
-    "error": {
-      "enterusername": {
+  "info": {
+    "title": "{BOTNAME} - {GUILDNAME}",
+    "extra": [
+      "**🎱 8ball Plays:** {8BALLPLAYS}",
+      "**⚙️ 8ball Color:** {8BALLCOLOR}",
+      "**🎨 Color Plays:** {8COLORPLAYS}",
+      "**🔍 Trivia Plays:** {TRIVIAPLAYS}",
+      "**⚔️ Battles:** {BATTLES}"
+    ],
+    "description": [
+      "__**Server Information**__ - **Prefix:** {PREFIX}",
+      "**User/Bots/Online**: {USERS}/{BOTS}/{ONLINE}",
+      "**Text/Voice Channels:** {TEXTCHANNELS}/{VOICECHANNELS}",
+      "**NSFW Text channels:** {NSFWTEXTCHANNELS}",
+      "**8ball Channel:** {8BALLCHANNEL}",
+      "**🏅 Server Level:** {SERVERLEVEL}",
+      "**📝 Custom Responses:** {CURRENTRESPONSES}/{TOTALRESPONSES}",
+      "**🗃️ Reply Type:** {REPLYTYPE}",
+      "**🌎 Language:** {LANGUAGE}",
+      "",
+      "**Owner:** {OWNER}",
+      "**Server Created:** {CREATED}",
+      "**Bot Joined:** {JOINED}",
+      "",
+      "To view bot stats, type: `{PREFIX}binfo`",
+      "",
+      "**Useful Links:**",
+      "[Donate]({DONATELINK}) • [GitHub]({GITHUBLINK}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
+    ],
+    "footer": "{FOOTER} • Information"
+  },
+  "invite": {
+    "title": "Invite Magic8 to your server!",
+    "description": [
+      "Hey {AUTHOR}! Do you like **Magic8**?, do you want your friends to know about **Magic8** too?",
+      "",
+      "Invite the bot to your **game server** so all your friends can enjoy **Magic8's** unique features together!",
+      "",
+      "[{MAGIC8EMOJI} **Click Here!**]({INVITE})",
+      "",
+      "{CHECK} **Let's have fun!**"
+    ],
+    "footer": "{FOOTER} • Invite me!"
+  },
+  "iq": {
+    "superdumb": [
+      "bruh you got the iq of a tomato",
+      "you're as smart as a worm!",
+      "how?? how are you so stupid",
+      "who raised you???",
+      "i can no longer communicate with you"
+   ],
+    "dumb": [
+      "haha you're stupid!",
+      "you dumb lol",
+      "really? dang what an L",
+      "you stoopid",
+      "ew i dont like dumb people"
+   ],
+    "average": [
+      "you're an average guy!",
+      "looks like you're normal",
+      "well looks like you're a normie",
+      "thank god you're not a genius",
+      "im still smarter than you"
+    ],
+    "smart": [
+      "dang you're smart!",
+      "you're above average!",
+      "you aren't dumb!",
+      "okayyyyy, you smart like me",
+      "woah, first smart person i've seen in a long time"
+    ],
+    "genius": [
+      "are you a descendant of albert einstein?",
+      "you're a genius",
+      "impressive!",
+      "no one is as smart as me though",
+      "woah, a genius!"
+    ],
+    "description": [
+      "**{TARGET}'s IQ Level:** {IQ} 🧠",
+      "_ _",
+      "{MESSAGE}"
+    ],
+    "footer": "{FOOTER} • IQ Check"
+  },
+  "kiss": {
+    "success": {
+      "self": {
         "description": [
-          "{CROSS} **Specify a username!**"
+          "{CHECK} **{USER} kissed themselves!**"
         ]
       },
-      "notregistered": {
+      "other": {
         "description": [
-          "{CROSS} **Player '{USER}' doesn't exists!**"
-        ]
-      },
-      "nocape": {
-        "description": [
-          "{CROSS} **Player '{USER}' doesn't have a cape!**"
+          "{CHECK} **{USER} kissed {TARGET}!**"
         ]
       }
     },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    },
+    "footer": "{FOOTER} • Kiss"
+  },
+  "level": {
+    "title": "{BOTNAME} - Server Level",
+    "description": [
+      "**Servers Levels** are made to adjust to members necessity based on **guild size**!",
+      "The **more members** you have, the **more custom responses** you can use!",
+      "",
+      "**__The levels requirements are:__**",
+      "{LIST}",
+      "",
+      "**{GUILDNAME}** level is **{SERVERLEVEL}**",
+      "This server can set up to **{MAXRESPONSES}** custom responses."
+    ],
+    "footer": "{FOOTER} • Invite more people!"
+  },
+  "mcachievement": {
+    "error": [
+      "{CROSS} **Usage: `{PREFIX}mcachievement Title | Subtitle`**",
+      "**Example:** {PREFIX}mcachievement Discord Master|Invite Magic8 to your server!"
+    ],
+    "defaulttitle": "Unlocked Achievement!",
+    "defaultsubtitle": "Select a description",
     "success": {
-      "title": "Cape owned by {USER}",
-      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
+      "description": [
+        "{CHECK} **{USER}, here is your achievement!**"
+      ]
     }
   },
   "mcskin": {
@@ -698,6 +1144,24 @@
       "title": "Skin owned by {USER}",
       "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
     }
+  },
+  "meme": {
+    "invalidtopic": {
+      "description": [
+        "{CROSS} **Couldn't find any meme about this..**"
+      ]
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    },
+    "success": {
+      "description": [
+        "{CHECK} **Random {TOPIC} meme**!"
+      ]
+    },
+    "footer": "{FOOTER} • Requested by {AUTHOR}"
   },
   "namehistory": {
     "error": {
@@ -736,69 +1200,179 @@
       "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
     }
   },
-  "vote": {
-    "title": "{USER}, considering supporting Magic8?",
-    "canvote": [
-      "{CHECK} **You can vote now for Magic8!**",
-      "",
-      "**Support** Magic8 developers by clicking [here]({VOTELINK})!",
-      "{INFO} You can vote once every **12** hours!",
-      ""
-    ],
-    "cannotvote": [
-      "{CROSS} **You already voted in the past 12 hours!**",
-      "",
-      "By voting for Magic8, you support developers to keep adding new features and system. It lets them know you are interested in our work!",
-      "You can vote by clicking this [link]({VOTELINK}).",
-      "{INFO} You can vote once every **12** hours!"
-    ],
-    "unexpectederror": [
-      "{CROSS} **Unexpected error. You can still check [here]({VOTELINK})**"
-    ],
-    "total": "Total votes:",
-    "monthly": "Montly votes:"
+  "neko": {
+    "success": {
+      "description": [
+        "{CHECK} **{USER} here is your neko!**"
+      ]
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Someone stole all nekos. Try again later!**"
+      ]
+    }
   },
-  "akinator": {
-    "help": {
-      "title": "{BOTNAME} • Akinator Help",
-      "user":{
+  "pat": {
+      "success": {
+        "self": {
+          "description": [
+            "{CHECK} **{USER} patted themselves!**"
+          ]
+        },
+        "other": {
+          "description": [
+            "{CHECK} **{USER} patted {TARGET}!**"
+          ]
+        }
+      },
+      "error": {
         "description": [
-          "Need help using akinator? Don't worry, here you have!",
-          "",
-          "**Available settings:**",
-          "`{PREFIX}akinator start` - Start a new game.",
-          "`{PREFIX}akinator stop` - Stop you actual game.",
-          "",
-          "{WARNING} This game is **under development**, expect **bugs** and **errors**.",
-          "**Help us** reporting **bugs**/**errors** in our [GitHub]({GITHUBLINK}) or [Support server]({INVITATION})"
+          "{CROSS} **Unexpected error. Try again later!**"
         ]
       },
-      "administrator":{
+    "footer": "{FOOTER} • Pat"
+  },
+  "poke": {
+    "success": {
+      "self": {
         "description": [
-          "Need help using akinator? Don't worry, here you have!",
-          "",
-          "**Available settings:**",
-          "`{PREFIX}akinator start` - Start a new game.",
-          "`{PREFIX}akinator stop` - Stop you actual game.",
-          "`{PREFIX}akinator toggle` - Enable/disable game.",
-          "`{PREFIX}akinator setlanguage` - Select default language.",
-          "`{PREFIX}akinator setchannel` - Restric akinator to a channel.",
-          "",
-          "{WARNING} This game is **under development**, expect **bugs** and **errors**.",
-          "**Help us** reporting **bugs**/**errors** in our [GitHub]({GITHUBLINK}) or [Support server]({INVITATION})"
+          "{CHECK} **{USER} poked themselves!**"
+        ]
+      },
+      "other": {
+        "description": [
+          "{CHECK} **{USER} poked {TARGET}!**"
         ]
       }
     },
-    "disabledgame": "{CROSS} **This game is disabled!** Use `{PREFIX}akinator toggle`",
-    "invalidchannel": "{CROSS} **Incorrect channel!** Go to {AKINATORCHANNEL} to use **Akinator**!",
-    "youalreadyplaying": "{CROSS} **Looks like you are already playing somewhere else!**"
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    },
+    "footer": "{FOOTER} • Poke"
+  },
+  "say": {
+    "messagerequired": [
+      "{CROSS} **You need to specify a message!**"
+    ],
+    "nopermsinchannel": [
+      "{CROSS} **Looks like I don't have permissions in {CHANNEL}**"
+    ],
+    "noperms": [
+      "{CROSS} **You must have `MANAGE MESSAGES` to use this command!**"
+    ]
+  },
+  "slap": {
+    "success": {
+      "self": {
+        "description": [
+          "{CHECK} **{USER} slapped themselves!**"
+        ]
+      },
+      "other": {
+        "description": [
+          "{CHECK} **{USER} slapped {TARGET}!**"
+        ]
+      }
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    },
+    "footer": "{FOOTER} • Slap"
+  },
+  "slotmachine": {
+    "alreadyplaying": "{CROSS} **{USER}, you are playing somewhere else!**",
+    "errorplaying": [
+      "{CROSS} **Unexpected error. Please try again later!**"
+    ],
+    "playing": [
+      "\u200b \u200b \u200b \u200b \u200b \u200b {USER} is playing slot machine!",
+      "\u200b ",
+      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
+      "\u200b ",
+      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {LOADING} **Slot machine is rolling...**",
+      "\u200b \u200b \u200b\u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b React with :joystick: to stop the machine!"
+    ],
+    "stopping": [
+      "\u200b \u200b \u200b \u200b \u200b \u200b {USER} is playing slot machine!",
+      "\u200b ",
+      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
+      "\u200b ",
+      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {LOADING} **Stopping slot machine...**"
+    ],
+    "lose": [
+      "\u200b \u200b \u200b \u200b \u200b \u200b {USER} is playing slot machine!",
+      "",
+      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
+      "\u200b ",
+      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {CROSS} **{USER}, you lost!**",
+      "\u200b \u200b \u200b\u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **_Thanks for playing!_** 🎰"
+    ],
+    "win": [
+      "\u200b \u200b \u200b \u200b \u200b \u200b {USER} is playing slot machine!",
+      "",
+      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
+      "\u200b ",
+      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b 🎉 **{USER}, you won!**",
+      "\u200b \u200b \u200b\u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **_Thanks for playing!_** 🎰"
+    ],
+    "footer": "{FOOTER} • Slot Machine"
+  },
+  "smug": {
+    "success": {
+      "self": {
+        "description": [
+          "{CHECK} **{USER} smudged themselves!**"
+        ]
+      },
+      "other": {
+        "description": [
+          "{CHECK} **{USER} smudged {TARGET}!**"
+        ]
+      }
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    }
+  },
+  "spinner": {
+    "alreadyspinning": "{CROSS} **You are spinning a spinner somewhere else!**",
+    "spinning": "{SPINNER} **{USER} is spinning a spinner!**",
+    "spun": "{SPINNER} **{USER} spun the spinner for {TIME}s!**"
+  },
+  "spoiler": {
+    "messagerequired": {
+      "description": [
+        "{CROSS} **Specify a message ._.**"
+      ]
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    }
+  },
+  "telephone": {
+    "ringing": "☎ {USER} took the phone. **The phone is ringing!**",
+    "someoneusingtelephone": "🚫 Someone else is using the telephone! **Please wait.**",
+    "someoneinacall": "🚫 Someone else is using the telephone! **Please be patient.**",
+    "nooneanswered": "⛔ {USER}, looks like no one picked up the phone..",
+    "establised": "🔊 Someone picked up the phone. **Connection established!**",
+    "youhungup": "\\🔴 **You hung up the call!**",
+    "otherhungup": "\\🔴 **The other person hung up the call!**",
+    "timeout": "\\⏰ Couldn't detect any message in 1 minute. **Connection lost!**"
   },
   "ticket": {
     "footer": "{FOOTER} • Ticket",
     "help": {
       "title": "{BOTNAME} • Ticket help",
       "ticketnew": "\n`{PREFIX}ticket new` - Create a new ticket.",
-      "user":{
+      "user": {
         "description": [
           "Need help using ticket system? Don't worry, here you have!",
           "",
@@ -809,7 +1383,7 @@
           "**Help us** reporting **bugs**/**errors** in our [GitHub]({GITHUBLINK}) or [Support Server]({INVITE})"
         ]
       },
-      "administrator":{
+      "administrator": {
         "description": [
           "Need help using ticket system? Don't worry, here you have!",
           "",
@@ -1054,262 +1628,7 @@
       ]
     }
   },
-  "bigemoji": {
-    "success": {
-      "description": [
-        "{CHECK} **Here is the emoji! [Link]({EMOJILINK})**"
-      ],
-      "footer": "{FOOTER} • Requested by {AUTHOR}"
-    },
-    "error": {
-      "description": [
-        "{CROSS} **That doesn't seem to be a valid emoji!**"
-      ],
-      "footer": "{FOOTER} • Requested by {AUTHOR}"
-    }
-  },
-  "telephone": {
-    "ringing": "☎ {USER} took the phone. **The phone is ringing!**",
-    "someoneusingtelephone": "🚫 Someone else is using the telephone! **Please wait.**",
-    "someoneinacall": "🚫 Someone else is using the telephone! **Please be patient.**",
-    "nooneanswered": "⛔ {USER}, looks like no one picked up the phone..",
-    "establised": "🔊 Someone picked up the phone. **Connection established!**",
-    "youhungup": "\\🔴 **You hung up the call!**",
-    "otherhungup": "\\🔴 **The other person hung up the call!**",
-    "timeout": "\\⏰ Couldn't detect any message in 1 minute. **Connection lost!**"
-  },
-  "battle": {
-    "footer": "{FOOTER} • Battles",
-    "error": {
-      "battling": [
-        "{CROSS} **{USER}, you are in a battle somewhere else!**"
-      ],
-      "specify": [
-        "{CROSS} **{USER}, specify a member or ID!**"
-      ],
-      "invalid": [
-        "{CROSS} **{USER}, enter a valid member or ID!**"
-      ],
-      "notyourself": [
-        "{CROSS} **{USER}, you cannot duel yourself.**"
-      ],
-      "targetbattling": [
-        "{CROSS} **{USER}, the other gladiator is in a battle!**"
-      ]
-    },
-    "starting": {
-      "title": "{FIRST} vs. {SECOND}!"
-    },
-    "battling": {
-      "attacks": [ 
-        "{TEAM} 🗡️ {ATTACKER} sliced {TARGET} with a **katana** for {DAMAGE} HP!",
-        "{TEAM} 🗣️ {ATTACKER} roasted {TARGET} with a **yomomma joke** for {DAMAGE} HP!",
-        "{TEAM} 🧪 {ATTACKER} burned {TARGET} with **acid** for {DAMAGE} HP!",
-        "{TEAM} ⚽ {ATTACKER} pummelled {TARGET} with a **soccer ball** for {DAMAGE} HP!",
-        "{TEAM} ✂️ {ATTACKER} cut {TARGET} with **scissors** for {DAMAGE} HP!",
-        "{TEAM} 🔪 {ATTACKER} stabbed {TARGET} with a **knife** for {DAMAGE} HP!",
-        "{TEAM} 🪕 {ATTACKER} shook {TARGET} with a **banjo** for {DAMAGE} HP!",
-        "{TEAM} 🛡️ {ATTACKER} bashed {TARGET} with their **shield** for {DAMAGE} HP!",
-        "{TEAM} 🥄 {ATTACKER} bruised {TARGET} with a **spoon** for {DAMAGE} HP!",
-        "{TEAM} ⚾ {ATTACKER} pelted {TARGET} with a **baseball** for {DAMAGE} HP!",
-        "{TEAM} 🍌 {ATTACKER} bananad {TARGET} with a **banana** for {DAMAGE} HP!",
-        "{TEAM} 🔥 {ATTACKER} scorched {TARGET} with a **torch** for {DAMAGE} HP!",
-        "{TEAM} 🪓 {ATTACKER} chopped {TARGET} with an **axe** for {DAMAGE} HP!",
-        "{TEAM} 🍷 {ATTACKER} poisoned {TARGET} with a **drink** for {DAMAGE} HP!",
-        "{TEAM} 👊 {ATTACKER} punched {TARGET} with their **fist** for {DAMAGE} HP!",
-        "{TEAM} 🧨 {ATTACKER} exploded {TARGET} with a **bomb** for {DAMAGE} HP!",
-        "{TEAM} 🔫 {ATTACKER} sniped {TARGET} with a **gun** for {DAMAGE} HP!",
-        "{TEAM} 🔧 {ATTACKER} smacked {TARGET} with a **wrench** for {DAMAGE} HP!",
-        "{TEAM} 🏹 {ATTACKER} hit {TARGET} with an **arrow** for {DAMAGE} HP!",
-        "{TEAM} ☁️ {ATTACKER} choked {TARGET} with their **fart** for {DAMAGE} HP!",
-        "{TEAM} 🎊 {ATTACKER} stunned {TARGER} with **confetti** for {DAMAGE} HP!",
-        "{TEAM} 🧼 {ATTACKER} gagged {TARGET} with **soap** for {DAMAGE} HP!",
-        "{TEAM} 🧹 {ATTACKER} whacked {TARGET} with a **broomstick** for {DAMAGE} HP!"
-      ],
-      "wins": [
-        "**\\🏆 {WINNERMEMBER} won against {LOSERMEMBER} in {WINNERMOVES} moves!**",
-        "**\\🏆 {WINNERMEMBER} couldn't resist defeating {LOSERMEMBER}**",
-        "**\\🏆 {WINNERMEMBER} destroyed {LOSERMEMBER}!**"
-      ]
-    }
-  },
-  "kiss": {
-    "invalidtarget":{
-      "description": [
-        "{CROSS} **{USER}, provide a valid member or ID!**"
-      ]
-    },
-    "success": {
-      "self": {
-        "description": [
-          "{CHECK} **{USER} kissed himself!**"
-        ]
-      },
-      "other": {
-        "description": [
-          "{CHECK} **{USER} kissed {TARGET}!**"
-        ]
-      }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    },
-    "footer": "{FOOTER} • Kiss"
-  },
-  "hug": {
-    "invalidtarget":{
-      "description": [
-        "{CROSS} **{USER}, provide a valid member or ID!**"
-      ]
-    },
-    "success": {
-      "self": {
-        "description": [
-          "{CHECK} **{USER} hugged himself!**"
-        ]
-      },
-      "other": {
-        "description": [
-          "{CHECK} **{USER} hugged {TARGET}!**"
-        ]
-      }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    },
-    "footer": "{FOOTER} • Hug"
-  },
-  "smug": {
-    "invalidtarget":{
-      "description": [
-        "{CROSS} **{USER}, provide a valid member or ID!**"
-      ]
-    },
-    "success": {
-      "self": {
-        "description": [
-          "{CHECK} **{USER} smudged himself!**"
-        ]
-      },
-      "other": {
-        "description": [
-          "{CHECK} **{USER} smudged {TARGET}!**"
-        ]
-      }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    }
-  },
-  "poke": {
-    "invalidtarget":{
-      "description": [
-        "{CROSS} **{USER}, provide a valid member or ID!**"
-      ]
-    },
-    "success": {
-      "self": {
-        "description": [
-          "{CHECK} **{USER} poked himself!**"
-        ]
-      },
-      "other": {
-        "description": [
-          "{CHECK} **{USER} poked {TARGET}!**"
-        ]
-      }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    },
-    "footer": "{FOOTER} • Hug"
-  },
-  "cuddle": {
-    "invalidtarget":{
-      "description": [
-        "{CROSS} **{USER}, provide a valid member or ID!**"
-      ]
-    },
-    "success": {
-      "self": {
-        "description": [
-          "{CHECK} **{USER} cuddled himself!**"
-        ]
-      },
-      "other": {
-        "description": [
-          "{CHECK} **{USER} cuddled {TARGET}!**"
-        ]
-      }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    }
-  },
-  "feed": {
-    "invalidtarget":{
-      "description": [
-        "{CROSS} **{USER}, provide a valid member or ID!**"
-      ]
-    },
-    "success": {
-      "self": {
-        "description": [
-          "{CHECK} **{USER} fed himself!**"
-        ]
-      },
-      "other": {
-        "description": [
-          "{CHECK} **{USER} fed {TARGET}!**"
-        ]
-      }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    }
-  },
-  "baka": {
-    "invalidtarget":{
-      "description": [
-        "{CROSS} **{USER}, provide a valid member or ID!**"
-      ]
-    },
-    "success": {
-      "self": {
-        "description": [
-          "{CHECK} **{USER} call himself a baka!**"
-        ]
-      },
-      "other": {
-        "description": [
-          "{CHECK} **{USER} called baka to {TARGET}!**"
-        ]
-      }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    }
-  },
   "tickle": {
-    "invalidtarget":{
-      "description": [
-        "{CROSS} **{USER}, provide a valid member or ID!**"
-      ]
-    },
     "success": {
       "self": {
         "description": [
@@ -1328,165 +1647,6 @@
       ]
     }
   },
-  "boobs": {
-    "invalidtarget":{
-      "description": [
-        "{CROSS} **{USER}, provide a valid member or ID!**"
-      ]
-    },
-    "success": {
-      "self": {
-        "description": [
-          "{CHECK} **{USER} showed boobs!**"
-        ]
-      },
-      "other": {
-        "description": [
-          "{CHECK} **{USER} showd boobs to {TARGET}!**"
-        ]
-      }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    }
-  },
-  "trap": {
-    "invalidtarget":{
-      "description": [
-        "{CROSS} **{USER}, provide a valid member or ID!**"
-      ]
-    },
-    "success": {
-      "self": {
-        "description": [
-          "{CHECK} **{USER} here is your random trap!**"
-        ]
-      },
-      "other": {
-        "description": [
-          "{CHECK} **{USER} here is the random trap for {TARGET}!**"
-        ]
-      }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    }
-  },
-  "anal": {
-    "invalidtarget":{
-      "description": [
-        "{CROSS} **{USER}, provide a valid member or ID!**"
-      ]
-    },
-    "success": {
-      "self": {
-        "description": [
-          "{CHECK} **{USER} here is your random anal!**"
-        ]
-      },
-      "other": {
-        "description": [
-          "{CHECK} **{USER} here is a random anal for {TARGET}!**"
-        ]
-      }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    }
-  },
-  "meme": {
-    "invalidtopic": {
-      "description": [
-        "{CROSS} **Couldn't find any meme about this..**"
-      ]
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    },
-    "success":{
-      "description": [
-        "{CHECK} **Random {TOPIC} meme**!"
-      ]
-    },
-    "footer": "{FOOTER} • Requested by {AUTHOR}"
-  },
-  "clapme": {
-    "invalidmessage": {
-      "description": [
-        "{CROSS} **Please enter a valid message!**"
-      ]
-    },
-    "success": {
-      "description": [
-        "{CHECK} {USER}: {MESSAGE}"
-      ]
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    }
-  },
-  "trivia": {
-    "alreadyplaying": {
-      "description": [
-        "{CROSS} **You are already playing somewhere else!**"
-      ]
-    },
-    "errorcategory": {
-      "description": [
-        "{CROSS} **Invalid category!**",
-        "",
-        "**Available categories:**",
-        "{CATEGORIES}"
-      ]
-    },
-    "unexpected":{
-      "description": [
-        "{CROSS} **{USER}, there was an unexpected error. Please try again in a few minutes!**"
-      ]
-    },
-    "unexpectednew":{
-      "description": [
-        "{CROSS} **{USER}, an unexpected error occurred loading a new trivia. Game ended, your current streak is {STREAK} correct answers!**"
-      ]
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    },
-    "trivia": {
-      "title": "{USER} is playing trivia!",
-      "subcategory": "\n**Subcategory:** {SUBCATEGORY}",
-      "description": [
-        "**Category:** {CATEGORY}{SUBCATEGORYSTRING}",
-        "**Difficulty:** {DIFFICULTY}",
-        "**Question:**",
-        "{QUESTION}",
-        "**Options:**",
-        "{OPTIONS}",
-        "**Please type your answer or use the number of the answer!**\nYou have 20 seconds.."
-      ]
-    },
-    "correct": [
-      "{CHECK} **{USER}, you answered correctly! Get ready for the next trivia in 10 seconds! Streak: {STREAK}!**"
-    ],
-    "incorrect": [
-      "{CROSS} **{USER}, your answer was incorrect! Streak: {STREAK}!**"
-    ],
-    "timeout": [
-      "⏰ **{USER} time's up! Your streak: {STREAK}**"
-    ]
-  },
   "tictactoe": {
     "alreadyplaying": {
       "description": [
@@ -1498,14 +1658,9 @@
         "{CROSS} **{USER}, target is playing somewhere else!**"
       ]
     },
-    "invalidtarget": {
-      "description": [
-        "{CROSS} **Invalid member or ID!**"
-      ]
-    },
     "cannotyourself": {
       "description": [
-        "{CROSS} **You cannot duel yourself ._.**"
+        "{CROSS} **You cannot play yourself ._.**"
       ]
     },
     "unexpectederror": {
@@ -1570,316 +1725,110 @@
       ]
     }
   },
-  "spinner": {
-    "alreadyspinning": "{CROSS} **You are spinning a spinner somewhere else!**",
-    "spinning": "{SPINNER} **{USER} is spinning a spinner!**",
-    "spun": "{SPINNER} **{USER} spun the spinner for {TIME}s!**"
-  },
-  "mcachievement": {
-    "error": [
-      "{CROSS} **Usage: `{PREFIX}mcachievement Title | Subtitle`**",
-      "**Example:** {PREFIX}mcachievement Discord Master|Invite Magic8 to your server!"
-    ],
-    "defaulttitle": "Unlocked Achievement!",
-    "defaultsubtitle": "Select a description",
+  "trap": {
     "success": {
-      "description": [
-        "{CHECK} **{USER}, here is your achievement!**"
-      ]
-    }
-  },
-  "slotmachine": {
-    "alreadyplaying": "{CROSS} **{USER}, you are playing somewhere else!**",
-    "errorplaying": [
-      "{CROSS} **Unexpected error. Please try again later!**"
-    ],
-    "playing": [
-      "\u200b \u200b \u200b \u200b \u200b \u200b {USER} is playing slot machine!",
-      "\u200b ",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
-      "\u200b ",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {LOADING} **Slot machine is rolling...**",
-      "\u200b \u200b \u200b\u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b React with :joystick: to stop the machine!"
-    ],
-    "stopping": [
-      "\u200b \u200b \u200b \u200b \u200b \u200b {USER} is playing slot machine!",
-      "\u200b ",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
-      "\u200b ",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {LOADING} **Stopping slot machine...**"
-    ],
-    "lose": [
-      "\u200b \u200b \u200b \u200b \u200b \u200b {USER} is playing slot machine!",
-      "",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
-      "\u200b ",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {CROSS} **{USER}, you lost!**",
-      "\u200b \u200b \u200b\u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **_Thanks for playing!_** 🎰"
-    ],
-    "win": [
-      "\u200b \u200b \u200b \u200b \u200b \u200b {USER} is playing slot machine!",
-      "",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
-      "\u200b ",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b 🎉 **{USER}, you won!**",
-      "\u200b \u200b \u200b\u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **_Thanks for playing!_** 🎰"
-    ],
-    "footer": "{FOOTER} • Slot Machine"
-  },
-  "connectfour": {
-    "alreadyplaying": {
-      "description": [
-        "{CROSS} **{USER}, you are playing somewhere else!**"
-      ]
-    },
-    "targetalreadyplaying": {
-      "description": [
-        "{CROSS} **{USER}, target is playing somewhere else!**"
-      ]
-    },
-    "invalidtarget": {
-      "description": [
-        "{CROSS} **Invalid member or ID!**"
-      ]
-    },
-    "cannotyourself": {
-      "description": [
-        "{CROSS} **You cannot duel yourself ._.**"
-      ]
-    },
-    "unexpectederror": {
-      "description": [
-        "{CROSS} **{USER}, unexpected error. Try again later!**"
-      ]
-    },
-    "game": {
-      "loadingdescription": [
-        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
-        "\u200b ",
-        "{COLUMNS}",
-        "{GAME}",
-        "\u200b ",
-        "{LOADING} _Loading game... Please wait._"
-      ],
-      "description": [
-        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
-        "\u200b ",
-        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b **{TURN}, your turn!**",
-        "\u200b ",
-        "{COLUMNS}",
-        "{GAME}",
-        "",
-        "{LOADING} _You have **15 seconds** to move..._"
-      ],
-      "botdescription": [
-        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
-        "\u200b ",
-        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b **{TURN}, your turn!**",
-        "\u200b ",
-        "{COLUMNS}",
-        "{GAME}",
-        "",
-        "{LOADING} _{TURN} is thinking its move..._"
-      ],
-      "autodescription": [
-        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
-        "\u200b ",
-        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{LASTTURN} didn't move!**",
-        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **A random move was made.**",
-        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{TURN}, your turn!**",
-        "\u200b ",
-        "{COLUMNS}",
-        "{GAME}",
-        "",
-        "{LOADING} _You have **15 seconds** to move..._"
-      ],
-      "drawdescription": [
-        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
-        "\u200b ",
-        "\u200b  \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b ** 📢 :regional_indicator_d: :regional_indicator_r: :regional_indicator_a: :regional_indicator_w: :bangbang::bangbang:**",
-        "\u200b ",
-        "{COLUMNS}",
-        "{GAME}",
-        "",
-        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b **_Thanks for playing!_ \\🟡** \u200b \u200b \u200b  \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b"
-      ],
-      "winnerdescription": [
-        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
-        "\u200b ",
-        "\u200b  \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **🎉 {WINNER} wins! 🎉**",
-        "\u200b ",
-        "{COLUMNS}",
-        "{GAME}",
-        "",
-        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **_Thanks for playing!_ \\🟡** \u200b \u200b \u200b  \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b"
-      ]
-    }
-  },
-  "emojis": {
-    "error":{
-      "permissiondescription": [
-        "{CROSS} **You need `MANAGE_EMOJIS` permission to access this command!**"
-      ],
-      "insufficientdescription": [
-        "{CROSS} **I need the `MANAGE_EMOJIS` permission!**"
-      ],
-      "requireddescription": [
-        "{CROSS} **{USER}, specify an emoji name!**"
-      ],
-      "invalidemoji": [
-        "{CROSS} **Specified emoji name is not valid!**"
-      ],
-      "limitdescription": [
-        "{CROSS} **Whoops! You can't have more emojis in this server!**"
-      ],
-      "othererrordescription": [
-        "{CROSS} **Uhmm... weird, I couldn't add the emoji!**"
-      ],
-      "unknowndescription": [
-        "{CROSS} **Woops! I don't know why but try again later!**"
-      ]
-    },
-    "description": [
-      "**Welcome to our Emoji Bank!** {KAPPALUL}",
-      "Here is our personal list of **emojis** you can add to your server easily!",
-      "This list is made by our **developers** to allow you to get the most used emojis **in your server**.",
-      "",
-      "You'll be able to add all emojis listed below by running one command for the ones you want to add!",
-      "{MAGIC8} {BOT} requires `MANAGE_EMOJIS` permission!",
-      "",
-      "Command to run is `emoji add <emojiname>`",
-      "",
-      "Following emojis are listed by emoji name and emoji.",
-      ""
-    ],
-    "footer": [
-      "{VERIFIED} This list will be constantly **updating** and adding **new emojis**!",
-      "You want to **suggest** an emoji? **Join**  our **[Discord]({INVITATION})** server and let us know!",
-      "{WARNING} This feature is in **beta**. Please report **bugs/errors** in our **[Discord]({INVITATION})**!"
-    ],
-    "success": {
-      "description": [
-        "{CHECK} I've added {EMOJI} (**{EMOJINAME}**) to your server!",
-        "",
-        "Hey {USER}, thanks for using our **Emoji Bank**!",
-        "{VERIFIED} You have a good emoji to share? [Join us]({INVITATION})!"
-      ]
-    }
-  },
-  "fakeping": {
-    "cooldown": [
-      "{CROSS} Woops! This server is still on cooldown!",
-      "{USER} generated a fakeping {TIME} ago.",
-      "",
-      "❄ You can generate a new one in {LEFT}."
-    ],
-    "guildnoicon": [
-      "**{CROSS} This server doesn't have a guild icon!**"
-    ],
-    "unknownerror": [
-      "**{CROSS} Unexpected error! Try again in a few minutes!**"
-    ],
-    "success": [
-      "{CHECK} **Fakeping successfully generated, {USER}!**",
-      "**Direct link:** [Click here]({LINK})",
-      "",
-      "**Do you want to update the guild icon?**",
-      "{LOADING} _You have 30 seconds to decide!_"
-    ],
-    "successmanual": [
-      "{CHECK} **Fakeping successfully generated, {USER}!**",
-      "**Direct link:** [Click here]({LINK})",
-      "",
-      "**Download and upload it as the guild icon!**"
-    ],
-    "updated": [
-      "{CHECK} {USER}, I updated the guild icon!"
-    ],
-    "notupdated": [
-      "{CROSS} {USER}, I will not be updating the guild icon."
-    ],
-    "notupdatedperms": [
-      "{CROSS} {USER}, I need `MANAGE_GUILD` permission.."
-    ],
-    "notupdatederror": [
-      "**{CROSS} Unexpected error! Try again in a few minutes!**"
-    ]
-  },
-  "hack": {
-    "error": {
-      "targetdescription": [
-        "{CROSS} **Invalid member or ID!**"
-      ]
-    },
-    "starting": "{LOADING} Starting the hack on {TARGET}!",
-    "process": {
-      "oip": {
-        "time": 5000,
-        "message": "> Obtaining {TARGET}'s IP..."
+      "self": {
+        "description": [
+          "{CHECK} **{USER} here is your random trap!**"
+        ]
       },
-      "dip": {
-        "time": 1000,
-        "message": "> Decoding their IP..."
-      },
-      "ip": {
-        "time": 3000,
-        "message": "> Analizing {RANDOMIP}"
-      },
-      "oipv6": {
-        "time": 4000,
-        "message": "> Obtaining IPv6 address..."
-      },
-      "dipv6": {
-        "time": 1000,
-        "message": "> Decoding IPv6 addres..."
-      },
-      "ipv6": {
-        "time": 3000,
-        "message": "> Analizing {RANDOMIPV6}"
-      },
-      "mac": {
-        "time": 3000,
-        "message": "> MAC address obtained. Analizing {RANDOMMAC}"
-      },
-      "lhandshake": {
-        "time": 3000,
-        "message": "> Listening for handshake..."
-      },
-      "handshake": {
-        "time": 3000,
-        "message": "> Handshake captured! Saved as \"hs/IPonFirewall_{IPONFIREWALL}.cap\""
-      },
-      "email": {
-        "time": 3000,
-        "message": "> Email successfully spoofed: {RANDOMEMAIL}"
-      },
-      "opass": {
-        "time": 3000,
-        "message": "> Obtaining password..."
-      },
-      "pass": {
-        "time": 3000,
-        "message": "> Password successfully spoofed: {RANDOMPASSWORD}"
-      },
-      "gettingcard": {
-        "time": 2000,
-        "message": "> Obtaining associated credit/debit card..."
-      },
-      "card": {
-        "time": 2000,
-        "message": "> Credit/debit card successfully spoofed: {RANDOMCREDITCARD}"
-      },
-      "registering1": {
-        "time": 2000,
-        "message": "> Using email to register on {RANDOMREGISTER}"
-      },
-      "purchased": {
-        "time": 2000,
-        "message": "> **Purchased Pro-Membership!**"
+      "other": {
+        "description": [
+          "{CHECK} **{USER} here is the random trap for {TARGET}!**"
+        ]
       }
     },
-    "finishing": "> {LOADING} Finishing the hack on **{TARGET}**!",
-    "finished": "{CHECK} The totally legit hack on **{TARGET}** has been completed!",
-    "interrupted": "{CROSS} Hacking process for **{TARGET}** interrupted! **Content has been removed...**"
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    }
+  },
+  "trivia": {
+    "alreadyplaying": {
+      "description": [
+        "{CROSS} **You are already playing somewhere else!**"
+      ]
+    },
+    "errorcategory": {
+      "description": [
+        "{CROSS} **Invalid category!**",
+        "",
+        "**Available categories:**",
+        "{CATEGORIES}"
+      ]
+    },
+    "unexpected": {
+      "description": [
+        "{CROSS} **{USER}, there was an unexpected error. Please try again in a few minutes!**"
+      ]
+    },
+    "unexpectednew": {
+      "description": [
+        "{CROSS} **{USER}, an unexpected error occurred loading a new trivia. Game ended, your current streak is {STREAK} correct answers!**"
+      ]
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    },
+    "trivia": {
+      "title": "{USER} is playing trivia!",
+      "subcategory": "\n**Subcategory:** {SUBCATEGORY}",
+      "description": [
+        "**Category:** {CATEGORY}{SUBCATEGORYSTRING}",
+        "**Difficulty:** {DIFFICULTY}",
+        "**Question:**",
+        "{QUESTION}",
+        "**Options:**",
+        "{OPTIONS}",
+        "**Please type your answer or use the number of the answer!**\nYou have 20 seconds.."
+      ]
+    },
+    "correct": [
+      "{CHECK} **{USER}, you answered correctly! Get ready for the next trivia in 10 seconds! Streak: {STREAK}!**"
+    ],
+    "incorrect": [
+      "{CROSS} **{USER}, your answer was incorrect! Streak: {STREAK}!**"
+    ],
+    "timeout": [
+      "⏰ **{USER} time's up! Your streak: {STREAK}**"
+    ]
+  },
+  "vote": {
+    "title": "{USER}, considering supporting Magic8?",
+    "canvote": [
+      "{CHECK} **You can vote now for Magic8!**",
+      "",
+      "**Support** Magic8 developers by clicking [here]({VOTELINK})!",
+      "{INFO} You can vote once every **12** hours!",
+      ""
+    ],
+    "cannotvote": [
+      "{CROSS} **You already voted in the past 12 hours!**",
+      "",
+      "By voting for Magic8, you support developers to keep adding new features and system. It lets them know you are interested in our work!",
+      "You can vote by clicking this [link]({VOTELINK}).",
+      "{INFO} You can vote once every **12** hours!"
+    ],
+    "unexpectederror": [
+      "{CROSS} **Unexpected error. You can still check [here]({VOTELINK})**"
+    ],
+    "total": "Total votes:",
+    "monthly": "Montly votes:"
+  },
+  "yomomma": {
+    "success": {
+      "description": [
+        "{CHECK} **{JOKE}**"
+      ]
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    },
+    "footer": "{FOOTER} • Yomomma Jokes"
   }
 }
