@@ -2,13 +2,13 @@
   "languagename": "English",
   "flag": "🇺🇸",
   "it": "{CROSS} **{USER}, provide a valid member or ID!**",
+  "ic": "{CROSS} **{USER}, please go to {GAMECHANNEL} to use this command!**",
   "mention": [
     "{USER} **my prefix for the server is: {PREFIX}**",
     "Open the help menu with `{PREFIX}help` to view all commands.",
     "*Need further assistance? Join our [Support Server]({INVITATION})!*"
   ],
   "ball": {
-    "invalidchannel": "{CROSS} **Incorrect channel!** Go to {8BALLCHANNEL} to use **8ball**!",
     "asksomething": "{CROSS} **You need to ask a yes/no question!**",
     "customresponses": ["{CROSS} **Custom responses are enabled but none were added!**",
                         "Please contact an administrator."],
