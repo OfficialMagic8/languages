@@ -260,7 +260,7 @@
   "color": {
     "disabledgame": "{CROSS} **This game is disabled!** Use `{PREFIX}settings 8color toggle`",
     "invalidchannel": "{CROSS} **Incorrect channel!** Go to {8COLORCHANNEL} to use **8color**!",
-    "youalreadyplaying": "{CROSS} **Looks like you are already playing somewhere else!**",
+    "alreadyplaying": "{CROSS} **{USER}, you are playing somewhere else!**",
     "game": {
       "playing": {
         "title": "{TAG} is playing 8Color",
@@ -349,7 +349,7 @@
     },
     "disabledgame": "{CROSS} **This game is disabled!** Use `{PREFIX}akinator toggle`",
     "invalidchannel": "{CROSS} **Incorrect channel!** Go to {AKINATORCHANNEL} to use **Akinator**!",
-    "youalreadyplaying": "{CROSS} **Looks like you are already playing somewhere else!**"
+    "alreadyplaying": "{CROSS} **{USER}, you are playing somewhere else!**"
   },
   "anal": {
     "success": {
@@ -375,7 +375,7 @@
       "description": [
         "{CHECK} Here is {USER}'s avatar! [Link]({URL})"
       ],
-      "footer": "{FOOTER} • Requested by {AUTHOR}"
+      "footer": "Avatar requested by {AUTHOR}"
     }
   },
   "baka": {
@@ -398,7 +398,7 @@
     }
   },
   "battle": {
-    "footer": "{FOOTER} • Battles",
+    "footer": "Battles",
     "error": {
       "battling": [
         "{CROSS} **{USER}, you are in a battle somewhere else!**"
@@ -456,15 +456,10 @@
     "success": {
       "description": [
         "{CHECK} **Here is the emoji! [Link]({EMOJILINK})**"
-      ],
-      "footer": "{FOOTER} • Requested by {AUTHOR}"
+      ]
     },
-    "error": {
-      "description": [
-        "{CROSS} **That doesn't seem to be a valid emoji!**"
-      ],
-      "footer": "{FOOTER} • Requested by {AUTHOR}"
-    }
+    "footer": "Big Emoji requested by {AUTHOR}",
+    "error": "{CROSS} **That doesn't seem to be a valid emoji!**"
   },
   "boobs": {
     "success": {
@@ -533,15 +528,16 @@
       "👥 **Total Users:** {USERS}",
       "💬 **Total Channels:** {CHANNELS} (\\🔞{NSFWCHANNELS})",
       "",
-      "⏲️ **Uptime:** {UPTIME}",
+      "⏲️ **Uptime:** {UPTIME} - **[status]({STATUSPAGE})**",
       "📦 **RAM:** {RAM}",
+      "🎚️ **Version:** {VERSION}",
       "",
       "👑 **Owner:** {OWNER}",
       "💎 **Head Developer:** {HEADDEVELOPER}",
       "🗓️ **Created on:** {CREATIONDATE}",
       "",
       "**Useful Links:**",
-      "[Donate]({DONATELINK}) • [GitHub]({GITHUB}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
+      "[Donate]({DONATELINK}) • [GitHub]({GITHUB}) • **[Support Server]({SUPPORTSERVER})** • [Vote]({VOTELINK})"
     ]
   },
   "cape": {
@@ -913,12 +909,49 @@
     "finished": "{CHECK} The totally legit hack on **{TARGET}** has been completed!",
     "interrupted": "{CROSS} Hacking process for **{TARGET}** interrupted! **Content has been removed...**"
   },
+  "hammer": {
+    "error": "{CROSS} **{USER}, unexpected error. Try again later!**",
+    "alreadyplaying": "{CROSS} **{USER}, you are playing somewhere else!**",
+    "starting": {
+      "title": "{USERTAG} is testing his strength!",
+      "description": [
+        "**Hello contestor!**",
+        "",
+        "*Ready to test your strength? Hit the pad with the mallet!*"
+      ]
+    },
+    "hitdescription": [
+      "**{HITDESCRIPTION}**",
+      "",
+      "*Let's see your score...*"
+    ],
+    "successdescription": [
+      "You hit the mallet and got **{FINALVALUE}** out of **1000** points!",
+      "",
+      "{RANDOMDESC}"
+    ],
+    "low": [
+      "you're weak!",
+      "even my grandma can do better than that!",
+      "that was an epic fail"
+    ],
+    "med": [
+      "not bad my dude!",
+      "that's normal, no big deal",
+      "i can do better than that :)"
+    ],
+    "high": [
+      "nice score! but you can't beat mine",
+      "almost as good as my grandma!",
+      "that's crazy!"
+    ]
+  },
   "howgay": {
     "success": {
       "description": [
         "🏳️‍🌈 {TARGET} is `{PERCENT}%` gay 🏳️‍🌈"
       ],
-      "footer": "{FOOTER} • Requested by {AUTHOR}"
+      "footer": "{FOOTER} Requested by {AUTHOR}"
     }
   },
   "hug": {
@@ -939,7 +972,7 @@
         "{CROSS} **Unexpected error. Try again later!**"
       ]
     },
-    "footer": "{FOOTER} • Hug"
+    "footer": "{FOOTER} Hug"
   },
   "hypixel": {
     "error": {
@@ -965,7 +998,7 @@
       }
     },
     "success": {
-      "title": "Hypixel {TARGET}'s information",
+      "title": "Hypixel Profile of {TARGET}",
       "description": [
         "**Displayname:** {DISPLAYNAME}",
         "**Rank:** {RANK}",
@@ -976,7 +1009,7 @@
         "**Last login:** {LASTLOGIN}",
         "**Last logout:** {LASTLOGOUT}",
         "",
-        "**__In-game__**",
+        "**__General__**",
         "**Hypixel level:** {NETWORKLEVEL}",
         "**Hypixel experience:** {NETWORKEXP}",
         "**Karma:** {KARMA}",
@@ -990,7 +1023,7 @@
         "**Status:** {STATUS}"
       ],
       "online": "\n**Gamemode:** {GAMEMODE}",
-      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
+      "footer": "{FOOTER} Requested by {AUTHOR}"
     }
   },
   "info": {
@@ -1003,11 +1036,11 @@
       "**⚔️ Battles:** {BATTLES}"
     ],
     "description": [
-      "__**Server Information**__ - **Prefix:** {PREFIX}",
+      "__**Server Information**__ - **Prefix:** `{PREFIX}`",
       "**User/Bots/Online**: {USERS}/{BOTS}/{ONLINE}",
       "**Text/Voice Channels:** {TEXTCHANNELS}/{VOICECHANNELS}",
       "**NSFW Text channels:** {NSFWTEXTCHANNELS}",
-      "**8ball Channel:** {8BALLCHANNEL}",
+      "**Game/Entertainment Channel:** {GAMESCHANNEL}",
       "**🏅 Server Level:** {SERVERLEVEL}",
       "**📝 Custom Responses:** {CURRENTRESPONSES}/{TOTALRESPONSES}",
       "**🗃️ Reply Type:** {REPLYTYPE}",
@@ -1022,7 +1055,7 @@
       "**Useful Links:**",
       "[Donate]({DONATELINK}) • [GitHub]({GITHUBLINK}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
     ],
-    "footer": "{FOOTER} • Information"
+    "footer": "{FOOTER} Information"
   },
   "invite": {
     "title": "Invite Magic8 to your server!",
@@ -1035,7 +1068,7 @@
       "",
       "{CHECK} **Let's have fun!**"
     ],
-    "footer": "{FOOTER} • Invite me!"
+    "footer": "{FOOTER} Invite me!"
   },
   "iq": {
     "superdumb": [
@@ -1078,7 +1111,7 @@
       "_ _",
       "{MESSAGE}"
     ],
-    "footer": "{FOOTER} • IQ Check"
+    "footer": "{FOOTER} IQ Check"
   },
   "kiss": {
     "success": {
@@ -1098,7 +1131,7 @@
         "{CROSS} **Unexpected error. Try again later!**"
       ]
     },
-    "footer": "{FOOTER} • Kiss"
+    "footer": "{FOOTER} Kiss"
   },
   "level": {
     "title": "{BOTNAME} - Server Level",
@@ -1112,7 +1145,7 @@
       "**{GUILDNAME}** level is **{SERVERLEVEL}**",
       "This server can set up to **{MAXRESPONSES}** custom responses."
     ],
-    "footer": "{FOOTER} • Invite more people!"
+    "footer": "{FOOTER} Invite more people!"
   },
   "mcachievement": {
     "error": [
@@ -1161,7 +1194,7 @@
         "{CHECK} **Random {TOPIC} meme**!"
       ]
     },
-    "footer": "{FOOTER} • Requested by {AUTHOR}"
+    "footer": "{FOOTER} Requested by {AUTHOR}"
   },
   "namehistory": {
     "error": {
@@ -1212,6 +1245,54 @@
       ]
     }
   },
+  "overwatch": {
+    "errors": {
+      "region": [
+        "{CROSS} **Please provide one of the following regions if you are __not__ in the U.S.**",
+        "eu` `asia`"
+      ],
+      "user": [
+        "{CROSS} **Please provide a username and discriminator!**",
+        "**This can be found in your [battle.net](https://battle.net) profile.**"
+      ],
+      "unexpected": [
+        "{CROSS} **Unexpected Error!**",
+        "-Please check that you're using the proper tag.",
+        "-Example: `{PREFIX}ow Fyrlex#1801",
+        "-Only PC accounts accepted (for now)"
+      ]
+    },
+    "success": {
+      "title": "Overwatch Profile of {USER}",
+      "privatedescription": [
+        "**__Levels__**",
+        "**Total Level:** {TOTALLEVEL}",
+        "**Current Level:** {CURRENTLEVEL}",
+        "**Prestige:** {PRESTIGE}",
+        "**Endorsement:** {ENDORSELEVEL}",
+        "",
+        "*This user has a **private** profile, there is no more available information*"
+      ],
+      "publicdescription": [
+        "**__Levels__**",
+        "**Total Level:** {TOTALLEVEL}",
+        "**Current Level:** {CURRENTLEVEL}",
+        "**Prestige:** {PRESTIGE}",
+        "**Endorsement:** {ENDORSELEVEL}",
+        "",
+        "**__Quick Play Stats__**",
+        "**Cards:** {CARDS}",
+        "**Bronze/Silver/Gold Medals:** {BRONZE}/{SILVER}/{GOLD}",
+        "**Victories:** {WON}",
+        "",
+        "**__Ranked__ (current season)**",
+        "**Average SR:** {AVERAGE}",
+        "{TANK} **Tank:** {TANKLVL} {TANKICON}",
+        "{DPS} **DPS:** {DPSLVL} {DPSICON}",
+        "{SUPPORT} **Support:** {SUPPORTLVL} {SUPPORTICON}"
+      ]
+    }
+  },
   "pat": {
       "success": {
         "self": {
@@ -1230,7 +1311,7 @@
           "{CROSS} **Unexpected error. Try again later!**"
         ]
       },
-    "footer": "{FOOTER} • Pat"
+    "footer": "{FOOTER} Pat"
   },
   "poke": {
     "success": {
@@ -1250,7 +1331,7 @@
         "{CROSS} **Unexpected error. Try again later!**"
       ]
     },
-    "footer": "{FOOTER} • Poke"
+    "footer": "{FOOTER} Poke"
   },
   "say": {
     "messagerequired": [
@@ -1281,7 +1362,7 @@
         "{CROSS} **Unexpected error. Try again later!**"
       ]
     },
-    "footer": "{FOOTER} • Slap"
+    "footer": "{FOOTER} Slap"
   },
   "slotmachine": {
     "alreadyplaying": "{CROSS} **{USER}, you are playing somewhere else!**",
@@ -1319,7 +1400,7 @@
       "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b 🎉 **{USER}, you won!**",
       "\u200b \u200b \u200b\u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **_Thanks for playing!_** 🎰"
     ],
-    "footer": "{FOOTER} • Slot Machine"
+    "footer": "{FOOTER} Slot Machine"
   },
   "smug": {
     "success": {
@@ -1357,6 +1438,9 @@
       ]
     }
   },
+  "supreme": {
+    "error": "{CROSS} **{USER}, please specify a message!**"
+  },
   "telephone": {
     "ringing": "☎ {USER} took the phone. **The phone is ringing!**",
     "someoneusingtelephone": "🚫 Someone else is using the telephone! **Please wait.**",
@@ -1368,7 +1452,7 @@
     "timeout": "\\⏰ Couldn't detect any message in 1 minute. **Connection lost!**"
   },
   "ticket": {
-    "footer": "{FOOTER} • Ticket",
+    "footer": "{FOOTER} Ticket",
     "help": {
       "title": "{BOTNAME} • Ticket help",
       "ticketnew": "\n`{PREFIX}ticket new` - Create a new ticket.",
@@ -1829,6 +1913,6 @@
         "{CROSS} **Unexpected error. Try again later!**"
       ]
     },
-    "footer": "{FOOTER} • Yomomma Jokes"
+    "footer": "{FOOTER} Yomomma Jokes"
   }
 }
