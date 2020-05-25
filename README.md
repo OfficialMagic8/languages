@@ -4,17 +4,10 @@
 </a><br>
 </div>
 
-
-<div align="center">
-  Magic8 is an interactive Discord Bot with many fun features to play with! From asking a question and getting one of <u>100</u> responses to slapping your friend!<br>
-</div>
-
-
 ### Special Features
 > - **Custom prefixes!**
 > - **Support for other languages! [click for files](https://github.com/Fyrlex/Magic8/tree/master/languages)**
 > - Custom 8ball responses for your server
-> - Custom embed color for 8ball
 > - Advanced settings menu
 > - Restrict games to a specific channel
 > - Developer has open DM's for suggestions + support server!
@@ -24,23 +17,23 @@
 <p>Type a command in your server for more help!</p>
 
 > - **Entertainment**
-> - m\*8ball m\*battle m\*belike m\*bigemoji m\*clapme m\*hack m\*meme m\*slot m\*spinner m\*spoiler
+> - m!8ball m!battle m!belike m!bigemoji m!clapme m!hack m!hammer m!meme m!slot m!spinner m!spoiler
 > - **Games**
-> - m\*8color m\*connect4 m\*tictactoe m\*trivia
+> - m!8color m!connect4 m!tictactoe m!trivia
 > - **Minecraft**
-> - m\*cape m\*hypixel m\*mcachievement m\*mcskin m\*namehistory
+> - m!cape m!hypixel m!mcachievement m!mcskin m!namehistory
 > - **Random**
-> - m\*bored m\*chucknorris m\*fakeinfo m\*yomomma
+> - m!bored m!chucknorris m!fakeinfo m!yomomma
 > - **Reactions**
-> - m\*feed m\*hug m\*kiss m\*pat m\*poke m\*slap
+> - m!feed m!hug m!kiss m!pat m!poke m!slap
 > - **Information**
-> - m\*botinfo m\*donate m\*games m\*help m\*info m\*invite m\*level m\*vote
+> - m!botinfo m!donate m!games m!help m!info m!invite m!level m!vote
 > - **Utilities**
-> - m\*clear m\*say m\*ticket
+> - m!clear m!media m!say m!ticket
 > - **Miscellaneous**
-> - m\*avatar m\*howgay m\*iq m\*telephone
+> - m!avatar m\!howgay m!iq m!overwatch m!telephone
 > - **Admin**
-> - m\*fakeping m\*settings
+> - m!fakeping m!settings
 
 ### Permissions
 <p>Edit these permissions on the invite page if you are not comfortable with Magic8 having such access</p>
@@ -63,4 +56,4 @@
 
 **Note:** Contact us any time for suggestions, comments or questions! We really appreciate it!
 
-**Support Server: [Click Here](https://dicsord.gg/MYKfu5Q)**
+**Support Server: [Click Here](https://discord.gg/MCRbYdc)**
