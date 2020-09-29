@@ -8,10 +8,22 @@
     "Open the help menu with `{PREFIX}help` to view all commands.",
     "*Need further assistance? Join our [Support Server]({INVITATION})!*"
   ],
+  "notincasino": [
+    "{CROSS} **{USER}, you must be in a casino to use this command!**",
+    "",
+    "To join a casino, please type: `{PREFIX}casino`"
+  ],
+  "alreadyincasino": [
+    "{CROSS} **{USER}, you are already in a casino somewhere else!**",
+    "",
+    "Please go to {CHANNEL}, in **{GUILD}**!"
+  ],
   "ball": {
     "asksomething": "{CROSS} **You need to ask a yes/no question!**",
-    "customresponses": ["{CROSS} **Custom responses are enabled but none were added!**",
-                        "Please contact an administrator."],
+    "customresponses": [
+      "{CROSS} **Custom responses are enabled but none were added!**",
+      "Please contact an administrator."
+    ],
     "customresponsesadmin": [
       "{CROSS}**Custom responses are enabled but none were added!**",
       "",
@@ -109,6 +121,7 @@
         "Seriously bro? No",
         "Sir that is incorrect",
         "*sigh*... I'm gonna be honest, no",
+        "*sigh*... I'm gonna be honest, yes",
         "Shit you're right",
         "Sry I don't speak stupid",
         "That's 100% correct",
@@ -211,6 +224,7 @@
         "Seriously bro? No",
         "Sir that is incorrect",
         "*sigh*... I'm gonna be honest, no",
+        "*sigh*... I'm gonna be honest, yes",
         "Sry I don't speak stupid",
         "That's 100% correct",
         "That's impossible!",
@@ -259,17 +273,17 @@
   },
   "color": {
     "disabledgame": "{CROSS} **This game is disabled!** Use `{PREFIX}settings 8color toggle`",
-    "invalidchannel": "{CROSS} **Incorrect channel!** Go to {8COLORCHANNEL} to use **8color**!",
     "alreadyplaying": "{CROSS} **{USER}, you are playing somewhere else!**",
     "game": {
       "playing": {
         "title": "{TAG} is playing 8Color",
         "description": [
           "You are about to start **Level {LEVEL}**!",
-          "Memorize the next pattern:",
+          "Memorize the next pattern: ",
           "{PATTERN}",
           "",
-          "_In {TIME} seconds the message will be deleted!_"
+          "_In {TIME} seconds the message will be deleted!_",
+          "_Hint: don't copy the message!_"
         ]
       },
       "enterpattern": {
@@ -318,32 +332,36 @@
   },
   "akinator": {
     "help": {
-      "title": "{BOTNAME} • Akinator Help",
+      "title": "{BOTNAME} - Akinator Help",
       "user": {
         "description": [
-          "Need help using akinator? Don't worry, here you have!",
+          "**Available Settings:**",
+          "`{PREFIX}akinator start` - Start A New Game.",
           "",
-          "**Available settings:**",
-          "`{PREFIX}akinator start` - Start a new game.",
-          "`{PREFIX}akinator stop` - Stop you actual game.",
+          "*More Features Coming Soon...*",
           "",
-          "{WARNING} This game is **under development**, expect **bugs** and **errors**.",
-          "**Help us** reporting **bugs**/**errors** in our [GitHub]({GITHUBLINK}) or [Support server]({INVITATION})"
+          "{WARNING} This game is **under development**, it won't run perfectly!",
+          "Report bugs/ideas in our [Support server]({INVITATION})!"
         ]
       },
       "administrator": {
         "description": [
-          "Need help using akinator? Don't worry, here you have!",
-          "",
-          "**Available settings:**",
+          "**Available Settings:**",
           "`{PREFIX}akinator start` - Start a new game.",
-          "`{PREFIX}akinator stop` - Stop you actual game.",
-          "`{PREFIX}akinator toggle` - Enable/disable game.",
-          "`{PREFIX}akinator setlanguage` - Select default language.",
-          "`{PREFIX}akinator setchannel` - Restric akinator to a channel.",
           "",
-          "{WARNING} This game is **under development**, expect **bugs** and **errors**.",
-          "**Help us** reporting **bugs**/**errors** in our [GitHub]({GITHUBLINK}) or [Support server]({INVITATION})"
+          "*More Features Coming Soon...*",
+          "",
+          "{WARNING} This game is **under development**, it won't run perfectly!",
+          "Report bugs/ideas in our [Support server]({INVITATION})!"
+        ],
+        "description2": [
+          "**Available Settings:**",
+          "`{PREFIX}akinator start` - Start a new game.",
+          "",
+          "*More Features Coming Soon...*",
+          "",
+          "{WARNING} This game is **under development**, it won't run perfectly!",
+          "Report bugs/ideas in our [Support server]({INVITATION})!"
         ]
       }
     },
@@ -351,49 +369,10 @@
     "invalidchannel": "{CROSS} **Incorrect channel!** Go to {AKINATORCHANNEL} to use **Akinator**!",
     "alreadyplaying": "{CROSS} **{USER}, you are playing somewhere else!**"
   },
-  "anal": {
-    "success": {
-      "self": {
-        "description": [
-          "{CHECK} **{USER} here is your random anal!**"
-        ]
-      },
-      "other": {
-        "description": [
-          "{CHECK} **{USER} here is a random anal for {TARGET}!**"
-        ]
-      }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    }
-  },
   "avatar": {
     "success": {
       "description": [
         "{CHECK} Here is {USER}'s avatar! [Link]({URL})"
-      ],
-      "footer": "Avatar requested by {AUTHOR}"
-    }
-  },
-  "baka": {
-    "success": {
-      "self": {
-        "description": [
-          "{CHECK} **{USER} call themselves a baka!**"
-        ]
-      },
-      "other": {
-        "description": [
-          "{CHECK} **{USER} called baka to {TARGET}!**"
-        ]
-      }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
       ]
     }
   },
@@ -431,11 +410,11 @@
         "{TEAM} 🍷 {ATTACKER} poisoned {TARGET} with a **drink** for {DAMAGE} HP!",
         "{TEAM} 👊 {ATTACKER} punched {TARGET} with their **fist** for {DAMAGE} HP!",
         "{TEAM} 🧨 {ATTACKER} exploded {TARGET} with a **bomb** for {DAMAGE} HP!",
-        "{TEAM} 🔫 {ATTACKER} sniped {TARGET} with a **gun** for {DAMAGE} HP!",
+        "{TEAM} 🔫 {ATTACKER} shot {TARGET} with a **watergun** for {DAMAGE} HP!",
         "{TEAM} 🔧 {ATTACKER} smacked {TARGET} with a **wrench** for {DAMAGE} HP!",
         "{TEAM} 🏹 {ATTACKER} hit {TARGET} with an **arrow** for {DAMAGE} HP!",
         "{TEAM} ☁️ {ATTACKER} choked {TARGET} with their **fart** for {DAMAGE} HP!",
-        "{TEAM} 🎊 {ATTACKER} stunned {TARGER} with **confetti** for {DAMAGE} HP!",
+        "{TEAM} 🎊 {ATTACKER} stunned {TARGET} with **confetti** for {DAMAGE} HP!",
         "{TEAM} 🧼 {ATTACKER} gagged {TARGET} with **soap** for {DAMAGE} HP!",
         "{TEAM} 🧹 {ATTACKER} whacked {TARGET} with a **broomstick** for {DAMAGE} HP!"
       ],
@@ -507,7 +486,7 @@
     },
     "invalidcategory": {
       "description": [
-        "{CROSS} **Invalid category!**",
+        "{CROSS} **{USER}, please provide a valid category.**",
         "",
         "**Available Categories:**",
         "{CATEGORIES}"
@@ -528,7 +507,7 @@
       "👥 **Total Users:** {USERS}",
       "💬 **Total Channels:** {CHANNELS} (\\🔞{NSFWCHANNELS})",
       "",
-      "⏲️ **Uptime:** {UPTIME} - **[status]({STATUSPAGE})**",
+      "⏲️ **Uptime:** {UPTIME}",
       "📦 **RAM:** {RAM}",
       "🎚️ **Version:** {VERSION}",
       "",
@@ -549,7 +528,7 @@
       },
       "notregistered": {
         "description": [
-          "{CROSS} **Player '{USER}' doesn't exists!**"
+          "{CROSS} **Player '{USER}' doesn't exist!**"
         ]
       },
       "nocape": {
@@ -562,6 +541,11 @@
       "title": "Cape owned by {USER}",
       "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
     }
+  },
+  "casino": {
+    "notincasino": "{CROSS} **{USER}, please join a casino to use this command!** `{PREFIX}casino`",
+    "incorrectguild": "{CROSS} **{USER}, you must go to {CASINOGUILD} then {CASINOCHANNEL} to use this command!**",
+    "incorrectchannel": "{CROSS} **{USER}, you must go to {CASINOCHANNEL} to use this command!**"
   },
   "chucknorris": {
     "error": {
@@ -593,12 +577,12 @@
     }
   },
   "clear": {
-    "enteramount": "{CROSS} **| Enter an amount of messages to delete!**",
-    "invalidamount": "{CROSS} **| Entered amount is not valid!**",
-    "cannotgreater": "{CROSS} **| Please provide a number less than `150`!**",
-    "cannotlower": "{CROSS} **| Please provide a number that is at least `1`!**",
-    "errordeleting": "{CROSS} **| Unexpected error. Couldn't delete messages!**",
-    "deleted": "{CHECK} **| Cleared `{AMOUNT}` messages!**"
+    "enteramount": "{CROSS} **{USER}, please enter an number of messages to delete!**",
+    "invalidamount": "{CROSS} **{USER}, please enter a valid number of messages to delete!**",
+    "cannotgreater": "{CROSS} **{USER}, please provide a number less than `150`!**",
+    "cannotlower": "{CROSS} **{USER}, please provide a number that is at least `1`!**",
+    "errordeleting": "{CROSS} **{USER}, I was unable to delete those messages!**",
+    "deleted": "{CHECK} **{USER}, I deleted `{AMOUNT}` messages!**"
   },
   "connectfour": {
     "alreadyplaying": {
@@ -686,21 +670,75 @@
   },
   "cuddle": {
     "success": {
-      "self": {
-        "description": [
+      "self": [
           "{CHECK} **{USER} cuddled themselves!**"
-        ]
-      },
-      "other": {
-        "description": [
+        ],
+      "other": [
           "{CHECK} **{USER} cuddled {TARGET}!**"
         ]
-      }
     },
     "error": {
       "description": [
         "{CROSS} **Unexpected error. Try again later!**"
       ]
+    }
+  },
+  "ds": {
+    "success": {
+      "self": {
+        "description": [
+          "**{CHECK} {USER} checked their Dick Size!**",
+          "",
+          "**Size:** {SIZE}",
+          "",
+          "{MESSAGE}"
+        ],
+        "big": [
+          "Oh you can get far with that!",
+          "Still not as long as mine :)",
+          "Quite impressive for a 2 year old!",
+          "That's definitely fake lol"
+        ],
+        "med": [
+          "You're just average lol",
+          "What a shame, a regular",
+          "Haha that's nothing",
+          "Boring size you got"
+        ],
+        "small": [
+          "Wow! You'll get nowhere with that!",
+          "Aww so tiny!",
+          "I'm telling your friends!",
+          "Good luck with that!"
+        ]
+      },
+      "other": {
+        "description": [
+          "**{CHECK} {USER} checked {TARGET}'s Dick Size!**",
+          "",
+          "**Size:** {SIZE} inches",
+          "",
+          "{MESSAGE}"
+        ],
+        "big": [
+          "They can get far with that!",
+          "Still not as long as mine :)",
+          "Quite impressive for a 2 year old!",
+          "That's definitely fake lol"
+        ],
+        "med": [
+          "They're just average lol",
+          "What a shame, a regular",
+          "Haha that's nothing",
+          "Boring size they got"
+        ],
+        "small": [
+          "Wow! They'll get nowhere with that!",
+          "Aww so tiny!",
+          "I'm telling their friends!",
+          "Good luck with that!"
+        ]
+      }
     }
   },
   "donate": {
@@ -921,6 +959,14 @@
       ]
     },
     "hitdescription": [
+      "Wow! Nice hit!",
+      "Crazy hit!",
+      "Dang, good hit!",
+      "Nice whack!",
+      "That sounded good!",
+      "Amazing job!"
+    ],
+    "hit": [
       "**{HITDESCRIPTION}**",
       "",
       "*Let's see your score...*"
@@ -931,19 +977,19 @@
       "{RANDOMDESC}"
     ],
     "low": [
-      "you're weak!",
-      "even my grandma can do better than that!",
-      "that was an epic fail"
+      "You're so weak!",
+      "Even my grandma can do better than that!",
+      "That was an epic fail"
     ],
     "med": [
-      "not bad my dude!",
-      "that's normal, no big deal",
-      "i can do better than that :)"
+      "Not bad, my guy!",
+      "That's normal, no big deal",
+      "I can do better than that :)"
     ],
     "high": [
-      "nice score! but you can't beat mine",
-      "almost as good as my grandma!",
-      "that's crazy!"
+      "Nice score! but you can't beat mine",
+      "Almost as good as my grandma!",
+      "That's a crazy score!"
     ]
   },
   "howgay": {
@@ -1064,9 +1110,7 @@
       "",
       "Invite the bot to your **game server** so all your friends can enjoy **Magic8's** unique features together!",
       "",
-      "[{MAGIC8EMOJI} **Click Here!**]({INVITE})",
-      "",
-      "{CHECK} **Let's have fun!**"
+      "[{MAGIC8EMOJI} **Click Here!**]({INVITE})"
     ],
     "footer": "{FOOTER} Invite me!"
   },
@@ -1156,7 +1200,7 @@
     "defaultsubtitle": "Select a description",
     "success": {
       "description": [
-        "{CHECK} **{USER}, here is your achievement!**"
+        "{CHECK} **{USER}, here is your Minecraft Achievement!**"
       ]
     }
   },
@@ -1246,10 +1290,10 @@
     }
   },
   "overwatch": {
-    "errors": {
+    "error": {
       "region": [
         "{CROSS} **Please provide one of the following regions if you are __not__ in the U.S.**",
-        "eu` `asia`"
+        "`eu` `asia`"
       ],
       "user": [
         "{CROSS} **Please provide a username and discriminator!**",
@@ -1258,7 +1302,7 @@
       "unexpected": [
         "{CROSS} **Unexpected Error!**",
         "-Please check that you're using the proper tag.",
-        "-Example: `{PREFIX}ow Fyrlex#1801",
+        "-Example: `{PREFIX}ow Fyrlex#1801`",
         "-Only PC accounts accepted (for now)"
       ]
     },
@@ -1281,11 +1325,12 @@
         "**Endorsement:** {ENDORSELEVEL}",
         "",
         "**__Quick Play Stats__**",
+        "**Wins:** {WON}",
         "**Cards:** {CARDS}",
         "**Bronze/Silver/Gold Medals:** {BRONZE}/{SILVER}/{GOLD}",
-        "**Victories:** {WON}",
         "",
         "**__Ranked__ (current season)**",
+        "**W/L:** {RANKEDWINS}/{RANKEDLOSSES} - {RANKEDPERCENTAGE}%",
         "**Average SR:** {AVERAGE}",
         "{TANK} **Tank:** {TANKLVL} {TANKICON}",
         "{DPS} **DPS:** {DPSLVL} {DPSICON}",
@@ -1313,6 +1358,12 @@
       },
     "footer": "{FOOTER} Pat"
   },
+  "pornhubtext": {
+    "error": {
+      "nomessage": "{CROSS} **{USER}, please specify a message!**",
+      "nobar": "{CROSS} **{USER}, please make sure your message includes a `\\|`!**"
+    }
+  },
   "poke": {
     "success": {
       "self": {
@@ -1335,7 +1386,7 @@
   },
   "say": {
     "messagerequired": [
-      "{CROSS} **You need to specify a message!**"
+      "{CROSS} **{USER}, please specify a message!**"
     ],
     "nopermsinchannel": [
       "{CROSS} **Looks like I don't have permissions in {CHANNEL}**"
@@ -1365,42 +1416,70 @@
     "footer": "{FOOTER} Slap"
   },
   "slotmachine": {
-    "alreadyplaying": "{CROSS} **{USER}, you are playing somewhere else!**",
-    "errorplaying": [
-      "{CROSS} **Unexpected error. Please try again later!**"
+    "alreadyplaying": "{CROSS} **{USER}, you are already playing somewhere else!**",
+    "cannotbegreater": "{CROSS} **{USER}, you cannot provide a value greater than your current balance!**",
+    "errorplaying": "{CROSS} **{USER}, **there was an error letting you play slot machine!**",
+    "invalidbet": "{CROSS} **{USER}, please provide a valid number of coins to bet!**",
+    "extras": {
+      "playing": [
+        "\u200b \u200b \u200b \u200b \u200b \u200b {USER} is playing slot machine!",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {LOADING} **Slot machine is rolling...**",
+        "\u200b \u200b \u200b \u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b React with :joystick: to stop the machine!"
+      ]
+    },
+    "starting": [
+      "**__Slot Machine__**",
+      "**Player:** {USER}",
+      "**Bet:** {BET}",
+      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+      "",
+      "*Press the 🔴 to start the machine!*"
     ],
-    "playing": [
-      "\u200b \u200b \u200b \u200b \u200b \u200b {USER} is playing slot machine!",
-      "\u200b ",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
-      "\u200b ",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {LOADING} **Slot machine is rolling...**",
-      "\u200b \u200b \u200b\u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b React with :joystick: to stop the machine!"
+    "waiting": [
+      "**__Slot Machine__**",
+      "**Player:** {USER}",
+      "**Bet:** {BET}",
+      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+      "",
+      "{LOADING} *Pull the 🕹️ to stop it!*"
     ],
-    "stopping": [
-      "\u200b \u200b \u200b \u200b \u200b \u200b {USER} is playing slot machine!",
-      "\u200b ",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
-      "\u200b ",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {LOADING} **Stopping slot machine...**"
+    "rollandstop": [
+      "**__Slot Machine__**",
+      "**Player:** {USER}",
+      "**Bet:** {BET}",
+      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+      "",
+      "{LOADING} *Stopping the slots...*"
     ],
     "lose": [
-      "\u200b \u200b \u200b \u200b \u200b \u200b {USER} is playing slot machine!",
+      "**__Slot Machine__**",
+      "**Player:** {USER}",
+      "**Bet:** {BET}",
+      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
       "",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
-      "\u200b ",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {CROSS} **{USER}, you lost!**",
-      "\u200b \u200b \u200b\u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **_Thanks for playing!_** 🎰"
+      "{CROSS} You lost **\\💰{BET}**!"
     ],
     "win": [
-      "\u200b \u200b \u200b \u200b \u200b \u200b {USER} is playing slot machine!",
+      "**__Slot Machine__**",
+      "**Player:** {USER}",
+      "**Bet:** {BET}",
+      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
       "",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
-      "\u200b ",
-      "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b 🎉 **{USER}, you won!**",
-      "\u200b \u200b \u200b\u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **_Thanks for playing!_** 🎰"
-    ],
-    "footer": "{FOOTER} Slot Machine"
+      "{CHECK} You won **\\💰{BET}**!"
+    ]
   },
   "smug": {
     "success": {
@@ -1429,7 +1508,7 @@
   "spoiler": {
     "messagerequired": {
       "description": [
-        "{CROSS} **Specify a message ._.**"
+        "{CROSS} **{USER}, please specify a message!**"
       ]
     },
     "error": {
@@ -1680,7 +1759,7 @@
       "enabled": "{CHECK} **All correct. Ticket system is being enabled!**",
       "disabled": "{CROSS} **Something is missing. Check progress!**",
       "description": [
-        "{MAGIC8} Welcome to tickets system **setup**.",
+        "{MAGIC8} Welcome to **Ticket System Setup**.",
         "I will help you to **enable** system in your server.",
         "",
         "1) Enable tickets with `{PREFIX}tickets toggle`",
@@ -1871,29 +1950,29 @@
       ]
     },
     "correct": [
-      "{CHECK} **{USER}, you answered correctly! Get ready for the next trivia in 10 seconds! Streak: {STREAK}!**"
+      "{CHECK} **{USER}, you answered correctly!** Next question in **10** seconds! Streak: **{STREAK}**"
     ],
     "incorrect": [
-      "{CROSS} **{USER}, your answer was incorrect! Streak: {STREAK}!**"
+      "{CROSS} **{USER}, the answer was `{CORRECTANSWER}`!** Streak: **{STREAK}**"
     ],
     "timeout": [
-      "⏰ **{USER} time's up! Your streak: {STREAK}**"
+      "⏰ **{USER} time is up!** Your streak was: **{STREAK}**"
     ]
   },
   "vote": {
     "title": "{USER}, considering supporting Magic8?",
     "canvote": [
-      "{CHECK} **You can vote now for Magic8!**",
+      "{CHECK} **You can vote for Magic8!**",
       "",
-      "**Support** Magic8 developers by clicking [here]({VOTELINK})!",
-      "{INFO} You can vote once every **12** hours!",
-      ""
+      "**Link:** __{VOTELINK}__",
+      "",
+      "{INFO} You can vote once every **12** hours!"
     ],
     "cannotvote": [
-      "{CROSS} **You already voted in the past 12 hours!**",
+      "{CROSS} **You already voted in the last 12 hours!**",
       "",
-      "By voting for Magic8, you support developers to keep adding new features and system. It lets them know you are interested in our work!",
-      "You can vote by clicking this [link]({VOTELINK}).",
+      "**Link:** __{VOTELINK}__",
+      "",
       "{INFO} You can vote once every **12** hours!"
     ],
     "unexpectederror": [
