@@ -1,0 +1,465 @@
+{
+  "languagename": "Español",
+  "flag": "🇪🇸",
+  "it": "{CROSS} **{USER}, ingresa un miembro válido o ID!**",
+  "ic": "{CROSS} **{USER}, vaya a {GAMECHANNEL} para usar este comando!**",
+  "mention": [
+    "{USER} **mi prefijo para el servidor es: {PREFIX}**",
+    "Abre el menú de ayuda con `{PREFIX}ayuda` para ver todos los comandos.",
+    "*¿Necesita más ayuda? ¡Únete a nuestro [Servidor de Soporte]({INVITATION})!*"
+  ],
+  "notincasino": [
+    "{CROSS} **{USER}, debes estar en un casino para usar este comando!**",
+    "",
+    "Para unirse a un casino, por favor escriba: `{PREFIX}casino`"
+  ],
+  "alreadyincasino": [
+    "{CROSS} **{USER}, ya estás en un casino en otro lugar!**",
+    "",
+    "Por favor, vaya a {CHANNEL}, en **{GUILD}**!"
+  ],
+  "ball": {
+    "asksomething": "{CROSS} **Necesitas preguntar algo!**",
+    "customresponses": [
+      "{CROSS} **¡Las respuestas personalizadas están habilitadas pero ninguna fue agregada!**",
+      "Porfavor contacta a un administrador."
+    ],
+    "customresponsesadmin": [
+      "{CROSS} **¡Las respuestas personalizadas están habilitadas pero ninguna fue agregada!**",
+      "",
+      "Para agregar nuevas respuestas usa `{PREFIX}settings 8ball setreplies Respuesta 1|Respuesta 2|Respuesta 3`",
+      "",
+      "{WARNING} Debes agregar al menos 2 respuestas."
+    ],
+    "askedquestion": "{TAG} hizo la pregunta #{NUMBER}",
+    "question": "Pregunta",
+    "answer": "Respuesta",
+    "replies": {
+      "all":  [
+        "Absolutamente no",
+        "¡Absolutamente!",
+        "Según mi religión, no",
+        "Ahhh, eres una de esas personas",
+        "¡Casi siempre!",
+        "Y los cerdos vuelan... oh espera, pensé que sólo hablábamos de cosas que son posibles",
+        "¿Estás bien? La gente normal no pregunta eso",
+        "¿Siempre eres así?",
+        "Tan pronto como subes tus notas",
+        "Tan pronto como tu headass aprenda a leer",
+        "Pregúntame de nuevo, no estoy seguro",
+        "Pregúntale a papá",
+        "Pregúntale a tu ex",
+        "Pide permiso a tus padres primero",
+        "Pregúntale a tu madrastra",
+        "¿Perra qué?",
+        "Perra, ¿en serio?",
+        "Bruh, qué carajo... simplemente no",
+        "Bruh no puedes pedir eso",
+        "Llama a tu abuela, maldito idiota",
+        "Llama a la policía cuando te des cuenta de lo tonto que eres",
+        "Correcto",
+        "Definitivamente, es una gran idea",
+        "¡Hazlo, no lo harás!",
+        "¿Tu madre lo sabe?",
+        "¿Ehhhh?",
+        "Disculpa, ¿qué carajo?",
+        "Vete a la mierda. He terminado con tu mierda",
+        "Joder, sí",
+        "Dale tiempo...",
+        "Haha nope",
+        "Diablos, no",
+        "¡Diablos, sí!",
+        "¡Hola! ¿Hablas inglés?",
+        "¿Eh?",
+        "No te diré una mierda",
+        "Creo que sí...",
+        "No tengo la respuesta que quieres",
+        "No veo por qué no?",
+        "No lo creo",
+        "No entiendo...",
+        "Estaba pensando, tal vez...",
+        "Prefiero guardarme eso para mí...",
+        "Prefiero no decir...",
+        "Prefiero que te preguntes primero",
+        "Idk about that",
+        "Si tan sólo fuera tan fácil...",
+        "Si me das un helado, te responderé",
+        "Si tú lo dices",
+        "Si lo piensas, sí",
+        "Si: 1 + 1 = 3, sí",
+        "En otra vida",
+        "Jesús, me estás matando con estas preguntas",
+        "K",
+        "Amigo mío, no es tan fácil",
+        "Nah bruh",
+        "Nahhh",
+        "Nawww",
+        "Nunca será eso cierto",
+        "No...",
+        "¿No?",
+        "No",
+        "No sherlock de mierda",
+        "No señor",
+        "No u",
+        "No",
+        "No te respondo",
+        "Ni siquiera cerca",
+        "Ni en un millón de años",
+        "No a menos que me pagues 100.000 dólares",
+        "No hasta que entres en la universidad",
+        "De todas las personas, ¿por qué me preguntas a mí? (jk sigue hablándome)",
+        "Por supuesto que me vas a preguntar eso",
+        "Oh, ¿no te encantaría saber la respuesta?",
+        "Oh, joder, no",
+        "Ok",
+        "Sólo un imbécil como tú lo sabría",
+        "Sólo en luna llena",
+        "Sólo tú preguntarías eso",
+        "Posiblemente...",
+        "Probablemente no",
+        "¡Probablemente!",
+        "¿En serio hermano? No",
+        "Señor, eso es incorrecto",
+        "*suspirar... Voy a ser honesto, no",
+        "*suspirar*... Voy a ser honesto, sí",
+        "Mierda, tienes razón",
+        "Sry I don't speak stupid",
+        "Eso es 100% correcto",
+        "¡Eso es imposible!",
+        "Eso es lo que el gobierno quiere que pienses... :guiño:",
+        "Totalmente",
+        "Inténtalo de nuevo, hijo de puta",
+        "Uh, ¿estás reiniciado? Lmao",
+        "Tu mamá lo cree",
+        "Tu padre lo cree",
+        "Bueno, sí, pero en realidad no",
+        "¿Qué me estás pidiendo?",
+        "¿Qué coño se supone que significa eso?",
+        "¿Qué fue eso, imbécil?",
+        "¿Por qué no?",
+        "No contaría realmente con ello",
+        "Sí, no me digas...",
+        "Sí, totalmente... no, por supuesto, no eres un cabrón",
+        "Sí",
+        "Sí. Mhm. Claro. Totalmente",
+        "Sí",
+        "¡Sí! ¡Sí! ¿Por qué no aceptas un sí como respuesta?",
+        "Sí",
+        "¡Puedes apostar!",
+        "No puedes decir eso, joder",
+        "Sabes que es verdad",
+        "Sólo se vive una vez...",
+        "¡Ya quisieras!",
+        "Yup"
+      ],
+      "clean": [
+        "Absolutamente no",
+        "¡Absolutamente!",
+        "Según mi religión, no",
+        "Ahhh, eres una de esas personas",
+        "¡Casi siempre!",
+        "Y los cerdos vuelan... oh espera, pensé que sólo hablábamos de cosas que son posibles",
+        "¿Estás bien? La gente normal no pregunta eso",
+        "¿Siempre eres así?",
+        "Tan pronto como subes tus notas",
+        "Pregúntame de nuevo, no estoy seguro",
+        "Pregúntale a papá",
+        "Pregúntale a tu ex",
+        "Pide permiso a tus padres primero",
+        "Pregúntale a tu madrastra",
+        "Bruh no puedes pedir eso",
+        "Llama a la policía cuando te des cuenta de lo tonto que eres",
+        "Correcto",
+        "Definitivamente, es una gran idea",
+        "¡Hazlo, no lo harás!",
+        "¿Tu madre lo sabe?",
+        "¿Ehhhh?",
+        "Dale tiempo...",
+        "Haha nope",
+        "¡Hola! ¿Hablas inglés?",
+        "¿Eh?",
+        "Creo que sí...",
+        "No tengo la respuesta que quieres",
+        "No veo por qué no?",
+        "No lo creo",
+        "No entiendo...",
+        "Estaba pensando, tal vez...",
+        "Prefiero guardarme eso para mí...",
+        "Prefiero no decir...",
+        "Prefiero que te preguntes primero",
+        "Idk about that",
+        "Si tan sólo fuera tan fácil...",
+        "Si me das un helado, te responderé",
+        "Si tú lo dices",
+        "Si lo piensas, sí",
+        "Si: 1 + 1 = 3, sí",
+        "En otra vida",
+        "Jesús, me estás matando con estas preguntas",
+        "K",
+        "Amigo mío, no es tan fácil",
+        "Nah bruh",
+        "Nahhh",
+        "Nawww",
+        "Nunca será eso cierto",
+        "No...",
+        "¿No?",
+        "No",
+        "No señor",
+        "No u",
+        "No",
+        "No te respondo",
+        "Ni siquiera cerca",
+        "Ni en un millón de años",
+        "No a menos que me pagues 100.000 dólares",
+        "No hasta que entres en la universidad",
+        "De todas las personas, ¿por qué me preguntas a mí? (jk sigue hablándome)",
+        "Por supuesto que me vas a preguntar eso",
+        "Oh, ¿no te encantaría saber la respuesta?",
+        "Ok",
+        "Sólo en luna llena",
+        "Sólo tú preguntarías eso",
+        "Posiblemente...",
+        "Probablemente no",
+        "¡Probablemente!",
+        "¿En serio hermano? No",
+        "Señor, eso es incorrecto",
+        "*suspirar*... Voy a ser honesto, no",
+        "*suspirar*... Voy a ser honesto, sí",
+        "Sry I don't speak stupid",
+        "Eso es 100% correcto",
+        "¡Eso es imposible!",
+        "Eso es lo que el gobierno quiere que pienses... :guiño:",
+        "Totalmente",
+        "Tu mamá lo cree",
+        "Bueno, sí, pero en realidad no",
+        "¿Qué me estás pidiendo?",
+        "¿Por qué no?",
+        "No contaría realmente con ello",
+        "Sí",
+        "Sí. Mhm. Claro. Totalmente",
+        "Sí",
+        "¡Sí! ¡Sí! ¿Por qué no aceptas un sí como respuesta?",
+        "Sí",
+        "¡Puedes apostar!",
+        "Sabes que es verdad",
+        "Sólo se vive una vez...",
+        "¡Ya quisieras!",
+        "Yup"
+      ],
+      "explicit": [
+        "Tan pronto como tu headass aprenda a leer",
+        "¿Perra qué?",
+        "Perra, de verdad",
+        "Llama a tu abuela, maldito idiota",
+        "Llama a la policía cuando te des cuenta de lo tonto que eres",
+        "Disculpe, ¿qué carajo?",
+        "Jódete. He terminado con tu mierda",
+        "Joder, sí",
+        "No te diré una mierda",
+        "No sherlock de mierda",
+        "Oh, joder, no",
+        "Mierda, tienes razón",
+        "Sry I don't speak dumbfuck",
+        "Inténtalo de nuevo, hijo de puta",
+        "Uh, ¿estás reiniciado? Lmao",
+        "Tu padre lo cree",
+        "¿Qué coño se supone que significa eso?",
+        "¿Qué fue eso, imbécil?",
+        "Sí, no me digas...",
+        "Sí, totalmente... no, por supuesto que no, cabrón",
+        "No puedes decir eso"
+      ]
+    }
+  },
+  "color": {
+    "disabledgame": "{CROSS} **¡Este juego esta deshabilitado!** Usa `{PREFIX}settings 8color toggle`",
+    "alreadyplaying": "{CROSS} **¡Parece que ya estás jugando esto en otro lado!**",
+    "game": {
+      "playing": {
+        "title": "{TAG} esta jugando 8Color",
+        "description": [
+          "Estás por iniciar el **Nivel {LEVEL}**!",
+          "Memoriza el siguiente patrón:",
+          "{PATTERN}",
+          "",
+          "_¡Este mensaje se borra en {TIME} segundos!_",
+          "_Pista: ¡no copies el mensaje!_"
+        ]
+      },
+      "enterpattern":{
+        "description": [
+          "Estás jugando el **Nivel {LEVEL}**",
+          "Ingresa el patrón memorizado",
+          "",
+          "_¡Tienes {TIME} segundos para responder!_"
+        ]
+      },
+      "win": {
+        "description": [
+          "{CHECK} **¡Correcto! ¡Patrón ingresado!**",
+          "",
+          "_¡Siguiente nivel iniciando en 10 segundos!_"
+        ]
+      },
+      "lose": {
+        "title": "{TAG} estaba jugando 8color",
+        "description": [
+          "{CROSS} **¡Error! ¡No ingresaste el patrón correcto!**",
+          "",
+          "**El patrón correcto era:**",
+          "{PATTERN}",
+          "**Tu ingresaste:**",
+          "{REPLY}",
+          "",
+          "**Alcanzaste el nivel:** {LEVEL}",
+          "",
+          "_¡Gracias por jugar!_"
+        ],
+        "descriptiontimeout": [
+          "{CROSS} **¡Tiempo agotado! ¡No respondiste!**",
+          "",
+          "**Alcanzaste el nivel:** {LEVEL}",
+          "",
+          "_¡Gracias por jugar!_"
+        ]
+      }
+    },
+    "error": {
+      "cannotstart": "{CROSS} **No pude iniciar el juego en el canal {CHANNEL} en el servidor '{GUILD}'.**",
+      "cannotcontinue": "{CROSS} **No pude continuar el juego en el canal {CHANNEL} en el servidor '{GUILD}'.**",
+      "cannotfinish": "{CROSS} **No pude terminar el juego en el canal {CHANNEL} en el servidor '{GUILD}'.**"
+    }
+  },
+  "akinator": {
+    "help": {
+      "title": "{BOTNAME} - Akinator Help",
+      "user": {
+        "description": [
+          "**Ajustes Disponibles:**",
+          "`{PREFIX}akinator start` - Start A New Game.",
+          "",
+          "*Próximamente más artículos...*",
+          "",
+          "{WARNING} This game is **under development**, it won't run perfectly!",
+          "Report bugs/ideas in our [Support server]({INVITATION})!"
+        ]
+      },
+      "administrator": {
+        "description": [
+          "**Ajustes Disponibles:**",
+          "`{PREFIX}akinator start` - Empieza un nuevo juego.",
+          "",
+          "*Próximamente más artículos...*",
+          "",
+          "{WARNING} This game is **under development**, it won't run perfectly!",
+          "Report bugs/ideas in our [Support server]({INVITATION})!"
+        ],
+        "description2": [
+          "**Ajustes Disponibles:**",
+          "`{PREFIX}akinator start` - Empieza un nuevo juego.",
+          "",
+          "*Próximamente más artículos...*",
+          "",
+          "{WARNING} This game is **under development**, it won't run perfectly!",
+          "Report bugs/ideas in our [Support server]({INVITATION})!"
+        ]
+      }
+    },
+    "disabledgame": "{CROSS} **¡Este juego está desactivado!** Usa `{PREFIX}akinator toggle`",
+    "invalidchannel": "{CROSS} **¡Canal incorrecto!** Ir al {AKINATORCHANNEL} para usar **Akinator**!",
+    "alreadyplaying": "{CROSS} **¡{USER}, estás jugando en otro lugar!!**"
+  },
+  "avatar": {
+    "success": {
+      "description": [
+        "{CHECK} Aquí está el avatar de {USER}! [Enlace]({URL})"
+      ]
+    }
+  },
+  "battle": {
+    "footer": "Battles",
+    "error": {
+      "battling": [
+        "{CROSS} **{USER}, estás en una batalla en otro lugar!**"
+      ],
+      "notyourself": [
+        "{CROSS} **{USER}, no puedes batirte en duelo.**"
+      ],
+      "targetbattling": [
+        "{CROSS} **{USER}, el otro gladiador está en una batalla!**"
+      ]
+    },
+    "starting": {
+      "title": "{FIRST} vs. {SECOND}!"
+    },
+    "battling": {
+      "attacks": [ 
+        "{TEAM} 🗡️ {ATTACKER} cortó a {TARGET} con una **katana** por {DAMAGE} HP!",
+        "{TEAM} 🗣️ {ATTACKER} asó a {TARGET} con un **yomomma joke** por {DAMAGE} HP!",
+        "{TEAM} 🧪 {ATTACKER} quemó a {TARGET} con **ácido** por {DAMAGE} HP!",
+        "{TEAM} ⚽ {ATTACKER} golpeó a {TARGET} con un **balón de fútbol** por {DAMAGE} HP!",
+        "{TEAM} ✂️ {ATTACKER} cortó a {TARGET} con unas **tijeras** por {DAMAGE} HP!",
+        "{TEAM} 🔪 {ATTACKER} apuñaló a {TARGET} con un **cuchillo** por {DAMAGE} HP!",
+        "{TEAM} 🪕 {ATTACKER} aplastó a {TARGET} con un **banjo** por {DAMAGE} HP!",
+        "{TEAM} 🛡️ {ATTACKER} golpeó a {TARGET} con un **escudo** por {DAMAGE} HP!",
+        "{TEAM} 🥄 {ATTACKER} magulló a {TARGET} con una **cuchara** por {DAMAGE} HP!",
+        "{TEAM} ⚾ {ATTACKER} golpeó a {TARGET} con una **pelota de béisbol** por {DAMAGE} HP!",
+        "{TEAM} 🍌 {ATTACKER} bananad {TARGET} con una **banana** por {DAMAGE} HP!",
+        "{TEAM} 🔥 {ATTACKER} quemó a {TARGET} con una **antorcha** por {DAMAGE} HP!",
+        "{TEAM} 🪓 {ATTACKER} rebanó {TARGET} con un **hacha** por {DAMAGE} HP!",
+        "{TEAM} 🍷 {ATTACKER} envenenó a {TARGET} con una **bebida** por {DAMAGE} HP!",
+        "{TEAM} 👊 {ATTACKER} golpeó  a {TARGET} con el **puño** por {DAMAGE} HP!",
+        "{TEAM} 🧨 {ATTACKER} explotó {TARGET} con una **bomba** por {DAMAGE} HP!",
+        "{TEAM} 🔫 {ATTACKER} disparó {TARGET} con una **pistola de agua** por {DAMAGE} HP!",
+        "{TEAM} 🔧 {ATTACKER} smacked {TARGET} with a **wrench** por {DAMAGE} HP!",
+        "{TEAM} 🏹 {ATTACKER} hit {TARGET} with an **arrow** por {DAMAGE} HP!",
+        "{TEAM} ☁️ {ATTACKER} choked {TARGET} with their **fart** por {DAMAGE} HP!",
+        "{TEAM} 🎊 {ATTACKER} stunned {TARGET} with **confetti** por {DAMAGE} HP!",
+        "{TEAM} 🧼 {ATTACKER} gagged {TARGET} with **soap** por {DAMAGE} HP!",
+        "{TEAM} 🧹 {ATTACKER} whacked {TARGET} with a **broomstick** por {DAMAGE} HP!"
+      ],
+      "wins": [
+        "**\\🏆 {WINNERMEMBER} won against {LOSERMEMBER} in {WINNERMOVES} moves!**",
+        "**\\🏆 {WINNERMEMBER} couldn't resist defeating {LOSERMEMBER}**",
+        "**\\🏆 {WINNERMEMBER} destroyed {LOSERMEMBER}!**"
+      ]
+    }
+  },
+  "belike": {
+    "provideyourname": "{CROSS} **Especifica al menos tu nombre.**",
+    "description": [
+      "{CHECK} **Aquí esta tu imagen {AUTHOR}!**"
+    ]
+  },
+  "clear": {
+    "enteramount": "{CROSS} **{USER}, Ingresa un número de mensajes a borrar!**",
+    "invalidamount": "{CROSS} **¡{USER}, la cantidad ingresada no es un número válido!**",
+    "cannotgreater": "{CROSS} **¡{USER}, la cantidad de mensajes no puede ser mayor a `150`!**",
+    "cannotlower": "{CROSS} **¡{USER}, la cantidad de mensajes no puede ser menor a `1`!**",
+    "errordeleting": "{CROSS} **{USER}, srror inesperado. ¡No pude eliminar mensajes!**",
+    "deleted": "{CHECK} **¡{USER}, se eliminaron `{AMOUNT}` mensajes!**"
+  },
+  "donate": {
+    "title": "Donaciones para Magic8",
+    "description": [
+      "Donar a los desarrolladores nos motiva a mantener los proyectos y les hace saber que aprecian su trabajo.",
+      "",
+      "Planeamos que **Magic8** esté en linea por mucho tiempo, sin embargo todo el trabajo puesto en Magic8 depende de cuanto los usuarios lo usen. Donar muestra a los desarrolladores que hay gente interesada en que este proyecto siga en desarrollo.",
+      "Unete a nuestro servidor **[Magic8 Support Server]({INVITATION})** para más detalles sobre como obtener el rol `Supporter 💸`.",
+      "",
+      "**Link para donaciones:** [__Clic aquí__]({DONATIONLINK})",
+      "",
+      "- ¡Gracias por ayudarnos!"
+    ]
+  },
+  "telephone": {
+    "ringing": "☎ {USER} levantó el telefono. **¡El telefono está timbrando!**",
+    "someoneusingtelephone": "🚫 **¡Alguien está usando este telefono!** Porfavor espera.",
+    "someoneinacall": "🚫 **¡Alguien está en una llamada ahora!** Porfavor se paciente.",
+    "nooneanswered": "⛔ {USER}, parece que nadie respondió el telefono..",
+    "establised": "🔊 Alguien respondió el telefono. **¡Conexión establecida!**",
+    "youhungup": "\\🔴 **¡Colgaste el telefono!**",
+    "otherhungup": "\\🔴 **¡Te colgaron el telefono!**",
+    "timeout": "\\⏰ No se detectó ningun mensaje por más de un minuto. **¡Conexión perdidad!**"
+  }
+}
