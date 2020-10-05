@@ -5,7 +5,7 @@
 **Want to collaborate? Add your own language with all translations and we will add it to the available translations!**
 - Copy the en.json file (this file gets updated when new features are added or an error is fixed!)
 - Translate all the English to your known language
-- Do not edit the contents of the placeholders (${EXAMPLE}). Move them accordingly for grammar purposes.
+- Do not edit the contents of the placeholders ({EXAMPLE}). Move them accordingly for grammar purposes.
 - Do **NOT** use a translating service
 - Do **NOT** change the meaning of translations. We will review your submission(s).
 
