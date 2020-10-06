@@ -7,16 +7,6 @@
     "Open the help menu with `{PREFIX}help` to view all commands.",
     "*Need further assistance? Join our [Support Server]({INVITATION})!*"
   ],
-  "notincasino": [
-    "{CROSS} **{USER}, you must be in a casino to use this command!**",
-    "",
-    "To join a casino, please type: `{PREFIX}casino`"
-  ],
-  "alreadyincasino": [
-    "{CROSS} **{USER}, you are already in a casino somewhere else!**",
-    "",
-    "Please go to {CHANNEL}, in **{GUILD}**!"
-  ],
   "ball": {
     "asksomething": "{CROSS} **You need to ask a yes/no question!**",
     "customresponses": [
