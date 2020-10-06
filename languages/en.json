@@ -2,7 +2,6 @@
   "languagename": "English",
   "flag": "🇺🇸",
   "it": "{CROSS} **{USER}, provide a valid member or ID!**",
-  "ic": "{CROSS} **{USER}, please go to {GAMECHANNEL} to use this command!**",
   "mention": [
     "{USER} **my prefix for the server is: {PREFIX}**",
     "Open the help menu with `{PREFIX}help` to view all commands.",
@@ -25,7 +24,7 @@
       "Please contact an administrator."
     ],
     "customresponsesadmin": [
-      "{CROSS}**Custom responses are enabled but none were added!**",
+      "{CROSS} **Custom responses are enabled but none were added!**",
       "",
       "To add new responses use `{PREFIX}settings 8ball setreplies Reply 1|Reply 2|Reply 3`",
       "",
@@ -1079,14 +1078,14 @@
       "**⚙️ 8ball Color:** {8BALLCOLOR}",
       "**🎨 Color Plays:** {8COLORPLAYS}",
       "**🔍 Trivia Plays:** {TRIVIAPLAYS}",
-      "**⚔️ Battles:** {BATTLES}"
+      "**⚔️ Battles:** {BATTLES}",
+      "**Game/Entertainment Channel:** {GAMESCHANNEL}"
     ],
     "description": [
       "__**Server Information**__ - **Prefix:** `{PREFIX}`",
       "**User/Bots/Online**: {USERS}/{BOTS}/{ONLINE}",
       "**Text/Voice Channels:** {TEXTCHANNELS}/{VOICECHANNELS}",
       "**NSFW Text channels:** {NSFWTEXTCHANNELS}",
-      "**Game/Entertainment Channel:** {GAMESCHANNEL}",
       "**🏅 Server Level:** {SERVERLEVEL}",
       "**📝 Custom Responses:** {CURRENTRESPONSES}/{TOTALRESPONSES}",
       "**🗃️ Reply Type:** {REPLYTYPE}",
@@ -1096,12 +1095,11 @@
       "**Server Created:** {CREATED}",
       "**Bot Joined:** {JOINED}",
       "",
-      "To view bot stats, type: `{PREFIX}binfo`",
+      "To view bot stats, type: `{PREFIX}botinfo`",
       "",
       "**Useful Links:**",
       "[Donate]({DONATELINK}) • [GitHub]({GITHUBLINK}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
-    ],
-    "footer": "{FOOTER} Information"
+    ]
   },
   "invite": {
     "title": "Invite Magic8 to your server!",
@@ -1361,7 +1359,7 @@
   "pornhubtext": {
     "error": {
       "nomessage": "{CROSS} **{USER}, please specify a message!**",
-      "nobar": "{CROSS} **{USER}, please make sure your message includes a `\\|`!**"
+      "nobar": "{CROSS} **{USER}, please make sure your message includes a `|`!**"
     }
   },
   "poke": {
@@ -1433,7 +1431,6 @@
     "starting": [
       "**__Slot Machine__**",
       "**Player:** {USER}",
-      "**Bet:** {BET}",
       "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
       "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
       "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
@@ -1443,7 +1440,6 @@
     "waiting": [
       "**__Slot Machine__**",
       "**Player:** {USER}",
-      "**Bet:** {BET}",
       "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
       "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
       "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
@@ -1453,7 +1449,6 @@
     "rollandstop": [
       "**__Slot Machine__**",
       "**Player:** {USER}",
-      "**Bet:** {BET}",
       "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
       "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
       "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
@@ -1463,22 +1458,20 @@
     "lose": [
       "**__Slot Machine__**",
       "**Player:** {USER}",
-      "**Bet:** {BET}",
       "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
       "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
       "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
       "",
-      "{CROSS} You lost **\\💰{BET}**!"
+      "{CROSS} You lost!"
     ],
     "win": [
       "**__Slot Machine__**",
       "**Player:** {USER}",
-      "**Bet:** {BET}",
       "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
       "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
       "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
       "",
-      "{CHECK} You won **\\💰{BET}**!"
+      "{CHECK} You won!"
     ]
   },
   "smug": {
@@ -1533,40 +1526,34 @@
   "ticket": {
     "footer": "{FOOTER} Ticket",
     "help": {
-      "title": "{BOTNAME} • Ticket help",
-      "ticketnew": "\n`{PREFIX}ticket new` - Create a new ticket.",
+      "title": "{BOTNAME} • Ticket Help Menu",
+      "ticketnew": "\n`{PREFIX}ticket new` - Create a Ticket.",
       "user": {
         "description": [
           "Need help using ticket system? Don't worry, here you have!",
           "",
           "**Available commands:**{TICKETNEW}",
-          "`{PREFIX}ticket close` - Close/solve a ticket.",
-          "",
-          "{WARNING} This system is **under development**, expect **bugs** and **errors**.",
-          "**Help us** reporting **bugs**/**errors** in our [GitHub]({GITHUBLINK}) or [Support Server]({INVITE})"
+          "`{PREFIX}ticket close` - Close a Ticket."
         ]
       },
       "administrator": {
         "description": [
           "Need help using ticket system? Don't worry, here you have!",
           "",
-          "**Available commands:**{TICKETNEW}",
-          "`{PREFIX}ticket close` - Close/solve a ticket.",
+          "**Available Commands:**{TICKETNEW}",
+          "`{PREFIX}ticket close` - Close a Ticket.",
           "",
           "**Administrator settings:**",
-          "`{PREFIX}ticket toggle` - Enable/disable tickets.",
+          "`{PREFIX}ticket toggle` - Enable/Disable Ticket System",
           "`{PREFIX}ticket setup` - Ticket setup menu.",
           "`{PREFIX}ticket setmaxtickets` - Set max number of tickets...",
           "`{PREFIX}ticket setchannel` - Restrict tickets to a channel.",
-          "`{PREFIX}ticket setlogchannel` - Select tickets logs channel.",
-          "`{PREFIX}ticket setcategory` - Select category for tickets.",
-          "`{PREFIX}ticket setmessageid` - Select message ID.",
-          "`{PREFIX}ticket setmessage` - Select message for new tickets.",
-          "`{PREFIX}ticket setmode` - Select ticket mode.",
-          "`{PREFIX}ticket setsupportrole` - Select default language.",
-          "",
-          "{WARNING} This system is **under development**, expect **bugs** and **errors**.",
-          "**Help us** reporting **bugs**/**errors** in our [GitHub]({GITHUBLINK}) or [Support server]({INVITATION})"
+          "`{PREFIX}ticket logchannel` - Tickets Logs Channel.",
+          "`{PREFIX}ticket category` - Category To Hold Tickets.",
+          "`{PREFIX}ticket reactionmessage` - Reaction Message ID.",
+          "`{PREFIX}ticket newmessage` - Message Sent In New Ticket Channel.",
+          "`{PREFIX}ticket mode` - Ticket Creation Mode.",
+          "`{PREFIX}ticket supportrole` - Manage Tickets Role."
         ]
       },
       "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
@@ -1631,14 +1618,14 @@
     },
     "setlogchannel": {
       "selected": [
-        "{CHECK} **You selected {CHANNEL} as ticket log channel!**",
+        "{CHECK} **You selected {CHANNEL} as the Ticket Logs Channel!**",
         "",
-        "Type the following command to **remove restriction**. `{PREFIX}ticket setlogchannel clear`"
+        "{INFO} To disable ticket logs, type: `{PREFIX}ticket logchannel clear`"
       ],
       "cleared": [
         "{CROSS} **You removed channel restriction for tickets!**",
         "",
-        "Type the following command in a prefered channel to **restrict** tickets to that channel. `{PREFIX}ticket setchannel`"
+        "{INFO} To enable ticket logs, type: `{PREFIX}ticket logchannel`"
       ]
     },
     "setchannel": {
@@ -1659,7 +1646,11 @@
     },
     "setcategory": {
       "error": [
-        "{CROSS} **Select a valid category ID!**"
+        "{CROSS} **Tickets Category ID**",
+        "",
+        "Usage: `{PREFIX}tickets category <ID>`",
+        "",
+        "{INFO} Created tickets are placed inside this category."
       ],
       "selected": [
         "{CHECK} **You selected `{CHANNEL}` as ticket category!**",
@@ -1682,36 +1673,38 @@
       ]
     },
     "setsupportrole": {
-      "invalid": [
-        "{CROSS} **Argument provided is not a valid role ID.**"
+      "error": [
+        "{CROSS} **Support Role ID**",
+        "",
+        "Usage: `{PREFIX}tickets supportrole <ID>`",
+        "",
+        "{INFO} Get the Role ID by going to your **Role Settings**, right click the Role, Copy ID."
       ],
       "selected": [
-        "{CHECK} **You selected {SUPPORTROLE} as Support role!**",
+        "{CHECK} **You selected {SUPPORTROLE} as the Support Role!**",
         "",
-        "{VERIFIED} All **members** with this role will be able to **view and send messages** in tickets!"
+        "{INFO} All users with this role will be able to access all tickets created!"
       ]
     },
     "setmessage": {
       "error": [
         "{CROSS} **You need to specify a message!**",
         "",
-        "**Available placeholders:**",
-        "{SUPPORTROLE} - Support role (If mentionable)",
-        "{USER} - Ticket owner (User)",
-        "{EVERYONE} - Will mention everyone (If has permission)",
-        "{HERE} - Will mention online (If has permission)",
+        "**Available Placeholders:**",
+        "{SUPPORTROLE} - Support Role (If Mentionable)",
+        "{USER} - Ticket Owner (User)",
+        "{EVERYONE} - Mention Everyone In Channel (Requires Permission)",
+        "{HERE} - Mention Online In Channel (Requires Permission)",
         "",
-        "{INFO} This message will be sent in the **new channel** when a ticket is created!",
-        "{WARNING} Make sure role or roles are mentionable!"
+        "{INFO} This message will be sent in the **new channel** when a ticket is created!"
       ],
       "selected": [
         "{CHECK} **You selected the message for new tickets!**",
         "",
-        "**Example message:**",
+        "**Message:**",
         "{MESSAGE}",
         "",
-        "{INFO} This message will be sent in the **new channel** when a ticket is created!",
-        "{WARNING} Make sure role or roles are mentionable!"
+        "{INFO} This message will be sent in the **new channel** when a ticket is created!"
       ]
     },
     "setmessageid": {
@@ -1740,19 +1733,19 @@
     },
     "setmode": {
       "error": [
-        "{CROSS} **You need to specify a mode!**",
+        "{CROSS} **Ticket Creation Mode**",
         "",
-        "**Available mode:**",
-        "command - Use command `{PREFIX}ticket new` to open.",
-        "reaction - Use reaction to open ticket.",
+        "**Available Modes:**",
+        "command - Type `{PREFIX}ticket new` To Create a Ticket.",
+        "reaction - Click a Reaction To Create a Ticket.",
         "",
-        "{INFO} When switching mode the other method will stop working!",
-        "{WARNING} Reaction mode requires setup! Use `{PREFIX}ticket setup`"
+        "{INFO} Both modes cannot be enabled at the same time.",
+        "{WARNING} Reaction mode requires additional setup! Use `{PREFIX}ticket setup`"
       ],
       "selected": [
         "{CHECK} **You selected `{MODE}` mode for tickets!**",
         "",
-        "{INFO} Use `{PREFIX}ticket setmode` for more **information**!"
+        "{INFO} Use `{PREFIX}ticket mode` for more **information**!"
       ]
     },
     "setup": {
@@ -1763,14 +1756,14 @@
         "I will help you to **enable** system in your server.",
         "",
         "1) Enable tickets with `{PREFIX}tickets toggle`",
-        "2) Select ticket category with `{PREFIX}tickets setcategory [ID]`",
-        "3) Select support role with `{PREFIX}tickets setsupportrole [ID]`",
+        "2) Select Ticket Category with `{PREFIX}tickets category [ID]`",
+        "3) Select Support Role with `{PREFIX}tickets supportrole [ID]`",
         "4) Select ticket mode with `{PREFIX}tickets setmode [mode]`",
         "5) Select ticket channel with `{PREFIX}tickets setchannel`",
         "6) Select ticket channel for logs with `{PREFIX}tickets setlogchannel`",
         "7) Select max ticket amount with `{PREFIX}tickets setmaxtickets [amount]`",
         "**Only if Reaction mode:**",
-        "8) Select ticket reaction message ID with `{PREFIX}tickets setmessageid [ID]`",
+        "8) Select ticket reaction message ID with `{PREFIX}tickets reactionmessage [ID]`",
         "",
         "**Progress:**",
         "{TICKETSTATUS} Enable tickets.",
@@ -1960,18 +1953,17 @@
     ]
   },
   "vote": {
-    "title": "{USER}, considering supporting Magic8?",
     "canvote": [
-      "{CHECK} **You can vote for Magic8!**",
+      "{CHECK} **{USER}, you can vote for Magic8!**",
       "",
-      "**Link:** __{VOTELINK}__",
+      "**Link:** [top.gg]({VOTELINK})",
       "",
       "{INFO} You can vote once every **12** hours!"
     ],
     "cannotvote": [
-      "{CROSS} **You already voted in the last 12 hours!**",
+      "{CROSS} **{USER}, you already voted in the last 12 hours!**",
       "",
-      "**Link:** __{VOTELINK}__",
+      "**Link:** [top.gg]({VOTELINK})",
       "",
       "{INFO} You can vote once every **12** hours!"
     ],
