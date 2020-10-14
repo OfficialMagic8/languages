@@ -1,4 +1,4 @@
-## Languages
+# Magic8 Languages
 
 **The en.json file is updated every time a feature is added/edited, review the changes to add the same content to your language file.**
 
@@ -11,7 +11,7 @@
 
 Please only translate files to your known language if you are already **fluent** in English. This way, you can understand the grammar and make proper changes.
 
-### Complete
+## Complete
 > - English
 
 ### In Progress
