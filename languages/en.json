@@ -3,8 +3,9 @@
   "flag": "🇺🇸",
   "it": "{CROSS} **{USER}, provide a valid member or ID!**",
   "mention": [
-    "**{USER}, my prefix for the server is: {PREFIX}**",
-    "Open the help menu with `{PREFIX}help` to view all commands.",
+    "**{USER}, my prefix for the server is:** {PREFIX}",
+    "Type `{PREFIX}help` or `{PREFIX}help <command>` for helpful information.",
+    "",
     "*Need further assistance? Join our [Support Server]({INVITATION})!*"
   ],
   "ball": {
@@ -59,6 +60,7 @@
         "Hell no",
         "Hell yea!",
         "Hi! Do you speak english?",
+        "How dare you ask me such a question?!",
         "Huh?",
         "I ain't telling you shit",
         "I believe so...",
@@ -81,6 +83,7 @@
         "K",
         "My friend, it isn't that easy",
         "Nah bruh",
+        "Nah fam",
         "Nahhh",
         "Nawww",
         "Never will that be true",
@@ -166,6 +169,7 @@
         "Give it time...",
         "Haha nope",
         "Hi! Do you speak english?",
+        "How dare you ask me such a question?!",
         "Huh?",
         "I believe so...",
         "I don't have the answer you want",
@@ -187,6 +191,7 @@
         "K",
         "My friend, it isn't that easy",
         "Nah bruh",
+        "Nah fam",
         "Nahhh",
         "Nawww",
         "Never will that be true",
@@ -261,14 +266,14 @@
     }
   },
   "color": {
-    "disabledgame": "{CROSS} **This game is disabled!** Use `{PREFIX}settings 8color toggle`",
+    "disabledgame": "{CROSS} **This game is disabled!** Use `{PREFIX}settings toggle 8color`",
     "alreadyplaying": "{CROSS} **{USER}, you are playing somewhere else!**",
     "game": {
       "playing": {
         "title": "{TAG} is playing 8Color",
         "description": [
           "You are about to start **Level {LEVEL}**!",
-          "Memorize the next pattern: ",
+          "Memorize the next pattern:",
           "{PATTERN}",
           "",
           "_In {TIME} seconds the message will be deleted!_",
@@ -278,7 +283,7 @@
       "enterpattern": {
         "description": [
           "You are playing **Level {LEVEL}**",
-          "Enter the pattern you memorized",
+          "Enter the pattern you memorized.",
           "",
           "_You have {TIME} seconds to answer!_"
         ]
@@ -291,7 +296,7 @@
         ]
       },
       "lose": {
-        "title": "{TAG} was playing 8color",
+        "title": "{TAG} lost in 8Color",
         "description": [
           "{CROSS} **Wrong! You didn't enter the right pattern!**",
           "",
@@ -366,7 +371,6 @@
     }
   },
   "battle": {
-    "footer": "Battles",
     "error": {
       "battling": [
         "{CROSS} **{USER}, you are in a battle somewhere else!**"
@@ -379,10 +383,10 @@
       ]
     },
     "starting": {
-      "title": "{FIRST} vs. {SECOND}!"
+      "title": "{FIRST} vs. {SECOND}"
     },
     "battling": {
-      "attacks": [ 
+      "attacks": [
         "{TEAM} 🗡️ {ATTACKER} sliced {TARGET} with a **katana** for {DAMAGE} HP!",
         "{TEAM} 🗣️ {ATTACKER} roasted {TARGET} with a **yomomma joke** for {DAMAGE} HP!",
         "{TEAM} 🧪 {ATTACKER} burned {TARGET} with **acid** for {DAMAGE} HP!",
@@ -426,7 +430,6 @@
         "{CHECK} **Here is the emoji! [Link]({EMOJILINK})**"
       ]
     },
-    "footer": "Big Emoji requested by {AUTHOR}",
     "error": "{CROSS} **That doesn't seem to be a valid emoji!**"
   },
   "boobs": {
@@ -483,53 +486,43 @@
     }
   },
   "botinfo": {
-    "extras": [
-      "🎱 **8ball Plays:** {BALLS}",
-      "🔍 **Trivia Plays:** {TRIVIAS}",
-      "🎨 **Color Plays:** {COLORS}",
-      "⚔️ **Battles:** {BATTLES}"
-    ],
     "title": "{BOTNAME} - Bot information",
     "description": [
-      "__**Stats**__",
+      "__**Statistics**__",
       "📚 **Total Guilds:** {GUILDS}",
       "👥 **Total Users:** {USERS}",
       "💬 **Total Channels:** {CHANNELS} (\\🔞{NSFWCHANNELS})",
       "",
       "⏲️ **Uptime:** {UPTIME}",
       "📦 **RAM:** {RAM}",
-      "🎚️ **Version:** {VERSION}",
       "",
       "👑 **Owner:** {OWNER}",
       "💎 **Head Developer:** {HEADDEVELOPER}",
       "🗓️ **Created on:** {CREATIONDATE}",
       "",
       "**Useful Links:**",
-      "[Donate]({DONATELINK}) • [GitHub]({GITHUB}) • **[Support Server]({SUPPORTSERVER})** • [Vote]({VOTELINK})"
+      "[Donate]({DONATELINK}) • [GitHub]({GITHUB}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
     ]
   },
   "cape": {
     "error": {
       "enterusername": {
         "description": [
-          "{CROSS} **Specify a username!**"
+          "{CROSS} **Please provide a username.**"
         ]
       },
-      "notregistered": {
+      "invalidusername": {
         "description": [
-          "{CROSS} **Player '{USER}' doesn't exist!**"
+          "{CROSS} **The player, \"{USER}\", does not exist.**"
         ]
       },
       "nocape": {
         "description": [
-          "{CROSS} **Player '{USER}' doesn't have a cape!**"
+          "{CROSS} **The player, \"{USER}\" doesn't have a cape!**"
         ]
       }
     },
-    "success": {
-      "title": "Cape owned by {USER}",
-      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
-    }
+    "success": "{USER}'s Minecraft Cape"
   },
   "casino": {
     "notincasino": "{CROSS} **{USER}, please join a casino to use this command!** `{PREFIX}casino`",
@@ -660,11 +653,11 @@
   "cuddle": {
     "success": {
       "self": [
-          "{CHECK} **{USER} cuddled themselves!**"
-        ],
+        "{CHECK} **{USER} cuddled themselves!**"
+      ],
       "other": [
-          "{CHECK} **{USER} cuddled {TARGET}!**"
-        ]
+        "{CHECK} **{USER} cuddled {TARGET}!**"
+      ]
     },
     "error": {
       "description": [
@@ -730,17 +723,14 @@
       }
     }
   },
-  "donate": {
-    "title": "Magic8 Donation Page",
+  "premium": {
+    "title": "Magic8 Premium Information",
     "description": [
-      "Donations made for the developers of Magic8 provide motivation and access to better resources for hosting the bot. The current host of Magic8 is keeping up, but as the bot grows it will need a new and improved host. This will result in much higher performance and feature abilities which matters a lot to you.",
+      "Donations gifted to the developers of Magic8 provide motivation and access to better bot resources. With your help, Magic8's performance and features can become nearly unlimited.",
       "",
-      "**Magic8** will for sure be around for a long time, but all the work put in to Magic8 depends on how much you guys use it. Donating lets developers know that there are still people who want this project to continue to grow.",
-      "Join our server **[Magic8 Support Server]({INVITATION})** for more details about how to obtain `Supporter 💸` role.",
+      "Magic8 will be around for a long time, but your support guarantees new features. Donating to any developer lets them know that people still want their project to grow.",
       "",
-      "**Donation Link:** [__Click here__]({DONATIONLINK})",
-      "",
-      "- Thank you for your support!"
+      "**Packages Link:** [__click here__]({DONATIONLINK})"
     ]
   },
   "emojis": {
@@ -985,8 +975,7 @@
     "success": {
       "description": [
         "🏳️‍🌈 {TARGET} is `{PERCENT}%` gay 🏳️‍🌈"
-      ],
-      "footer": "{FOOTER} Requested by {AUTHOR}"
+      ]
     }
   },
   "hug": {
@@ -1006,8 +995,7 @@
       "description": [
         "{CROSS} **Unexpected error. Try again later!**"
       ]
-    },
-    "footer": "{FOOTER} Hug"
+    }
   },
   "hypixel": {
     "error": {
@@ -1057,50 +1045,36 @@
         "**Social media:** {SOCIALMEDIA}",
         "**Status:** {STATUS}"
       ],
-      "online": "\n**Gamemode:** {GAMEMODE}",
-      "footer": "{FOOTER} Requested by {AUTHOR}"
+      "online": "\n**Gamemode:** {GAMEMODE}"
     }
   },
   "info": {
-    "title": "{BOTNAME} - {GUILDNAME}",
-    "extra": [
-      "**🎱 8ball Plays:** {8BALLPLAYS}",
-      "**⚙️ 8ball Color:** {8BALLCOLOR}",
-      "**🎨 Color Plays:** {8COLORPLAYS}",
-      "**🔍 Trivia Plays:** {TRIVIAPLAYS}",
-      "**⚔️ Battles:** {BATTLES}",
-      "**Game/Entertainment Channel:** {GAMESCHANNEL}"
-    ],
+    "title": "{GUILDNAME}",
     "description": [
-      "__**Server Information**__ - **Prefix:** `{PREFIX}`",
-      "**User/Bots/Online**: {USERS}/{BOTS}/{ONLINE}",
-      "**Text/Voice Channels:** {TEXTCHANNELS}/{VOICECHANNELS}",
-      "**NSFW Text channels:** {NSFWTEXTCHANNELS}",
-      "**🏅 Server Level:** {SERVERLEVEL}",
-      "**📝 Custom Responses:** {CURRENTRESPONSES}/{TOTALRESPONSES}",
-      "**🗃️ Reply Type:** {REPLYTYPE}",
-      "**🌎 Language:** {LANGUAGE}",
+      "✏️ **Prefix:** `{PREFIX}`",
+      "📊 **User/Bots/Online**: {USERS}/{BOTS}/{ONLINE}",
+      "🏅 **Level:** {SERVERLEVEL}",
+      "🌎 **Language:** {LANGUAGE}",
+      "{PREMIUM}",
+      "👑 **Owner:** {OWNER}",
+      "🗓️ **Server Created:** {CREATED}",
+      "🕰️ **Bot Joined:** {JOINED}",
       "",
-      "**Owner:** {OWNER}",
-      "**Server Created:** {CREATED}",
-      "**Bot Joined:** {JOINED}",
+      "{MAGIC8} To view bot stats, type: `{PREFIX}botinfo`",
       "",
-      "To view bot stats, type: `{PREFIX}botinfo`",
-      "",
-      "**Useful Links:**",
+      "🔗 **Useful Links:**",
       "[Donate]({DONATELINK}) • [GitHub]({GITHUBLINK}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
     ]
   },
   "invite": {
-    "title": "Invite Magic8 to your server!",
+    "title": "Invite Magic8 Your Server",
     "description": [
-      "Hey {AUTHOR}! Do you like **Magic8**?, do you want your friends to know about **Magic8** too?",
+      "Hey {AUTHOR}, do you like {BOT} and want your friends to have it in their server too?",
       "",
-      "Invite the bot to your **game server** so all your friends can enjoy **Magic8's** unique features together!",
+      "Invite the bot to your server so all your friends can enjoy {BOT}'s unique features together!",
       "",
       "[{MAGIC8EMOJI} **Click Here!**]({INVITE})"
-    ],
-    "footer": "{FOOTER} Invite me!"
+    ]
   },
   "iq": {
     "superdumb": [
@@ -1109,14 +1083,14 @@
       "how?? how are you so stupid",
       "who raised you???",
       "i can no longer communicate with you"
-   ],
+    ],
     "dumb": [
       "haha you're stupid!",
       "you dumb lol",
       "really? dang what an L",
       "you stoopid",
       "ew i dont like dumb people"
-   ],
+    ],
     "average": [
       "you're an average guy!",
       "looks like you're normal",
@@ -1142,8 +1116,7 @@
       "**{TARGET}'s IQ Level:** {IQ} 🧠",
       "_ _",
       "{MESSAGE}"
-    ],
-    "footer": "{FOOTER} IQ Check"
+    ]
   },
   "kiss": {
     "success": {
@@ -1162,22 +1135,23 @@
       "description": [
         "{CROSS} **Unexpected error. Try again later!**"
       ]
-    },
-    "footer": "{FOOTER} Kiss"
+    }
   },
   "level": {
-    "title": "{BOTNAME} - Server Level",
+    "title": "{SERVERNAME} - Server Level",
     "description": [
-      "**Servers Levels** are made to adjust to members necessity based on **guild size**!",
-      "The **more members** you have, the **more custom responses** you can use!",
+      "**Servers Levels** are made to adjust to members necessity based on **member size**!",
+      "The larger your server, the more settings are available!",
       "",
-      "**__The levels requirements are:__**",
+      "**__Level Criteria:__**",
       "{LIST}",
       "",
       "**{GUILDNAME}** level is **{SERVERLEVEL}**",
-      "This server can set up to **{MAXRESPONSES}** custom responses."
-    ],
-    "footer": "{FOOTER} Invite more people!"
+      "",
+      "**Benefits:**",
+      "Up to **{MAXRESPONSES}** custom 8ball responses.",
+      "Up to **{MAXAUTOVOICECHANNELS}** Auto Voice Channels."
+    ]
   },
   "mcachievement": {
     "error": [
@@ -1194,21 +1168,14 @@
   },
   "mcskin": {
     "error": {
-      "enterusername": {
-        "description": [
-          "{CROSS} **Specify a username!**"
+      "enterusername": [
+          "{CROSS} **Please provide a username.**"
+        ],
+      "invalidusername": [
+          "{CROSS} **The player, {USER}, does not exist.**"
         ]
-      },
-      "notregistered": {
-        "description": [
-          "{CROSS} **Player '{USER}' doesn't exists!**"
-        ]
-      }
     },
-    "success": {
-      "title": "Skin owned by {USER}",
-      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
-    }
+    "success": "{USER}'s Minecraft Skin"
   },
   "meme": {
     "invalidtopic": {
@@ -1225,19 +1192,18 @@
       "description": [
         "{CHECK} **Random {TOPIC} meme**!"
       ]
-    },
-    "footer": "{FOOTER} Requested by {AUTHOR}"
+    }
   },
   "namehistory": {
     "error": {
       "enterusername": {
         "description": [
-          "{CROSS} **Specify a username!**"
+          "{CROSS} **Please provide a username.**"
         ]
       },
       "invalidusername": {
         "description": [
-          "{CROSS} **Player '{USER}' doesn't exists!**"
+          "{CROSS} **The player, {USER}, does not exist.**"
         ]
       }
     },
@@ -1261,8 +1227,7 @@
           "**Username history:**",
           "{HISTORY}"
         ]
-      },
-      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
+      }
     }
   },
   "neko": {
@@ -1327,24 +1292,23 @@
     }
   },
   "pat": {
-      "success": {
-        "self": {
-          "description": [
-            "{CHECK} **{USER} patted themselves!**"
-          ]
-        },
-        "other": {
-          "description": [
-            "{CHECK} **{USER} patted {TARGET}!**"
-          ]
-        }
-      },
-      "error": {
+    "success": {
+      "self": {
         "description": [
-          "{CROSS} **Unexpected error. Try again later!**"
+          "{CHECK} **{USER} patted themselves!**"
         ]
       },
-    "footer": "{FOOTER} Pat"
+      "other": {
+        "description": [
+          "{CHECK} **{USER} patted {TARGET}!**"
+        ]
+      }
+    },
+    "error": {
+      "description": [
+        "{CROSS} **Unexpected error. Try again later!**"
+      ]
+    }
   },
   "pornhubtext": {
     "error": {
@@ -1369,8 +1333,7 @@
       "description": [
         "{CROSS} **Unexpected error. Try again later!**"
       ]
-    },
-    "footer": "{FOOTER} Poke"
+    }
   },
   "say": {
     "messagerequired": [
@@ -1400,8 +1363,7 @@
       "description": [
         "{CROSS} **Unexpected error. Try again later!**"
       ]
-    },
-    "footer": "{FOOTER} Slap"
+    }
   },
   "slotmachine": {
     "alreadyplaying": "{CROSS} **{USER}, you are already playing somewhere else!**",
@@ -1418,51 +1380,61 @@
         "\u200b \u200b \u200b \u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b React with :joystick: to stop the machine!"
       ]
     },
-    "starting": [
-      "**__Slot Machine__**",
-      "**Player:** {USER}",
-      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
-      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
-      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
-      "",
-      "*Press the 🔴 to start the machine!*"
-    ],
-    "waiting": [
-      "**__Slot Machine__**",
-      "**Player:** {USER}",
-      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
-      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
-      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
-      "",
-      "{LOADING} *Pull the 🕹️ to stop it!*"
-    ],
-    "rollandstop": [
-      "**__Slot Machine__**",
-      "**Player:** {USER}",
-      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
-      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
-      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
-      "",
-      "{LOADING} *Stopping the slots...*"
-    ],
-    "lose": [
-      "**__Slot Machine__**",
-      "**Player:** {USER}",
-      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
-      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
-      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
-      "",
-      "{CROSS} You lost!"
-    ],
-    "win": [
-      "**__Slot Machine__**",
-      "**Player:** {USER}",
-      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
-      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
-      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
-      "",
-      "{CHECK} You won!"
-    ]
+    "starting": {
+      "title": "Slot Machine",
+      "description": [
+        "**Player:** {USER}",
+        "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+        "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+        "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+        "",
+        "*Press the 🔴 to start the machine!*"
+      ]
+    },
+    "waiting": {
+      "title": "Slot Machine",
+      "description": [
+        "**Player:** {USER}",
+        "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+        "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+        "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+        "",
+        "{LOADING} *Pull the 🕹️ to stop it!*"
+      ]
+    },
+    "rollandstop": {
+      "title": "Slot Machine",
+      "description": [
+        "**Player:** {USER}",
+        "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+        "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+        "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+        "",
+        "{LOADING} *Stopping the slots...*"
+      ]
+    },
+    "lose": {
+      "title": "Slot Machine",
+      "description": [
+        "**Player:** {USER}",
+        "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+        "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+        "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+        "",
+        "{CROSS} You lost!"
+      ]
+    },
+    "win": {
+      "title": "**__Slot Machine__**",
+      "description": [
+        "**Player:** {USER}",
+        "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+        "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+        "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+        "",
+        "{CHECK} You won!"
+      ]
+    }
   },
   "smug": {
     "success": {
@@ -1514,7 +1486,6 @@
     "timeout": "\\⏰ Couldn't detect any message in 1 minute. **Connection lost!**"
   },
   "ticket": {
-    "footer": "{FOOTER} Ticket",
     "help": {
       "title": "{BOTNAME} • Ticket Help Menu",
       "ticketnew": "\n`{PREFIX}ticket new` - Create a Ticket.",
@@ -1545,8 +1516,7 @@
           "`{PREFIX}ticket mode` - Ticket Creation Mode.",
           "`{PREFIX}ticket supportrole` - Manage Tickets Role."
         ]
-      },
-      "footer": "{BOTNAME} v{VERSION} • Requested by {AUTHOR}"
+      }
     },
     "disabled": "{CROSS} **Ticket system is disabled!** Use `{PREFIX}ticket toggle` to enable it!",
     "amount": {
@@ -1973,7 +1943,6 @@
       "description": [
         "{CROSS} **Unexpected error. Try again later!**"
       ]
-    },
-    "footer": "{FOOTER} Yomomma Jokes"
+    }
   }
 }
