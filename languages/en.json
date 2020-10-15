@@ -1313,7 +1313,7 @@
   "pornhubtext": {
     "error": {
       "nomessage": "{CROSS} **{USER}, please specify a message!**",
-      "nobar": "{CROSS} **{USER}, please make sure your message includes a `|`!**"
+      "nobar": "{CROSS} **{USER}, please separate the two sides with: `|`**"
     }
   },
   "poke": {
