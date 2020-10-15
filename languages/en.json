@@ -1053,7 +1053,6 @@
     "description": [
       "✏️ **Prefix:** `{PREFIX}`",
       "📊 **User/Bots/Online**: {USERS}/{BOTS}/{ONLINE}",
-      "🏅 **Level:** {SERVERLEVEL}",
       "🌎 **Language:** {LANGUAGE}",
       "{PREMIUM}",
       "👑 **Owner:** {OWNER}",
