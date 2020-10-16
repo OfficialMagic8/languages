@@ -8,6 +8,7 @@
     "",
     "*Need further assistance? Join our [Support Server]({INVITATION})!*"
   ],
+  "unexpectederror": "{CROSS} **{USER}, an unexpected error occured. Please try again in a few minutes...**",
   "ball": {
     "asksomething": "{CROSS} **You need to ask a yes/no question!**",
     "customresponses": [
@@ -464,17 +465,12 @@
     },
     "search": {
       "success": {
-        "title": "{TAG} searched for {CATEGORY} activities!",
+        "title": "{TAG} searched for `{CATEGORY}` activities!",
         "description": [
           "**Activity:** {ACTIVITY}",
           "**Total People:** {PEOPLE}"
         ]
       }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
     },
     "invalidcategory": {
       "description": [
@@ -501,7 +497,7 @@
       "🗓️ **Created on:** {CREATIONDATE}",
       "",
       "**Useful Links:**",
-      "[Donate]({DONATELINK}) • [GitHub]({GITHUB}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
+      "[Premium]({DONATELINK}) • [GitHub]({GITHUB}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
     ]
   },
   "cape": {
@@ -529,18 +525,7 @@
     "incorrectguild": "{CROSS} **{USER}, you must go to {CASINOGUILD} then {CASINOCHANNEL} to use this command!**",
     "incorrectchannel": "{CROSS} **{USER}, you must go to {CASINOCHANNEL} to use this command!**"
   },
-  "chucknorris": {
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    },
-    "success": {
-      "description": [
-        "{CHECK} **{JOKE}**"
-      ]
-    }
-  },
+  "chucknorris": {},
   "clapme": {
     "invalidmessage": {
       "description": [
@@ -549,12 +534,7 @@
     },
     "success": {
       "description": [
-        "{CHECK} {USER}: {MESSAGE}"
-      ]
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
+        "{CHECK} {MESSAGE}"
       ]
     }
   },
@@ -580,11 +560,6 @@
     "cannotyourself": {
       "description": [
         "{CROSS} **You cannot duel yourself ._.**"
-      ]
-    },
-    "unexpectederror": {
-      "description": [
-        "{CROSS} **{USER}, unexpected error. Try again later!**"
       ]
     },
     "game": {
@@ -657,11 +632,6 @@
       ],
       "other": [
         "{CHECK} **{USER} cuddled {TARGET}!**"
-      ]
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
       ]
     }
   },
@@ -805,9 +775,6 @@
     "guildnoicon": [
       "**{CROSS} This server doesn't have a guild icon!**"
     ],
-    "unknownerror": [
-      "**{CROSS} Unexpected error! Try again in a few minutes!**"
-    ],
     "success": [
       "{CHECK} **Fakeping successfully generated, {USER}!**",
       "**Direct link:** [Click here]({LINK})",
@@ -822,16 +789,13 @@
       "**Download and upload it as the guild icon!**"
     ],
     "updated": [
-      "{CHECK} {USER}, I updated the guild icon!"
+      "{CHECK} **{USER}, the guild icon was updated!**"
     ],
     "notupdated": [
-      "{CROSS} {USER}, I will not be updating the guild icon."
+      "{CROSS} **{USER}, the guild icon was not updated.**"
     ],
     "notupdatedperms": [
-      "{CROSS} {USER}, I need `MANAGE_GUILD` permission.."
-    ],
-    "notupdatederror": [
-      "**{CROSS} Unexpected error! Try again in a few minutes!**"
+      "{CROSS} **{USER}, please give {BOT} the `Manage Server` permission.**"
     ]
   },
   "feed": {
@@ -846,11 +810,6 @@
           "{CHECK} **{USER} fed {TARGET}!**"
         ]
       }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
     }
   },
   "hack": {
@@ -927,7 +886,6 @@
     "interrupted": "{CROSS} Hacking process for **{TARGET}** interrupted! **Content has been removed...**"
   },
   "hammer": {
-    "error": "{CROSS} **{USER}, unexpected error. Try again later!**",
     "alreadyplaying": "{CROSS} **{USER}, you are playing somewhere else!**",
     "starting": {
       "title": "{USERTAG} is testing his strength!",
@@ -990,28 +948,18 @@
           "{CHECK} **{USER} hugged {TARGET}!**"
         ]
       }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
     }
   },
   "hypixel": {
     "error": {
       "enterarguments": {
         "description": [
-          "{CROSS} **Provide a valid username or UUID!**"
+          "{CROSS} **Please provide a valid username or UUID.**"
         ]
       },
       "invalid": {
         "description": [
-          "{CROSS} **Provide a valid username or UUID!**"
-        ]
-      },
-      "connection": {
-        "description": [
-          "{CROSS} **Unexpected error. Try again later!**"
+          "{CROSS} **Please provide a valid username or UUID.**"
         ]
       },
       "neverplayedbefore": {
@@ -1062,7 +1010,7 @@
       "{MAGIC8} To view bot stats, type: `{PREFIX}botinfo`",
       "",
       "🔗 **Useful Links:**",
-      "[Donate]({DONATELINK}) • [GitHub]({GITHUBLINK}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
+      "[Premium]({DONATELINK}) • [GitHub]({GITHUBLINK}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
     ]
   },
   "invite": {
@@ -1129,11 +1077,6 @@
           "{CHECK} **{USER} kissed {TARGET}!**"
         ]
       }
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
     }
   },
   "level": {
@@ -1168,11 +1111,11 @@
   "mcskin": {
     "error": {
       "enterusername": [
-          "{CROSS} **Please provide a username.**"
-        ],
+        "{CROSS} **Please provide a username.**"
+      ],
       "invalidusername": [
-          "{CROSS} **The player, {USER}, does not exist.**"
-        ]
+        "{CROSS} **The player, {USER}, does not exist.**"
+      ]
     },
     "success": "{USER}'s Minecraft Skin"
   },
@@ -1180,11 +1123,6 @@
     "invalidtopic": {
       "description": [
         "{CROSS} **Couldn't find any meme about this..**"
-      ]
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
       ]
     },
     "success": {
@@ -1253,6 +1191,7 @@
       ],
       "unexpected": [
         "{CROSS} **Unexpected Error!**",
+        "",
         "-Please check that you're using the proper tag.",
         "-Example: `{PREFIX}ow Fyrlex#1801`",
         "-Only PC accounts accepted (for now)"
@@ -1778,11 +1717,6 @@
         "{CROSS} **You cannot play yourself ._.**"
       ]
     },
-    "unexpectederror": {
-      "description": [
-        "{CROSS} **{USER}, unexpected error. Try again later!**"
-      ]
-    },
     "game": {
       "loadingdescription": [
         "\u200b \u200b \u200b {CIRCLE} is ⭕ **&** {CROSS} is ❌",
@@ -1860,29 +1794,21 @@
     }
   },
   "trivia": {
-    "alreadyplaying": {
-      "description": [
-        "{CROSS} **You are already playing somewhere else!**"
-      ]
-    },
-    "errorcategory": {
-      "description": [
-        "{CROSS} **Invalid category!**",
-        "",
-        "**Available categories:**",
-        "{CATEGORIES}"
-      ]
-    },
-    "unexpected": {
-      "description": [
-        "{CROSS} **{USER}, there was an unexpected error. Please try again in a few minutes!**"
-      ]
-    },
-    "unexpectednew": {
-      "description": [
-        "{CROSS} **{USER}, an unexpected error occurred loading a new trivia. Game ended, your current streak is {STREAK} correct answers!**"
-      ]
-    },
+    "alreadyplaying": [
+      "{CROSS} **{USER}, you are already playing somewhere else!**"
+    ],
+    "invalidcategory": [
+      "{CROSS} **Invalid category!**",
+      "",
+      "**Available categories:**",
+      "{CATEGORIES}"
+    ],
+    "unexpected": [
+      "{CROSS} **{USER}, an unexpected error occured. Please try again in a few minutes...**"
+    ],
+    "unexpectednew": [
+      "{CROSS} **{USER}, an unexpected error occurred loading a new trivia. Game ended, your current streak is {STREAK} correct answers!**"
+    ],
     "error": {
       "description": [
         "{CROSS} **Unexpected error. Try again later!**"
@@ -1927,20 +1853,15 @@
       "{INFO} You can vote once every **12** hours!"
     ],
     "unexpectederror": [
-      "{CROSS} **Unexpected error. You can still check [here]({VOTELINK})**"
+      "{CROSS} **${USER}, an unexpected error occured. You can still vote [here]({VOTELINK}).**"
     ],
-    "total": "Total votes:",
-    "monthly": "Montly votes:"
+    "total": "Total Votes:",
+    "monthly": "Montly Votes:"
   },
   "yomomma": {
     "success": {
       "description": [
         "{CHECK} **{JOKE}**"
-      ]
-    },
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
       ]
     }
   }
