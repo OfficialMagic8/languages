@@ -8,7 +8,9 @@
     "",
     "*Need further assistance? Join our [Support Server]({INVITATION})!*"
   ],
-  "unexpectederror": "{CROSS} **{USER}, an unexpected error occured. Please try again in a few minutes...**",
+  "unexpectederror": [
+    "{CROSS} **{USER}, an unexpected error occured. Please try again in a few minutes...**"
+  ],
   "ball": {
     "asksomething": "{CROSS} **You need to ask a yes/no question!**",
     "customresponses": [
@@ -328,37 +330,24 @@
   "akinator": {
     "help": {
       "title": "{BOTNAME} - Akinator Help",
-      "user": {
-        "description": [
-          "**Available Settings:**",
-          "`{PREFIX}akinator start` - Start A New Game.",
-          "",
-          "*More Features Coming Soon...*",
-          "",
-          "{WARNING} This game is **under development**, it won't run perfectly!",
-          "Report bugs/ideas in our [Support server]({INVITATION})!"
-        ]
-      },
-      "administrator": {
-        "description": [
-          "**Available Settings:**",
-          "`{PREFIX}akinator start` - Start a new game.",
-          "",
-          "*More Features Coming Soon...*",
-          "",
-          "{WARNING} This game is **under development**, it won't run perfectly!",
-          "Report bugs/ideas in our [Support server]({INVITATION})!"
-        ],
-        "description2": [
-          "**Available Settings:**",
-          "`{PREFIX}akinator start` - Start a new game.",
-          "",
-          "*More Features Coming Soon...*",
-          "",
-          "{WARNING} This game is **under development**, it won't run perfectly!",
-          "Report bugs/ideas in our [Support server]({INVITATION})!"
-        ]
-      }
+      "user": [
+        "**Available Settings:**",
+        "`{PREFIX}akinator start` - Start A New Game.",
+        "",
+        "*More Features Coming Soon...*",
+        "",
+        "{WARNING} This game is **under development**, it won't run perfectly!",
+        "Report bugs/ideas in our [Support server]({INVITATION})!"
+      ],
+      "administrator": [
+        "**Available Settings:**",
+        "`{PREFIX}akinator start` - Start a new game.",
+        "",
+        "*More Features Coming Soon...*",
+        "",
+        "{WARNING} This game is **under development**, it won't run perfectly!",
+        "Report bugs/ideas in our [Support server]({INVITATION})!"
+      ]
     },
     "disabledgame": "{CROSS} **This game is disabled!** Use `{PREFIX}akinator toggle`",
     "invalidchannel": "{CROSS} **Incorrect channel!** Go to {AKINATORCHANNEL} to use **Akinator**!",
@@ -767,20 +756,21 @@
   },
   "fakeping": {
     "cooldown": [
-      "{CROSS} Woops! This server is still on cooldown!",
+      "{CROSS} **Fake-Ping On Cooldown",
       "{USER} generated a fakeping {TIME} ago.",
       "",
-      "❄ You can generate a new one in {LEFT}."
+      "{INFO} You can generate a new one in {LEFT}."
     ],
     "guildnoicon": [
       "**{CROSS} This server doesn't have a guild icon!**"
     ],
     "success": [
       "{CHECK} **Fakeping successfully generated, {USER}!**",
-      "**Direct link:** [Click here]({LINK})",
       "",
-      "**Do you want to update the guild icon?**",
-      "{LOADING} _You have 30 seconds to decide!_"
+      "**Old Image:** [here]({OLD})",
+      "**New Image:** [here]({LINK})",
+      "",
+      "{LOADING} Please select a choice within 30 seconds"
     ],
     "successmanual": [
       "{CHECK} **Fakeping successfully generated, {USER}!**",
