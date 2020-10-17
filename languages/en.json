@@ -6,7 +6,7 @@
     "**{USER}, my prefix for the server is:** {PREFIX}",
     "Type `{PREFIX}help` or `{PREFIX}help <command>` for helpful information.",
     "",
-    "*Need further assistance? Join our [Support Server]({INVITATION})!*"
+    "*Need further assistance? Join our [Support Server]({INVITATION}) or check out our [Guide]({GUIDE})!*"
   ],
   "unexpectederror": [
     "{CROSS} **{USER}, an unexpected error occured. Please try again in a few minutes...**"
@@ -409,9 +409,9 @@
     }
   },
   "belike": {
-    "provideyourname": "{CROSS} **You need to specify at least your name.**",
+    "provideyourname": "{CROSS} **Please provide a name.**",
     "description": [
-      "{CHECK} **Here is your image {AUTHOR}!**"
+      "{CHECK} **Be Like {AUTHOR}**"
     ]
   },
   "bigemoji": {
@@ -516,16 +516,12 @@
   },
   "chucknorris": {},
   "clapme": {
-    "invalidmessage": {
-      "description": [
-        "{CROSS} **Please enter a valid message!**"
-      ]
-    },
-    "success": {
-      "description": [
-        "{CHECK} {MESSAGE}"
-      ]
-    }
+    "invalidmessage": [
+      "{CROSS} **Please provide a message.**"
+    ],
+    "success": [
+      "{CHECK} {USER}: {MESSAGE}"
+    ]
   },
   "clear": {
     "enteramount": "{CROSS} **{USER}, please enter an number of messages to delete!**",
@@ -765,16 +761,18 @@
       "**{CROSS} This server doesn't have a guild icon!**"
     ],
     "success": [
-      "{CHECK} **Fakeping successfully generated, {USER}!**",
+      "{CHECK} **Fakeping Successfully Generated**",
       "",
       "**Old Image:** [here]({OLD})",
-      "**New Image:** [here]({LINK})",
+      "**New Image:** [here]({NEW})",
       "",
       "{LOADING} Please select a choice within 30 seconds"
     ],
     "successmanual": [
-      "{CHECK} **Fakeping successfully generated, {USER}!**",
-      "**Direct link:** [Click here]({LINK})",
+      "{CHECK} **Fakeping Successfully Generated**",
+      "",
+      "**Old Image:** [here]({OLD})",
+      "**New Image:** [here]({NEW})",
       "",
       "**Download and upload it as the guild icon!**"
     ],
