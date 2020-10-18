@@ -471,9 +471,8 @@
     }
   },
   "botinfo": {
-    "title": "{BOTNAME} - Bot information",
+    "title": "{BOTNAME} - Bot Information",
     "description": [
-      "__**Statistics**__",
       "📚 **Total Guilds:** {GUILDS}",
       "👥 **Total Users:** {USERS}",
       "💬 **Total Channels:** {CHANNELS} (\\🔞{NSFWCHANNELS})",
@@ -486,7 +485,7 @@
       "🗓️ **Created on:** {CREATIONDATE}",
       "",
       "**Useful Links:**",
-      "[Premium]({DONATELINK}) • [GitHub]({GITHUB}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
+      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
     ]
   },
   "cape": {
@@ -498,12 +497,12 @@
       },
       "invalidusername": {
         "description": [
-          "{CROSS} **The player, \"{USER}\", does not exist.**"
+          "{CROSS} **The player, `{USER}`, does not exist.**"
         ]
       },
       "nocape": {
         "description": [
-          "{CROSS} **The player, \"{USER}\" doesn't have a cape!**"
+          "{CROSS} **The player, `{USER}` doesn't have a cape!**"
         ]
       }
     },
@@ -998,7 +997,7 @@
       "{MAGIC8} To view bot stats, type: `{PREFIX}botinfo`",
       "",
       "🔗 **Useful Links:**",
-      "[Premium]({DONATELINK}) • [GitHub]({GITHUBLINK}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
+      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
     ]
   },
   "invite": {
@@ -1786,7 +1785,7 @@
       "{CROSS} **{USER}, you are already playing somewhere else!**"
     ],
     "invalidcategory": [
-      "{CROSS} **Invalid category!**",
+      "{CROSS} **Invalid Category**",
       "",
       "**Available categories:**",
       "{CATEGORIES}"
