@@ -463,7 +463,7 @@
     },
     "invalidcategory": {
       "description": [
-        "{CROSS} **{USER}, please provide a valid category.**",
+        "{CROSS} **Invalid Category**",
         "",
         "**Available Categories:**",
         "{CATEGORIES}"
@@ -502,7 +502,7 @@
       },
       "nocape": {
         "description": [
-          "{CROSS} **The player, `{USER}` doesn't have a cape!**"
+          "{CROSS} **The player, `{USER}` does not have a cape.**"
         ]
       }
     },
@@ -995,6 +995,7 @@
       "🕰️ **Bot Joined:** {JOINED}",
       "",
       "{MAGIC8} To view bot stats, type: `{PREFIX}botinfo`",
+      "🌐 To view server media, type: `{PREFIX}media`",
       "",
       "🔗 **Useful Links:**",
       "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
@@ -1132,7 +1133,7 @@
       }
     },
     "success": {
-      "title": "Name history for {USER}",
+      "title": "{USER}'s Name History",
       "unique": {
         "description": [
           "**Username: ** {USERNAME}",
@@ -1148,7 +1149,7 @@
           "**Username: ** {USERNAME}",
           "**UUID:** {UUID}",
           "",
-          "**Username history:**",
+          "**Username History:**",
           "{HISTORY}"
         ]
       }
@@ -1293,7 +1294,7 @@
   "slotmachine": {
     "alreadyplaying": "{CROSS} **{USER}, you are already playing somewhere else!**",
     "cannotbegreater": "{CROSS} **{USER}, you cannot provide a value greater than your current balance!**",
-    "errorplaying": "{CROSS} **{USER}, **there was an error letting you play slot machine!**",
+    "errorplaying": "{CROSS} **{USER}, **there was an when you were playing slot machine!**",
     "invalidbet": "{CROSS} **{USER}, please provide a valid number of coins to bet!**",
     "extras": {
       "playing": [
@@ -1784,11 +1785,29 @@
     "alreadyplaying": [
       "{CROSS} **{USER}, you are already playing somewhere else!**"
     ],
+    "categories": [
+      "{INFO} **Trivia Categories**",
+      "",
+      "**Available Categories:**",
+      "{CATEGORIES}"
+    ],
     "invalidcategory": [
       "{CROSS} **Invalid Category**",
       "",
-      "**Available categories:**",
+      "**Available Categories:**",
       "{CATEGORIES}"
+    ],
+    "invaliddifficulty": [
+      "{CROSS} **Invalid Difficulty**",
+      "",
+      "**Please provide one of the following difficulties:**",
+      "{DIFFICULTIES}"
+    ],
+    "invaliddifficulty2": [
+      "{CROSS} **Invalid Difficulty**",
+      "",
+      "**Please provide one of the following difficulties and then a category:**",
+      "{DIFFICULTIES}"
     ],
     "unexpected": [
       "{CROSS} **{USER}, an unexpected error occured. Please try again in a few minutes...**"
@@ -1796,13 +1815,20 @@
     "unexpectednew": [
       "{CROSS} **{USER}, an unexpected error occurred loading a new trivia. Game ended, your current streak is {STREAK} correct answers!**"
     ],
-    "error": {
-      "description": [
-        "{CROSS} **Unexpected error. Try again later!**"
-      ]
-    },
+    "info": [
+      "{INFO} **Trivia Commands**",
+      "",
+      "**Options:**",
+      "`{PREFIX}trivia start` - Random Categories and Increasing Difficulty",
+      "`{PREFIX}trivia <difficulty>` - Random Categories With Specific Difficulty",
+      "`{PREFIX}trivia any <category>` - Specific Category and Random Difficulty",
+      "`{PREFIX}trivia <difficulty> <category>` - Specific Category and Difficulty",
+      "`{PREFIX}trivia categories` - View Available Categories",
+      "",
+      "{INFO} If a difficulty is not specified, it will increase as the streak increases."
+    ],
     "trivia": {
-      "title": "{USER} is playing trivia!",
+      "title": "{USER} is playing Trivia!",
       "subcategory": "\n**Subcategory:** {SUBCATEGORY}",
       "description": [
         "**Category:** {CATEGORY}{SUBCATEGORYSTRING}",
@@ -1811,14 +1837,23 @@
         "{QUESTION}",
         "**Options:**",
         "{OPTIONS}",
-        "**Please type your answer or use the number of the answer!**\nYou have 20 seconds.."
+        "",
+        "**Type your answer or use the number of the answer!**\nYou have 20 seconds.."
       ]
     },
     "correct": [
-      "{CHECK} **{USER}, you answered correctly!** Next question in **10** seconds! Streak: **{STREAK}**"
+      "{CHECK} **{USER} Correct**",
+      "",
+      "**Answer:** {ANSWER}",
+      "**Streak:** {STREAK}",
+      "*Next question in 10 seconds!*"
     ],
     "incorrect": [
-      "{CROSS} **{USER}, the answer was `{CORRECTANSWER}`!** Streak: **{STREAK}**"
+      "{CROSS} **{USER} Incorrect**",
+      "",
+      "**Correct:** {CORRECTANSWER}",
+      "**Your Answer:** {INCORRECTANSWER}",
+      "**Streak:** {STREAK}"
     ],
     "timeout": [
       "⏰ **{USER} time is up!** Your streak was: **{STREAK}**"
@@ -1840,7 +1875,7 @@
       "{INFO} You can vote once every **12** hours!"
     ],
     "unexpectederror": [
-      "{CROSS} **${USER}, an unexpected error occured. You can still vote [here]({VOTELINK}).**"
+      "{CROSS} **{USER}, an unexpected error occured. You can still vote [here]({VOTELINK}).**"
     ],
     "total": "Total Votes:",
     "monthly": "Montly Votes:"
