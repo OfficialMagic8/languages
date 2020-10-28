@@ -3,7 +3,7 @@
   "flag": "🇺🇸",
   "it": "{CROSS} **{USER}, please provide a valid member or ID.**",
   "mention": [
-    "**{USER}, my prefix for the server is:** {PREFIX}",
+    "**{USER}, my prefix for the server is:** `{PREFIX}`",
     "Type `{PREFIX}help` or `{PREFIX}help <command>` for helpful information.",
     "",
     "*Need further assistance? Join our [Support Server]({INVITATION}) or check out our [Guide]({GUIDE})!*"
@@ -471,14 +471,18 @@
     }
   },
   "botinfo": {
+    "extra": [
+      "",
+      "📦 **RAM:** {RAM}",
+      "🖥️ **\\*CPU:** {USAGE}% (15m average)"
+    ],
     "title": "{BOTNAME} - Bot Information",
     "description": [
-      "📚 **Total Guilds:** {GUILDS}",
-      "👥 **Total Users:** {USERS}",
-      "💬 **Total Channels:** {CHANNELS} (\\🔞{NSFWCHANNELS})",
+      "📚 **Guilds:** {GUILDS}",
+      "👥 **Users:** {USERS}",
       "",
       "⏲️ **Uptime:** {UPTIME}",
-      "📦 **RAM:** {RAM}",
+      "🛰️ **Ping:** {PING}",
       "",
       "👑 **Owner:** {OWNER}",
       "💎 **Head Developer:** {HEADDEVELOPER}",
@@ -1707,58 +1711,48 @@
     },
     "game": {
       "loadingdescription": [
-        "\u200b \u200b \u200b {CIRCLE} is ⭕ **&** {CROSS} is ❌",
+        "⭕ **- {CIRCLE}**",
+        "❌ **- {CROSS}**",
         "\u200b ",
         "{GAME}",
         "\u200b ",
-        "{LOADING} _Loading game... Please wait._"
+        "{LOADING} _Please wait for the game to load..._"
       ],
       "description": [
-        "\u200b \u200b \u200b {CIRCLE} is ⭕ **&** {CROSS} is ❌",
+        "⭕ **- {CIRCLE}**",
+        "❌ **- {CROSS}**",
         "\u200b ",
-        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b **{TURN}, your turn!**",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{TURN}**, your turn!",
         "\u200b ",
         "{GAME}",
         "",
         "{LOADING} _You have **10 seconds** to move..._"
       ],
       "botdescription": [
-        "\u200b \u200b \u200b {CIRCLE} is ⭕ **&** {CROSS} is ❌",
+        "⭕ **- {CIRCLE}**",
+        "❌ **- {CROSS}**",
         "\u200b ",
-        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b **{TURN}, your turn!**",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{TURN}**, your turn!",
         "\u200b ",
         "{GAME}",
         "",
         "{LOADING} _{TURN} is thinking its move..._"
       ],
-      "autodescription": [
-        "\u200b \u200b \u200b {CIRCLE} is ⭕ **&** {CROSS} is ❌",
-        "\u200b ",
-        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{LASTTURN} didn't move!**",
-        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **A random move was made.**",
-        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{TURN}, your turn!**",
-        "\u200b ",
-        "{GAME}",
-        "",
-        "{LOADING} _You have **10 seconds** to move..._"
-      ],
       "drawdescription": [
-        "\u200b \u200b \u200b {CIRCLE} is ⭕ **&** {CROSS} is ❌",
+        "⭕ **- {CIRCLE}**",
+        "❌ **- {CROSS}**",
         "\u200b ",
-        "\u200b  \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b ** 📢 :regional_indicator_d: :regional_indicator_r: :regional_indicator_a: :regional_indicator_w: :bangbang::bangbang:**",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {CROSS2} **DRAW** {CROSS2}",
         "\u200b ",
-        "{GAME}",
-        "",
-        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b **_Thanks for playing!_ 🎲**"
+        "{GAME}"
       ],
       "winnerdescription": [
-        "\u200b \u200b \u200b {CIRCLE} is ⭕ **&** {CROSS} is ❌",
+        "⭕ **- {CIRCLE}**",
+        "❌ **- {CROSS}**",
         "\u200b ",
-        "\u200b  \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **🎉 {WINNER} wins! 🎉**",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{WINNER}** wins! 🎉 ",
         "\u200b ",
-        "{GAME}",
-        "",
-        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **_Thanks for playing!_ 🎲**"
+        "{GAME}"
       ]
     }
   },
