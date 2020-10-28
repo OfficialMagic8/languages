@@ -11,10 +11,4 @@
 
 Please only translate files to your known language if you are already **fluent** in English. This way, you can understand the grammar and make proper changes.
 
-## Complete
-> - English
-
-### In Progress
-> - French
-> - Italian
-> - Spanish
+There are still quite a few commands that do not support translations. It is tedious work that will be done when the developers have the time to do so.
