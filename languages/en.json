@@ -12,7 +12,7 @@
     "{CROSS} **{USER}, an unexpected error occured. Please try again in a few minutes...**"
   ],
   "ball": {
-    "asksomething": "{CROSS} **You need to ask a yes/no question!**",
+    "asksomething": "{CROSS} **{USER}, please ask a yes or no question.**",
     "customresponses": [
       "{CROSS} **Custom responses are enabled but none were added!**",
       "Please contact an administrator."
@@ -489,7 +489,7 @@
       "🗓️ **Created on:** {CREATIONDATE}",
       "",
       "**Useful Links:**",
-      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
+      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Support Server]({SUPPORTSERVER})"
     ]
   },
   "cape": {
@@ -999,10 +999,7 @@
       "🕰️ **Bot Joined:** {JOINED}",
       "",
       "{MAGIC8} To view bot stats, type: `{PREFIX}botinfo`",
-      "🌐 To view server media, type: `{PREFIX}media`",
-      "",
-      "🔗 **Useful Links:**",
-      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Support Server]({SUPPORTSERVER}) • [Vote]({VOTELINK})"
+      "🌐 To view server media, type: `{PREFIX}media`"
     ]
   },
   "invite": {
@@ -1414,265 +1411,6 @@
     "youhungup": "\\🔴 **You hung up the call!**",
     "otherhungup": "\\🔴 **The other person hung up the call!**",
     "timeout": "\\⏰ Couldn't detect any message in 1 minute. **Connection lost!**"
-  },
-  "ticket": {
-    "help": {
-      "title": "{BOTNAME} • Ticket Help Menu",
-      "ticketnew": "\n`{PREFIX}ticket new` - Create a Ticket.",
-      "user": {
-        "description": [
-          "Need help using ticket system? Don't worry, here you have!",
-          "",
-          "**Available commands:**{TICKETNEW}",
-          "`{PREFIX}ticket close` - Close a Ticket."
-        ]
-      },
-      "administrator": {
-        "description": [
-          "Need help using ticket system? Don't worry, here you have!",
-          "",
-          "**Available Commands:**{TICKETNEW}",
-          "`{PREFIX}ticket close` - Close a Ticket.",
-          "",
-          "**Administrator settings:**",
-          "`{PREFIX}ticket toggle` - Enable/Disable Ticket System",
-          "`{PREFIX}ticket setup` - Ticket setup menu.",
-          "`{PREFIX}ticket setmaxtickets` - Set max number of tickets...",
-          "`{PREFIX}ticket setchannel` - Restrict tickets to a channel.",
-          "`{PREFIX}ticket logchannel` - Tickets Logs Channel.",
-          "`{PREFIX}ticket category` - Category To Hold Tickets.",
-          "`{PREFIX}ticket reactionmessage` - Reaction Message ID.",
-          "`{PREFIX}ticket newmessage` - Message Sent In New Ticket Channel.",
-          "`{PREFIX}ticket mode` - Ticket Creation Mode.",
-          "`{PREFIX}ticket supportrole` - Manage Tickets Role."
-        ]
-      }
-    },
-    "disabled": "{CROSS} **Ticket system is disabled!** Use `{PREFIX}ticket toggle` to enable it!",
-    "amount": {
-      "error": [
-        "{CROSS} **Enter a valid amount of max tickets.**"
-      ],
-      "errorbounds": [
-        "{CROSS} **Tickets amount can't be lower than 0 or greater than 20.**"
-      ],
-      "success": [
-        "{CHECK} **You selected {AMOUNT} as max ticket amount!**"
-      ]
-    },
-    "new": {
-      "notsetup": [
-        "{CROSS} **Tickets are not setup correctly. Contact an administrator!**"
-      ],
-      "errorcreating": [
-        "{CROSS} **Error creating your ticket. Contact an administrator!**"
-      ],
-      "maxtickets": [
-        "{CROSS} **You cannot have more than {AMOUNT} tickets.\nPlease close them before opening a new one!**"
-      ],
-      "newticketdefault": [
-        "{CHECK} **{USER} this is your new ticket!**"
-      ],
-      "created": {
-        "title": "Ticket created!",
-        "description": [
-          "**Ticket owner:** {CREATOR} ({CREATORID})",
-          "**Creation date:** {CREATIONDATE}",
-          "**Ticket:** {TICKETCHANNEL} ({TICKETCHANNELID})"
-        ]
-      }
-    },
-    "close": {
-      "closing": "{CROSS} **Closing ticket..**",
-      "alreadyclosing": [
-        "{CROSS} **This ticket is already being closed by {USER} ({ID})**",
-        "We are creating the transcription of the ticket. Please be patient!",
-        "",
-        "{INFO} This can take up to 10 seconds!"
-      ],
-      "errorclosing": "",
-      "closed": {
-        "title": "Ticket closed!",
-        "description": [
-          "**Solved by:** {SOLVER} ({SOLVERID})",
-          "**Ticket owner:** {CREATOR} ({CREATORID})",
-          "**Creation date:** {CREATIONDATE} ({CREATIONAGO} ago)"
-        ],
-        "descriptionerror": [
-          "**Solved by:** {SOLVER} ({SOLVERID})",
-          "**Ticket owner:** {CREATOR} ({CREATORID})",
-          "**Creation date:** {CREATIONDATE} ({CREATIONAGO} ago)",
-          "**Transcription:** Couldn't create transcription."
-        ]
-      }
-    },
-    "setlogchannel": {
-      "selected": [
-        "{CHECK} **You selected {CHANNEL} as the Ticket Logs Channel!**",
-        "",
-        "{INFO} To disable ticket logs, type: `{PREFIX}ticket logchannel clear`"
-      ],
-      "cleared": [
-        "{CROSS} **You removed channel restriction for tickets!**",
-        "",
-        "{INFO} To enable ticket logs, type: `{PREFIX}ticket logchannel`"
-      ]
-    },
-    "setchannel": {
-      "selected": [
-        "{CHECK} **You restricted tickets to {CHANNEL} channel!**",
-        "",
-        "Type the following command to **remove restriction**. `{PREFIX}ticket setchannel clear`",
-        "",
-        "{INFO} `{PREFIX}ticket` will only be available in that channel for members without `ADMINISTRATOR`."
-      ],
-      "cleared": [
-        "{CROSS} **You removed channel restriction for tickets!**",
-        "",
-        "Type the following command in a prefered channel to **restrict** tickets to that channel. `{PREFIX}ticket setchannel`",
-        "",
-        "{INFO} `{PREFIX}ticket` will only be available in that channel for members without `ADMINISTRATOR`."
-      ]
-    },
-    "setcategory": {
-      "error": [
-        "{CROSS} **Tickets Category ID**",
-        "",
-        "Usage: `{PREFIX}tickets category <ID>`",
-        "",
-        "{INFO} Created tickets are placed inside this category."
-      ],
-      "selected": [
-        "{CHECK} **You selected `{CHANNEL}` as ticket category!**",
-        "",
-        "**Magic8** will now create tickets in that category!",
-        "",
-        "{INFO} Make sure **Magic8** has following permissions: `MANAGE_CHANNELS`,`ADD_REACTIONS`,`VIEW_CHANNEL`,`SEND_MESSAGES`,`MANAGE_MESSAGES`,`EMBED_LINKS`,`READ_MESSAGE_HISTORY` and `USE_EXTERNAL_EMOJIS`."
-      ]
-    },
-    "toggle": {
-      "enabled": [
-        "{CHECK} **Tickets have been enabled!**",
-        "",
-        "{INFO} Make sure you run the command `{PREFIX}ticket setup` to **finish** ticket system **installation** process and check progress!"
-      ],
-      "disabled": [
-        "{CROSS} **Tickets have been disabled!**",
-        "",
-        "{INFO} Use the command again to **enable it**. Make sure you run the command `{PREFIX}ticket setup` to **finish** ticket system **installation** process and check progress!"
-      ]
-    },
-    "setsupportrole": {
-      "error": [
-        "{CROSS} **Support Role ID**",
-        "",
-        "Usage: `{PREFIX}tickets supportrole <ID>`",
-        "",
-        "{INFO} Get the Role ID by going to your **Role Settings**, right click the Role, Copy ID."
-      ],
-      "selected": [
-        "{CHECK} **You selected {SUPPORTROLE} as the Support Role!**",
-        "",
-        "{INFO} All users with this role will be able to access all tickets created!"
-      ]
-    },
-    "setmessage": {
-      "error": [
-        "{CROSS} **You need to specify a message!**",
-        "",
-        "**Available Placeholders:**",
-        "{SUPPORTROLE} - Support Role (If Mentionable)",
-        "{USER} - Ticket Owner (User)",
-        "{EVERYONE} - Mention Everyone In Channel (Requires Permission)",
-        "{HERE} - Mention Online In Channel (Requires Permission)",
-        "",
-        "{INFO} This message will be sent in the **new channel** when a ticket is created!"
-      ],
-      "selected": [
-        "{CHECK} **You selected the message for new tickets!**",
-        "",
-        "**Message:**",
-        "{MESSAGE}",
-        "",
-        "{INFO} This message will be sent in the **new channel** when a ticket is created!"
-      ]
-    },
-    "setmessageid": {
-      "error": [
-        "{CROSS} **You need to specify a valid message ID!**",
-        "",
-        "{INFO} This command must be used in the channel where the message is!",
-        "{WARNING} Make sure **Magic8** has permission to manage messages in that channel!"
-      ],
-      "nopermission": [
-        "{CROSS} **Woops! I don't have permission to add reactions!**",
-        "",
-        "Link to ticket message: [Click here]({MESSAGELINK})",
-        "",
-        "{INFO} This message will be the one the members must react to open tickets!",
-        "{WARNING} Make sure **Magic8** has permission to manage messages in that channel!"
-      ],
-      "selected": [
-        "{CHECK} **You selected the reaction message for new tickets!**",
-        "",
-        "Link to ticket message: [Click here]({MESSAGELINK})",
-        "",
-        "{INFO} This message will be the one the members must react to open tickets!",
-        "{WARNING} Make sure **Magic8** has permission to manage messages in that channel!"
-      ]
-    },
-    "setmode": {
-      "error": [
-        "{CROSS} **Ticket Creation Mode**",
-        "",
-        "**Available Modes:**",
-        "command - Type `{PREFIX}ticket new` To Create a Ticket.",
-        "reaction - Click a Reaction To Create a Ticket.",
-        "",
-        "{INFO} Both modes cannot be enabled at the same time.",
-        "{WARNING} Reaction mode requires additional setup! Use `{PREFIX}ticket setup`"
-      ],
-      "selected": [
-        "{CHECK} **You selected `{MODE}` mode for tickets!**",
-        "",
-        "{INFO} Use `{PREFIX}ticket mode` for more **information**!"
-      ]
-    },
-    "setup": {
-      "enabled": "{CHECK} **All correct. Ticket system is being enabled!**",
-      "disabled": "{CROSS} **Something is missing. Check progress!**",
-      "description": [
-        "{MAGIC8} Welcome to **Ticket System Setup**.",
-        "I will help you to **enable** system in your server.",
-        "",
-        "1) Enable tickets with `{PREFIX}tickets toggle`",
-        "2) Select Ticket Category with `{PREFIX}tickets category [ID]`",
-        "3) Select Support Role with `{PREFIX}tickets supportrole [ID]`",
-        "4) Select ticket mode with `{PREFIX}tickets setmode [mode]`",
-        "5) Select ticket channel with `{PREFIX}tickets setchannel`",
-        "6) Select ticket channel for logs with `{PREFIX}tickets setlogchannel`",
-        "7) Select max ticket amount with `{PREFIX}tickets setmaxtickets [amount]`",
-        "**Only if Reaction mode:**",
-        "8) Select ticket reaction message ID with `{PREFIX}tickets reactionmessage [ID]`",
-        "",
-        "**Progress:**",
-        "{TICKETSTATUS} Enable tickets.",
-        "{CHECK} Ticket mode selected.",
-        "{TICKETCATEGORYSTATUS} Select a category for tickets.",
-        "{SUPPORTROLESTATUS} Select a role for tickets support.",
-        "{LOGCHANNELSTATUS} Select channel for tickets logs.",
-        "{CHANNELSTATUS} Select channel for tickets usage.",
-        "{MESSAGESTATUS} Select the message for new tickets.",
-        "",
-        "**Only if Reaction mode:**",
-        "{REACTIONMESSAGESTATUS} Select the message ID for tickets.",
-        "",
-        "**Current system status**",
-        "{GENERALSTATUS}",
-        "",
-        "{CROSS} = Missing {CHECK} = Correct {RETURN} = Optional"
-      ]
-    }
   },
   "tickle": {
     "success": {
