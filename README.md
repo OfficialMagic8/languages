@@ -9,6 +9,10 @@
 - Do **NOT** use a translating service
 - Do **NOT** change the meaning of translations. We will review your submission(s).
 
+**Perks:**
+- Language Contributor Role in our [Support Server](https://discord.gg/bUUggyCjvp)
+- Possible: Free Premium I, Free Premium II or a Promotion 
+
 Please only translate files to your known language if you are already **fluent** in English. This way, you can understand the grammar and make proper changes.
 
 There are still quite a few commands that do not support translations. It is tedious work that will be done when the developers have the time to do so.
