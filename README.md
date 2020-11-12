@@ -1,6 +1,6 @@
 # Magic8 Languages
 
-**The en.json file is updated every time a feature's multilingual support is added/edited. Review updates [here](https://github.com/Fyrlex/Magic8/commits/master/languages/en.json) to add the same content to your language file.**
+**The en.json file is updated every time a feature's multilingual support is added/edited. Review updates [here](https://github.com/Fyrlex/Magic8-Languages/commits/master/languages/en.json) to add the same content to your language file.**
 
 **Want to collaborate? Add your own language with all translations and we will add it to the available translations!**
 - Copy the en.json file
