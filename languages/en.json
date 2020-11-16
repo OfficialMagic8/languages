@@ -920,7 +920,7 @@
   },
   "mcskin": {
     "enterusername": "{CROSS} **{USER}, please provide a valid username or UUID.**",
-    "invalidusername": "{CROSS} **{USER}, the player, `{TOSEARCH}`, does not exist.**",
+    "invalid": "{CROSS} **{USER}, the player, `{TOSEARCH}`, does not exist.**",
     "success": "{USER}'s Minecraft Skin"
   },
   "namehistory": {
@@ -996,7 +996,7 @@
     "other": "{CHECK} **{USER} smudged {TARGET}!**"
   },
   "tickle": {
-    "self": "{CHECK} **{USER} tickled baka!**",
+    "self": "{CHECK} **{USER} tickled themselves!**",
     "other": "{CHECK} **{USER} tickled {TARGET}!**"
   },
   "bored": {
@@ -1232,6 +1232,127 @@
     "messagerequired": "{CROSS} **{USER}, please provide a message.**",
     "permissionrequired": "{CROSS} **{USER}, please give {BOT} permissions to send messages in {CHANNEL}.**",
     "tip": "Tip: Use {EVERYONE} and {HERE} as placeholders if needed"
+  },
+  "antiping": {
+    "upgrade": {
+      "singleortriple": "**Single or Triple Package**",
+      "triple": "**Triple Package**",
+      "description": "Please upgrade to the [{OPTIONS]({DONATELINK}) to disable pings for more users.",
+      "cannotupgrade": "Anti-Ping users cannot be increased through packages anymore."
+    },
+    "reachedlimit": [
+      "{CROSS} **Anti-Ping User Limit Reached:** `{MAX}`",
+      "",
+      "{UPGRADE}",
+      "",
+      "**Anti-Ping Users:**",
+      "{USERS}"
+    ],
+    "cannotbebot": "{CROSS} **Hey, you can't turn off my pings!**",
+    "targetalreadydisabled": "{CROSS} **{TARGET}'s pings are already disabled.**",
+    "nowdisabled": "{CHECK} **{TARGET}'s pings are now disabled.**",
+    "nousers": [
+      "{CROSS} **No Anti-Ping Users**",
+      "",
+      "{INFO} To add a user, type: `{PREFIX}ap adduser`"
+    ],
+    "removeall": "{CHECK} **Removed All Anti-Ping Users**",
+    "invaliduser": [
+      "{CROSS} **Invalid User Provided**",
+      "",
+      "Please provide a valid server member or ID.",
+      "",
+      "{INFO} To remove all users, type: `{PREFIX}ap removeuser all`"
+    ],
+    "alreadyenabled": "{CROSS} **{TARGET}'s pings are already enabled.**",
+    "nowenabled": "{CHECK} **{TARGET}'s pings are now enabled.**",
+    "messageinfotitle": "{BOTNAME} - Anti-Ping Message",
+    "messageinfo": [
+      "This message will reply to members who tag an Anti-Ping user.",
+      "",
+      "**Current Message:**",
+      "```{CURRENTMESSAGE}```",
+      "",
+      "{INFO} Placeholders: {USER} - Member who mentioned an Anti-Ping user."
+    ],
+    "messageupdated": [
+      "{CHECK} **Anti-Ping Message Updated**",
+      "",
+      "**Old Message:**",
+      "```{OLDMESSAGE}```",
+      "",
+      "**New Message:**",
+      "```{NEWMESSAGE}```"
+    ],
+    "none": "*none*",
+    "noroles": [
+      "{CROSS} **No Anti-Ping Users**",
+      "",
+      "{INFO} To add a user, type: `{PREFIX}ap adduser`"
+    ],
+    "invalidrole": [
+      "{CROSS} **Invalid Role Provided**",
+      "",
+      "**Available Roles:**",
+      "{ROLES}"
+    ],
+    "invalidbypassrole": [
+      "{CROSS} **Invalid Role Provided**",
+      "",
+      "**Available Bypass Roles",
+      "{BYPASSROLES}"
+    ],
+    "alreadybypass": [
+      "{CROSS} **The role {TARGETROLE} already bypasses Anti-Ping users.**",
+      "",
+      "{INFO} To remove the role from the bypass, type: `{PREFIX}ap removerole`"
+    ],
+    "nowbypass": [
+      "{CHECK} **Anti-Ping Bypass Role Added**",
+      "",
+      "**Role:** {TARGETROLE}",
+      "",
+      "{INFO} To remove the role from the bypass, type: `{PREFIX}ap removerole`"
+    ],
+    "alreadydoesnotbypass": [
+      "{CROSS} **The role {TARGETROLE} already does not bypass Anti-Ping users.**",
+      "",
+      "{INFO} To add the role to the bypass, type: `{PREFIX}ap addrole`"
+    ],
+    "nolongerbypass": [
+      "{CHECK} **Anti-Ping Bypass Role Removed**",
+      "",
+      "**Role:** {TARGETROLE}",
+      "",
+      "{INFO} To add the role back to the bypass, type: `{PREFIX}ap addrole`"
+    ],
+    "viewuserstitle": "{BOTNAME} - Anti-Ping Users",
+    "viewusers": [
+      "**Current Bypass Roles:**",
+      "{USERS}"
+    ],
+    "viewrolestitle": "{BOTNAME} - Anti-Ping Bypass Roles",
+    "viewroles": [
+      "**Current Bypass Roles:**",
+      "{BYPASSROLES}"
+    ],
+    "logchannelnotset": [
+      "{CROSS} **Anti-Ping Log Channel Already Not Set**",
+      "",
+      "{INFO} To set the Anti-Ping Log Channel, type: `{PREFIX}ap logchannel`"
+    ],
+    "logchannelremove": [
+      "{CHECK} **Anti-Ping Log Channel Removed**",
+      "",
+      "{INFO} To set a new Anti-Ping Log Channel, type: `{PREFIX}ap logchannel`"
+    ],
+    "logchannelset": [
+      "{CHECK} **Anti-Ping Log Channel Set**",
+      "",
+      "**Channel:** {CHANNEL} ({CHANNELID})",
+      "",
+      "{INFO} To remove the Anti-Ping Log Channel, type: `{PREFIX}ap logchannel remove`"
+    ]
   },
   "fakeping": {
     "cooldown": [
