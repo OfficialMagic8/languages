@@ -8,6 +8,9 @@
     "",
     "*Need further assistance? Join our [Support Server]({INVITATION}) or check out our [Guide]({GUIDE})!*"
   ],
+  "true": "true",
+  "false": "false",
+  "none": "none",
   "unexpectederror": "{CROSS} **{USER}, an unexpected error occured. Please join our [Support Server]({INVITE}) for assistance.**",
   "8ball": {
     "asksomething": "{CROSS} **{USER}, please ask a yes or no question.**",
@@ -595,7 +598,7 @@
       "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
       "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
       "",
-      "{LOADING} *Pull the 🕹️ to stop it!*"
+      "{LOADING} *Pull the 🕹️ to stop the slots!*"
     ],
     "rollandstop": [
       "**Player:** {USER}",
@@ -1034,6 +1037,12 @@
       "{VERIFIED} _This information is randomly generated. It doesn't refer to any company or real person. The purpose of this command is to get information to fill databases or complete surveys._"
     ]
   },
+  "inspire": {
+    "success": [
+      "**Quote:** {QUOTE}",
+      "**Author:** {AUTHOR}"
+    ]
+  },
   "overwatch": {
     "error": {
       "region": [
@@ -1104,6 +1113,7 @@
     "otherhungup": "\\🔴 **The other person hung up the call!**",
     "timeout": "\\⏰ Couldn't detect any message in 1 minute. **Connection lost!**"
   },
+  "yomomma": {},
   "botinfo": {
     "extra": [
       "",
@@ -1124,6 +1134,57 @@
       "",
       "**Useful Links:**",
       "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Support Server]({SUPPORTSERVER})"
+    ]
+  },
+  "help": {
+    "invalidcommand": [
+      "{CROSS} **Invalid Command Provided:** `{INPUT}`",
+      "",
+      "Type `{PREFIX}help` to get a list of all commands!"
+    ],
+    "commandinfotitle": "{BOTNAME} - Command Information",
+    "commandinfo": [
+      "**Command:** `{COMMANDNAME}`",
+      "",
+      "**Aliases:** {ALIASES}",
+      "**Category:** {CATEGORY}",
+      "**Emoji:** {EMOJI}",
+      "**Toggleable:** {TOGGLEABLE}{PREMIUM}",
+      "**Description:** {DESCRIPTION}"
+    ],
+    "footer": "Something missing? Contact Support!",
+    "tips": [
+      "{VERIFIED} ***Need further assistance?***",
+      "**1.** DM Fyrlex#2740",
+      "**2.** Check out our [Guide]({GUIDE})",
+      "**3.** Join our [Support Server]({INVITE})"
+    ],
+    "categories": {
+      "fun": "Entertainment",
+      "minigames": "Minigames",
+      "minecraft": "Minecraft",
+      "reactions": "Reactions",
+      "misc": "Miscellaneous",
+      "info": "Information",
+      "user": "User",
+      "utils": "Utilities",
+      "admin": "Administrator"
+    },
+    "adminbottom": [
+      "{INFO} Get more information of a command by typing: `{PREFIX}help <command>`",
+      "",
+      "Do you have ideas or suggestions? **Let us know in our [Support Server]({INVITE}).**"
+    ],
+    "bottom": "Do you have ideas or suggestions? **Let us know in our [Support Server]({INVITE}).**",
+    "cannotsend": [
+      "{CROSS} **{USER}, the help menu could not be sent. Please enable private messages.**",
+      "",
+      "*Need further assistance? Join our [Support Server]({INVITE}) or check out our [Guide]({GUIDE})!*"
+    ],
+    "sent": [
+      "{CHECK} **{USER}, the help menu was sent. Please check your private messages.**",
+      "",
+      "*Need further assistance? Join our [Support Server]({INVITE}) or check out our [Guide]({GUIDE})!*"
     ]
   },
   "info": {
@@ -1164,18 +1225,65 @@
   "avatar": {
     "success": "{CHECK} Here is {USER}'s avatar! ([link]({URL}))"
   },
-  "casino": {
-    "notincasino": "{CROSS} **{USER}, please join a casino to use this command!** `{PREFIX}casino`",
-    "incorrectguild": "{CROSS} **{USER}, you must go to {CASINOGUILD} then {CASINOCHANNEL} to use this command!**",
-    "incorrectchannel": "{CROSS} **{USER}, you must go to {CASINOCHANNEL} to use this command!**"
+  "lookingforgroup": {
+    "roleadded": "{CHECK} **{USER}, you now have {ROLE}!** It will be removed in {COOLDOWN} hours.",
+    "cannotaddrole": "{CROSS} **{USER}, there was an error giving you {ROLE}!",
+    "nomembers": "*nonw*",
+    "memberlist": [
+      "🧭 **Looking For Group Member List**",
+      "",
+      "{LIST}"
+    ],
+    "roleremoved": "{CHECK} **{TARGET} no longer has LFG role!**",
+    "alreadynorole": "{CRPSS} **{TARGET} already does not have LFG role!**",
+    "premium": [
+      "💎 **Premium Feature** 💎",
+      "",
+      "The **Looking For Group** system is premium! Support the developers and motivate them to continue investing hours a day into {BOT}. View the available packages [here]({PACKAGES}).",
+      "",
+      "**Link:** https://donatebot.io/checkout/610816275580583936"
+    ]
+  },
+  "media": {
+    "title": "{GUILDNAME} - Media Page",
+    "nomedia": [
+      "{CROSS} **No Media Available**",
+      "",
+      "{INFO} Create a media page for your server by typing: `{PREFIX}s media text`"
+    ]
+  },
+  "myinfo": {
+    "noboost": "false",
+    "boost": "true - (since {SINCE})",
+    "title": "{USERNAME}'s Profile",
+    "descripton": [
+      "**Mention:** {USER}",
+      "**Nickname:** {NICKNAME}",
+      "**Status:** {STATUS}",
+      "**Joined:** {JOINED}",
+      "**Created:** {CREATED}",
+      "**Boosting:** {BOOSTING}",
+      "**Roles:**",
+      "{ROLES}"
+    ]
+  },
+  "vote": {
+    "title": "{BOTNAME} - Vote Menu",
+    "description": [
+      "Vote for {BOT} to help us grow! Here is our main voting page.",
+      "",
+      "**Discord Bot List:** {VOTE1}",
+      "",
+      "❤️ Thank you for your support!"
+    ]
   },
   "clear": {
-    "enteramount": "{CROSS} **{USER}, please enter an number of messages to delete!**",
-    "invalidamount": "{CROSS} **{USER}, please enter a valid number of messages to delete!**",
-    "cannotgreater": "{CROSS} **{USER}, please provide a number less than `150`!**",
-    "cannotlower": "{CROSS} **{USER}, please provide a number that is at least `1`!**",
-    "errordeleting": "{CROSS} **{USER}, I was unable to delete those messages!**",
-    "deleted": "{CHECK} **{USER}, I deleted `{AMOUNT}` messages!**"
+    "enteramount": "{CROSS} **{USER}, please enter an number of messages to delete.**",
+    "invalidamount": "{CROSS} **{USER}, please enter a valid number of messages to delete.**",
+    "cannotgreater": "{CROSS} **{USER}, please provide a number less than:** `150`",
+    "cannotlower": "{CROSS} **{USER}, please provide a number that is at least:** `1`",
+    "errordeleting": "{CROSS} **{USER}, please give {BOT} the `Manage Messages` permission to delete messages.**",
+    "deleted": "{CHECK} **{USER}, a total of `{AMOUNT}` messages were deleted.**"
   },
   "emojis": {
     "error": {
@@ -1234,6 +1342,28 @@
     "tip": "Tip: Use {EVERYONE} and {HERE} as placeholders if needed"
   },
   "antiping": {
+    "menutitle": "{BOTNAME} - Anti-Ping Help Menu",
+    "menu": [
+      "`{PREFIX}ap adduser` - Disable pings for a user",
+      "`{PREFIX}ap removeuser` - Re-enable pings for a user",
+      "`{PREFIX}ap message` - Ping warning message",
+      "`{PREFIX}ap logchannel` - Log when Anti-Ping user is tagged",
+      "`{PREFIX}ap addrole` - Add bypass roles",
+      "`{PREFIX}ap removerole` - Remove bypass roles",
+      "",
+      "`{PREFIX}ap roles` View bypass roles",
+      "`{PREFIX}ap users` View Anti-Ping users **DISABLED**",
+      "",
+      "{WARNING} This won't actually prevent pings, it will only delete the message and warn the user.",
+      "{INFO} Use these commands for more information!"
+    ],
+    "logmessage": [
+      "{WARNING} **Anti-Ping**",
+      "",
+      "**Author:** {USER}",
+      "**User(s):**",
+      "{PINGED}"
+    ],
     "upgrade": {
       "singleortriple": "**Single or Triple Package**",
       "triple": "**Triple Package**",
@@ -1284,7 +1414,6 @@
       "**New Message:**",
       "```{NEWMESSAGE}```"
     ],
-    "none": "*none*",
     "noroles": [
       "{CROSS} **No Anti-Ping Users**",
       "",
@@ -1354,6 +1483,142 @@
       "{INFO} To remove the Anti-Ping Log Channel, type: `{PREFIX}ap logchannel remove`"
     ]
   },
+  "autovoice": {
+    "nocategory": [
+      "{CROSS} **No Auto Voice Category Selected**",
+      "",
+      "{INFO} You cannot create Auto Channels until a category is selected. If the Auto Voice category is deleted or moved, all Auto Channels and Sub-Channels will be deleted."
+    ],
+    "upgrade": {
+      "singleortriple": "**Single or Triple Package**",
+      "triple": "**Triple Package**",
+      "description": "Please upgrade to the [{OPTIONS]({DONATELINK}) to create more Auto Voice Channels.",
+      "cannotupgrade": "Auto Voice Channels cannot be increased through packages anymore."
+    },
+    "reachedlimit": [
+      "{CROSS} **Auto Channels Limit Reached:** `{MAX}`",
+      "",
+      "{UPGRADE}",
+      "",
+      "**Current Auto Channels:**",
+      "{CURRENTCHANNELS}"
+    ],
+    "notypetitle": "{BOTNAME} - Auto Voice Channel Types",
+    "notype": [
+      "Types of Auto Voice Channels that are available.",
+      "",
+      "**Available Types:**",
+      "{TYPES}"
+    ],
+    "invalidtype": [
+      "{CROSS} **Invalid Auto Channel Type:** `{INPUT}`",
+      "",
+      "**Available Types:**",
+      "{TYPES}"
+    ],
+    "type": {
+      "duo": "Duo",
+      "trio": "Trio",
+      "squad": "Squad"
+    },
+    "created": [
+      "{CHECK} **{TYPE} Channel Created**",
+      "",
+      "{INFO} This channel can create up to **two** Sub-Channels."
+    ],
+    "invalidchannel": [
+      "{CROSS} **Invalid Auto Channel Provided:** `{INPUT}`",
+      "",
+      "**Available Auto Channels:**",
+      "{AVAILABLE}"
+    ],
+    "deleted": [
+      "{CHECK} **Auto Voice Channel Deleted**",
+      "",
+      "**Channel:** {DELETED}"
+    ],
+    "noneleft": [
+      "{CHECK} **Auto Voice Channel Deleted**",
+      "",
+      "**Channel:** {DELETED}",
+      "",
+      "{WARNING} Auto Voice Channels are now disabled because there are none left."
+    ],
+    "nocooldowntitle": "{BOTNAME} - Auto Voice Channels Cooldown",
+    "nocooldown": [
+      "**Current Cooldown:** {COOLDOWN}",
+      "",
+      "{INFO} The cooldown must be between 10 seconds and 300 seconds (5 minutes)."
+    ],
+    "notanumber": "{CROSS} **{USER}, please provide a real number to set the cooldown.**",
+    "toosmall": "{CROSS} **{USER}, please provide a cooldown greater than 10 seconds.**",
+    "toolarge": "{CROSS} **{USER}, please provide a cooldown less than 5 minutes (or 300 seconds).**",
+    "cooldownupdated": [
+      "{CHECK} **Auto Channels Cooldown Updated**",
+      "",
+      "**Old Cooldown:** {OLDCOOLDOWN} seconds",
+      "**New Cooldown:** {COOLDOWN} seconds"
+    ],
+    "infotitle": "{BOTNAME} - Auto Voice Channels Information",
+    "info": [
+      "**Enabled:** {ENABLED}",
+      "**Category:** {CATEGORY}",
+      "**Cooldown:** {COOLDOWN} seconds",
+      "**Channels:**",
+      "{CHANNELS}"
+    ],
+    "viewcategorytitle": "{BOTNAME} - Auto Voice Channels Category",
+    "viewnocategory": [
+      "**Category:** {CATEGORY}",
+      "",
+      "{INFO} Set a category to enable Auto Channels by typing: `{PREFIX}autovoice category <ID>`"
+    ],
+    "viewcategory": [
+      "**Auto Voice Category**",
+      "",
+      "**Category:** {CATEGORY} ({CATEGORYID})",
+      "",
+      "{INFO} Disable Auto Channels by typing: `{PREFIX}autovoice category clear`"
+    ],
+    "alreadydisabled": [
+      "{CROSS} **There is already no category set for Auto Voice Channels.**",
+      "",
+      "{INFO} To enable Auto Voice Channels, set a category by typing: `{PREFIX}autovoice category <ID>`"
+    ],
+    "disabled": [
+      "{CHECK} **Auto Voice Channels Disabled**",
+      "",
+      "{INFO} All Auto Channels no longer work. To enable Auto Voice Channels again, set a category!"
+    ],
+    "notacategory": [
+      "{CROSS} **Invalid Category ID**",
+      "",
+      "**Available Categories:**",
+      "{CATEGORIES}"
+    ],
+    "nopermissionincategory": [
+      "{CROSS} **Please give {BOT} the following permissions to use this command.**",
+      "",
+      "`Manage Channels`, `Move Members`"
+    ],
+    "categoryset": [
+      "{CHECK} **Auto Voice Category Set**",
+      "",
+      "**Category:** {CATEGORY} ({CATEGORYID})",
+      "",
+      "{INFO} Auto Voice Channels can be created at this time!"
+    ],
+    "helptitle": "{BOTNAME} - Auto Voice Channels Help Menu",
+    "help": [
+      "{PREFIX}avc create` - Create Auto Voice Channels",
+      "{PREFIX}avc delete` Delete Auto Voice Channels",
+      "{PREFIX}avc category` - Set Auto Voice Channel Category",
+      "{PREFIX}avc cooldown` - Set Auto Channels Cooldown",
+      "{PREFIX}avc info` - Current Auto Voice Channels Information",
+      "",
+      "{INFO} Each **Auto Channel** can only create up to **three** Sub-Channels."
+    ]
+  },
   "fakeping": {
     "cooldown": [
       "{CROSS} **Fake-Ping Cooldown**",
@@ -1381,35 +1646,39 @@
       "",
       "**Download and upload it as the guild icon!**"
     ],
-    "updated": [
-      "{CHECK} **{USER}, the guild icon was updated!**"
-    ],
-    "notupdated": [
-      "{CROSS} **{USER}, the guild icon was not updated.**"
-    ],
-    "notupdatedperms": [
-      "{CROSS} **{USER}, please give {BOT} the `Manage Server` permission.**"
-    ]
+    "updated": "{CHECK} **{USER}, the guild icon was updated!**",
+    "notupdated": "{CROSS} **{USER}, the guild icon was not updated.**",
+    "notupdatedperms": "{CROSS} **{USER}, please give {BOT} the `Manage Server` permission to update the Server Icon.**"
   },
-  "vote": {
-    "canvote": [
-      "{CHECK} **{USER}, you can vote for Magic8!**",
+  "follow": {
+    "nopermission": "{CROSS} **{USER}, please give {BOT} the `Manage Webhooks` permission to follow channels.**",
+    "nooptiontitle": "{BOTNAME} - Follow News Channels",
+    "nooption": [
+      "Get updates from the [Support Server]({INVITE}) directly into yours.",
       "",
-      "**Link:** [top.gg]({VOTELINK})",
+      "**Available News Channels:**",
+      "{OPTIONS}",
       "",
-      "{INFO} You can vote once every **12** hours!"
+      "{INFO} Type the command in the channel you want messages to be in."
     ],
-    "cannotvote": [
-      "{CROSS} **{USER}, you already voted in the last 12 hours!**",
+    "invalidoption": [
+      "{CROSS} **Invalid News Channel**",
       "",
-      "**Link:** [top.gg]({VOTELINK})",
+      "**Available News Channels:**",
+      "{OPTIONS}",
       "",
-      "{INFO} You can vote once every **12** hours!"
+      "{INFO} Type the command in the channel you want messages to be in."
     ],
-    "unexpectederror": [
-      "{CROSS} **{USER}, an unexpected error occured. You can still vote [here]({VOTELINK}).**"
+    "maxintegrations": [
+      "{CROSS} **Max Integrations Reached For:** {CHANNEL}",
+      "",
+      "This is a Discord limitation, please try another channel."
     ],
-    "total": "Total Votes:",
-    "monthly": "Montly Votes:"
+    "following": [
+      "{CHECK} **Following News Channel**",
+      "",
+      "**Channel:** {CHANNEL}",
+      "**Following:** `{FOLLOWING}`"
+    ]
   }
 }
