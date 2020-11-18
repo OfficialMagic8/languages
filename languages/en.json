@@ -11,7 +11,11 @@
   "true": "true",
   "false": "false",
   "none": "none",
-  "unexpectederror": "{CROSS} **{USER}, an unexpected error occured. Please join our [Support Server]({INVITE}) for assistance.**",
+  "unexpectederror": [
+    "{CROSS} **{USER}, an unexpected error occured.**",
+    "",
+    "{INFO} Please join our [Support Server]({INVITE}) for assistance."
+  ],
   "8ball": {
     "asksomething": "{CROSS} **{USER}, please ask a yes or no question.**",
     "customresponses": "{CROSS} **{USER}, please contact an administrator to change the 8ball mode or set custom responses.**",
@@ -950,29 +954,35 @@
       }
     }
   },
+  "mcserver": {
+    "checking": "{LOADING} Checking server...",
+    "updated": [
+      "{CHECK} **Minecraft Server IP/Domain Updated**",
+      "",
+      "**IP/Domain:** {SERVER}",
+      "",
+      "{INFO} To view information of the server, type: `{PREFIX}status`"
+    ],
+    "removed": "{CHECK} **Minecraft Server Successfully Removed**",
+    "noip": [
+      "{CROSS} **No Minecraft Server IP or Domain**",
+      "",
+      "{INFO} To view the status of your server, type: `{PREFIX}mcserver <IP/domain>`"
+    ],
+    "error": [
+      "{CROSS} **Error Getting Status Of:** `{SERVER}`",
+      "",
+      "This server is either offline or does not exist."
+    ],
+    "errorfooter": "Are we mistaken? Please contact support."
+  },
   "cuddle": {
-    "success": {
-      "self": [
-        "{CHECK} **{USER} cuddled themselves!**"
-      ],
-      "other": [
-        "{CHECK} **{USER} cuddled {TARGET}!**"
-      ]
-    }
+    "self": "{CHECK} **{USER} cuddled themselves!**",
+    "other": "{CHECK} **{USER} cuddled {TARGET}!**"
   },
   "feed": {
-    "success": {
-      "self": {
-        "description": [
-          "{CHECK} **{USER} fed themselves!**"
-        ]
-      },
-      "other": {
-        "description": [
-          "{CHECK} **{USER} fed {TARGET}!**"
-        ]
-      }
-    }
+    "self": "{CHECK} **{USER} fed themselves!**",
+    "other": "{CHECK} **{USER} fed {TARGET}!**"
   },
   "hug": {
     "self": "{CHECK} **{USER} hugged themselves!**",
@@ -1140,7 +1150,7 @@
     "invalidcommand": [
       "{CROSS} **Invalid Command Provided:** `{INPUT}`",
       "",
-      "Type `{PREFIX}help` to get a list of all commands!"
+      "{INFO} Type `{PREFIX}help` to get a list of all commands!"
     ],
     "commandinfotitle": "{BOTNAME} - Command Information",
     "commandinfo": [
@@ -1159,7 +1169,7 @@
       "**2.** Check out our [Guide]({GUIDE})",
       "**3.** Join our [Support Server]({INVITE})"
     ],
-    "categories": {
+    "category": {
       "fun": "Entertainment",
       "minigames": "Minigames",
       "minecraft": "Minecraft",
@@ -1282,7 +1292,7 @@
     "invalidamount": "{CROSS} **{USER}, please enter a valid number of messages to delete.**",
     "cannotgreater": "{CROSS} **{USER}, please provide a number less than:** `150`",
     "cannotlower": "{CROSS} **{USER}, please provide a number that is at least:** `1`",
-    "errordeleting": "{CROSS} **{USER}, please give {BOT} the `Manage Messages` permission to delete messages.**",
+    "nopermission": "{CROSS} **{USER}, please give {BOT} the `Manage Messages` permission to delete messages.**",
     "deleted": "{CHECK} **{USER}, a total of `{AMOUNT}` messages were deleted.**"
   },
   "emojis": {
@@ -1370,6 +1380,24 @@
       "description": "Please upgrade to the [{OPTIONS]({DONATELINK}) to disable pings for more users.",
       "cannotupgrade": "Anti-Ping users cannot be increased through packages anymore."
     },
+    "addusermenutitle": "{BOTNAME} - Anti-Ping Add User",
+    "addusermenu": [
+      "Anti-Ping users will have their @mentions deleted by anyone who doesn't have a bypass role.",
+      "",
+      "**Current Anti-Ping Users:**",
+      "{USERS}",
+      "",
+      "{INFO} To add a user, type: `{PREFIX}ap adduser <user>`"
+    ],
+    "removeusermenutitle": "{BOTNAME} - Anti-Ping Add User",
+    "removeusermenu": [
+      "Removing an Anti-Ping user will allow anyone to @mention them.",
+      "",
+      "**Current Anti-Ping Users:**",
+      "{USERS}",
+      "",
+      "{INFO} To remove a user, type: `{PREFIX}ap removeuser <user>`"
+    ],
     "reachedlimit": [
       "{CROSS} **Anti-Ping User Limit Reached:** `{MAX}`",
       "",
@@ -1415,9 +1443,9 @@
       "```{NEWMESSAGE}```"
     ],
     "noroles": [
-      "{CROSS} **No Anti-Ping Users**",
+      "{CROSS} **No Anti-Ping Roles**",
       "",
-      "{INFO} To add a user, type: `{PREFIX}ap adduser`"
+      "{INFO} To add a role, type: `{PREFIX}ap addroleohap`"
     ],
     "invalidrole": [
       "{CROSS} **Invalid Role Provided**",
@@ -1428,7 +1456,7 @@
     "invalidbypassrole": [
       "{CROSS} **Invalid Role Provided**",
       "",
-      "**Available Bypass Roles",
+      "**Available Bypass Roles:**",
       "{BYPASSROLES}"
     ],
     "alreadybypass": [
@@ -1457,7 +1485,7 @@
     ],
     "viewuserstitle": "{BOTNAME} - Anti-Ping Users",
     "viewusers": [
-      "**Current Bypass Roles:**",
+      "**Current Users:**",
       "{USERS}"
     ],
     "viewrolestitle": "{BOTNAME} - Anti-Ping Bypass Roles",
@@ -1610,11 +1638,11 @@
     ],
     "helptitle": "{BOTNAME} - Auto Voice Channels Help Menu",
     "help": [
-      "{PREFIX}avc create` - Create Auto Voice Channels",
-      "{PREFIX}avc delete` Delete Auto Voice Channels",
-      "{PREFIX}avc category` - Set Auto Voice Channel Category",
-      "{PREFIX}avc cooldown` - Set Auto Channels Cooldown",
-      "{PREFIX}avc info` - Current Auto Voice Channels Information",
+      "`{PREFIX}avc create` - Create Auto Voice Channels",
+      "`{PREFIX}avc delete` Delete Auto Voice Channels",
+      "`{PREFIX}avc category` - Set Auto Voice Channel Category",
+      "`{PREFIX}avc cooldown` - Set Auto Channels Cooldown",
+      "`{PREFIX}avc info` - Current Auto Voice Channels Information",
       "",
       "{INFO} Each **Auto Channel** can only create up to **three** Sub-Channels."
     ]
@@ -1628,7 +1656,7 @@
       "{INFO} You can generate a new one in {LEFT}."
     ],
     "guildnoicon": [
-      "**{CROSS} This server doesn't have a guild icon!**"
+      "**{CROSS} This server does not have a guild icon!**"
     ],
     "success": [
       "{CHECK} **Fakeping Successfully Generated**",
