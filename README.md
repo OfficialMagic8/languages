@@ -3,7 +3,7 @@
 **The en.json file is updated every time a feature's multilingual support is added/edited. Review updates [here](https://github.com/Fyrlex/Magic8-Languages/commits/master/languages/en.json) to add the same content to your language file.**
 
 **Want to collaborate? Add your own language with all translations and we will add it to the available translations!**
-- Copy the en.json file
+- Copy the [en.json](https://github.com/Fyrlex/Magic8-Languages/blob/master/languages/en.json) file
 - Translate all the English to your fluently known language
 - Do not edit the contents of the placeholders ({EXAMPLE}). Move them accordingly for grammar purposes.
 - Do **NOT** use a translating service
