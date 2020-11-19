@@ -2,6 +2,7 @@
   "languagenamelong": "English",
   "languagenameshort": "en",
   "flag": "🇺🇸",
+  "test": "test",
   "valid": true,
   "link": "https://github.com/Fyrlex/Magic8-Languages/blob/master/languages/en.json",
   "it": "{CROSS} **{USER}, please provide a valid member or ID.**",
