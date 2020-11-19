@@ -10,8 +10,11 @@
 - Do **NOT** change the meaning of translations. We will review your submission(s).
 
 **Perks:**
+- Pay
 - Language Contributor Role in our [Support Server](https://discord.gg/bUUggyCjvp)
-- Possible: Free Premium I, Free Premium II or a Promotion 
+- Free Triple Package
+- Utmost respect from the developers
+- Possibly more
 
 Please only translate files to your known language if you are already **fluent** in English. This way, you can understand the grammar and make proper changes.
 
