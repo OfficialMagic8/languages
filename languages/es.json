@@ -33,7 +33,7 @@
     "question": "Pregunta",
     "answer": "Respuesta",
     "replies": {
-      "all":  [
+      "all": [
         "Absolutamente no",
         "¡Absolutamente!",
         "Según mi religión, no",
@@ -283,7 +283,7 @@
           "_Pista: ¡no copies el mensaje!_"
         ]
       },
-      "enterpattern":{
+      "enterpattern": {
         "description": [
           "Estás jugando el **Nivel {LEVEL}**",
           "Ingresa el patrón memorizado",
@@ -374,23 +374,14 @@
     }
   },
   "battle": {
-    "footer": "Battles",
     "error": {
-      "battling": [
-        "{CROSS} **{USER}, estás en una batalla en otro lugar!**"
-      ],
-      "notyourself": [
-        "{CROSS} **{USER}, no puedes batirte en duelo.**"
-      ],
-      "targetbattling": [
-        "{CROSS} **{USER}, el otro gladiador está en una batalla!**"
-      ]
+      "alreadybattling": "{CROSS} **{USER}, ya estás en una batalla en otro lugar.**",
+      "cannotbeauthor": "{CROSS} **{USER}, no puedes luchar contra ti mismo.**",
+      "targetbattling": "{CROSS} **{USER}, ese usuario ya está en una batalla.**"
     },
-    "starting": {
-      "title": "{FIRST} vs. {SECOND}!"
-    },
+    "title": "{BOTNAME} - Battles",
     "battling": {
-      "attacks": [ 
+      "attacks": [
         "{TEAM} 🗡️ {ATTACKER} cortó a {TARGET} con una **katana** por {DAMAGE} HP!",
         "{TEAM} 🗣️ {ATTACKER} asó a {TARGET} con un **yomomma joke** por {DAMAGE} HP!",
         "{TEAM} 🧪 {ATTACKER} quemó a {TARGET} con **ácido** por {DAMAGE} HP!",
@@ -408,12 +399,12 @@
         "{TEAM} 👊 {ATTACKER} golpeó  a {TARGET} con el **puño** por {DAMAGE} HP!",
         "{TEAM} 🧨 {ATTACKER} explotó {TARGET} con una **bomba** por {DAMAGE} HP!",
         "{TEAM} 🔫 {ATTACKER} disparó {TARGET} con una **pistola de agua** por {DAMAGE} HP!",
-        "{TEAM} 🔧 {ATTACKER} smacked {TARGET} with a **wrench** por {DAMAGE} HP!",
-        "{TEAM} 🏹 {ATTACKER} hit {TARGET} with an **arrow** por {DAMAGE} HP!",
-        "{TEAM} ☁️ {ATTACKER} choked {TARGET} with their **fart** por {DAMAGE} HP!",
-        "{TEAM} 🎊 {ATTACKER} stunned {TARGET} with **confetti** por {DAMAGE} HP!",
-        "{TEAM} 🧼 {ATTACKER} gagged {TARGET} with **soap** por {DAMAGE} HP!",
-        "{TEAM} 🧹 {ATTACKER} whacked {TARGET} with a **broomstick** por {DAMAGE} HP!"
+        "{TEAM} 🔧 {ATTACKER} golpeó {TARGET} con una **llave inglesa** por {DAMAGE} HP!",
+        "{TEAM} 🏹 {ATTACKER} golpeó {TARGET} con una **flecha** por {DAMAGE} HP!",
+        "{TEAM} ☁️ {ATTACKER} se ahogó {TARGET} con su **pedo** por {DAMAGE} HP!",
+        "{TEAM} 🎊 {ATTACKER} aturdido {TARGET} con **confeti** por {DAMAGE} HP!",
+        "{TEAM} 🧼 {ATTACKER} amordazado {TARGET} con **jabón** por {DAMAGE} HP!",
+        "{TEAM} 🧹 {ATTACKER} golpeado {TARGET} con un **palo de escoba** por {DAMAGE} HP!"
       ],
       "wins": [
         "**\\🏆 {WINNERMEMBER} won against {LOSERMEMBER} in {WINNERMOVES} moves!**",
@@ -422,19 +413,13 @@
       ]
     }
   },
-  "belike": {
-    "provideyourname": "{CROSS} **Especifica al menos tu nombre.**",
-    "description": [
-      "{CHECK} **Aquí esta tu imagen {AUTHOR}!**"
-    ]
-  },
   "clear": {
-    "enteramount": "{CROSS} **{USER}, Ingresa un número de mensajes a borrar!**",
-    "invalidamount": "{CROSS} **¡{USER}, la cantidad ingresada no es un número válido!**",
-    "cannotgreater": "{CROSS} **¡{USER}, la cantidad de mensajes no puede ser mayor a `150`!**",
-    "cannotlower": "{CROSS} **¡{USER}, la cantidad de mensajes no puede ser menor a `1`!**",
-    "errordeleting": "{CROSS} **{USER}, srror inesperado. ¡No pude eliminar mensajes!**",
-    "deleted": "{CHECK} **¡{USER}, se eliminaron `{AMOUNT}` mensajes!**"
+    "enteramount": "{CROSS} **{USER}, por favor, introduzca un número de mensajes para borrar!**",
+    "invalidamount": "{CROSS} **{USER}, la cantidad ingresada no es un número válido!**",
+    "cannotgreater": "{CROSS} **{USER}, la cantidad de mensajes no puede ser mayor a:** `100`",
+    "cannotlower": "{CROSS} **{USER}, la cantidad de mensajes no puede ser menor a:** `1`",
+    "nopermission": "{CROSS} **{USER}, por favor, dame {BOT} el permiso `Manage Messages` para eliminar los mensajes.**",
+    "deleted": "{CHECK} **{USER}, se eliminaron un total de `{AMOUNT}` mensajes.**"
   },
   "telephone": {
     "ringing": "☎ {USER} levantó el telefono. **¡El telefono está timbrando!**",
@@ -466,6 +451,8 @@
     ],
     "listtitle": "{BOTNAME} - Languages List",
     "available": [
+      "⏲️ **Última Actualización:** {TIME}",
+      "",
       "{LANGUAGES}",
       "",
       "{WARNING} El inglés es el idioma principal y está **totalmente** respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
@@ -477,25 +464,25 @@
       "",
       "[Repositorio Github]({GITHUB})",
       "",
-      "What do you get in return?",
-      "- Pay",
+      "¿Qué obtienes a cambio?",
+      "- Paga",
       "- Language Contributor Role",
-      "- Free [Triple Package]({TRIPLEPACKAGE})",
-      "- Highest respect from the developers",
-      "- Possibly more",
+      "- Libre [Triple Package]({TRIPLEPACKAGE})",
+      "- El mayor respeto de los desarrolladores",
+      "- Posiblemente más",
       "",
-      "{INFO} Please contact Fyrlex#2740 if you want to help!"
+      "{INFO} **¡Por favor, póngase en contacto con nosotros si desea ayudar!**"
     ],
     "menutitle": "{BOTNAME} - Languages Menu",
     "menu": [
-      "Here you can the language of {BOT}!",
+      "Aquí se puede el lenguaje de {BOT}!",
       "",
-      "**Available Commands:**",
-      "`{PREFIX}language set` - Set the language (`{LANGUAGE}`)",
-      "`{PREFIX}language help` - Language Information",
-      "`{PREFIX}language list` - View Language Progress",
+      "**Comandos Disponibles:**",
+      "`{PREFIX}language set` - Establecer el Idioma (`{LANGUAGE}`)",
+      "`{PREFIX}language help` - Información del Idioma",
+      "`{PREFIX}language list` - Ver Detalles del idioma",
       "",
-      "{INFO} **Please contact us if you'd like to help!**"
+      "{INFO} **¡Por favor, póngase en contacto con nosotros si desea ayudar!**"
     ]
   }
 }

@@ -1290,7 +1290,7 @@
     ]
   },
   "clear": {
-    "enteramount": "{CROSS} **{USER}, please enter an number of messages to delete.**",
+    "enteramount": "{CROSS} **{USER}, please enter a number of messages to delete.**",
     "invalidamount": "{CROSS} **{USER}, please enter a valid number of messages to delete.**",
     "cannotgreater": "{CROSS} **{USER}, please provide a number less than:** `100`",
     "cannotlower": "{CROSS} **{USER}, please provide a number that is at least:** `1`",
@@ -1731,7 +1731,7 @@
     ],
     "listtitle": "{BOTNAME} - Languages List",
     "available": [
-      "⏲️ Last Fetched: {TIME}",
+      "⏲️ **Last Fetched:** {TIME}",
       "",
       "{LANGUAGES}",
       "",
@@ -1748,12 +1748,12 @@
       "- Pay",
       "- Language Contributor Role",
       "- Free [Triple Package]({TRIPLEPACKAGE})",
-      "- Highest respect from the developers",
+      "- Utmost respect from the developers",
       "- Possibly more",
       "",
       "{INFO} **Please contact us if you'd like to help!**"
     ],
-    "lastfetched": "⏲️ Last Fetched: {TIME}",
+    "lastfetched": "\\⏲️ Last Fetched: {TIME}",
     "menutitle": "{BOTNAME} - Languages Menu",
     "menu": [
       "Here you can the language of {BOT}!",
@@ -1761,7 +1761,7 @@
       "**Available Commands:**",
       "`{PREFIX}language set` - Set the language (`{LANGUAGE}`)",
       "`{PREFIX}language help` - Language Information",
-      "`{PREFIX}language list` - View Language Progress",
+      "`{PREFIX}language list` - View Language Details",
       "",
       "{INFO} **Please contact us if you'd like to help!**"
     ]
