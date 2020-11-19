@@ -1,410 +1,334 @@
 {
-  "languagenamelong": "Español",
-  "languagenameshort": "es",
-  "flag": "🇪🇸",
+  "languagenamelong": "English",
+  "languagenameshort": "en",
+  "flag": "🇺🇸",
   "valid": true,
-  "link": "https://github.com/Fyrlex/Magic8-Languages/blob/master/languages/es.json",
-  "it": "",
+  "link": "https://github.com/Fyrlex/Magic8-Languages/blob/master/languages/en.json",
+  "it": "{CROSS} **{USER}, please provide a valid member or ID.**",
   "mention": [
-    "**{USER}, mi prefijo para el servidor es:** `{PREFIX}`",
-    "Escriba `{PREFIX}help` para una lista de comandos. También puedes escribir un comando después de `{PREFIX}help` para detalles específicos.",
+    "**{USER}, my prefix for the server is:** `{PREFIX}`",
+    "Type `{PREFIX}help` for a command list. You can also type a command after `{PREFIX}help` for specific details.",
     "",
-    "*¿Necesita más ayuda? Únete a nuestro [Servidor de Soporte]({INVITATION}) o mira nuestra [Guía]({GUIDE})!*"
+    "*Need further assistance? Join our [Support Server]({INVITATION}) or check out our [Guide]({GUIDE})!*"
   ],
-  "true": "verdadero",
-  "false": "falso",
-  "none": "ninguno",
+  "true": "true",
+  "false": "false",
+  "none": "none",
   "unexpectederror": [
-    "{CROSS} **{USER}, se produjo un error inesperado.**",
+    "{CROSS} **{USER}, an unexpected error occured.**",
     "",
-    "{INFO} Por favor, únase a nuestro [Servidor de Soporte]({INVITE}) para la asistencia."
+    "{INFO} Please join our [Support Server]({INVITE}) for assistance."
   ],
   "8ball": {
-    "asksomething": "{CROSS} **¡{USER}, por favor haga una pregunta de sí o no!**",
-    "customresponses": "{CROSS} **{USER}, por favor contacte con un administrador para cambiar el modo 8ball o establecer respuestas personalizadas",
+    "asksomething": "{CROSS} **{USER}, please ask a yes or no question.**",
+    "customresponses": "{CROSS} **{USER}, please contact an administrator to change the 8ball mode or set custom responses.**",
     "customresponsesadmin": [
-      "{CROSS} **¡Las respuestas personalizadas están habilitadas pero ninguna fue agregada!**",
+      "{CROSS} **Custom responses are enabled but none were added!**",
       "",
-      "Para agregar nuevas respuestas usa `{PREFIX}settings 8ball setreplies Respuesta 1|Respuesta 2|Respuesta 3`",
-      "",
-      "{WARNING} Debes agregar al menos 2 respuestas."
+      "{INFO} To add new responses use `{PREFIX}s 8ball setreplies Reply 1 | Reply 2 | Reply 3`"
     ],
-    "askedquestion": "{TAG} hizo la pregunta #{NUMBER}",
-    "question": "Pregunta",
-    "answer": "Respuesta",
+    "askedquestion": "{TAG} asked question #{NUMBER}",
+    "question": "Question",
+    "answer": "Answer",
     "replies": {
       "all": [
-        "Absolutamente no",
-        "¡Absolutamente!",
-        "Según mi religión, no",
-        "Ahhh, eres una de esas personas",
-        "¡Casi siempre!",
-        "Y los cerdos vuelan... oh espera, pensé que sólo hablábamos de cosas que son posibles",
-        "¿Estás bien? La gente normal no pregunta eso",
-        "¿Siempre eres así?",
-        "Tan pronto como subes tus notas",
-        "Tan pronto como tu headass aprenda a leer",
-        "Pregúntame de nuevo, no estoy seguro",
-        "Pregúntale a papá",
-        "Pregúntale a tu ex",
-        "Pide permiso a tus padres primero",
-        "Pregúntale a tu madrastra",
-        "¿Perra qué?",
-        "Perra, ¿en serio?",
-        "Bruh, qué carajo... simplemente no",
-        "Bruh no puedes pedir eso",
-        "Llama a tu abuela, maldito idiota",
-        "Llama a la policía cuando te des cuenta de lo tonto que eres",
-        "Correcto",
-        "Definitivamente, es una gran idea",
-        "¡Hazlo, no lo harás!",
-        "¿Tu madre lo sabe?",
-        "¿Ehhhh?",
-        "Disculpa, ¿qué carajo?",
-        "Vete a la mierda. He terminado con tu mierda",
-        "Joder, sí",
-        "Dale tiempo...",
+        "Absolutely not",
+        "Absolutely!",
+        "According to my religion, no",
+        "Ahhh, you're one of those people",
+        "Almost always!",
+        "And pigs fly- oh wait, I thought we were only talking about things that are possible",
+        "Are you okay? Normal people don't ask that",
+        "Are you always like this?",
+        "As soon as you get your grades up",
+        "As soon as your headass learns how to read",
+        "Ask me again I'm not sure",
+        "Ask daddy",
+        "Ask your ex",
+        "Ask your parents for permission first",
+        "Ask your stepmom",
+        "Bitch what?",
+        "Bitch, really?",
+        "Bruh what the fuck- just no",
+        "Bruh you can't ask that",
+        "Call your grandma you dumb fuck",
+        "Call the police when you realize how dumb you are",
+        "Correct",
+        "Definitely, thats a great idea",
+        "Do it, you won't!",
+        "Does your mom know that?",
+        "Ehhhh?",
+        "Excuse me, what the fuck?",
+        "Fuck you. I'm done with your shit",
+        "Fucking yes",
+        "Give it time...",
         "Haha nope",
-        "Diablos, no",
-        "¡Diablos, sí!",
-        "¡Hola! ¿Hablas inglés?",
-        "¿Eh?",
-        "No te diré una mierda",
-        "Creo que sí...",
-        "No tengo la respuesta que quieres",
-        "No veo por qué no?",
-        "No lo creo",
-        "No entiendo...",
-        "Estaba pensando, tal vez...",
-        "Prefiero guardarme eso para mí...",
-        "Prefiero no decir...",
-        "Prefiero que te preguntes primero",
+        "Hell no",
+        "Hell yea!",
+        "Hi! Do you speak english?",
+        "How dare you ask me such a question?!",
+        "Huh?",
+        "I ain't telling you shit",
+        "I believe so...",
+        "I don't have the answer you want",
+        "I don't see why not?",
+        "I don't think so",
+        "I don't understand...",
+        "I was thinking, maybe...?",
+        "I'd rather keep that to myself...",
+        "I'd rather not say...",
+        "I'd rather you ask yourself first",
         "Idk about that",
-        "Si tan sólo fuera tan fácil...",
-        "Si me das un helado, te responderé",
-        "Si tú lo dices",
-        "Si lo piensas, sí",
-        "Si: 1 + 1 = 3, sí",
-        "En otra vida",
-        "Jesús, me estás matando con estas preguntas",
+        "If only it was that easy...",
+        "If you give me ice cream I'll answer",
+        "If you say so",
+        "If you think about it, yes",
+        "If: 1 + 1 = 3, yes",
+        "In another life",
+        "Jesus you're killing me with these questions",
         "K",
-        "Amigo mío, no es tan fácil",
+        "My friend, it isn't that easy",
         "Nah bruh",
+        "Nah fam",
         "Nahhh",
         "Nawww",
-        "Nunca será eso cierto",
+        "Never will that be true",
         "No...",
-        "¿No?",
-        "No",
-        "No sherlock de mierda",
-        "No señor",
+        "No?",
+        "No.",
+        "No shit sherlock",
+        "No sir",
         "No u",
-        "No",
-        "No te respondo",
-        "Ni siquiera cerca",
-        "Ni en un millón de años",
-        "No a menos que me pagues 100.000 dólares",
-        "No hasta que entres en la universidad",
-        "De todas las personas, ¿por qué me preguntas a mí? (jk sigue hablándome)",
-        "Por supuesto que me vas a preguntar eso",
-        "Oh, ¿no te encantaría saber la respuesta?",
-        "Oh, joder, no",
-        "Ok",
-        "Sólo un imbécil como tú lo sabría",
-        "Sólo en luna llena",
-        "Sólo tú preguntarías eso",
-        "Posiblemente...",
-        "Probablemente no",
-        "¡Probablemente!",
-        "¿En serio hermano? No",
-        "Señor, eso es incorrecto",
-        "*suspirar... Voy a ser honesto, no",
-        "*suspirar*... Voy a ser honesto, sí",
-        "Mierda, tienes razón",
+        "Nope",
+        "Not answering you",
+        "Not even close",
+        "Not in a million years",
+        "Not unless you pay me $100,000",
+        "Not until you get into college",
+        "Of all people, why ask me? (jk keep talking to me)",
+        "Of course you're gonna ask me that",
+        "Oh wouldn't you just love to know the answer",
+        "Oh, fuck no",
+        "Ok.",
+        "Only a dick like you would know",
+        "Only on a full moon",
+        "Only you would ask that",
+        "Possibly...",
+        "Probably not",
+        "Probably!",
+        "Seriously bro? No",
+        "Sir that is incorrect",
+        "*sigh*... I'm gonna be honest, no",
+        "*sigh*... I'm gonna be honest, yes",
+        "Shit you're right",
         "Sry I don't speak stupid",
-        "Eso es 100% correcto",
-        "¡Eso es imposible!",
-        "Eso es lo que el gobierno quiere que pienses... :guiño:",
-        "Totalmente",
-        "Inténtalo de nuevo, hijo de puta",
-        "Uh, ¿estás reiniciado? Lmao",
-        "Tu mamá lo cree",
-        "Tu padre lo cree",
-        "Bueno, sí, pero en realidad no",
-        "¿Qué me estás pidiendo?",
-        "¿Qué coño se supone que significa eso?",
-        "¿Qué fue eso, imbécil?",
-        "¿Por qué no?",
-        "No contaría realmente con ello",
-        "Sí, no me digas...",
-        "Sí, totalmente... no, por supuesto, no eres un cabrón",
-        "Sí",
-        "Sí. Mhm. Claro. Totalmente",
-        "Sí",
-        "¡Sí! ¡Sí! ¿Por qué no aceptas un sí como respuesta?",
-        "Sí",
-        "¡Puedes apostar!",
-        "No puedes decir eso, joder",
-        "Sabes que es verdad",
-        "Sólo se vive una vez...",
-        "¡Ya quisieras!",
+        "That's 100% correct",
+        "That's impossible!",
+        "That's what the goverment want's you to think... :wink:",
+        "Totally",
+        "Try again motherfucker",
+        "Uh, are you retarted? Lmao",
+        "Ur mom thinks so",
+        "Ur sugardaddy think so",
+        "Well yes, but actually no",
+        "What are you asking me for?",
+        "What the fuck is that supposed to mean?",
+        "What was that, asswipe?",
+        "Why not?",
+        "Wouldn't really count on it",
+        "Yea no shit...",
+        "Yea totally- no of course not you fucker",
+        "Yea",
+        "Yea. Mhm. Sure. Totally.",
+        "Yes",
+        "Yes! Yes! Why won't you take yes for an answer?",
+        "Yes",
+        "You bet!",
+        "You can't fucking say that",
+        "You know it be true",
+        "You only live once...",
+        "You wish!",
         "Yup"
       ],
       "clean": [
-        "Absolutamente no",
-        "¡Absolutamente!",
-        "Según mi religión, no",
-        "Ahhh, eres una de esas personas",
-        "¡Casi siempre!",
-        "Y los cerdos vuelan... oh espera, pensé que sólo hablábamos de cosas que son posibles",
-        "¿Estás bien? La gente normal no pregunta eso",
-        "¿Siempre eres así?",
-        "Tan pronto como subes tus notas",
-        "Pregúntame de nuevo, no estoy seguro",
-        "Pregúntale a papá",
-        "Pregúntale a tu ex",
-        "Pide permiso a tus padres primero",
-        "Pregúntale a tu madrastra",
-        "Bruh no puedes pedir eso",
-        "Llama a la policía cuando te des cuenta de lo tonto que eres",
-        "Correcto",
-        "Definitivamente, es una gran idea",
-        "¡Hazlo, no lo harás!",
-        "¿Tu madre lo sabe?",
-        "¿Ehhhh?",
-        "Dale tiempo...",
+        "Absolutely not",
+        "Absolutely!",
+        "According to my religion, no",
+        "Ahhh, you're one of those people",
+        "Almost always!",
+        "And pigs fly- oh wait, I thought we were only talking about things that are possible",
+        "Are you okay? Normal people don't ask that",
+        "Are you always like this?",
+        "As soon as you get your grades up",
+        "Ask me again I'm not sure",
+        "Ask daddy",
+        "Ask your ex",
+        "Ask your parents for permission first",
+        "Ask your stepmom",
+        "Bruh you can't ask that",
+        "Call the police when you realize how dumb you are",
+        "Correct",
+        "Definitely, thats a great idea",
+        "Do it, you won't!",
+        "Does your mom know that?",
+        "Ehhhh?",
+        "Give it time...",
         "Haha nope",
-        "¡Hola! ¿Hablas inglés?",
-        "¿Eh?",
-        "Creo que sí...",
-        "No tengo la respuesta que quieres",
-        "No veo por qué no?",
-        "No lo creo",
-        "No entiendo...",
-        "Estaba pensando, tal vez...",
-        "Prefiero guardarme eso para mí...",
-        "Prefiero no decir...",
-        "Prefiero que te preguntes primero",
+        "Hi! Do you speak english?",
+        "How dare you ask me such a question?!",
+        "Huh?",
+        "I believe so...",
+        "I don't have the answer you want",
+        "I don't see why not?",
+        "I don't think so",
+        "I don't understand...",
+        "I was thinking, maybe...?",
+        "I'd rather keep that to myself...",
+        "I'd rather not say...",
+        "I'd rather you ask yourself first",
         "Idk about that",
-        "Si tan sólo fuera tan fácil...",
-        "Si me das un helado, te responderé",
-        "Si tú lo dices",
-        "Si lo piensas, sí",
-        "Si: 1 + 1 = 3, sí",
-        "En otra vida",
-        "Jesús, me estás matando con estas preguntas",
+        "If only it was that easy...",
+        "If you give me ice cream I'll answer",
+        "If you say so",
+        "If you think about it, yes",
+        "If: 1 + 1 = 3, yes",
+        "In another life",
+        "Jesus you're killing me with these questions",
         "K",
-        "Amigo mío, no es tan fácil",
+        "My friend, it isn't that easy",
         "Nah bruh",
+        "Nah fam",
         "Nahhh",
         "Nawww",
-        "Nunca será eso cierto",
+        "Never will that be true",
         "No...",
-        "¿No?",
-        "No",
-        "No señor",
+        "No?",
+        "No.",
+        "No sir",
         "No u",
-        "No",
-        "No te respondo",
-        "Ni siquiera cerca",
-        "Ni en un millón de años",
-        "No a menos que me pagues 100.000 dólares",
-        "No hasta que entres en la universidad",
-        "De todas las personas, ¿por qué me preguntas a mí? (jk sigue hablándome)",
-        "Por supuesto que me vas a preguntar eso",
-        "Oh, ¿no te encantaría saber la respuesta?",
-        "Ok",
-        "Sólo en luna llena",
-        "Sólo tú preguntarías eso",
-        "Posiblemente...",
-        "Probablemente no",
-        "¡Probablemente!",
-        "¿En serio hermano? No",
-        "Señor, eso es incorrecto",
-        "*suspirar*... Voy a ser honesto, no",
-        "*suspirar*... Voy a ser honesto, sí",
+        "Nope",
+        "Not answering you",
+        "Not even close",
+        "Not in a million years",
+        "Not unless you pay me $100,000",
+        "Not until you get into college",
+        "Of all people, why ask me? (jk keep talking to me)",
+        "Of course you're gonna ask me that",
+        "Oh wouldn't you just love to know the answer",
+        "Ok.",
+        "Only on a full moon",
+        "Only you would ask that",
+        "Possibly...",
+        "Probably not",
+        "Probably!",
+        "Seriously bro? No",
+        "Sir that is incorrect",
+        "*sigh*... I'm gonna be honest, no",
+        "*sigh*... I'm gonna be honest, yes",
         "Sry I don't speak stupid",
-        "Eso es 100% correcto",
-        "¡Eso es imposible!",
-        "Eso es lo que el gobierno quiere que pienses... :guiño:",
-        "Totalmente",
-        "Tu mamá lo cree",
-        "Bueno, sí, pero en realidad no",
-        "¿Qué me estás pidiendo?",
-        "¿Por qué no?",
-        "No contaría realmente con ello",
-        "Sí",
-        "Sí. Mhm. Claro. Totalmente",
-        "Sí",
-        "¡Sí! ¡Sí! ¿Por qué no aceptas un sí como respuesta?",
-        "Sí",
-        "¡Puedes apostar!",
-        "Sabes que es verdad",
-        "Sólo se vive una vez...",
-        "¡Ya quisieras!",
+        "That's 100% correct",
+        "That's impossible!",
+        "That's what the goverment want's you to think... :wink:",
+        "Totally",
+        "Ur mom thinks so",
+        "Well yes, but actually no",
+        "What are you asking me for?",
+        "Why not?",
+        "Wouldn't really count on it",
+        "Yea",
+        "Yea. Mhm. Sure. Totally.",
+        "Yes",
+        "Yes! Yes! Why won't you take yes for an answer?",
+        "Yes",
+        "You bet!",
+        "You know it be true",
+        "You only live once...",
+        "You wish!",
         "Yup"
       ],
       "explicit": [
-        "Tan pronto como tu headass aprenda a leer",
-        "¿Perra qué?",
-        "Perra, de verdad",
-        "Llama a tu abuela, maldito idiota",
-        "Llama a la policía cuando te des cuenta de lo tonto que eres",
-        "Disculpe, ¿qué carajo?",
-        "Jódete. He terminado con tu mierda",
-        "Joder, sí",
-        "No te diré una mierda",
-        "No sherlock de mierda",
-        "Oh, joder, no",
-        "Mierda, tienes razón",
+        "As soon as your headass learns how to read",
+        "Bitch what?",
+        "Bitch, really",
+        "Call your grandma you dumb fuck",
+        "Call the police when you realize how dumb you are",
+        "Excuse me, what the fuck?",
+        "Fuck you. I'm done with your shit",
+        "Fucking yes",
+        "I ain't telling you shit",
+        "No shit sherlock",
+        "Oh, fuck no",
+        "Shit you're right",
         "Sry I don't speak dumbfuck",
-        "Inténtalo de nuevo, hijo de puta",
-        "Uh, ¿estás reiniciado? Lmao",
-        "Tu padre lo cree",
-        "¿Qué coño se supone que significa eso?",
-        "¿Qué fue eso, imbécil?",
-        "Sí, no me digas...",
-        "Sí, totalmente... no, por supuesto que no, cabrón",
-        "No puedes decir eso"
+        "Try again motherfucker",
+        "Uh, are you retarted? Lmao",
+        "Ur sugardaddy think so",
+        "What the fuck is that supposed to mean?",
+        "What was that, asswipe?",
+        "Yea no shit...",
+        "Yea totally- no of course not you fucker",
+        "You can't fucking say that"
       ]
-    }
-  },
-  "8color": {
-    "alreadyplaying": "{CROSS} **¡Parece que ya estás jugando esto en otro lado!**",
-    "game": {
-      "playing": {
-        "title": "{TAG} esta jugando 8Color",
-        "description": [
-          "Estás por iniciar el **Nivel {LEVEL}**!",
-          "Memoriza el siguiente patrón:",
-          "{PATTERN}",
-          "",
-          "_¡Este mensaje se borra en {TIME} segundos!_",
-          "_Pista: ¡no copies el mensaje!_"
-        ]
-      },
-      "enterpattern": {
-        "description": [
-          "Estás jugando el **Nivel {LEVEL}**",
-          "Ingresa el patrón memorizado",
-          "",
-          "_¡Tienes {TIME} segundos para responder!_"
-        ]
-      },
-      "win": {
-        "description": [
-          "{CHECK} **¡Correcto! ¡Patrón ingresado!**",
-          "",
-          "_¡Siguiente nivel iniciando en 10 segundos!_"
-        ]
-      },
-      "lose": {
-        "title": "{TAG} estaba jugando 8color",
-        "description": [
-          "{CROSS} **¡Error! ¡No ingresaste el patrón correcto!**",
-          "",
-          "**El patrón correcto era:**",
-          "{PATTERN}",
-          "**Tu ingresaste:**",
-          "{REPLY}",
-          "",
-          "**Alcanzaste el nivel:** {LEVEL}",
-          "",
-          "_¡Gracias por jugar!_"
-        ],
-        "descriptiontimeout": [
-          "{CROSS} **¡Tiempo agotado! ¡No respondiste!**",
-          "",
-          "**Alcanzaste el nivel:** {LEVEL}",
-          "",
-          "_¡Gracias por jugar!_"
-        ]
-      }
-    },
-    "error": {
-      "cannotstart": "{CROSS} **No pude iniciar el juego en el canal {CHANNEL} en el servidor '{GUILD}'.**",
-      "cannotcontinue": "{CROSS} **No pude continuar el juego en el canal {CHANNEL} en el servidor '{GUILD}'.**",
-      "cannotfinish": "{CROSS} **No pude terminar el juego en el canal {CHANNEL} en el servidor '{GUILD}'.**"
     }
   },
   "akinator": {
     "help": {
-      "title": "{BOTNAME} - Akinator Help",
-      "user": {
-        "description": [
-          "**Ajustes Disponibles:**",
-          "`{PREFIX}akinator start` - Start A New Game.",
-          "",
-          "*Próximamente más artículos...*",
-          "",
-          "{WARNING} This game is **under development**, it won't run perfectly!",
-          "Report bugs/ideas in our [Support server]({INVITATION})!"
-        ]
-      },
-      "administrator": {
-        "description": [
-          "**Ajustes Disponibles:**",
-          "`{PREFIX}akinator start` - Empieza un nuevo juego.",
-          "",
-          "*Próximamente más artículos...*",
-          "",
-          "{WARNING} This game is **under development**, it won't run perfectly!",
-          "Report bugs/ideas in our [Support server]({INVITATION})!"
-        ],
-        "description2": [
-          "**Ajustes Disponibles:**",
-          "`{PREFIX}akinator start` - Empieza un nuevo juego.",
-          "",
-          "*Próximamente más artículos...*",
-          "",
-          "{WARNING} This game is **under development**, it won't run perfectly!",
-          "Report bugs/ideas in our [Support server]({INVITATION})!"
-        ]
-      }
-    },
-    "disabledgame": "{CROSS} **¡Este juego está desactivado!** Usa `{PREFIX}akinator toggle`",
-    "invalidchannel": "{CROSS} **¡Canal incorrecto!** Ir al {AKINATORCHANNEL} para usar **Akinator**!",
-    "alreadyplaying": "{CROSS} **¡{USER}, estás jugando en otro lugar!!**"
-  },
-  "avatar": {
-    "success": {
-      "description": [
-        "{CHECK} Aquí está el avatar de {USER}! [Enlace]({URL})"
+      "title": "{BOTNAME} - Akinator Menu",
+      "user": [
+        "**Available Settings:**",
+        "`{PREFIX}akinator start` - Start A New Game.",
+        "",
+        "*More Features Coming Soon...*",
+        "",
+        "{WARNING} This game is **under development**, it won't run perfectly!",
+        "Report bugs/ideas in our [Support Server]({INVITE})!"
+      ],
+      "administrator": [
+        "**Available Settings:**",
+        "`{PREFIX}akinator start` - Start a new game.",
+        "",
+        "*More Features Coming Soon...*",
+        "",
+        "{WARNING} This game is **under development**, it won't run perfectly!",
+        "Report bugs/ideas in our [Support Server]({INVITE})!"
       ]
-    }
+    },
+    "alreadyplaying": "{CROSS} **{USER}, you are already playing Akinator somewhere else.**",
+    "nomoreembeds": "\\🏆 You were thinking about... **{GUESS}**! I cannot send any more embeds, sorry :(",
+    "sendguess": "\\✋ **Then I don't know, I had only **{ANSWERS}** possible answers. You won this time** :("
   },
   "battle": {
     "error": {
-      "alreadybattling": "{CROSS} **{USER}, ya estás en una batalla en otro lugar.**",
-      "cannotbeauthor": "{CROSS} **{USER}, no puedes luchar contra ti mismo.**",
-      "targetbattling": "{CROSS} **{USER}, ese usuario ya está en una batalla.**"
+      "alreadybattling": "{CROSS} **{USER}, you are already in a battle somewhere else.**",
+      "cannotbeauthor": "{CROSS} **{USER}, you cannot battle yourself.**",
+      "targetbattling": "{CROSS} **{USER}, that user is already playing Battles.**"
     },
     "title": "{BOTNAME} - Battles",
     "battling": {
       "attacks": [
-        "{TEAM} 🗡️ {ATTACKER} cortó a {TARGET} con una **katana** por {DAMAGE} HP!",
-        "{TEAM} 🗣️ {ATTACKER} asó a {TARGET} con un **yomomma joke** por {DAMAGE} HP!",
-        "{TEAM} 🧪 {ATTACKER} quemó a {TARGET} con **ácido** por {DAMAGE} HP!",
-        "{TEAM} ⚽ {ATTACKER} golpeó a {TARGET} con un **balón de fútbol** por {DAMAGE} HP!",
-        "{TEAM} ✂️ {ATTACKER} cortó a {TARGET} con unas **tijeras** por {DAMAGE} HP!",
-        "{TEAM} 🔪 {ATTACKER} apuñaló a {TARGET} con un **cuchillo** por {DAMAGE} HP!",
-        "{TEAM} 🪕 {ATTACKER} aplastó a {TARGET} con un **banjo** por {DAMAGE} HP!",
-        "{TEAM} 🛡️ {ATTACKER} golpeó a {TARGET} con un **escudo** por {DAMAGE} HP!",
-        "{TEAM} 🥄 {ATTACKER} magulló a {TARGET} con una **cuchara** por {DAMAGE} HP!",
-        "{TEAM} ⚾ {ATTACKER} golpeó a {TARGET} con una **pelota de béisbol** por {DAMAGE} HP!",
-        "{TEAM} 🍌 {ATTACKER} bananad {TARGET} con una **banana** por {DAMAGE} HP!",
-        "{TEAM} 🔥 {ATTACKER} quemó a {TARGET} con una **antorcha** por {DAMAGE} HP!",
-        "{TEAM} 🪓 {ATTACKER} rebanó {TARGET} con un **hacha** por {DAMAGE} HP!",
-        "{TEAM} 🍷 {ATTACKER} envenenó a {TARGET} con una **bebida** por {DAMAGE} HP!",
-        "{TEAM} 👊 {ATTACKER} golpeó  a {TARGET} con el **puño** por {DAMAGE} HP!",
-        "{TEAM} 🧨 {ATTACKER} explotó {TARGET} con una **bomba** por {DAMAGE} HP!",
-        "{TEAM} 🔫 {ATTACKER} disparó {TARGET} con una **pistola de agua** por {DAMAGE} HP!",
-        "{TEAM} 🔧 {ATTACKER} golpeó {TARGET} con una **llave inglesa** por {DAMAGE} HP!",
-        "{TEAM} 🏹 {ATTACKER} golpeó {TARGET} con una **flecha** por {DAMAGE} HP!",
-        "{TEAM} ☁️ {ATTACKER} se ahogó {TARGET} con su **pedo** por {DAMAGE} HP!",
-        "{TEAM} 🎊 {ATTACKER} aturdido {TARGET} con **confeti** por {DAMAGE} HP!",
-        "{TEAM} 🧼 {ATTACKER} amordazado {TARGET} con **jabón** por {DAMAGE} HP!",
-        "{TEAM} 🧹 {ATTACKER} golpeado {TARGET} con un **palo de escoba** por {DAMAGE} HP!"
+        "{TEAM} 🗡️ {ATTACKER} sliced {TARGET} with a **katana** for {DAMAGE} HP!",
+        "{TEAM} 🗣️ {ATTACKER} roasted {TARGET} with a **yomomma joke** for {DAMAGE} HP!",
+        "{TEAM} 🧪 {ATTACKER} burned {TARGET} with **acid** for {DAMAGE} HP!",
+        "{TEAM} ⚽ {ATTACKER} pummelled {TARGET} with a **soccer ball** for {DAMAGE} HP!",
+        "{TEAM} ✂️ {ATTACKER} cut {TARGET} with **scissors** for {DAMAGE} HP!",
+        "{TEAM} 🔪 {ATTACKER} stabbed {TARGET} with a **knife** for {DAMAGE} HP!",
+        "{TEAM} 🪕 {ATTACKER} smashed {TARGET} with a **banjo** for {DAMAGE} HP!",
+        "{TEAM} 🛡️ {ATTACKER} bashed {TARGET} with their **shield** for {DAMAGE} HP!",
+        "{TEAM} 🥄 {ATTACKER} bruised {TARGET} with a **spoon** for {DAMAGE} HP!",
+        "{TEAM} ⚾ {ATTACKER} pelted {TARGET} with a **baseball** for {DAMAGE} HP!",
+        "{TEAM} 🍌 {ATTACKER} bananad {TARGET} with a **banana** for {DAMAGE} HP!",
+        "{TEAM} 🔥 {ATTACKER} scorched {TARGET} with a **torch** for {DAMAGE} HP!",
+        "{TEAM} 🪓 {ATTACKER} chopped {TARGET} with an **axe** for {DAMAGE} HP!",
+        "{TEAM} 🍷 {ATTACKER} poisoned {TARGET} with a **drink** for {DAMAGE} HP!",
+        "{TEAM} 👊 {ATTACKER} punched {TARGET} with their **fist** for {DAMAGE} HP!",
+        "{TEAM} 🧨 {ATTACKER} exploded {TARGET} with a **bomb** for {DAMAGE} HP!",
+        "{TEAM} 🔫 {ATTACKER} shot {TARGET} with a **watergun** for {DAMAGE} HP!",
+        "{TEAM} 🔧 {ATTACKER} smacked {TARGET} with a **wrench** for {DAMAGE} HP!",
+        "{TEAM} 🏹 {ATTACKER} hit {TARGET} with an **arrow** for {DAMAGE} HP!",
+        "{TEAM} ☁️ {ATTACKER} choked {TARGET} with their **fart** for {DAMAGE} HP!",
+        "{TEAM} 🎊 {ATTACKER} stunned {TARGET} with **confetti** for {DAMAGE} HP!",
+        "{TEAM} 🧼 {ATTACKER} gagged {TARGET} with **soap** for {DAMAGE} HP!",
+        "{TEAM} 🧹 {ATTACKER} whacked {TARGET} with a **broomstick** for {DAMAGE} HP!"
       ],
       "wins": [
         "**\\🏆 {WINNERMEMBER} won against {LOSERMEMBER} in {WINNERMOVES} moves!**",
@@ -413,76 +337,1433 @@
       ]
     }
   },
-  "clear": {
-    "enteramount": "{CROSS} **{USER}, por favor, introduzca un número de mensajes para borrar!**",
-    "invalidamount": "{CROSS} **{USER}, la cantidad ingresada no es un número válido!**",
-    "cannotgreater": "{CROSS} **{USER}, la cantidad de mensajes no puede ser mayor a:** `100`",
-    "cannotlower": "{CROSS} **{USER}, la cantidad de mensajes no puede ser menor a:** `1`",
-    "nopermission": "{CROSS} **{USER}, por favor, dame {BOT} el permiso `Manage Messages` para eliminar los mensajes.**",
-    "deleted": "{CHECK} **{USER}, se eliminaron un total de `{AMOUNT}` mensajes.**"
+  "belike": {
+    "providename": "{CROSS} **{USER}, please provide a name.**",
+    "description": "{CHECK} **Be Like {USER}**"
+  },
+  "bigemoji": {
+    "success": "{CHECK} **{USER} Here is the emoji! [Link]({EMOJILINK})**",
+    "error": "{CROSS} **{USER}, please make sure Magic8 shares a server with the custom emoji.**"
+  },
+  "clapme": {
+    "nomessage": "{CROSS} **{USER}, please provide a message.**",
+    "success": "{CHECK} {USER}: {MESSAGE}"
+  },
+  "dicksize": {
+    "self": {
+      "description": [
+        "**{CHECK} {USER} checked their Dick Size!**",
+        "",
+        "**Size:** {SIZE}",
+        "",
+        "{MESSAGE}"
+      ],
+      "big": [
+        "Oh you can get far with that!",
+        "Still not as long as mine :)",
+        "Quite impressive for a 2 year old!",
+        "That's definitely fake lol"
+      ],
+      "med": [
+        "You're just average lol",
+        "What a shame, a regular",
+        "Haha that's nothing",
+        "Boring size you got"
+      ],
+      "small": [
+        "Wow! You'll get nowhere with that!",
+        "Aww so tiny!",
+        "I'm telling your friends!",
+        "Good luck with that!"
+      ]
+    },
+    "other": {
+      "description": [
+        "**{CHECK} {USER} checked {TARGET}'s Dick Size!**",
+        "",
+        "**Size:** {SIZE} inches",
+        "",
+        "{MESSAGE}"
+      ],
+      "big": [
+        "They can get far with that!",
+        "Still not as long as mine :)",
+        "Quite impressive for a 2 year old!",
+        "That's definitely fake lol"
+      ],
+      "med": [
+        "They're just average lol",
+        "What a shame, a regular",
+        "Haha that's nothing",
+        "Boring size they got"
+      ],
+      "small": [
+        "Wow! They'll get nowhere with that!",
+        "Aww so tiny!",
+        "I'm telling their friends!",
+        "Good luck with that!"
+      ]
+    }
+  },
+  "hack": {
+    "alreadyhacking": "{CROSS} **{TARGET} is already being hacked!**",
+    "starting": "{HACK} Starting hack on **{TARGET}** {HACK}",
+    "process": {
+      "oip": {
+        "time": 5000,
+        "message": "> Obtaining {TARGET}'s IP..."
+      },
+      "dip": {
+        "time": 1000,
+        "message": "> Decoding their IP..."
+      },
+      "ip": {
+        "time": 3000,
+        "message": "> Analizing {RANDOMIP}"
+      },
+      "oipv6": {
+        "time": 4000,
+        "message": "> Obtaining IPv6 address..."
+      },
+      "dipv6": {
+        "time": 1000,
+        "message": "> Decoding IPv6 address..."
+      },
+      "ipv6": {
+        "time": 3000,
+        "message": "> Analizing {RANDOMIPV6}"
+      },
+      "mac": {
+        "time": 3000,
+        "message": "> MAC address obtained. Analizing {RANDOMMAC}"
+      },
+      "lhandshake": {
+        "time": 3000,
+        "message": "> Listening for handshake..."
+      },
+      "handshake": {
+        "time": 3000,
+        "message": "> Handshake captured! Saved as \"hs/IPonFirewall_{IPONFIREWALL}.cap\""
+      },
+      "email": {
+        "time": 3000,
+        "message": "> Email successfully spoofed: {RANDOMEMAIL}"
+      },
+      "opass": {
+        "time": 3000,
+        "message": "> Obtaining password..."
+      },
+      "pass": {
+        "time": 3000,
+        "message": "> Password successfully spoofed: {RANDOMPASSWORD}"
+      },
+      "gettingcard": {
+        "time": 2000,
+        "message": "> Obtaining associated credit/debit card..."
+      },
+      "card": {
+        "time": 2000,
+        "message": "> Credit/debit card successfully spoofed: {RANDOMCREDITCARD}"
+      },
+      "registering1": {
+        "time": 2000,
+        "message": "> Using email to register on {RANDOMREGISTER}"
+      },
+      "purchased": {
+        "time": 2000,
+        "message": "> **Purchased Pro-Membership!**"
+      }
+    },
+    "finishing": "> {HACK} Finishing the hack on **{TARGET}** {HACK}",
+    "finished": "{CHECK} The totally legit hack on **{TARGET}** has been completed!",
+    "interrupted": "{CROSS} Hacking process for **{TARGET}** interrupted! **Content has been removed...**"
+  },
+  "hammer": {
+    "alreadyplaying": "{CROSS} **{USER}, you are already hitting a hammer somewhere else.**",
+    "starting": {
+      "title": "{USERNAME} is testing their strength!",
+      "description": [
+        "**Hello contestor!**",
+        "",
+        "*Ready to test your strength? Hit the pad with the mallet!*"
+      ]
+    },
+    "hitdescription": [
+      "Wow! Nice hit!",
+      "Crazy hit!",
+      "Dang, good hit!",
+      "Nice whack!",
+      "That sounded good!",
+      "Amazing hit!"
+    ],
+    "hit": [
+      "**{HITDESCRIPTION}**",
+      "",
+      "*Let's see your score...*"
+    ],
+    "successdescription": [
+      "You hit the mallet and got **{FINALVALUE}** out of **1000** points!",
+      "",
+      "{RANDOMDESCRIPTION}"
+    ],
+    "low": [
+      "You're so weak!",
+      "Even my grandma can do better than that!",
+      "That was an epic fail"
+    ],
+    "med": [
+      "Not bad, my guy!",
+      "That's normal, no big deal",
+      "I can do better than that :)"
+    ],
+    "high": [
+      "Nice score! but you can't beat mine",
+      "Almost as good as my grandma!",
+      "That's a crazy score!"
+    ]
+  },
+  "howgay": {
+    "success": "🏳️‍🌈 {TARGET} is `{PERCENT}%` gay 🏳️‍🌈"
+  },
+  "iq": {
+    "superdumb": [
+      "bruh you got the iq of a tomato",
+      "you're as smart as a worm!",
+      "how?? how are you so stupid",
+      "who raised you???",
+      "i can no longer communicate with you"
+    ],
+    "dumb": [
+      "haha you're stupid!",
+      "you dumb lol",
+      "really? dang what an L",
+      "you stoopid",
+      "ew i dont like dumb people"
+    ],
+    "average": [
+      "you're an average guy!",
+      "looks like you're normal",
+      "well looks like you're a normie",
+      "thank god you're not a genius",
+      "im still smarter than you"
+    ],
+    "smart": [
+      "dang you're smart!",
+      "you're above average!",
+      "you aren't dumb!",
+      "okayyyyy, you smart like me",
+      "woah, first smart person i've seen in a long time"
+    ],
+    "genius": [
+      "are you a descendant of albert einstein?",
+      "you're a genius",
+      "impressive!",
+      "no one is as smart as me though",
+      "woah, a genius!"
+    ],
+    "description": [
+      "**{TARGET}'s IQ Level:** {IQ} 🧠",
+      "_ _",
+      "{MESSAGE}"
+    ]
+  },
+  "meme": {
+    "invalidtopic": {
+      "description": [
+        "{CROSS} **Couldn't find any meme about this..**"
+      ]
+    },
+    "success": {
+      "description": [
+        "{CHECK} **Random {TOPIC} meme**!"
+      ]
+    }
+  },
+  "slotmachine": {
+    "extras": {
+      "playing": [
+        "\u200b \u200b \u200b \u200b \u200b \u200b {USER} is playing slot machine!",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {LOADING} **Slot machine is rolling...**",
+        "\u200b \u200b \u200b \u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b React with :joystick: to stop the machine!"
+      ]
+    },
+    "title": "{USERNAME} is rolling the Slot Machine!",
+    "starting": [
+      "**Player:** {USER}",
+      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+      "",
+      "*Press the 🔴 to start the machine!*"
+    ],
+    "waiting": [
+      "**Player:** {USER}",
+      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+      "",
+      "{LOADING} *Pull the 🕹️ to stop the slots!*"
+    ],
+    "rollandstop": [
+      "**Player:** {USER}",
+      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+      "",
+      "{LOADING} *Stopping the slots...*"
+    ],
+    "lose": [
+      "**Player:** {USER}",
+      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+      "",
+      "{CROSS} You lost!"
+    ],
+    "win": [
+      "**Player:** {USER}",
+      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+      "",
+      "{CHECK} You won!"
+    ]
+  },
+  "spinner": {
+    "alreadyspinning": "{CROSS} **{USER}, you are already spinning a spinner somewhere else.**",
+    "spinning": "{SPINNER} **{USER} is spinning a spinner!**",
+    "spun": "{SPINNER} **{USER} spun the spinner for:** `{TIME}`"
+  },
+  "8color": {
+    "alreadyplaying": "{CROSS} **{USER}, you are already playing 8Color somewhere else.**",
+    "game": {
+      "playing": {
+        "title": "{USERNAME} is playing 8Color",
+        "description": [
+          "{LOADING} Starting Level: {LEVEL}**",
+          "Memorize the following pattern:",
+          "",
+          "{PATTERN}",
+          "",
+          "_In {TIME} seconds the message will be deleted!_",
+          "_Hint: don't copy the message!_"
+        ]
+      },
+      "enterpattern": {
+        "description": [
+          "You are playing **Level {LEVEL}**",
+          "Enter the pattern you memorized.",
+          "",
+          "_You have {TIME} seconds to answer!_"
+        ]
+      },
+      "win": {
+        "description": [
+          "{CHECK} **Correct! You entered the right pattern!**",
+          "",
+          "_Next level starting in 10 seconds!_"
+        ]
+      },
+      "lose": {
+        "title": "{USERNAME} lost in 8Color",
+        "description": [
+          "{CROSS} **Wrong! You didn't enter the right pattern!**",
+          "",
+          "**The correct pattern was:**",
+          "{PATTERN}",
+          "**You entered:**",
+          "{REPLY}",
+          "",
+          "**You reached level:** {LEVEL}",
+          "",
+          "_Thanks for playing!_"
+        ],
+        "descriptiontimeout": [
+          "{CROSS} **Time out! You didn't enter the right pattern!**",
+          "",
+          "**You reached level:** {LEVEL}",
+          "",
+          "_Thanks for playing!_"
+        ]
+      }
+    }
+  },
+  "connectfour": {
+    "alreadyplaying": "{CROSS} **{USER}, you are already playing Connect Four somewhere else.**",
+    "targetalreadyplaying": "{CROSS} **{USER}, that user is already playing ConnectFour.**",
+    "cannotbeauthor": "{CROSS} **{USER}, you cannot play against yourself.**",
+    "game": {
+      "loadingdescription": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "\u200b ",
+        "{LOADING} _Loading game... Please wait._"
+      ],
+      "description": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b **{TURN}, your turn!**",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "",
+        "{LOADING} _You have **15 seconds** to move..._"
+      ],
+      "botdescription": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b **{TURN}, your turn!**",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "",
+        "{LOADING} _{TURN} is thinking its move..._"
+      ],
+      "autodescription": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{LASTTURN} didn't move!**",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **A random move was made.**",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{TURN}, your turn!**",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "",
+        "{LOADING} _You have **15 seconds** to move..._"
+      ],
+      "drawdescription": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "\u200b  \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b ** 📢 :regional_indicator_d: :regional_indicator_r: :regional_indicator_a: :regional_indicator_w: :bangbang::bangbang:**",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b **_Thanks for playing!_ \\🟡** \u200b \u200b \u200b  \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b"
+      ],
+      "winnerdescription": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "\u200b  \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **🎉 {WINNER} wins! 🎉**",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **_Thanks for playing!_ \\🟡** \u200b \u200b \u200b  \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b"
+      ]
+    }
+  },
+  "tictactoe": {
+    "alreadyplaying": "{CROSS} **{USER}, you are already playing TicTacToe somewhere else.**",
+    "targetalreadyplaying": "{CROSS} **{USER}, that user is already playing TicTacToe.**",
+    "cannotbeauthor": "{CROSS} **{USER}, you cannot play against yourself.**",
+    "game": {
+      "loadingdescription": [
+        "⭕ **- {CIRCLE}**",
+        "❌ **- {CROSS}**",
+        "\u200b ",
+        "{GAME}",
+        "\u200b ",
+        "{LOADING} _Please wait for the game to load..._"
+      ],
+      "description": [
+        "⭕ **- {CIRCLE}**",
+        "❌ **- {CROSS}**",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{TURN}**, your turn!",
+        "\u200b ",
+        "{GAME}",
+        "",
+        "{LOADING} _You have **10 seconds** to move..._"
+      ],
+      "botdescription": [
+        "⭕ **- {CIRCLE}**",
+        "❌ **- {CROSS}**",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{TURN}**, your turn!",
+        "\u200b ",
+        "{GAME}",
+        "",
+        "{LOADING} _{TURN} is thinking its move..._"
+      ],
+      "drawdescription": [
+        "⭕ **- {CIRCLE}**",
+        "❌ **- {CROSS}**",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {CROSS2} **DRAW** {CROSS2}",
+        "\u200b ",
+        "{GAME}"
+      ],
+      "winnerdescription": [
+        "⭕ **- {CIRCLE}**",
+        "❌ **- {CROSS}**",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{WINNER}** wins! 🎉 ",
+        "\u200b ",
+        "{GAME}"
+      ]
+    }
+  },
+  "trivia": {
+    "alreadyplaying": "{CROSS} **{USER}, you are already playing Trivia somewhere else.**",
+    "categories": [
+      "{INFO} **Trivia Categories**",
+      "",
+      "**Available Categories:**",
+      "{CATEGORIES}"
+    ],
+    "invalidcategory": [
+      "{CROSS} **Invalid Category**",
+      "",
+      "**Available Categories:**",
+      "{CATEGORIES}"
+    ],
+    "invaliddifficulty": [
+      "{CROSS} **Invalid Difficulty**",
+      "",
+      "**Please provide one of the following difficulties:**",
+      "{DIFFICULTIES}"
+    ],
+    "invaliddifficulty2": [
+      "{CROSS} **Invalid Difficulty**",
+      "",
+      "**Please provide one of the following difficulties and then a category:**",
+      "{DIFFICULTIES}"
+    ],
+    "info": [
+      "{INFO} **Trivia Commands**",
+      "",
+      "**Options:**",
+      "`{PREFIX}trivia start` - Random Categories and Increasing Difficulty",
+      "`{PREFIX}trivia <difficulty>` - Random Categories With Specific Difficulty",
+      "`{PREFIX}trivia any <category>` - Specific Category and Random Difficulty",
+      "`{PREFIX}trivia <difficulty> <category>` - Specific Category and Difficulty",
+      "`{PREFIX}trivia categories` - View Available Categories",
+      "",
+      "{INFO} If a difficulty is not specified, it will increase as the streak increases."
+    ],
+    "trivia": {
+      "title": "{USERNAME} is playing Trivia!",
+      "subcategory": "\n**Subcategory:** {SUBCATEGORY}",
+      "description": [
+        "**Category:** {CATEGORY}{SUBCATEGORYSTRING}",
+        "**Difficulty:** {DIFFICULTY}",
+        "**Question:**",
+        "{QUESTION}",
+        "**Options:**",
+        "{OPTIONS}",
+        "",
+        "**Type your answer or use the number of the answer!**\nYou have 20 seconds.."
+      ]
+    },
+    "correct": [
+      "{CHECK} **{USER} Correct**",
+      "",
+      "**Answer:** {ANSWER}",
+      "**Streak:** {STREAK}",
+      "*Next question in 10 seconds!*"
+    ],
+    "incorrect": [
+      "{CROSS} **{USER} Incorrect**",
+      "",
+      "**Correct:** {CORRECTANSWER}",
+      "**Your Answer:** {INCORRECTANSWER}",
+      "**Streak:** {STREAK}"
+    ],
+    "timeout": [
+      "⏰ **{USER} time is up!** Your streak was: **{STREAK}**"
+    ]
+  },
+  "cape": {
+    "invalid": "{CROSS} **{USER}, please provide a valid username or UUID.**",
+    "nocape": "{CROSS} **{USER}, the player, `{TOSEARCH}`, does not have a cape.**",
+    "success": "{USER}'s Minecraft Cape"
+  },
+  "hypixel": {
+    "error": {
+      "invalid": "{CROSS} **{USER}, please provide a valid username or UUID.**",
+      "neverjoined": "{CROSS} **{USER}, that player has never joined Hypixel.**"
+    },
+    "success": {
+      "title": "Hypixel Profile of {TARGET}",
+      "description": [
+        "**Displayname:** {DISPLAYNAME}",
+        "**Rank:** {RANK}",
+        "**Subscription:** {SUBSCRIPTION}",
+        "",
+        "**__Connection__**",
+        "**First login:** {FIRSTLOGIN}",
+        "**Last login:** {LASTLOGIN}",
+        "**Last logout:** {LASTLOGOUT}",
+        "",
+        "**__General__**",
+        "**Hypixel level:** {NETWORKLEVEL}",
+        "**Hypixel experience:** {NETWORKEXP}",
+        "**Karma:** {KARMA}",
+        "**Reward streak:** {REWARDSTREAK}",
+        "**Best reward streak:** {BESTREWARDSTREAK}",
+        "**Achievement points:** {ACHIEVEMENTPOINTS}",
+        "",
+        "**__Personal__**",
+        "**User language:** {USERLANGUAGE}",
+        "**Social media:** {SOCIALMEDIA}",
+        "**Status:** {STATUS}"
+      ],
+      "online": "\n**Gamemode:** {GAMEMODE}"
+    }
+  },
+  "mcachievement": {
+    "usage": [
+      "{CROSS} **Usage: `{PREFIX}mcachievement Title | Subtitle`**",
+      "**Example:** {PREFIX}mcachievement Discord Master|Invite Magic8 to your server!"
+    ],
+    "defaulttitle": "Unlocked Achievement!",
+    "defaultsubtitle": "Select a description",
+    "success": [
+      "{CHECK} **{USER}, here is your Minecraft Achievement!**"
+    ]
+  },
+  "mcskin": {
+    "enterusername": "{CROSS} **{USER}, please provide a valid username or UUID.**",
+    "invalid": "{CROSS} **{USER}, the player, `{TOSEARCH}`, does not exist.**",
+    "success": "{USER}'s Minecraft Skin"
+  },
+  "namehistory": {
+    "enterusername": "{CROSS} **{USER}, please provide a valid username or UUID.**",
+    "invalidusername": "{CROSS} **{USER}, the player, `{TOSEARCH}`, does not exist.**",
+    "success": {
+      "title": "{TOSEARCH}'s Name History",
+      "unique": [
+        "**Username: ** {USERNAME}",
+        "**UUID:** {UUID}",
+        "",
+        "{VERIFIED} Username has never been changed!"
+      ],
+      "others": {
+        "name": "**`{NAME}`** ({DATE})",
+        "original": "**`{NAME}`** (Original)",
+        "description": [
+          "**Username: ** {USERNAME}",
+          "**UUID:** {UUID}",
+          "",
+          "**Username History:**",
+          "{HISTORY}"
+        ]
+      }
+    }
+  },
+  "mcserver": {
+    "checking": "{LOADING} Checking server...",
+    "updated": [
+      "{CHECK} **Minecraft Server IP/Domain Updated**",
+      "",
+      "**IP/Domain:** {SERVER}",
+      "",
+      "{INFO} To view information of the server, type: `{PREFIX}status`"
+    ],
+    "removed": "{CHECK} **Minecraft Server Successfully Removed**",
+    "noip": [
+      "{CROSS} **No Minecraft Server IP or Domain**",
+      "",
+      "{INFO} To view the status of your server, type: `{PREFIX}mcserver <IP/domain>`"
+    ],
+    "error": [
+      "{CROSS} **Error Getting Status Of:** `{SERVER}`",
+      "",
+      "This server is either offline or does not exist."
+    ],
+    "errorfooter": "Are we mistaken? Please contact support."
+  },
+  "cuddle": {
+    "self": "{CHECK} **{USER} cuddled themselves!**",
+    "other": "{CHECK} **{USER} cuddled {TARGET}!**"
+  },
+  "feed": {
+    "self": "{CHECK} **{USER} fed themselves!**",
+    "other": "{CHECK} **{USER} fed {TARGET}!**"
+  },
+  "hug": {
+    "self": "{CHECK} **{USER} hugged themselves!**",
+    "other": "{CHECK} **{USER} hugged {TARGET}!**"
+  },
+  "kiss": {
+    "self": "{CHECK} **{USER} kissed themselves!**",
+    "other": "{CHECK} **{USER} kissed {TARGET}!**"
+  },
+  "pat": {
+    "self": "{CHECK} **{USER} patted themselves!**",
+    "other": "{CHECK} **{USER} patted {TARGET}!**"
+  },
+  "poke": {
+    "self": "{CHECK} **{USER} poked themselves!**",
+    "other": "{CHECK} **{USER} poked {TARGET}!**"
+  },
+  "slap": {
+    "self": "{CHECK} **{USER} slapped themselves!**",
+    "other": "{CHECK} **{USER} slapped {TARGET}!**"
+  },
+  "smug": {
+    "self": "{CHECK} **{USER} smudged themselves!**",
+    "other": "{CHECK} **{USER} smudged {TARGET}!**"
+  },
+  "tickle": {
+    "self": "{CHECK} **{USER} tickled themselves!**",
+    "other": "{CHECK} **{USER} tickled {TARGET}!**"
+  },
+  "bored": {
+    "default": {
+      "title": "{USERNAME} is bored! They got...",
+      "description": [
+        "**Activity:** {ACTIVITY}",
+        "**Category:** {CATEGORY}",
+        "**Total People:** {PEOPLE}"
+      ]
+    },
+    "search": {
+      "title": "{TAG} searched for `{CATEGORY}` activities!",
+      "description": [
+        "**Activity:** {ACTIVITY}",
+        "**Total People:** {PEOPLE}"
+      ]
+    },
+    "invalidcategory": [
+      "{CROSS} **Invalid Category**",
+      "",
+      "**Available Categories:**",
+      "{CATEGORIES}"
+    ]
+  },
+  "chucknorris": {},
+  "fakeinfo": {
+    "title": "{TAG} generated fake information!",
+    "description": [
+      "**{CHECK} {USER}, your fake information was generated successfully!**",
+      "",
+      "**👤 Fake info generated:**",
+      "```json",
+      "{INFO}```",
+      "{VERIFIED} _This information is randomly generated. It doesn't refer to any company or real person. The purpose of this command is to get information to fill databases or complete surveys._"
+    ]
+  },
+  "inspire": {
+    "success": [
+      "**Quote:** {QUOTE}",
+      "**Author:** {AUTHOR}"
+    ]
+  },
+  "overwatch": {
+    "error": {
+      "region": [
+        "{CROSS} **Please provide one of the following regions if you are __not__ in the U.S.**",
+        "`eu` `asia`"
+      ],
+      "user": [
+        "{CROSS} **{USER}, please provide a username and discriminator!**",
+        "**This can be found in your [battle.net](https://battle.net) profile.**"
+      ],
+      "unexpected": [
+        "{CROSS} **Error**",
+        "",
+        "-Please check that you're using the proper tag.",
+        "-Example: `{PREFIX}ow Fyrlex#1801`",
+        "-Only PC accounts accepted (for now)"
+      ]
+    },
+    "success": {
+      "title": "Overwatch Profile of {TOSEARCH}",
+      "privatedescription": [
+        "**__Levels__**",
+        "**Total Level:** {TOTALLEVEL}",
+        "**Current Level:** {CURRENTLEVEL}",
+        "**Prestige:** {PRESTIGE}",
+        "**Endorsement:** {ENDORSELEVEL}",
+        "",
+        "*This user has a **private** profile, there is no more available information*"
+      ],
+      "publicdescription": [
+        "**__Levels__**",
+        "**Total Level:** {TOTALLEVEL}",
+        "**Current Level:** {CURRENTLEVEL}",
+        "**Prestige:** {PRESTIGE}",
+        "**Endorsement:** {ENDORSELEVEL}",
+        "",
+        "**__Quick Play Stats__**",
+        "**Wins:** {WON}",
+        "**Cards:** {CARDS}",
+        "**Bronze/Silver/Gold Medals:** {BRONZE}/{SILVER}/{GOLD}",
+        "",
+        "**__Ranked__ (current season)**",
+        "**W/L:** {RANKEDWINS}/{RANKEDLOSSES} - {RANKEDPERCENTAGE}%",
+        "**Average SR:** {AVERAGE}",
+        "{TANK} **Tank:** {TANKLVL} {TANKICON}",
+        "{DPS} **DPS:** {DPSLVL} {DPSICON}",
+        "{SUPPORT} **Support:** {SUPPORTLVL} {SUPPORTICON}"
+      ]
+    }
+  },
+  "pornhubtext": {
+    "messagerequired": "{CROSS} **{USER}, please provide a message.**",
+    "nobar": "{CROSS} **{USER}, please separate the two sides with: `|`**"
+  },
+  "spoiler": {
+    "messagerequired": "{CROSS} **{USER}, please provide a message.**"
+  },
+  "supreme": {
+    "messagerequired": "{CROSS} **{USER}, please provide a message.**"
   },
   "telephone": {
-    "ringing": "☎ {USER} levantó el telefono. **¡El telefono está timbrando!**",
-    "someoneusingtelephone": "🚫 **¡Alguien está usando este telefono!** Porfavor espera.",
-    "someoneinacall": "🚫 **¡Alguien está en una llamada ahora!** Porfavor se paciente.",
-    "nooneanswered": "⛔ {USER}, parece que nadie respondió el telefono..",
-    "establised": "🔊 Alguien respondió el telefono. **¡Conexión establecida!**",
-    "youhungup": "\\🔴 **¡Colgaste el telefono!**",
-    "otherhungup": "\\🔴 **¡Te colgaron el telefono!**",
-    "timeout": "\\⏰ No se detectó ningun mensaje por más de un minuto. **¡Conexión perdidad!**"
+    "ringing": "☎ {USER} took the phone. **The phone is ringing!**",
+    "someoneusingtelephone": "🚫 Someone else is using the telephone! **Please wait.**",
+    "someoneinacall": "🚫 Someone else is using the telephone! **Please be patient.**",
+    "nooneanswered": "⛔ {USER}, looks like no one picked up the phone..",
+    "establised": "🔊 Someone picked up the phone. **Connection established!**",
+    "youhungup": "\\🔴 **You hung up the call!**",
+    "otherhungup": "\\🔴 **The other person hung up the call!**",
+    "timeout": "\\⏰ Couldn't detect any message in 1 minute. **Connection lost!**"
+  },
+  "yomomma": {},
+  "botinfo": {
+    "extra": [
+      "",
+      "📦 **RAM:** {RAM}",
+      "🖥️ **\\*CPU:** {USAGE}% (15m average)"
+    ],
+    "title": "{BOTNAME} - Bot Information",
+    "description": [
+      "📚 **Guilds:** {GUILDS}",
+      "👥 **Users:** {USERS}",
+      "",
+      "⏲️ **Uptime:** {UPTIME}",
+      "🛰️ **Ping:** {PING}",
+      "",
+      "👑 **Owner:** {OWNER}",
+      "💎 **Head Developer:** {HEADDEVELOPER}",
+      "🗓️ **Created on:** {CREATIONDATE}",
+      "",
+      "**Useful Links:**",
+      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Support Server]({SUPPORTSERVER})"
+    ]
+  },
+  "help": {
+    "invalidcommand": [
+      "{CROSS} **Invalid Command Provided:** `{INPUT}`",
+      "",
+      "{INFO} Type `{PREFIX}help` to get a list of all commands!"
+    ],
+    "commandinfotitle": "{BOTNAME} - Command Information",
+    "commandinfo": [
+      "**Command:** `{COMMANDNAME}`",
+      "",
+      "**Aliases:** {ALIASES}",
+      "**Category:** {CATEGORY}",
+      "**Emoji:** {EMOJI}",
+      "**Toggleable:** {TOGGLEABLE}{PREMIUM}",
+      "**Description:** {DESCRIPTION}"
+    ],
+    "footer": "Something missing? Contact Support!",
+    "tips": [
+      "{VERIFIED} ***Need further assistance?***",
+      "**1.** DM Fyrlex#2740",
+      "**2.** Check out our [Guide]({GUIDE})",
+      "**3.** Join our [Support Server]({INVITE})"
+    ],
+    "category": {
+      "fun": "Entertainment",
+      "minigames": "Minigames",
+      "minecraft": "Minecraft",
+      "reactions": "Reactions",
+      "misc": "Miscellaneous",
+      "info": "Information",
+      "user": "User",
+      "utils": "Utilities",
+      "admin": "Administrator"
+    },
+    "adminbottom": [
+      "{INFO} Get more information of a command by typing: `{PREFIX}help <command>`",
+      "",
+      "Do you have ideas or suggestions? **Let us know in our [Support Server]({INVITE}).**"
+    ],
+    "bottom": "Do you have ideas or suggestions? **Let us know in our [Support Server]({INVITE}).**",
+    "cannotsend": [
+      "{CROSS} **{USER}, the help menu could not be sent. Please enable private messages.**",
+      "",
+      "*Need further assistance? Join our [Support Server]({INVITE}) or check out our [Guide]({GUIDE})!*"
+    ],
+    "sent": [
+      "{CHECK} **{USER}, the help menu was sent. Please check your private messages.**",
+      "",
+      "*Need further assistance? Join our [Support Server]({INVITE}) or check out our [Guide]({GUIDE})!*"
+    ]
+  },
+  "info": {
+    "title": "{GUILDNAME}",
+    "description": [
+      "✏️ **Prefix:** `{PREFIX}`",
+      "📊 **User/Bots/Online**: {USERS}/{BOTS}/{ONLINE}",
+      "🌎 **Language:** {LANGUAGE}",
+      "{PREMIUM}",
+      "👑 **Owner:** {OWNER}",
+      "🗓️ **Server Created:** {CREATED}",
+      "🕰️ **Bot Joined:** {JOINED}",
+      "",
+      "{MAGIC8} To view bot stats, type: `{PREFIX}botinfo`",
+      "🌐 To view server media, type: `{PREFIX}media`"
+    ]
+  },
+  "invite": {
+    "title": "Invite Magic8 Your Server",
+    "description": [
+      "Hey {AUTHOR}, do you like {BOT} and want your friends to have it in their server too?",
+      "",
+      "Invite the bot to your server so all your friends can enjoy {BOT}'s unique features together!",
+      "",
+      "[{MAGIC8EMOJI} **Click Here!**]({INVITE})"
+    ]
+  },
+  "premium": {
+    "title": "Magic8 Premium Information",
+    "description": [
+      "Donations gifted to the developers of Magic8 provide motivation and access to better bot resources. With your help, Magic8's performance and features can become nearly unlimited.",
+      "",
+      "Magic8 will be around for a long time, but your support guarantees new features. Donating to any developer lets them know that people still want their project to grow.",
+      "",
+      "**Packages Link:** [__click here__]({DONATIONLINK})"
+    ]
+  },
+  "avatar": {
+    "success": "{CHECK} Here is {USER}'s avatar! ([link]({URL}))"
+  },
+  "lookingforgroup": {
+    "roleadded": "{CHECK} **{USER}, you now have {ROLE}!** It will be removed in {COOLDOWN} hours.",
+    "cannotaddrole": "{CROSS} **{USER}, there was an error giving you {ROLE}!",
+    "memberlist": [
+      "🧭 **Looking For Group Member List**",
+      "",
+      "{LIST}"
+    ],
+    "roleremoved": "{CHECK} **{TARGET} no longer has LFG role!**",
+    "alreadynorole": "{CRPSS} **{TARGET} already does not have LFG role!**",
+    "premium": [
+      "💎 **Premium Feature** 💎",
+      "",
+      "The **Looking For Group** system is premium! Support the developers and motivate them to continue investing hours a day into {BOT}. View the available packages [here]({PACKAGES}).",
+      "",
+      "**Link:** https://donatebot.io/checkout/610816275580583936"
+    ]
+  },
+  "media": {
+    "title": "{GUILDNAME} - Media Page",
+    "nomedia": [
+      "{CROSS} **No Media Available**",
+      "",
+      "{INFO} Create a media page for your server by typing: `{PREFIX}s media text`"
+    ]
+  },
+  "myinfo": {
+    "noboost": "false",
+    "boost": "true - (since {SINCE})",
+    "title": "{USERNAME}'s Profile",
+    "descripton": [
+      "**Mention:** {USER}",
+      "**Nickname:** {NICKNAME}",
+      "**Status:** {STATUS}",
+      "**Joined:** {JOINED}",
+      "**Created:** {CREATED}",
+      "**Boosting:** {BOOSTING}",
+      "**Roles:**",
+      "{ROLES}"
+    ]
+  },
+  "vote": {
+    "title": "{BOTNAME} - Vote Menu",
+    "description": [
+      "Vote for {BOT} to help us grow! Here is our main voting page.",
+      "",
+      "**Discord Bot List:** {VOTE1}",
+      "",
+      "❤️ Thank you for your support!"
+    ]
+  },
+  "clear": {
+    "enteramount": "{CROSS} **{USER}, please enter a number of messages to delete.**",
+    "invalidamount": "{CROSS} **{USER}, please enter a valid number of messages to delete.**",
+    "cannotgreater": "{CROSS} **{USER}, please provide a number less than:** `100`",
+    "cannotlower": "{CROSS} **{USER}, please provide a number that is at least:** `1`",
+    "nopermission": "{CROSS} **{USER}, please give {BOT} the `Manage Messages` permission to delete messages.**",
+    "deleted": "{CHECK} **{USER}, a total of `{AMOUNT}` messages were deleted.**"
+  },
+  "emojis": {
+    "error": {
+      "permissiondescription": [
+        "{CROSS} **You need `MANAGE_EMOJIS` permission to access this command!**"
+      ],
+      "insufficientdescription": [
+        "{CROSS} **I need the `MANAGE_EMOJIS` permission!**"
+      ],
+      "requireddescription": [
+        "{CROSS} **{USER}, please provide an emoji name.**"
+      ],
+      "invalidemoji": [
+        "{CROSS} **Specified emoji name is not valid!**"
+      ],
+      "limitdescription": [
+        "{CROSS} **Whoops! You can't have more emojis in this server!**"
+      ],
+      "othererrordescription": [
+        "{CROSS} **Uhmm... weird, I couldn't add the emoji!**"
+      ],
+      "unknowndescription": [
+        "{CROSS} **Woops! I don't know why but try again later!**"
+      ]
+    },
+    "description": [
+      "**Welcome to our Emoji Bank!** {KAPPALUL}",
+      "Here is our personal list of **emojis** you can add to your server easily!",
+      "This list is made by our **developers** to allow you to get the most used emojis **in your server**.",
+      "",
+      "You'll be able to add all emojis listed below by running one command for the ones you want to add!",
+      "{MAGIC8} {BOT} requires `MANAGE_EMOJIS` permission!",
+      "",
+      "Command to run is `emoji add <emojiname>`",
+      "",
+      "Following emojis are listed by emoji name and emoji.",
+      ""
+    ],
+    "footer": [
+      "{VERIFIED} This list will be constantly **updating** and adding **new emojis**!",
+      "You want to **suggest** an emoji? **Join**  our **[Discord]({INVITATION})** server and let us know!",
+      "{WARNING} This feature is in **beta**. Please report **bugs/errors** in our **[Discord]({INVITATION})**!"
+    ],
+    "success": {
+      "description": [
+        "{CHECK} I've added {EMOJI} (**{EMOJINAME}**) to your server!",
+        "",
+        "Hey {USER}, thanks for using our **Emoji Bank**!",
+        "{VERIFIED} You have a good emoji to share? [Join us]({INVITATION})!"
+      ]
+    }
+  },
+  "say": {
+    "messagerequired": "{CROSS} **{USER}, please provide a message.**",
+    "permissionrequired": "{CROSS} **{USER}, please give {BOT} permissions to send messages in {CHANNEL}.**",
+    "tip": "Tip: Use {EVERYONE} and {HERE} as placeholders if needed"
+  },
+  "antiping": {
+    "menutitle": "{BOTNAME} - Anti-Ping Help Menu",
+    "menu": [
+      "`{PREFIX}ap adduser` - Disable pings for a user",
+      "`{PREFIX}ap removeuser` - Re-enable pings for a user",
+      "`{PREFIX}ap message` - Ping warning message",
+      "`{PREFIX}ap logchannel` - Log when Anti-Ping user is tagged",
+      "`{PREFIX}ap addrole` - Add bypass roles",
+      "`{PREFIX}ap removerole` - Remove bypass roles",
+      "",
+      "`{PREFIX}ap roles` View bypass roles",
+      "`{PREFIX}ap users` View Anti-Ping users **DISABLED**",
+      "",
+      "{WARNING} This won't actually prevent pings, it will only delete the message and warn the user.",
+      "{INFO} Use these commands for more information!"
+    ],
+    "logmessage": [
+      "{WARNING} **Anti-Ping**",
+      "",
+      "**Author:** {USER}",
+      "**User(s):**",
+      "{PINGED}"
+    ],
+    "upgrade": {
+      "singleortriple": "**Single or Triple Package**",
+      "triple": "**Triple Package**",
+      "description": "Please upgrade to the [{OPTIONS]({DONATELINK}) to disable pings for more users.",
+      "cannotupgrade": "Anti-Ping users cannot be increased through packages anymore."
+    },
+    "addusermenutitle": "{BOTNAME} - Anti-Ping Add User",
+    "addusermenu": [
+      "Anti-Ping users will have their @mentions deleted by anyone who doesn't have a bypass role.",
+      "",
+      "**Current Anti-Ping Users:**",
+      "{USERS}",
+      "",
+      "{INFO} To add a user, type: `{PREFIX}ap adduser <user>`"
+    ],
+    "removeusermenutitle": "{BOTNAME} - Anti-Ping Add User",
+    "removeusermenu": [
+      "Removing an Anti-Ping user will allow anyone to @mention them.",
+      "",
+      "**Current Anti-Ping Users:**",
+      "{USERS}",
+      "",
+      "{INFO} To remove a user, type: `{PREFIX}ap removeuser <user>`"
+    ],
+    "reachedlimit": [
+      "{CROSS} **Anti-Ping User Limit Reached:** `{MAX}`",
+      "",
+      "{UPGRADE}",
+      "",
+      "**Anti-Ping Users:**",
+      "{USERS}"
+    ],
+    "cannotbebot": "{CROSS} **Hey, you can't turn off my pings!**",
+    "targetalreadydisabled": "{CROSS} **{TARGET}'s pings are already disabled.**",
+    "nowdisabled": "{CHECK} **{TARGET}'s pings are now disabled.**",
+    "nousers": [
+      "{CROSS} **No Anti-Ping Users**",
+      "",
+      "{INFO} To add a user, type: `{PREFIX}ap adduser`"
+    ],
+    "removeall": "{CHECK} **Removed All Anti-Ping Users**",
+    "invaliduser": [
+      "{CROSS} **Invalid User Provided**",
+      "",
+      "Please provide a valid server member or ID.",
+      "",
+      "{INFO} To remove all users, type: `{PREFIX}ap removeuser all`"
+    ],
+    "alreadyenabled": "{CROSS} **{TARGET}'s pings are already enabled.**",
+    "nowenabled": "{CHECK} **{TARGET}'s pings are now enabled.**",
+    "messageinfotitle": "{BOTNAME} - Anti-Ping Message",
+    "messageinfo": [
+      "This message will reply to members who tag an Anti-Ping user.",
+      "",
+      "**Current Message:**",
+      "```{CURRENTMESSAGE}```",
+      "",
+      "{INFO} Placeholders: {USER} - Member who mentioned an Anti-Ping user."
+    ],
+    "messageupdated": [
+      "{CHECK} **Anti-Ping Message Updated**",
+      "",
+      "**Old Message:**",
+      "```{OLDMESSAGE}```",
+      "",
+      "**New Message:**",
+      "```{NEWMESSAGE}```"
+    ],
+    "noroles": [
+      "{CROSS} **No Anti-Ping Roles**",
+      "",
+      "{INFO} To add a role, type: `{PREFIX}ap addroleohap`"
+    ],
+    "invalidrole": [
+      "{CROSS} **Invalid Role Provided**",
+      "",
+      "**Available Roles:**",
+      "{ROLES}"
+    ],
+    "invalidbypassrole": [
+      "{CROSS} **Invalid Role Provided**",
+      "",
+      "**Available Bypass Roles:**",
+      "{BYPASSROLES}"
+    ],
+    "alreadybypass": [
+      "{CROSS} **The role {TARGETROLE} already bypasses Anti-Ping users.**",
+      "",
+      "{INFO} To remove the role from the bypass, type: `{PREFIX}ap removerole`"
+    ],
+    "nowbypass": [
+      "{CHECK} **Anti-Ping Bypass Role Added**",
+      "",
+      "**Role:** {TARGETROLE}",
+      "",
+      "{INFO} To remove the role from the bypass, type: `{PREFIX}ap removerole`"
+    ],
+    "alreadydoesnotbypass": [
+      "{CROSS} **The role {TARGETROLE} already does not bypass Anti-Ping users.**",
+      "",
+      "{INFO} To add the role to the bypass, type: `{PREFIX}ap addrole`"
+    ],
+    "nolongerbypass": [
+      "{CHECK} **Anti-Ping Bypass Role Removed**",
+      "",
+      "**Role:** {TARGETROLE}",
+      "",
+      "{INFO} To add the role back to the bypass, type: `{PREFIX}ap addrole`"
+    ],
+    "viewuserstitle": "{BOTNAME} - Anti-Ping Users",
+    "viewusers": [
+      "**Current Users:**",
+      "{USERS}"
+    ],
+    "viewrolestitle": "{BOTNAME} - Anti-Ping Bypass Roles",
+    "viewroles": [
+      "**Current Bypass Roles:**",
+      "{BYPASSROLES}"
+    ],
+    "logchannelnotset": [
+      "{CROSS} **Anti-Ping Log Channel Already Not Set**",
+      "",
+      "{INFO} To set the Anti-Ping Log Channel, type: `{PREFIX}ap logchannel`"
+    ],
+    "logchannelremove": [
+      "{CHECK} **Anti-Ping Log Channel Removed**",
+      "",
+      "{INFO} To set a new Anti-Ping Log Channel, type: `{PREFIX}ap logchannel`"
+    ],
+    "logchannelset": [
+      "{CHECK} **Anti-Ping Log Channel Set**",
+      "",
+      "**Channel:** {CHANNEL} ({CHANNELID})",
+      "",
+      "{INFO} To remove the Anti-Ping Log Channel, type: `{PREFIX}ap logchannel remove`"
+    ]
+  },
+  "autovoice": {
+    "nocategory": [
+      "{CROSS} **No Auto Voice Category Selected**",
+      "",
+      "{INFO} You cannot create Auto Channels until a category is selected. If the Auto Voice category is deleted or moved, all Auto Channels and Sub-Channels will be deleted."
+    ],
+    "upgrade": {
+      "singleortriple": "**Single or Triple Package**",
+      "triple": "**Triple Package**",
+      "description": "Please upgrade to the [{OPTIONS]({DONATELINK}) to create more Auto Voice Channels.",
+      "cannotupgrade": "Auto Voice Channels cannot be increased through packages anymore."
+    },
+    "reachedlimit": [
+      "{CROSS} **Auto Channels Limit Reached:** `{MAX}`",
+      "",
+      "{UPGRADE}",
+      "",
+      "**Current Auto Channels:**",
+      "{CURRENTCHANNELS}"
+    ],
+    "notypetitle": "{BOTNAME} - Auto Voice Channel Types",
+    "notype": [
+      "Types of Auto Voice Channels that are available.",
+      "",
+      "**Available Types:**",
+      "{TYPES}"
+    ],
+    "invalidtype": [
+      "{CROSS} **Invalid Auto Channel Type:** `{INPUT}`",
+      "",
+      "**Available Types:**",
+      "{TYPES}"
+    ],
+    "type": {
+      "duo": "Duo",
+      "trio": "Trio",
+      "squad": "Squad"
+    },
+    "created": [
+      "{CHECK} **{TYPE} Channel Created**",
+      "",
+      "{INFO} This channel can create up to **two** Sub-Channels."
+    ],
+    "invalidchannel": [
+      "{CROSS} **Invalid Auto Channel Provided:** `{INPUT}`",
+      "",
+      "**Available Auto Channels:**",
+      "{AVAILABLE}"
+    ],
+    "deleted": [
+      "{CHECK} **Auto Voice Channel Deleted**",
+      "",
+      "**Channel:** {DELETED}"
+    ],
+    "noneleft": [
+      "{CHECK} **Auto Voice Channel Deleted**",
+      "",
+      "**Channel:** {DELETED}",
+      "",
+      "{WARNING} Auto Voice Channels are now disabled because there are none left."
+    ],
+    "nocooldowntitle": "{BOTNAME} - Auto Voice Channels Cooldown",
+    "nocooldown": [
+      "**Current Cooldown:** {COOLDOWN}",
+      "",
+      "{INFO} The cooldown must be between 10 seconds and 300 seconds (5 minutes)."
+    ],
+    "notanumber": "{CROSS} **{USER}, please provide a real number to set the cooldown.**",
+    "toosmall": "{CROSS} **{USER}, please provide a cooldown greater than 10 seconds.**",
+    "toolarge": "{CROSS} **{USER}, please provide a cooldown less than 5 minutes (or 300 seconds).**",
+    "cooldownupdated": [
+      "{CHECK} **Auto Channels Cooldown Updated**",
+      "",
+      "**Old Cooldown:** {OLDCOOLDOWN} seconds",
+      "**New Cooldown:** {COOLDOWN} seconds"
+    ],
+    "infotitle": "{BOTNAME} - Auto Voice Channels Information",
+    "info": [
+      "**Enabled:** {ENABLED}",
+      "**Category:** {CATEGORY}",
+      "**Cooldown:** {COOLDOWN} seconds",
+      "**Channels:**",
+      "{CHANNELS}"
+    ],
+    "viewcategorytitle": "{BOTNAME} - Auto Voice Channels Category",
+    "viewnocategory": [
+      "**Category:** {CATEGORY}",
+      "",
+      "{INFO} Set a category to enable Auto Channels by typing: `{PREFIX}autovoice category <ID>`"
+    ],
+    "viewcategory": [
+      "**Auto Voice Category**",
+      "",
+      "**Category:** {CATEGORY} ({CATEGORYID})",
+      "",
+      "{INFO} Disable Auto Channels by typing: `{PREFIX}autovoice category clear`"
+    ],
+    "alreadydisabled": [
+      "{CROSS} **There is already no category set for Auto Voice Channels.**",
+      "",
+      "{INFO} To enable Auto Voice Channels, set a category by typing: `{PREFIX}autovoice category <ID>`"
+    ],
+    "disabled": [
+      "{CHECK} **Auto Voice Channels Disabled**",
+      "",
+      "{INFO} All Auto Channels no longer work. To enable Auto Voice Channels again, set a category!"
+    ],
+    "notacategory": [
+      "{CROSS} **Invalid Category ID**",
+      "",
+      "**Available Categories:**",
+      "{CATEGORIES}"
+    ],
+    "nopermissionincategory": [
+      "{CROSS} **Please give {BOT} the following permissions to use this command.**",
+      "",
+      "`Manage Channels`, `Move Members`"
+    ],
+    "categoryset": [
+      "{CHECK} **Auto Voice Category Set**",
+      "",
+      "**Category:** {CATEGORY} ({CATEGORYID})",
+      "",
+      "{INFO} Auto Voice Channels can be created at this time!"
+    ],
+    "helptitle": "{BOTNAME} - Auto Voice Channels Help Menu",
+    "help": [
+      "`{PREFIX}av create` - Create Auto Voice Channels",
+      "`{PREFIX}av delete` Delete Auto Voice Channels",
+      "`{PREFIX}av category` - Set Auto Voice Channel Category",
+      "`{PREFIX}av cooldown` - Set Auto Channels Cooldown",
+      "`{PREFIX}av info` - Current Auto Voice Channels Information",
+      "",
+      "{INFO} Each **Auto Channel** can only create up to **three** Sub-Channels."
+    ]
+  },
+  "fakeping": {
+    "cooldown": [
+      "{CROSS} **Fake-Ping Cooldown**",
+      "",
+      "{USER} generated a fakeping {TIME} ago.",
+      "",
+      "{INFO} You can generate a new one in {LEFT}."
+    ],
+    "guildnoicon": [
+      "**{CROSS} This server does not have a guild icon!**"
+    ],
+    "success": [
+      "{CHECK} **Fakeping Successfully Generated**",
+      "",
+      "**Old Image:** [here]({OLD})",
+      "**New Image:** [here]({NEW})",
+      "",
+      "{LOADING} Please select a choice within 30 seconds"
+    ],
+    "successmanual": [
+      "{CHECK} **Fakeping Successfully Generated**",
+      "",
+      "**Old Image:** [here]({OLD})",
+      "**New Image:** [here]({NEW})",
+      "",
+      "**Download and upload it as the guild icon!**"
+    ],
+    "updated": "{CHECK} **{USER}, the guild icon was updated!**",
+    "notupdated": "{CROSS} **{USER}, the guild icon was not updated.**",
+    "notupdatedperms": "{CROSS} **{USER}, please give {BOT} the `Manage Server` permission to update the Server Icon.**"
+  },
+  "follow": {
+    "nopermission": "{CROSS} **{USER}, please give {BOT} the `Manage Webhooks` permission to follow channels.**",
+    "nooptiontitle": "{BOTNAME} - Follow News Channels",
+    "nooption": [
+      "Get updates from the [Support Server]({INVITE}) directly into yours.",
+      "",
+      "**Available News Channels:**",
+      "{OPTIONS}",
+      "",
+      "{INFO} Type the command in the channel you want messages to be in."
+    ],
+    "invalidoption": [
+      "{CROSS} **Invalid News Channel**",
+      "",
+      "**Available News Channels:**",
+      "{OPTIONS}",
+      "",
+      "{INFO} Type the command in the channel you want messages to be in."
+    ],
+    "maxintegrations": [
+      "{CROSS} **Max Integrations Reached For:** {CHANNEL}",
+      "",
+      "This is a Discord limitation, please try another channel."
+    ],
+    "following": [
+      "{CHECK} **Following News Channel**",
+      "",
+      "**Channel:** {CHANNEL}",
+      "**Following:** `{FOLLOWING}`"
+    ]
   },
   "language": {
     "invalid": [
-      "{CROSS} **Lenguaje Inválido:** `{INPUT}`",
+      "{CROSS} **Invalid Language:** `{INPUT}`",
       "",
-      "**Actual:** `{CURRENT}`",
+      "**Current:** `{CURRENT}`",
       "",
-      "**Idiomas Disponibles:**",
+      "**Available Languages:**",
       "{AVAILABLE}",
       "",
-      "{WARNING} El inglés es el idioma principal y está **totalmente** respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
+      "{WARNING} English is the main language and **fully** supported. Some commands may appear in english even though your language is set to another."
     ],
     "set": [
-      "{CHECK} **Idioma Actualizado:** `{NEWLANGUAGE}`",
+      "{CHECK} **Language Updated:** `{NEWLANGUAGE}`",
       "",
-      "{INFO} Si quieres contribuir con traducciones en tu lengua materna, únete a nuestro [Servidor de Soporte]({INVITE}) server!",
+      "{INFO} If you want to contribute with translations in your native language, join our [Support Server]({INVITE}) server!",
       "",
-      "{WARNING} El inglés es el idioma principal y está **totalmente** respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
+      "{WARNING} English is the main language and **fully** supported. Some commands may appear in english even though your language is set to another."
     ],
     "listtitle": "{BOTNAME} - Languages List",
     "available": [
-      "⏲️ **Última Actualización:** {TIME}",
+      "⏲️ **Last Fetched:** {TIME}",
       "",
       "{LANGUAGES}",
       "",
-      "{WARNING} El inglés es el idioma principal y está **totalmente** respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
+      "{WARNING} English is the main language and **fully** supported. Some commands may appear in english even though your language is set to another."
     ],
     "help": [
-      "{CHECK} ¡Oye! ¡Gracias por abrir esta página!",
+      "{CHECK} Hey! Thanks for opening this page!",
       "",
-      "Los desarrolladores de Magic8 han dedicado horas de su día a hacer que el bot sea compatible con otros idiomas. ¡Pero no tenemos tiempo para traducir nada!",
+      "The Magic8 developers have dedicated hours of their day to making the bot support other languages. But we don't have the time to actually translate anything!",
       "",
-      "[Repositorio Github]({GITHUB})",
+      "[Github Repository]({GITHUB})",
       "",
-      "¿Qué obtienes a cambio?",
-      "- Paga",
+      "What do you get in return?",
+      "- Pay",
       "- Language Contributor Role",
-      "- Libre [Triple Package]({TRIPLEPACKAGE})",
-      "- El mayor respeto de los desarrolladores",
-      "- Posiblemente más",
+      "- Free [Triple Package]({TRIPLEPACKAGE})",
+      "- Utmost respect from the developers",
+      "- Possibly more",
       "",
-      "{INFO} **¡Por favor, póngase en contacto con nosotros si desea ayudar!**"
+      "{INFO} **Please contact us if you'd like to help!**"
     ],
+    "lastfetched": "\\⏲️ Last Fetched: {TIME}",
     "menutitle": "{BOTNAME} - Languages Menu",
     "menu": [
-      "Aquí se puede el lenguaje de {BOT}!",
+      "Here you can the language of {BOT}!",
       "",
-      "**Comandos Disponibles:**",
-      "`{PREFIX}language set` - Establecer el Idioma (`{LANGUAGE}`)",
-      "`{PREFIX}language help` - Información del Idioma",
-      "`{PREFIX}language list` - Ver Detalles del idioma",
+      "**Available Commands:**",
+      "`{PREFIX}language set` - Set the language (`{LANGUAGE}`)",
+      "`{PREFIX}language help` - Language Information",
+      "`{PREFIX}language list` - View Language Details",
       "",
-      "{INFO} **¡Por favor, póngase en contacto con nosotros si desea ayudar!**"
+      "{INFO} **Please contact us if you'd like to help!**"
     ]
   }
 }
