@@ -2,6 +2,7 @@
   "languagenamelong": "English",
   "languagenameshort": "en",
   "flag": "🇺🇸",
+  "valid": true,
   "link": "https://github.com/Fyrlex/Magic8-Languages/blob/master/languages/en.json",
   "it": "{CROSS} **{USER}, please provide a valid member or ID.**",
   "mention": [
@@ -1730,6 +1731,8 @@
     ],
     "listtitle": "{BOTNAME} - Languages List",
     "available": [
+      "⏲️ Last Fetched: {TIME}",
+      "",
       "{LANGUAGES}",
       "",
       "{WARNING} English is the main language and **fully** supported. Some commands may appear in english even though your language is set to another."
@@ -1748,8 +1751,9 @@
       "- Highest respect from the developers",
       "- Possibly more",
       "",
-      "{INFO} Please contact Fyrlex#2740 if you want to help!"
+      "{INFO} **Please contact us if you'd like to help!**"
     ],
+    "lastfetched": "⏲️ Last Fetched: {TIME}",
     "menutitle": "{BOTNAME} - Languages Menu",
     "menu": [
       "Here you can the language of {BOT}!",
