@@ -1639,11 +1639,11 @@
     ],
     "helptitle": "{BOTNAME} - Auto Voice Channels Help Menu",
     "help": [
-      "`{PREFIX}avc create` - Create Auto Voice Channels",
-      "`{PREFIX}avc delete` Delete Auto Voice Channels",
-      "`{PREFIX}avc category` - Set Auto Voice Channel Category",
-      "`{PREFIX}avc cooldown` - Set Auto Channels Cooldown",
-      "`{PREFIX}avc info` - Current Auto Voice Channels Information",
+      "`{PREFIX}av create` - Create Auto Voice Channels",
+      "`{PREFIX}av delete` Delete Auto Voice Channels",
+      "`{PREFIX}av category` - Set Auto Voice Channel Category",
+      "`{PREFIX}av cooldown` - Set Auto Channels Cooldown",
+      "`{PREFIX}av info` - Current Auto Voice Channels Information",
       "",
       "{INFO} Each **Auto Channel** can only create up to **three** Sub-Channels."
     ]
@@ -1726,16 +1726,16 @@
       "",
       "{INFO} If you want to contribute with translations in your native language, join our [Support Server]({INVITE}) server!",
       "",
-      "{WARNING} English is the main language and **fully** supported. The other translations are in progress and might not be available for some commands!"
+      "{WARNING} English is the main language and **fully** supported. Some commands may appear in english even though your language is set to another."
     ],
     "listtitle": "{BOTNAME} - Languages List",
     "available": [
       "{LANGUAGES}",
       "",
-      "{WARNING} English is the main language and **fully** supported. The other translations are in progress and might not be available for some commands!"
+      "{WARNING} English is the main language and **fully** supported. Some commands may appear in english even though your language is set to another."
     ],
     "help": [
-      "{CHECK} Hey, thanks for opening this page!",
+      "{CHECK} Hey! Thanks for opening this page!",
       "",
       "The Magic8 developers have dedicated hours of their day to making the bot support other languages. But we don't have the time to actually translate anything!",
       "",

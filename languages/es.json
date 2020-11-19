@@ -3,29 +3,24 @@
   "languagenameshort": "es",
   "flag": "🇪🇸",
   "link": "https://github.com/Fyrlex/Magic8-Languages/blob/master/languages/es.json",
-  "it": "{CROSS} **{USER}, ingresa un miembro válido o ID!**",
+  "it": "",
   "mention": [
-    "{USER} **mi prefijo para el servidor es:** {PREFIX}",
-    "Abre el menú de ayuda con `{PREFIX}ayuda` para ver todos los comandos.",
+    "**{USER}, mi prefijo para el servidor es:** `{PREFIX}`",
+    "Escriba `{PREFIX}help` para una lista de comandos. También puedes escribir un comando después de `{PREFIX}help` para detalles específicos.",
     "",
-    "*¿Necesita más ayuda? ¡Únete a nuestro [Servidor de Soporte]({INVITATION})!*"
+    "*¿Necesita más ayuda? Únete a nuestro [Servidor de Soporte]({INVITATION}) o mira nuestra [Guía]({GUIDE})!*"
   ],
-  "notincasino": [
-    "{CROSS} **{USER}, debes estar en un casino para usar este comando!**",
+  "true": "verdadero",
+  "false": "falso",
+  "none": "ninguno",
+  "unexpectederror": [
+    "{CROSS} **{USER}, se produjo un error inesperado.**",
     "",
-    "Para unirse a un casino, por favor escriba: `{PREFIX}casino`"
-  ],
-  "alreadyincasino": [
-    "{CROSS} **{USER}, ya estás en un casino en otro lugar!**",
-    "",
-    "Por favor, vaya a {CHANNEL}, en **{GUILD}**!"
+    "{INFO} Por favor, únase a nuestro [Servidor de Soporte]({INVITE}) para la asistencia."
   ],
   "8ball": {
-    "asksomething": "{CROSS} **Necesitas preguntar algo!**",
-    "customresponses": [
-      "{CROSS} **¡Las respuestas personalizadas están habilitadas pero ninguna fue agregada!**",
-      "Porfavor contacta a un administrador."
-    ],
+    "asksomething": "{CROSS} **¡{USER}, por favor haga una pregunta de sí o no!**",
+    "customresponses": "{CROSS} **{USER}, por favor contacte con un administrador para cambiar el modo 8ball o establecer respuestas personalizadas",
     "customresponsesadmin": [
       "{CROSS} **¡Las respuestas personalizadas están habilitadas pero ninguna fue agregada!**",
       "",
@@ -449,5 +444,57 @@
     "youhungup": "\\🔴 **¡Colgaste el telefono!**",
     "otherhungup": "\\🔴 **¡Te colgaron el telefono!**",
     "timeout": "\\⏰ No se detectó ningun mensaje por más de un minuto. **¡Conexión perdidad!**"
+  },
+  "language": {
+    "invalid": [
+      "{CROSS} **Lenguaje Inválido:** `{INPUT}`",
+      "",
+      "**Actual:** `{CURRENT}`",
+      "",
+      "**Idiomas Disponibles:**",
+      "{AVAILABLE}",
+      "",
+      "{WARNING} El inglés es el idioma principal y está **totalmente** respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
+    ],
+    "set": [
+      "{CHECK} **Idioma Actualizado:** `{NEWLANGUAGE}`",
+      "",
+      "{INFO} Si quieres contribuir con traducciones en tu lengua materna, únete a nuestro [Servidor de Soporte]({INVITE}) server!",
+      "",
+      "{WARNING} El inglés es el idioma principal y está **totalmente** respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
+    ],
+    "listtitle": "{BOTNAME} - Languages List",
+    "available": [
+      "{LANGUAGES}",
+      "",
+      "{WARNING} El inglés es el idioma principal y está **totalmente** respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
+    ],
+    "help": [
+      "{CHECK} ¡Oye! ¡Gracias por abrir esta página!",
+      "",
+      "Los desarrolladores de Magic8 han dedicado horas de su día a hacer que el bot sea compatible con otros idiomas. ¡Pero no tenemos tiempo para traducir nada!",
+      "",
+      "[Repositorio Github]({GITHUB})",
+      "",
+      "What do you get in return?",
+      "- Pay",
+      "- Language Contributor Role",
+      "- Free [Triple Package]({TRIPLEPACKAGE})",
+      "- Highest respect from the developers",
+      "- Possibly more",
+      "",
+      "{INFO} Please contact Fyrlex#2740 if you want to help!"
+    ],
+    "menutitle": "{BOTNAME} - Languages Menu",
+    "menu": [
+      "Here you can the language of {BOT}!",
+      "",
+      "**Available Commands:**",
+      "`{PREFIX}language set` - Set the language (`{LANGUAGE}`)",
+      "`{PREFIX}language help` - Language Information",
+      "`{PREFIX}language list` - View Language Progress",
+      "",
+      "{INFO} **Please contact us if you'd like to help!**"
+    ]
   }
 }
