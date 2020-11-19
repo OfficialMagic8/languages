@@ -1146,7 +1146,7 @@
       "🗓️ **Created on:** {CREATIONDATE}",
       "",
       "**Useful Links:**",
-      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Support Server]({SUPPORTSERVER})"
+      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Languages]({GITHUB}) • [Support Server]({SUPPORTSERVER})"
     ]
   },
   "help": {
@@ -1722,8 +1722,8 @@
       "",
       "{WARNING} English is the main language and **fully** supported. Some commands may appear in english even though your language is set to another."
     ],
-    "set": [
-      "{CHECK} **Language Updated:** `{NEWLANGUAGE}`",
+    "updated": [
+      "{CHECK} **Language Updated:** `{NEWLANGUAGE}` {FLAG}",
       "",
       "{INFO} If you want to contribute with translations in your native language, join our [Support Server]({INVITE}) server!",
       "",
@@ -1753,7 +1753,7 @@
       "",
       "{INFO} **Please contact us if you'd like to help!**"
     ],
-    "lastfetched": "@⏲️ Last Fetched: {TIME}",
+    "lastfetched": "⏲️ Last Fetched: {TIME}",
     "menutitle": "{BOTNAME} - Languages Menu",
     "menu": [
       "Here you can the language of {BOT}!",
