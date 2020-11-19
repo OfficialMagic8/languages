@@ -327,52 +327,6 @@
       "cannotfinish": "{CROSS} **No pude terminar el juego en el canal {CHANNEL} en el servidor '{GUILD}'.**"
     }
   },
-  "akinator": {
-    "help": {
-      "title": "{BOTNAME} - Akinator Help",
-      "user": {
-        "description": [
-          "**Ajustes Disponibles:**",
-          "`{PREFIX}akinator start` - Start A New Game.",
-          "",
-          "*Próximamente más artículos...*",
-          "",
-          "{WARNING} This game is **under development**, it won't run perfectly!",
-          "Report bugs/ideas in our [Support server]({INVITATION})!"
-        ]
-      },
-      "administrator": {
-        "description": [
-          "**Ajustes Disponibles:**",
-          "`{PREFIX}akinator start` - Empieza un nuevo juego.",
-          "",
-          "*Próximamente más artículos...*",
-          "",
-          "{WARNING} This game is **under development**, it won't run perfectly!",
-          "Report bugs/ideas in our [Support server]({INVITATION})!"
-        ],
-        "description2": [
-          "**Ajustes Disponibles:**",
-          "`{PREFIX}akinator start` - Empieza un nuevo juego.",
-          "",
-          "*Próximamente más artículos...*",
-          "",
-          "{WARNING} This game is **under development**, it won't run perfectly!",
-          "Report bugs/ideas in our [Support server]({INVITATION})!"
-        ]
-      }
-    },
-    "disabledgame": "{CROSS} **¡Este juego está desactivado!** Usa `{PREFIX}akinator toggle`",
-    "invalidchannel": "{CROSS} **¡Canal incorrecto!** Ir al {AKINATORCHANNEL} para usar **Akinator**!",
-    "alreadyplaying": "{CROSS} **¡{USER}, estás jugando en otro lugar!!**"
-  },
-  "avatar": {
-    "success": {
-      "description": [
-        "{CHECK} Aquí está el avatar de {USER}! [Enlace]({URL})"
-      ]
-    }
-  },
   "battle": {
     "error": {
       "alreadybattling": "{CROSS} **{USER}, ya estás en una batalla en otro lugar.**",
