@@ -1753,7 +1753,7 @@
       "",
       "{INFO} **Please contact us if you'd like to help!**"
     ],
-    "lastfetched": "\\⏲️ Last Fetched: {TIME}",
+    "lastfetched": "@⏲️ Last Fetched: {TIME}",
     "menutitle": "{BOTNAME} - Languages Menu",
     "menu": [
       "Here you can the language of {BOT}!",
