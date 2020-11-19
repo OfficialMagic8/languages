@@ -7,7 +7,7 @@
   "mention": [
     "**{USER}, my prefix for the server is:** `{PREFIX}`",
     "Type `{PREFIX}help` for a command list. You can also type a command after `{PREFIX}help` for specific details.",
-    "",
+    "test",
     "*Need further assistance? Join our [Support Server]({INVITATION}) or check out our [Guide]({GUIDE})!*"
   ],
   "true": "true",
