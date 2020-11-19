@@ -1,5 +1,6 @@
 {
-  "languagename": "Français",
+  "languagenamelong": "Français",
+  "languagenameshort": "fr",
   "flag": "🇫🇷",
   "link": "https://github.com/Fyrlex/Magic8-Languages/blob/master/languages/fr.json",
   "it": "{CROSS} **{USER}, provide a valid member or ID!**",
