@@ -922,7 +922,7 @@
   },
   "mcachievement": {
     "usage": [
-      "{CROSS} **Usage: `{PREFIX}mcachievement Title | Subtitle`**",
+      "{CROSS} **Usage:** `{PREFIX}mcachievement Title | Subtitle`",
       "**Example:** {PREFIX}mcachievement Discord Master|Invite Magic8 to your server!"
     ],
     "defaulttitle": "Unlocked Achievement!",
@@ -1170,7 +1170,7 @@
     ],
     "footer": "Something missing? Contact Support!",
     "tips": [
-      "{VERIFIED} ***Need further assistance?***",
+      "{CHECK} ***Need further assistance?***",
       "**1.** DM Fyrlex#2740",
       "**2.** Check out our [Guide]({GUIDE})",
       "**3.** Join our [Support Server]({INVITE})"
@@ -1732,22 +1732,26 @@
       "",
       "{WARNING} English is the primary language and fully supported. Some commands may appear in english even though your language is set to another."
     ],
+    "uptodate": "Up To Date",
+    "outdated": "Outdated",
     "listtitle": "{BOTNAME} - Languages List",
     "available": [
       "⏲️ **Last Updated:** {TIME}",
+      "{UPTODATE}",
       "",
       "{LANGUAGES}",
       "",
       "{WARNING} English is the primary language and fully supported. Some commands may appear in english even though your language is set to another."
     ],
     "help": [
-      "{CHECK} Hey! Thanks for opening this page!",
+      "{CHECK} **Hey! Thanks for opening this page!**",
       "",
-      "The Magic8 developers have dedicated hours of their day to making the bot support other languages. Please consider taking the opportunity to help out!",
+      "The Magic8 developers have devoted  many hours to being able to support other languages. Please consider taking the opportunity to help out!",
       "",
-      "[Github Repository]({GITHUB})",
+      "[**Github Repository**]({GITHUB})",
+      "[**Bugs**]({ISSUES})",
       "",
-      "What do you get in return?",
+      "**What do you get in return?**",
       "- Language Contributor Role",
       "- Free [Triple Package]({TRIPLEPACKAGE})",
       "- Utmost respect from the developers",
@@ -1758,7 +1762,7 @@
     "info": [
       "{FLAG} **{LANGUAGENAME}** (`{LANGUAGESHORT}`)",
       "",
-      "**Completed:** {PERCENT}%",
+      "**Progress:** {PERCENT}%",
       "**Authors:**",
       "{AUTHORS}"
     ],
@@ -1771,7 +1775,7 @@
       "`{PREFIX}language set` - Set the language (`{LANGUAGE}`)",
       "`{PREFIX}language help` - Magic8 Languages Information",
       "`{PREFIX}language info` - Specific Language Details",
-      "`{PREFIX}language list` - View Language Options",
+      "`{PREFIX}language list` - View Available Languages",
       "",
       "{INFO} **Please contact us if you'd like to help!**"
     ]

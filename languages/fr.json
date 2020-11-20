@@ -276,29 +276,33 @@
       "{WARNING} L'anglais est la langue principale et est pleinement pris en charge. Certaines commandes peuvent apparaître en anglais même si votre langue est réglée sur une autre."
     ],
     "updated": [
-      "{CHECK} **Language Updated:** `{NEWLANGUAGE}` {FLAG}",
+      "{CHECK} **Langue Mise à Jour:** `{NEWLANGUAGE}` {FLAG}",
       "",
       "{INFO} Si vous souhaitez contribuer aux traductions dans votre langue maternelle, rejoignez notre [Serveur de Soutien]({INVITE}).",
       "",
       "{WARNING} L'anglais est la langue principale et est pleinement pris en charge. Certaines commandes peuvent apparaître en anglais même si votre langue est réglée sur une autre."
     ],
+    "uptodate": "Mise à Jour",
+    "outdated": "Dépassé",
     "listtitle": "{BOTNAME} - Liste des Langues",
     "available": [
       "⏲️ **Dernière Mise à Jour:** {TIME}",
+      "{UPTODATE}",
       "",
       "{LANGUAGES}",
       "",
       "{WARNING} L'anglais est la langue principale et est pleinement pris en charge. Certaines commandes peuvent apparaître en anglais même si votre langue est réglée sur une autre."
     ],
     "help": [
-      "{CHECK} Hé! Merci d'avoir ouvert cette page!",
+      "**{CHECK} **Hé! Merci d'avoir ouvert cette page!**",
       "",
-      "Les développeurs de Magic8 ont consacré des heures de leur journée à faire en sorte que le bot supporte d'autres langues. N'hésitez pas à profiter de cette occasion pour leur donner un coup de main!",
+      "Les développeurs de Magic8 ont consacré de nombreuses heures à la prise en charge d'autres langues. N'hésitez pas à profiter de cette occasion pour les aider !",
       "",
-      "[Dépôt Github]({GITHUB})",
+      "[**Dépôt Github**]({GITHUB})",
+      "[**Questions**]({ISSUES})",
       "",
-      "Qu'obtenez-vous en retour ?",
-      "- Rôle du contributeur linguistique",
+      "**Qu'obtenez-vous en retour?**",
+      "- Language Contributor Role",
       "- Gratuit [Triple Package]({TRIPLEPACKAGE})",
       "- Le plus grand respect de la part des promoteurs",
       "- Peut-être plus",
@@ -308,7 +312,7 @@
     "info": [
       "{FLAG} **{LANGUAGENAME}** (`{LANGUAGESHORT}`)",
       "",
-      "**Completed:** {PERCENT}%",
+      "**Progrès:** {PERCENT}%",
       "**Auteurs:**",
       "{AUTHORS}"
     ],
@@ -321,7 +325,7 @@
       "`{PREFIX}language set` - Establecer el idioma (`{LANGUAGE}`)",
       "`{PREFIX}language help` - Magic8 Informations sur les Langues",
       "`{PREFIX}language info` - Détails linguistiques spécifique",
-      "`{PREFIX}language list` - Voir les options linguistiques",
+      "`{PREFIX}language list` - Voir les Langues Disponibles",
       "",
       "{INFO} **Please contact us if you'd like to help!**"
     ]

@@ -388,6 +388,57 @@
     "otherhungup": "\\🔴 **¡Te colgaron el telefono!**",
     "timeout": "\\⏰ No se detectó ningun mensaje por más de un minuto. **¡Conexión perdidad!**"
   },
+  "help": {
+    "invalidcommand": [
+      "{CROSS} **Comando Inválido Proporcionado:** `{INPUT}`",
+      "",
+      "{INFO} ¡Escriba `{PREFIX}help` para obtener una lista de todos los comandos!"
+    ],
+    "commandinfotitle": "{BOTNAME} - Información del Comando",
+    "commandinfo": [
+      "**Comando:** `{COMMANDNAME}`",
+      "",
+      "**Aliases:** {ALIASES}",
+      "**Categoría:** {CATEGORY}",
+      "**Emoji:** {EMOJI}",
+      "**Conmutable:** {TOGGLEABLE}{PREMIUM}",
+      "**Descripción:** {DESCRIPTION}"
+    ],
+    "footer": "¿Falta algo? ¡Contacta con el apoyo!",
+    "tips": [
+      "{CHECK} ***¿Necesita más ayuda?***",
+      "**1.** DM Fyrlex#2740",
+      "**2.** Echa un vistazo a nuestra [Guía]({GUIDE})",
+      "**3.** Únete a nuestro [Servidor de Soporte]({INVITE})"
+    ],
+    "category": {
+      "fun": "Entretenimiento",
+      "minigames": "Minijuegos",
+      "minecraft": "Minecraft",
+      "reactions": "Reacciones",
+      "misc": "Miscelánea",
+      "info": "Información",
+      "user": "Usuario",
+      "utils": "Utilidades",
+      "admin": "Administrador"
+    },
+    "adminbottom": [
+      "{INFO} Obtenga más información de un comando escribiendo: `{PREFIX}help <command>`",
+      "",
+      "¿Tiene ideas o sugerencias? **Háganos saber en nuestro [Servidor de Soporte]({INVITE}).**"
+    ],
+    "bottom": "¿Tiene ideas o sugerencias? **Háganos saber en nuestro [Servidor de Soporte]({INVITE}).**",
+    "cannotsend": [
+      "{CROSS} **{USER}, el menú de ayuda no pudo ser enviado. Por favor, habilite los mensajes privados.**",
+      "",
+      "*¿Necesita más ayuda? ¡Únete a nuestro [Servidor de Soporte]({INVITE}) o mira nuestra [Guía]({GUIDE})!*"
+    ],
+    "sent": [
+      "{CHECK} **{USER}, the help menu was sent. Please check your private messages.**",
+      "",
+      "*¿Necesita más ayuda? ¡Únete a nuestro [Servidor de Soporte]({INVITE}) o mira nuestra [Guía]({GUIDE})!*"
+    ]
+  },
   "language": {
     "invalid": [
       "{CROSS} **Lenguaje Inválido:** `{INPUT}`",
@@ -399,29 +450,33 @@
       "",
       "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
     ],
-    "set": [
+    "updated": [
       "{CHECK} **Idioma Actualizado:** `{NEWLANGUAGE}`",
       "",
       "{INFO} Si quieres contribuir con traducciones en tu lengua materna, únete a nuestro [Servidor de Soporte]({INVITE}).",
       "",
       "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
     ],
-    "listtitle": "{BOTNAME} - Languages List",
+    "uptodate": "Hasta la Fecha",
+    "outdated": "Desactualizado",
+    "listtitle": "{BOTNAME} - Lista de Idiomas",
     "available": [
       "⏲️ **Última Actualización:** {TIME}",
+      "{UPTODATE}",
       "",
       "{LANGUAGES}",
       "",
       "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
     ],
     "help": [
-      "{CHECK} ¡Oye! ¡Gracias por abrir esta página!",
+      "{CHECK} **¡Oye! ¡Gracias por abrir esta página!**",
       "",
-      "Los desarrolladores de Magic8 han dedicado horas de su día a hacer que el bot sea compatible con otros idiomas. Por favor, ¡considera la posibilidad de ayudar!",
+      "Los desarrolladores de Magic8 han dedicado muchas horas a poder soportar otros idiomas. Por favor, considere la posibilidad de aprovechar la oportunidad de ayudar!",
       "",
-      "[Repositorio Github]({GITHUB})",
+      "[**Repositorio GitHub**]({GITHUB})",
+      "[**Bugs**]({ISSUES})",
       "",
-      "¿Qué obtienes a cambio?",
+      "**¿Qué obtienes a cambio?**",
       "- Language Contributor Role",
       "- Libre [Triple Package]({TRIPLEPACKAGE})",
       "- El mayor respeto de los desarrolladores",
@@ -432,7 +487,7 @@
     "info": [
       "{FLAG} **{LANGUAGENAME}** (`{LANGUAGESHORT}`)",
       "",
-      "**Completed:** {PERCENT}%",
+      "**Progreso:** {PERCENT}%",
       "**Autores:**",
       "{AUTHORS}"
     ],
@@ -445,7 +500,7 @@
       "`{PREFIX}language set` - Establecer el Idioma (`{LANGUAGE}`)",
       "`{PREFIX}language help` - Magic8 Información del Idioma",
       "`{PREFIX}language info` - Detalles específicos del lenguaje",
-      "`{PREFIX}language list` - Ver Detalles del idioma",
+      "`{PREFIX}language list` - Ver los Idiomas Disponibles",
       "",
       "{INFO} **¡Por favor, póngase en contacto con nosotros si desea ayudar!**"
     ]

@@ -5,5 +5,71 @@
   "link": "https://github.com/OfficialMagic8/Languages/blob/master/languages/it.json",
   "authors": [
     "none"
-  ]
+  ],
+  "language": {
+    "invalid": [
+      "{CROSS} **Lingua non Valida:** `{INPUT}`",
+      "",
+      "**Attuale:** `{CURRENT}`",
+      "",
+      "**Lingue Disponibili:**",
+      "{AVAILABLE}",
+      "",
+      "{WARNING} L'inglese è la lingua principale e pienamente supportata. Alcuni comandi possono apparire in inglese anche se la vostra lingua è impostata su un'altra."
+    ],
+    "updated": [
+      "{CHECK} **Language Updated:** `{NEWLANGUAGE}` {FLAG}",
+      "",
+      "{INFO} If you want to contribute with translations in your native language, join our [Support Server]({INVITE}).",
+      "",
+      "{WARNING} L'inglese è la lingua principale e pienamente supportata. Alcuni comandi possono apparire in inglese anche se la vostra lingua è impostata su un'altra."
+    ],
+    "uptodate": "Aggiornamento",
+    "outdated": "Non è più Aggiornato",
+    "listtitle": "{BOTNAME} - Elenco delle Lingue",
+    "available": [
+      "⏲️ **Ultimo Aggiornamento:** {TIME}",
+      "{UPTODATE}",
+      "",
+      "{LANGUAGES}",
+      "",
+      "{WARNING} L'inglese è la lingua principale e pienamente supportata. Alcuni comandi possono apparire in inglese anche se la vostra lingua è impostata su un'altra."
+    ],
+    "help": [
+      "{CHECK} **Ehi, grazie per aver aperto questa pagina!**",
+      "",
+      "Gli sviluppatori di Magic8 hanno dedicato molte ore per poter supportare altri linguaggi. Cogliete l'occasione per dare una mano!",
+      "",
+      "[**Deposito di Github**]({GITHUB})",
+      "[**Bugs**]({ISSUES})",
+      "",
+      "**Cosa ottieni in cambio?**",
+      "- Language Contributor Role",
+      "- Gratuito [Triple Package]({TRIPLEPACKAGE})",
+      "- Massimo rispetto da parte degli sviluppatori",
+      "- Forse di più",
+      "",
+      "{INFO} **Contattateci se volete aiutarci!**"
+    ],
+    "info": [
+      "{FLAG} **{LANGUAGENAME}** (`{LANGUAGESHORT}`)",
+      "",
+      "**Progressi:** {PERCENT}%",
+      "**Autori:**",
+      "{AUTHORS}"
+    ],
+    "lastfetched": "⏲️ Ultimo aggiornamento: {TIME}",
+    "menutitle": "{BOTNAME} - Lingue Menu",
+    "menu": [
+      "Qui è possibile gestire la lingua di {BOT}!",
+      "",
+      "**Comandi disponibili:**",
+      "`{PREFIX}language set` - Impostare la lingua (`{LANGUAGE}`)",
+      "`{PREFIX}language help` - Magic8 Informazioni sulle Lingue",
+      "`{PREFIX}language info` - Dettagli Specifici della Lingua",
+      "`{PREFIX}language list` - Visualizza le lingue disponibili",
+      "",
+      "{INFO} **Please contact us if you'd like to help!**"
+    ]
+  }
 }

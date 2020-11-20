@@ -5,5 +5,71 @@
   "link": "https://github.com/OfficialMagic8/Languages/blob/master/languages/nl.json",
   "authors": [
     "none"
-  ]
+  ],
+  "language": {
+    "invalid": [
+      "{CROSS} **Ongeldige Taal:** `{INPUT}`",
+      "",
+      "**Huidig:** `{CURRENT}`",
+      "",
+      "**Beschikbare Talen:**",
+      "{AVAILABLE}",
+      "",
+      "{WARNING} Engels is de primaire taal en wordt volledig ondersteund. Sommige commando's kunnen in het Engels verschijnen, ook al is uw taal op een andere ingesteld."
+    ],
+    "updated": [
+      "{CHECK} **Taal Bijgewerkt:** `{NEWLANGUAGE}` {FLAG}",
+      "",
+      "{INFO} Als u wilt bijdragen met vertalingen in uw moedertaal, sluit u zich dan aan bij onze [Support Server]({INVITE}).",
+      "",
+      "{WARNING} Engels is de primaire taal en wordt volledig ondersteund. Sommige commando's kunnen in het Engels verschijnen, ook al is uw taal op een andere ingesteld."
+    ],
+    "uptodate": "Tot Op Heden",
+    "outdated": "Verouderd",
+    "listtitle": "{BOTNAME} - Languages List",
+    "available": [
+      "⏲️ **Laatst Bijgewerkt:** {TIME}",
+      "{UPTODATE}",
+      "",
+      "{LANGUAGES}",
+      "",
+      "{WARNING} Engels is de primaire taal en wordt volledig ondersteund. Sommige commando's kunnen in het Engels verschijnen, ook al is uw taal op een andere ingesteld."
+    ],
+    "help": [
+      "{CHECK} **Hey! Bedankt voor het openen van deze pagina!**",
+      "",
+      "De Magic8 ontwikkelaars hebben vele uren gewijd aan het kunnen ondersteunen van andere talen. Overweegt u alstublieft de kans te grijpen om te helpen!",
+      "",
+      "[**Github Repository**]({GITHUB})",
+      "[**Bugs**]({ISSUES})",
+      "",
+      "**Wat krijg je er voor terug?**",
+      "- Language Contributor Role",
+      "- Gratis [Triple Package]({TRIPLEPACKAGE})",
+      "- Het grootste respect van de ontwikkelaars",
+      "- Mogelijk meer",
+      "",
+      "{INFO} **Neem contact met ons op als u wilt helpen!**"
+    ],
+    "info": [
+      "{FLAG} **{LANGUAGENAME}** (`{LANGUAGESHORT}`)",
+      "",
+      "**Vooruitgang:** {PERCENT}%",
+      "**Auteurs:**",
+      "{AUTHORS}"
+    ],
+    "lastfetched": "⏲️ Laatst Bijgewerkt: {TIME}",
+    "menutitle": "{BOTNAME} - Talenmenu",
+    "menu": [
+      "Hier kunt u de taal van {BOT}!",
+      "",
+      "**Beschikbare Commando's:**",
+      "`{PREFIX}language set` - Stel de taal in (`{LANGUAGE}`)",
+      "`{PREFIX}language help` - Magic8 Talen Informatie",
+      "`{PREFIX}language info` - Specifieke Taal Details",
+      "`{PREFIX}language list` - Bekijk beschikbare talen",
+      "",
+      "{INFO} **Neem contact met ons op als u wilt helpen!**"
+    ]
+  }
 }
