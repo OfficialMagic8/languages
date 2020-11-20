@@ -430,9 +430,9 @@
       "{INFO} **¡Por favor, póngase en contacto con nosotros si desea ayudar!**"
     ],
     "info": [
-      "{FLAG} {LANGUAGENAME} (`{LANGUAGESHORT}`)",
+      "{FLAG} **{LANGUAGENAME}** (`{LANGUAGESHORT}`)",
       "",
-      "**Completed:** {PERECNT}%",
+      "**Completed:** {PERCENT}%",
       "**Autores:**",
       "{AUTHORS}"
     ],

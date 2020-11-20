@@ -306,9 +306,9 @@
       "{INFO} **N'hésitez pas à nous contacter si vous souhaitez nous aider!**"
     ],
     "info": [
-      "{FLAG} {LANGUAGENAME} (`{LANGUAGESHORT}`)",
+      "{FLAG} **{LANGUAGENAME}** (`{LANGUAGESHORT}`)",
       "",
-      "**Completed:** {PERECNT}%",
+      "**Completed:** {PERCENT}%",
       "**Auteurs:**",
       "{AUTHORS}"
     ],
