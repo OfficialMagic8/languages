@@ -2,5 +2,8 @@
   "languagenamelong": "Nederlands",
   "languagenameshort": "nl",
   "flag": "🇳🇱",
-  "link": "https://github.com/OfficialMagic8/Languages/blob/master/languages/nl.json"
+  "link": "https://github.com/OfficialMagic8/Languages/blob/master/languages/nl.json",
+  "authors": [
+    "none"
+  ]
 }

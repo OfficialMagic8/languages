@@ -2,5 +2,8 @@
   "languagenamelong": "Italiano",
   "languagenameshort": "it",
   "flag": "🇮🇹",
-  "link": "https://github.com/OfficialMagic8/Languages/blob/master/languages/it.json"
+  "link": "https://github.com/OfficialMagic8/Languages/blob/master/languages/it.json",
+  "authors": [
+    "none"
+  ]
 }

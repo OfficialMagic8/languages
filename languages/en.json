@@ -3,6 +3,10 @@
   "languagenameshort": "en",
   "flag": "🇺🇸",
   "link": "https://github.com/OfficialMagic8/Languages/blob/master/languages/en.json",
+  "authors": [
+    "Fyrlex#2740",
+    "AlonsoAliaga#0017"
+  ],
   "it": "{CROSS} **{USER}, please provide a valid member or ID.**",
   "mention": [
     "**{USER}, my prefix for the server is:** `{PREFIX}`",
@@ -1751,6 +1755,13 @@
       "",
       "{INFO} **Please contact us if you'd like to help!**"
     ],
+    "info": [
+      "{FLAG} {LANGUAGENAME} ({LANGUAGESHORT)",
+      "",
+      "**Link:** {LINK}",
+      "**Authors:**",
+      "{AUTHORS}"
+    ],
     "lastfetched": "⏲️ Last Fetched: {TIME}",
     "menutitle": "{BOTNAME} - Languages Menu",
     "menu": [
@@ -1759,7 +1770,8 @@
       "**Available Commands:**",
       "`{PREFIX}language set` - Set the language (`{LANGUAGE}`)",
       "`{PREFIX}language help` - Language Information",
-      "`{PREFIX}language list` - View Language Details",
+      "`{PREFIX}language info` - Specific Language Detail",
+      "`{PREFIX}language list` - View Language Options",
       "",
       "{INFO} **Please contact us if you'd like to help!**"
     ]

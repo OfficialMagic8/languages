@@ -3,6 +3,10 @@
   "languagenameshort": "es",
   "flag": "🇪🇸",
   "link": "https://github.com/OfficialMagic8/Languages/blob/master/languages/es.json",
+  "authors": [
+    "Fyrlex#2740",
+    "AlonsoAliaga#0017"
+  ],
   "it": "{CROSS} **{USER}, por favor proporcione un miembro o una identificación válida",
   "mention": [
     "**{USER}, mi prefijo para el servidor es:** `{PREFIX}`",

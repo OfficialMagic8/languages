@@ -2,5 +2,8 @@
   "languagenamelong": "日本人",
   "languagenameshort": "jp",
   "flag": "🇯🇵",
-  "link": "https://github.com/OfficialMagic8/Languages/blob/master/languages/jp.json"
+  "link": "https://github.com/OfficialMagic8/Languages/blob/master/languages/jp.json",
+  "authors": [
+    "none"
+  ]
 }

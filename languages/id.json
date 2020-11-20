@@ -2,5 +2,8 @@
   "languagenamelong": "Bahasa Indonesia",
   "languagenameshort": "id",
   "flag": "🇮🇩",
-  "link": "https://github.com/OfficialMagic8/Languages/blob/master/languages/id.json"
+  "link": "https://github.com/OfficialMagic8/Languages/blob/master/languages/id.json",
+  "authors": [
+    "sleepycodingboy#3612"
+  ]
 }

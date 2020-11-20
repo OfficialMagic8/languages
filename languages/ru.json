@@ -2,5 +2,8 @@
   "languagenamelong": "русский",
   "languagenameshort": "ru",
   "flag": "🇷🇺",
-  "link": "https://github.com/OfficialMagic8/Languages/blob/master/languages/ru.json"
+  "link": "https://github.com/OfficialMagic8/Languages/blob/master/languages/ru.json",
+  "authors": [
+    "none"
+  ]
 }
