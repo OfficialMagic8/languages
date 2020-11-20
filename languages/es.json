@@ -429,6 +429,14 @@
       "",
       "{INFO} **¡Por favor, póngase en contacto con nosotros si desea ayudar!**"
     ],
+    "info": [
+      "{FLAG} {LANGUAGENAME} (`{LANGUAGESHORT}`)",
+      "",
+      "**Completed:** {PERECNT}%",
+      "**Authors:**",
+      "{AUTHORS}"
+    ],
+    "lastfetched": "⏲️ Last Fetched: {TIME}",
     "menutitle": "{BOTNAME} - Languages Menu",
     "menu": [
       "Aquí se puede el lenguaje de {BOT}!",
