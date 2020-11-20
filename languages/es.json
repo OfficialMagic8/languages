@@ -397,14 +397,14 @@
       "**Idiomas Disponibles:**",
       "{AVAILABLE}",
       "",
-      "{WARNING} El inglés es el idioma principal y está **totalmente** respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
+      "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
     ],
     "set": [
       "{CHECK} **Idioma Actualizado:** `{NEWLANGUAGE}`",
       "",
-      "{INFO} Si quieres contribuir con traducciones en tu lengua materna, únete a nuestro [Servidor de Soporte]({INVITE}) server!",
+      "{INFO} Si quieres contribuir con traducciones en tu lengua materna, únete a nuestro [Servidor de Soporte]({INVITE}).",
       "",
-      "{WARNING} El inglés es el idioma principal y está **totalmente** respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
+      "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
     ],
     "listtitle": "{BOTNAME} - Languages List",
     "available": [
@@ -412,12 +412,12 @@
       "",
       "{LANGUAGES}",
       "",
-      "{WARNING} El inglés es el idioma principal y está **totalmente** respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
+      "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
     ],
     "help": [
       "{CHECK} ¡Oye! ¡Gracias por abrir esta página!",
       "",
-      "Los desarrolladores de Magic8 han dedicado horas de su día a hacer que el bot sea compatible con otros idiomas. ¡Pero no tenemos tiempo para traducir nada!",
+      "Los desarrolladores de Magic8 han dedicado horas de su día a hacer que el bot sea compatible con otros idiomas. Por favor, ¡considera la posibilidad de ayudar!",
       "",
       "[Repositorio Github]({GITHUB})",
       "",
@@ -433,17 +433,18 @@
       "{FLAG} {LANGUAGENAME} (`{LANGUAGESHORT}`)",
       "",
       "**Completed:** {PERECNT}%",
-      "**Authors:**",
+      "**Autores:**",
       "{AUTHORS}"
     ],
-    "lastfetched": "⏲️ Last Fetched: {TIME}",
-    "menutitle": "{BOTNAME} - Languages Menu",
+    "lastfetched": "⏲️ Última Actualización: {TIME}",
+    "menutitle": "{BOTNAME} - Menú de Idiomas",
     "menu": [
-      "Aquí se puede el lenguaje de {BOT}!",
+      "Aquí puedes manejar el lenguaje de {BOT}!",
       "",
       "**Comandos Disponibles:**",
       "`{PREFIX}language set` - Establecer el Idioma (`{LANGUAGE}`)",
-      "`{PREFIX}language help` - Información del Idioma",
+      "`{PREFIX}language help` - Magic8 Información del Idioma",
+      "`{PREFIX}language info` - Detalles específicos del lenguaje",
       "`{PREFIX}language list` - Ver Detalles del idioma",
       "",
       "{INFO} **¡Por favor, póngase en contacto con nosotros si desea ayudar!**"

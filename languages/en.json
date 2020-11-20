@@ -1723,27 +1723,27 @@
       "**Available Languages:**",
       "{AVAILABLE}",
       "",
-      "{WARNING} English is the main language and **fully** supported. Some commands may appear in english even though your language is set to another."
+      "{WARNING} English is the primary language and fully supported. Some commands may appear in english even though your language is set to another."
     ],
     "updated": [
       "{CHECK} **Language Updated:** `{NEWLANGUAGE}` {FLAG}",
       "",
-      "{INFO} If you want to contribute with translations in your native language, join our [Support Server]({INVITE}) server!",
+      "{INFO} If you want to contribute with translations in your native language, join our [Support Server]({INVITE}).",
       "",
-      "{WARNING} English is the main language and **fully** supported. Some commands may appear in english even though your language is set to another."
+      "{WARNING} English is the primary language and fully supported. Some commands may appear in english even though your language is set to another."
     ],
     "listtitle": "{BOTNAME} - Languages List",
     "available": [
-      "⏲️ **Last Fetched:** {TIME}",
+      "⏲️ **Last Updated:** {TIME}",
       "",
       "{LANGUAGES}",
       "",
-      "{WARNING} English is the main language and **fully** supported. Some commands may appear in english even though your language is set to another."
+      "{WARNING} English is the primary language and fully supported. Some commands may appear in english even though your language is set to another."
     ],
     "help": [
       "{CHECK} Hey! Thanks for opening this page!",
       "",
-      "The Magic8 developers have dedicated hours of their day to making the bot support other languages. But we don't have the time to actually translate anything!",
+      "The Magic8 developers have dedicated hours of their day to making the bot support other languages. Please consider taking the opportunity to help out!",
       "",
       "[Github Repository]({GITHUB})",
       "",
@@ -1762,15 +1762,15 @@
       "**Authors:**",
       "{AUTHORS}"
     ],
-    "lastfetched": "⏲️ Last Fetched: {TIME}",
+    "lastfetched": "⏲️ Last Updated: {TIME}",
     "menutitle": "{BOTNAME} - Languages Menu",
     "menu": [
-      "Here you can the language of {BOT}!",
+      "Here you can manage the language of {BOT}!",
       "",
       "**Available Commands:**",
       "`{PREFIX}language set` - Set the language (`{LANGUAGE}`)",
-      "`{PREFIX}language help` - Language Information",
-      "`{PREFIX}language info` - Specific Language Detail",
+      "`{PREFIX}language help` - Magic8 Languages Information",
+      "`{PREFIX}language info` - Specific Language Details",
       "`{PREFIX}language list` - View Language Options",
       "",
       "{INFO} **Please contact us if you'd like to help!**"

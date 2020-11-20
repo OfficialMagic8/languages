@@ -14,7 +14,7 @@
     "",
     "*Need further assistance? Join our [Support Server]({INVITATION})!*"
   ],
-  "ball" : {
+  "ball": {
     "asksomething": "{CROSS} **Vous devez poser une question oui/non!**",
     "customresponses": [
       "{CROSS} **Les réponses personnalisées sont activées mais aucune n'a été ajoutée!",
@@ -29,9 +29,9 @@
     ],
     "askedquestion": "{TAG} question posée #{NUMBER}",
     "question": "Question",
-    "response" : "Réponse",
+    "response": "Réponse",
     "replies": {
-     "all" : [
+      "all": [
         "Absolument pas",
         "Absolument !",
         "Selon ma religion, non",
@@ -146,7 +146,7 @@
         "Tu souhaites !",
         "Ouaip"
       ],
-      "clean" : [
+      "clean": [
         "Absolument pas",
         "Absolument !",
         "Selon ma religion, non",
@@ -239,7 +239,7 @@
         "Tu souhaites !",
         "Ouaip"
       ],
-      "explicit" : [
+      "explicit": [
         "Dès que ton cul apprend à lire",
         "Salope quoi ?",
         "Salope, vraiment",
@@ -263,5 +263,67 @@
         "Tu ne peux pas dire ça, putain"
       ]
     }
+  },
+  "language": {
+    "invalid": [
+      "{CROSS} **Langue Non Valide:** `{INPUT}`",
+      "",
+      "**Actuel:** `{CURRENT}`",
+      "",
+      "**Langues Disponibles:**",
+      "{AVAILABLE}",
+      "",
+      "{WARNING} L'anglais est la langue principale et est pleinement pris en charge. Certaines commandes peuvent apparaître en anglais même si votre langue est réglée sur une autre."
+    ],
+    "updated": [
+      "{CHECK} **Language Updated:** `{NEWLANGUAGE}` {FLAG}",
+      "",
+      "{INFO} Si vous souhaitez contribuer aux traductions dans votre langue maternelle, rejoignez notre [Serveur de Soutien]({INVITE}).",
+      "",
+      "{WARNING} L'anglais est la langue principale et est pleinement pris en charge. Certaines commandes peuvent apparaître en anglais même si votre langue est réglée sur une autre."
+    ],
+    "listtitle": "{BOTNAME} - Liste des Langues",
+    "available": [
+      "⏲️ **Dernière Mise à Jour:** {TIME}",
+      "",
+      "{LANGUAGES}",
+      "",
+      "{WARNING} L'anglais est la langue principale et est pleinement pris en charge. Certaines commandes peuvent apparaître en anglais même si votre langue est réglée sur une autre."
+    ],
+    "help": [
+      "{CHECK} Hé! Merci d'avoir ouvert cette page!",
+      "",
+      "Les développeurs de Magic8 ont consacré des heures de leur journée à faire en sorte que le bot supporte d'autres langues. N'hésitez pas à profiter de cette occasion pour leur donner un coup de main!",
+      "",
+      "[Dépôt Github]({GITHUB})",
+      "",
+      "Qu'obtenez-vous en retour ?",
+      "- Rôle du contributeur linguistique",
+      "- Gratuit [Triple Package]({TRIPLEPACKAGE})",
+      "- Le plus grand respect de la part des promoteurs",
+      "- Peut-être plus",
+      "",
+      "{INFO} **N'hésitez pas à nous contacter si vous souhaitez nous aider!**"
+    ],
+    "info": [
+      "{FLAG} {LANGUAGENAME} (`{LANGUAGESHORT}`)",
+      "",
+      "**Completed:** {PERECNT}%",
+      "**Auteurs:**",
+      "{AUTHORS}"
+    ],
+    "lastfetched": "⏲️ Dernière Mise à jour: {TIME}",
+    "menutitle": "{BOTNAME} - Languages Menu",
+    "menu": [
+      "Ici, vous pouvez gérer la langue de {BOT}!",
+      "",
+      "**Comandos Disponibles:**",
+      "`{PREFIX}language set` - Establecer el idioma (`{LANGUAGE}`)",
+      "`{PREFIX}language help` - Magic8 Informations sur les Langues",
+      "`{PREFIX}language info` - Détails linguistiques spécifique",
+      "`{PREFIX}language list` - Voir les options linguistiques",
+      "",
+      "{INFO} **Please contact us if you'd like to help!**"
+    ]
   }
 }
