@@ -1756,7 +1756,7 @@
       "{INFO} **Please contact us if you'd like to help!**"
     ],
     "info": [
-      "{FLAG} {LANGUAGENAME} ({LANGUAGESHORT)",
+      "{FLAG} {LANGUAGENAME} ({LANGUAGESHORT})",
       "",
       "**Link:** {LINK}",
       "**Authors:**",
