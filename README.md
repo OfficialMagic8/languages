@@ -5,10 +5,11 @@
 **Want to collaborate? Add your own language with all translations and we will add it to the available translations!**
 
 ### Instructions
-- Create a fork of the [en.json](https://github.com/Fyrlex/Magic8-Languages/blob/master/languages/en.json) file.
+- Create a fork of this repository.
 - Please make sure you are familiar with [JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) format, [arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), [objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) and [strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String).
 - Please make sure you understand all of [Markdown](https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-)
 - Translate the English to your fluently known language
+- Submit a pull request to be reviewed and then approved.
 
 ### Rules
 - Do not edit the contents of the placeholders "{EXAMPLE}". Move them accordingly for grammar purposes. Please contact Fyrlex#2740 if you are not sure what a placeholder means.
