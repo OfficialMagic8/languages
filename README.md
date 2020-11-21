@@ -16,7 +16,7 @@
 - Do **NOT** use a translating service
 - Do **NOT** change the meaning of translations. We will review your submission(s).
 
-### Perks
+### Possible Rewards
 - Language Contributor Role in our [Support Server](https://discord.gg/bUUggyCjvp)
 - Free Triple Package
 - Advertisement on the Magic8 bot or in the #sponors channel
