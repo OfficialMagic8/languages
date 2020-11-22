@@ -30,9 +30,11 @@
     "available": [
       "{UPTODATE}",
       "",
-      "{INFO} Klik op een taal om naar de GitHub-repository te gaan.",
+      "{INFO} Klik op een taal om naar de GitHub-repository te gaan!",
       "",
-      "{LANGUAGES}"
+      "{LANGUAGES}",
+      "",
+      "{WARNING} Engels is de primaire taal en wordt volledig ondersteund. Sommige commando's kunnen in het Engels verschijnen, ook al is uw taal op een andere ingesteld."
     ],
     "help": [
       "{CHECK} **Hey! Bedankt voor het openen van deze pagina!**",

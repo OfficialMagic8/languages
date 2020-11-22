@@ -467,7 +467,9 @@
       "",
       "{INFO} Haga clic en un idioma para ser llevado al Repositorio GitHub!",
       "",
-      "{LANGUAGES}"
+      "{LANGUAGES}",
+      "",
+      "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en Inglés aunque tu idioma esté configurado en otro."
     ],
     "help": [
       "{CHECK} **¡Oye! ¡Gracias por abrir esta página!**",

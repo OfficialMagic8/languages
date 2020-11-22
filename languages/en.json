@@ -1736,7 +1736,12 @@
     ],
     "uptodate": "Up To Date",
     "outdated": "Not Up To Date",
-    "listtitle": "{BOTNAME} - Languages List",
+    "listtitle": "{BOTNAME} - Languages List {PAGE}/{TOTALPAGES}",
+    "invalidpage": [
+      "{CROSS} Invalid Page Provided: `{INPUT}`",
+      "",
+      "{INFO} Please provide a page number between **1** and **{TOTALPAGES}**."
+    ],
     "available": [
       "{UPTODATE}",
       "",

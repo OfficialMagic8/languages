@@ -288,9 +288,11 @@
     "available": [
       "{UPTODATE}",
       "",
-      "{INFO} Cliquez sur une langue pour accéder au dépôt GitHub",
+      "{INFO} Cliquez sur une langue pour accéder au dépôt GitHub!",
       "",
-      "{LANGUAGES}"
+      "{LANGUAGES}",
+      "",
+      "{WARNING} L'anglais est la langue principale et est pleinement pris en charge. Certaines commandes peuvent apparaître en Anglais même si votre langue est réglée sur une autre."
     ],
     "help": [
       "**{CHECK} **Hé! Merci d'avoir ouvert cette page!**",
