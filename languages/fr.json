@@ -286,12 +286,11 @@
     "outdated": "Dépassé",
     "listtitle": "{BOTNAME} - Liste des Langues",
     "available": [
-      "⏲️ **Dernière Mise à Jour:** {TIME}",
       "{UPTODATE}",
       "",
-      "{LANGUAGES}",
+      "{INFO} Cliquez sur une langue pour accéder au dépôt GitHub",
       "",
-      "{WARNING} L'anglais est la langue principale et est pleinement pris en charge. Certaines commandes peuvent apparaître en Anglais même si votre langue est réglée sur une autre."
+      "{LANGUAGES}"
     ],
     "help": [
       "**{CHECK} **Hé! Merci d'avoir ouvert cette page!**",

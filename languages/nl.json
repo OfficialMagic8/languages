@@ -28,12 +28,11 @@
     "outdated": "Verouderd",
     "listtitle": "{BOTNAME} - Languages List",
     "available": [
-      "⏲️ **Laatst Bijgewerkt:** {TIME}",
       "{UPTODATE}",
       "",
-      "{LANGUAGES}",
+      "{INFO} Klik op een taal om naar de GitHub-repository te gaan.",
       "",
-      "{WARNING} Engels is de primaire taal en wordt volledig ondersteund. Sommige commando's kunnen in het Engels verschijnen, ook al is uw taal op een andere ingesteld."
+      "{LANGUAGES}"
     ],
     "help": [
       "{CHECK} **Hey! Bedankt voor het openen van deze pagina!**",

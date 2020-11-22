@@ -1735,17 +1735,14 @@
       "{WARNING} English is the primary language and fully supported. Some commands may appear in English even though your language is set to another."
     ],
     "uptodate": "Up To Date",
-    "outdated": "Outdated",
+    "outdated": "Not Up To Date",
     "listtitle": "{BOTNAME} - Languages List",
     "available": [
-      "⏲️ **Last Updated:** {TIME}",
       "{UPTODATE}",
       "",
       "{INFO} Click on a language to be taken to the GitHub Repository!",
       "",
-      "{LANGUAGES}",
-      "",
-      "{WARNING} English is the primary language and fully supported. Some commands may appear in English even though your language is set to another."
+      "{LANGUAGES}"
     ],
     "help": [
       "{CHECK} **Hey! Thanks for opening this page!**",

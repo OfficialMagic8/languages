@@ -463,12 +463,11 @@
     "outdated": "Desactualizado",
     "listtitle": "{BOTNAME} - Lista de Idiomas",
     "available": [
-      "⏲️ **Última Actualización:** {TIME}",
       "{UPTODATE}",
       "",
-      "{LANGUAGES}",
+      "{INFO} Haga clic en un idioma para ser llevado al Repositorio GitHub!",
       "",
-      "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en Inglés aunque tu idioma esté configurado en otro."
+      "{LANGUAGES}"
     ],
     "help": [
       "{CHECK} **¡Oye! ¡Gracias por abrir esta página!**",
