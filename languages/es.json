@@ -406,6 +406,8 @@
     ],
     "footer": "¿Falta algo? ¡Contacta con el apoyo!",
     "tips": [
+      "📝 **Prefijo:** {PREFIX}",
+      "",
       "{CHECK} ***¿Necesita más ayuda?***",
       "**1.** DM Fyrlex#2740",
       "**2.** Echa un vistazo a nuestra [Guía]({GUIDE})",
@@ -434,7 +436,7 @@
       "*¿Necesita más ayuda? ¡Únete a nuestro [Servidor de Soporte]({INVITE}) o mira nuestra [Guía]({GUIDE})!*"
     ],
     "sent": [
-      "{CHECK} **{USER}, the help menu was sent. Please check your private messages.**",
+      "{CHECK} **{USER}, el menú de ayuda fue enviado. Por favor, compruebe sus mensajes privados.**",
       "",
       "*¿Necesita más ayuda? ¡Únete a nuestro [Servidor de Soporte]({INVITE}) o mira nuestra [Guía]({GUIDE})!*"
     ]
@@ -448,14 +450,14 @@
       "**Idiomas Disponibles:**",
       "{AVAILABLE}",
       "",
-      "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
+      "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en Inglés aunque tu idioma esté configurado en otro."
     ],
     "updated": [
-      "{CHECK} **Idioma Actualizado:** `{NEWLANGUAGE}`",
+      "{CHECK} **Idioma Actualizado:** `{NEWLANGUAGE}` {FLAG}",
       "",
       "{INFO} Si quieres contribuir con traducciones en tu lengua materna, únete a nuestro [Servidor de Soporte]({INVITE}).",
       "",
-      "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
+      "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en Inglés aunque tu idioma esté configurado en otro."
     ],
     "uptodate": "Hasta la Fecha",
     "outdated": "Desactualizado",
@@ -466,7 +468,7 @@
       "",
       "{LANGUAGES}",
       "",
-      "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en inglés aunque tu idioma esté configurado en otro."
+      "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en Inglés aunque tu idioma esté configurado en otro."
     ],
     "help": [
       "{CHECK} **¡Oye! ¡Gracias por abrir esta página!**",

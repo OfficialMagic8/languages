@@ -1,4 +1,5 @@
 [
+  "https://raw.githubusercontent.com/OfficialMagic8/Languages/master/languages/ar.json",
   "https://raw.githubusercontent.com/OfficialMagic8/Languages/master/languages/de.json",
   "https://raw.githubusercontent.com/OfficialMagic8/Languages/master/languages/en.json",
   "https://raw.githubusercontent.com/OfficialMagic8/Languages/master/languages/es.json",
@@ -8,8 +9,12 @@
   "https://raw.githubusercontent.com/OfficialMagic8/Languages/master/languages/it.json",
   "https://raw.githubusercontent.com/OfficialMagic8/Languages/master/languages/jp.json",
   "https://raw.githubusercontent.com/OfficialMagic8/Languages/master/languages/ko.json",
+  "https://raw.githubusercontent.com/OfficialMagic8/Languages/master/languages/ne.json",
   "https://raw.githubusercontent.com/OfficialMagic8/Languages/master/languages/nl.json",
   "https://raw.githubusercontent.com/OfficialMagic8/Languages/master/languages/pl.json",
   "https://raw.githubusercontent.com/OfficialMagic8/Languages/master/languages/pt.json",
-  "https://raw.githubusercontent.com/OfficialMagic8/Languages/master/languages/ru.json"
+  "https://raw.githubusercontent.com/OfficialMagic8/Languages/master/languages/ro.json",
+  "https://raw.githubusercontent.com/OfficialMagic8/Languages/master/languages/ru.json",
+  "https://raw.githubusercontent.com/OfficialMagic8/Languages/master/languages/sk.json",
+  "https://raw.githubusercontent.com/OfficialMagic8/Languages/master/languages/zh.json"
 ]

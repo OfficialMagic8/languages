@@ -1170,6 +1170,8 @@
     ],
     "footer": "Something missing? Contact Support!",
     "tips": [
+      "📝 **Prefix:** {PREFIX}",
+      "",
       "{CHECK} ***Need further assistance?***",
       "**1.** DM Fyrlex#2740",
       "**2.** Check out our [Guide]({GUIDE})",
@@ -1250,7 +1252,7 @@
       "{LIST}"
     ],
     "roleremoved": "{CHECK} **{TARGET} no longer has LFG role!**",
-    "alreadynorole": "{CRPSS} **{TARGET} already does not have LFG role!**",
+    "alreadynorole": "{CROSS} **{TARGET} already does not have LFG role!**",
     "premium": [
       "💎 **Premium Feature** 💎",
       "",
@@ -1723,14 +1725,14 @@
       "**Available Languages:**",
       "{AVAILABLE}",
       "",
-      "{WARNING} English is the primary language and fully supported. Some commands may appear in english even though your language is set to another."
+      "{WARNING} English is the primary language and fully supported. Some commands may appear in English even though your language is set to another."
     ],
     "updated": [
       "{CHECK} **Language Updated:** `{NEWLANGUAGE}` {FLAG}",
       "",
       "{INFO} If you want to contribute with translations in your native language, join our [Support Server]({INVITE}).",
       "",
-      "{WARNING} English is the primary language and fully supported. Some commands may appear in english even though your language is set to another."
+      "{WARNING} English is the primary language and fully supported. Some commands may appear in English even though your language is set to another."
     ],
     "uptodate": "Up To Date",
     "outdated": "Outdated",
@@ -1739,9 +1741,11 @@
       "⏲️ **Last Updated:** {TIME}",
       "{UPTODATE}",
       "",
+      "{INFO} Click on a language to be taken to the GitHub Repository!",
+      "",
       "{LANGUAGES}",
       "",
-      "{WARNING} English is the primary language and fully supported. Some commands may appear in english even though your language is set to another."
+      "{WARNING} English is the primary language and fully supported. Some commands may appear in English even though your language is set to another."
     ],
     "help": [
       "{CHECK} **Hey! Thanks for opening this page!**",

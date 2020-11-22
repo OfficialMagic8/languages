@@ -273,14 +273,14 @@
       "**Langues Disponibles:**",
       "{AVAILABLE}",
       "",
-      "{WARNING} L'anglais est la langue principale et est pleinement pris en charge. Certaines commandes peuvent apparaître en anglais même si votre langue est réglée sur une autre."
+      "{WARNING} L'anglais est la langue principale et est pleinement pris en charge. Certaines commandes peuvent apparaître en Anglais même si votre langue est réglée sur une autre."
     ],
     "updated": [
       "{CHECK} **Langue Mise à Jour:** `{NEWLANGUAGE}` {FLAG}",
       "",
       "{INFO} Si vous souhaitez contribuer aux traductions dans votre langue maternelle, rejoignez notre [Serveur de Soutien]({INVITE}).",
       "",
-      "{WARNING} L'anglais est la langue principale et est pleinement pris en charge. Certaines commandes peuvent apparaître en anglais même si votre langue est réglée sur une autre."
+      "{WARNING} L'anglais est la langue principale et est pleinement pris en charge. Certaines commandes peuvent apparaître en Anglais même si votre langue est réglée sur une autre."
     ],
     "uptodate": "Mise à Jour",
     "outdated": "Dépassé",
@@ -291,7 +291,7 @@
       "",
       "{LANGUAGES}",
       "",
-      "{WARNING} L'anglais est la langue principale et est pleinement pris en charge. Certaines commandes peuvent apparaître en anglais même si votre langue est réglée sur une autre."
+      "{WARNING} L'anglais est la langue principale et est pleinement pris en charge. Certaines commandes peuvent apparaître en Anglais même si votre langue est réglée sur une autre."
     ],
     "help": [
       "**{CHECK} **Hé! Merci d'avoir ouvert cette page!**",
