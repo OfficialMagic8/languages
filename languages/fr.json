@@ -317,7 +317,7 @@
       "**Auteurs:**",
       "{AUTHORS}"
     ],
-    "lastfetched": "⏲️ Dernière Mise à jour: {TIME}",
+    "lastupdated": "⏲️ Dernière Mise à jour: {TIME}",
     "menutitle": "{BOTNAME} - Languages Menu",
     "menu": [
       "Ici, vous pouvez gérer la langue de {BOT}!",
