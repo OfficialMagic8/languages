@@ -406,7 +406,7 @@
     ],
     "footer": "¿Falta algo? ¡Contacta con el apoyo!",
     "tips": [
-      "📝 **Prefijo:** {PREFIX}",
+      "📝 **Prefijo:** `{PREFIX}`",
       "",
       "{CHECK} ***¿Necesita más ayuda?***",
       "**1.** DM Fyrlex#2740",
@@ -494,7 +494,7 @@
       "**Autores:**",
       "{AUTHORS}"
     ],
-    "lastfetched": "⏲️ Última Actualización: {TIME}",
+    "lastupdated": "⏲️ Última Actualización: {TIME}",
     "menutitle": "{BOTNAME} - Menú de Idiomas",
     "menu": [
       "Aquí puedes manejar el lenguaje de {BOT}!",
