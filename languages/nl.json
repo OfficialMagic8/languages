@@ -59,7 +59,7 @@
       "**Auteurs:**",
       "{AUTHORS}"
     ],
-    "lastfetched": "⏲️ Laatst Bijgewerkt: {TIME}",
+    "lastupdated": "⏲️ Laatst Bijgewerkt: {TIME}",
     "menutitle": "{BOTNAME} - Talenmenu",
     "menu": [
       "Hier kunt u de taal van {BOT}!",
