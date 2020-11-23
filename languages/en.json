@@ -348,6 +348,15 @@
     "success": "{CHECK} **{USER} Here is the emoji! [Link]({EMOJILINK})**",
     "error": "{CROSS} **{USER}, please make sure Magic8 shares a server with the custom emoji.**"
   },
+  "christmas": {
+    "description": [
+      "🎄 **Days 'Til Christmas** 🎄",
+      "",
+      "🎅 Santa comes in **{DAYS}** days!",
+      "",
+      "Happy holidays everyone! May we all have a safe, no-covid19 and happy new year :)"
+    ]
+  },
   "clapme": {
     "nomessage": "{CROSS} **{USER}, please provide a message.**",
     "success": "{CHECK} {USER}: {MESSAGE}"
@@ -872,7 +881,7 @@
       "*Next question in 10 seconds!*"
     ],
     "incorrect": [
-      "{CROSS} **{USER} Incorrect**",
+      "{CROSS} **{USER} Incorrect Answer**",
       "",
       "**Correct:** {CORRECTANSWER}",
       "**Your Answer:** {INCORRECTANSWER}",
@@ -969,11 +978,19 @@
       "",
       "{INFO} To view information of the server, type: `{PREFIX}status`"
     ],
+    "updatednoquery": [
+      "{CHECK} **Minecraft Server IP/Domain Updated**",
+      "",
+      "**IP/Domain:** {SERVER}",
+      "",
+      "{WARNING} Query may not be enabled on the server. Limited data was received.",
+      "{INFO} To view information of the server, type: `{PREFIX}status`"
+    ],
     "removed": "{CHECK} **Minecraft Server Successfully Removed**",
     "noip": [
       "{CROSS} **No Minecraft Server IP or Domain**",
       "",
-      "{INFO} To view the status of your server, type: `{PREFIX}mcserver <IP/domain>`"
+      "{INFO} To view the status of your server, type: `{PREFIX}mcserver <IP/domain>`. Please also make sure that `enable-query` is set to true in your `server.properties` file."
     ],
     "error": [
       "{CROSS} **Error Getting Status Of:** `{SERVER}`",
@@ -1170,7 +1187,7 @@
     ],
     "footer": "Something missing? Contact Support!",
     "tips": [
-      "📝 **Prefix:** {PREFIX}",
+      "📝 **Prefix:** `{PREFIX}`",
       "",
       "{CHECK} ***Need further assistance?***",
       "**1.** DM Fyrlex#2740",
@@ -1188,8 +1205,9 @@
       "utils": "Utilities",
       "admin": "Administrator"
     },
+    "hasdisabledcommands": "{WARNING} Commands marked with `!` are disabled. Toggle them by typing: `{PREFIX}s toggle <command>`\n\n",
     "adminbottom": [
-      "{INFO} Get more information of a command by typing: `{PREFIX}help <command>`",
+      "{HASDISABLED}{INFO} Get more information of a command by typing: `{PREFIX}help <command>`",
       "",
       "Do you have ideas or suggestions? **Let us know in our [Support Server]({INVITE}).**"
     ],
@@ -1273,7 +1291,7 @@
     "noboost": "false",
     "boost": "true - (since {SINCE})",
     "title": "{USERNAME}'s Profile",
-    "descripton": [
+    "description": [
       "**Mention:** {USER}",
       "**Nickname:** {NICKNAME}",
       "**Status:** {STATUS}",
@@ -1587,7 +1605,7 @@
     ],
     "notanumber": "{CROSS} **{USER}, please provide a real number to set the cooldown.**",
     "toosmall": "{CROSS} **{USER}, please provide a cooldown greater than 10 seconds.**",
-    "toolarge": "{CROSS} **{USER}, please provide a cooldown less than 5 minutes (or 300 seconds).**",
+    "toolarge": "{CROSS} **{USER}, please provide a cooldown less than 300 seconds (5 minutes).**",
     "cooldownupdated": [
       "{CHECK} **Auto Channels Cooldown Updated**",
       "",
@@ -1718,7 +1736,7 @@
   },
   "language": {
     "invalid": [
-      "{CROSS} **Invalid Language:** `{INPUT}`",
+      "{CROSS} **Invalid Language Provided:** `{INPUT}`",
       "",
       "**Current:** `{CURRENT}`",
       "",
@@ -1736,9 +1754,9 @@
     ],
     "uptodate": "Up To Date",
     "outdated": "Not Up To Date",
-    "listtitle": "{BOTNAME} - Languages List {PAGE}/{TOTALPAGES}",
+    "listtitle": "{BOTNAME} - Languages List ({PAGE}/{TOTALPAGES})",
     "invalidpage": [
-      "{CROSS} Invalid Page Provided: `{INPUT}`",
+      "{CROSS} **Invalid Page Provided:** `{INPUT}`",
       "",
       "{INFO} Please provide a page number between **1** and **{TOTALPAGES}**."
     ],
@@ -1772,7 +1790,7 @@
       "**Authors:**",
       "{AUTHORS}"
     ],
-    "lastfetched": "⏲️ Last Updated: {TIME}",
+    "lastupdated": "⏲️ Last Updated: {TIME}",
     "menutitle": "{BOTNAME} - Languages Menu",
     "menu": [
       "Here you can manage the language of {BOT}!",
