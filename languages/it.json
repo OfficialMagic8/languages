@@ -58,7 +58,7 @@
       "**Autori:**",
       "{AUTHORS}"
     ],
-    "lastfetched": "⏲️ Ultimo aggiornamento: {TIME}",
+    "lastupdated": "⏲️ Ultimo aggiornamento: {TIME}",
     "menutitle": "{BOTNAME} - Lingue Menu",
     "menu": [
       "Qui è possibile gestire la lingua di {BOT}!",
