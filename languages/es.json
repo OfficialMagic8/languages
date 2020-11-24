@@ -453,7 +453,7 @@
       "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en Inglés aunque tu idioma esté configurado en otro."
     ],
     "updated": [
-      "{CHECK} **Idioma Actualizado:** `{NEWLANGUAGE}` {FLAG}",
+      "{CHECK} **Idioma Actualizado:** `{NEWLANGUAGE}` {FLAG} **{PROGRESS}**%",
       "",
       "{INFO} Si quieres contribuir con traducciones en tu lengua materna, únete a nuestro [Servidor de Soporte]({INVITE}).",
       "",
@@ -461,15 +461,13 @@
     ],
     "uptodate": "Hasta la Fecha",
     "outdated": "Desactualizado",
-    "listtitle": "{BOTNAME} - Lista de Idiomas",
+    "listtitle": "{BOTNAME} - Lista de Idiomas ({PAGE}/{TOTALPAGES})",
     "available": [
       "{UPTODATE}",
       "",
       "{INFO} Haga clic en un idioma para ser llevado al Repositorio GitHub!",
       "",
-      "{LANGUAGES}",
-      "",
-      "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en Inglés aunque tu idioma esté configurado en otro."
+      "{LANGUAGES}"
     ],
     "help": [
       "{CHECK} **¡Oye! ¡Gracias por abrir esta página!**",

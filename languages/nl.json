@@ -18,7 +18,7 @@
       "{WARNING} Engels is de primaire taal en wordt volledig ondersteund. Sommige commando's kunnen in het Engels verschijnen, ook al is uw taal op een andere ingesteld."
     ],
     "updated": [
-      "{CHECK} **Taal Bijgewerkt:** `{NEWLANGUAGE}` {FLAG}",
+      "{CHECK} **Taal Bijgewerkt:** `{NEWLANGUAGE}` {FLAG} **{PROGRESS}**%",
       "",
       "{INFO} Als u wilt bijdragen met vertalingen in uw moedertaal, sluit u zich dan aan bij onze [Support Server]({INVITE}).",
       "",
@@ -26,15 +26,13 @@
     ],
     "uptodate": "Tot Op Heden",
     "outdated": "Verouderd",
-    "listtitle": "{BOTNAME} - Languages List",
+    "listtitle": "{BOTNAME} - Talenlijst ({PAGE}/{TOTALPAGES})",
     "available": [
       "{UPTODATE}",
       "",
       "{INFO} Klik op een taal om naar de GitHub-repository te gaan!",
       "",
-      "{LANGUAGES}",
-      "",
-      "{WARNING} Engels is de primaire taal en wordt volledig ondersteund. Sommige commando's kunnen in het Engels verschijnen, ook al is uw taal op een andere ingesteld."
+      "{LANGUAGES}"
     ],
     "help": [
       "{CHECK} **Hey! Bedankt voor het openen van deze pagina!**",

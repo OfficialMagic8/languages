@@ -1753,7 +1753,7 @@
       "{INFO} Please select a new language for your server."
     ],
     "updated": [
-      "{CHECK} **Language Updated:** `{NEWLANGUAGE}` {FLAG}",
+      "{CHECK} **Language Updated:** `{NEWLANGUAGE}` {FLAG} **{PROGRESS}**%",
       "",
       "{INFO} If you want to contribute with translations in your native language, join our [Support Server]({INVITE}).",
       "",
