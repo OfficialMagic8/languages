@@ -1746,7 +1746,7 @@
       "{WARNING} English is the primary language and fully supported. Some commands may appear in English even though your language is set to another."
     ],
     "alreadyselected": [
-      "{CROSS} **Language Already Selected:** `{INPUT}`",
+      "{CROSS} **Language Already Selected**",
       "",
       "**Language:** `{CURRENT}`",
       "",
