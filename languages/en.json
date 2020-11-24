@@ -1745,6 +1745,13 @@
       "",
       "{WARNING} English is the primary language and fully supported. Some commands may appear in English even though your language is set to another."
     ],
+    "alreadyselected": [
+      "{CROSS} **Language Already Selected:** `{INPUT}`",
+      "",
+      "**Language:** `{CURRENT}`",
+      "",
+      "{INFO} Please select a new language for your server."
+    ],
     "updated": [
       "{CHECK} **Language Updated:** `{NEWLANGUAGE}` {FLAG}",
       "",
