@@ -424,8 +424,9 @@
       "utils": "Utilidades",
       "admin": "Administrador"
     },
+    "hasdisabledcommands": "{WARNING} Los comandos marcados con `!` están desactivados.\n Habilitarlos tecleando: `{PREFIX}s toggle <command>`\n\n",
     "adminbottom": [
-      "{INFO} Obtenga más información de un comando escribiendo: `{PREFIX}help <command>`",
+      "{HASDISABLED}{INFO} Obtenga más información de un comando escribiendo: `{PREFIX}help <command>`",
       "",
       "¿Tiene ideas o sugerencias? **Háganos saber en nuestro [Servidor de Soporte]({INVITE}).**"
     ],
