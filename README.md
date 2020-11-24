@@ -9,9 +9,9 @@
 - Please make sure you are familiar with [JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) format, [arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), [objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) and [strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String).
 - Please make sure you understand all of [Markdown](https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-)
 - Translate the English to your fluently known language
-- Submit a pull request to be reviewed and then approved.
+- Submit a pull request or send a file to be reviewed and then approved.
 
-### Rules
+### Rules/Guidelines
 - Do not edit the contents of the placeholders "{EXAMPLE}". Move them accordingly for grammar purposes. Please contact Fyrlex#2740 if you are not sure what a placeholder means.
 - Do **NOT** use a translating service
 - Do **NOT** change the meaning of translations. We will review your submission(s).
