@@ -1205,7 +1205,7 @@
       "utils": "Utilities",
       "admin": "Administrator"
     },
-    "hasdisabledcommands": "{WARNING} Commands marked with `!` are disabled. Toggle them by typing: `{PREFIX}s toggle <command>`\n\n",
+    "hasdisabledcommands": "{WARNING} Commands marked with `!` are disabled.\nToggle them by typing: `{PREFIX}s toggle <command>`\n\n",
     "adminbottom": [
       "{HASDISABLED}{INFO} Get more information of a command by typing: `{PREFIX}help <command>`",
       "",
