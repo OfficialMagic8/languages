@@ -26,9 +26,9 @@
     "asksomething": "{CROSS} **{USER}, please ask a yes or no question.**",
     "customresponses": "{CROSS} **{USER}, please contact an administrator to change the 8ball mode or set custom responses.**",
     "customresponsesadmin": [
-      "{CROSS} **Custom responses are enabled but none were added!**",
+      "{CROSS} **No Custom Responses**",
       "",
-      "{INFO} To add new responses use `{PREFIX}s 8ball setreplies Reply 1 | Reply 2 | Reply 3`"
+      "{INFO} To add new responses, type: `{PREFIX}s 8ball setreplies Reply 1 | Reply 2 | Reply 3`"
     ],
     "askedquestion": "{TAG} asked question #{NUMBER}",
     "question": "Question",
@@ -278,7 +278,7 @@
     "help": {
       "title": "{BOTNAME} - Akinator Menu",
       "user": [
-        "**Available Settings:**",
+        "**Available Commands:**",
         "`{PREFIX}akinator start` - Start A New Game.",
         "",
         "*More Features Coming Soon...*",
@@ -287,7 +287,7 @@
         "Report bugs/ideas in our [Support Server]({INVITE})!"
       ],
       "administrator": [
-        "**Available Settings:**",
+        "**Available Commands:**",
         "`{PREFIX}akinator start` - Start a new game.",
         "",
         "*More Features Coming Soon...*",
@@ -1780,11 +1780,12 @@
       "The Magic8 developers have devoted  many hours to being able to support other languages. Please consider taking the opportunity to help out!",
       "",
       "[**Github Repository**]({GITHUB})",
-      "[**Bugs**]({ISSUES})",
       "",
       "**What do you get in return?**",
-      "- Language Contributor Role",
+      "- Language Contributor Role in our [Support Server]({INVITE})",
       "- Free [Triple Package]({TRIPLEPACKAGE})",
+      "- Advertisement on the Magic8 bot or in the #sponsors channel",
+      "- Complete credit for the language",
       "- Utmost respect from the developers",
       "- Possibly more",
       "",
@@ -1793,7 +1794,7 @@
     "info": [
       "{FLAG} **{LANGUAGENAME}** (`{LANGUAGESHORT}`)",
       "",
-      "**Progress:** {PERCENT}%",
+      "**Progress:** {PROGRESS}%",
       "**Authors:**",
       "{AUTHORS}"
     ],
