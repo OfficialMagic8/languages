@@ -18,12 +18,12 @@
 
 ### Possible Rewards
 - Language Contributor Role in our [Support Server](https://discord.gg/bUUggyCjvp)
-- Free Triple Package
-- Advertisement on the Magic8 bot or in the #sponors channel
-- Credit on the info command for the language
+- Free [Triple Package](https://magic8.gitbook.io/docs/info/premium#triple-package-usd-8-99-one-time-forever)
+- Advertisement on the Magic8 bot or in the #sponsors channel
+- Complete credit for the language
 - Utmost respect from the developers
 - Possibly more
 
-Please only translate files to your known language if you are already **fluent** in English. This way, you can understand the grammar and make proper changes.
+Please only translate files to your known language if you are already **somewhat fluent** in English. This way, you can understand the grammar and make proper changes. If you ever have a question about a word or phrase, do not hesitate to contact support.
 
 There are still quite a few commands that do not support translations. It is tedious work that will be done when the developers have the time to do so.
