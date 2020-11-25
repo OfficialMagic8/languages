@@ -1,22 +1,24 @@
 # Magic8 Languages
 
-**The en.json file is updated every time a feature's multilingual support is added/edited. Review updates [here](https://github.com/OfficialMagic8/Languages/commits/master/languages/en.json) to add the same content to your language file.**
+The developers of Magic8 have spent the past few weeks moving all messages into this repository. In addition, Magic8 directly pulls its languages from here and works pretty fast. Come join the project and help translate Magic8!
 
-**Want to collaborate? Add your own language with all translations and we will add it to the available translations!**
+*Please note that we are **not** looking for complete translations! Although we'd greatly appreciate that, we aren't rushing you to complete the entire English file translated in one night.*
 
-### Instructions
-- Create a fork of this repository.
-- Please make sure you are familiar with [JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) format, [arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), [objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) and [strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String).
+## Instructions
+- Create a fork of this repository
+- Please make sure you are familiar with [JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) format, [arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), [objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) and [strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 - Please make sure you understand all of [Markdown](https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-)
 - Translate the English to your fluently known language
-- Submit a pull request or send a file to be reviewed and then approved.
+- Submit a pull request or send a file to be reviewed and then approved
 
-### Rules/Guidelines
-- Do not edit the contents of the placeholders "{EXAMPLE}". Move them accordingly for grammar purposes. Please contact Fyrlex#2740 if you are not sure what a placeholder means.
-- Do **NOT** use a translating service
-- Do **NOT** change the meaning of translations. We will review your submission(s).
+## Rules/Guidelines
+- Follow [updates](https://github.com/OfficialMagic8/Languages/commits/master/languages/en.json) for the English file ([en.json](https://github.com/OfficialMagic8/Languages/blob/master/languages/en.json))
+- Do not edit the contents of the placeholders, "{EXAMPLE}", move them accordingly for grammar purposes
+- Do **NOT** use a translating service if you don't understand the language you are writing in (don't pretend you know a language fluently)
+- If you feel that you may need some help translating, either contact support or use the recommended translator, [DeepL](https://www.deepl.com/en/translator)
+- Do **NOT** change the meaning of translations. We will review your submission(s)
 
-### Possible Rewards
+## Possible Rewards
 - Language Contributor Role in our [Support Server](https://discord.gg/bUUggyCjvp)
 - Free [Triple Package](https://magic8.gitbook.io/docs/info/premium#triple-package-usd-8-99-one-time-forever)
 - Advertisement on the Magic8 bot or in the #sponsors channel
