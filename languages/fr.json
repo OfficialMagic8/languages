@@ -7,12 +7,12 @@
     "Fyrlex#2740",
     "AlonsoAliaga#0017"
   ],
-  "it": "{CROSS} **{USER}, provide a valid member or ID!**",
+  "it": "{CROSS} **{USER}, veuillez fournir un membre ou une pièce d'identité valide**",
   "mention": [
-    "**{USER}, my prefix for the server is:** {PREFIX}",
-    "Type `{PREFIX}help` or `{PREFIX}help <command>` for helpful information.",
+    "**{USER}, mon préfixe pour le serveur est:** {PREFIX}",
+    "Tapez `{PREFIX}help` ou `{PREFIX}help <command>` pour obtenir des informations utiles.",
     "",
-    "*Need further assistance? Join our [Support Server]({INVITATION})!*"
+    "*Need further assistance? Join our [Support Server]({INVITE})!*"
   ],
   "ball": {
     "asksomething": "{CROSS} **Vous devez poser une question oui/non!**",
@@ -33,7 +33,7 @@
     "replies": {
       "all": [
         "Absolument pas",
-        "Absolument !",
+        "Absolument!",
         "Selon ma religion, non",
         "Ahhh, vous êtes une de ces personnes",
         "Presque toujours !",
