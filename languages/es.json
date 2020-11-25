@@ -12,7 +12,7 @@
     "**{USER}, mi prefijo para el servidor es:** `{PREFIX}`",
     "Escriba `{PREFIX}help` para una lista de comandos. También puedes escribir un comando después de `{PREFIX}help` para detalles específicos.",
     "",
-    "*¿Necesita más ayuda? Únete a nuestro [Servidor de Soporte]({INVITATION}) o mira nuestra [Guía]({GUIDE})!*"
+    "*¿Necesita más ayuda? ¡Únete a nuestro [Servidor de Soporte]({INVITE}) o mira nuestra [Guía]({GUIDE})!*"
   ],
   "true": "verdadero",
   "false": "falso",
@@ -26,11 +26,9 @@
     "asksomething": "{CROSS} **¡{USER}, por favor haga una pregunta de sí o no!**",
     "customresponses": "{CROSS} **{USER}, por favor contacte con un administrador para cambiar el modo 8ball o establecer respuestas personalizadas",
     "customresponsesadmin": [
-      "{CROSS} **¡Las respuestas personalizadas están habilitadas pero ninguna fue agregada!**",
+      "{CROSS} **No Custom Responses**",
       "",
-      "Para agregar nuevas respuestas usa `{PREFIX}settings 8ball setreplies Respuesta 1|Respuesta 2|Respuesta 3`",
-      "",
-      "{WARNING} Debes agregar al menos 2 respuestas."
+      "{INFO} Para añadir nuevas respuestas, escriba: `{PREFIX}s 8ball setreplies Reply 1 | Reply 2 | Reply 3`"
     ],
     "askedquestion": "{TAG} hizo la pregunta #{NUMBER}",
     "question": "Pregunta",
@@ -272,6 +270,32 @@
       ]
     }
   },
+  "akinator": {
+    "help": {
+      "title": "{BOTNAME} - Menú de Akinator",
+      "user": [
+        "**Comandos Disponibles:**",
+        "`{PREFIX}akinator start` - Empezar un nuevo juego",
+        "",
+        "*Próximamente más artículos...*",
+        "",
+        "{WARNING} Este juego **está en desarrollo**, ¡no funcionará perfectamente!",
+        "Reportar errores/ideas en nuestro [Servidor de Soporte]({INVITE})!"
+      ],
+      "administrator": [
+        "**Comandos Disponibles:**",
+        "`{PREFIX}akinator start` - Empezar un nuevo juego",
+        "",
+        "*Próximamente más artículos...*",
+        "",
+        "{WARNING} Este juego **está en desarrollo**, ¡no funcionará perfectamente!",
+        "Reportar errores/ideas en nuestro [Servidor de Soporte]({INVITE})!"
+      ]
+    },
+    "alreadyplaying": "{CROSS} **{USER}, ya estás jugando a Akinator en otro lugar.**",
+    "nomoreembeds": "\\🏆 Estabas pensando en... **{GUESS}**! No puedo enviar más mensajes, lo siento. :(",
+    "sendguess": "\\✋ **Entonces no sé, sólo tenía **{ANSWERS}** respuestas posibles. Esta vez ganaste.** :("
+  },
   "8color": {
     "alreadyplaying": "{CROSS} **¡Parece que ya estás jugando esto en otro lado!**",
     "game": {
@@ -453,6 +477,13 @@
       "",
       "{WARNING} El inglés es el idioma principal y está totalmente respaldado. Algunos comandos pueden aparecer en Inglés aunque tu idioma esté configurado en otro."
     ],
+    "alreadyselected": [
+      "{CROSS} **Idioma ya Seleccionado**",
+      "",
+      "**Idioma:** `{CURRENT}`",
+      "",
+      "{INFO} Por favor, seleccione un nuevo idioma para su servidor."
+    ],
     "updated": [
       "{CHECK} **Idioma Actualizado:** `{NEWLANGUAGE}` {FLAG} **{PROGRESS}**%",
       "",
@@ -463,6 +494,11 @@
     "uptodate": "Hasta la Fecha",
     "outdated": "Desactualizado",
     "listtitle": "{BOTNAME} - Lista de Idiomas ({PAGE}/{TOTALPAGES})",
+    "invalidpage": [
+      "{CROSS} **Página Inválida Proporcionada:** `{INPUT}`",
+      "",
+      "{INFO} Por favor, proporcione un número de página entre **1** y **{TOTALPAGES}**."
+    ],
     "available": [
       "{UPTODATE}",
       "",
@@ -476,11 +512,12 @@
       "Los desarrolladores de Magic8 han dedicado muchas horas a poder soportar otros idiomas. Por favor, considere la posibilidad de aprovechar la oportunidad de ayudar!",
       "",
       "[**Repositorio GitHub**]({GITHUB})",
-      "[**Bugs**]({ISSUES})",
       "",
       "**¿Qué obtienes a cambio?**",
-      "- Language Contributor Role",
+      "- Language Contributor Role en el [Servidor de Soporte]({INVITE})",
       "- Libre [Triple Package]({TRIPLEPACKAGE})",
+      "- Anuncio en el bot Magic8 o en el canal #sponsors",
+      "- Crédito completo para el idioma",
       "- El mayor respeto de los desarrolladores",
       "- Posiblemente más",
       "",
@@ -489,7 +526,7 @@
     "info": [
       "{FLAG} **{LANGUAGENAME}** (`{LANGUAGESHORT}`)",
       "",
-      "**Progreso:** {PERCENT}%",
+      "**Progreso:** {PROGRESS}%",
       "**Autores:**",
       "{AUTHORS}"
     ],
