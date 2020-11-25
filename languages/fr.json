@@ -14,7 +14,7 @@
     "",
     "*Need further assistance? Join our [Support Server]({INVITE})!*"
   ],
-  "ball": {
+  "8ball": {
     "asksomething": "{CROSS} **Vous devez poser une question oui/non!**",
     "customresponses": [
       "{CROSS} **Les réponses personnalisées sont activées mais aucune n'a été ajoutée!",
