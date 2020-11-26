@@ -345,7 +345,7 @@
     "description": "{CHECK} **Be Like {USER}**"
   },
   "bigemoji": {
-    "success": "{CHECK} **{USER} Here is the emoji! [Link]({EMOJILINK})**",
+    "success": "{CHECK} **{USER} Here is the emoji: ([link]({EMOJILINK}))**",
     "error": "{CROSS} **{USER}, please make sure Magic8 shares a server with the custom emoji.**"
   },
   "christmas": {
@@ -655,13 +655,13 @@
       "playing": {
         "title": "{USERNAME} is playing 8Color",
         "description": [
-          "{LOADING} Starting Level: {LEVEL}**",
+          "{LOADING} **Starting Level:** {LEVEL}",
           "Memorize the following pattern:",
           "",
           "{PATTERN}",
           "",
           "_In {TIME} seconds the message will be deleted!_",
-          "_Hint: don't copy the message!_"
+          "_Hint: Don't copy the message!_"
         ]
       },
       "enterpattern": {
@@ -894,7 +894,7 @@
   "cape": {
     "invalid": "{CROSS} **{USER}, please provide a valid username or UUID.**",
     "nocape": "{CROSS} **{USER}, the player, `{TOSEARCH}`, does not have a cape.**",
-    "success": "{USER}'s Minecraft Cape"
+    "success": "{USER}'s Optifine Cape"
   },
   "hypixel": {
     "error": {
@@ -1370,6 +1370,37 @@
         "{VERIFIED} You have a good emoji to share? [Join us]({INVITATION})!"
       ]
     }
+  },
+  "listmanager": {
+    "helptitle": "{BOTNAME} - List Manager Menu",
+    "help": [
+      "`{PREFIX}lm add` - Add an item to a list",
+      "`{PREFIX}lm bulkadd` - Add multiple items to a list",
+      "`{PREFIX}lm remove` - Remove an item from a list",
+      "`{PREFIX}lm delete` - Delete a list",
+      "`{PREFIX}lm create` - Create a list",
+      "",
+      "`{PREFIX}lm cooldown` - User randomization cooldown",
+      "`{PREFIX}lm randomize` - Randomizer menu",
+      "`{PREFIX}lm view` - View lists/items",
+      "",
+      "{INFO} Use these commands for more information!"
+    ],
+    "viewitemstitle": "List Manager - View Items Menu",
+    "viewitems": [
+      "**List:** {LISTNAME}",
+      "**Created:** {CREATED}",
+      "",
+      "**Items:**",
+      "{ITEMS}"
+    ],
+    "viewliststitle": "List Manager - View Lists Menu",
+    "viewlists": [
+      "**Current Lists:**",
+      "{LISTS}",
+      "",
+      "{INFO} Type the command again with a list to view the items."
+    ]
   },
   "say": {
     "messagerequired": "{CROSS} **{USER}, please provide a message.**",
