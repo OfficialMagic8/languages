@@ -296,64 +296,6 @@
     "nomoreembeds": "\\🏆 Estabas pensando en... **{GUESS}**! No puedo enviar más mensajes, lo siento. :(",
     "sendguess": "\\✋ **Entonces no sé, sólo tenía **{ANSWERS}** respuestas posibles. Esta vez ganaste.** :("
   },
-  "8color": {
-    "alreadyplaying": "{CROSS} **¡Parece que ya estás jugando esto en otro lado!**",
-    "game": {
-      "playing": {
-        "title": "{TAG} esta jugando 8Color",
-        "description": [
-          "Estás por iniciar el **Nivel {LEVEL}**!",
-          "Memoriza el siguiente patrón:",
-          "{PATTERN}",
-          "",
-          "_¡Este mensaje se borra en {TIME} segundos!_",
-          "_Pista: ¡no copies el mensaje!_"
-        ]
-      },
-      "enterpattern": {
-        "description": [
-          "Estás jugando el **Nivel {LEVEL}**",
-          "Ingresa el patrón memorizado",
-          "",
-          "_¡Tienes {TIME} segundos para responder!_"
-        ]
-      },
-      "win": {
-        "description": [
-          "{CHECK} **¡Correcto! ¡Patrón ingresado!**",
-          "",
-          "_¡Siguiente nivel iniciando en 10 segundos!_"
-        ]
-      },
-      "lose": {
-        "title": "{TAG} estaba jugando 8color",
-        "description": [
-          "{CROSS} **¡Error! ¡No ingresaste el patrón correcto!**",
-          "",
-          "**El patrón correcto era:**",
-          "{PATTERN}",
-          "**Tu ingresaste:**",
-          "{REPLY}",
-          "",
-          "**Alcanzaste el nivel:** {LEVEL}",
-          "",
-          "_¡Gracias por jugar!_"
-        ],
-        "descriptiontimeout": [
-          "{CROSS} **¡Tiempo agotado! ¡No respondiste!**",
-          "",
-          "**Alcanzaste el nivel:** {LEVEL}",
-          "",
-          "_¡Gracias por jugar!_"
-        ]
-      }
-    },
-    "error": {
-      "cannotstart": "{CROSS} **No pude iniciar el juego en el canal {CHANNEL} en el servidor '{GUILD}'.**",
-      "cannotcontinue": "{CROSS} **No pude continuar el juego en el canal {CHANNEL} en el servidor '{GUILD}'.**",
-      "cannotfinish": "{CROSS} **No pude terminar el juego en el canal {CHANNEL} en el servidor '{GUILD}'.**"
-    }
-  },
   "battle": {
     "error": {
       "alreadybattling": "{CROSS} **{USER}, ya estás en una batalla en otro lugar.**",
@@ -388,19 +330,111 @@
         "{TEAM} 🧹 {ATTACKER} golpeado {TARGET} con un **palo de escoba** por {DAMAGE} HP!"
       ],
       "wins": [
-        "**\\🏆 {WINNERMEMBER} won against {LOSERMEMBER} in {WINNERMOVES} moves!**",
-        "**\\🏆 {WINNERMEMBER} couldn't resist defeating {LOSERMEMBER}**",
-        "**\\🏆 {WINNERMEMBER} destroyed {LOSERMEMBER}!**"
+        "**\\🏆 ¡{WINNERMEMBER} Ganó contra {LOSERMEMBER} en {WINNERMOVES} movimientos!**",
+        "**\\🏆 ¡{WINNERMEMBER} No pudo resistirse a derrotar {LOSERMEMBER}!**",
+        "**\\🏆 ¡{WINNERMEMBER} destroyed {LOSERMEMBER}!**"
       ]
     }
   },
-  "clear": {
-    "enteramount": "{CROSS} **{USER}, por favor, introduzca un número de mensajes para borrar!**",
-    "invalidamount": "{CROSS} **{USER}, la cantidad ingresada no es un número válido!**",
-    "cannotgreater": "{CROSS} **{USER}, la cantidad de mensajes no puede ser mayor a:** `100`",
-    "cannotlower": "{CROSS} **{USER}, la cantidad de mensajes no puede ser menor a:** `1`",
-    "nopermission": "{CROSS} **{USER}, por favor, dame {BOT} el permiso `Manage Messages` para eliminar los mensajes.**",
-    "deleted": "{CHECK} **{USER}, se eliminaron un total de `{AMOUNT}` mensajes.**"
+  "belike": {
+    "providename": "{CROSS} **{USER}, por favor proporcione un nombre.**",
+    "description": "{CHECK} **Ser Como {USER}**"
+  },
+  "bigemoji": {
+    "success": "{CHECK} **{USER} Aquí está el emoji: ([link]({EMOJILINK}))**",
+    "error": "{CROSS} **{USER}, por favor, asegúrate de que Magic8 comparte un servidor con el emoji personalizado.**"
+  },
+  "christmas": {
+    "description": [
+      "🎄 **Días Hasta la Navidad** 🎄",
+      "",
+      "🎅 ¡Santa viene en **{DAYS}** días!",
+      "",
+      "¡Felices fiestas a todos! Que todos tengamos un seguro, no Covid-19 y feliz año nuevo :)"
+    ]
+  },
+  "clapme": {
+    "nomessage": "{CROSS} **{USER}, por favor, proporcione un mensaje.**",
+    "success": "{CHECK} {USER}: {MESSAGE}"
+  },
+  "howgay": {
+    "success": "🏳️‍🌈 {TARGET} es `{PERCENT}%` gay 🏳️‍🌈"
+  },
+  "meme": {
+    "invalidtopic": {
+      "description": [
+        "{CROSS} **Couldn't find any meme about this..**"
+      ]
+    },
+    "success": {
+      "description": [
+        "{CHECK} **Random {TOPIC} meme**!"
+      ]
+    }
+  },
+  "spinner": {
+    "alreadyspinning": "{CROSS} **{USER}, ya estás haciendo girar una centrifugadora en otro lugar.**",
+    "spinning": "{SPINNER} **{USER} está haciendo girar un trompo!**",
+    "spun": "{SPINNER} **{USER} hizo girar el trompo durante:** `{TIME}`"
+  },
+  "8color": {
+    "alreadyplaying": "{CROSS} **¡Parece que ya estás jugando esto en otro lado!**",
+    "game": {
+      "playing": {
+        "title": "{USERNAME} esta jugando 8Color",
+        "description": [
+          "{LOADING} Nivel Inicial: {LEVEL}",
+          "Memoriza el siguiente patrón:",
+          "",
+          "{PATTERN}",
+          "",
+          "_¡Este mensaje se borra en {TIME} segundos!_",
+          "_Pista: ¡no copies el mensaje!_"
+        ]
+      },
+      "enterpattern": {
+        "description": [
+          "Estás jugando el **Nivel {LEVEL}**",
+          "Ingresa el patrón memorizado",
+          "",
+          "_¡Tienes {TIME} segundos para responder!_"
+        ]
+      },
+      "win": {
+        "description": [
+          "{CHECK} **¡Correcto! ¡Patrón ingresado!**",
+          "",
+          "_¡Siguiente nivel iniciando en 10 segundos!_"
+        ]
+      },
+      "lose": {
+        "title": "{USERNAME} estaba jugando 8color",
+        "description": [
+          "{CROSS} **¡Error! ¡No ingresaste el patrón correcto!**",
+          "",
+          "**El patrón correcto era:**",
+          "{PATTERN}",
+          "**Tu ingresaste:**",
+          "{REPLY}",
+          "",
+          "**Alcanzaste el nivel:** {LEVEL}",
+          "",
+          "_¡Gracias por jugar!_"
+        ],
+        "descriptiontimeout": [
+          "{CROSS} **¡Tiempo agotado! ¡No respondiste!**",
+          "",
+          "**Alcanzaste el nivel:** {LEVEL}",
+          "",
+          "_¡Gracias por jugar!_"
+        ]
+      }
+    }
+  },
+  "cape": {
+    "invalid": "{CROSS} **{USER}, por favor proporcione un nombre de usuario válido o UUID.**",
+    "nocape": "{CROSS} **{USER}, el jugador, `{TOSEARCH}`, no tiene una capa.**",
+    "success": "Cape Optifine de {USER}"
   },
   "telephone": {
     "ringing": "☎ {USER} levantó el telefono. **¡El telefono está timbrando!**",
@@ -465,6 +499,14 @@
       "",
       "*¿Necesita más ayuda? ¡Únete a nuestro [Servidor de Soporte]({INVITE}) o mira nuestra [Guía]({GUIDE})!*"
     ]
+  },
+  "clear": {
+    "enteramount": "{CROSS} **{USER}, por favor, introduzca un número de mensajes para borrar!**",
+    "invalidamount": "{CROSS} **{USER}, la cantidad ingresada no es un número válido!**",
+    "cannotgreater": "{CROSS} **{USER}, la cantidad de mensajes no puede ser mayor a:** `100`",
+    "cannotlower": "{CROSS} **{USER}, la cantidad de mensajes no puede ser menor a:** `1`",
+    "nopermission": "{CROSS} **{USER}, por favor, dame {BOT} el permiso `Manage Messages` para eliminar los mensajes.**",
+    "deleted": "{CHECK} **{USER}, se eliminaron un total de `{AMOUNT}` mensajes.**"
   },
   "language": {
     "invalid": [
