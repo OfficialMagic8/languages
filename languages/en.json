@@ -354,7 +354,8 @@
       "",
       "🎅 Santa comes in **{DAYS}** days!",
       "",
-      "Happy holidays everyone! May we all have a safe, no-covid19 and happy new year :)"
+      "Happy holidays everyone! We hope that you all have a safe, warm and happy new year :)",
+      "- Magic8 Developers"
     ]
   },
   "clapme": {
@@ -954,7 +955,7 @@
         "**Username: ** {USERNAME}",
         "**UUID:** {UUID}",
         "",
-        "{VERIFIED} Username has never been changed!"
+        "{CHECK} Username has never been changed!"
       ],
       "others": {
         "name": "**`{NAME}`** ({DATE})",
@@ -1269,6 +1270,14 @@
       "",
       "{LIST}"
     ],
+    "confirmremoveall": [
+      "{WARNING} **{USER}, are you sure you want to remove the {ROLE} from all users who have it?**",
+      "",
+      "{INFO} Please type `yes` within **10** seconds to confirm, otherwise you may ignore this message."
+    ],
+    "nouserswithrole": "{CROSS} **{USER}, you cannot use this command because no users have {ROLE}.**",
+    "didnotconfirm": "{CROSS} **{USER}, no users had {ROLE} removed.**",
+    "remvoedall": "{CHECK} **All users who had {NEWROLE} no longer have the role. A new role was created with the same setup.**",
     "roleremoved": "{CHECK} **{TARGET} no longer has LFG role!**",
     "alreadynorole": "{CROSS} **{TARGET} already does not have LFG role!**",
     "premium": [
@@ -1394,13 +1403,56 @@
       "**Items:**",
       "{ITEMS}"
     ],
+    "invalidlist": [
+      "{CROSS} **Invalid List:** `{INPUT}`",
+      "",
+      "**Available Lists:**",
+      "{LISTS}"
+    ],
     "viewliststitle": "List Manager - View Lists Menu",
     "viewlists": [
-      "**Current Lists:**",
+      "**Available Lists:**",
       "{LISTS}",
       "",
       "{INFO} Type the command again with a list to view the items."
-    ]
+    ],
+    "cooldown": "{CROSS} **{USER}, you are on cooldown for using the randomizer.**",
+    "nolists": [
+      "{CROSS} **No Lists Available**",
+      "",
+      "{INFO} To create a list, type: `{PREFIX}lm create`"
+    ],
+    "randomizermenutitle": "List Manager - Randomization Menu",
+    "randomizermenu": [
+      "**Available Lists:**",
+      "{LISTS}",
+      "",
+      "{INFO} Lists are not case sensitive.",
+      "To get a random item from a list, type: `{PREFIX}lm r <list>`"
+    ],
+    "footer": "🗒️ List: {LIST}",
+    "singlerandomizing": [
+      "{CHECK} **Randomizing**",
+      "",
+      "**Final Item:** {LOADING}"
+    ],
+    "singlerandomize": "Final Item",
+    "multirandomize": "Final Items",
+    "randomizationsuccess": [
+      "{CHECK} **{USER} - Randomization Success**",
+      "",
+      "**{FINALMESSAGE}:**",
+      "{RANDOMIZED}"
+    ],
+    "invalidnumber": [
+      "{CROSS} **Invalid Input:** `{INPUT}`",
+      "",
+      "Randomizer count must be at least **2** and less than **{MAX}** (total items)."
+    ],
+    "multirandomizing": [
+      "**Randomizing {COUNT} Times...**",
+      "",
+      "**Final Items:** {LOADING}"]
   },
   "say": {
     "messagerequired": "{CROSS} **{USER}, please provide a message.**",
