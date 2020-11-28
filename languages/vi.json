@@ -1,0 +1,145 @@
+{
+  "languagenamelong": "Tiếng Việt",
+  "languagenameshort": "vi",
+  "flag": "🇻🇳",
+  "link": "https://github.com/OfficialMagic8/Languages/blob/master/languages/vi.json",
+  "authors": [
+    "Wo Xiang Ni#2908"
+  ],
+  "autovoice": {
+    "nocategory": [
+      "{CROSS} **Không có danh mục Auto Voice nào được chọn**",
+      "",
+      "{INFO} Bạn không thể tạo Kênh tự động cho đến khi một danh mục được chọn. Nếu danh mục Giọng nói tự động bị xóa hoặc di chuyển, tất cả các Kênh tự động và Kênh phụ sẽ bị xóa."
+    ],
+    "upgrade": {
+      "singleortriple": "**Single or Triple Package**",
+      "triple": "**Triple Package**",
+      "description": "Please upgrade to the [{OPTIONS]({DONATELINK}) to create more Auto Voice Channels.",
+      "cannotupgrade": "Không thể tăng Kênh Auto Voice thông qua các gói nữa."
+    },
+    "reachedlimit": [
+      "{CROSS} **Auto Channels Limit Reached:** `{MAX}`",
+      "",
+      "{UPGRADE}",
+      "",
+      "**Current Auto Channels:**",
+      "{CURRENTCHANNELS}"
+    ],
+    "notypetitle": "{BOTNAME} - Auto Voice Channel Types",
+    "notype": [
+      "Các loại Kênh Auto Voice khả dụng.",
+      "",
+      "**Available Types:**",
+      "{TYPES}"
+    ],
+    "invalidtype": [
+      "{CROSS} **Invalid Auto Channel Type:** `{INPUT}`",
+      "",
+      "**Available Types:**",
+      "{TYPES}"
+    ],
+    "type": {
+      "duo": "Hai người",
+      "trio": "Ba người",
+      "squad": "Bốn ngườ"
+    },
+    "created": [
+      "{CHECK} **{TYPE} Kênh đã được tạo**",
+      "",
+      "{INFO} Kênh này có thể tạo tối đa **two** Sub-Channels."
+    ],
+    "invalidchannel": [
+      "{CROSS} **Invalid Auto Channel Provided:** `{INPUT}`",
+      "",
+      "**Available Auto Channels:**",
+      "{AVAILABLE}"
+    ],
+    "deleted": [
+      "{CHECK} **Kênh Auto Voice đã bị xóa**",
+      "",
+      "**Channel:** {DELETED}"
+    ],
+    "noneleft": [
+      "{CHECK} **Kênh Auto Voice đã bị xóa**",
+      "",
+      "**Channel:** {DELETED}",
+      "",
+      "{WARNING} Kênh Auto Voice hiện đã bị tắt vì không còn kênh nào."
+    ],
+    "nocooldowntitle": "{BOTNAME} - Thời gian hồi Kênh Auto Voice",
+    "nocooldown": [
+      "**Current Cooldown:** {COOLDOWN}",
+      "",
+      "{INFO} Thời gian hồi phải từ 10 giây đến 300 giây (5 phút)."
+    ],
+    "notanumber": "{CROSS} **{USER}, vui lòng cung cấp một số thực để đặt thời gian hồi.**",
+    "toosmall": "{CROSS} **{USER}, vui lòng cung cấp thời gian hồi lớn hơn 10 giây.**",
+    "toolarge": "{CROSS} **{USER}, vui lòng cung cấp thời gian hồi dưới 300 giây (5 phút).**",
+    "cooldownupdated": [
+      "{CHECK} **Đã cập nhật thời gian hồi của các Kênh tự động**",
+      "",
+      "**Old Cooldown:** {OLDCOOLDOWN} giây",
+      "**New Cooldown:** {COOLDOWN} giây"
+    ],
+    "infotitle": "{BOTNAME} - Thông tin Kênh Auto Voice",
+    "info": [
+      "**Enabled:** {ENABLED}",
+      "**Category:** {CATEGORY}",
+      "**Cooldown:** {COOLDOWN} giây",
+      "**Channels:**",
+      "{CHANNELS}"
+    ],
+    "viewcategorytitle": "{BOTNAME} - Auto Voice Channels Category",
+    "viewnocategory": [
+      "**Category:** {CATEGORY}",
+      "",
+      "{INFO} Đặt danh mục để bật Kênh tự động bằng cách nhập: `{PREFIX}autovoice category <ID>`"
+    ],
+    "viewcategory": [
+      "**Auto Voice Category**",
+      "",
+      "**Category:** {CATEGORY} ({CATEGORYID})",
+      "",
+      "{INFO} Tắt các Kênh tự động bằng cách nhập: `{PREFIX}autovoice category clear`"
+    ],
+    "alreadydisabled": [
+      "{CROSS} **Chưa có danh mục nào được đặt cho Kênh Auto Voice.**",
+      "",
+      "{INFO} Để bật Kênh Auto Voice, hãy đặt danh mục bằng cách nhập: `{PREFIX}autovoice category <ID>`"
+    ],
+    "disabled": [
+      "{CHECK} **Đã tắt Kênh Auto Voice**",
+      "",
+      "{INFO} Tất cả các Kênh tự động không còn hoạt động. Để bật lại Kênh thoại tự động, hãy đặt Category!"
+    ],
+    "notacategory": [
+      "{CROSS} **Invalid Category ID**",
+      "",
+      "**Available Categories:**",
+      "{CATEGORIES}"
+    ],
+    "nopermissionincategory": [
+      "{CROSS} **Vui lòng cấp cho {BOT} các quyền sau để sử dụng lệnh này.**",
+      "",
+      "`Manage Channels`, `Di chuyển thành viên`"
+    ],
+    "categoryset": [
+      "{CHECK} **Auto Voice Category Set**",
+      "",
+      "**Category:** {CATEGORY} ({CATEGORYID})",
+      "",
+      "{INFO} Kênh Auto Voice có thể được tạo tại thời điểm này!"
+    ],
+    "helptitle": "{BOTNAME} - Menu trợ giúp Kênh Auto Voice",
+    "help": [
+      "`{PREFIX}av create` - Tạo Kênh Auto Voice",
+      "`{PREFIX}av delete` Xóa các Kênh Auto Voice",
+      "`{PREFIX}av category` - Đặt danh mục Kênh Auto Voice",
+      "`{PREFIX}av cooldown` - Đặt thời gian chậm Kênh Auto Voice",
+      "`{PREFIX}av info` - Xem thông tin Kênh Voice hiện tại",
+      "",
+      "{INFO} Mỗi **Auto Channel** chỉ có thể tạo tối đa **three** Sub-Channels."
+    ]
+  }
+}
