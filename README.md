@@ -20,7 +20,7 @@ The developers of Magic8 have spent the past few weeks moving all messages into 
 
 ## Possible Rewards
 - Language Contributor Role in our [Support Server](https://discord.gg/bUUggyCjvp)
-- Free [Triple Package](https://magic8.gitbook.io/docs/info/premium#triple-package-usd-8-99-one-time-forever)
+- Free [Triple Package](https://docs.magic8.xyz/info/premium#triple-package-usd-8-99-one-time-forever)
 - Advertisement on the Magic8 bot or in the #sponsors channel
 - Complete credit for the language
 - Utmost respect from the developers
@@ -29,3 +29,24 @@ The developers of Magic8 have spent the past few weeks moving all messages into 
 Please only translate files to your known language if you are already **somewhat fluent** in English. This way, you can understand the grammar and make proper changes. If you ever have a question about a word or phrase, do not hesitate to contact support.
 
 There are still quite a few commands that do not support translations. It is tedious work that will be done when the developers have the time to do so.
+
+## Placeholders Information
+
+To get data that can't be translated, placeholders are used in the form of {PLACEHOLDER}. Again, please do not edit these at all, only move them for grammatical purposes.
+
+Here is a list of the global placeholders (placeholders that are always the same everywhere). Be sure to check for updates here!
+
+| Placeholder | Value                 |
+|-------------|-----------------------|
+| {CHECK}     | Green Check Emoji     |
+| {CROSS}     | Red Cross Emoji       |
+| {INFO}      | Info Emoji            |
+| {LOADING}   | Loading Emoji         |
+| {WARNING}   | Warning Emoji         |
+| {BOT}       | @Magic8               |
+| {BOTNAME}   | Magic8                |
+| {INVITE}    | Support Server Invite |
+| {PREFIX}    | Server Prefix         |
+| {USER}*     | Message Author        |
+
+*This placeholder may have a few spots in the files that do not represent the Message Author.
