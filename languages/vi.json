@@ -6,6 +6,1565 @@
   "authors": [
     "Wo Xiang Ni#2908"
   ],
+  "it": "{CROSS} **{USER}, vui lòng cung cấp một thành viên hoặc ID hợp lệ.**",
+  "mention": [
+    "**{USER}, lệnh của tôi cho máy chủ là:** `{PREFIX}`",
+    "Type `{PREFIX}help` cho một danh sách lệnh. Bạn cũng có thể nhập lệnh sau `{PREFIX} help` để biết chi tiết cụ thể.",
+    "",
+    "*Cần hỗ trợ thêm? Gia nhập [Support Server]({INVITE}) với chúng tôi hoặc kiểm tra [Guide]({GUIDE}) của chúng tôi!*"
+  ],
+  "true": "true",
+  "false": "false",
+  "none": "none",
+  "unexpectederror": [
+    "{CROSS} **{USER}, đã xảy ra lỗi không mong muốn.**",
+    "",
+    "{INFO} Vui lòng tham gia [Support Server]({INVITE}) của chúng tôi để được hỗ trợ."
+  ],
+  "8ball": {
+    "asksomething": "{CROSS} **{USER}, xin vui lòng hỏi một câu hỏi có hoặc không.**",
+    "customresponses": "{CROSS} **{USER}, vui lòng liên hệ với quản trị viên để thay đổi chế độ 8ball hoặc đặt câu trả lời tùy chỉnh.**",
+    "customresponsesadmin": [
+      "{CROSS} **Không có phản hồi tùy chỉnh**",
+      "",
+      "{INFO} Để thêm câu trả lời mới, hãy nhập: `{PREFIX}s 8ball setreplies Reply 1 | Reply 2 | Reply 3`"
+    ],
+    "askedquestion": "{USERNAME} hỏi câu hỏi #{NUMBER}",
+    "question": "Câu hỏi",
+    "answer": "Trả lời",
+    "replies": {
+      "all": [
+        "Tuyệt đối không",
+        "Chắc chắn rồi!",
+        "Theo tôn giáo của tôi, không",
+        "Ahhh, bạn là một trong những người đó",
+        "Gần như luôn luôn!",
+        "Và lợn bay- ồ khoan đã, tôi nghĩ chúng ta chỉ nói về những thứ có thể",
+        "Bạn có sao không? Người bình thường không hỏi như vậy",
+        "Bạn có luôn như thế này không?",
+        "Ngay sau khi bạn nhận được điểm của mình",
+        "Ngay khi đầu bạn học cách đọc",
+        "Hãy hỏi lại tôi, tôi không chắc",
+        "Hỏi bố",
+        "Hỏi người yêu cũ của bạn",
+        "Hãy xin phép bố mẹ bạn trước",
+        "Hỏi mẹ kế của bạn",
+        "Con khốn cái gì?",
+        "Con khốn, thật sao?",
+        "Bruh cái quái gì- chỉ là không",
+        "Bruh, bạn không thể hỏi điều đó",
+        "Gọi bà của bạn là đồ đần độn",
+        "Hãy gọi cho cảnh sát khi bạn nhận ra mình thật ngớ ngẩn",
+        "Chính xác",
+        "Chắc chắn, đó là một ý tưởng tuyệt vời",
+        "Làm đi, bạn sẽ không!",
+        "Mẹ bạn có biết điều đó không?",
+        "Ehhhh?",
+        "Xin lỗi, cái quái gì vậy ?",
+        "Fuck you. Tôi đã xong việc của bạn",
+        "Chết tiệt có",
+        "Hãy cho nó thời gian ...",
+        "Haha nope",
+        "Trời ơi không",
+        "Chết tiệt!",
+        "Xin chào! Bạn có nói tiếng Anh không?",
+        "Sao bạn dám hỏi tôi một câu hỏi như vậy?!",
+        "Huh?",
+        "Tôi không nói cho bạn biết điều đó",
+        "Tôi cũng tin như thế...",
+        "Tôi không có câu trả lời mà bạn muốn",
+        "Tôi không thấy lý do tại sao không?",
+        "Tôi không nghĩ vậy",
+        "Tôi không hiểu ...",
+        "Tôi đang nghĩ, có lẽ ...?",
+        "Tôi thà giữ điều đó cho riêng mình ...",
+        "Tôi không muốn nói ...",
+        "Tôi muốn bạn tự hỏi mình trước",
+        "Tôi biết chuyện đó",
+        "Giá như nó dễ dàng như vậy ...",
+        "Nếu bạn cho tôi ăn kem, tôi sẽ trả lời",
+        "Nếu bạn nói vậy",
+        "Nếu bạn nghĩ về nó, có",
+        "Nếu: 1 + 1 = 3, có",
+        "Ở kiếp khác",
+        "Chúa ơi, bạn đang giết tôi với những câu hỏi này",
+        "K",
+        "Bạn của tôi, nó không phải là dễ dàng",
+        "Nah bruh",
+        "Nah fam",
+        "Nahhh",
+        "Nawww",
+        "Điều đó sẽ không bao giờ là sự thật",
+        "Không...",
+        "Không?",
+        "Không.",
+        "Không có chuyện vớ vẩn",
+        "Không, thưa ngài",
+        "Không có bạn",
+        "Không",
+        "Không trả lời bạn",
+        "Thậm chí không gần",
+        "Không có trong một triệu năm",
+        "Không trừ khi bạn trả cho tôi 100.000 đô la",
+        "Không phải cho đến khi bạn vào đại học",
+        "Trong tất cả mọi người, tại sao lại hỏi tôi? (Jk tiếp tục nói với tôi)",
+        "Tất nhiên bạn sẽ hỏi tôi điều đó",
+        "Ồ, bạn sẽ không thích biết câu trả lời",
+        "Ồ, không có",
+        "Đồng ý.",
+        "Chỉ có một thằng ranh như mày mới biết",
+        "Chỉ vào ngày trăng tròn",
+        "Chỉ bạn mới hỏi điều đó",
+        "Có khả năng...",
+        "Chắc là không",
+        "Có lẽ!",
+        "Nghiêm túc đấy anh bạn? Không",
+        "Thưa ông, điều đó không chính xác",
+        "* thở dài * ... Tôi thành thật mà nói, không",
+        "* thở dài * ... Tôi thành thật mà nói, vâng",
+        "Mẹ nói đúng",
+        "Sry, tôi không nói chuyện ngu ngốc",
+        "Đúng 100%",
+        "Không thể nào!",
+        "Đó là điều mà chính phủ muốn bạn nghĩ ...: wink:",
+        "Tổng cộng",
+        "Thử lại đồ khốn kiếp",
+        "Uh, bạn đã bắt đầu lại chưa? Lmao",
+        "Mẹ mày nghĩ vậy",
+        "Cậu nghĩ vậy",
+        "Vâng, nhưng thực sự là không",
+        "Bạn đang hỏi tôi điều gì?",
+        "Điều đó có nghĩa là gì?",
+        "Cái gì vậy, asswipe?",
+        "Tại sao không?",
+        "Sẽ không thực sự tin tưởng vào nó",
+        "Yea không shit ...",
+        "Yea hoàn toàn- không, tất nhiên không phải đồ khốn nạn",
+        "Phải",
+        "Ừ. Mhm. Chắc chắn rồi. Hoàn toàn.",
+        "Đúng",
+        "Có! Có! Tại sao bạn không chấp nhận câu trả lời là có?",
+        "Đúng",
+        "Bạn cá!",
+        "Mày không thể nói thế",
+        "Bạn biết đó là sự thật",
+        "Bạn chỉ sống một lần...",
+        "Bạn ước!",
+        "Yup"
+      ],
+      "clean": [
+        "Tuyệt đối không",
+        "Chắc chắn rồi!",
+        "Theo tôn giáo của tôi, không",
+        "Ahhh, bạn là một trong những người đó",
+        "Gần như luôn luôn!",
+        "Và lợn bay- ồ khoan đã, tôi nghĩ chúng ta chỉ nói về những thứ có thể",
+        "Bạn có sao không? Người bình thường không hỏi như vậy",
+        "Bạn có luôn như thế này không?",
+        "Ngay sau khi bạn nhận được điểm của mình",
+        "Hãy hỏi lại tôi, tôi không chắc",
+        "Hỏi bố",
+        "Hỏi người yêu cũ của bạn",
+        "Hãy xin phép bố mẹ bạn trước",
+        "Hỏi mẹ kế của bạn",
+        "Bruh, bạn không thể hỏi điều đó",
+        "Hãy gọi cho cảnh sát khi bạn nhận ra mình thật ngớ ngẩn",
+        "Chính xác",
+        "Chắc chắn, đó là một ý tưởng tuyệt vời",
+        "Làm đi, bạn sẽ không!",
+        "Mẹ bạn có biết điều đó không?",
+        "Ehhhh?",
+        "Hãy cho nó thời gian ...",
+        "Haha nope",
+        "Xin chào! Bạn có nói tiếng Anh không?",
+        "Sao bạn dám hỏi tôi một câu hỏi như vậy?!",
+        "Huh?",
+        "Tôi cũng tin như thế...",
+        "Tôi không có câu trả lời mà bạn muốn",
+        "Tôi không thấy lý do tại sao không?",
+        "Tôi không nghĩ vậy",
+        "Tôi không hiểu ...",
+        "Tôi đang nghĩ, có lẽ ...?",
+        "Tôi thà giữ điều đó cho riêng mình ...",
+        "Tôi không muốn nói ...",
+        "Tôi muốn bạn tự hỏi mình trước",
+        "Tôi biết chuyện đó",
+        "Giá như nó dễ dàng như vậy ...",
+        "Nếu bạn cho tôi ăn kem, tôi sẽ trả lời",
+        "Nếu bạn nói vậy",
+        "Nếu bạn nghĩ về nó, có",
+        "Nếu: 1 + 1 = 3, có",
+        "Ở kiếp khác",
+        "Chúa ơi, bạn đang giết tôi với những câu hỏi này",
+        "K",
+        "Bạn của tôi, nó không phải là dễ dàng",
+        "Nah bruh",
+        "Nah fam",
+        "Nahhh",
+        "Nawww",
+        "Điều đó sẽ không bao giờ là sự thật",
+        "Không...",
+        "Không?",
+        "Không.",
+        "Không, thưa ngài",
+        "Không có bạn",
+        "Không",
+        "Không trả lời bạn",
+        "Thậm chí không gần",
+        "Không có trong một triệu năm",
+        "Không trừ khi bạn trả cho tôi 100.000 đô la",
+        "Không phải cho đến khi bạn vào đại học",
+        "Trong tất cả mọi người, tại sao lại hỏi tôi? (Jk tiếp tục nói với tôi)",
+        "Tất nhiên bạn sẽ hỏi tôi điều đó",
+        "Ồ, bạn sẽ không thích biết câu trả lời",
+        "Đồng ý.",
+        "Chỉ vào ngày trăng tròn",
+        "Chỉ bạn mới hỏi điều đó",
+        "Có khả năng...",
+        "Chắc là không",
+        "Có lẽ!",
+        "Nghiêm túc đấy anh bạn? Không",
+        "Thưa ông, điều đó không chính xác",
+        "* thở dài * ... Tôi thành thật mà nói, không",
+        "* thở dài * ... Tôi thành thật mà nói, vâng",
+        "Sry, tôi không nói chuyện ngu ngốc",
+        "Đúng 100%",
+        "Không thể nào!",
+        "Đó là điều mà chính phủ muốn bạn nghĩ ...: wink:",
+        "Tổng cộng",
+        "Mẹ mày nghĩ vậy",
+        "Vâng, nhưng thực sự là không",
+        "Bạn đang hỏi tôi điều gì?",
+        "Tại sao không?",
+        "Sẽ không thực sự tin tưởng vào nó",
+        "Phải",
+        "Ừ. Mhm. Chắc chắn rồi. Hoàn toàn.",
+        "Đúng",
+        "Có! Có! Tại sao bạn không chấp nhận câu trả lời là có?",
+        "Đúng",
+        "Bạn cá!",
+        "Bạn biết đó là sự thật",
+        "Bạn chỉ sống một lần...",
+        "Bạn ước!",
+        "Yup"
+      ],
+      "explicit": [
+        "Ngay khi đầu bạn học cách đọc",
+        "Con khốn cái gì?",
+        "Con khốn, thực sự",
+        "Gọi bà của bạn là đồ đần độn",
+        "Hãy gọi cho cảnh sát khi bạn nhận ra mình thật ngớ ngẩn",
+        "Xin lỗi, cái quái gì thế ?",
+        "Fuck you. Tôi đã xong việc của bạn",
+        "Chết tiệt có",
+        "Tôi không nói cho bạn biết điều đó",
+        "Không có chuyện vớ vẩn",
+        "Ồ, không có",
+        "Mẹ nói đúng",
+        "Sry, tôi không nói chuyện ngu ngốc",
+        "Thử lại đồ khốn kiếp",
+        "Uh, bạn đã bắt đầu lại chưa? Lmao",
+        "Cậu nghĩ vậy",
+        "Điều đó có nghĩa là gì?",
+        "Cái gì vậy, asswipe?",
+        "Yea không shit ...",
+        "Yea hoàn toàn- không, tất nhiên không phải đồ khốn nạn",
+        "Mày không thể nói thế"
+      ]
+    }
+  },
+  "akinator": {
+    "help": {
+      "title": "{BOTNAME} - Akinator Menu",
+      "user": [
+        "**Các lệnh có sẵn:**",
+        "`{PREFIX}akinator start` - Bắt đầu một trò chơi mới.",
+        "",
+        "*Sắp có thêm nhiều tính năng...*",
+        "",
+        "{WARNING} Trò chơi này **đang được phát triển**, nó sẽ không chạy hoàn hảo!",
+        "Báo cáo Bugs / Ý tưởng trong [Support Server]({INVITE}) của chúng tôi!"
+      ],
+      "administrator": [
+        "**Các lệnh có sẵn:**",
+        "`{PREFIX}akinator start` - Bắt đầu một trò chơi mới.",
+        "",
+        "*Sắp có thêm nhiều tính năng...*",
+        "",
+        "{WARNING} Trò chơi này ** đang được phát triển **, nó sẽ không chạy hoàn hảo!",
+        "Báo cáo Bugs / Ý tưởng trong [Support Server]({INVITE}) của chúng tôi!"
+      ]
+    },
+    "alreadyplaying": "{CROSS} **{USER}, bạn đang chơi Akinator ở một nơi khác.**",
+    "nomoreembeds": "\\🏆 Bạn đang nghĩ về ... ** {GUESS} **! Tôi không thể gửi thêm bất kỳ liên kết nào nữa, xin lỗi :(",
+    "sendguess": "\\✋ **Sau đó, tôi không biết, tôi chỉ có ** {ANSWERS} ** câu trả lời có thể. Bạn thắng lần này** :("
+  },
+  "battle": {
+    "error": {
+      "alreadybattling": "{CROSS} **{USER}, bạn đã ở trong một trận chiến ở một nơi khác.**",
+      "cannotbeauthor": "{CROSS} **{USER}, bạn không thể chiến đấu với chính mình.**",
+      "targetbattling": "{CROSS} **{USER}, người dùng đó đã trong Trận chiến.**"
+    },
+    "title": "{BOTNAME} - Trận Chiến",
+    "battling": {
+      "attacks": [
+        "{TEAM} 🗡️ {ATTACKER} Chém {TARGET} bằng **katana** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🗣️ {ATTACKER} Quăng {TARGET} bằng **yomomma joke** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🧪 {ATTACKER} Thiêu đốt {TARGET} bằng **acid** lấy đi {DAMAGE} HP!",
+        "{TEAM} ⚽ {ATTACKER} Sút {TARGET} bằng **soccer ball** lấy đi {DAMAGE} HP!",
+        "{TEAM} ✂️ {ATTACKER} Cắt {TARGET} bằng **scissors** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🔪 {ATTACKER} Đâm {TARGET} bằng **knife** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🪕 {ATTACKER} Đập {TARGET} bằng **banjo** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🛡️ {ATTACKER} Đánh vào {TARGET} bằng their **shield** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🥄 {ATTACKER} Nện {TARGET} bằng **spoon** lấy đi {DAMAGE} HP!",
+        "{TEAM} ⚾ {ATTACKER} Chọi {TARGET} bằng **baseball** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🍌 {ATTACKER} bananad {TARGET} bằng **banana** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🔥 {ATTACKER} Thiêu cháy {TARGET} bằng **torch** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🪓 {ATTACKER} Chặt {TARGET} bằng **axe** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🍷 {ATTACKER} Bỏ thuốc độc {TARGET} bằng **drink** lấy đi {DAMAGE} HP!",
+        "{TEAM} 👊 {ATTACKER} Đấm {TARGET} bằng **fist** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🧨 {ATTACKER} Nổ {TARGET} bằng a **bomb** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🔫 {ATTACKER} Bắn {TARGET} bằng **watergun** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🔧 {ATTACKER} Đánh lén {TARGET} bằng **wrench** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🏹 {ATTACKER} Bắn {TARGET} bằng **arrow** lấy đi {DAMAGE} HP!",
+        "{TEAM} ☁️ {ATTACKER} Làm nghẹt thở {TARGET} bằng **fart** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🎊 {ATTACKER} Tê liệt {TARGET} bằng **confetti** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🧼 {ATTACKER} Bịt miệng {TARGET} bằng **soap** lấy đi {DAMAGE} HP!",
+        "{TEAM} 🧹 {ATTACKER} Quét {TARGET} bằng **broomstick** lấy đi {DAMAGE} HP!"
+      ],
+      "wins": [
+        "**\\🏆 {WINNERMEMBER} đã thắng {LOSERMEMBER} trong {WINNERMOVES} nước đi!**",
+        "**\\🏆 {WINNERMEMBER} không thể cưỡng lại việc đánh bại {LOSERMEMBER}**",
+        "**\\🏆 {WINNERMEMBER} đã phá hủy {LOSERMEMBER}!**"
+      ]
+    }
+  },
+  "belike": {
+    "providename": "{CROSS} **{USER}, vui lòng cung cấp một cái tên.**",
+    "description": "{CHECK} **Hãy giống như {USER}**"
+  },
+  "bigemoji": {
+    "success": "{CHECK} **{USER} Đây là biểu tượng cảm xúc: ([link]({EMOJILINK}))**",
+    "error": "{CROSS} **{USER}, hãy đảm bảo Magic8 chia sẻ một máy chủ với biểu tượng cảm xúc tùy chỉnh.**"
+  },
+  "christmas": {
+    "description": [
+      "🎄 **Ngày Giáng sinh** 🎄",
+      "",
+      "🎅 Ông già Noel sẽ đến trong **{DAYS}** ngày nữa!",
+      "",
+      "Mọi người nghỉ lễ vui vẽ! Chúc tất cả chúng ta có một năm mới An khang, Không có Covid19 và hạnh phúc :)"
+    ]
+  },
+  "clapme": {
+    "nomessage": "{CROSS} **{USER}, xin vui lòng cung cấp một tin nhắn.**",
+    "success": "{CHECK} {USER}: {MESSAGE}"
+  },
+  "dicksize": {
+    "self": {
+      "description": [
+        "**{CHECK} {USER} đã kiểm tra Dick Size của họ!**",
+        "",
+        "**Kích cỡ:** {SIZE}",
+        "",
+        "{MESSAGE}"
+      ],
+      "big": [
+        "Oh bạn có thể tiến xa với điều đó!",
+        "Vẫn không bằng của tôi :)",
+        "Khá ấn tượng cho một đứa trẻ 2 tuổi!",
+        "Đó chắc chắn là giả mạo lol"
+      ],
+      "med": [
+        "Bạn chỉ trung bình lol",
+        "Thật là xấu hổ, thường xuyên",
+        "Haha không có gì đâu",
+        "Kích thước nhàm chán bạn có"
+      ],
+      "small": [
+        "Chà! Bạn sẽ chẳng đi đến đâu với điều đó!",
+        "Aww... quá nhỏ!",
+        "Tôi đang nói với bạn bè của bạn!",
+        "Chúc may mắn với điều đó!"
+      ]
+    },
+    "other": {
+      "description": [
+        "**{CHECK} {USER} đã kiểm tra {TARGET}'s Dick Size!**",
+        "",
+        "**Kích cỡ:** {SIZE} inches",
+        "",
+        "{MESSAGE}"
+      ],
+      "big": [
+        "Oh bạn có thể tiến xa với điều đó!",
+        "Vẫn không bằng của tôi :)",
+        "Khá ấn tượng cho một đứa trẻ 2 tuổi!",
+        "Đó chắc chắn là giả mạo lol"
+      ],
+      "med": [
+        "Bạn chỉ trung bình lol",
+        "Thật là xấu hổ, thường xuyên",
+        "Haha không có gì đâu",
+        "Kích thước nhàm chán bạn có"
+      ],
+      "small": [
+        "Chà! Bạn sẽ chẳng đi đến đâu với điều đó!",
+        "Aww... quá nhỏ!",
+        "Tôi đang nói với bạn bè của bạn!",
+        "Chúc may mắn với điều đó!"
+      ]
+    }
+  },
+  "hack": {
+    "alreadyhacking": "{CROSS} **{TARGET} đã bị tấn công!**",
+    "starting": "{HACK} Bắt đầu hack vào **{TARGET}** {HACK}",
+    "process": {
+      "oip": {
+        "time": 5000,
+        "message": ">Lấy IP của {TARGET}'s..."
+      },
+      "dip": {
+        "time": 1000,
+        "message": "> Giải mã IP của họ..."
+      },
+      "ip": {
+        "time": 3000,
+        "message": "> Phân tích {RANDOMIP}"
+      },
+      "oipv6": {
+        "time": 4000,
+        "message": "> Lấy địa chỉ IPv6..."
+      },
+      "dipv6": {
+        "time": 1000,
+        "message": "> Giải mã địa chỉ IPv6..."
+      },
+      "ipv6": {
+        "time": 3000,
+        "message": "> Phân tích {RANDOMIPV6}"
+      },
+      "mac": {
+        "time": 3000,
+        "message": "> Đã lấy được địa chỉ MAC. Phân tích {RANDOMMAC}"
+      },
+      "lhandshake": {
+        "time": 3000,
+        "message": "> Lắng nghe để bắt tay..."
+      },
+      "handshake": {
+        "time": 3000,
+        "message": "> Handshake ! Lưu dưới dạng \"hs/IPonFirewall_{IPONFIREWALL}.cap\""
+      },
+      "email": {
+        "time": 3000,
+        "message": "> Giả mạo Email thành công: {RANDOMEMAIL}"
+      },
+      "opass": {
+        "time": 3000,
+        "message": "> Lấy mật khẩu..."
+      },
+      "pass": {
+        "time": 3000,
+        "message": "> Đã giả mạo mật khẩu thành công: {RANDOMPASSWORD}"
+      },
+      "gettingcard": {
+        "time": 2000,
+        "message": "> Lấy thẻ tín dụng / thẻ ghi nợ liên quan..."
+      },
+      "card": {
+        "time": 2000,
+        "message": "> Đã giả mạo thành công thẻ tín dụng / thẻ ghi nợ: {RANDOMCREDITCARD}"
+      },
+      "registering1": {
+        "time": 2000,
+        "message": "> Sử dụng email để đăng ký trên {RANDOMREGISTER}"
+      },
+      "purchased": {
+        "time": 2000,
+        "message": "> **Tư cách Pro-Membership!**"
+      }
+    },
+    "finishing": "> {HACK} Kết thúc vụ hack trên **{TARGET}** {HACK}",
+    "finished": "{CHECK} Quá trình hack hoàn toàn hợp lệ vào **{TARGET}** đã được hoàn tất!",
+    "interrupted": "{CROSS} Quá trình lấy cắp dữ liệu cho **{TARGET}** bị gián đoạn! **Nội dung đã bị xóa ...**"
+  },
+  "hammer": {
+    "alreadyplaying": "{CROSS} **{USER}, bạn đã đánh một cái búa ở một nơi khác.**",
+    "starting": {
+      "title": "{USERNAME} đang kiểm tra sức mạnh của bạn!",
+      "description": [
+        "**Xin chào người dự thi!**",
+        "",
+        "*Sẵn sàng để kiểm tra sức mạnh của bạn? Đánh vào pad bằng vồ!*"
+      ]
+    },
+    "hitdescription": [
+      "Chà! Đánh hay lắm!",
+      "Cú đánh điên cuồng!",
+      "Dang, đánh tốt!",
+      "Tuyệt vời!",
+      "Nghe hay đấy!",
+      "Cú đánh tuyệt vời!"
+    ],
+    "hit": [
+      "**{HITDESCRIPTION}**",
+      "",
+      "*Hãy xem điểm của bạn ...*"
+    ],
+    "successdescription": [
+      "Bạn đạt được cú đánh và nhận được **{FINALVALUE}** trong tổng số **1000** điểm!",
+      "",
+      "{RANDOMDESCRIPTION}"
+    ],
+    "low": [
+      "Em thật yếu đuối!",
+      "Ngay cả bà của tôi cũng có thể làm tốt hơn thế!",
+      "Đó là một thất bại sử thi"
+    ],
+    "med": [
+      "Không tệ, chàng trai của tôi!",
+      "Đó là điều bình thường, không có gì to tát",
+      "Tôi có thể làm tốt hơn thế :)"
+    ],
+    "high": [
+      "Điểm số đẹp! Nhưng bạn không thể đánh bại tôi",
+      "Tốt như bà của tôi!",
+      "Đó là một điểm số điên rồ!"
+    ]
+  },
+  "howgay": {
+    "success": "🏳️‍🌈 {TARGET} là `{PERCENT}%` Gay :D 🏳️‍🌈"
+  },
+  "iq": {
+    "superdumb": [
+      "bruh you got the iq of a coffee",
+      "bạn thông minh như một con sâu!",
+      "làm thế nào ?? làm thế nào mà bạn rất ngu ngốc",
+      "ai đã nuôi nấng bạn ???",
+      "tôi không thể giao tiếp với bạn được nữa"
+    ],
+    "dumb": [
+      "haha bạn thật ngu ngốc!",
+      "bạn ngu ngốc lol",
+      "thật không? dang gì một chữ L",
+      "bạn ngoan cố",
+      "ew tôi không thích người câm"
+    ],
+    "average": [
+      "bạn là một chàng trai bình thường!",
+      "có vẻ như bạn bình thường",
+      "có vẻ như bạn là người Na Uy",
+      "cảm ơn chúa, bạn không phải là một thiên tài",
+      "tôi vẫn thông minh hơn bạn"
+    ],
+    "smart": [
+      "Bạn thật thông minh!",
+      "Bạn trên mức trung bình!",
+      "Bạn không ngốc!",
+      "Tốt, bạn thông minh như tôi",
+      "Woah, người thông minh đầu tiên tôi mới gặp trong một thời gian dài"
+    ],
+    "genius": [
+      "Bạn có phải là hậu duệ của Albert Einstein không?",
+      "Bạn là một thiên tài",
+      "Ấn tượng!",
+      "Không ai thông minh như tôi",
+      "Woah, một thiên tài!"
+    ],
+    "description": [
+      "**{TARGET}'s IQ Level:** {IQ} 🧠",
+      "_ _",
+      "{MESSAGE}"
+    ]
+  },
+  "meme": {
+    "invalidtopic": {
+      "description": [
+        "{CROSS} **Không thể tìm thấy bất kỳ meme nào về điều này ...**"
+      ]
+    },
+    "success": {
+      "description": [
+        "{CHECK} **Ngẫu nhiên {TOPIC} meme**!"
+      ]
+    }
+  },
+  "slotmachine": {
+    "extras": {
+      "playing": [
+        "\u200b \u200b \u200b \u200b \u200b \u200b {USER} đang chơi Slot Machine",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {SLOT1} {SLOT2} {SLOT3}",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {LOADING} **Slot machine is rolling...**",
+        "\u200b \u200b \u200b \u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b React with :joystick: to stop the machine!"
+      ]
+    },
+    "title": "{USERNAME} đang lăn Slot Machine!",
+    "starting": [
+      "**Player:** {USER}",
+      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+      "",
+      "*Nhấn 🔴 để khởi động máy!*"
+    ],
+    "waiting": [
+      "**Player:** {USER}",
+      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+      "",
+      "{LOADING} *Kéo 🕹️ để dừng các chỗ!*"
+    ],
+    "rollandstop": [
+      "**Player:** {USER}",
+      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+      "",
+      "{LOADING} *Đã dừng các chỗ...*"
+    ],
+    "lose": [
+      "**Player:** {USER}",
+      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+      "",
+      "{CROSS} Bạn đã thua!"
+    ],
+    "win": [
+      "**Player:** {USER}",
+      "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
+      "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
+      "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
+      "",
+      "{CHECK} Bạn đã thắng!"
+    ]
+  },
+  "spinner": {
+    "alreadyspinning": "{CROSS} **{USER}, bạn đang quay một con quay ở một nơi khác.**",
+    "spinning": "{SPINNER} **{USER} đang quay một con quay!**",
+    "spun": "{SPINNER} **{USER} quay con quay cho:** `{TIME}`"
+  },
+  "8color": {
+    "alreadyplaying": "{CROSS} **{USER}, bạn đang chơi 8Color ở một nơi khác.**",
+    "game": {
+      "playing": {
+        "title": "{USERNAME} đang chơi 8Color",
+        "description": [
+          "{LOADING} **Cấp độ bắt đầu:** {LEVEL}",
+          "Ghi nhớ mẫu sau:",
+          "",
+          "{PATTERN}",
+          "",
+          "_Sau {TIME} giây nữa, tin nhắn sẽ bị xóa!_",
+          "_Hint: Đừng sao chép tin nhắn!_"
+        ]
+      },
+      "enterpattern": {
+        "description": [
+          "Bạn đang chơi **Cấp {LEVEL}**",
+          "Nhập mẫu bạn đã ghi nhớ.",
+          "",
+          "_Bạn có {TIME} giây để trả lời!_"
+        ]
+      },
+      "win": {
+        "description": [
+          "{CHECK} **Chính xác! Bạn đã nhập đúng!**",
+          "",
+          "_Cấp độ tiếp theo bắt đầu sau 10 giây!_"
+        ]
+      },
+      "lose": {
+        "title": "{USERNAME} đã thua trong 8Color",
+        "description": [
+          "{CROSS} **Sai ! Bạn đã không nhập đúng!**",
+          "",
+          "**Mẫu đúng là:**",
+          "{PATTERN}",
+          "**Bạn đã nhập:**",
+          "{REPLY}",
+          "",
+          "**Bạn đã đạt đến cấp độ:** {LEVEL}",
+          "",
+          "_Cảm ơn đã chơi!_"
+        ],
+        "descriptiontimeout": [
+          "{CROSS} **Hết giờ! Bạn đã không nhập đúng mẫu!**",
+          "",
+          "**Bạn đã đạt đến cấp độ:** {LEVEL}",
+          "",
+          "_Cảm ơn đã chơi!_"
+        ]
+      }
+    }
+  },
+  "connectfour": {
+    "alreadyplaying": "{CROSS} **{USER}, bạn đang chơi Connect Four ở một nơi khác.**",
+    "targetalreadyplaying": "{CROSS} **{USER}, người đó đang chơi ConnectFour.**",
+    "cannotbeauthor": "{CROSS} **{USER}, bạn không thể chơi với chính mình.**",
+    "game": {
+      "loadingdescription": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "\u200b ",
+        "{LOADING} _Đang tải trò chơi ... Vui lòng đợi._"
+      ],
+      "description": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b **{TURN}, đến lượt của bạn!**",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "",
+        "{LOADING} _Bạn có **15 giây** để di chuyển..._"
+      ],
+      "botdescription": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b **{TURN}, đến lượt của bạn!**",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "",
+        "{LOADING} _{TURN} đang suy nghĩ về việc di chuyển..._"
+      ],
+      "autodescription": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{LASTTURN} không được di chuyển!**",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **Một di chuyển ngẫu nhiên đã được thực hiện.**",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{TURN}, đến lượt của bạn!**",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "",
+        "{LOADING} _Bạn có **15 giây** để di chuyển..._"
+      ],
+      "drawdescription": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "\u200b  \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b ** 📢 :regional_indicator_d: :regional_indicator_r: :regional_indicator_a: :regional_indicator_w: :bangbang::bangbang:**",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b **_Cảm ơn đã chơi cùng!_ \\🟡** \u200b \u200b \u200b  \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b"
+      ],
+      "winnerdescription": [
+        "\u200b \u200b \u200b {RED}🔴 **VS** {YELLOW}🟡",
+        "\u200b ",
+        "\u200b  \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **🎉 {WINNER} Thắng! 🎉**",
+        "\u200b ",
+        "{COLUMNS}",
+        "{GAME}",
+        "",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **_Cảm ơn đã chơi cùng!_ \\🟡** \u200b \u200b \u200b  \u200b \u200b \u200b \u200b \u200b \u200b  \u200b \u200b \u200b"
+      ]
+    }
+  },
+  "tictactoe": {
+    "alreadyplaying": "{CROSS} **{USER}, bạn đang chơi TicTacToe ở một nơi khác.**",
+    "targetalreadyplaying": "{CROSS} **{USER}, người đó đang chơi TicTacToe.**",
+    "cannotbeauthor": "{CROSS} **{USER}, bạn không thể chơi với chính mình.**",
+    "game": {
+      "loadingdescription": [
+        "⭕ **- {CIRCLE}**",
+        "❌ **- {CROSS}**",
+        "\u200b ",
+        "{GAME}",
+        "\u200b ",
+        "{LOADING} _Vui lòng đợi trò chơi tải..._"
+      ],
+      "description": [
+        "⭕ **- {CIRCLE}**",
+        "❌ **- {CROSS}**",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{TURN}**, đến lượt của bạn!!",
+        "\u200b ",
+        "{GAME}",
+        "",
+        "{LOADING} _Bạn có **10 giây** để di chuyển..._"
+      ],
+      "botdescription": [
+        "⭕ **- {CIRCLE}**",
+        "❌ **- {CROSS}**",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{TURN}**, đến lượt của bạn!!",
+        "\u200b ",
+        "{GAME}",
+        "",
+        "{LOADING} _{TURN} đang suy nghĩ về việc di chuyển..._"
+      ],
+      "drawdescription": [
+        "⭕ **- {CIRCLE}**",
+        "❌ **- {CROSS}**",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b {CROSS2} **DRAW** {CROSS2}",
+        "\u200b ",
+        "{GAME}"
+      ],
+      "winnerdescription": [
+        "⭕ **- {CIRCLE}**",
+        "❌ **- {CROSS}**",
+        "\u200b ",
+        "\u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b **{WINNER}** Thắng! 🎉 ",
+        "\u200b ",
+        "{GAME}"
+      ]
+    }
+  },
+  "trivia": {
+    "alreadyplaying": "{CROSS} **{USER}, bạn đang chơi Trivia ở một nơi khác.**",
+    "categories": [
+      "{INFO} **Danh mục Trivia**",
+      "",
+      "**Danh mục có sẵn:**",
+      "{CATEGORIES}"
+    ],
+    "invalidcategory": [
+      "{CROSS} **Danh mục không hợp lệ**",
+      "",
+      "**Danh mục có sẵn:**",
+      "{CATEGORIES}"
+    ],
+    "invaliddifficulty": [
+      "{CROSS} **Độ khó không hợp lệ**",
+      "",
+      "**Vui lòng cung cấp một trong những độ khó sau:**",
+      "{DIFFICULTIES}"
+    ],
+    "invaliddifficulty2": [
+      "{CROSS} **Độ khó không hợp lệ**",
+      "",
+      "**Vui lòng cung cấp một trong những độ khó sau và sau đó là một danh mục:**",
+      "{DIFFICULTIES}"
+    ],
+    "info": [
+      "{INFO} **Lệnh Trivia**",
+      "",
+      "**Options:**",
+      "`{PREFIX}trivia start` - Danh mục ngẫu nhiên và độ khó ngày càng tăng",
+      "`{PREFIX}trivia <difficulty>` - Danh mục ngẫu nhiên có độ khó cụ thể",
+      "`{PREFIX}trivia any <category>` - Danh mục cụ thể và độ khó ngẫu nhiên",
+      "`{PREFIX}trivia <difficulty> <category>` - Hạng mục cụ thể và độ khó",
+      "`{PREFIX}trivia categories` - Xem các danh mục có sẵn",
+      "",
+      "{INFO} Nếu một độ khó không được chỉ định, nó sẽ tăng lên khi độ khó tăng lên."
+    ],
+    "trivia": {
+      "title": "{USERNAME} đang chơi Trivia!",
+      "subcategory": "\n**Danh mục con:** {SUBCATEGORY}",
+      "description": [
+        "**Danh mục:** {CATEGORY}{SUBCATEGORYSTRING}",
+        "**Độ khó:** {DIFFICULTY}",
+        "**Câu hỏi:**",
+        "{QUESTION}",
+        "**Tùy chọn:**",
+        "{OPTIONS}",
+        "",
+        "**Nhập câu trả lời của bạn hoặc sử dụng số của câu trả lời!**\nBạn có 20 giây ..."
+      ]
+    },
+    "correct": [
+      "{CHECK} **{USER} Đúng**",
+      "",
+      "**Trả lời:** {ANSWER}",
+      "**Chuỗi:** {STREAK}",
+      "*Câu hỏi tiếp theo sau 10 giây!*"
+    ],
+    "incorrect": [
+      "{CROSS} **{USER} Câu trả lời không chính xác**",
+      "",
+      "**Chính xác:** {CORRECTANSWER}",
+      "**câu trả lời của bạn:** {INCORRECTANSWER}",
+      "**Chuỗi:** {STREAK}"
+    ],
+    "timeout": [
+      "⏰ **{USER} đã hết giờ!** Thành tích của bạn là: **{STREAK}**"
+    ]
+  },
+  "cape": {
+    "invalid": "{CROSS} **{USER}, vui lòng cung cấp tên người dùng hoặc UUID hợp lệ.**",
+    "nocape": "{CROSS} **{USER}, trình phát, `{TOSEARCH} ', không có Cape.**",
+    "success": "Optifine Cape của {USER}"
+  },
+  "hypixel": {
+    "error": {
+      "invalid": "{CROSS} **{USER}, vui lòng cung cấp tên người dùng hoặc UUID hợp lệ.**",
+      "neverjoined": "{CROSS} **{USER}, người chơi đó chưa bao giờ tham gia Hypixel.**"
+    },
+    "success": {
+      "title": "Hồ sơ Hypixel của {TARGET}",
+      "description": [
+        "**Tên hiển thị:** {DISPLAYNAME}",
+        "**Cấp:** {RANK}",
+        "**Đăng ký:** {SUBSCRIPTION}",
+        "",
+        "**__Trạng thái đăng nhập__**",
+        "**Lần đăng nhập gần đây:** {FIRSTLOGIN}",
+        "**Lần đăng nhập cuối:** {LASTLOGIN}",
+        "**Lần đăng xuất cuối cùng:** {LASTLOGOUT}",
+        "",
+        "**__Chung__**",
+        "**Cấp độ Hypixel:** {NETWORKLEVEL}",
+        "**Kinh nghiệm Hypixel:** {NETWORKEXP}",
+        "**Karma:** {KARMA}",
+        "**Phần thưởng chuỗi:** {REWARDSTREAK}",
+        "**Phần thưởng chuỗi tốt nhất:** {BESTREWARDSTREAK}",
+        "**Điểm thành tích:** {ACHIEVEMENTPOINTS}",
+        "",
+        "**__Cá nhân__**",
+        "**Ngôn ngữ người chơi:** {USERLANGUAGE}",
+        "**Truyền thông xã hội:** {SOCIALMEDIA}",
+        "**Trạng thái:** {STATUS}"
+      ],
+      "online": "\n**Chế độ chơi:** {GAMEMODE}"
+    }
+  },
+  "mcachievement": {
+    "usage": [
+      "{CROSS} **Sử dụng:** `{PREFIX}mcachievement Title | Subtitle`",
+      "**Ví dụ:** {PREFIX}mcachievement Discord Master|Invite Magic8 vào máy chủ của bạn!"
+    ],
+    "defaulttitle": "Thành tựu đã mở khóa!",
+    "defaultsubtitle": "Chọn một mô tả",
+    "success": [
+      "{CHECK} **{USER}, đây là thành tích Minecraft của bạn!**"
+    ]
+  },
+  "mcskin": {
+    "enterusername": "{CROSS} **{USER}, vui lòng cung cấp tên người dùng hoặc UUID hợp lệ.**",
+    "invalid": "{CROSS} **{USER}, người chơi, `{TOSEARCH}`, không tồn tại.**",
+    "success": "{USER}'s Minecraft Skin"
+  },
+  "namehistory": {
+    "enterusername": "{CROSS} **{USER}, vui lòng cung cấp tên người dùng hoặc UUID hợp lệ.**",
+    "invalidusername": "{CROSS} **{USER}, người chơi, `{TOSEARCH}`, không tồn tại.**",
+    "success": {
+      "title": "{TOSEARCH}'s Lịch sử đặt tên",
+      "unique": [
+        "**Tên tài khoản: ** {USERNAME}",
+        "**UUID:** {UUID}",
+        "",
+        "{CHECK} Tên người dùng chưa bao giờ được thay đổi!"
+      ],
+      "others": {
+        "name": "**`{NAME}`** ({DATE})",
+        "original": "**`{NAME}`** (Original)",
+        "description": [
+          "**Tên tài khoản: ** {USERNAME}",
+          "**UUID:** {UUID}",
+          "",
+          "**Lịch sử tên tên tài khoản:**",
+          "{HISTORY}"
+        ]
+      }
+    }
+  },
+  "mcserver": {
+    "checking": "{LOADING} Đang kiểm tra máy chủ ...",
+    "updated": [
+      "{CHECK} **Đã cập nhật IP / Tên miền máy chủ Minecraft**",
+      "",
+      "**IP/Tên miền:** {SERVER}",
+      "",
+      "{INFO} Để xem thông tin của máy chủ, gõ: `{PREFIX}status`"
+    ],
+    "updatednoquery": [
+      "{CHECK} **Đã cập nhật IP / Tên miền máy chủ Minecraft**",
+      "",
+      "**IP/Tên miền:** {SERVER}",
+      "",
+      "{WARNING} Truy vấn có thể không được kích hoạt trên máy chủ. Dữ liệu hạn chế đã được nhận.",
+      "{INFO} Để xem thông tin của máy chủ, gõ: `{PREFIX}status`"
+    ],
+    "removed": "{CHECK} **Đã xóa thành công máy chủ Minecraft**",
+    "noip": [
+      "{CROSS} **Không có IP hoặc Tên miền của máy chủ Minecraft**",
+      "",
+      "{INFO} Để xem trạng thái máy chủ của bạn, hãy nhập: `{PREFIX}mcserver <IP/domain>`. Cũng vui lòng đảm bảo rằng `enable-query` được đặt thành true trong tệp `server.properties` của bạn."
+    ],
+    "error": [
+      "{CROSS} **Lỗi trạng thái:** `{SERVER}`",
+      "",
+      "Máy chủ này ngoại tuyến hoặc không tồn tại."
+    ],
+    "errorfooter": "Chúng ta có nhầm không? Vui lòng liên hệ với bộ phận hỗ trợ."
+  },
+  "cuddle": {
+    "self": "{CHECK} **{USER} tự âu yếm!**",
+    "other": "{CHECK} **{USER} đang âu yếm {TARGET}!**"
+  },
+  "feed": {
+    "self": "{CHECK} **{USER} tự ăn!**",
+    "other": "{CHECK} **{USER} đang ăn {TARGET}!**"
+  },
+  "hug": {
+    "self": "{CHECK} **{USER} tự ôm!**",
+    "other": "{CHECK} **{USER} đang ôm {TARGET}!**"
+  },
+  "kiss": {
+    "self": "{CHECK} **{USER} tự hôn!**",
+    "other": "{CHECK} **{USER} đang hôn {TARGET}!**"
+  },
+  "pat": {
+    "self": "{CHECK} **{USER} tự vỗ về!**",
+    "other": "{CHECK} **{USER} đang vỗ về {TARGET}!**"
+  },
+  "poke": {
+    "self": "{CHECK} **{USER} tự chọc!**",
+    "other": "{CHECK} **{USER} đang chọc {TARGET}!**"
+  },
+  "slap": {
+    "self": "{CHECK} **{USER} tự tát mình!**",
+    "other": "{CHECK} **{USER} đang tát {TARGET}!**"
+  },
+  "smug": {
+    "self": "{CHECK} **{USER} tự làm nhòe!**",
+    "other": "{CHECK} **{USER} đang làm nhòe {TARGET}!**"
+  },
+  "tickle": {
+    "self": "{CHECK} **{USER} tự đánh mình!**",
+    "other": "{CHECK} **{USER} đang đánh {TARGET}!**"
+  },
+  "bored": {
+    "title": "{USERNAME} đã chán! Họ đã nhận...",
+    "description": [
+      "**Hoạt động:** {ACTIVITY}",
+      "**Danh mục:** {CATEGORY}",
+      "**Tổng số người:** {PEOPLE}"
+    ],
+    "invalidcategory": [
+      "{CROSS} **Danh mục không hợp lệ**",
+      "",
+      "**Danh mục có sẵn:**",
+      "{CATEGORIES}"
+    ]
+  },
+  "chucknorris": {},
+  "fakeinfo": {
+    "title": "{TAG} tạo thông tin giả mạo!",
+    "description": [
+      "**{CHECK} {USER}, thông tin giả mạo của bạn đã được tạo thành công!**",
+      "",
+      "**👤 Thông tin giả được tạo:**",
+      "```json",
+      "{INFO}```",
+      "{VERIFIED} _Thông tin này được tạo ngẫu nhiên. Nó không đề cập đến bất kỳ công ty hay người thực nào. Mục đích của lệnh này là lấy thông tin để điền vào cơ sở dữ liệu hoặc hoàn thành khảo sát._"
+    ]
+  },
+  "inspire": {
+    "success": [
+      "**Trích dẫn:** {QUOTE}",
+      "**Chủ sỡ hữu:** {AUTHOR}"
+    ]
+  },
+  "overwatch": {
+    "error": {
+      "region": [
+        "{CROSS} **Vui lòng cung cấp một trong các khu vực sau nếu bạn __không__ ở Hoa Kỳ**",
+        "`eu` `asia`"
+      ],
+      "user": [
+        "{CROSS} **{USER}, vui lòng cung cấp tên người dùng và dấu hiệu phân biệt!**",
+        "**Điều này có thể được tìm thấy trong hồ sơ [battle.net] (https://battle.net) của bạn.**"
+      ],
+      "unexpected": [
+        "{CROSS} **Lỗi**",
+        "",
+        "- Vui lòng kiểm tra xem bạn có đang sử dụng thẻ thích hợp không.",
+        "- Ví dụ: `{PREFIX}ow Fyrlex#1801`",
+        "- Chỉ chấp nhận tài khoản PC (bây giờ)"
+      ]
+    },
+    "success": {
+      "title": "Hồ sơ Overwatch của {TOSEARCH}",
+      "privatedescription": [
+        "**__Cấp độ__**",
+        "**Tổng cấp độ:** {TOTALLEVEL}",
+        "**Cấp độ hiện tại:** {CURRENTLEVEL}",
+        "**Uy tín:** {PRESTIGE}",
+        "**Chứng thực:** {ENDORSELEVEL}",
+        "",
+        "*Người dùng này có hồ sơ **riêng tư**, không có thêm thông tin nào*"
+      ],
+      "publicdescription": [
+        "**__Cấp độ__**",
+        "**Tổng cấp độ:** {TOTALLEVEL}",
+        "**Cấp độ hiện tại:** {CURRENTLEVEL}",
+        "**Uy tín:** {PRESTIGE}",
+        "**Chứng thực:** {ENDORSELEVEL}",
+        "",
+        "**__Thống kê chơi__**",
+        "**Thắng:** {WON}",
+        "**Thẻ:** {CARDS}",
+        "**Huy chương Đồng/Bạc/Vàng:** {BRONZE}/{SILVER}/{GOLD}",
+        "",
+        "**__Xếp hạng__ (Mùa hiện tại)**",
+        "**Thắng/Thua:** {RANKEDWINS}/{RANKEDLOSSES} - {RANKEDPERCENTAGE}%",
+        "**SR trung bình:** {AVERAGE}",
+        "{TANK} **Đỡ đòn:** {TANKLVL} {TANKICON}",
+        "{DPS} **DPS:** {DPSLVL} {DPSICON}",
+        "{SUPPORT} **Hỗ trợ:** {SUPPORTLVL} {SUPPORTICON}"
+      ]
+    }
+  },
+  "pornhubtext": {
+    "messagerequired": "{CROSS} **{USER}, xin vui lòng cung cấp một tin nhắn.**",
+    "nobar": "{CROSS} **{USER}, hãy chia hai bên với: `|`**"
+  },
+  "spoiler": {
+    "messagerequired": "{CROSS} **{USER}, vui lòng cung cấp một tin nhắn.**"
+  },
+  "supreme": {
+    "messagerequired": "{CROSS} **{USER}, vui lòng cung cấp một tin nhắn.**"
+  },
+  "telephone": {
+    "ringing": "☎ {USER} đã nhận điện thoại. **Điện thoại đang đổ chuông!**",
+    "someoneusingtelephone": "🚫 Ai đó đang sử dụng điện thoại! **Vui lòng đợi.**",
+    "someoneinacall": "🚫 Ai đó đang sử dụng điện thoại! **Làm ơn hãy kiên nhẫn.**",
+    "nooneanswered": "⛔ {USER}, có vẻ như không ai nhấc máy ...",
+    "establised": "🔊 Có người nhấc máy. **Kết nối thành lập!**",
+    "youhungup": "\\🔴 **Bạn đã kết thúc cuộc gọi!**",
+    "otherhungup": "\\🔴 **Người kia đã dập máy!**",
+    "timeout": "\\⏰ Không thể phát hiện bất kỳ tin nhắn nào sau 1 phút. **Kết nối bị mất!**"
+  },
+  "yomomma": {},
+  "botinfo": {
+    "extra": [
+      "",
+      "📦 **RAM:** {RAM}",
+      "🖥️ **\\*CPU:** {USAGE}% (15m average)"
+    ],
+    "title": "{BOTNAME} - Thông tin về Bot",
+    "description": [
+      "📚 **Guilds:** {GUILDS}",
+      "👥 **Users:** {USERS}",
+      "",
+      "⏲️ **Thời gian hoạt động:** {UPTIME}",
+      "🛰️ **Ping:** {PING}",
+      "",
+      "👑 **Owner:** {OWNER}",
+      "💎 **Nhà phát triển chính:** {HEADDEVELOPER}",
+      "🗓️ **Được tạo ra:** {CREATIONDATE}",
+      "",
+      "**Liên kết hữu ích:**",
+      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Languages]({GITHUB}) • [Support Server]({SUPPORTSERVER})"
+    ]
+  },
+  "help": {
+    "invalidcommand": [
+      "{CROSS} **Lệnh được cung cấp không hợp lệ:** `{INPUT}`",
+      "",
+      "{INFO} Gõ `{PREFIX} help` để nhận danh sách tất cả các lệnh!"
+    ],
+    "commandinfotitle": "{BOTNAME} - Thông tin lệnh",
+    "commandinfo": [
+      "**Command:** `{COMMANDNAME}`",
+      "",
+      "**Aliases:** {ALIASES}",
+      "**Danh mục:** {CATEGORY}",
+      "**Emoji:** {EMOJI}",
+      "**Toggleable:** {TOGGLEABLE}{PREMIUM}",
+      "**Mô tả:** {DESCRIPTION}"
+    ],
+    "footer": "Một cái gì đó mất tích? Liên hệ hỗ trợ!",
+    "tips": [
+      "📝 **Lệnh:** `{PREFIX}`",
+      "",
+      "{CHECK} ***Cần hỗ trợ thêm ?***",
+      "**1.** DM Fyrlex#2740",
+      "**2.** Kiểm tra [Guide]({GUIDE}) của chúng tôi",
+      "**3.** Gia nhập [Support Server]({INVITE}) với chúng tôi"
+    ],
+    "category": {
+      "fun": "Giải trí",
+      "minigames": "Những trò chơi nhỏ",
+      "minecraft": "Minecraft",
+      "reactions": "Phản ứng",
+      "misc": "Linh tinh",
+      "info": "Thông tin",
+      "user": "Người dùng",
+      "utils": "Tiện ích",
+      "admin": "Người quản lý"
+    },
+    "hasdisabledcommands": "{WARNING} Các lệnh được đánh dấu bằng `!` bị vô hiệu hóa.\nBật chúng bằng cách gõ: `{PREFIX}s toggle <command>`\n\n",
+    "adminbottom": [
+      "{HASDISABLED}{INFO} Nhận thêm thông tin của một lệnh bằng cách nhập: `{PREFIX}help <command>`",
+      "",
+      "Bạn có ý tưởng hoặc đề xuất? **Hãy cho chúng tôi biết trong [Support Server]({INVITE}).**"
+    ],
+    "bottom": "Bạn có ý tưởng hoặc đề xuất? **Hãy cho chúng tôi biết trong [Support Server]({INVITE}).**",
+    "cannotsend": [
+      "{CROSS} **{USER}, không thể gửi menu trợ giúp. Vui lòng bật tin nhắn riêng tư.**",
+      "",
+      "*Cần hỗ trợ thêm? Gia nhập [Support Server]({INVITE}) với chúng tôi hoặc kiểm tra [Guide]({GUIDE}) của chúng tôi!*"
+    ],
+    "sent": [
+      "{CHECK} **{USER}, menu trợ giúp đã được gửi. Vui lòng kiểm tra tin nhắn riêng tư của bạn.**",
+      "",
+      "*Cần hỗ trợ thêm? Gia nhập [Support Server]({INVITE}) với chúng tôi hoặc kiểm tra [Guide]({GUIDE}) của chúng tôi!*"
+    ]
+  },
+  "info": {
+    "title": "{GUILDNAME}",
+    "description": [
+      "✏️ **Lệnh:** `{PREFIX}`",
+      "📊 **User/Bots/Trực tuyến**: {USERS}/{BOTS}/{ONLINE}",
+      "🌎 **Ngôn ngữ:** {LANGUAGE}",
+      "{PREMIUM}",
+      "👑 **Chủ Server:** {OWNER}",
+      "🗓️ **Server được tạo:** {CREATED}",
+      "🕰️ **Bot tham gia:** {JOINED}",
+      "",
+      "{MAGIC8} Để xem số liệu thống kê về bot, hãy nhập: `{PREFIX}botinfo`",
+      "🌐 Để xem phương tiện máy chủ, hãy nhập: `{PREFIX}media`"
+    ]
+  },
+  "invite": {
+    "title": "Mời Magic8 vào Máy chủ của bạn",
+    "description": [
+      "Xin chào {AUTHOR}, bạn có thích {BOT} và muốn bạn bè của mình cũng có nó trong máy chủ của họ không?",
+      "",
+      "Mời bot vào máy chủ của bạn để tất cả bạn bè của bạn có thể cùng nhau tận hưởng các tính năng độc đáo của {BOT}!",
+      "",
+      "[{MAGIC8EMOJI} **Nhấn tại đây!**]({INVITE})"
+    ]
+  },
+  "premium": {
+    "title": "Thông tin về Magic8 Premium",
+    "description": [
+      "Các khoản đóng góp được tặng cho các nhà phát triển Magic8 cung cấp động lực và quyền truy cập vào các tài nguyên bot tốt hơn. Với sự giúp đỡ của bạn, hiệu suất và các tính năng của Magic8 có thể trở nên gần như không giới hạn.",
+      "",
+      "Magic8 sẽ tồn tại trong một thời gian dài, nhưng sự hỗ trợ của bạn đảm bảo các tính năng mới. Quyên góp cho bất kỳ nhà phát triển nào cho họ biết rằng mọi người vẫn muốn dự án của họ phát triển.",
+      "",
+      "**Liên kết gói:** [__click here__]({DONATIONLINK})"
+    ]
+  },
+  "avatar": {
+    "success": "{CHECK} Đây là hình đại diện của {USER}! ([liên kết] ({URL}))"
+  },
+  "lookingforgroup": {
+    "roleadded": "{CHECK} **{USER}, bạn hiện có {ROLE}! ** Nó sẽ bị xóa sau {COOLDOWN} giờ.",
+    "cannotaddrole": "{CROSS} **{USER}, có một lỗi cho bạn {ROLE}!",
+    "memberlist": [
+      "🧭 **Tìm kiếm danh sách thành viên nhóm**",
+      "",
+      "{LIST}"
+    ],
+    "confirmremoveall": [
+      "{WARNING} **{USER}, are you sure you want to remove the {ROLE} from all users who have it?**",
+      "",
+      "{INFO} Please type `yes` within **10** seconds to confirm, otherwise you may ignore this message."
+    ],
+    "nouserswithrole": "{CROSS} **{USER}, you cannot use this command because no users have {ROLE}.**",
+    "didnotconfirm": "{CROSS} **{USER}, no users had {ROLE} removed.**",
+    "remvoedall": "{CHECK} **All users who had {NEWROLE} no longer have the role. A new role was created with the same setup.**",
+    "roleremoved": "{CHECK} **{TARGET} không còn vai trò LFG!**",
+    "alreadynorole": "{CROSS} **{TARGET} đã không có vai trò LFG!**",
+    "premium": [
+      "💎 **Tính năng Premium** 💎",
+      "",
+      "The **Tìm nhóm** hệ thống Premium! Hỗ trợ các nhà phát triển và thúc đẩy họ tiếp tục đầu tư hàng giờ mỗi ngày vào {BOT}. Xem các gói có sẵn [here]({PACKAGES}).",
+      "",
+      "**Liên kết:** https://donatebot.io/checkout/610816275580583936"
+    ]
+  },
+  "media": {
+    "title": "{GUILDNAME} - Trang phương tiện",
+    "nomedia": [
+      "{CROSS} **Không có phương tiện nào**",
+      "",
+      "{INFO} Tạo trang phương tiện cho máy chủ của bạn bằng cách nhập: `{PREFIX}s media text`"
+    ]
+  },
+  "myinfo": {
+    "noboost": "không",
+    "boost": "có - (since {SINCE})",
+    "title": "Hồ sơ {USERNAME}'s",
+    "description": [
+      "**Đề cập:** {USER}",
+      "**Biệt danh:** {NICKNAME}",
+      "**Trạng thái:** {STATUS}",
+      "**Ngày gia nhập:** {JOINED}",
+      "**Ngày tạo:** {CREATED}",
+      "**Tăng cường:** {BOOSTING}",
+      "**Vai trò:**",
+      "{ROLES}"
+    ]
+  },
+  "vote": {
+    "title": "{BOTNAME} - Menu bỏ phiếu",
+    "description": [
+      "Bỏ phiếu cho {BOT} để giúp chúng tôi phát triển! Đây là trang bình chọn chính của chúng tôi.",
+      "",
+      "**Danh sách Bot Discord:** {VOTE1}",
+      "",
+      "❤️ Cảm ơn sự hỗ trợ của bạn!"
+    ]
+  },
+  "clear": {
+    "enteramount": "{CROSS} **{USER}, vui lòng nhập một số tin nhắn để xóa.**",
+    "invalidamount": "{CROSS} **{USER}, vui lòng nhập một số lượng tin nhắn hợp lệ để xóa.**",
+    "cannotgreater": "{CROSS} **{USER}, vui lòng cung cấp một số nhỏ hơn:** `100`",
+    "cannotlower": "{CROSS} **{USER}, vui lòng cung cấp một số ít nhất:** `1`",
+    "nopermission": "{CROSS} **{USER}, vui lòng cấp cho {BOT} quyền `Quản lý tin nhắn` để xóa tin nhắn.**",
+    "deleted": "{CHECK} **{USER}, tổng số `{AMOUNT}` tin nhắn đã bị xóa.**"
+  },
+  "emojis": {
+    "error": {
+      "permissiondescription": [
+        "{CROSS} **Bạn cần quyền `MANAGE_EMOJIS` để truy cập lệnh này!**"
+      ],
+      "insufficientdescription": [
+        "{CROSS} **Tôi cần quyền `MANAGE_EMOJIS`!**"
+      ],
+      "requireddescription": [
+        "{CROSS} **{USER}, vui lòng cung cấp tên biểu tượng cảm xúc.**"
+      ],
+      "invalidemoji": [
+        "{CROSS} **Tên biểu tượng cảm xúc đã chỉ định không hợp lệ!**"
+      ],
+      "limitdescription": [
+        "{CROSS} **Rất tiếc! Bạn không thể có nhiều biểu tượng cảm xúc hơn trong máy chủ này!**"
+      ],
+      "othererrordescription": [
+        "{CROSS} **Uhmm ... kỳ lạ, tôi không thể thêm biểu tượng cảm xúc!**"
+      ],
+      "unknowndescription": [
+        "{CROSS} **Rất tiếc! Tôi không biết tại sao nhưng hãy thử lại sau!**"
+      ]
+    },
+    "description": [
+      "**Chào mừng bạn đến với Kho tàng Emoji cảm xúc của chúng tôi!** {KAPPALUL}",
+      "Đây là danh sách cá nhân của chúng tôi về **biểu tượng Emoji** bạn có thể thêm vào máy chủ của mình một cách dễ dàng!",
+      "Danh sách này được thực hiện bởi ** Nhà phát triển ** của chúng tôi để cho phép bạn nhận được các biểu tượng cảm xúc được sử dụng nhiều nhất ** trong máy chủ của bạn **.",
+      "",
+      "Bạn sẽ có thể thêm tất cả các biểu tượng cảm xúc được liệt kê bên dưới bằng cách chạy một lệnh cho những biểu tượng bạn muốn thêm!",
+      "{MAGIC8} {BOT} yêu cầu quyền `MANAGE_EMOJIS`!",
+      "",
+      "Lệnh để chạy là `thêm biểu tượng cảm xúc <emojiname>`",
+      "",
+      "Các biểu tượng cảm xúc sau được liệt kê theo tên biểu tượng cảm xúc và biểu tượng cảm xúc.",
+      ""
+    ],
+    "footer": [
+      "{VERIFIED} Danh sách này sẽ liên tục **cập nhật** và thêm **biểu tượng cảm xúc mới**!",
+      "Bạn muốn **đề xuất** một biểu tượng cảm xúc? **Tham gia** máy chủ **[Discord]({INVITATION})** của chúng tôi và cho chúng tôi biết!",
+      "{WARNING} Tính năng này trong phiên bản **beta**. Vui lòng báo cáo **Bugs / Lỗi** trong của chúng tôi **[Discord]({INVITATION})**!"
+    ],
+    "success": {
+      "description": [
+        "{CHECK} Tôi đã thêm {EMOJI} (**{EMOJINAME}**) vào máy chủ của bạn!",
+        "",
+        "Hey {USER}, cảm ơn vì đã sử dụng của chúng tôi **Emoji Bank**!",
+        "{VERIFIED} Bạn có một biểu tượng cảm xúc tốt để chia sẻ ? [Join us]({INVITATION})!"
+      ]
+    }
+  },
+  "listmanager": {
+    "helptitle": "{BOTNAME} - Menu quản lí danh sách",
+    "help": [
+      "`{PREFIX}lm add` - Thêm một mục vào danh sách",
+      "`{PREFIX}lm bulkadd` - Thêm nhiều mục vào một danh sách",
+      "`{PREFIX}lm remove` - Xóa một mục khỏi danh sách",
+      "`{PREFIX}lm delete` - Xóa danh sách",
+      "`{PREFIX}lm create` - Tạo một danh sách",
+      "",
+      "`{PREFIX}lm cooldown` - Thời gian hồi ngẫu nhiên của người dùng",
+      "`{PREFIX}lm randomize` - Menu ngẫu nhiên",
+      "`{PREFIX}lm view` - Xem danh sách / mục",
+      "",
+      "{INFO} Sử dụng các lệnh này để biết thêm thông tin!"
+    ],
+    "viewitemstitle": "Trình quản lý danh sách - Menu Xem Mục",
+    "viewitems": [
+      "**Danh sách:** {LISTNAME}",
+      "**Tạo:** {CREATED}",
+      "",
+      "**Mục:**",
+      "{ITEMS}"
+    ],
+    "viewliststitle": "Trình quản lý danh sách - Menu Xem danh sách",
+    "viewlists": [
+      "**Danh sách hiện tại:**",
+      "{LISTS}",
+      "",
+      "{INFO} Gõ lại lệnh với danh sách để xem các mục."
+    ]
+  },
+  "say": {
+    "messagerequired": "{CROSS} **{USER}, vui lòng cung cấp một tin nhắn.**",
+    "permissionrequired": "{CROSS} **{USER}, vui lòng cấp cho {BOT} quyền gửi tin nhắn trong {CHANNEL}.**",
+    "tip": "Mẹo: Sử dụng {EVERYONE} và {HERE} làm trình giữ chỗ nếu cần"
+  },
+  "antiping": {
+    "menutitle": "{BOTNAME} - Menu Trợ giúp Anti-Ping",
+    "menu": [
+      "`{PREFIX}ap adduser` - Tắt ping cho người dùng",
+      "`{PREFIX}ap removeuser` - Bật lại ping cho người dùng",
+      "`{PREFIX}ap message` - Thông báo cảnh báo ping",
+      "`{PREFIX}ap logchannel` - Ghi nhật ký khi người dùng Anti-Ping được gắn thẻ",
+      "`{PREFIX}ap addrole` - Thêm các vai trò bỏ qua",
+      "`{PREFIX}ap removerole` - Loại bỏ các vai trò bỏ qua",
+      "",
+      "`{PREFIX}ap roles` Xem các vai trò bỏ qua",
+      "`{PREFIX}ap users` Xem người dùng Anti-Ping **Vô hiệu**",
+      "",
+      "{WARNING} Điều này sẽ không thực sự ngăn ping, nó sẽ chỉ xóa tin nhắn và cảnh báo người dùng.",
+      "{INFO} Sử dụng các lệnh này để biết thêm thông tin!"
+    ],
+    "logmessage": [
+      "{WARNING} **Anti-Ping**",
+      "",
+      "**Tác giả:** {USER}",
+      "**Người dùng (s):**",
+      "{PINGED}"
+    ],
+    "upgrade": {
+      "singleortriple": "**Gói Single or Triple**",
+      "triple": "**Gói Triple**",
+      "description": "Vui lòng nâng cấp lên [{OPTIONS]({DONATELINK}) để tắt ping cho nhiều người dùng hơn.",
+      "cannotupgrade": "Không thể tăng người dùng Anti-Ping thông qua các gói nữa."
+    },
+    "addusermenutitle": "{BOTNAME} - Thêm Anti-Ping người dùng",
+    "addusermenu": [
+      "Người dùng Anti-Ping sẽ bị xóa @mentions của họ bởi bất kỳ ai không có vai trò bỏ qua.",
+      "",
+      "**Người dùng Anti-Ping hiện tại:**",
+      "{USERS}",
+      "",
+      "{INFO} Để thêm người dùng, hãy nhập: `{PREFIX}ap adduser <user>`"
+    ],
+    "removeusermenutitle": "{BOTNAME} - Xóa Anti-Ping người dùng",
+    "removeusermenu": [
+      "Xóa người dùng Anti-Ping sẽ cho phép bất kỳ ai @mentions họ.",
+      "",
+      "**Người dùng Anti-Ping hiện tại:**",
+      "{USERS}",
+      "",
+      "{INFO} Để xóa người dùng, hãy nhập: `{PREFIX}ap removeuser <user>`"
+    ],
+    "reachedlimit": [
+      "{CROSS} **Đã đạt đến giới hạn người dùng Anti-Ping:** `{MAX}`",
+      "",
+      "{UPGRADE}",
+      "",
+      "**Người dùng Anti-Ping:**",
+      "{USERS}"
+    ],
+    "cannotbebot": "{CROSS} **Này, bạn không thể tắt ping của tôi!**",
+    "targetalreadydisabled": "{CROSS} **{TARGET}'s ping đã bị vô hiệu hóa.**",
+    "nowdisabled": "{CHECK} **{TARGET}'s ping hiện đã bị vô hiệu hóa.**",
+    "nousers": [
+      "{CROSS} **Không người dùng Anti-Ping**",
+      "",
+      "{INFO} Để thêm người dùng, hãy nhập: `{PREFIX}ap adduser`"
+    ],
+    "removeall": "{CHECK} **Đã xóa tất cả người dùng Anti-Ping**",
+    "invaliduser": [
+      "{CROSS} **Người dùng cung cấp không hợp lệ**",
+      "",
+      "Vui lòng cung cấp ID hoặc thành viên máy chủ hợp lệ.",
+      "",
+      "{INFO} Để xóa tất cả người dùng, hãy nhập: `{PREFIX}ap removeuser all`"
+    ],
+    "alreadyenabled": "{CROSS} **{TARGET}'s ping đã được bật.**",
+    "nowenabled": "{CHECK} **{TARGET}'s ping hiện đã được bật.**",
+    "messageinfotitle": "{BOTNAME} - Tin nhắn Anti-Ping",
+    "messageinfo": [
+      "Thông báo này sẽ trả lời các thành viên gắn thẻ người dùng Anti-Ping.",
+      "",
+      "**Tin nhắn hiện tại:**",
+      "```{CURRENTMESSAGE}```",
+      "",
+      "{INFO} Chủ sở hữu: {USER} - Thành viên đã đề cập đến một người dùng Anti-Ping."
+    ],
+    "messageupdated": [
+      "{CHECK} **Tin nhắn Anti-Ping đã cập nhật**",
+      "",
+      "**Tin nhắn cũ:**",
+      "```{OLDMESSAGE}```",
+      "",
+      "**Tin nhắn mới:**",
+      "```{NEWMESSAGE}```"
+    ],
+    "noroles": [
+      "{CROSS} **Không có vai trò Anti-Ping**",
+      "",
+      "{INFO} Để thêm một vai trò, hãy nhập: `{PREFIX}ap addroleohap`"
+    ],
+    "invalidrole": [
+      "{CROSS} **Vai trò cung cấp không hợp lệ**",
+      "",
+      "**Các vai trò có sẵn:**",
+      "{ROLES}"
+    ],
+    "invalidbypassrole": [
+      "{CROSS} **Vai trò cung cấp không hợp lệ**",
+      "",
+      "**Các vai trò bỏ qua có sẵn:**",
+      "{BYPASSROLES}"
+    ],
+    "alreadybypass": [
+      "{CROSS} **Vai trò {TARGETROLE} đã bỏ qua người dùng Anti-Ping.**",
+      "",
+      "{INFO} Để xóa vai trò bỏ qua, hãy nhập: `{PREFIX}ap removerole`"
+    ],
+    "nowbypass": [
+      "{CHECK} **Thêm vai trò bỏ qua Anti-Ping**",
+      "",
+      "**Vai trò:** {TARGETROLE}",
+      "",
+      "{INFO} Để xóa vai trò bỏ qua, hãy nhập: `{PREFIX}ap removerole`"
+    ],
+    "alreadydoesnotbypass": [
+      "{CROSS} **Vai trò {TARGETROLE} đã không bỏ qua người dùng Anti-Ping.**",
+      "",
+      "{INFO} Để thêm vai trò cho phép, hãy nhập: `{PREFIX}ap addrole`"
+    ],
+    "nolongerbypass": [
+      "{CHECK} **Đã loại bỏ vai trò cho phép Anti-Ping**",
+      "",
+      "**Vai trò:** {TARGETROLE}",
+      "",
+      "{INFO} Để thêm vai trò cho phép, hãy nhập: `{PREFIX}ap addrole`"
+    ],
+    "viewuserstitle": "{BOTNAME} - Người dùng Anti-Ping",
+    "viewusers": [
+      "**Những người dùng hiện tại:**",
+      "{USERS}"
+    ],
+    "viewrolestitle": "{BOTNAME} - Vai trò cho phép Anti-Ping",
+    "viewroles": [
+      "**Vai trò cho phép người dùng:**",
+      "{BYPASSROLES}"
+    ],
+    "logchannelnotset": [
+      "{CROSS} **Kênh nhật ký Anti-Ping chưa được đặt**",
+      "",
+      "{INFO} Để đặt Kênh nhật ký Anti-Ping, hãy nhập: `{PREFIX}ap logchannel`"
+    ],
+    "logchannelremove": [
+      "{CHECK} **Đã xóa kênh nhật ký Anti-Ping**",
+      "",
+      "{INFO} Để đặt Kênh nhật ký Anti-Ping mới, hãy nhập: `{PREFIX}ap logchannel`"
+    ],
+    "logchannelset": [
+      "{CHECK} **Đã đặt Kênh nhật ký Anti-Ping**",
+      "",
+      "**Kênh:** {CHANNEL} ({CHANNELID})",
+      "",
+      "{INFO} Để loại bỏ Kênh nhật ký Anti-Ping, hãy nhập: `{PREFIX}ap logchannel remove`"
+    ]
+  },
   "autovoice": {
     "nocategory": [
       "{CROSS} **Không có danh mục Auto Voice nào được chọn**",
@@ -13,36 +1572,36 @@
       "{INFO} Bạn không thể tạo Kênh tự động cho đến khi một danh mục được chọn. Nếu danh mục Giọng nói tự động bị xóa hoặc di chuyển, tất cả các Kênh tự động và Kênh phụ sẽ bị xóa."
     ],
     "upgrade": {
-      "singleortriple": "**Single or Triple Package**",
-      "triple": "**Triple Package**",
-      "description": "Please upgrade to the [{OPTIONS]({DONATELINK}) to create more Auto Voice Channels.",
+      "singleortriple": "**Các gói Single hoặc Triple**",
+      "triple": "**Gói Triple**",
+      "description": "Vui lòng nâng cấp lên [{OPTIONS]({DONATELINK}) để tạo nhiều Kênh thoại tự động hơn.",
       "cannotupgrade": "Không thể tăng Kênh Auto Voice thông qua các gói nữa."
     },
     "reachedlimit": [
-      "{CROSS} **Auto Channels Limit Reached:** `{MAX}`",
+      "{CROSS} **Đã đạt đến giới hạn kênh tự động:** `{MAX}`",
       "",
       "{UPGRADE}",
       "",
-      "**Current Auto Channels:**",
+      "**Các kênh tự động hiện tại:**",
       "{CURRENTCHANNELS}"
     ],
-    "notypetitle": "{BOTNAME} - Auto Voice Channel Types",
+    "notypetitle": "{BOTNAME} - Các kiểu Kênh Auto Voice",
     "notype": [
       "Các loại Kênh Auto Voice khả dụng.",
       "",
-      "**Available Types:**",
+      "**Các kiểu có sẵn:**",
       "{TYPES}"
     ],
     "invalidtype": [
-      "{CROSS} **Invalid Auto Channel Type:** `{INPUT}`",
+      "{CROSS} **Loại Kênh tự động không hợp lệ:** `{INPUT}`",
       "",
-      "**Available Types:**",
+      "**Các kiểu có sẵn:**",
       "{TYPES}"
     ],
     "type": {
-      "duo": "Hai người",
-      "trio": "Ba người",
-      "squad": "Bốn ngườ"
+      "duo": "Phòng Duo",
+      "trio": "Phòng Triple",
+      "squad": "Phòng Squad"
     },
     "created": [
       "{CHECK} **{TYPE} Kênh đã được tạo**",
@@ -50,26 +1609,26 @@
       "{INFO} Kênh này có thể tạo tối đa **two** Sub-Channels."
     ],
     "invalidchannel": [
-      "{CROSS} **Invalid Auto Channel Provided:** `{INPUT}`",
+      "{CROSS} **Kênh tự động được cung cấp không hợp lệ:** `{INPUT}`",
       "",
-      "**Available Auto Channels:**",
+      "**Các Kênh tự động có sẵn:**",
       "{AVAILABLE}"
     ],
     "deleted": [
       "{CHECK} **Kênh Auto Voice đã bị xóa**",
       "",
-      "**Channel:** {DELETED}"
+      "**Kênh:** {DELETED}"
     ],
     "noneleft": [
       "{CHECK} **Kênh Auto Voice đã bị xóa**",
       "",
-      "**Channel:** {DELETED}",
+      "**Kênh:** {DELETED}",
       "",
       "{WARNING} Kênh Auto Voice hiện đã bị tắt vì không còn kênh nào."
     ],
     "nocooldowntitle": "{BOTNAME} - Thời gian hồi Kênh Auto Voice",
     "nocooldown": [
-      "**Current Cooldown:** {COOLDOWN}",
+      "**Thời gian hồi hiện tại:** {COOLDOWN}",
       "",
       "{INFO} Thời gian hồi phải từ 10 giây đến 300 giây (5 phút)."
     ],
@@ -79,27 +1638,27 @@
     "cooldownupdated": [
       "{CHECK} **Đã cập nhật thời gian hồi của các Kênh tự động**",
       "",
-      "**Old Cooldown:** {OLDCOOLDOWN} giây",
-      "**New Cooldown:** {COOLDOWN} giây"
+      "**Thời gian hồi cũ:** {OLDCOOLDOWN} giây",
+      "**Thời gian hồi mới:** {COOLDOWN} giây"
     ],
     "infotitle": "{BOTNAME} - Thông tin Kênh Auto Voice",
     "info": [
-      "**Enabled:** {ENABLED}",
-      "**Category:** {CATEGORY}",
-      "**Cooldown:** {COOLDOWN} giây",
-      "**Channels:**",
+      "**Kích hoạt:** {ENABLED}",
+      "**Danh mục:** {CATEGORY}",
+      "**Thời gian chậm:** {COOLDOWN} giây",
+      "**Kênh:**",
       "{CHANNELS}"
     ],
-    "viewcategorytitle": "{BOTNAME} - Auto Voice Channels Category",
+    "viewcategorytitle": "{BOTNAME} - Danh mục Kênh Auto Voice",
     "viewnocategory": [
-      "**Category:** {CATEGORY}",
+      "**Danh mục:** {CATEGORY}",
       "",
       "{INFO} Đặt danh mục để bật Kênh tự động bằng cách nhập: `{PREFIX}autovoice category <ID>`"
     ],
     "viewcategory": [
-      "**Auto Voice Category**",
+      "**Danh mục Auto Voice**",
       "",
-      "**Category:** {CATEGORY} ({CATEGORYID})",
+      "**Danh Mục:** {CATEGORY} ({CATEGORYID})",
       "",
       "{INFO} Tắt các Kênh tự động bằng cách nhập: `{PREFIX}autovoice category clear`"
     ],
@@ -111,23 +1670,23 @@
     "disabled": [
       "{CHECK} **Đã tắt Kênh Auto Voice**",
       "",
-      "{INFO} Tất cả các Kênh tự động không còn hoạt động. Để bật lại Kênh thoại tự động, hãy đặt Category!"
+      "{INFO} Tất cả các Kênh tự động không còn hoạt động. Để bật lại Kênh thoại tự động, hãy đặt Danh mục!"
     ],
     "notacategory": [
-      "{CROSS} **Invalid Category ID**",
+      "{CROSS} **ID danh mục không hợp lệ**",
       "",
-      "**Available Categories:**",
+      "**Danh mục có sẵn:**",
       "{CATEGORIES}"
     ],
     "nopermissionincategory": [
       "{CROSS} **Vui lòng cấp cho {BOT} các quyền sau để sử dụng lệnh này.**",
       "",
-      "`Manage Channels`, `Di chuyển thành viên`"
+      "`Quản lý kênh`, `Di chuyển thành viên`"
     ],
     "categoryset": [
-      "{CHECK} **Auto Voice Category Set**",
+      "{CHECK} **Đã đặt Danh mục Auto Voice**",
       "",
-      "**Category:** {CATEGORY} ({CATEGORYID})",
+      "**Danh mục:** {CATEGORY} ({CATEGORYID})",
       "",
       "{INFO} Kênh Auto Voice có thể được tạo tại thời điểm này!"
     ],
@@ -140,6 +1699,146 @@
       "`{PREFIX}av info` - Xem thông tin Kênh Voice hiện tại",
       "",
       "{INFO} Mỗi **Auto Channel** chỉ có thể tạo tối đa **three** Sub-Channels."
+    ]
+  },
+  "fakeping": {
+    "cooldown": [
+      "{CROSS} **Thời gian hồi Fake-Ping**",
+      "",
+      "{USER} đã tạo fakeping {TIME} trước.",
+      "",
+      "{INFO} Bạn có thể tạo một cái mới trong {LEFT}."
+    ],
+    "guildnoicon": [
+      "**{CROSS} Máy chủ này không có biểu tượng đại diện!**"
+    ],
+    "success": [
+      "{CHECK} **Khởi tạo Fakeping thành công**",
+      "",
+      "**Hình ảnh cũ:** [here]({OLD})",
+      "**Hình ảnh mới:** [here]({NEW})",
+      "",
+      "{LOADING} Vui lòng chọn một lựa chọn trong vòng 30 giây"
+    ],
+    "successmanual": [
+      "{CHECK} **Khởi tạo Fakeping thành công**",
+      "",
+      "**Hình ảnh cũ:** [here]({OLD})",
+      "**Hình ảnh mới:** [here]({NEW})",
+      "",
+      "**Tải xuống và tải nó lên làm biểu tượng đại diện cho máy chủ!**"
+    ],
+    "updated": "{CHECK} **{USER}, biểu tượng máy chủ đã được cập nhật!**",
+    "notupdated": "{CROSS} **{USER}, biểu tượng máy chủ không được cập nhật.**",
+    "notupdatedperms": "{CROSS} **{USER}, vui lòng cấp cho {BOT} quyền `Quản lý máy chủ` để cập nhật biểu tượng máy chủ.**"
+  },
+  "follow": {
+    "nopermission": "{CROSS} **{USER}, vui lòng cấp cho {BOT} quyền `Quản lý Webhooks` để theo dõi các kênh.**",
+    "nooptiontitle": "{BOTNAME} - Theo dõi các Kênh tin tức",
+    "nooption": [
+      "Nhận cập nhật từ [Support Server]({INVITE}) trực tiếp vào máy chủ của bạn.",
+      "",
+      "**Kênh tin tức có sẵn:**",
+      "{OPTIONS}",
+      "",
+      "{INFO} Nhập lệnh vào kênh bạn muốn có tin nhắn."
+    ],
+    "invalidoption": [
+      "{CROSS} **Kênh tin tức không hợp lệ**",
+      "",
+      "**Kênh tin tức có sẵn:**",
+      "{OPTIONS}",
+      "",
+      "{INFO} Nhập lệnh vào kênh bạn muốn có tin nhắn."
+    ],
+    "maxintegrations": [
+      "{CROSS} **Số lần Kênh tối đa đạt được:** {CHANNEL}",
+      "",
+      "Đây là hạn chế của Discord, vui lòng thử kênh khác."
+    ],
+    "following": [
+      "{CHECK} **Theo dõi Kênh Tin tức**",
+      "",
+      "**Kênh:** {CHANNEL}",
+      "**Đang theo dõi:** `{FOLLOWING}`"
+    ]
+  },
+  "language": {
+    "invalid": [
+      "{CROSS} **Ngôn ngữ được cung cấp không hợp lệ:** `{INPUT}`",
+      "",
+      "**Đang sử dụng:** `{CURRENT}`",
+      "",
+      "**Ngôn ngữ có sẵn:**",
+      "{AVAILABLE}",
+      "",
+      "{WARNING} Tiếng Anh là ngôn ngữ chính và được hỗ trợ đầy đủ. Một số lệnh có thể xuất hiện bằng tiếng Anh mặc dù ngôn ngữ của bạn được đặt thành ngôn ngữ khác."
+    ],
+    "alreadyselected": [
+      "{CROSS} **Ngôn ngữ đã được chọn**",
+      "",
+      "**Ngôn ngữ:** `{CURRENT}`",
+      "",
+      "{INFO} Vui lòng chọn một ngôn ngữ mới cho máy chủ của bạn."
+    ],
+    "updated": [
+      "{CHECK} **Ngôn ngữ được cập nhật:** `{NEWLANGUAGE}` {FLAG} **{PROGRESS}**%",
+      "",
+      "{INFO} Nếu bạn muốn đóng góp bằng các bản dịch bằng ngôn ngữ mẹ đẻ của mình, hãy tham gia [Support Server]({INVITE}).",
+      "",
+      "{WARNING} Tiếng Anh là ngôn ngữ chính và được hỗ trợ đầy đủ. Một số lệnh có thể xuất hiện bằng tiếng Anh mặc dù ngôn ngữ của bạn được đặt thành ngôn ngữ khác."
+    ],
+    "uptodate": "Cập nhật",
+    "outdated": "Không được cập nhật",
+    "listtitle": "{BOTNAME} - Danh sách các ngôn ngữ ({PAGE}/{TOTALPAGES})",
+    "invalidpage": [
+      "{CROSS} **Trang cung cấp không hợp lệ:** `{INPUT}`",
+      "",
+      "{INFO} Vui lòng cung cấp số trang từ **1** đến **{TOTALPAGES}**."
+    ],
+    "available": [
+      "{UPTODATE}",
+      "",
+      "{INFO} Nhấp vào một ngôn ngữ để được đưa đến Kho lưu trữ GitHub!",
+      "",
+      "{LANGUAGES}"
+    ],
+    "help": [
+      "{CHECK} **Xin chào! Cảm ơn vì đã mở trang này!**",
+      "",
+      "Các nhà phát triển Magic8 đã dành nhiều giờ để có thể hỗ trợ các ngôn ngữ khác. Xin vui lòng xem xét cơ hội để giúp đỡ!",
+      "",
+      "[**Kho lưu trữ Github**]({GITHUB})",
+      "",
+      "**Đổi lại bạn nhận được gì?**",
+      "- Vai trò cộng tác viên ngôn ngữ trong [Support Server]({INVITE})",
+      "- Miễn phí [Triple Package]({TRIPLEPACKAGE})",
+      "- Quảng cáo trên bot Magic8 hoặc trong kênh #sponsors",
+      "- Hoàn thành cho ngôn ngữ",
+      "- Sự tôn trọng tối đa từ các nhà phát triển",
+      "- Có thể nhiều hơn",
+      "",
+      "{INFO} **Vui lòng liên hệ với chúng tôi nếu bạn muốn giúp đỡ!**"
+    ],
+    "info": [
+      "{FLAG} **{LANGUAGENAME}** (`{LANGUAGESHORT}`)",
+      "",
+      "**Hoàn thành:** {PROGRESS}%",
+      "**Tác giả:**",
+      "{AUTHORS}"
+    ],
+    "lastupdated": "⏲️ Cập nhật mới nhất: {TIME}",
+    "menutitle": "{BOTNAME} - Menu ngôn ngữ",
+    "menu": [
+      "Tại đây, bạn có thể quản lý ngôn ngữ của {BOT}!",
+      "",
+      "**Available Commands:**",
+      "`{PREFIX}language set` - Đặt ngôn ngữ (`{LANGUAGE}`)",
+      "`{PREFIX}language help` - Thông tin ngôn ngữ Magic8",
+      "`{PREFIX}language info` - Chi tiết ngôn ngữ cụ thể",
+      "`{PREFIX}language list` - Xem các ngôn ngữ có sẵn",
+      "",
+      "{INFO} **Vui lòng liên hệ với chúng tôi nếu bạn muốn giúp đỡ!**"
     ]
   }
 }
