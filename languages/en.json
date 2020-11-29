@@ -12,7 +12,7 @@
     "**{USER}, my prefix for the server is:** `{PREFIX}`",
     "Type `{PREFIX}help` for a command list. You can also type a command after `{PREFIX}help` for specific details.",
     "",
-    "*Need further assistance? Join our [Support Server]({INVITE}) or check out our [Guide]({GUIDE})!*"
+    "{CHECK} *Need further assistance? Join our [Support Server]({INVITE}) or check out our [Guide]({GUIDE})!*"
   ],
   "true": "true",
   "false": "false",
@@ -30,7 +30,7 @@
       "",
       "{INFO} To add new responses, type: `{PREFIX}s 8ball setreplies Reply 1 | Reply 2 | Reply 3`"
     ],
-    "askedquestion": "{TAG} asked question #{NUMBER}",
+    "askedquestion": "{USERNAME} asked question #{NUMBER}",
     "question": "Question",
     "answer": "Answer",
     "replies": {
@@ -952,7 +952,7 @@
     "success": {
       "title": "{TOSEARCH}'s Name History",
       "unique": [
-        "**Username: ** {USERNAME}",
+        "**Username: ** {IGN}",
         "**UUID:** {UUID}",
         "",
         "{CHECK} Username has never been changed!"
@@ -961,7 +961,7 @@
         "name": "**`{NAME}`** ({DATE})",
         "original": "**`{NAME}`** (Original)",
         "description": [
-          "**Username: ** {USERNAME}",
+          "**Username: ** {IGN}",
           "**UUID:** {UUID}",
           "",
           "**Username History:**",
@@ -971,20 +971,19 @@
     }
   },
   "mcserver": {
+    "status": [
+      "{CHECK} **Status:** `{STATUS}`",
+      "📡 **IP:** `{SERVER}`",
+      "",
+      "👥 **Players:** {ONLINEPLAYERS}/{MAXPLAYERS}",
+      "{PLAYERS}"
+    ],
     "checking": "{LOADING} Checking server...",
     "updated": [
       "{CHECK} **Minecraft Server IP/Domain Updated**",
       "",
       "**IP/Domain:** {SERVER}",
       "",
-      "{INFO} To view information of the server, type: `{PREFIX}status`"
-    ],
-    "updatednoquery": [
-      "{CHECK} **Minecraft Server IP/Domain Updated**",
-      "",
-      "**IP/Domain:** {SERVER}",
-      "",
-      "{WARNING} Query may not be enabled on the server. Limited data was received.",
       "{INFO} To view information of the server, type: `{PREFIX}status`"
     ],
     "removed": "{CHECK} **Minecraft Server Successfully Removed**",
@@ -1037,21 +1036,12 @@
     "other": "{CHECK} **{USER} tickled {TARGET}!**"
   },
   "bored": {
-    "default": {
-      "title": "{USERNAME} is bored! They got...",
-      "description": [
-        "**Activity:** {ACTIVITY}",
-        "**Category:** {CATEGORY}",
-        "**Total People:** {PEOPLE}"
-      ]
-    },
-    "search": {
-      "title": "{TAG} searched for `{CATEGORY}` activities!",
-      "description": [
-        "**Activity:** {ACTIVITY}",
-        "**Total People:** {PEOPLE}"
-      ]
-    },
+    "title": "{USERNAME} is bored! They got...",
+    "description": [
+      "**Activity:** {ACTIVITY}",
+      "**Category:** {CATEGORY}",
+      "**Total People:** {PEOPLE}"
+    ],
     "invalidcategory": [
       "{CROSS} **Invalid Category**",
       "",
@@ -1061,14 +1051,13 @@
   },
   "chucknorris": {},
   "fakeinfo": {
-    "title": "{TAG} generated fake information!",
     "description": [
       "**{CHECK} {USER}, your fake information was generated successfully!**",
       "",
       "**👤 Fake info generated:**",
       "```json",
-      "{INFO}```",
-      "{VERIFIED} _This information is randomly generated. It doesn't refer to any company or real person. The purpose of this command is to get information to fill databases or complete surveys._"
+      "{FAKEINFO}```",
+      "{INFO} _This information is randomly generated. It doesn't refer to any company or real person. The purpose of this command is to get information to fill databases or complete surveys._"
     ]
   },
   "inspire": {
@@ -1249,6 +1238,12 @@
       "[{MAGIC8EMOJI} **Click Here!**]({INVITE})"
     ]
   },
+  "popular": {
+    "title": "{BOTNAME} - Popular Commands",
+    "description": [
+      "{COMMANDS}"
+    ]
+  },
   "premium": {
     "title": "Magic8 Premium Information",
     "description": [
@@ -1322,8 +1317,8 @@
     ]
   },
   "clear": {
-    "enteramount": "{CROSS} **{USER}, please enter a number of messages to delete.**",
-    "invalidamount": "{CROSS} **{USER}, please enter a valid number of messages to delete.**",
+    "enteramount": "{CROSS} **{USER}, please provide a number of messages to delete.**",
+    "invalidamount": "{CROSS} **{USER}, please provde a valid number of messages to delete.**",
     "cannotgreater": "{CROSS} **{USER}, please provide a number less than:** `100`",
     "cannotlower": "{CROSS} **{USER}, please provide a number that is at least:** `1`",
     "nopermission": "{CROSS} **{USER}, please give {BOT} the `Manage Messages` permission to delete messages.**",
@@ -1404,10 +1399,12 @@
       "{ITEMS}"
     ],
     "invalidlist": [
-      "{CROSS} **Invalid List:** `{INPUT}`",
+      "{CROSS} **Invalid List Provided:** `{INPUT}`",
       "",
       "**Available Lists:**",
-      "{LISTS}"
+      "{LISTS}",
+      "",
+      "{INFO} Please provide a list when typing the command again."
     ],
     "viewliststitle": "List Manager - View Lists Menu",
     "viewlists": [
@@ -1417,7 +1414,7 @@
       "{INFO} Type the command again with a list to view the items."
     ],
     "cooldown": "{CROSS} **{USER}, you are on cooldown for using the randomizer.**",
-    "nolists": [
+    "nolistsavailable": [
       "{CROSS} **No Lists Available**",
       "",
       "{INFO} To create a list, type: `{PREFIX}lm create`"
@@ -1452,7 +1449,154 @@
     "multirandomizing": [
       "**Randomizing {COUNT} Times...**",
       "",
-      "**Final Items:** {LOADING}"]
+      "**Final Items:** {LOADING}"
+    ],
+    "nonewlistname": "{CROSS} **{USER}, please provide a name to create a new list.**",
+    "listnametoolong": [
+      "{CROSS} **List Name Too Long**",
+      "",
+      "{INFO} Please provide a list name no more 30 characters."
+    ],
+    "listalreadyexists": [
+      "{CROSS} **List Already Exists:** {INPUT}",
+      "",
+      "{INFO} List names are **not** case sensitive."
+    ],
+    "listcreated": [
+      "{CHECK} **List Created**",
+      "",
+      "**Name:** {LISTNAME}",
+      "**Creation Date:** {DATE}",
+      "",
+      "{INFO} To add items, type: `{PREFIX}lm add`"
+    ],
+    "listdeleted": [
+      "{CHECK} **List Deleted**",
+      "",
+      "**List:** {LISTNAME}",
+      "**Items:** {ITEMSLINK}"
+    ],
+    "bulkaddmenutitle": "List Manager - Bulk-Add Items",
+    "bulkaddmenu": [
+      "**Available Lists:**",
+      "{LISTS}",
+      "",
+      "{INFO} To add multiple items, type the command again with a list."
+    ],
+    "bulkadding": [
+      "**Selected List:** {LISTNAME}",
+      "",
+      "**Current Items:** {LINK}",
+      "",
+      "Within **3** minutes, please provide all your items you wish to *add* to your list, separated by: `|`"
+    ],
+    "bulkaddinvalid": [
+      "{CROSS} **Please try again and provide at least 2 items separated by:** `|`",
+      "",
+      "{INFO} **Example:** `Item 1 | Item 2 | Item 3`"
+    ],
+    "bulkaddsuccess": [
+      "{CHECK} **Bulk-Add Item Success**",
+      "",
+      "**List:** {LISTNAME}",
+      "**New Items:**",
+      "{ITEMS}"
+    ],
+    "bulkaddnoitems": [
+      "{CROSS} **Bulk-Add Item Error**",
+      "",
+      "{INFO} You did not provide any items, please try again."
+    ],
+    "addmenutitle": "List Manager - Add Items",
+    "addmenu": [
+      "**Available Lists:**",
+      "{LISTS}",
+      "",
+      "{INFO} To add an item, type the command again with a list."
+    ],
+    "adding": [
+      "**Selected List:** {LISTNAME}",
+      "",
+      "**Current Items:** {LINK}",
+      "",
+      "Within **60** seconds, please provide an item you wish to *add* to your list."
+    ],
+    "addsuccess": [
+      "{CHECK} **Item Added**",
+      "",
+      "**List:** {LISTNAME}",
+      "**New Items:**",
+      "{ITEMS}"
+    ],
+    "addnoitems": [
+      "{CROSS} **Add Item Error**",
+      "",
+      "{INFO} You did not provide an item, please try again."
+    ],
+    "removemenutitle": "List Manager - Remove Items",
+    "removemenu": [
+      "**Available Lists:**",
+      "{LISTS}",
+      "",
+      "{INFO} To remove an item, type the command again with a list."
+    ],
+    "noitemstoremove": [
+      "{CROSS} **No Items Available**",
+      "",
+      "**List:** {LISTNAME}",
+      "",
+      "{INFO} Please add items to this list before removing them."
+    ],
+    "removing": [
+      "**Selected List:** {LISTNAME}",
+      "",
+      "**Current Items:** {LINK}",
+      "",
+      "Within **30** seconds, please provide an item (not case sensitive) to remove."
+    ],
+    "removedall": [
+      "{CHECK} **All Items Removed**",
+      "",
+      "**List:** {LISTNAME}",
+      "**Old Items:** {LINK}"
+    ],
+    "removeinvalid": [
+      "{CROSS} **Invalid Item Provided:** `{INPUT}`",
+      "",
+      "Please try again and provide a valid item.",
+      "",
+      "{INFO} To view items of a list, type: `{PREFIX}lm view <list>`"
+    ],
+    "removesuccess": [
+      "{CHECK} **Item Removed**",
+      "",
+      "**List:** {LISTNAME}",
+      "**New Items:** {LINK}"
+    ],
+    "removenoitems": [
+      "{CROSS} **Remove Item Error**",
+      "",
+      "{INFO} You did not provide an item to remove, please try again."
+    ],
+    "cooldownmenutitle": "List Manager - Cooldown",
+    "cooldownmenu": [
+      "**Current Cooldown:** {CURRENTCOOLDOWN} seconds",
+      "",
+      "Randomizer cooldown can be between **5** and **300** (seconds).**",
+      "",
+      "{INFO} To set the randomizer cooldown, type: `{PREFIX}lm cooldown <time>`"
+    ],
+    "notanumber": [
+      "{CROSS} **Not A Number:** `{INPUT}`",
+      "",
+      "{INFO} Please provide a number between **5** and **300** (seconds)."
+    ],
+    "toosmall": "{CROSS} **{USER}, please provide a number that is at least:** `5`",
+    "toobig": "{CROSS} **{USER}, please provide a number less than:** `300`",
+    "cooldownupdated": [
+      "{CHECK} **List Manager Randomizer Cooldown Updated**",
+      "",
+      "**New Cooldown:** {NEWCOOLDOWN} minutes"]
   },
   "say": {
     "messagerequired": "{CROSS} **{USER}, please provide a message.**",
@@ -1534,7 +1678,7 @@
     "nowenabled": "{CHECK} **{TARGET}'s pings are now enabled.**",
     "messageinfotitle": "{BOTNAME} - Anti-Ping Message",
     "messageinfo": [
-      "This message will reply to members who tag an Anti-Ping user.",
+      "This message will reply to members who mention an Anti-Ping user.",
       "",
       "**Current Message:**",
       "```{CURRENTMESSAGE}```",
