@@ -48,5 +48,6 @@ Here is a list of the global placeholders (placeholders that are always the same
 | {INVITE}    | Support Server Invite |
 | {PREFIX}    | Server Prefix         |
 | {USER}*     | Message Author        |
+| {USERNAME}  | Username e.g. Fyrlex  |
 
 *This placeholder may have a few spots in the files that do not represent the Message Author.
