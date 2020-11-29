@@ -12,7 +12,7 @@
     "**{USER}, mi prefijo para el servidor es:** `{PREFIX}`",
     "Escriba `{PREFIX}help` para una lista de comandos. También puedes escribir un comando después de `{PREFIX}help` para detalles específicos.",
     "",
-    "*¿Necesita más ayuda? ¡Únete a nuestro [Servidor de Soporte]({INVITE}) o mira nuestra [Guía]({GUIDE})!*"
+    "{CHECK} *¿Necesita más ayuda? ¡Únete a nuestro [Servidor de Soporte]({INVITE}) o mira nuestra [Guía]({GUIDE})!*"
   ],
   "true": "verdadero",
   "false": "falso",

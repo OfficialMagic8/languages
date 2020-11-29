@@ -11,7 +11,7 @@
     "**{USER}, o meu prefixo para este servidor é:** `{PREFIX}`",
     "Escreva `{PREFIX}help` para a lista de comandos. Tambem podes colocar um comando antes de `{PREFIX}help` para detalhes especificos.",
     "",
-    "*Percisas de ajuda bruta? Entra no [Support Server]({INVITE}) ou vê o no [Guide]({GUIDE})!*"
+    "{CHECK} *Percisas de ajuda bruta? Entra no [Support Server]({INVITE}) ou vê o no [Guide]({GUIDE})!*"
   ],
   "true": "verdadeiro",
   "false": "falso",

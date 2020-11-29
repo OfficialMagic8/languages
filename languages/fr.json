@@ -12,7 +12,7 @@
     "**{USER}, mon préfixe pour le serveur est:** {PREFIX}",
     "Tapez `{PREFIX}help` ou `{PREFIX}help <command>` pour obtenir des informations utiles.",
     "",
-    "*Vous avez besoin d'une aide supplémentaire? Rejoignez notre [Serveur de Soutien]({INVITE})!*"
+    "{CHECK} *Vous avez besoin d'une aide supplémentaire? Rejoignez notre [Serveur de Soutien]({INVITE})!*"
   ],
   "8ball": {
     "asksomething": "{CROSS} **Vous devez poser une question oui/non!**",
