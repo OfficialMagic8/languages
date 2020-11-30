@@ -27,7 +27,7 @@
       "",
       "{ATTENTION} Vous devez ajouter au moins 2 réponses."
     ],
-    "askedquestion": "{TAG} question posée #{NUMBER}",
+    "askedquestion": "{USERNAME} question posée #{NUMBER}",
     "question": "Question",
     "response": "Réponse",
     "replies": {

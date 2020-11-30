@@ -30,7 +30,7 @@
       "",
       "{INFO} Para añadir nuevas respuestas, escriba: `{PREFIX}s 8ball setreplies Reply 1 | Reply 2 | Reply 3`"
     ],
-    "askedquestion": "{TAG} hizo la pregunta #{NUMBER}",
+    "askedquestion": "{USERNAME} hizo la pregunta #{NUMBER}",
     "question": "Pregunta",
     "answer": "Respuesta",
     "replies": {
@@ -43,7 +43,7 @@
         "Y los cerdos vuelan... oh espera, pensé que sólo hablábamos de cosas que son posibles",
         "¿Estás bien? La gente normal no pregunta eso",
         "¿Siempre eres así?",
-        "Tan pronto como subes tus notas",
+        "Tan pronto como subas tus notas",
         "Tan pronto como tu headass aprenda a leer",
         "Pregúntame de nuevo, no estoy seguro",
         "Pregúntale a papá",

@@ -57,7 +57,7 @@
         "Call your grandma you dumb fuck",
         "Call the police when you realize how dumb you are",
         "Correct",
-        "Definitely, thats a great idea",
+        "Definitely, that's a great idea",
         "Do it, you won't!",
         "Does your mom know that?",
         "Ehhhh?",
@@ -171,7 +171,7 @@
         "Bruh you can't ask that",
         "Call the police when you realize how dumb you are",
         "Correct",
-        "Definitely, thats a great idea",
+        "Definitely, that's a great idea",
         "Do it, you won't!",
         "Does your mom know that?",
         "Ehhhh?",
@@ -971,10 +971,14 @@
     }
   },
   "mcserver": {
+    "javawarning": "⚠️ This feature is available for Java Edition servers only!",
+    "online": "online",
+    "offline": "offline",
     "status": [
-      "{CHECK} **Status:** `{STATUS}`",
+      "{CHECK} **Online:** `{STATUS}`",
       "📡 **IP:** `{SERVER}`",
       "",
+      "🔌 **Version:** {AVAILABLEVERSIONS}",
       "👥 **Players:** {ONLINEPLAYERS}/{MAXPLAYERS}",
       "{PLAYERS}"
     ],
@@ -1268,7 +1272,7 @@
     "confirmremoveall": [
       "{WARNING} **{USER}, are you sure you want to remove the {ROLE} from all users who have it?**",
       "",
-      "{INFO} Please type `yes` within **10** seconds to confirm, otherwise you may ignore this message."
+      "{INFO} Please type `confirm` within **10** seconds to confirm, otherwise you may ignore this message."
     ],
     "nouserswithrole": "{CROSS} **{USER}, you cannot use this command because no users have {ROLE}.**",
     "didnotconfirm": "{CROSS} **{USER}, no users had {ROLE} removed.**",
@@ -1596,7 +1600,8 @@
     "cooldownupdated": [
       "{CHECK} **List Manager Randomizer Cooldown Updated**",
       "",
-      "**New Cooldown:** {NEWCOOLDOWN} minutes"]
+      "**New Cooldown:** {NEWCOOLDOWN} seconds"
+    ]
   },
   "say": {
     "messagerequired": "{CROSS} **{USER}, please provide a message.**",
