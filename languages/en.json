@@ -975,7 +975,7 @@
     "online": "online",
     "offline": "offline",
     "status": [
-      "{CHECK} **Online:** `{STATUS}`",
+      "{CHECK} **Status:** `{STATUS}`",
       "📡 **IP:** `{SERVER}`",
       "",
       "🔌 **Version:** {VERSIONS}",
