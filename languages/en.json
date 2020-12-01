@@ -367,7 +367,7 @@
       "description": [
         "**{CHECK} {USER} checked their Dick Size!**",
         "",
-        "**Size:** {SIZE}",
+        "**Size:** {SIZE} inches",
         "",
         "{MESSAGE}"
       ],
@@ -1651,7 +1651,7 @@
       "",
       "{INFO} To add a user, type: `{PREFIX}ap adduser <user>`"
     ],
-    "removeusermenutitle": "{BOTNAME} - Anti-Ping Add User",
+    "removeusermenutitle": "{BOTNAME} - Anti-Ping Remove User",
     "removeusermenu": [
       "Removing an Anti-Ping user will allow anyone to @mention them.",
       "",
