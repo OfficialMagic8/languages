@@ -978,7 +978,7 @@
       "{CHECK} **Online:** `{STATUS}`",
       "📡 **IP:** `{SERVER}`",
       "",
-      "🔌 **Version:** {AVAILABLEVERSIONS}",
+      "🔌 **Version:** {VERSIONS}",
       "👥 **Players:** {ONLINEPLAYERS}/{MAXPLAYERS}",
       "{PLAYERS}"
     ],
@@ -1248,6 +1248,7 @@
   },
   "popular": {
     "title": "{BOTNAME} - Popular Commands",
+    "footer": "Data Received From Statcord",
     "description": [
       "{COMMANDS}"
     ]
@@ -1435,7 +1436,7 @@
       "{INFO} Lists are not case sensitive.",
       "To get a random item from a list, type: `{PREFIX}lm r <list>`"
     ],
-    "footer": "🗒️ List: {LIST}",
+    "footer": "🗒️ List: {LISTNAME}",
     "singlerandomize": "Final Item",
     "multirandomize": "Final Items",
     "singlerandomizing": [
