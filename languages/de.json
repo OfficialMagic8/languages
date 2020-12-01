@@ -4,6 +4,9 @@
   "flag": "🇩🇪",
   "link": "https://github.com/OfficialMagic8/Languages/blob/master/languages/de.json",
   "authors": [
-    "none"
-  ]
+    "Jessdom#1989"
+  ],
+  "true": "richtig",
+  "false": "falsch",
+  "none": "nichts"
 }
