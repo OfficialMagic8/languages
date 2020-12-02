@@ -974,13 +974,21 @@
     "javawarning": "⚠️ This feature is available for Java Edition servers only!",
     "online": "online",
     "offline": "offline",
+    "pagefooter": "📄 Page {PAGE}/{TOTALPAGES}",
     "status": [
       "{CHECK} **Status:** `{STATUS}`",
       "📡 **IP:** `{SERVER}`",
       "",
       "🔌 **Version:** {VERSIONS}",
       "👥 **Players:** {ONLINEPLAYERS}/{MAXPLAYERS}",
-      "{PLAYERS}"
+      "{PLAYERS}",
+      "",
+      "{INFO} To view more players, type a page number that can be found below!"
+    ],
+    "invalidpage": [
+      "{CROSS} **Invalid Page Provided:** `{INPUT}`",
+      "",
+      "{INFO} Please provide a page number between **1** and **{TOTALPAGES}**."
     ],
     "checking": "{LOADING} Checking server...",
     "updated": [
