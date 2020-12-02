@@ -1624,7 +1624,7 @@
       "`{PREFIX}ap removerole` - Remove bypass roles",
       "",
       "`{PREFIX}ap roles` View bypass roles",
-      "`{PREFIX}ap users` View Anti-Ping users **DISABLED**",
+      "`{PREFIX}ap users` View Anti-Ping users",
       "",
       "{WARNING} This won't actually prevent pings, it will only delete the message and warn the user.",
       "{INFO} Use these commands for more information!"
