@@ -1164,7 +1164,7 @@
       "🗓️ **Created on:** {CREATIONDATE}",
       "",
       "**Useful Links:**",
-      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Languages]({GITHUB}) • [Support Server]({SUPPORTSERVER})"
+      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Languages]({GITHUB}) • [Support Server]({SUPPORTSERVER}) • [Status]({STATUS})"
     ]
   },
   "help": {
@@ -1211,12 +1211,12 @@
     ],
     "bottom": "Do you have ideas or suggestions? **Let us know in our [Support Server]({INVITE}).**",
     "cannotsend": [
-      "{CROSS} **{USER}, the help menu could not be sent. Please enable private messages.**",
+      "{CROSS} **{USER}, the Help Menu could not be sent. Please enable private messages.**",
       "",
       "*Need further assistance? Join our [Support Server]({INVITE}) or check out our [Guide]({GUIDE})!*"
     ],
     "sent": [
-      "{CHECK} **{USER}, the help menu was sent. Please check your private messages or click [here]({MESSAGELINK}).**",
+      "{CHECK} **{USER}, the [Help Menu]({MESSAGELINK}) was sent to your DMs.**",
       "",
       "*Need further assistance? Join our [Support Server]({INVITE}) or check out our [Guide]({GUIDE})!*"
     ]
@@ -1247,6 +1247,7 @@
     ]
   },
   "popular": {
+    "loading": "{LOADING} **{USER}, fetching popular commands from Statcord...**",
     "title": "{BOTNAME} - Popular Commands",
     "footer": "Data Received From Statcord",
     "description": [

@@ -1156,7 +1156,7 @@
       "🗓️ **Được tạo ra:** {CREATIONDATE}",
       "",
       "**Liên kết hữu ích:**",
-      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Languages]({GITHUB}) • [Support Server]({SUPPORTSERVER})"
+      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Languages]({GITHUB}) • [Support Server]({SUPPORTSERVER}) • [Status]({STATUS})"
     ]
   },
   "help": {
