@@ -976,7 +976,7 @@
       "`{PREFIX}mcserver set` - Set the IP/Domain for this server",
       "`{PREFIX}mcserver remove` - Remove the IP/Domain",
       "`{PREFIX}mcserver help` - Minecraft Server Help Menu",
-      "`{PREFIX}mcserver <page>` - View different pages",
+      "`{PREFIX}mcserver <page>` - View different pages if available",
       "",
       "{INFO} Default users cannot modify the server, but they can view the pages."
     ],
@@ -989,6 +989,7 @@
     "online": "online",
     "offline": "offline",
     "pagefooter": "📄 Page {PAGE}/{TOTALPAGES}",
+    "haspages": "{INFO} To view more players, type a page number that can be found below!",
     "status": [
       "{CHECK} **Status:** `{STATUS}`",
       "📡 **IP:** `{SERVER}`",
@@ -996,8 +997,7 @@
       "",
       "👥 **Players:** {ONLINEPLAYERS}/{MAXPLAYERS}",
       "{PLAYERS}",
-      "",
-      "{INFO} To view more players, type a page number that can be found below!"
+      "{HASPAGES}"
     ],
     "invalidpage": [
       "{CROSS} **Invalid Page Provided:** `{INPUT}`",
