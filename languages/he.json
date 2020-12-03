@@ -29,7 +29,7 @@
       "",
       "{INFO} כדי להוסיף תגובות חדשות השתמש `{PREFIX}s 8ball setreplies Reply 1 | Reply 2 | Reply 3`"
     ],
-    "askedquestion": "{TAG} שאל שאלה #{NUMBER}",
+    "askedquestion": "{USERNAME} שאל שאלה #{NUMBER}",
     "question": "שאלה",
     "answer": "תשובה",
         "replies": {
