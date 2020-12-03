@@ -905,26 +905,26 @@
     "success": {
       "title": "Hypixel Profile of {TARGET}",
       "description": [
-        "**Displayname:** {DISPLAYNAME}",
+        "**IGN:** {DISPLAYNAME}",
         "**Rank:** {RANK}",
         "**Subscription:** {SUBSCRIPTION}",
         "",
         "**__Connection__**",
-        "**First login:** {FIRSTLOGIN}",
-        "**Last login:** {LASTLOGIN}",
-        "**Last logout:** {LASTLOGOUT}",
+        "**First Login:** {FIRSTLOGIN}",
+        "**Last Login:** {LASTLOGIN}",
+        "**Last Logout:** {LASTLOGOUT}",
         "",
         "**__General__**",
-        "**Hypixel level:** {NETWORKLEVEL}",
-        "**Hypixel experience:** {NETWORKEXP}",
+        "**Hypixel Level:** {NETWORKLEVEL}",
+        "**Hypixel Experience:** {NETWORKEXP}",
         "**Karma:** {KARMA}",
-        "**Reward streak:** {REWARDSTREAK}",
-        "**Best reward streak:** {BESTREWARDSTREAK}",
-        "**Achievement points:** {ACHIEVEMENTPOINTS}",
+        "**Reward Streak:** {REWARDSTREAK}",
+        "**Best Reward Streak:** {BESTREWARDSTREAK}",
+        "**Achievement Points:** {ACHIEVEMENTPOINTS}",
         "",
         "**__Personal__**",
-        "**User language:** {USERLANGUAGE}",
-        "**Social media:** {SOCIALMEDIA}",
+        "**Language:** {USERLANGUAGE}",
+        "**Media:** {SOCIALMEDIA}",
         "**Status:** {STATUS}"
       ],
       "online": "\n**Gamemode:** {GAMEMODE}"
@@ -971,6 +971,20 @@
     }
   },
   "mcserver": {
+    "menutitle": "{BOTNAME} - Minecraft Server Status Menu",
+    "helpmenu": [
+      "`{PREFIX}mcserver set` - Set the IP/Domain for this server",
+      "`{PREFIX}mcserver remove` - Remove the IP/Domain",
+      "`{PREFIX}mcserver help` - Minecraft Server Help Menu",
+      "`{PREFIX}mcserver <page>` - View different pages",
+      "",
+      "{INFO} Default users cannot modify the server, but they can view the pages."
+    ],
+    "setmenu": [
+      "View information of a Java Edition Minecraft Server",
+      "",
+      "{INFO} To set the IP/Domain command for your Discord server, type: `{PREFIX}mcserver set <IP/Domain>`"
+    ],
     "javawarning": "⚠️ This feature is available for Java Edition servers only!",
     "online": "online",
     "offline": "offline",
@@ -978,8 +992,8 @@
     "status": [
       "{CHECK} **Status:** `{STATUS}`",
       "📡 **IP:** `{SERVER}`",
+      "🔑 **Version:** {VERSIONS}",
       "",
-      "🔌 **Version:** {VERSIONS}",
       "👥 **Players:** {ONLINEPLAYERS}/{MAXPLAYERS}",
       "{PLAYERS}",
       "",
@@ -1172,7 +1186,8 @@
       "🗓️ **Created on:** {CREATIONDATE}",
       "",
       "**Useful Links:**",
-      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Languages]({GITHUB}) • [Support Server]({SUPPORTSERVER}) • [Status]({STATUS})"
+      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Languages]({GITHUB}) ",
+      "[Support Server]({SUPPORTSERVER}) • [Status]({STATUS}) [Progress]({PROGRESS})"
     ]
   },
   "help": {
@@ -1316,7 +1331,6 @@
     "description": [
       "**Mention:** {USER}",
       "**Nickname:** {NICKNAME}",
-      "**Status:** {STATUS}",
       "**Joined:** {JOINED}",
       "**Created:** {CREATED}",
       "**Boosting:** {BOOSTING}",
