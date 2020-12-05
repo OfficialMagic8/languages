@@ -538,6 +538,9 @@
   "howgay": {
     "success": "🏳️‍🌈 {TARGET} is `{PERCENT}%` gay 🏳️‍🌈"
   },
+  "imposter": {
+    "title": "{USERNAME} was the imposter..." 
+  },
   "iq": {
     "superdumb": [
       "bruh you got the iq of a tomato",
@@ -1187,7 +1190,7 @@
       "",
       "**Useful Links:**",
       "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Languages]({GITHUB}) ",
-      "[Support Server]({SUPPORTSERVER}) • [Status]({STATUS}) [Progress]({PROGRESS})"
+      "[Support]({SUPPORTSERVER}) • [Status]({STATUS}) • [Progress]({PROGRESS})"
     ]
   },
   "help": {
@@ -1248,8 +1251,9 @@
     "title": "{GUILDNAME}",
     "description": [
       "✏️ **Prefix:** `{PREFIX}`",
-      "📊 **User/Bots/Online**: {USERS}/{BOTS}/{ONLINE}",
       "🌎 **Language:** {LANGUAGE}",
+      "📊 **User / Bots:** {USERS} / {BOTS}",
+      "💬 **Text / Voice:** {TEXTCHANNELS} / {VOICECHANNELS}",
       "{PREMIUM}",
       "👑 **Owner:** {OWNER}",
       "🗓️ **Server Created:** {CREATED}",
