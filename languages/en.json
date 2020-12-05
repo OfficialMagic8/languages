@@ -539,8 +539,8 @@
     "success": "🏳️‍🌈 {TARGET} is `{PERCENT}%` gay 🏳️‍🌈"
   },
   "imposter": {
-    "title": "{USERNAME} was the imposter..." 
-  },
+    "title": "Is {USERNAME} the imposter in {GUILDNAME}?" 
+},
   "iq": {
     "superdumb": [
       "bruh you got the iq of a tomato",
@@ -1229,22 +1229,23 @@
       "utils": "Utilities",
       "admin": "Administrator"
     },
-    "hasdisabledcommands": "{WARNING} Commands marked with `!` are disabled.\nEnable them by typing: `{PREFIX}s toggle <command>`\n\n",
+    "hasdisabledcommands": "{WARNING} Commands marked with `!` are disabled in {GUILDNAME}\n\n",
+    "hasdisabledcommandsadmin": "{WARNING} Commands marked with `!` are disabled in {GUILDNAME}.\nEnable them by typing: `{PREFIX}s toggle <command>`\n\n",
     "adminbottom": [
       "{HASDISABLED}{INFO} Get more information of a command by typing: `{PREFIX}help <command>`",
       "",
-      "Do you have ideas or suggestions? **Let us know in our [Support Server]({INVITE}).**"
+      "**Do you have ideas or suggestions?** Let us know in our [**Support Server**]({INVITE})."
     ],
-    "bottom": "Do you have ideas or suggestions? **Let us know in our [Support Server]({INVITE}).**",
+    "bottom": "**Do you have ideas or suggestions?** Let us know in our [**Support Server**]({INVITE}).",
     "cannotsend": [
       "{CROSS} **{USER}, the Help Menu could not be sent. Please enable private messages.**",
       "",
-      "*Need further assistance? Join our [Support Server]({INVITE}) or check out our [Guide]({GUIDE})!*"
+      "*Need further assistance? Join our [**Support Server**]({INVITE}) or check out our [**Guide**]({GUIDE})!*"
     ],
     "sent": [
       "{CHECK} **{USER}, the [Help Menu]({MESSAGELINK}) was sent to your DMs.**",
       "",
-      "*Need further assistance? Join our [Support Server]({INVITE}) or check out our [Guide]({GUIDE})!*"
+      "*Need further assistance? Join our [**Support Server**]({INVITE}) or check out our [**Guide**]({GUIDE})!*"
     ]
   },
   "info": {
@@ -2075,5 +2076,8 @@
       "",
       "{INFO} **Please contact us if you'd like to help!**"
     ]
+  },
+  "settings": {
+    
   }
 }
