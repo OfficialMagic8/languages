@@ -17,7 +17,7 @@
   "true": "verdadero",
   "false": "falso",
   "none": "ninguno",
-  "unexpectederror": [
+  "embederror": [
     "{CROSS} **{USER}, se produjo un error inesperado.**",
     "",
     "{INFO} Por favor, únase a nuestro [Servidor de Soporte]({INVITE}) para la asistencia."

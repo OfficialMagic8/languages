@@ -16,7 +16,7 @@
   "true": "true",
   "false": "false",
   "none": "none",
-  "unexpectederror": [
+  "embederror": [
     "{CROSS} **{USER}, đã xảy ra lỗi không mong muốn.**",
     "",
     "{INFO} Vui lòng tham gia [Support Server]({INVITE}) của chúng tôi để được hỗ trợ."

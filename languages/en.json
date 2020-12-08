@@ -17,10 +17,21 @@
   "true": "true",
   "false": "false",
   "none": "none",
-  "unexpectederror": [
+  "embederror": [
     "{CROSS} **{USER}, an unexpected error occured.**",
     "",
-    "{INFO} Please join our [Support Server]({INVITE}) for assistance."
+    "• This can happen if you are trying to break a feature.",
+    "• Please make sure {BOT} has the correct **permissions** @ <{PERMISSIONS}>.",
+    "",
+    "{INFO} If you continue to experience this error please contact support [**here**]({INVITE}) for assistance."
+  ],
+  "messageerror": [
+    "{CROSS} **{USER}, an unexpected error occured.**",
+    "",
+    "• This can happen if you are trying to break a feature.",
+    "• Please make sure {BOT} has the correct **permissions** @ <{PERMISSIONS}>.",
+    "",
+    "{INFO} If you continue to experience this error please contact support @ {SHORTINVITE} for assistance."
   ],
   "8ball": {
     "asksomething": "{CROSS} **{USER}, please ask a yes or no question.**",
@@ -1420,6 +1431,22 @@
     }
   },
   "listmanager": {
+    "upgrade": {
+      "singleortriple": "**Single or Triple Package**",
+      "triple": "**Triple Package**",
+      "description": "Please upgrade to the [{OPTIONS]({DONATELINK}) to create more lists.",
+      "cannotupgrade": "Lists cannot be increased through packages anymore."
+    },
+    "reachedlimit": [
+      "{CROSS} **List Limit Reached:** `{MAX}`",
+      "",
+      "{UPGRADE}",
+      "",
+      "**Current Lists:**",
+      "{CURRENTLISTS}",
+      "",
+      "{INFO} To delete a list, type: `{PREFIX}lm delete <list>`"
+    ],
     "helptitle": "{BOTNAME} - List Manager Menu",
     "help": [
       "`{PREFIX}lm add` - Add an item to a list",

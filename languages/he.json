@@ -16,7 +16,7 @@
   "true": "נכון",
   "false": "לא נכון",
   "none": "אינה",
-  "unexpectederror": [
+  "embederror": [
     "{CROSS} **{USER}, שגיאה לא צפויה התרחשה.**",
     "",
     "{INFO} בבקשה כנס  [לשרת התמיכה שלנו]({INVITE}) לעזרה"
