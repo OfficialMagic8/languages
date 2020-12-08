@@ -947,7 +947,7 @@
   "mcskin": {
     "enterusername": "{CROSS} **{USER}, please provide a valid username or UUID.**",
     "invalid": "{CROSS} **{USER}, the player, `{TOSEARCH}`, does not exist.**",
-    "success": "{USER}'s Minecraft Skin"
+    "success": "{TOSEARCH}'s Minecraft Skin"
   },
   "namehistory": {
     "enterusername": "{CROSS} **{USER}, please provide a valid username or UUID.**",
@@ -1296,6 +1296,13 @@
     "success": "{CHECK} Here is {USER}'s avatar! ([link]({URL}))"
   },
   "lookingforgroup": {
+    "norole": [
+      "{CROSS} **No LFG Role Set**",
+      "",
+      "No members can join the LFG role through {BOT} if the role is not set.",
+      "",
+      "{INFO} To set the LFG role, type: `{PREFIX}`s lfg role <role>"
+    ],
     "roleadded": "{CHECK} **{USER}, you now have {ROLE}!** It will be removed in {COOLDOWN} hours.",
     "cannotaddrole": "{CROSS} **{USER}, there was an error giving you {ROLE}!",
     "memberlist": [
