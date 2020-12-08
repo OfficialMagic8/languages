@@ -51,7 +51,7 @@ Here is a list of the global placeholders (placeholders that are always the same
 | {BOTNAME}   | Magic8                |
 | {INVITE}    | Support Server Invite |
 | {PREFIX}    | Server Prefix         |
-| {USER}      | Message Author        |
+| {USER}      | @Message Author       |
 | {USERNAME}  | Username e.g. Fyrlex  |
 
 If you do not understand a placeholder, please contact support.
