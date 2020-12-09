@@ -909,7 +909,7 @@
   "cape": {
     "invalid": "{CROSS} **{USER}, please provide a valid username or UUID.**",
     "nocape": "{CROSS} **{USER}, the player, `{TOSEARCH}`, does not have a cape.**",
-    "success": "{USER}'s Optifine Cape"
+    "success": "{TOSEARCH}'s Optifine Cape"
   },
   "hypixel": {
     "error": {
