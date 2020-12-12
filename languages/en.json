@@ -1107,11 +1107,8 @@
     ]
   },
   "overwatch": {
+    "fetching": "{LOADING} **Fetching {TOSEARCH}'s Overwatch profile.**",
     "error": {
-      "region": [
-        "{CROSS} **Please provide one of the following regions if you are __not__ in the U.S.**",
-        "`eu` `asia`"
-      ],
       "user": [
         "{CROSS} **{USER}, please provide a username and discriminator!**",
         "**This can be found in your [battle.net](https://battle.net) profile.**"
@@ -1119,9 +1116,9 @@
       "unexpected": [
         "{CROSS} **Error**",
         "",
-        "-Please check that you're using the proper tag.",
-        "-Example: `{PREFIX}ow Fyrlex#1801`",
-        "-Only PC accounts accepted (for now)"
+        "• Please check that you're using the proper tag.",
+        "• Example: `{PREFIX}ow Fyrlex#1801`",
+        "• Only PC accounts accepted (for now)"
       ]
     },
     "success": {
@@ -1434,7 +1431,7 @@
     "upgrade": {
       "singleortriple": "**Single or Triple Package**",
       "triple": "**Triple Package**",
-      "description": "Please upgrade to the [{OPTIONS]({DONATELINK}) to create more lists.",
+      "description": "Please upgrade to the [{OPTIONS}]({DONATELINK}) to create more lists.",
       "cannotupgrade": "Lists cannot be increased through packages anymore."
     },
     "reachedlimit": [
@@ -1701,7 +1698,7 @@
     "upgrade": {
       "singleortriple": "**Single or Triple Package**",
       "triple": "**Triple Package**",
-      "description": "Please upgrade to the [{OPTIONS]({DONATELINK}) to disable pings for more users.",
+      "description": "Please upgrade to the [{OPTIONS}]({DONATELINK}) to disable pings for more users.",
       "cannotupgrade": "Anti-Ping users cannot be increased through packages anymore."
     },
     "addusermenutitle": "{BOTNAME} - Anti-Ping Add User",
@@ -1844,7 +1841,7 @@
     "upgrade": {
       "singleortriple": "**Single or Triple Package**",
       "triple": "**Triple Package**",
-      "description": "Please upgrade to the [{OPTIONS]({DONATELINK}) to create more Auto Voice Channels.",
+      "description": "Please upgrade to the [{OPTIONS}]({DONATELINK}) to create more Auto Voice Channels.",
       "cannotupgrade": "Auto Voice Channels cannot be increased through packages anymore."
     },
     "reachedlimit": [
