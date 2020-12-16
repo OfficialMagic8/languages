@@ -445,26 +445,24 @@
     "establised": "🔊 Alguien respondió el telefono. **¡Conexión establecida!**",
     "youhungup": "\\🔴 **¡Colgaste el telefono!**",
     "otherhungup": "\\🔴 **¡Te colgaron el telefono!**",
-    "timeout": "\\⏰ No se detectó ningun mensaje por más de un minuto. **¡Conexión perdidad!**"
+    "timeout": "\\⏰ No se detectó ningun mensaje por más de un minuto. **¡Conexión perdida!**"
   },
   "yomomma": {},
   "botinfo": {
-    "extra": [
-      "",
-      "📦 **RAM:** {RAM}",
-      "🖥️ **\\*CPU:** {USAGE}% (15m average)"
-    ],
     "title": "{BOTNAME} - Bot Information",
     "description": [
       "📚 **Gremios:** {GUILDS}",
       "👥 **Usuarios:** {USERS}",
+      "💬 **Canales:** {CHANNELS}",
       "",
+      "{DJS} **v{DJSVERSION}**",
+      "{NODE} **v{NODEVERSION}**",
       "⏲️ **Tiempo de actividad:** {UPTIME}",
       "🛰️ **Ping:** {PING}",
       "",
       "👑 **Dueño:** {OWNER}",
-      "💎 **Desarrollador principal:** {HEADDEVELOPER}",
-      "🗓️ **Creado en:** {CREATIONDATE}",
+      "💎 **Desarrollador Principal:** {HEADDEVELOPER}",
+      "🗓️ **Creado:** {CREATIONDATE}",
       "",
       "**Links útiles:**",
       "[Premium]({DONATELINK}) • [Guía]({GUIDE}) • [Lenguajes]({GITHUB}) ",
