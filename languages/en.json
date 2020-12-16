@@ -17,6 +17,8 @@
   "true": "true",
   "false": "false",
   "none": "none",
+  "singleortriple": "**Single or Triple Package**",
+  "triple": "**Triple Package**",
   "embederror": [
     "{CROSS} **{USER}, an unexpected error occured.**",
     "",
@@ -550,8 +552,8 @@
     "success": "🏳️‍🌈 {TARGET} is `{PERCENT}%` gay 🏳️‍🌈"
   },
   "imposter": {
-    "title": "Is {USERNAME} the imposter in {GUILDNAME}?" 
-},
+    "title": "Is {USERNAME} the imposter in {GUILDNAME}?"
+  },
   "iq": {
     "superdumb": [
       "bruh you got the iq of a tomato",
@@ -1179,25 +1181,23 @@
   },
   "yomomma": {},
   "botinfo": {
-    "extra": [
-      "",
-      "📦 **RAM:** {RAM}",
-      "🖥️ **\\*CPU:** {USAGE}% (15m average)"
-    ],
     "title": "{BOTNAME} - Bot Information",
     "description": [
       "📚 **Guilds:** {GUILDS}",
       "👥 **Users:** {USERS}",
+      "💬 **Channels:** {CHANNELS}",
       "",
+      "{DJS} **v{DJSVERSION}**",
+      "{NODE} **v{NODEVERSION}**",
       "⏲️ **Uptime:** {UPTIME}",
       "🛰️ **Ping:** {PING}",
       "",
       "👑 **Owner:** {OWNER}",
       "💎 **Head Developer:** {HEADDEVELOPER}",
-      "🗓️ **Created on:** {CREATIONDATE}",
+      "🗓️ **Created:** {CREATIONDATE}",
       "",
       "**Useful Links:**",
-      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Languages]({GITHUB}) ",
+      "[Premium]({DONATELINK}) • [Guide]({GUIDE}) • [Languages]({GITHUB})",
       "[Support]({SUPPORTSERVER}) • [Status]({STATUS}) • [Progress]({PROGRESS})"
     ]
   },
@@ -1429,8 +1429,6 @@
   },
   "listmanager": {
     "upgrade": {
-      "singleortriple": "**Single or Triple Package**",
-      "triple": "**Triple Package**",
       "description": "Please upgrade to the [{OPTIONS}]({DONATELINK}) to create more lists.",
       "cannotupgrade": "Lists cannot be increased through packages anymore."
     },
@@ -1696,8 +1694,6 @@
       "{PINGED}"
     ],
     "upgrade": {
-      "singleortriple": "**Single or Triple Package**",
-      "triple": "**Triple Package**",
       "description": "Please upgrade to the [{OPTIONS}]({DONATELINK}) to disable pings for more users.",
       "cannotupgrade": "Anti-Ping users cannot be increased through packages anymore."
     },
@@ -1839,8 +1835,6 @@
       "{INFO} You cannot create Auto Channels until a category is selected. If the Auto Voice category is deleted or moved, all Auto Channels and Sub-Channels will be deleted."
     ],
     "upgrade": {
-      "singleortriple": "**Single or Triple Package**",
-      "triple": "**Triple Package**",
       "description": "Please upgrade to the [{OPTIONS}]({DONATELINK}) to create more Auto Voice Channels.",
       "cannotupgrade": "Auto Voice Channels cannot be increased through packages anymore."
     },
@@ -1957,10 +1951,59 @@
       "",
       "{INFO} Auto Voice Channels can be created at this time!"
     ],
+    "confirmreset": [
+      "{WARNING} **Reset Auto Voice Channels**",
+      "",
+      "Please type `confirm` to reset the generated channels.",
+      "",
+      "{INFO} This will attempt to delete any created channels and reset the number displayed for each generated channel."
+    ],
+    "resetconfirmed": [
+      "{CHECK} **Generated Channels Reset**",
+      "",
+      "**Channels Deleted:**",
+      "{CHANNELSDELETED}"
+    ],
+    "didnotconfirm": "{CROSS} **{USER}, you did not confirm. Auto Voice Channels were not reset.**",
+    "namemenutitle": "{BOTNAME} - Auto Voice Channels Names",
+    "namemenu": [
+      "The generated channels can have their name customized. Use {NUMBER} when setting the name.",
+      "",
+      "**Available Types:**",
+      "{TYPES}",
+      "",
+      "{INFO} To set the name, type: `{PREFIX}av name <type> <name>`"
+    ],
+    "nameinvalidtype": [
+      "{CROSS} **Invalid Type:** {INPUT}",
+      "",
+      "**Available Types:**",
+      "{TYPES}",
+      "",
+      "{INFO} To set the name, type: `{PREFIX}av name <type> <name>`"
+    ],
+    "nametoolong": [
+      "{CROSS} **Name Too Long**",
+      "",
+      "{INFO} Please limit the name to be no more than 8 characters, {NUMBER} is not included."
+    ],
+    "nonumberwritten": [
+      "{CROSS} **Number Placeholder Missing**",
+      "",
+      "{INFO} Please put `{NUMBER}` somewhere in the text."
+    ],
+    "nameupdated": [
+      "{CHECK} **Name Updated for {TYPE} Channels**",
+      "",
+      "**New Name:** {NEWNAME}",
+      "",
+      "{INFO} Only new channels will receive the new name update."
+    ],
     "helptitle": "{BOTNAME} - Auto Voice Channels Help Menu",
     "help": [
       "`{PREFIX}av create` - Create Auto Voice Channels",
-      "`{PREFIX}av delete` Delete Auto Voice Channels",
+      "`{PREFIX}av delete` - Delete Auto Voice Channels",
+      "`{PREFUX}av reset` - Delete generated channels and number ID",
       "`{PREFIX}av category` - Set Auto Voice Channel Category",
       "`{PREFIX}av cooldown` - Set Auto Channels Cooldown",
       "`{PREFIX}av info` - Current Auto Voice Channels Information",
@@ -2108,7 +2151,5 @@
       "{INFO} **Please contact us if you'd like to help!**"
     ]
   },
-  "settings": {
-    
-  }
+  "settings": {}
 }
