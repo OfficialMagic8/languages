@@ -457,8 +457,8 @@
       "",
       "{DJS} **v{DJSVERSION}**",
       "{NODE} **v{NODEVERSION}**",
-      "⏲️ **Tiempo de actividad:** {UPTIME}",
       "🛰️ **Ping:** {PING}",
+      "⏲️ **Tiempo de Actividad:** {UPTIME}",
       "",
       "👑 **Dueño:** {OWNER}",
       "💎 **Desarrollador Principal:** {HEADDEVELOPER}",
@@ -552,9 +552,10 @@
   "popular": {
     "loading": "{LOADING} **{USER}, buscando comandos populares en Statcord...**",
     "title": "{BOTNAME} - Comandos Populares",
-    "footer": "Datos recibidos de Statcord",
     "description": [
-      "{COMMANDS}"
+      "{COMMANDS}",
+      "",
+      "{INFO} Para más estadísticas, vaya a [**Statcord**]({STATCORD})."
     ]
   },
   "premium": {

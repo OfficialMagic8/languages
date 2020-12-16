@@ -23,7 +23,7 @@
     "{CROSS} **{USER}, an unexpected error occured.**",
     "",
     "• This can happen if you are trying to break a feature.",
-    "• Please make sure {BOT} has the correct **permissions** @ <{PERMISSIONS}>.",
+    "• Please make sure {BOT} has the correct [**permissions**]({PERMISSIONS}).",
     "",
     "{INFO} If you continue to experience this error please contact support [**here**]({INVITE}) for assistance."
   ],
@@ -1189,8 +1189,8 @@
       "",
       "{DJS} **v{DJSVERSION}**",
       "{NODE} **v{NODEVERSION}**",
-      "⏲️ **Uptime:** {UPTIME}",
       "🛰️ **Ping:** {PING}",
+      "⏲️ **Uptime:** {UPTIME}",
       "",
       "👑 **Owner:** {OWNER}",
       "💎 **Head Developer:** {HEADDEVELOPER}",
@@ -1285,9 +1285,10 @@
   "popular": {
     "loading": "{LOADING} **{USER}, fetching popular commands from Statcord...**",
     "title": "{BOTNAME} - Popular Commands",
-    "footer": "Data Received From Statcord",
     "description": [
-      "{COMMANDS}"
+      "{COMMANDS}",
+      "",
+      "{INFO} For more statistics, go to [**Statcord**]({STATCORD})."
     ]
   },
   "premium": {
@@ -2003,7 +2004,7 @@
     "help": [
       "`{PREFIX}av create` - Create Auto Voice Channels",
       "`{PREFIX}av delete` - Delete Auto Voice Channels",
-      "`{PREFUX}av reset` - Delete generated channels and number ID",
+      "`{PREFIX}av reset` - Delete generated channels and number ID",
       "`{PREFIX}av category` - Set Auto Voice Channel Category",
       "`{PREFIX}av cooldown` - Set Auto Channels Cooldown",
       "`{PREFIX}av info` - Current Auto Voice Channels Information",
