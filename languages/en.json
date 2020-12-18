@@ -1309,7 +1309,7 @@
       "",
       "No members can join the LFG role through {BOT} if the role is not set.",
       "",
-      "{INFO} To set the LFG role, type: `{PREFIX}`s lfg role <role>"
+      "{INFO} To set the LFG role, type: `{PREFIX}s lfg role <role>`"
     ],
     "roleadded": "{CHECK} **{USER}, you now have {ROLE}!** It will be removed in {COOLDOWN} hours.",
     "cannotaddrole": "{CROSS} **{USER}, there was an error giving you {ROLE}!",
