@@ -359,7 +359,7 @@
   },
   "bigemoji": {
     "success": "{CHECK} **{USER} Here is the emoji: ([link]({EMOJILINK}))**",
-    "error": "{CROSS} **{USER}, please make sure Magic8 shares a server with the custom emoji.**"
+    "error": "{CROSS} **{USER}, please make sure {BOT} shares a server with the custom emoji.**"
   },
   "christmas": {
     "description": [
@@ -1278,7 +1278,7 @@
       "",
       "Invite the bot to your server so all your friends can enjoy {BOT}'s unique features together!",
       "",
-      "[{MAGIC8EMOJI} **Click Here!**]({INVITE})"
+      "[{MAGIC8} **Click Here!**]({INVITE})"
     ]
   },
   "popular": {
@@ -2152,5 +2152,25 @@
       "{INFO} **Please contact us if you'd like to help!**"
     ]
   },
-  "settings": {}
+  "settings": {},
+  "slowmode": {
+    "menutitle": "{BOTNAME} - Slowmode",
+    "menu": [
+      "{BOT} is able to set a custom slowmode unlike regular channel settings in Discord.",
+      "",
+      "**Current Slowmode:**",
+      "{CHANNEL} - {TIME} seconds",
+      "",
+      "{INFO} To set the slowmode, type: `{PREFIX}slowmode <time>`"
+    ],
+    "notanumber": "{CROSS} **{USER}, please provide a valid number for {CHANNEL}'s slowmode.**",
+    "set": [
+      "{CHECK} **Slowmode Updated**",
+      "",
+      "**Channel:** {CHANNEL}",
+      "**Slowmode:** {TIME} seconds",
+      "",
+      "{INFO} To remove the slowmode, type: `{PREFIX}slowmode 0`"
+    ]
+  }
 }
