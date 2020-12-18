@@ -31,7 +31,7 @@
     "{CROSS} **{USER}, an unexpected error occured.**",
     "",
     "• This can happen if you are trying to break a feature.",
-    "• Please make sure {BOT} has the correct **permissions** @ <{PERMISSIONS}>.",
+    "• Please make sure {BOT} has the **Send Messages** & **Embed Links** permission.",
     "",
     "{INFO} If you continue to experience this error please contact support @ {SHORTINVITE} for assistance."
   ],
@@ -1213,11 +1213,10 @@
       "",
       "**Aliases:** {ALIASES}",
       "**Category:** {CATEGORY}",
-      "**Emoji:** {EMOJI}",
+      "**Disabled:** {ISDISABLED}",
       "**Toggleable:** {TOGGLEABLE}{PREMIUM}",
       "**Description:** {DESCRIPTION}"
     ],
-    "footer": "Something missing? Contact Support!",
     "tips": [
       "📝 **Prefix:** `{PREFIX}`",
       "",
@@ -1240,7 +1239,7 @@
     "hasdisabledcommands": "{WARNING} Commands marked with `!` are disabled in {GUILDNAME}\n\n",
     "hasdisabledcommandsadmin": "{WARNING} Commands marked with `!` are disabled in {GUILDNAME}.\nEnable them by typing: `{PREFIX}s toggle <command>`\n\n",
     "adminbottom": [
-      "{HASDISABLED}{INFO} Get more information of a command by typing: `{PREFIX}help <command>`",
+      "{HASDISABLED}{INFO} For more info of a command, type: `{PREFIX}help <command>`",
       "",
       "**Do you have ideas or suggestions?** Let us know in our [**Support Server**]({INVITE})."
     ],
@@ -1976,7 +1975,7 @@
       "{INFO} To set the name, type: `{PREFIX}av name <type> <name>`"
     ],
     "nameinvalidtype": [
-      "{CROSS} **Invalid Type:** {INPUT}",
+      "{CROSS} **Invalid Type:** `{INPUT}`",
       "",
       "**Available Types:**",
       "{TYPES}",
@@ -1984,7 +1983,7 @@
       "{INFO} To set the name, type: `{PREFIX}av name <type> <name>`"
     ],
     "nametoolong": [
-      "{CROSS} **Name Too Long**",
+      "{CROSS} **Name Too Long:** `{INPUT}`",
       "",
       "{INFO} Please limit the name to be no more than 8 characters, {NUMBER} is not included."
     ],
@@ -1996,7 +1995,7 @@
     "nameupdated": [
       "{CHECK} **Name Updated for {TYPE} Channels**",
       "",
-      "**New Name:** {NEWNAME}",
+      "**New Name:** `{NEWNAME}`",
       "",
       "{INFO} Only new channels will receive the new name update."
     ],
@@ -2004,7 +2003,8 @@
     "help": [
       "`{PREFIX}av create` - Create Auto Voice Channels",
       "`{PREFIX}av delete` - Delete Auto Voice Channels",
-      "`{PREFIX}av reset` - Delete generated channels and number ID",
+      "`{PREFIX}av reset` - Delete generated channels and channel number IDs",
+      "`{PREFIX}av name` - Set the name of a channel type",
       "`{PREFIX}av category` - Set Auto Voice Channel Category",
       "`{PREFIX}av cooldown` - Set Auto Channels Cooldown",
       "`{PREFIX}av info` - Current Auto Voice Channels Information",
