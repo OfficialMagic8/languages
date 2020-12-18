@@ -481,11 +481,10 @@
       "",
       "**Aliases:** {ALIASES}",
       "**Categoría:** {CATEGORY}",
-      "**Emoji:** {EMOJI}",
+      "**Discapacitado:** {ISDISABLED}",
       "**Conmutable:** {TOGGLEABLE}{PREMIUM}",
       "**Descripción:** {DESCRIPTION}"
     ],
-    "footer": "¿Falta algo? ¡Contacta con el apoyo!",
     "tips": [
       "📝 **Prefijo:** `{PREFIX}`",
       "",
