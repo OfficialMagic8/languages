@@ -1209,7 +1209,7 @@
     ],
     "commandinfotitle": "{BOTNAME} - Command Information",
     "commandinfo": [
-      "**Command:** `{COMMANDNAME}`",
+      "**Command:** [`{COMMANDNAME}`]({URL})",
       "",
       "**Aliases:** {ALIASES}",
       "**Category:** {CATEGORY}",
