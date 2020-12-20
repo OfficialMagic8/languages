@@ -621,7 +621,6 @@
     },
     "title": "{USERNAME} is rolling the Slot Machine!",
     "starting": [
-      "**Player:** {USER}",
       "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
       "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
       "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
@@ -629,7 +628,6 @@
       "*Press the 🔴 to start the machine!*"
     ],
     "waiting": [
-      "**Player:** {USER}",
       "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
       "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
       "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
@@ -637,7 +635,6 @@
       "{LOADING} *Pull the 🕹️ to stop the slots!*"
     ],
     "rollandstop": [
-      "**Player:** {USER}",
       "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
       "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
       "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
@@ -645,7 +642,6 @@
       "{LOADING} *Stopping the slots...*"
     ],
     "lose": [
-      "**Player:** {USER}",
       "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
       "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
       "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
@@ -653,7 +649,6 @@
       "{CROSS} You lost!"
     ],
     "win": [
-      "**Player:** {USER}",
       "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
       "{ARROW} **| {SLOT1} | {SLOT2} | {SLOT3} |**",
       "{SPACE} **| {BSLOT1} | {BSLOT2} | {BSLOT3} |**",
@@ -1237,7 +1232,7 @@
       "admin": "Administrator"
     },
     "hasdisabledcommands": "{WARNING} Commands marked with `!` are disabled in {GUILDNAME}\n\n",
-    "hasdisabledcommandsadmin": "{WARNING} Commands marked with `!` are disabled in {GUILDNAME}.\nEnable them by typing: `{PREFIX}s toggle <command>`\n\n",
+    "hasdisabledcommandsadmin": "{WARNING} Commands marked with `!` are disabled in **{GUILDNAME}**.\nEnable them by typing: `{PREFIX}s toggle <command>`\n\n",
     "adminbottom": [
       "{HASDISABLED}{INFO} For more info of a command, type: `{PREFIX}help <command>`",
       "",
@@ -1370,9 +1365,9 @@
   },
   "clear": {
     "enteramount": "{CROSS} **{USER}, please provide a number of messages to delete.**",
-    "invalidamount": "{CROSS} **{USER}, please provde a valid number of messages to delete.**",
-    "cannotgreater": "{CROSS} **{USER}, please provide a number less than:** `100`",
-    "cannotlower": "{CROSS} **{USER}, please provide a number that is at least:** `1`",
+    "invalidamount": "{CROSS} **{USER}, please provde a real number of messages to delete.**",
+    "cannotgreater": "{CROSS} **{USER}, please provide a number that is no more than 100 messages.**",
+    "cannotlower": "{CROSS} **{USER}, please provide a number that is at least 1 message.**",
     "nopermission": "{CROSS} **{USER}, please give {BOT} the `Manage Messages` permission to delete messages.**",
     "deleted": "{CHECK} **{USER}, a total of `{AMOUNT}` messages were deleted.**"
   },
@@ -1657,8 +1652,8 @@
       "",
       "{INFO} Please provide a number between **5** and **300** (seconds)."
     ],
-    "toosmall": "{CROSS} **{USER}, please provide a number that is at least:** `5`",
-    "toobig": "{CROSS} **{USER}, please provide a number less than:** `300`",
+    "toosmall": "{CROSS} **{USER}, please provide a number that is at least 5 seconds.**",
+    "toobig": "{CROSS} **{USER}, please provide a number that is no more than 300 seconds.**",
     "cooldownupdated": [
       "{CHECK} **List Manager Randomizer Cooldown Updated**",
       "",
@@ -1894,8 +1889,8 @@
       "{INFO} The cooldown must be between 10 seconds and 300 seconds (5 minutes)."
     ],
     "notanumber": "{CROSS} **{USER}, please provide a real number to set the cooldown.**",
-    "toosmall": "{CROSS} **{USER}, please provide a cooldown greater than 10 seconds.**",
-    "toolarge": "{CROSS} **{USER}, please provide a cooldown less than 300 seconds (5 minutes).**",
+    "toosmall": "{CROSS} **{USER}, please provide a number that is at least 10 seconds.**",
+    "toolarge": "{CROSS} **{USER}, please provide a number that is no more than 300 seconds (5 minutes).**",
     "cooldownupdated": [
       "{CHECK} **Auto Channels Cooldown Updated**",
       "",
@@ -2155,6 +2150,8 @@
   "settings": {},
   "slowmode": {
     "menutitle": "{BOTNAME} - Slowmode",
+    "toolarge": "{CROSS} **{USER}, please provide a number that is no more than 21600 seconds (6 hours).**",
+    "notanumber": "{CROSS} **{USER}, please provide a real number for {CHANNEL}'s slowmode.**",
     "menu": [
       "{BOT} is able to set a custom slowmode unlike regular channel settings in Discord.",
       "",
@@ -2163,7 +2160,6 @@
       "",
       "{INFO} To set the slowmode, type: `{PREFIX}slowmode <time>`"
     ],
-    "notanumber": "{CROSS} **{USER}, please provide a valid number for {CHANNEL}'s slowmode.**",
     "set": [
       "{CHECK} **Slowmode Updated**",
       "",
