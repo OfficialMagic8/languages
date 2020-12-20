@@ -445,24 +445,26 @@
     "establised": "🔊 Alguien respondió el telefono. **¡Conexión establecida!**",
     "youhungup": "\\🔴 **¡Colgaste el telefono!**",
     "otherhungup": "\\🔴 **¡Te colgaron el telefono!**",
-    "timeout": "\\⏰ No se detectó ningun mensaje por más de un minuto. **¡Conexión perdida!**"
+    "timeout": "\\⏰ No se detectó ningun mensaje por más de un minuto. **¡Conexión perdidad!**"
   },
   "yomomma": {},
   "botinfo": {
+    "extra": [
+      "",
+      "📦 **RAM:** {RAM}",
+      "🖥️ **\\*CPU:** {USAGE}% (15m average)"
+    ],
     "title": "{BOTNAME} - Bot Information",
     "description": [
       "📚 **Gremios:** {GUILDS}",
       "👥 **Usuarios:** {USERS}",
-      "💬 **Canales:** {CHANNELS}",
       "",
-      "{DJS} **v{DJSVERSION}**",
-      "{NODE} **v{NODEVERSION}**",
+      "⏲️ **Tiempo de actividad:** {UPTIME}",
       "🛰️ **Ping:** {PING}",
-      "⏲️ **Tiempo de Actividad:** {UPTIME}",
       "",
       "👑 **Dueño:** {OWNER}",
-      "💎 **Desarrollador Principal:** {HEADDEVELOPER}",
-      "🗓️ **Creado:** {CREATIONDATE}",
+      "💎 **Desarrollador principal:** {HEADDEVELOPER}",
+      "🗓️ **Creado en:** {CREATIONDATE}",
       "",
       "**Links útiles:**",
       "[Premium]({DONATELINK}) • [Guía]({GUIDE}) • [Lenguajes]({GITHUB}) ",
@@ -481,10 +483,11 @@
       "",
       "**Aliases:** {ALIASES}",
       "**Categoría:** {CATEGORY}",
-      "**Discapacitado:** {ISDISABLED}",
+      "**Emoji:** {EMOJI}",
       "**Conmutable:** {TOGGLEABLE}{PREMIUM}",
       "**Descripción:** {DESCRIPTION}"
     ],
+    "footer": "¿Falta algo? ¡Contacta con el apoyo!",
     "tips": [
       "📝 **Prefijo:** `{PREFIX}`",
       "",
@@ -551,10 +554,9 @@
   "popular": {
     "loading": "{LOADING} **{USER}, buscando comandos populares en Statcord...**",
     "title": "{BOTNAME} - Comandos Populares",
+    "footer": "Datos recibidos de Statcord",
     "description": [
-      "{COMMANDS}",
-      "",
-      "{INFO} Para más estadísticas, vaya a [**Statcord**]({STATCORD})."
+      "{COMMANDS}"
     ]
   },
   "premium": {
@@ -612,12 +614,12 @@
     ]
   },
   "myinfo": {
-    "noboost": "false",
-    "boost": "true - (desde {SINCE})",
+    "noboost": "No",
+    "boost": "Si - (desde {SINCE})",
     "title": "Perfil de {USERNAME}",
     "description": [
       "**Mención:** {USER}",
-      "**Nick::** {NICKNAME}",
+      "**Nick:** {NICKNAME}",
       "**Unido:** {JOINED}",
       "**Creado:** {CREATED}",
       "**Boosteando:** {BOOSTING}",
@@ -932,6 +934,369 @@
       "{CHECK} **Administrador de Listas Randomizador de Cooldown Actualizado**",
       "",
       "**Nuevo Cooldown:** {NEWCOOLDOWN} segundos"
+    ]
+  },
+  "say": {
+    "messagerequired": "{CROSS} **{USER}, porfavor proporciona un mensaje.**",
+    "permissionrequired": "{CROSS} **{USER}, porfavor dale permisos a {BOT} para mandar mensajes en {CHANNEL}.**",
+    "tip": "Tip: Usa {EVERYONE} y {HERE} como sustituciones si fuera necesario."
+  },
+  "antiping": {
+    "menutitle": "{BOTNAME} - Menu de Ayuda del Anti-Ping",
+    "menu": [
+      "`{PREFIX}ap adduser` - Desactiva las menciones de un usuario",
+      "`{PREFIX}ap removeuser` - Re-activa las menciones de un usuario",
+      "`{PREFIX}ap message` - Mensaje de advertencia cuando se halla una mención",
+      "`{PREFIX}ap logchannel` - El log para cuando el usuario con las cualidades Anti-Ping es mencionado",
+      "`{PREFIX}ap addrole` - Añade roles que sean inmunes",
+      "`{PREFIX}ap removerole` - Remueve roles que sean inmunes",
+      "",
+      "`{PREFIX}ap roles` Muestra los roles inmunes",
+      "`{PREFIX}ap users` Muestra los usuarios Anti-Ping",
+      "",
+      "{WARNING} Esto no prevenirá que sea mencionado, solo borrará el mensaje y advertirá al usuario.",
+      "{INFO} Usa estos comandos para mayor información!"
+    ],
+    "logmessage": [
+      "{WARNING} **Anti-Ping**",
+      "",
+      "**Author:** {USER}",
+      "**User(s):**",
+      "{PINGED}"
+    ],
+    "upgrade": {
+      "singleortriple": "**Paquete Singular o Triple**",
+      "triple": "**Paquete Triple**",
+      "description": "Porfavor mejore a las [{OPTIONS}]({DONATELINK}) para desactivar los pings a una mayor cantidad de usuarios.",
+      "cannotupgrade": "Los usuarios Anti-Ping ya no pueden ser incrementados a tráves de paquetes."
+    },
+    "addusermenutitle": "{BOTNAME} - Añade Usuario Anti-Ping",
+    "addusermenu": [
+      "Los usuarios Anti-Ping tendran sus @menciones borradas por todo aquel que no tenga un rol inmune.",
+      "",
+      "**Usuarios Anti-Ping actuales:**",
+      "{USERS}",
+      "",
+      "{INFO} Para añadir un usuario, escribe: `{PREFIX}ap adduser <user>`"
+    ],
+    "removeusermenutitle": "{BOTNAME} - Remover un Usuario Anti-Ping",
+    "removeusermenu": [
+      "Al remover un usuario Anti-Ping, cualquier persona será permitida de mencionarla.",
+      "",
+      "**Usuarios Anti-Ping actuales:**",
+      "{USERS}",
+      "",
+      "{INFO} Para remover un usuario, escribe: `{PREFIX}ap removeuser <user>`"
+    ],
+    "reachedlimit": [
+      "{CROSS} **Límite de Usuarios Anti-Ping Alcanzado:** `{MAX}`",
+      "",
+      "{UPGRADE}",
+      "",
+      "**Usuarios Anti-Ping:**",
+      "{USERS}"
+    ],
+    "cannotbebot": "{CROSS} **Hey, no puedes desactivar mis menciones!**",
+    "targetalreadydisabled": "{CROSS} **Las menciones de {TARGET} ya estan desactivados.**",
+    "nowdisabled": "{CHECK} **Las menciones de {TARGET} ahora estan desactivados.**",
+    "nousers": [
+      "{CROSS} **No hay Usuarios Anti-Ping**",
+      "",
+      "{INFO} Para añadir un usuario, escribe: `{PREFIX}ap adduser`"
+    ],
+    "removeall": "{CHECK} **Todos los Usuarios Anti-Ping fueron removidos**",
+    "invaliduser": [
+      "{CROSS} **Usuario Inválido proporcionado**",
+      "",
+      "Porfavor proporciona un usuario válido del servidor o su ID.",
+      "",
+      "{INFO} Para remover a todos los usuarios, escribe: `{PREFIX}ap removeuser all`"
+    ],
+    "alreadyenabled": "{CROSS} **Las menciones de {TARGET} ya estan activados.**",
+    "nowenabled": "{CHECK} **Las menciones de {TARGET} ahora estan activados.**",
+    "messageinfotitle": "{BOTNAME} - Mensaje Anti-Ping",
+    "messageinfo": [
+      "Este mensaje será enviado a los miembros que mencionen a un usuario Anti-Ping.",
+      "",
+      "**Mensaje actual:**",
+      "```{CURRENTMESSAGE}```",
+      "",
+      "{INFO} Miembro: {USER} - Miembro que mencionó a un usuario Anti-Ping."
+    ],
+    "messageupdated": [
+      "{CHECK} **Mensaje Anti-Ping Actualizado**",
+      "",
+      "**Mensaje Antiguo:**",
+      "```{OLDMESSAGE}```",
+      "",
+      "**Mensaje Nuevo:**",
+      "```{NEWMESSAGE}```"
+    ],
+    "noroles": [
+      "{CROSS} **No hay roles Anti-Ping**",
+      "",
+      "{INFO} Para añadir un rol, escriba: `{PREFIX}ap addroleohap`"
+    ],
+    "invalidrole": [
+      "{CROSS} **Rol Inválido Proporcionado**",
+      "",
+      "**Roles Disponibles:**",
+      "{ROLES}"
+    ],
+    "invalidbypassrole": [
+      "{CROSS} **Rol Inválido Proporcionado**",
+      "",
+      "**Roles Inmunes Disponibles:**",
+      "{BYPASSROLES}"
+    ],
+    "alreadybypass": [
+      "{CROSS} **El rol {TARGETROLE} ya es inmune a los usuarios Anti-Ping.**",
+      "",
+      "{INFO} Para remover la inmunidad del rol, escribe: `{PREFIX}ap removerole`"
+    ],
+    "nowbypass": [
+      "{CHECK} **Rol Inmune a Anti-Ping Añadido**",
+      "",
+      "**Rol:** {TARGETROLE}",
+      "",
+      "{INFO} Para remover la inmunidad del rol , escribe: `{PREFIX}ap removerole`"
+    ],
+    "alreadydoesnotbypass": [
+      "{CROSS} **El rol {TARGETROLE} ya no es inmune a los usuarios Anti-Ping**",
+      "",
+      "{INFO} Para añadir la inmunidad a un rol, escribe: `{PREFIX}ap addrole`"
+    ],
+    "nolongerbypass": [
+      "{CHECK} **Rol Inmune a Anti-Ping Removido**",
+      "",
+      "**Rol:** {TARGETROLE}",
+      "",
+      "{INFO} Para añadir la inmunidad al rol nuevamente, escribe: `{PREFIX}ap addrole`"
+    ],
+    "viewuserstitle": "{BOTNAME} - Usuarios Anti-Ping",
+    "viewusers": [
+      "**Usuarios Actuales:**",
+      "{USERS}"
+    ],
+    "viewrolestitle": "{BOTNAME} - Roles Inmunes a Anti-Ping",
+    "viewroles": [
+      "**Roles Inmunes Actuales:**",
+      "{BYPASSROLES}"
+    ],
+    "logchannelnotset": [
+      "{CROSS} **El canal para el historial Anti-Ping no esta definido**",
+      "",
+      "{INFO} Para definir el canal para el historial Anti-Ping, escribe: `{PREFIX}ap logchannel`"
+    ],
+    "logchannelremove": [
+      "{CHECK} **Canal para el historial Anti-Ping Removido**",
+      "",
+      "{INFO} Para definir un nuevo canal para el historial Anti-Ping, escribe: `{PREFIX}ap logchannel`"
+    ],
+    "logchannelset": [
+      "{CHECK} **Canal para el historial Anti-Ping definido**",
+      "",
+      "**Channel:** {CHANNEL} ({CHANNELID})",
+      "",
+      "{INFO} Para remover el canal para el historial Anti-Ping, escribe: `{PREFIX}ap logchannel remove`"
+    ]
+  },
+  "autovoice": {
+    "nocategory": [
+      "{CROSS} **No hay ninguna categoría Auto Voz seleccionada**",
+      "",
+      "{INFO} No puedes crear Canales Auto Voz hasta que hayas seleccionado una categoría. Si la categoría Auto Voz es eliminada o movida, todos los Canales Auto y Sub-Canales serán eliminados."
+    ],
+    "upgrade": {
+      "singleortriple": "**Paquete Singular o Triple**",
+      "triple": "**Paquete Triple**",
+      "description": "Porfavor mejore a las [{OPTIONS}]({DONATELINK}) para crear más Canales Auto Voz.",
+      "cannotupgrade": "Los Canales Auto Voz ya no pueden ser incrementados a tráves de paquetes."
+    },
+    "reachedlimit": [
+      "{CROSS} **Límite de Canales Auto alcanzado:** `{MAX}`",
+      "",
+      "{UPGRADE}",
+      "",
+      "**Canales Auto Actuales:**",
+      "{CURRENTCHANNELS}"
+    ],
+    "notypetitle": "{BOTNAME} - Tipos de Canales Auto Voz",
+    "notype": [
+      "Los Tipos de Canales Auto Voz que están disponibles:",
+      "",
+      "**Tipos Disponibles:**",
+      "{TYPES}"
+    ],
+    "invalidtype": [
+      "{CROSS} **Tipo de Canal-Auto Inválido:** `{INPUT}`",
+      "",
+      "**Tipos Disponibles:**",
+      "{TYPES}"
+    ],
+    "type": {
+      "duo": "Duo",
+      "trio": "Trío",
+      "squad": "Squad"
+    },
+    "created": [
+      "{CHECK} **Canal {TYPE} Creado**",
+      "",
+      "{INFO} Este cánal puede crear hasta **dos** Sub-Canales."
+    ],
+    "invalidchannel": [
+      "{CROSS} **Canal-Auto Inválido Proporcionado:** `{INPUT}`",
+      "",
+      "**Canales-Auto Disponibles:**",
+      "{AVAILABLE}"
+    ],
+    "deleted": [
+      "{CHECK} **Canal Auto Voz Eliminado**",
+      "",
+      "**Canales:** {DELETED}"
+    ],
+    "noneleft": [
+      "{CHECK} **Canal Auto Voz Eliminado**",
+      "",
+      "**Channel:** {DELETED}",
+      "",
+      "{WARNING} Los Canales Auto Voz ahora están desactivados porque ya no queda ninguno."
+    ],
+    "nocooldowntitle": "{BOTNAME} - Canales Auto Voz en Cooldown",
+    "nocooldown": [
+      "**Cooldown Actual:** {COOLDOWN}",
+      "",
+      "{INFO} El cooldown debe de durar entre 10 segundos y 300 segundos (5 minutos)."
+    ],
+    "notanumber": "{CROSS} **{USER}, porfavor proporciona un número real para especificar la longitud del Cooldown.**",
+    "toosmall": "{CROSS} **{USER}, porfavor proporciona un valor de Cooldown que sea mayor a 10 segundos.**",
+    "toolarge": "{CROSS} **{USER}, porfavor proporciona un valor de Cooldown que sea menor a 300 segundos (5 minutos).**",
+    "cooldownupdated": [
+      "{CHECK} **Cooldown de los Canales-Auto actualizado**",
+      "",
+      "**Cooldown Viejo:** {OLDCOOLDOWN} segundos",
+      "**Cooldown Nuevo:** {COOLDOWN} segundos"
+    ],
+    "infotitle": "{BOTNAME} - Información de los Canales Auto Voz",
+    "info": [
+      "**Habilitado:** {ENABLED}",
+      "**Categoría:** {CATEGORY}",
+      "**Cooldown:** {COOLDOWN} seconds",
+      "**Canales:**",
+      "{CHANNELS}"
+    ],
+    "viewcategorytitle": "{BOTNAME} - Categoría de los Canales Auto Voz",
+    "viewnocategory": [
+      "**Categoría:** {CATEGORY}",
+      "",
+      "{INFO} Especifica una categoría para habilitar los Canales Auto escribiendo: `{PREFIX}autovoice category <ID>`"
+    ],
+    "viewcategory": [
+      "**Caegoría Auto Voz**",
+      "",
+      "**Categoría:** {CATEGORY} ({CATEGORYID})",
+      "",
+      "{INFO} Deshabilita los Canales Auto escribiendo: `{PREFIX}autovoice category clear`"
+    ],
+    "alreadydisabled": [
+      "{CROSS} **Ya no hay una categoría especificada para los Canales Auto Voz.**",
+      "",
+      "{INFO} Para habilitar los canales Auto Voz, especifica una categoría escribiendo: `{PREFIX}autovoice category <ID>`"
+    ],
+    "disabled": [
+      "{CHECK} **Canales Auto Voz Deshabilitados**",
+      "",
+      "{INFO} Ahora todos los Canales Auto estan deshabilitados. Para habilitar los Canales Auto Voz denuevo, especifique una categoría!"
+    ],
+    "notacategory": [
+      "{CROSS} **ID de Categoría Invalido**",
+      "",
+      "**Categorías Disponibles:**",
+      "{CATEGORIES}"
+    ],
+    "nopermissionincategory": [
+      "{CROSS} **Porfavor proprocione a {BOT} los siguientes permisos para usar este comando.**",
+      "",
+      "`Administrar Canales`, `Mover Miembros`"
+    ],
+    "categoryset": [
+      "{CHECK} **Categoría Auto Voz especificada*",
+      "",
+      "**Categoría:** {CATEGORY} ({CATEGORYID})",
+      "",
+      "{INFO} Los Canales Auto Voz ya pueden ser creados!"
+    ],
+    "helptitle": "{BOTNAME} - Menú de Ayuda de los Canales Auto Voz",
+    "help": [
+      "`{PREFIX}av create` - Crea Canales Auto Voz",
+      "`{PREFIX}av delete` Elimina Canales Auto Voz",
+      "`{PREFIX}av category` - Fija la categoría de los Canales Auto Voz",
+      "`{PREFIX}av cooldown` - Fija el Cooldown de los Canales Auto Voz",
+      "`{PREFIX}av info` - Información de los Canales Auto Voz Actuales",
+      "",
+      "{INFO} Cada **Canal Auto** puede crear hasta **tres* Sub-Canales."
+    ]
+  },
+  "fakeping": {
+    "cooldown": [
+      "{CROSS} **Cooldown de Ping Falso**",
+      "",
+      "{USER} generó un ping falso hace {TIME}.",
+      "",
+      "{INFO} Puedes generar un nuevo ping falso en {LEFT}."
+    ],
+    "guildnoicon": [
+      "**{CROSS} Este servidor no tiene un ícono!**"
+    ],
+    "success": [
+      "{CHECK} **Ping Falso generado con Éxito**",
+      "",
+      "**Imagen Vieja:** [here]({OLD})",
+      "**Imagen Nueva:** [here]({NEW})",
+      "",
+      "{LOADING} Porfavor seleccione una opción en 30 segundos."
+    ],
+    "successmanual": [
+      "{CHECK} **Ping Falso generado con Éxito**",
+      "",
+      "**Imagen Vieja:** [here]({OLD})",
+      "**Imagen Nueva:** [here]({NEW})",
+      "",
+      "**Descargalá y súbela como el nuevo ícono del servidor!**"
+    ],
+    "updated": "{CHECK} **{USER}, el ícono del servidor fue actualizado!**",
+    "notupdated": "{CROSS} **{USER}, el ícono del servidor no fue actualizado.**",
+    "notupdatedperms": "{CROSS} **{USER}, porfavor proporcione a {BOT} el permiso de `Administrar Servidor` para actualizar el ícono del servidor.**"
+  },
+  "follow": {
+    "nopermission": "{CROSS} **{USER}, porfavor proporcione a {BOT} el permiso de `Administrar Webhooks` para seguir canales.**",
+    "nooptiontitle": "{BOTNAME} - Seguir el Canal de Noticias",
+    "nooption": [
+      "Obten actualizaciones del [Servidor de Soporte]({INVITE}) directamente al tuyo.",
+      "",
+      "**Canales de Noticias Disponibles:**",
+      "{OPTIONS}",
+      "",
+      "{INFO} Escribe el comando en el canal en donde quieres que se muestren las actualizaciones."
+    ],
+    "invalidoption": [
+      "{CROSS} **Canal de Noticias Inválido**",
+      "",
+      "**Canales de Noticias Disponibles:**",
+      "{OPTIONS}",
+      "",
+      "{INFO} Escribe el comando en el canal en donde quieres que se muestren las actualizaciones."
+    ],
+    "maxintegrations": [
+      "{CROSS} **Integraciones Máximas alcanzadas en:** {CHANNEL}",
+      "",
+      "Esta es una limitación de Discord, porfavor trate con otro canal."
+    ],
+    "following": [
+      "{CHECK} **Siguiendo al Canal de Noticias**",
+      "",
+      "**Canal:** {CHANNEL}",
+      "**Siguiendo:** `{FOLLOWING}`"
     ]
   },
   "language": {
