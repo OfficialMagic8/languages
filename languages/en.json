@@ -1210,7 +1210,8 @@
       "**Category:** {CATEGORY}",
       "**Disabled:** {ISDISABLED}",
       "**Toggleable:** {TOGGLEABLE}{PREMIUM}",
-      "**Description:** {DESCRIPTION}"
+      "**Description:**",
+      "{DESCRIPTION}"
     ],
     "tips": [
       "📝 **Prefix:** `{PREFIX}`",
@@ -1221,15 +1222,15 @@
       "**3.** Join our [Support Server]({INVITE})"
     ],
     "category": {
-      "fun": "Entertainment",
+      "entertainment": "Entertainment",
       "minigames": "Minigames",
       "minecraft": "Minecraft",
       "reactions": "Reactions",
-      "misc": "Miscellaneous",
-      "info": "Information",
+      "miscellaneous": "Miscellaneous",
+      "information": "Information",
       "user": "User",
-      "utils": "Utilities",
-      "admin": "Administrator"
+      "utilities": "Utilities",
+      "administrator": "Administrator"
     },
     "hasdisabledcommands": "{WARNING} Commands marked with `!` are disabled in {GUILDNAME}\n\n",
     "hasdisabledcommandsadmin": "{WARNING} Commands marked with `!` are disabled in **{GUILDNAME}**.\nEnable them by typing: `{PREFIX}s toggle <command>`\n\n",
