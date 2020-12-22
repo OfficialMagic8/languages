@@ -483,9 +483,10 @@
       "",
       "**Aliases:** {ALIASES}",
       "**Categoría:** {CATEGORY}",
-      "**Emoji:** {EMOJI}",
       "**Conmutable:** {TOGGLEABLE}{PREMIUM}",
-      "**Descripción:** {DESCRIPTION}"
+      "**Discapacitado:** {ISDISABLED}",
+      "**Descripción:**",
+      "{DESCRIPTION}"
     ],
     "footer": "¿Falta algo? ¡Contacta con el apoyo!",
     "tips": [
