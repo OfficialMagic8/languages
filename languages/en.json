@@ -1216,9 +1216,9 @@
     "tips": [
       "📝 **Prefix:** `{PREFIX}`",
       "",
-      "{CHECK} ***Need further assistance?***",
+      "{CHECK} **Need further assistance?**",
       "**1.** DM Fyrlex#2740",
-      "**2.** Check out our [Guide]({GUIDE})",
+      "**2.** Check out our [**Guide**]({GUIDE})",
       "**3.** Join our [Support Server]({INVITE})"
     ],
     "category": {
@@ -1858,7 +1858,11 @@
     "type": {
       "duo": "Duo",
       "trio": "Trio",
-      "squad": "Squad"
+      "squad": "Squad",
+      "quintet": "Quintet",
+      "sextet": "Sextet",
+      "heptet": "Heptet",
+      "Octet": "Octet"
     },
     "created": [
       "{CHECK} **{TYPE} Channel Created**",
