@@ -35,6 +35,7 @@
     "",
     "{INFO} If you continue to experience this error please contact support @ {SHORTINVITE} for assistance."
   ],
+  "admincommand": "{CROSS} **{USER}, this command requires `Manage Server` permission!**",
   "8ball": {
     "asksomething": "{CROSS} **{USER}, please ask a yes or no question.**",
     "customresponses": "{CROSS} **{USER}, please contact an administrator to change the 8ball mode or set custom responses.**",
@@ -1460,6 +1461,12 @@
       "**Items:**",
       "{ITEMS}"
     ],
+    "viewitemspagefooter": "📄 Page {PAGE}/{TOTALPAGES}",
+    "viewitemsinvalidpage": [
+      "{CROSS} **Invalid Page Provided:** `{INPUT}`",
+      "",
+      "{INFO} Please provide a page number between **1** and **{TOTALPAGES}**."
+    ],
     "invalidlist": [
       "{CROSS} **Invalid List Provided:** `{INPUT}`",
       "",
@@ -1583,6 +1590,7 @@
       "",
       "Within **60** seconds, please provide an item you wish to *add* to your list."
     ],
+    "itemtoolong": "{CROSS} **Please provide an item no more than 80 characters long.",
     "addsuccess": [
       "{CHECK} **Item Added**",
       "",
