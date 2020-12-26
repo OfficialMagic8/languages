@@ -1520,7 +1520,11 @@
       "",
       "**{FINALMESSAGE}:** {LOADING}"
     ],
-    "nonewlistname": "{CROSS} **{USER}, please provide a name to create a new list.**",
+    "nonewlistname": [
+      "{CROSS} **{USER}, please provide a name to create a new list.**",
+      "",
+      "{INFO} It is not recommended to end your list with a number. It will make it hard to view the different pages (if any)."
+    ],
     "listnametoolong": [
       "{CROSS} **List Name Too Long**",
       "",

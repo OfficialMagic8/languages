@@ -789,7 +789,9 @@
       "",
       "**{FINALMESSAGE}:** {LOADING}"
     ],
-    "nonewlistname": "{CROSS} **{USER}, porfavor proporcione un nombre para crear una nueva lista.**",
+    "nonewlistname": [
+      "{CROSS} **{USER}, porfavor proporcione un nombre para crear una nueva lista.**"
+    ],
     "listnametoolong": [
       "{CROSS} **Nombre de Lista muy Largo**",
       "",
