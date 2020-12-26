@@ -35,7 +35,7 @@
     "",
     "{INFO} If you continue to experience this error please contact support @ {SHORTINVITE} for assistance."
   ],
-  "admincommand": "{CROSS} **{USER}, this command requires `Manage Server` permission!**",
+  "admincommand": "{CROSS} **{USER}, this command requires `Manage Server` permission to use.**",
   "8ball": {
     "asksomething": "{CROSS} **{USER}, please ask a yes or no question.**",
     "customresponses": "{CROSS} **{USER}, please contact an administrator to change the 8ball mode or set custom responses.**",
@@ -1590,7 +1590,7 @@
       "",
       "Within **60** seconds, please provide an item you wish to *add* to your list."
     ],
-    "itemtoolong": "{CROSS} **Please provide an item no more than 80 characters long.",
+    "itemtoolong": "{CROSS} **Please provide an item no more than 80 characters long.**",
     "addsuccess": [
       "{CHECK} **Item Added**",
       "",
@@ -1667,6 +1667,23 @@
       "{CHECK} **List Manager Randomizer Cooldown Updated**",
       "",
       "**New Cooldown:** {NEWCOOLDOWN} seconds"
+    ]
+  },
+  "randomnumber": {
+    "nonumbers": "{CROSS} **{USER}, please provide one or two numbers to randomize.**",
+    "notanumber": "{CROSS} **{USER}, please provide at least one number to randomize.**",
+    "onenumber": [
+      "{CHECK} **{USER} - Randomization Success**",
+      "",
+      "**Max:** {MAXNUMBER}",
+      "**Random Number:** {RANDOMNUMBER}"
+    ],
+    "twonumbers": [
+      "{CHECK} - **{USER} - Randomization Success**",
+      "",
+      "**Min:** {MINNUMBER}",
+      "**Max:** {MAXNUMBER}",
+      "**Random Number:** {RANDOMNUMBER}"
     ]
   },
   "say": {
