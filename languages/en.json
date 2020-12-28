@@ -620,6 +620,7 @@
         "\u200b \u200b \u200b \u200b \u200b \u200b\u200b \u200b \u200b \u200b \u200b \u200b \u200b React with :joystick: to stop the machine!"
       ]
     },
+    "alreadyplaying": "{CROSS} **{USER}, you are alreading rolling the Slot Machine somewhere else.**",
     "title": "{USERNAME} is rolling the Slot Machine!",
     "starting": [
       "{SPACE} **| {TSLOT1} | {TSLOT2} | {TSLOT3} |**",
