@@ -1029,7 +1029,7 @@
     "noip": [
       "{CROSS} **No Minecraft Server IP or Domain**",
       "",
-      "{INFO} To view the status of your server, type: `{PREFIX}mcserver <IP/domain>`. Please also make sure that `enable-query` is set to true in your `server.properties` file."
+      "{INFO} To view the status of your server, type: `{PREFIX}mcserver set <IP/domain>`. Please also make sure that `enable-query` is set to true in your `server.properties` file."
     ],
     "error": [
       "{CROSS} **Error Getting Status Of:** `{SERVER}`",
