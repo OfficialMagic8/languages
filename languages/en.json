@@ -1787,13 +1787,26 @@
     "noroles": [
       "{CROSS} **No Anti-Ping Roles**",
       "",
-      "{INFO} To add a role, type: `{PREFIX}ap addroleohap`"
+      "{INFO} To add a role, type: `{PREFIX}ap addrole`"
     ],
-    "invalidrole": [
-      "{CROSS} **Invalid Role Provided**",
+    "rolepagefooter": "📄 Page {PAGE}/{TOTALPAGES}",
+    "noroleprovided": [
+      "{CROSS} **No Anti-Ping Role Provided**",
       "",
       "**Available Roles:**",
-      "{ROLES}"
+      "{ROLES}",
+      "",
+      "{INFO} To add a role, type: `{PREFIX}ap addrole <role>`"
+    ],
+    "invalidrole": [
+      "{CROSS} **Invalid Role Provided:** {INPUT}",
+      "",
+      "{INFO} To view your roles, type: `{PREFIX}ap addrole <page number>`"
+    ],
+    "invalidpage": [
+      "{CROSS} **Invalid Page Provided:** `{INPUT}`",
+      "",
+      "{INFO} Please provide a page number between **1** and **{TOTALPAGES}**."
     ],
     "invalidbypassrole": [
       "{CROSS} **Invalid Role Provided**",
