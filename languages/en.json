@@ -1808,6 +1808,12 @@
       "",
       "{INFO} Please provide a page number between **1** and **{TOTALPAGES}**."
     ],
+    "rolepage": [
+      "**Available Roles:**",
+      "{ROLES}",
+      "",
+      "{INFO} To add a role, type: `{PREFIX}ap addrole <role>`"
+    ],
     "invalidbypassrole": [
       "{CROSS} **Invalid Role Provided**",
       "",
