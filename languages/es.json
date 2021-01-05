@@ -17,11 +17,25 @@
   "true": "verdadero",
   "false": "falso",
   "none": "ninguno",
+  "singleortriple": "**Paquete Único o Triple**",
+  "triple": "**Paquete Triple**",
   "embederror": [
     "{CROSS} **{USER}, se produjo un error inesperado.**",
     "",
-    "{INFO} Por favor, únase a nuestro [Servidor de Soporte]({INVITE}) para la asistencia."
+    "• Esto puede suceder si estás tratando de romper una característica.",
+    "• Por favor, asegúrate {BOT} tiene los [**permisos**]({PERMISSIONS}) correctos.",
+    "",
+    "{INFO} Si continúa experimentando este error, por favor contacte con el soporte [**aquí**]({INVITE}) para la asistencia."
   ],
+  "messageerror": [
+    "{CROSS} **{USER}, an unexpected error occured.**",
+    "",
+    "• Esto puede suceder si estás tratando de romper una característica.",
+    "• Por favor, asegúrate {BOT} tiene los permisos **Enviar Mensajes** & **Incrustar Enlaces**.",
+    "",
+    "{INFO} Si continúa experimentando este error, por favor contacte con el soporte [**aquí**]({INVITE}) para la asistencia."
+  ],
+  "admincommand": "{CROSS} **{USER}, este comando requiere el permiso de `Gestionar Servidor` para ser usado.**",
   "8ball": {
     "asksomething": "{CROSS} **¡{USER}, por favor haga una pregunta de sí o no!**",
     "customresponses": "{CROSS} **{USER}, por favor contacte con un administrador para cambiar el modo 8ball o establecer respuestas personalizadas",
@@ -476,16 +490,16 @@
       "",
       "{INFO} ¡Escriba `{PREFIX}help` para obtener una lista de todos los comandos!"
     ],
-    "commandinfotitle": "{BOTNAME} - Información del Comando",
+    "commandinfotitle": "Información del Comando",
     "commandinfo": [
       "**Comando:** `{COMMANDNAME}`",
+      "**Descripción:**",
+      "{DESCRIPTION}",
       "",
       "**Aliases:** {ALIASES}",
       "**Categoría:** {CATEGORY}",
       "**Conmutable:** {TOGGLEABLE}{PREMIUM}",
-      "**Discapacitado:** {ISDISABLED}",
-      "**Descripción:**",
-      "{DESCRIPTION}"
+      "**Discapacitado:** {ISDISABLED}"
     ],
     "footer": "¿Falta algo? ¡Contacta con el apoyo!",
     "tips": [
@@ -496,16 +510,18 @@
       "**2.** Echa un vistazo a nuestra [Guía]({GUIDE})",
       "**3.** Únete a nuestro [Servidor de Soporte]({INVITE})"
     ],
+    "administratormenutitle": "{GUILDNAME} • Menú del Administrador",
+    "helpmenutitle": "{GUILDNAME} • Menú de Ayuda",
     "category": {
-      "fun": "Entretenimiento",
+      "entertainment": "Entretenimiento",
       "minigames": "Minijuegos",
       "minecraft": "Minecraft",
       "reactions": "Reacciones",
-      "misc": "Miscelánea",
-      "info": "Información",
+      "miscellaneous": "Miscelánea",
+      "information": "Información",
       "user": "Usuario",
-      "utils": "Utilidades",
-      "admin": "Administrador"
+      "utilities": "Utilidades",
+      "administrator": "Administrador"
     },
     "hasdisabledcommands": "{WARNING} Los comandos marcados con `!` están desactivados.\n Habilitarlos tecleando: `{PREFIX}s toggle <command>`\n\n",
     "adminbottom": [
@@ -553,7 +569,7 @@
   },
   "popular": {
     "loading": "{LOADING} **{USER}, buscando comandos populares en Statcord...**",
-    "title": "{BOTNAME} - Comandos Populares",
+    "title": "{BOTNAME} • Comandos Populares",
     "footer": "Datos recibidos de Statcord",
     "description": [
       "{COMMANDS}"
@@ -606,7 +622,7 @@
     ]
   },
   "media": {
-    "title": "{GUILDNAME} - Pagina de medios",
+    "title": "{GUILDNAME} • Pagina de Medios",
     "nomedia": [
       "{CROSS} **No hay medios disponibles**",
       "",
@@ -713,7 +729,7 @@
       "",
       "{INFO} Para eliminar una lista, escriba: `{PREFIX}lm delete <list>`"
     ],
-    "helptitle": "{BOTNAME} - Menu de Administrador de Listas",
+    "helptitle": "{BOTNAME} • Menu de Administrador de Listas",
     "help": [
       "`{PREFIX}lm add` - Añade un item a una lista",
       "`{PREFIX}lm bulkadd` - Añade varios items a una lista",
