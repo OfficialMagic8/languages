@@ -1203,16 +1203,16 @@
       "",
       "{INFO} Type `{PREFIX}help` to get a list of all commands!"
     ],
-    "commandinfotitle": "{BOTNAME} - Command Information",
+    "commandinfotitle": "Command Information",
     "commandinfo": [
       "**Command:** [`{COMMANDNAME}`]({URL})",
+      "**Description:**",
+      "{DESCRIPTION}",
       "",
       "**Aliases:** {ALIASES}",
       "**Category:** {CATEGORY}",
       "**Disabled:** {ISDISABLED}",
-      "**Toggleable:** {TOGGLEABLE}{PREMIUM}",
-      "**Description:**",
-      "{DESCRIPTION}"
+      "**Toggleable:** {TOGGLEABLE}{PREMIUM}"
     ],
     "tips": [
       "📝 **Prefix:** `{PREFIX}`",
@@ -1222,6 +1222,8 @@
       "**2.** Check out our [**Guide**]({GUIDE})",
       "**3.** Join our [Support Server]({INVITE})"
     ],
+    "administratormenutitle": "{GUILDNAME} • Administrator Menu",
+    "helpmenutitle": "{GUILDNAME} • Help Menu",
     "category": {
       "entertainment": "Entertainment",
       "minigames": "Minigames",
