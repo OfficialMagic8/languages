@@ -1795,10 +1795,10 @@
       "",
       "{INFO} Vui lòng cung cấp số trang từ **1** đến **{TOTALPAGES}**."
     ],
-    "available": [
+    "languages": [
       "{UPTODATE}",
       "",
-      "{INFO} Nhấp vào một ngôn ngữ để được đưa đến Kho lưu trữ GitHub!",
+      "{STATEMENT}",
       "",
       "{LANGUAGES}"
     ],

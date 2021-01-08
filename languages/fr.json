@@ -284,10 +284,10 @@
     "uptodate": "Mise à Jour",
     "outdated": "Dépassé",
     "listtitle": "{BOTNAME} - Liste des Langues ({PAGE}/{TOTALPAGES})",
-    "available": [
+    "lanugages": [
       "{UPTODATE}",
       "",
-      "{INFO} Cliquez sur une langue pour accéder au dépôt GitHub!",
+      "{STATEMENT}",
       "",
       "{LANGUAGES}"
     ],

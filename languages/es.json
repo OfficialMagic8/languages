@@ -1350,10 +1350,10 @@
       "",
       "{INFO} Por favor, proporcione un número de página entre **1** y **{TOTALPAGES}**."
     ],
-    "available": [
+    "languages": [
       "{UPTODATE}",
       "",
-      "{INFO} Haga clic en un idioma para ser llevado al Repositorio GitHub!",
+      "{STATEMENTS}",
       "",
       "{LANGUAGES}"
     ],

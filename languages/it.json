@@ -27,12 +27,11 @@
     "outdated": "Non è più Aggiornato",
     "listtitle": "{BOTNAME} - Elenco delle Lingue",
     "available": [
-      "⏲️ **Ultimo Aggiornamento:** {TIME}",
       "{UPTODATE}",
       "",
-      "{LANGUAGES}",
+      "{STATEMENT}",
       "",
-      "{WARNING} L'inglese è la lingua principale e pienamente supportata. Alcuni comandi possono apparire in inglese anche se la vostra lingua è impostata su un'altra."
+      "{LANGUAGES}"
     ],
     "help": [
       "{CHECK} **Ehi, grazie per aver aperto questa pagina!**",

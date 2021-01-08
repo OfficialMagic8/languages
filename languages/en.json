@@ -2157,10 +2157,15 @@
       "",
       "{INFO} Please provide a page number between **1** and **{TOTALPAGES}**."
     ],
-    "available": [
+    "statements": {
+      "togithub": "{INFO} Click on a language to be taken to the GitHub Repository.",
+      "set": "{INFO} To set this server's language, type the abbreviation.",
+      "info": "{INFO} Type the language abbreviation for more information."
+    },
+    "languages": [
       "{UPTODATE}",
       "",
-      "{INFO} Click on a language to be taken to the GitHub Repository!",
+      "{STATEMENT}",
       "",
       "{LANGUAGES}"
     ],

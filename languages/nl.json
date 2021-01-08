@@ -26,10 +26,10 @@
     "uptodate": "Tot Op Heden",
     "outdated": "Verouderd",
     "listtitle": "{BOTNAME} - Talenlijst ({PAGE}/{TOTALPAGES})",
-    "available": [
+    "languages": [
       "{UPTODATE}",
       "",
-      "{INFO} Klik op een taal om naar de GitHub-repository te gaan!",
+      "{STATEMENT}",
       "",
       "{LANGUAGES}"
     ],
