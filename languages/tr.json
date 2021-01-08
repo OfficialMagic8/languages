@@ -3,6 +3,16 @@
   "languagenameshort": "tr",
   "flag": "🇹🇷",
   "authors": [
-    "none"
-  ]
+    "Fyrlex#2740"
+  ],
+  "it": "{CROSS} **{USER}, lütfen geçerli bir üye veya kimlik girin.**",
+  "mention": [
+    "**{USER}, sunucu için önekim:** `{PREFIX}`",
+    "Komut listesi için `{PREFIX}help` yazın. Belirli ayrıntılar için  `{PREFIX}help` 'ten sonra bir komut da yazabilirsiniz.",
+    "",
+    "{CHECK} *Daha fazla yardıma mı ihtiyacınız var? [**Destek Sunucusuna**]({INVITE}) katılın veya [**Kılavuza**]({GUIDE}) bakın!*"
+  ],
+  "true": "doğru",
+  "false": "yanlış",
+  "none": "hiçbiri"
 }
