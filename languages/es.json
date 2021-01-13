@@ -7,7 +7,7 @@
     "Fyrlex#2740",
     "AlonsoAliaga#0017"
   ],
-  "it": "{CROSS} **{USER}, por favor proporcione un miembro o una identificación válida",
+  "it": "{CROSS} **{USER}, por favor proporcione un miembro o una identificación válida.**",
   "mention": [
     "**{USER}, mi prefijo para el servidor es:** `{PREFIX}`",
     "Escriba `{PREFIX}help` para una lista de comandos. También puedes escribir un comando después de `{PREFIX}help` para detalles específicos.",
