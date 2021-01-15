@@ -7,10 +7,11 @@ The developers of Magic8 have spent the past few weeks moving all messages into 
 \**Please also note that **English** is the most accurate and up to date language. It is up to other translators to match their languages with the English file. We have a **News Channel** in our [Support Server](https://magic8.xyz/discord) that posts all updates of the **en.json** file.*
 
 ## Instructions
-- Create a fork of this repository or store the English file ([en.json](https://github.com/OfficialMagic8/Languages/blob/master/languages/en.json)) file on your computer
+- Double check to make sure your language is present
+- Create a fork of this repository and/or store the English file ([en.json](https://github.com/OfficialMagic8/Languages/blob/master/languages/en.json)) file on your computer
 - Please make sure you are familiar with [JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) format, [arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), [objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) and [strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 - Please make sure you understand [Markdown](https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-)
-- Translate the English to your fluently known language
+- Translate the English (en.json) to your fluently known language
 - Submit a pull request or send a file to be reviewed and then approved
 
 ## Rules/Guidelines
