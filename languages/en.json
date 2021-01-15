@@ -37,6 +37,7 @@
   "admincommand": "{CROSS} **{USER}, this command requires `Manage Server` permission to use.**",
   "8ball": {
     "asksomething": "{CROSS} **{USER}, please ask a yes or no question.**",
+    "toolong": "{CROSS} **{USER}, that question is too long, please write less than 1000 characters.**",
     "customresponses": "{CROSS} **{USER}, please contact an administrator to change the 8ball mode or set custom responses.**",
     "customresponsesadmin": [
       "{CROSS} **No Custom Responses**",
