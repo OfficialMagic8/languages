@@ -1299,6 +1299,18 @@
       "**Packages Link:** [__click here__]({DONATIONLINK})"
     ]
   },
+  "summary": {
+    "loading": "{LOADING} **{USER}, fetching daily summary from Statcord...**",
+    "title": "{BOTNAME} - Daily Summary ({DATE})",
+    "description": [
+      "**Guilds:** {TOTALGUILDS} ({GUILDSDIFF})",
+      "**Commands:** {COMMANDSUSED} ({COMMANDSUSEDDIFF})",
+      "**Active Users:** {ACTIVEUSERS} ({ACTIVEUSERSDIFF})",
+      "",
+      "{INFO} For more statistics, go to [**Statcord**]({STATCORD})."
+    ]
+  },
+  "updates": {},
   "avatar": {
     "success": "{CHECK} Here is {USER}'s avatar! ([link]({URL}))"
   },
