@@ -1112,6 +1112,9 @@
         "{CROSS} **{USER}, please provide a username and discriminator!**",
         "**This can be found in your [battle.net](https://battle.net) profile.**"
       ],
+      "notahero": [
+        "{CROSS} **Invalid Hero:** `{INPUT}`"
+      ],
       "unexpected": [
         "{CROSS} **Error**",
         "",
@@ -1304,9 +1307,9 @@
     "loading": "{LOADING} **{USER}, fetching daily summary from Statcord...**",
     "title": "{BOTNAME} - Daily Summary ({DATE})",
     "description": [
-      "**Guilds:** {TOTALGUILDS} ({GUILDSDIFF})",
-      "**Commands:** {COMMANDSUSED} ({COMMANDSUSEDDIFF})",
-      "**Active Users:** {ACTIVEUSERS} ({ACTIVEUSERSDIFF})",
+      "{EMOJI1} **Guilds:** {TOTALGUILDS} ({GUILDSDIFF})",
+      "{EMOJI2} **Commands:** {COMMANDSUSED} ({COMMANDSUSEDDIFF})",
+      "{EMOJI3} **Active Users:** {ACTIVEUSERS} ({ACTIVEUSERSDIFF})",
       "",
       "{INFO} For more statistics, go to [**Statcord**]({STATCORD})."
     ]
@@ -2185,7 +2188,7 @@
     "help": [
       "{CHECK} **Hey! Thanks for opening this page!**",
       "",
-      "The Magic8 developers have devoted  many hours to being able to support other languages. Please consider taking the opportunity to help out!",
+      "The Magic8 developers have devoted many hours to being able to support other languages. Please consider taking the opportunity to help out!",
       "",
       "[**Github Repository**]({GITHUB})",
       "",
