@@ -1307,9 +1307,9 @@
     "loading": "{LOADING} **{USER}, fetching daily summary from Statcord...**",
     "title": "{BOTNAME} - Daily Summary ({DATE})",
     "description": [
-      "{EMOJI1} **Guilds:** {TOTALGUILDS} ({GUILDSDIFF})",
-      "{EMOJI2} **Commands:** {COMMANDSUSED} ({COMMANDSUSEDDIFF})",
-      "{EMOJI3} **Active Users:** {ACTIVEUSERS} ({ACTIVEUSERSDIFF})",
+      "{EMOJI1} **Guilds:** {TOTALGUILDS} (**{GUILDSDIFF}**)",
+      "{EMOJI2} **Commands:** {COMMANDSUSED} (**{COMMANDSUSEDDIFF}**)",
+      "{EMOJI3} **Active Users:** {ACTIVEUSERS} (**{ACTIVEUSERSDIFF}**)",
       "",
       "{INFO} For more statistics, go to [**Statcord**]({STATCORD})."
     ]
