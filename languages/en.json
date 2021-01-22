@@ -1376,9 +1376,9 @@
   "vote": {
     "title": "{BOTNAME} - Vote Menu",
     "description": [
-      "Vote for {BOT} to help us grow! Here is our main voting page.",
+      "Vote for {BOT} to help us grow! Here are our voting pages.",
       "",
-      "**Discord Bot List:** {VOTE1}",
+      "{LINKS}",
       "",
       "❤️ Thank you for your support!"
     ]
