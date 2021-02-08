@@ -1284,6 +1284,14 @@
       "[{MAGIC8} **Click Here!**]({INVITE})"
     ]
   },
+  "partners": {
+    "invalid": [
+      "{CROSS} **Invalid Parnter/Affiliate Provided:** `{INPUT}`",
+      "",
+      "**Available Partners/Affiliates:**",
+      "{PARTNERS}"
+    ]
+  },
   "popular": {
     "loading": "{LOADING} **{USER}, fetching popular commands from Statcord...**",
     "title": "{BOTNAME} - Popular Commands",
@@ -1809,7 +1817,7 @@
     ],
     "rolepagefooter": "📄 Page {PAGE}/{TOTALPAGES}",
     "noroleprovided": [
-      "{CROSS} **No Anti-Ping Role Provided**",
+      "{CROSS} **No Role Provided**",
       "",
       "**Available Roles:**",
       "{ROLES}",
@@ -1817,7 +1825,7 @@
       "{INFO} To add a role, type: `{PREFIX}ap addrole <role>`"
     ],
     "invalidrole": [
-      "{CROSS} **Invalid Role Provided:** {INPUT}",
+      "{CROSS} **Invalid Role Provided:** `{INPUT}`",
       "",
       "{INFO} To view your roles, type: `{PREFIX}ap addrole <page number>`"
     ],
@@ -1832,8 +1840,14 @@
       "",
       "{INFO} To add a role, type: `{PREFIX}ap addrole <role>`"
     ],
+    "nobypassroleprovided": [
+      "{CROSS} **No Bypass Role Provided**",
+      "",
+      "**Available Bypass Roles:**",
+      "{BYPASSROLES}"
+    ],
     "invalidbypassrole": [
-      "{CROSS} **Invalid Role Provided**",
+      "{CROSS} **Invalid Bypass Role Provided:** `{INPUT}`",
       "",
       "**Available Bypass Roles:**",
       "{BYPASSROLES}"
