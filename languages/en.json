@@ -1146,8 +1146,8 @@
         "**Cards:** {CARDS}",
         "**Bronze/Silver/Gold Medals:** {BRONZE}/{SILVER}/{GOLD}",
         "",
-        "**__Ranked__ (current season)**",
-        "**W/L:** {RANKEDWINS}/{RANKEDLOSSES} - {RANKEDPERCENTAGE}%",
+        "**__Competitive Stats__ (current season)**",
+        "**Winrate:** {RANKEDPERCENTAGE}% - {RANKEDWINS}/{RANKEDLOSSES}",
         "**Average SR:** {AVERAGE}",
         "{TANK} **Tank:** {TANKLVL} {TANKICON}",
         "{DPS} **DPS:** {DPSLVL} {DPSICON}",
@@ -2236,6 +2236,21 @@
       "",
       "{INFO} **Please contact us if you'd like to help!**"
     ]
+  },
+  "prefix": {
+    "menu": [
+      "**Current Prefix:** `{PREFIX}`",
+      "",
+      "{INFO} To update the prefix, type: `{PREFIX}prefix <prefix>`",
+      "",
+      "{WARNING} Make sure you don't use special characters or mention any roles!"
+    ],
+    "updated": [
+      "{CHECK} **Updated Prefix:** `{NEWPREFIX}`",
+      "",
+      "{INFO} {BOT} will always be an active prefix in case your forget yours."
+    ],
+    "hasmention": "{CROSS} **{USER}, please do not provide any users or roles in the prefix.**"
   },
   "settings": {},
   "slowmode": {
