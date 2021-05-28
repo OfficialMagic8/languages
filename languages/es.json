@@ -1062,7 +1062,7 @@
       "{ROLES}"
     ],
     "invalidbypassrole": [
-      "{CROSS} **Rol Inválido Proporcionado**",
+      "{CROSS} **Rol Inválido Proporcionado:** {INPUT}",
       "",
       "**Roles Inmunes Disponibles:**",
       "{BYPASSROLES}"

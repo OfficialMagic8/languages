@@ -1848,7 +1848,7 @@
       "{BYPASSROLES}"
     ],
     "invalidbypassrole": [
-      "{CROSS} **Invalid Bypass Role Provided:** `{INPUT}`",
+      "{CROSS} **Invalid Bypass Role Provided:** {INPUT}",
       "",
       "**Available Bypass Roles:**",
       "{BYPASSROLES}"
