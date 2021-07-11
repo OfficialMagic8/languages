@@ -446,7 +446,7 @@
       },
       "ip": {
         "time": 3000,
-        "message": "> Analizing {RANDOMIP}"
+        "message": "> Analyzing {RANDOMIP}"
       },
       "oipv6": {
         "time": 4000,
@@ -458,11 +458,11 @@
       },
       "ipv6": {
         "time": 3000,
-        "message": "> Analizing {RANDOMIPV6}"
+        "message": "> Analyzing {RANDOMIPV6}"
       },
       "mac": {
         "time": 3000,
-        "message": "> MAC address obtained. Analizing {RANDOMMAC}"
+        "message": "> MAC address obtained. Analyzing {RANDOMMAC}"
       },
       "lhandshake": {
         "time": 3000,
