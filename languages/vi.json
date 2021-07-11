@@ -1507,7 +1507,7 @@
       "{ROLES}"
     ],
     "invalidbypassrole": [
-      "{CROSS} **Vai trò cung cấp không hợp lệ**",
+      "{CROSS} **Vai trò cung cấp không hợp lệ:** {INPUT}",
       "",
       "**Các vai trò bỏ qua có sẵn:**",
       "{BYPASSROLES}"

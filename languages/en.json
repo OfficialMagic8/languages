@@ -1187,6 +1187,7 @@
       "👥 **Users:** {USERS}",
       "💬 **Channels:** {CHANNELS}",
       "",
+      "{SOMETHINGHOST} **Host:** [Something.Host](https://something.host/en/)",
       "{DJS} **v{DJSVERSION}**",
       "{NODE} **v{NODEVERSION}**",
       "🛰️ **Ping:** {PING}",
@@ -1847,7 +1848,7 @@
       "{BYPASSROLES}"
     ],
     "invalidbypassrole": [
-      "{CROSS} **Invalid Bypass Role Provided:** `{INPUT}`",
+      "{CROSS} **Invalid Bypass Role Provided:** {INPUT}",
       "",
       "**Available Bypass Roles:**",
       "{BYPASSROLES}"
